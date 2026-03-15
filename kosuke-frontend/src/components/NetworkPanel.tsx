@@ -6,8 +6,23 @@ import {
   type NetworkNode,
   type NetworkEdge,
   type NetworkMetrics,
+  type GalaxyData,
 } from "@/lib/api";
-import { Network, RefreshCw, Compass, X, Magnet } from "lucide-react";
+import { Network, RefreshCw, Compass, X, Magnet, Sparkles } from "lucide-react";
+
+// Galaxy cluster colors for visualization
+const GALAXY_COLORS = [
+  "#f59e0b", // amber
+  "#3b82f6", // blue
+  "#10b981", // emerald
+  "#ef4444", // red
+  "#8b5cf6", // violet
+  "#ec4899", // pink
+  "#06b6d4", // cyan
+  "#f97316", // orange
+  "#14b8a6", // teal
+  "#a855f7", // purple
+];
 
 // Domain → color mapping
 const DOMAIN_COLORS: Record<string, string> = {
@@ -52,6 +67,8 @@ interface GraphNode extends NodeObject {
   is_boundary: boolean;
   meaning_mass: number;
   is_gravity_hub: boolean;
+  cluster_id: number | null;
+  is_galaxy_center: boolean;
   degree: number;
 }
 
@@ -73,6 +90,9 @@ export function NetworkPanel({ fragmentCount }: Props) {
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [generatingGravity, setGeneratingGravity] = useState(false);
+  const [detectingGalaxies, setDetectingGalaxies] = useState(false);
+  const [galaxyData, setGalaxyData] = useState<GalaxyData | null>(null);
+  const [showGalaxies, setShowGalaxies] = useState(false);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [discoveryMode, setDiscoveryMode] = useState(false);
@@ -141,6 +161,20 @@ export function NetworkPanel({ fragmentCount }: Props) {
     }
   };
 
+  const handleDetectGalaxies = async () => {
+    setDetectingGalaxies(true);
+    try {
+      const data = await api.detectGalaxies();
+      setGalaxyData(data);
+      setShowGalaxies(true);
+      await loadNetwork();
+    } catch {
+      /* ignore */
+    } finally {
+      setDetectingGalaxies(false);
+    }
+  };
+
   // Compute degree per node for sizing
   const degreeMap = useMemo(() => {
     const map: Record<string, number> = {};
@@ -150,6 +184,17 @@ export function NetworkPanel({ fragmentCount }: Props) {
     }
     return map;
   }, [edges]);
+
+  // Build galaxy membership map (cluster_id -> galaxy color)
+  const galaxyColorMap = useMemo(() => {
+    const map: Record<number, string> = {};
+    if (galaxyData) {
+      galaxyData.galaxies.forEach((g, i) => {
+        map[g.cluster_id] = GALAXY_COLORS[i % GALAXY_COLORS.length];
+      });
+    }
+    return map;
+  }, [galaxyData]);
 
   // Build graph data for ForceGraph2D
   const graphData = useMemo(() => {
@@ -161,6 +206,8 @@ export function NetworkPanel({ fragmentCount }: Props) {
       is_boundary: n.is_boundary,
       meaning_mass: n.meaning_mass,
       is_gravity_hub: n.is_gravity_hub,
+      cluster_id: n.cluster_id,
+      is_galaxy_center: n.is_galaxy_center,
       degree: degreeMap[n.id] || 0,
     }));
 
@@ -205,10 +252,47 @@ export function NetworkPanel({ fragmentCount }: Props) {
       const x = node.x || 0;
       const y = node.y || 0;
 
-      const color =
-        gNode.domain && DOMAIN_COLORS[gNode.domain]
-          ? DOMAIN_COLORS[gNode.domain]
-          : DEFAULT_NODE_COLOR;
+      // Use galaxy color when galaxy view is active, otherwise domain color
+      let color: string;
+      if (
+        showGalaxies &&
+        gNode.cluster_id !== null &&
+        galaxyColorMap[gNode.cluster_id]
+      ) {
+        color = galaxyColorMap[gNode.cluster_id];
+      } else {
+        color =
+          gNode.domain && DOMAIN_COLORS[gNode.domain]
+            ? DOMAIN_COLORS[gNode.domain]
+            : DEFAULT_NODE_COLOR;
+      }
+
+      // Galaxy glow when galaxy view is active
+      if (
+        showGalaxies &&
+        gNode.cluster_id !== null &&
+        galaxyColorMap[gNode.cluster_id]
+      ) {
+        const gColor = galaxyColorMap[gNode.cluster_id];
+        ctx.beginPath();
+        ctx.arc(x, y, size + 5, 0, 2 * Math.PI);
+        ctx.fillStyle = gColor + "25";
+        ctx.fill();
+      }
+
+      // Galaxy center: star-like highlight
+      if (showGalaxies && gNode.is_galaxy_center) {
+        ctx.beginPath();
+        ctx.arc(x, y, size + 6, 0, 2 * Math.PI);
+        ctx.strokeStyle = "#fbbf24";
+        ctx.lineWidth = 2.5 / globalScale;
+        ctx.stroke();
+        // Inner glow
+        ctx.beginPath();
+        ctx.arc(x, y, size + 4, 0, 2 * Math.PI);
+        ctx.fillStyle = "rgba(251, 191, 36, 0.12)";
+        ctx.fill();
+      }
 
       // Discovery mode glow
       if (discoveryMode && discoveryNodes.has(gNode.id)) {
@@ -273,7 +357,7 @@ export function NetworkPanel({ fragmentCount }: Props) {
         ctx.fillText(label, x, y + size + fontSize + 2);
       }
     },
-    [hoveredNode, selectedNode, discoveryMode, discoveryNodes]
+    [hoveredNode, selectedNode, discoveryMode, discoveryNodes, showGalaxies, galaxyColorMap]
   );
 
   // Link rendering
@@ -336,6 +420,18 @@ export function NetworkPanel({ fragmentCount }: Props) {
             {generatingGravity ? "Computing..." : "Gravity"}
           </button>
           <button
+            onClick={handleDetectGalaxies}
+            disabled={detectingGalaxies || fragmentCount < 2}
+            className={`flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded transition-colors ${
+              showGalaxies
+                ? "bg-amber-500/20 text-amber-400 border border-amber-500/30"
+                : "bg-zinc-800 hover:bg-zinc-700 text-amber-400"
+            } disabled:opacity-50`}
+          >
+            <Sparkles size={14} className={detectingGalaxies ? "animate-spin" : ""} />
+            {detectingGalaxies ? "Detecting..." : showGalaxies ? "Galaxies ✦" : "Galaxies"}
+          </button>
+          <button
             onClick={() => setDiscoveryMode(!discoveryMode)}
             className={`flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded transition-colors ${
               discoveryMode
@@ -368,6 +464,21 @@ export function NetworkPanel({ fragmentCount }: Props) {
               <span className="text-cyan-400">{metrics.gravity_hubs}</span>{" "}
               gravity hubs
             </span>
+            <span>
+              <span className="text-amber-400">{metrics.galaxy_count}</span>{" "}
+              galaxies
+            </span>
+            {metrics.largest_galaxy > 0 && (
+              <span>
+                <span className="text-zinc-300">{metrics.largest_galaxy}</span>{" "}
+                largest
+              </span>
+            )}
+            {metrics.average_cluster_size > 0 && (
+              <span>
+                avg <span className="text-zinc-300">{metrics.average_cluster_size.toFixed(1)}</span>
+              </span>
+            )}
           </div>
         )}
       </div>
@@ -447,6 +558,10 @@ export function NetworkPanel({ fragmentCount }: Props) {
               <div className="w-3 h-3 rounded-full border-2 border-cyan-400 bg-transparent" />
               <span className="text-zinc-500">gravity hub</span>
             </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full border-2 border-amber-400 bg-amber-400/20" />
+              <span className="text-zinc-500">galaxy center</span>
+            </div>
           </div>
         )}
 
@@ -510,6 +625,22 @@ export function NetworkPanel({ fragmentCount }: Props) {
                     {selectedNode.meaning_mass.toFixed(3)}
                   </span>
                 </div>
+                {selectedNode.cluster_id !== null && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-zinc-500">Cluster:</span>
+                    <span className="text-xs text-zinc-400">
+                      #{selectedNode.cluster_id}
+                    </span>
+                  </div>
+                )}
+                {selectedNode.is_galaxy_center && (
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-amber-400" />
+                    <span className="text-xs text-amber-400">
+                      Galaxy Center
+                    </span>
+                  </div>
+                )}
                 {selectedNode.is_gravity_hub && (
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-cyan-400" />

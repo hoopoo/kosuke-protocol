@@ -138,6 +138,18 @@ class FragmentEdge(BaseModel):
     created_at: str
 
 
+class ClusterInfo(BaseModel):
+    """Information about a detected cluster."""
+
+    cluster_id: int
+    size: int
+    density: float
+    domain_entropy: float
+    center_fragment: str  # fragment ID with highest meaning_mass
+    is_galaxy: bool = False  # True if size >= 4 and density > threshold
+    member_ids: list[str] = Field(default_factory=list)
+
+
 class NetworkNode(BaseModel):
     """A node in the fragment network."""
 
@@ -148,6 +160,8 @@ class NetworkNode(BaseModel):
     is_boundary: bool = False
     meaning_mass: float = 0.0
     is_gravity_hub: bool = False
+    cluster_id: Optional[int] = None
+    is_galaxy_center: bool = False
 
 
 class NetworkEdge(BaseModel):
@@ -174,6 +188,19 @@ class NetworkMetrics(BaseModel):
     clusters: int
     boundary_nodes: int
     gravity_hubs: int = 0
+    galaxy_count: int = 0
+    largest_galaxy: int = 0
+    average_cluster_size: float = 0.0
+
+
+class GalaxyData(BaseModel):
+    """Result of galaxy detection."""
+
+    clusters: list[ClusterInfo]
+    galaxies: list[ClusterInfo]
+    galaxy_count: int
+    largest_galaxy: int
+    average_cluster_size: float
 
 
 class ExportRequest(BaseModel):

@@ -54,6 +54,8 @@ export interface NetworkNode {
   is_boundary: boolean;
   meaning_mass: number;
   is_gravity_hub: boolean;
+  cluster_id: number | null;
+  is_galaxy_center: boolean;
 }
 
 export interface NetworkEdge {
@@ -74,6 +76,27 @@ export interface NetworkMetrics {
   clusters: number;
   boundary_nodes: number;
   gravity_hubs: number;
+  galaxy_count: number;
+  largest_galaxy: number;
+  average_cluster_size: number;
+}
+
+export interface ClusterInfo {
+  cluster_id: number;
+  size: number;
+  density: number;
+  domain_entropy: number;
+  center_fragment: string;
+  is_galaxy: boolean;
+  member_ids: string[];
+}
+
+export interface GalaxyData {
+  clusters: ClusterInfo[];
+  galaxies: ClusterInfo[];
+  galaxy_count: number;
+  largest_galaxy: number;
+  average_cluster_size: number;
 }
 
 export interface Stats {
@@ -192,6 +215,11 @@ export const api = {
   generateGravityEdges: (threshold = 0.5, epsilon = 0.01) =>
     request<{ new_gravity_edges: number; total_edges: number }>(
       `/network/generate-gravity?threshold=${threshold}&epsilon=${epsilon}`,
+      { method: "POST" }
+    ),
+  detectGalaxies: (densityThreshold = 0.3) =>
+    request<GalaxyData>(
+      `/network/detect-galaxies?density_threshold=${densityThreshold}`,
       { method: "POST" }
     ),
 };

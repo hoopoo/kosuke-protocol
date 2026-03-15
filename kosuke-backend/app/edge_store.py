@@ -14,8 +14,10 @@ from datetime import datetime, timezone
 
 from app.fragment_store import FragmentStore
 from app.models import (
+    ClusterInfo,
     Fragment,
     FragmentEdge,
+    GalaxyData,
     NetworkData,
     NetworkEdge,
     NetworkMetrics,
@@ -227,6 +229,145 @@ class EdgeStore:
 
         return new_edges
 
+    def detect_galaxies(
+        self,
+        fragment_store: FragmentStore,
+        density_threshold: float = 0.3,
+    ) -> GalaxyData:
+        """Detect clusters using Leiden algorithm and identify galaxies.
+
+        A galaxy is a cluster with:
+        - size >= 4
+        - density > density_threshold
+
+        Galaxy center = node with highest meaning_mass in the cluster.
+        """
+        all_fragments = fragment_store.get_all_fragments(limit=1000)
+        if len(all_fragments) < 2:
+            return GalaxyData(
+                clusters=[],
+                galaxies=[],
+                galaxy_count=0,
+                largest_galaxy=0,
+                average_cluster_size=0.0,
+            )
+
+        fragment_ids = {f.id for f in all_fragments}
+        valid_edges = [
+            e for e in self.get_all_edges()
+            if e.fragment_a in fragment_ids and e.fragment_b in fragment_ids
+        ]
+
+        # Build igraph graph for Leiden clustering
+        import igraph as ig
+        import leidenalg
+
+        # Map fragment IDs to integer indices
+        id_list = list(fragment_ids)
+        id_to_idx: dict[str, int] = {fid: i for i, fid in enumerate(id_list)}
+
+        g = ig.Graph(n=len(id_list))
+        edge_tuples: list[tuple[int, int]] = []
+        edge_weights: list[float] = []
+        seen_pairs: set[tuple[int, int]] = set()
+
+        for e in valid_edges:
+            idx_a = id_to_idx[e.fragment_a]
+            idx_b = id_to_idx[e.fragment_b]
+            pair = (min(idx_a, idx_b), max(idx_a, idx_b))
+            if pair not in seen_pairs and idx_a != idx_b:
+                seen_pairs.add(pair)
+                edge_tuples.append(pair)
+                edge_weights.append(e.weight)
+
+        if edge_tuples:
+            g.add_edges(edge_tuples)
+            g.es["weight"] = edge_weights
+
+        # Run Leiden algorithm
+        if g.ecount() > 0:
+            partition = leidenalg.find_partition(
+                g,
+                leidenalg.ModularityVertexPartition,
+                weights="weight",
+            )
+            membership = partition.membership
+        else:
+            # No edges: each node is its own cluster
+            membership = list(range(len(id_list)))
+
+        # Compute meaning mass for center detection
+        edge_dicts = [
+            e_dict for e_dict in self.edges
+            if str(e_dict["fragment_a"]) in fragment_ids
+            and str(e_dict["fragment_b"]) in fragment_ids
+        ]
+        mass_map = _compute_mass_map(all_fragments, edge_dicts)
+
+        # Domain map for entropy calculation
+        frag_domain_map: dict[str, str | None] = {f.id: f.domain for f in all_fragments}
+
+        # Group nodes by cluster
+        cluster_members: dict[int, list[str]] = {}
+        for i, fid in enumerate(id_list):
+            cid = membership[i]
+            cluster_members.setdefault(cid, []).append(fid)
+
+        # Build ClusterInfo for each cluster
+        clusters: list[ClusterInfo] = []
+        for cid, members in sorted(cluster_members.items()):
+            size = len(members)
+
+            # Calculate density: edges_in_cluster / possible_edges
+            member_set = set(members)
+            internal_edges = 0
+            for e in valid_edges:
+                if e.fragment_a in member_set and e.fragment_b in member_set:
+                    internal_edges += 1
+            possible_edges = size * (size - 1) / 2 if size >= 2 else 1
+            density = internal_edges / possible_edges if possible_edges > 0 else 0.0
+
+            # Domain entropy within the cluster
+            cluster_domains = [
+                frag_domain_map[fid]
+                for fid in members
+                if frag_domain_map.get(fid)
+            ]
+            domain_entropy = _shannon_entropy(cluster_domains)  # type: ignore[arg-type]
+
+            # Galaxy center: node with highest meaning_mass
+            center = max(members, key=lambda fid: mass_map.get(fid, 0.0))
+
+            # Galaxy rule: size >= 4 AND density > threshold
+            is_galaxy = size >= 4 and density > density_threshold
+
+            clusters.append(
+                ClusterInfo(
+                    cluster_id=cid,
+                    size=size,
+                    density=round(density, 4),
+                    domain_entropy=round(domain_entropy, 4),
+                    center_fragment=center,
+                    is_galaxy=is_galaxy,
+                    member_ids=members,
+                )
+            )
+
+        galaxies = [c for c in clusters if c.is_galaxy]
+        galaxy_count = len(galaxies)
+        largest_galaxy = max((g.size for g in galaxies), default=0)
+        avg_size = (
+            sum(c.size for c in clusters) / len(clusters) if clusters else 0.0
+        )
+
+        return GalaxyData(
+            clusters=clusters,
+            galaxies=galaxies,
+            galaxy_count=galaxy_count,
+            largest_galaxy=largest_galaxy,
+            average_cluster_size=round(avg_size, 2),
+        )
+
     def build_network(
         self,
         fragment_store: FragmentStore,
@@ -280,6 +421,16 @@ class EdgeStore:
             top_index = max(0, math.floor(len(masses) * 0.2) - 1)
             hub_threshold = max(1.0, masses[top_index] if top_index < len(masses) else 1.0)
 
+        # Run Leiden clustering for cluster assignments
+        galaxy_data = self.detect_galaxies(fragment_store)
+        node_cluster_map: dict[str, int] = {}
+        galaxy_centers: set[str] = set()
+        for cluster in galaxy_data.clusters:
+            for member_id in cluster.member_ids:
+                node_cluster_map[member_id] = cluster.cluster_id
+            if cluster.is_galaxy:
+                galaxy_centers.add(cluster.center_fragment)
+
         # Build nodes
         nodes: list[NetworkNode] = []
         for f in all_fragments:
@@ -299,6 +450,8 @@ class EdgeStore:
                     is_boundary=is_boundary,
                     meaning_mass=round(mass, 3),
                     is_gravity_hub=is_gravity_hub,
+                    cluster_id=node_cluster_map.get(f.id),
+                    is_galaxy_center=f.id in galaxy_centers,
                 )
             )
 
@@ -318,32 +471,9 @@ class EdgeStore:
         return NetworkData(nodes=nodes, edges=network_edges)
 
     def get_metrics(self, fragment_store: FragmentStore) -> NetworkMetrics:
-        """Compute network metrics."""
+        """Compute network metrics using Leiden clustering."""
         network = self.build_network(fragment_store)
-
-        # Simple cluster detection using connected components
-        adj: dict[str, set[str]] = {}
-        for node in network.nodes:
-            adj[node.id] = set()
-        for edge in network.edges:
-            adj.setdefault(edge.source, set()).add(edge.target)
-            adj.setdefault(edge.target, set()).add(edge.source)
-
-        visited: set[str] = set()
-        clusters = 0
-        for node_id in adj:
-            if node_id not in visited:
-                clusters += 1
-                # BFS
-                queue = [node_id]
-                while queue:
-                    current = queue.pop(0)
-                    if current in visited:
-                        continue
-                    visited.add(current)
-                    for neighbor in adj.get(current, set()):
-                        if neighbor not in visited:
-                            queue.append(neighbor)
+        galaxy_data = self.detect_galaxies(fragment_store)
 
         boundary_count = sum(1 for n in network.nodes if n.is_boundary)
         gravity_hub_count = sum(1 for n in network.nodes if n.is_gravity_hub)
@@ -351,9 +481,12 @@ class EdgeStore:
         return NetworkMetrics(
             fragments=len(network.nodes),
             edges=len(network.edges),
-            clusters=clusters,
+            clusters=len(galaxy_data.clusters),
             boundary_nodes=boundary_count,
             gravity_hubs=gravity_hub_count,
+            galaxy_count=galaxy_data.galaxy_count,
+            largest_galaxy=galaxy_data.largest_galaxy,
+            average_cluster_size=galaxy_data.average_cluster_size,
         )
 
 
