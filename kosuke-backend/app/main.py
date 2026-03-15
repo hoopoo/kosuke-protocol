@@ -16,6 +16,7 @@ from app.edge_store import EdgeStore
 from app.fluke_engine import SlowModeTracker, generate_fluke
 from app.fragment_store import FragmentStore
 from app.models import (
+    CosmosData,
     DriftAnalysis,
     DomainBalanceResult,
     EmergingSignalsResult,
@@ -37,6 +38,7 @@ from app.models import (
     SlowModeStatus,
     TopConceptsResult,
 )
+from app.cosmos_engine import analyze_cosmos, list_authors
 from app.observatory_engine import (
     get_domain_balance,
     get_emerging_signals,
@@ -95,7 +97,7 @@ async def ingest_text(ingest: FragmentIngest):
         raise HTTPException(status_code=400, detail="No fragments could be extracted from the text.")
 
     fragment_creates = [
-        FragmentCreate(text=chunk, source=ingest.source, tags=ingest.tags, domain=ingest.domain)
+        FragmentCreate(text=chunk, source=ingest.source, tags=ingest.tags, domain=ingest.domain, author=ingest.author)
         for chunk in chunks
     ]
     return fragment_store.add_fragments_bulk(fragment_creates)
@@ -445,6 +447,25 @@ async def observatory_domain_balance():
 async def observatory_emerging_signals(limit: int = 20):
     """Detect fragments with rising meaning_mass."""
     return get_emerging_signals(fragment_store, edge_store, limit=limit)
+
+
+# --- Cosmos endpoints ---
+
+
+@app.get("/cosmos", response_model=CosmosData)
+async def get_cosmos(similarity_threshold: float = 0.75):
+    """Analyze the collective cosmos across all authors.
+
+    Returns author stats, cross-cosmos edges, shared galaxies,
+    and collective gravity hubs.
+    """
+    return analyze_cosmos(fragment_store, edge_store, similarity_threshold)
+
+
+@app.get("/cosmos/authors")
+async def get_cosmos_authors():
+    """List all unique authors in the ecosystem."""
+    return {"authors": list_authors(fragment_store)}
 
 
 @app.get("/stats")

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { api, type Fragment } from "@/lib/api";
-import { Plus, Upload, Trash2, Tag, Globe } from "lucide-react";
+import { Plus, Upload, Trash2, Tag, Globe, User } from "lucide-react";
 
 const DOMAINS = [
   "philosophy", "technology", "art", "science", "urban",
@@ -18,6 +18,7 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
   const [source, setSource] = useState("");
   const [tagsInput, setTagsInput] = useState("");
   const [domain, setDomain] = useState("");
+  const [author, setAuthor] = useState("");
   const [mode, setMode] = useState<"single" | "ingest">("single");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -32,14 +33,15 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
         .map((t) => t.trim())
         .filter(Boolean);
       if (mode === "single") {
-        await api.createFragment(text, source || "manual", tags, domain || undefined);
+        await api.createFragment(text, source || "manual", tags, domain || undefined, author || undefined);
       } else {
-        await api.ingestText(text, source || "manual", tags, domain || undefined);
+        await api.ingestText(text, source || "manual", tags, domain || undefined, author || undefined);
       }
       setText("");
       setSource("");
       setTagsInput("");
       setDomain("");
+      setAuthor("");
       onRefresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to add fragment");
@@ -111,16 +113,24 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
           />
         </div>
 
-        <select
-          value={domain}
-          onChange={(e) => setDomain(e.target.value)}
-          className="w-full bg-zinc-900 border border-zinc-700 rounded-md px-3 py-1.5 text-xs text-zinc-100 focus:outline-none focus:border-zinc-500"
-        >
-          <option value="">Domain (optional - for boundary-crossing flukes)</option>
-          {DOMAINS.map((d) => (
-            <option key={d} value={d}>{d}</option>
-          ))}
-        </select>
+        <div className="flex gap-2">
+          <select
+            value={domain}
+            onChange={(e) => setDomain(e.target.value)}
+            className="flex-1 bg-zinc-900 border border-zinc-700 rounded-md px-3 py-1.5 text-xs text-zinc-100 focus:outline-none focus:border-zinc-500"
+          >
+            <option value="">Domain (optional)</option>
+            {DOMAINS.map((d) => (
+              <option key={d} value={d}>{d}</option>
+            ))}
+          </select>
+          <input
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            placeholder="Author (optional)"
+            className="flex-1 bg-zinc-900 border border-zinc-700 rounded-md px-3 py-1.5 text-xs text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-500"
+          />
+        </div>
 
         <button
           onClick={handleSubmit}
@@ -158,6 +168,12 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-xs text-zinc-600">{frag.source}</span>
+                  {frag.author && (
+                    <span className="inline-flex items-center gap-0.5 text-xs text-violet-400/80 bg-violet-500/10 border border-violet-500/20 px-1.5 py-0.5 rounded">
+                      <User size={10} />
+                      {frag.author}
+                    </span>
+                  )}
                   {frag.domain && (
                     <span className="inline-flex items-center gap-0.5 text-xs text-emerald-400/80 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">
                       <Globe size={10} />
