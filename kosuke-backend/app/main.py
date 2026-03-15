@@ -21,6 +21,7 @@ from app.models import (
     FragmentIngest,
     FlukeRequest,
     FlukeResult,
+    GalaxyData,
     NetworkData,
     NetworkMetrics,
     Reflection,
@@ -359,6 +360,21 @@ async def generate_gravity_edges(
         "new_gravity_edges": len(new_edges),
         "total_edges": edge_store.count(),
     }
+
+
+@app.post("/network/detect-galaxies", response_model=GalaxyData)
+async def detect_galaxies(
+    density_threshold: float = 0.3,
+):
+    """Detect clusters using Leiden algorithm and identify galaxies.
+
+    A galaxy is a cluster with size >= 4 and density > threshold.
+    Galaxy center = node with highest meaning_mass in the cluster.
+    """
+    return edge_store.detect_galaxies(
+        fragment_store,
+        density_threshold=density_threshold,
+    )
 
 
 @app.get("/stats")
