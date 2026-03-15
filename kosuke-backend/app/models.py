@@ -203,6 +203,151 @@ class GalaxyData(BaseModel):
     average_cluster_size: float
 
 
+class TimeSliceMetrics(BaseModel):
+    """Metrics for a single time slice."""
+
+    slice_label: str  # e.g. "2025-01", "2025-Q1", "2025"
+    start_time: str  # ISO timestamp
+    end_time: str  # ISO timestamp
+    fragment_count: int
+    edge_count: int
+    cluster_count: int
+    galaxy_count: int
+    gravity_hub_count: int
+    hub_ids: list[str] = Field(default_factory=list)
+    galaxy_centers: list[str] = Field(default_factory=list)
+    meaning_mass_map: dict[str, float] = Field(default_factory=dict)
+
+
+class DriftVector(BaseModel):
+    """Tracks movement of a hub between two time slices."""
+
+    fragment_id: str
+    fragment_text: str
+    domain: Optional[str] = None
+    mass_t1: float
+    mass_t2: float
+    mass_delta: float  # mass_t2 - mass_t1
+    was_hub_t1: bool
+    is_hub_t2: bool
+    drift_type: str  # emergence, migration, collapse, stable
+
+
+class DriftAnalysis(BaseModel):
+    """Full drift analysis across time slices."""
+
+    slices: list[TimeSliceMetrics]
+    drift_vectors: list[DriftVector]
+    emergence_count: int  # new hubs appearing
+    migration_count: int  # hubs shifting mass
+    collapse_count: int  # hubs disappearing
+    stable_count: int  # hubs remaining stable
+    slice_mode: str  # monthly, quarterly, yearly
+
+
+class TopConcept(BaseModel):
+    """A fragment ranked by meaning_mass."""
+
+    fragment_id: str
+    text: str
+    domain: Optional[str] = None
+    meaning_mass: float
+    is_gravity_hub: bool = False
+    is_galaxy_center: bool = False
+    edge_count: int = 0
+    mass_trend: float = 0.0  # change vs previous slice
+
+
+class TopConceptsResult(BaseModel):
+    """Result of top concepts ranking."""
+
+    concepts: list[TopConcept]
+    total_fragments: int
+
+
+class GalaxyWatch(BaseModel):
+    """Observatory view of a single galaxy."""
+
+    cluster_id: int
+    size: int
+    density: float
+    domain_entropy: float
+    center_fragment_id: str
+    center_fragment_text: str
+    center_domain: Optional[str] = None
+    member_domains: list[str] = Field(default_factory=list)
+    growth: int = 0  # size change vs previous slice (positive=growing)
+
+
+class GalaxyWatchResult(BaseModel):
+    """Result of galaxy watch."""
+
+    galaxies: list[GalaxyWatch]
+    total_galaxies: int
+
+
+class ReflectionImpact(BaseModel):
+    """Structural impact of a single reflection."""
+
+    reflection_id: str
+    reflection_text: str
+    timestamp: str
+    linked_fragment_count: int
+    edges_created: int  # reflection_link edges from this reflection
+    mass_boost: float  # total mass increase for linked fragments
+    clusters_touched: int  # how many clusters the linked fragments span
+    galaxies_touched: int  # how many galaxies the linked fragments belong to
+
+
+class ReflectionImpactResult(BaseModel):
+    """Result of reflection impact analysis."""
+
+    reflections: list[ReflectionImpact]
+    total_reflections: int
+    avg_edges_created: float
+    avg_mass_boost: float
+
+
+class DomainStat(BaseModel):
+    """Statistics for a single domain."""
+
+    domain: str
+    fragment_count: int
+    percentage: float
+    edge_count: int
+    avg_meaning_mass: float
+    hub_count: int
+
+
+class DomainBalanceResult(BaseModel):
+    """Result of domain balance analysis."""
+
+    domains: list[DomainStat]
+    total_fragments: int
+    underrepresented: list[str] = Field(default_factory=list)
+    dominant: list[str] = Field(default_factory=list)
+
+
+class EmergingSignal(BaseModel):
+    """A fragment with rising meaning_mass."""
+
+    fragment_id: str
+    text: str
+    domain: Optional[str] = None
+    current_mass: float
+    mass_change: float  # positive = rising
+    is_domain_crossing: bool = False
+    is_reflection_linked: bool = False
+    signal_strength: float = 0.0  # composite signal score
+
+
+class EmergingSignalsResult(BaseModel):
+    """Result of emerging signals detection."""
+
+    signals: list[EmergingSignal]
+    total_signals: int
+
+
 class ExportRequest(BaseModel):
     """Request model for exporting as markdown."""
 
