@@ -99,6 +99,42 @@ export interface GalaxyData {
   average_cluster_size: number;
 }
 
+export interface TimeSliceMetrics {
+  slice_label: string;
+  start_time: string;
+  end_time: string;
+  fragment_count: number;
+  edge_count: number;
+  cluster_count: number;
+  galaxy_count: number;
+  gravity_hub_count: number;
+  hub_ids: string[];
+  galaxy_centers: string[];
+  meaning_mass_map: Record<string, number>;
+}
+
+export interface DriftVector {
+  fragment_id: string;
+  fragment_text: string;
+  domain: string | null;
+  mass_t1: number;
+  mass_t2: number;
+  mass_delta: number;
+  was_hub_t1: boolean;
+  is_hub_t2: boolean;
+  drift_type: "emergence" | "migration" | "collapse" | "stable";
+}
+
+export interface DriftAnalysis {
+  slices: TimeSliceMetrics[];
+  drift_vectors: DriftVector[];
+  emergence_count: number;
+  migration_count: number;
+  collapse_count: number;
+  stable_count: number;
+  slice_mode: string;
+}
+
 export interface Stats {
   fragments: number;
   reflections: number;
@@ -220,6 +256,13 @@ export const api = {
   detectGalaxies: (densityThreshold = 0.3) =>
     request<GalaxyData>(
       `/network/detect-galaxies?density_threshold=${densityThreshold}`,
+      { method: "POST" }
+    ),
+
+  // Drift
+  analyzeDrift: (mode: "monthly" | "quarterly" | "yearly" = "monthly") =>
+    request<DriftAnalysis>(
+      `/network/drift?mode=${mode}`,
       { method: "POST" }
     ),
 };

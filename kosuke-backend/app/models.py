@@ -203,6 +203,48 @@ class GalaxyData(BaseModel):
     average_cluster_size: float
 
 
+class TimeSliceMetrics(BaseModel):
+    """Metrics for a single time slice."""
+
+    slice_label: str  # e.g. "2025-01", "2025-Q1", "2025"
+    start_time: str  # ISO timestamp
+    end_time: str  # ISO timestamp
+    fragment_count: int
+    edge_count: int
+    cluster_count: int
+    galaxy_count: int
+    gravity_hub_count: int
+    hub_ids: list[str] = Field(default_factory=list)
+    galaxy_centers: list[str] = Field(default_factory=list)
+    meaning_mass_map: dict[str, float] = Field(default_factory=dict)
+
+
+class DriftVector(BaseModel):
+    """Tracks movement of a hub between two time slices."""
+
+    fragment_id: str
+    fragment_text: str
+    domain: Optional[str] = None
+    mass_t1: float
+    mass_t2: float
+    mass_delta: float  # mass_t2 - mass_t1
+    was_hub_t1: bool
+    is_hub_t2: bool
+    drift_type: str  # emergence, migration, collapse, stable
+
+
+class DriftAnalysis(BaseModel):
+    """Full drift analysis across time slices."""
+
+    slices: list[TimeSliceMetrics]
+    drift_vectors: list[DriftVector]
+    emergence_count: int  # new hubs appearing
+    migration_count: int  # hubs shifting mass
+    collapse_count: int  # hubs disappearing
+    stable_count: int  # hubs remaining stable
+    slice_mode: str  # monthly, quarterly, yearly
+
+
 class ExportRequest(BaseModel):
     """Request model for exporting as markdown."""
 

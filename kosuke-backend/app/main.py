@@ -11,10 +11,12 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 
+from app.drift_engine import compute_drift
 from app.edge_store import EdgeStore
 from app.fluke_engine import SlowModeTracker, generate_fluke
 from app.fragment_store import FragmentStore
 from app.models import (
+    DriftAnalysis,
     ExportRequest,
     Fragment,
     FragmentCreate,
@@ -375,6 +377,29 @@ async def detect_galaxies(
         fragment_store,
         density_threshold=density_threshold,
     )
+
+
+@app.post("/network/drift", response_model=DriftAnalysis)
+async def analyze_drift(
+    mode: str = "monthly",
+):
+    """Analyze meaning drift across time slices.
+
+    Tracks how gravity hubs, galaxies, and meaning structures
+    evolve over time periods (monthly, quarterly, yearly).
+
+    Classifies drift types:
+    - emergence: new hubs appearing
+    - migration: hubs shifting mass significantly
+    - collapse: hubs disappearing
+    - stable: hubs maintaining position
+    """
+    if mode not in ("monthly", "quarterly", "yearly"):
+        raise HTTPException(
+            status_code=400,
+            detail="mode must be one of: monthly, quarterly, yearly",
+        )
+    return compute_drift(fragment_store, edge_store, mode=mode)
 
 
 @app.get("/stats")
