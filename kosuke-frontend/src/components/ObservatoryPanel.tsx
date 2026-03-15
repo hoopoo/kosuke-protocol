@@ -506,7 +506,7 @@ function EmergingSignalsView({ data }: { data: EmergingSignalsResult }) {
         </p>
       ) : (
         <div className="space-y-2">
-          {data.signals.map((s, i) => (
+          {data.signals.map((s) => (
             <div
               key={s.fragment_id}
               className="bg-zinc-900 border border-zinc-800 rounded-lg p-3"

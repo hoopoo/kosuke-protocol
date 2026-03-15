@@ -33,6 +33,7 @@ class FragmentCreate(BaseModel):
     source: str = "manual"
     tags: list[str] = Field(default_factory=list)
     domain: Optional[str] = None  # domain tag for boundary-crossing flukes
+    author: Optional[str] = None  # author for multi-user cosmos
 
 
 class Fragment(BaseModel):
@@ -44,6 +45,7 @@ class Fragment(BaseModel):
     timestamp: str
     tags: list[str] = Field(default_factory=list)
     domain: Optional[str] = None  # domain tag for boundary-crossing flukes
+    author: Optional[str] = None  # author for multi-user cosmos
 
 
 class FragmentIngest(BaseModel):
@@ -53,6 +55,7 @@ class FragmentIngest(BaseModel):
     source: str = "manual"
     tags: list[str] = Field(default_factory=list)
     domain: Optional[str] = None  # domain tag for boundary-crossing flukes
+    author: Optional[str] = None  # author for multi-user cosmos
     chunk_size: int = 300
     chunk_overlap: int = 50
 
@@ -156,6 +159,7 @@ class NetworkNode(BaseModel):
     id: str
     text: str
     domain: Optional[str] = None
+    author: Optional[str] = None
     type: str = "fragment"  # fragment, reflection
     is_boundary: bool = False
     meaning_mass: float = 0.0
@@ -346,6 +350,72 @@ class EmergingSignalsResult(BaseModel):
 
     signals: list[EmergingSignal]
     total_signals: int
+
+
+# --- Cosmos models ---
+
+
+class CosmosAuthor(BaseModel):
+    """An author in the collective cosmos."""
+
+    name: str
+    fragment_count: int
+    edge_count: int
+    gravity_hub_count: int = 0
+    galaxy_count: int = 0
+    avg_meaning_mass: float = 0.0
+
+
+class CrossCosmosEdge(BaseModel):
+    """An edge connecting fragments from different authors."""
+
+    fragment_a_id: str
+    fragment_a_text: str
+    fragment_a_author: str
+    fragment_b_id: str
+    fragment_b_text: str
+    fragment_b_author: str
+    similarity: float
+    relation_type: str
+
+
+class SharedGalaxy(BaseModel):
+    """A galaxy containing fragments from multiple authors."""
+
+    cluster_id: int
+    size: int
+    density: float
+    authors: list[str] = Field(default_factory=list)
+    author_counts: dict[str, int] = Field(default_factory=dict)
+    center_fragment_id: str
+    center_fragment_text: str
+    center_author: Optional[str] = None
+    domain_entropy: float = 0.0
+
+
+class CollectiveHub(BaseModel):
+    """A gravity hub computed across all authors."""
+
+    fragment_id: str
+    text: str
+    author: Optional[str] = None
+    domain: Optional[str] = None
+    meaning_mass: float
+    edge_count: int = 0
+    cross_author_edges: int = 0
+
+
+class CosmosData(BaseModel):
+    """Full collective cosmos analysis."""
+
+    authors: list[CosmosAuthor]
+    cross_cosmos_edges: list[CrossCosmosEdge]
+    shared_galaxies: list[SharedGalaxy]
+    collective_hubs: list[CollectiveHub]
+    total_fragments: int
+    total_authors: int
+    total_cross_edges: int
+    total_shared_galaxies: int
 
 
 class ExportRequest(BaseModel):

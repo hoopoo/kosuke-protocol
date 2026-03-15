@@ -7,6 +7,7 @@ export interface Fragment {
   timestamp: string;
   tags: string[];
   domain: string | null;
+  author: string | null;
 }
 
 export interface FlukeResult {
@@ -50,6 +51,7 @@ export interface NetworkNode {
   id: string;
   text: string;
   domain: string | null;
+  author: string | null;
   type: string;
   is_boundary: boolean;
   meaning_mass: number;
@@ -224,6 +226,61 @@ export interface Stats {
   edges: number;
 }
 
+// --- Cosmos types ---
+
+export interface CosmosAuthor {
+  name: string;
+  fragment_count: number;
+  edge_count: number;
+  gravity_hub_count: number;
+  galaxy_count: number;
+  avg_meaning_mass: number;
+}
+
+export interface CrossCosmosEdge {
+  fragment_a_id: string;
+  fragment_a_text: string;
+  fragment_a_author: string;
+  fragment_b_id: string;
+  fragment_b_text: string;
+  fragment_b_author: string;
+  similarity: number;
+  relation_type: string;
+}
+
+export interface SharedGalaxy {
+  cluster_id: number;
+  size: number;
+  density: number;
+  authors: string[];
+  author_counts: Record<string, number>;
+  center_fragment_id: string;
+  center_fragment_text: string;
+  center_author: string | null;
+  domain_entropy: number;
+}
+
+export interface CollectiveHub {
+  fragment_id: string;
+  text: string;
+  author: string | null;
+  domain: string | null;
+  meaning_mass: number;
+  edge_count: number;
+  cross_author_edges: number;
+}
+
+export interface CosmosData {
+  authors: CosmosAuthor[];
+  cross_cosmos_edges: CrossCosmosEdge[];
+  shared_galaxies: SharedGalaxy[];
+  collective_hubs: CollectiveHub[];
+  total_fragments: number;
+  total_authors: number;
+  total_cross_edges: number;
+  total_shared_galaxies: number;
+}
+
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_URL}${path}`, {
     headers: { "Content-Type": "application/json" },
@@ -253,15 +310,15 @@ export const api = {
   // Fragments
   getFragments: (limit = 100, offset = 0) =>
     request<Fragment[]>(`/fragments?limit=${limit}&offset=${offset}`),
-  createFragment: (text: string, source: string, tags: string[], domain?: string) =>
+  createFragment: (text: string, source: string, tags: string[], domain?: string, author?: string) =>
     request<Fragment>("/fragments", {
       method: "POST",
-      body: JSON.stringify({ text, source, tags, domain: domain || null }),
+      body: JSON.stringify({ text, source, tags, domain: domain || null, author: author || null }),
     }),
-  ingestText: (text: string, source: string, tags: string[], domain?: string) =>
+  ingestText: (text: string, source: string, tags: string[], domain?: string, author?: string) =>
     request<Fragment[]>("/fragments/ingest", {
       method: "POST",
-      body: JSON.stringify({ text, source, tags, domain: domain || null }),
+      body: JSON.stringify({ text, source, tags, domain: domain || null, author: author || null }),
     }),
   deleteFragment: (id: string) =>
     request<{ status: string }>(`/fragments/${id}`, { method: "DELETE" }),
@@ -360,4 +417,10 @@ export const api = {
     request<DomainBalanceResult>("/observatory/domain-balance"),
   getEmergingSignals: (limit = 20) =>
     request<EmergingSignalsResult>(`/observatory/emerging-signals?limit=${limit}`),
+
+  // Cosmos
+  getCosmosData: (similarityThreshold = 0.75) =>
+    request<CosmosData>(`/cosmos?similarity_threshold=${similarityThreshold}`),
+  getCosmosAuthors: () =>
+    request<{ authors: string[] }>("/cosmos/authors"),
 };

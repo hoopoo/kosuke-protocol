@@ -475,6 +475,7 @@ class EdgeStore:
                     id=f.id,
                     text=f.text,
                     domain=f.domain,
+                    author=f.author,
                     type=node_type,
                     is_boundary=is_boundary,
                     meaning_mass=round(mass, 3),

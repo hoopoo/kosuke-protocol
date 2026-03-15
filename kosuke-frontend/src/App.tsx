@@ -7,16 +7,17 @@ import { ReflectionPanel } from "@/components/ReflectionPanel";
 import { NetworkPanel } from "@/components/NetworkPanel";
 import { DriftPanel } from "@/components/DriftPanel";
 import { ObservatoryPanel } from "@/components/ObservatoryPanel";
-import { Layers, Sparkles, PenLine, Network, Clock, Telescope } from "lucide-react";
+import { CosmosPanel } from "@/components/CosmosPanel";
+import { Layers, Sparkles, PenLine, Network, Clock, Telescope, Globe } from "lucide-react";
 
-type Tab = "fragments" | "flukes" | "reflections" | "network" | "drift" | "observatory";
+type Tab = "fragments" | "flukes" | "reflections" | "network" | "drift" | "observatory" | "cosmos";
 
 function App() {
   const [tab, setTab] = useState<Tab>("fragments");
   const [fragments, setFragments] = useState<Fragment[]>([]);
   const [reflections, setReflections] = useState<Reflection[]>([]);
   const [activeFluke, setActiveFluke] = useState<FlukeResult | null>(null);
-  const [stats, setStats] = useState({ fragments: 0, reflections: 0 });
+  const [stats, setStats] = useState({ fragments: 0, reflections: 0, edges: 0 });
 
   const loadFragments = useCallback(async () => {
     try {
@@ -67,6 +68,7 @@ function App() {
     { id: "network", label: "Network", icon: <Network size={16} />, count: stats.edges || 0 },
     { id: "drift", label: "Drift", icon: <Clock size={16} />, count: 0 },
     { id: "observatory", label: "Observatory", icon: <Telescope size={16} />, count: 0 },
+    { id: "cosmos", label: "Cosmos", icon: <Globe size={16} />, count: 0 },
   ];
 
   return (
@@ -133,6 +135,7 @@ function App() {
         )}
         {tab === "drift" && <DriftPanel />}
         {tab === "observatory" && <ObservatoryPanel />}
+        {tab === "cosmos" && <CosmosPanel />}
       </main>
     </div>
   );
