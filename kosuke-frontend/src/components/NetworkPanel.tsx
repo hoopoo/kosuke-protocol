@@ -8,7 +8,7 @@ import {
   type NetworkMetrics,
   type GalaxyData,
 } from "@/lib/api";
-import { Network, RefreshCw, Compass, X, Magnet, Sparkles } from "lucide-react";
+import { Network, RefreshCw, Compass, X, Magnet, Sparkles, Orbit } from "lucide-react";
 
 // Galaxy cluster colors for visualization
 const GALAXY_COLORS = [
@@ -96,6 +96,8 @@ export function NetworkPanel({ fragmentCount }: Props) {
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [discoveryMode, setDiscoveryMode] = useState(false);
+  const [gravityMode, setGravityMode] = useState(false);
+  const graphRef = useRef<{ d3Force: (name: string, force?: unknown) => unknown } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
 
@@ -248,7 +250,10 @@ export function NetworkPanel({ fragmentCount }: Props) {
   const nodeCanvasObject = useCallback(
     (node: NodeObject, ctx: CanvasRenderingContext2D, globalScale: number) => {
       const gNode = node as GraphNode;
-      const size = Math.max(3, 2 + (gNode.degree || 0) * 0.8);
+      // Node size based on meaning_mass (primary) + degree (secondary)
+      const massSize = gNode.meaning_mass * 12;
+      const degreeSize = (gNode.degree || 0) * 0.4;
+      const size = Math.max(3, 2 + massSize + degreeSize);
       const x = node.x || 0;
       const y = node.y || 0;
 
@@ -432,6 +437,43 @@ export function NetworkPanel({ fragmentCount }: Props) {
             {detectingGalaxies ? "Detecting..." : showGalaxies ? "Galaxies ✦" : "Galaxies"}
           </button>
           <button
+            onClick={async () => {
+              const newMode = !gravityMode;
+              setGravityMode(newMode);
+              // Apply gravity mode force: pull high-mass nodes toward center
+              if (graphRef.current) {
+                const fg = graphRef.current;
+                if (newMode) {
+                  // Enable gravity mode: add radial force based on meaning_mass
+                  const d3 = await import("d3-force");
+                  fg.d3Force(
+                    "gravityCenter",
+                    d3.forceRadial(
+                      (node: NodeObject) => {
+                        const gn = node as GraphNode;
+                        // High mass nodes pulled to center, low mass pushed out
+                        return Math.max(20, 300 - gn.meaning_mass * 600);
+                      },
+                      dimensions.width / 2,
+                      dimensions.height / 2
+                    ).strength(0.3)
+                  );
+                } else {
+                  // Disable gravity mode
+                  fg.d3Force("gravityCenter", null);
+                }
+              }
+            }}
+            className={`flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded transition-colors ${
+              gravityMode
+                ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/30"
+                : "bg-zinc-800 hover:bg-zinc-700 text-cyan-400"
+            }`}
+          >
+            <Orbit size={14} />
+            {gravityMode ? "Gravity On" : "Gravity Mode"}
+          </button>
+          <button
             onClick={() => setDiscoveryMode(!discoveryMode)}
             className={`flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded transition-colors ${
               discoveryMode
@@ -489,6 +531,7 @@ export function NetworkPanel({ fragmentCount }: Props) {
         <div ref={containerRef} className="flex-1 bg-zinc-950">
           {hasData ? (
             <ForceGraph2D
+              ref={graphRef as React.MutableRefObject<never>}
               graphData={graphData}
               width={dimensions.width - (selectedNode ? 320 : 0)}
               height={dimensions.height}

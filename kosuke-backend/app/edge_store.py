@@ -189,8 +189,25 @@ class EdgeStore:
         fragment_ids = [f.id for f in all_fragments]
         embeddings = fragment_store.get_embeddings(fragment_ids)
 
+        # Build galaxy membership scores
+        fragment_id_set = set(fragment_ids)
+        edge_dicts = [
+            e for e in self.edges
+            if str(e["fragment_a"]) in fragment_id_set
+            and str(e["fragment_b"]) in fragment_id_set
+        ]
+        galaxy_data = self.detect_galaxies(fragment_store)
+        galaxy_score_map: dict[str, float] = {}
+        for cluster in galaxy_data.clusters:
+            if cluster.is_galaxy:
+                score = min(1.0, (cluster.size / 10.0) + cluster.density)
+                for member_id in cluster.member_ids:
+                    galaxy_score_map[member_id] = max(
+                        galaxy_score_map.get(member_id, 0.0), score
+                    )
+
         # Compute meaning mass for each fragment
-        mass_map = _compute_mass_map(all_fragments, self.edges)
+        mass_map = _compute_mass_map(all_fragments, edge_dicts, galaxy_score_map)
 
         new_edges: list[FragmentEdge] = []
 
@@ -412,17 +429,29 @@ class EdgeStore:
             e for e in self.edges
             if str(e["fragment_a"]) in fragment_ids and str(e["fragment_b"]) in fragment_ids
         ]
-        mass_map = _compute_mass_map(all_fragments, edge_dicts)
 
-        # Determine gravity hub threshold (top 20% by mass, min mass > 1.0)
+        # Run Leiden clustering for cluster assignments and galaxy scores
+        galaxy_data = self.detect_galaxies(fragment_store)
+
+        # Build galaxy membership score map
+        galaxy_score_map: dict[str, float] = {}
+        for cluster in galaxy_data.clusters:
+            if cluster.is_galaxy:
+                # Galaxy members get a score based on cluster size and density
+                score = min(1.0, (cluster.size / 10.0) + cluster.density)
+                for member_id in cluster.member_ids:
+                    galaxy_score_map[member_id] = max(
+                        galaxy_score_map.get(member_id, 0.0), score
+                    )
+
+        mass_map = _compute_mass_map(all_fragments, edge_dicts, galaxy_score_map)
+
+        # Determine gravity hub threshold (top 20% by mass, min mass > 0.3)
         masses = sorted(mass_map.values(), reverse=True)
-        hub_threshold = 1.0
+        hub_threshold = 0.3
         if masses:
             top_index = max(0, math.floor(len(masses) * 0.2) - 1)
-            hub_threshold = max(1.0, masses[top_index] if top_index < len(masses) else 1.0)
-
-        # Run Leiden clustering for cluster assignments
-        galaxy_data = self.detect_galaxies(fragment_store)
+            hub_threshold = max(0.3, masses[top_index] if top_index < len(masses) else 0.3)
         node_cluster_map: dict[str, int] = {}
         galaxy_centers: set[str] = set()
         for cluster in galaxy_data.clusters:
@@ -439,7 +468,7 @@ class EdgeStore:
 
             node_type = "reflection" if f.source == "reflection" else "fragment"
             mass = mass_map.get(f.id, 0.0)
-            is_gravity_hub = mass >= hub_threshold and mass > 1.0
+            is_gravity_hub = mass >= hub_threshold and mass > 0.3
 
             nodes.append(
                 NetworkNode(
@@ -505,15 +534,24 @@ def _cosine_similarity(a: list[float], b: list[float]) -> float:
 def _compute_mass_map(
     fragments: list[Fragment],
     edge_dicts: list[dict[str, object]],
+    galaxy_score_map: dict[str, float] | None = None,
 ) -> dict[str, float]:
     """Compute meaning mass for each fragment.
 
-    mass = degree_centrality + reflection_count + domain_entropy
+    Weighted formula:
+        meaning_mass = 0.35 * degree_centrality
+                     + 0.25 * reflection_count
+                     + 0.20 * domain_entropy
+                     + 0.20 * galaxy_membership_score
 
-    - degree_centrality: number of edges connected to the fragment (normalized)
-    - reflection_count: number of reflection_link edges connected
-    - domain_entropy: Shannon entropy of connected domains (diversity measure)
+    - degree_centrality: normalized degree (0-1)
+    - reflection_count: normalized reflection link count (0-1, capped at 5)
+    - domain_entropy: Shannon entropy of connected domains
+    - galaxy_membership_score: score based on galaxy membership (0-1)
     """
+    if galaxy_score_map is None:
+        galaxy_score_map = {}
+
     fragment_ids = {f.id for f in fragments}
 
     # Degree centrality
@@ -557,23 +595,32 @@ def _compute_mass_map(
             if domain_a:
                 connected_domains[fb].append(domain_a)
 
-    # Compute mass
+    # Compute mass with weighted formula
     mass_map: dict[str, float] = {}
     for f in fragments:
-        # Normalized degree centrality (0-1 range, scaled up)
+        # Normalized degree centrality (0-1)
         deg = degree.get(f.id, 0) / max_degree if max_degree > 0 else 0.0
 
-        # Reflection count (direct count, capped contribution)
+        # Reflection count (normalized 0-1, capped at 5)
         ref_count = min(reflection_count.get(f.id, 0), 5) / 5.0
 
-        # Domain entropy
+        # Domain entropy (normalize by max possible ~3.9 for 15 domains)
         domains = connected_domains.get(f.id, [])
-        # Include own domain
         if f.domain:
             domains = domains + [f.domain]
         entropy = _shannon_entropy(domains)
+        normalized_entropy = min(1.0, entropy / 3.9) if entropy > 0 else 0.0
 
-        mass = deg + ref_count + entropy
+        # Galaxy membership score (0-1)
+        galaxy_score = galaxy_score_map.get(f.id, 0.0)
+
+        # Weighted formula
+        mass = (
+            0.35 * deg
+            + 0.25 * ref_count
+            + 0.20 * normalized_entropy
+            + 0.20 * galaxy_score
+        )
         mass_map[f.id] = mass
 
     return mass_map
