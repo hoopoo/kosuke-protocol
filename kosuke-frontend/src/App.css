@@ -1,0 +1,11 @@
+/* Kosuke Protocol - minimal dark theme */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 100%;
+  text-align: left;
+}

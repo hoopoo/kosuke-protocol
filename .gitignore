@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+
+# ChromaDB data
+chroma_data/
+
+# Environment files
+.env
+
+# Reflections data
+reflections.json
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Poetry
+poetry.lock
