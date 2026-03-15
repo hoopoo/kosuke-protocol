@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { api, type Fragment } from "@/lib/api";
-import { Plus, Upload, Trash2, Tag } from "lucide-react";
+import { Plus, Upload, Trash2, Tag, Globe } from "lucide-react";
+
+const DOMAINS = [
+  "philosophy", "technology", "art", "science", "urban",
+  "body", "nature", "politics", "economics", "culture",
+  "psychology", "literature", "music", "spirituality", "mathematics",
+];
 
 interface Props {
   fragments: Fragment[];
@@ -11,6 +17,7 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
   const [text, setText] = useState("");
   const [source, setSource] = useState("");
   const [tagsInput, setTagsInput] = useState("");
+  const [domain, setDomain] = useState("");
   const [mode, setMode] = useState<"single" | "ingest">("single");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -25,13 +32,14 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
         .map((t) => t.trim())
         .filter(Boolean);
       if (mode === "single") {
-        await api.createFragment(text, source || "manual", tags);
+        await api.createFragment(text, source || "manual", tags, domain || undefined);
       } else {
-        await api.ingestText(text, source || "manual", tags);
+        await api.ingestText(text, source || "manual", tags, domain || undefined);
       }
       setText("");
       setSource("");
       setTagsInput("");
+      setDomain("");
       onRefresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to add fragment");
@@ -103,6 +111,17 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
           />
         </div>
 
+        <select
+          value={domain}
+          onChange={(e) => setDomain(e.target.value)}
+          className="w-full bg-zinc-900 border border-zinc-700 rounded-md px-3 py-1.5 text-xs text-zinc-100 focus:outline-none focus:border-zinc-500"
+        >
+          <option value="">Domain (optional - for boundary-crossing flukes)</option>
+          {DOMAINS.map((d) => (
+            <option key={d} value={d}>{d}</option>
+          ))}
+        </select>
+
         <button
           onClick={handleSubmit}
           disabled={loading || !text.trim()}
@@ -137,8 +156,14 @@ export function FragmentPanel({ fragments, onRefresh }: Props) {
                 {frag.text}
               </p>
               <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-xs text-zinc-600">{frag.source}</span>
+                  {frag.domain && (
+                    <span className="inline-flex items-center gap-0.5 text-xs text-emerald-400/80 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">
+                      <Globe size={10} />
+                      {frag.domain}
+                    </span>
+                  )}
                   {frag.tags.filter(Boolean).map((tag) => (
                     <span
                       key={tag}

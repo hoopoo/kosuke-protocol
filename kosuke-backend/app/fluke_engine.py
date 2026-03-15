@@ -3,15 +3,22 @@
 Generates unexpected but meaningful conceptual connections between fragments.
 
 FlukeScore = 0.35 * Distance + 0.30 * CoreResonance + 0.20 * Tension + 0.15 * ContextFit
+
+Upgrade: Domain-crossing prioritization, serendipity (20% random pairing),
+and slow mode for deeper reflection.
 """
 
 import math
 import os
+import random
 from typing import Optional
 
 from app.fragment_store import FragmentStore
-from app.models import Fragment, FlukeResult
+from app.models import Fragment, FlukeResult, SlowModeConfig, SlowModeStatus
 from app.sampling_engine import SamplingEngine
+
+# Serendipity rate: 20% of flukes use random pairing
+SERENDIPITY_RATE = 0.20
 
 # Core concepts that define the Kosuke Protocol's thematic universe
 CORE_TAGS = [
@@ -152,6 +159,23 @@ def _compute_context_fit(
     return min(1.0, total_overlap / max_possible)
 
 
+def _compute_domain_crossing(frag_a: Fragment, frag_b: Fragment) -> float:
+    """Compute domain crossing bonus.
+
+    Returns 1.0 if fragments are from different domains,
+    0.5 if one has a domain and the other doesn't,
+    0.0 if same domain or neither has a domain.
+    """
+    domain_a = frag_a.domain
+    domain_b = frag_b.domain
+
+    if domain_a and domain_b:
+        return 1.0 if domain_a != domain_b else 0.0
+    if domain_a or domain_b:
+        return 0.5  # one has domain, one doesn't
+    return 0.0  # neither has a domain
+
+
 def compute_fluke_score(
     store: FragmentStore,
     frag_a: Fragment,
@@ -161,11 +185,13 @@ def compute_fluke_score(
     """Compute the full fluke score for a fragment pair.
 
     FlukeScore = 0.35 * Distance + 0.30 * CoreResonance + 0.20 * Tension + 0.15 * ContextFit
+    Domain crossing is tracked separately as a bonus indicator.
     """
     distance = _compute_distance(store, frag_a, frag_b)
     core_resonance = _compute_core_resonance(frag_a, frag_b)
     tension = _compute_tension_score(frag_a, frag_b)
     context_fit = _compute_context_fit(frag_a, frag_b, query)
+    domain_crossing = _compute_domain_crossing(frag_a, frag_b)
 
     fluke_score = (
         0.35 * distance
@@ -179,6 +205,7 @@ def compute_fluke_score(
         "core_resonance": round(core_resonance, 4),
         "tension_score": round(tension, 4),
         "context_fit": round(context_fit, 4),
+        "domain_crossing": round(domain_crossing, 4),
         "fluke_score": round(fluke_score, 4),
     }
 
@@ -297,6 +324,48 @@ def _heuristic_generate(frag_a: Fragment, frag_b: Fragment) -> tuple[str, str]:
     return tension, prompt
 
 
+class SlowModeTracker:
+    """Tracks fluke generation per session for slow mode."""
+
+    def __init__(self, config: SlowModeConfig | None = None) -> None:
+        self.config = config or SlowModeConfig()
+        self._session_counts: dict[str, int] = {}
+
+    def can_generate(self, session_id: str) -> bool:
+        """Check if the session can generate more flukes."""
+        if not self.config.enabled:
+            return True
+        count = self._session_counts.get(session_id, 0)
+        return count < self.config.max_flukes_per_session
+
+    def record_generation(self, session_id: str) -> None:
+        """Record a fluke generation for the session."""
+        self._session_counts[session_id] = self._session_counts.get(session_id, 0) + 1
+
+    def get_status(self, session_id: str) -> SlowModeStatus:
+        """Get the slow mode status for a session."""
+        generated = self._session_counts.get(session_id, 0)
+        remaining = max(0, self.config.max_flukes_per_session - generated)
+        cooldown = remaining == 0 and self.config.enabled
+
+        return SlowModeStatus(
+            enabled=self.config.enabled,
+            flukes_remaining=remaining,
+            flukes_generated=generated,
+            max_flukes=self.config.max_flukes_per_session,
+            cooldown_active=cooldown,
+            message=self.config.cooldown_message if cooldown else None,
+        )
+
+    def reset_session(self, session_id: str) -> None:
+        """Reset the fluke count for a session."""
+        self._session_counts.pop(session_id, None)
+
+    def update_config(self, config: SlowModeConfig) -> None:
+        """Update the slow mode configuration."""
+        self.config = config
+
+
 async def generate_fluke(
     store: FragmentStore,
     sampling_engine: SamplingEngine,
@@ -305,16 +374,32 @@ async def generate_fluke(
 ) -> FlukeResult | None:
     """Generate a single fluke - the core operation of Kosuke Protocol.
 
-    1. Sample candidate fragments
-    2. Find the most distant pair
-    3. Compute fluke score
-    4. Generate tension and reflection prompt
+    Pairing strategy:
+    - 20% serendipity: completely random pair (encourages unexpected connections)
+    - 80% domain-crossing: prioritize pairs from different domains,
+      falling back to distant pair sampling if domains aren't available
     """
     if store.count() < 2:
         return None
 
-    # Get candidate pairs
-    pair = sampling_engine.sample_distant_pair(n_candidates)
+    # Determine generation method
+    roll = random.random()
+    generation_method = "standard"
+
+    if roll < SERENDIPITY_RATE:
+        # Serendipity: random pair
+        generation_method = "serendipity"
+        pair = sampling_engine.sample_random_pair()
+    else:
+        # Domain-crossing: prioritize cross-domain pairs
+        generation_method = "domain_cross"
+        pair = sampling_engine.sample_domain_crossing_pair(n_candidates)
+
+    # Fallback to distant pair if needed
+    if not pair:
+        generation_method = "standard"
+        pair = sampling_engine.sample_distant_pair(n_candidates)
+
     if not pair:
         return None
 
@@ -333,7 +418,9 @@ async def generate_fluke(
         core_resonance=scores["core_resonance"],
         tension_score=scores["tension_score"],
         context_fit=scores["context_fit"],
+        domain_crossing=scores["domain_crossing"],
         fluke_score=scores["fluke_score"],
         tension=tension,
         reflection_prompt=reflection_prompt,
+        generation_method=generation_method,
     )
