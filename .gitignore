@@ -20,6 +20,10 @@ chroma_data/
 # Reflections data
 reflections.json
 
+# Edge and weather data
+edges.json
+weather_snapshot.json
+
 # Node
 node_modules/
 dist/
