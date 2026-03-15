@@ -7,7 +7,7 @@ import {
   type NetworkEdge,
   type NetworkMetrics,
 } from "@/lib/api";
-import { Network, RefreshCw, Compass, X } from "lucide-react";
+import { Network, RefreshCw, Compass, X, Magnet } from "lucide-react";
 
 // Domain → color mapping
 const DOMAIN_COLORS: Record<string, string> = {
@@ -39,6 +39,7 @@ const EDGE_STYLES: Record<
   semantic_similarity: { color: "#52525b", dash: null, width: 0.5 }, // thin gray
   reflection_link: { color: "#e4e4e7", dash: [4, 4], width: 1 }, // dotted white
   domain_crossing: { color: "#a855f7", dash: null, width: 1.5 }, // bright purple
+  gravity: { color: "#22d3ee", dash: null, width: 1.5 }, // cyan glow
 };
 
 const DEFAULT_EDGE_STYLE = { color: "#3f3f46", dash: null, width: 0.5 };
@@ -49,6 +50,8 @@ interface GraphNode extends NodeObject {
   domain: string | null;
   type: string;
   is_boundary: boolean;
+  meaning_mass: number;
+  is_gravity_hub: boolean;
   degree: number;
 }
 
@@ -69,6 +72,7 @@ export function NetworkPanel({ fragmentCount }: Props) {
   const [metrics, setMetrics] = useState<NetworkMetrics | null>(null);
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
+  const [generatingGravity, setGeneratingGravity] = useState(false);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [discoveryMode, setDiscoveryMode] = useState(false);
@@ -125,6 +129,18 @@ export function NetworkPanel({ fragmentCount }: Props) {
     }
   };
 
+  const handleGenerateGravity = async () => {
+    setGeneratingGravity(true);
+    try {
+      await api.generateGravityEdges();
+      await loadNetwork();
+    } catch {
+      /* ignore */
+    } finally {
+      setGeneratingGravity(false);
+    }
+  };
+
   // Compute degree per node for sizing
   const degreeMap = useMemo(() => {
     const map: Record<string, number> = {};
@@ -143,6 +159,8 @@ export function NetworkPanel({ fragmentCount }: Props) {
       domain: n.domain,
       type: n.type,
       is_boundary: n.is_boundary,
+      meaning_mass: n.meaning_mass,
+      is_gravity_hub: n.is_gravity_hub,
       degree: degreeMap[n.id] || 0,
     }));
 
@@ -164,6 +182,8 @@ export function NetworkPanel({ fragmentCount }: Props) {
     for (const node of graphData.nodes) {
       // Boundary fragments
       if (node.is_boundary) interesting.add(node.id);
+      // Gravity hubs
+      if (node.is_gravity_hub) interesting.add(node.id);
       // High degree nodes (top 20%)
       const degrees = graphData.nodes.map((n) => n.degree);
       const threshold = degrees.sort((a, b) => b - a)[
@@ -196,6 +216,15 @@ export function NetworkPanel({ fragmentCount }: Props) {
         ctx.arc(x, y, size + 4, 0, 2 * Math.PI);
         ctx.fillStyle = "rgba(245, 158, 11, 0.15)";
         ctx.fill();
+      }
+
+      // Gravity hub: cyan pulsing ring
+      if (gNode.is_gravity_hub) {
+        ctx.beginPath();
+        ctx.arc(x, y, size + 3, 0, 2 * Math.PI);
+        ctx.strokeStyle = "#22d3ee";
+        ctx.lineWidth = 2 / globalScale;
+        ctx.stroke();
       }
 
       // Boundary fragment: gold ring
@@ -299,6 +328,14 @@ export function NetworkPanel({ fragmentCount }: Props) {
             {generating ? "Scanning..." : "Discover Edges"}
           </button>
           <button
+            onClick={handleGenerateGravity}
+            disabled={generatingGravity || fragmentCount < 2}
+            className="flex items-center gap-1.5 text-xs bg-zinc-800 hover:bg-zinc-700 text-cyan-400 px-2.5 py-1.5 rounded transition-colors disabled:opacity-50"
+          >
+            <Magnet size={14} className={generatingGravity ? "animate-spin" : ""} />
+            {generatingGravity ? "Computing..." : "Gravity"}
+          </button>
+          <button
             onClick={() => setDiscoveryMode(!discoveryMode)}
             className={`flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded transition-colors ${
               discoveryMode
@@ -326,6 +363,10 @@ export function NetworkPanel({ fragmentCount }: Props) {
             <span>
               <span className="text-amber-400">{metrics.boundary_nodes}</span>{" "}
               boundary
+            </span>
+            <span>
+              <span className="text-cyan-400">{metrics.gravity_hubs}</span>{" "}
+              gravity hubs
             </span>
           </div>
         )}
@@ -392,11 +433,19 @@ export function NetworkPanel({ fragmentCount }: Props) {
                 <div className="w-6 h-0.5 bg-purple-500" />
                 <span className="text-zinc-500">domain cross</span>
               </div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-0.5 bg-cyan-400" />
+                <span className="text-zinc-500">gravity</span>
+              </div>
             </div>
             <p className="text-zinc-400 font-medium mt-2">Nodes</p>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full border-2 border-yellow-500 bg-transparent" />
               <span className="text-zinc-500">boundary (3+ domains)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full border-2 border-cyan-400 bg-transparent" />
+              <span className="text-zinc-500">gravity hub</span>
             </div>
           </div>
         )}
@@ -455,6 +504,20 @@ export function NetworkPanel({ fragmentCount }: Props) {
                     {selectedNode.degree}
                   </span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-zinc-500">Meaning Mass:</span>
+                  <span className="text-xs text-zinc-400">
+                    {selectedNode.meaning_mass.toFixed(3)}
+                  </span>
+                </div>
+                {selectedNode.is_gravity_hub && (
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-cyan-400" />
+                    <span className="text-xs text-cyan-400">
+                      Gravity Hub
+                    </span>
+                  </div>
+                )}
                 {selectedNode.is_boundary && (
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-yellow-500" />
