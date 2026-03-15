@@ -146,6 +146,8 @@ class NetworkNode(BaseModel):
     domain: Optional[str] = None
     type: str = "fragment"  # fragment, reflection
     is_boundary: bool = False
+    meaning_mass: float = 0.0
+    is_gravity_hub: bool = False
 
 
 class NetworkEdge(BaseModel):
@@ -171,6 +173,7 @@ class NetworkMetrics(BaseModel):
     edges: int
     clusters: int
     boundary_nodes: int
+    gravity_hubs: int = 0
 
 
 class ExportRequest(BaseModel):

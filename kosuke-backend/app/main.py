@@ -340,6 +340,27 @@ async def generate_semantic_edges(threshold: float = 0.82):
     }
 
 
+@app.post("/network/generate-gravity")
+async def generate_gravity_edges(
+    threshold: float = 0.5,
+    epsilon: float = 0.01,
+):
+    """Generate gravity edges between fragments based on meaning mass.
+
+    Gravity formula: gravity(A,B) = (mass_A * mass_B) / (distance^2 + epsilon)
+    Fragments with high meaning mass attract each other across semantic space.
+    """
+    new_edges = edge_store.generate_gravity_edges(
+        fragment_store,
+        gravity_threshold=threshold,
+        epsilon=epsilon,
+    )
+    return {
+        "new_gravity_edges": len(new_edges),
+        "total_edges": edge_store.count(),
+    }
+
+
 @app.get("/stats")
 async def get_stats():
     """Get ecosystem statistics."""

@@ -52,6 +52,8 @@ export interface NetworkNode {
   domain: string | null;
   type: string;
   is_boundary: boolean;
+  meaning_mass: number;
+  is_gravity_hub: boolean;
 }
 
 export interface NetworkEdge {
@@ -71,6 +73,7 @@ export interface NetworkMetrics {
   edges: number;
   clusters: number;
   boundary_nodes: number;
+  gravity_hubs: number;
 }
 
 export interface Stats {
@@ -184,6 +187,11 @@ export const api = {
   generateSemanticEdges: (threshold = 0.82) =>
     request<{ new_edges_created: number; total_edges: number }>(
       `/network/generate-edges?threshold=${threshold}`,
+      { method: "POST" }
+    ),
+  generateGravityEdges: (threshold = 0.5, epsilon = 0.01) =>
+    request<{ new_gravity_edges: number; total_edges: number }>(
+      `/network/generate-gravity?threshold=${threshold}&epsilon=${epsilon}`,
       { method: "POST" }
     ),
 };
