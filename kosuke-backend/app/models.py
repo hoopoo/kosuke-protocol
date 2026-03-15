@@ -418,6 +418,40 @@ class CosmosData(BaseModel):
     total_shared_galaxies: int
 
 
+# --- Weather models ---
+
+
+class WeatherSnapshot(BaseModel):
+    """A snapshot of network state for weather comparison."""
+
+    timestamp: str
+    total_edges: int
+    total_fragments: int
+    cluster_count: int
+    hub_ids: list[str] = Field(default_factory=list)
+    galaxy_ids: list[str] = Field(default_factory=list)
+    galaxy_member_ids: list[str] = Field(default_factory=list)
+
+
+class MeaningWeather(BaseModel):
+    """The current meaning weather state."""
+
+    weather: str  # calm, breeze, active, storm, turbulence
+    volatility: float  # 0.0 - 1.0
+    new_edges: int
+    new_edge_rate: float  # normalized 0-1
+    cluster_shift: float  # 0-1
+    gravity_change: float  # 0-1
+    galaxy_shift: float  # 0-1
+    total_edges: int
+    total_fragments: int
+    total_clusters: int
+    total_hubs: int
+    total_galaxies: int
+    window_hours: float = 24.0
+    snapshot_exists: bool = False  # whether a previous snapshot was used
+
+
 class ExportRequest(BaseModel):
     """Request model for exporting as markdown."""
 
