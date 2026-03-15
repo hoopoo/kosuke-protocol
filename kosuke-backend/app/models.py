@@ -127,6 +127,52 @@ class SlowModeStatus(BaseModel):
     message: Optional[str] = None
 
 
+class FragmentEdge(BaseModel):
+    """An edge between two fragments in the network."""
+
+    id: str
+    fragment_a: str  # fragment ID
+    fragment_b: str  # fragment ID
+    relation_type: str  # fluke, semantic_similarity, reflection_link, domain_crossing
+    weight: float
+    created_at: str
+
+
+class NetworkNode(BaseModel):
+    """A node in the fragment network."""
+
+    id: str
+    text: str
+    domain: Optional[str] = None
+    type: str = "fragment"  # fragment, reflection
+    is_boundary: bool = False
+
+
+class NetworkEdge(BaseModel):
+    """An edge in the fragment network for visualization."""
+
+    source: str
+    target: str
+    weight: float
+    relation: str
+
+
+class NetworkData(BaseModel):
+    """Full network data for visualization."""
+
+    nodes: list[NetworkNode]
+    edges: list[NetworkEdge]
+
+
+class NetworkMetrics(BaseModel):
+    """Metrics about the fragment network."""
+
+    fragments: int
+    edges: int
+    clusters: int
+    boundary_nodes: int
+
+
 class ExportRequest(BaseModel):
     """Request model for exporting as markdown."""
 
