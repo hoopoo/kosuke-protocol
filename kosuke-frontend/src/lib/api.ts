@@ -135,6 +135,89 @@ export interface DriftAnalysis {
   slice_mode: string;
 }
 
+export interface TopConcept {
+  fragment_id: string;
+  text: string;
+  domain: string | null;
+  meaning_mass: number;
+  is_gravity_hub: boolean;
+  is_galaxy_center: boolean;
+  edge_count: number;
+  mass_trend: number;
+}
+
+export interface TopConceptsResult {
+  concepts: TopConcept[];
+  total_fragments: number;
+}
+
+export interface GalaxyWatch {
+  cluster_id: number;
+  size: number;
+  density: number;
+  domain_entropy: number;
+  center_fragment_id: string;
+  center_fragment_text: string;
+  center_domain: string | null;
+  member_domains: string[];
+  growth: number;
+}
+
+export interface GalaxyWatchResult {
+  galaxies: GalaxyWatch[];
+  total_galaxies: number;
+}
+
+export interface ReflectionImpact {
+  reflection_id: string;
+  reflection_text: string;
+  timestamp: string;
+  linked_fragment_count: number;
+  edges_created: number;
+  mass_boost: number;
+  clusters_touched: number;
+  galaxies_touched: number;
+}
+
+export interface ReflectionImpactResult {
+  reflections: ReflectionImpact[];
+  total_reflections: number;
+  avg_edges_created: number;
+  avg_mass_boost: number;
+}
+
+export interface DomainStat {
+  domain: string;
+  fragment_count: number;
+  percentage: number;
+  edge_count: number;
+  avg_meaning_mass: number;
+  hub_count: number;
+}
+
+export interface DomainBalanceResult {
+  domains: DomainStat[];
+  total_fragments: number;
+  underrepresented: string[];
+  dominant: string[];
+}
+
+export interface EmergingSignal {
+  fragment_id: string;
+  text: string;
+  domain: string | null;
+  current_mass: number;
+  mass_change: number;
+  is_domain_crossing: boolean;
+  is_reflection_linked: boolean;
+  signal_strength: number;
+}
+
+export interface EmergingSignalsResult {
+  signals: EmergingSignal[];
+  total_signals: number;
+}
+
 export interface Stats {
   fragments: number;
   reflections: number;
@@ -265,4 +348,16 @@ export const api = {
       `/network/drift?mode=${mode}`,
       { method: "POST" }
     ),
+
+  // Observatory
+  getTopConcepts: (limit = 20) =>
+    request<TopConceptsResult>(`/observatory/top-concepts?limit=${limit}`),
+  getGalaxyWatch: () =>
+    request<GalaxyWatchResult>("/observatory/galaxies"),
+  getReflectionImpact: () =>
+    request<ReflectionImpactResult>("/observatory/reflection-impact"),
+  getDomainBalance: () =>
+    request<DomainBalanceResult>("/observatory/domain-balance"),
+  getEmergingSignals: (limit = 20) =>
+    request<EmergingSignalsResult>(`/observatory/emerging-signals?limit=${limit}`),
 };

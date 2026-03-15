@@ -17,6 +17,8 @@ from app.fluke_engine import SlowModeTracker, generate_fluke
 from app.fragment_store import FragmentStore
 from app.models import (
     DriftAnalysis,
+    DomainBalanceResult,
+    EmergingSignalsResult,
     ExportRequest,
     Fragment,
     FragmentCreate,
@@ -24,13 +26,23 @@ from app.models import (
     FlukeRequest,
     FlukeResult,
     GalaxyData,
+    GalaxyWatchResult,
     NetworkData,
     NetworkMetrics,
     Reflection,
     ReflectionCreate,
+    ReflectionImpactResult,
     SampleRequest,
     SlowModeConfig,
     SlowModeStatus,
+    TopConceptsResult,
+)
+from app.observatory_engine import (
+    get_domain_balance,
+    get_emerging_signals,
+    get_galaxy_watch,
+    get_reflection_impact,
+    get_top_concepts,
 )
 from app.reflection_store import ReflectionStore
 from app.sampling_engine import SamplingEngine
@@ -400,6 +412,39 @@ async def analyze_drift(
             detail="mode must be one of: monthly, quarterly, yearly",
         )
     return compute_drift(fragment_store, edge_store, mode=mode)
+
+
+# --- Observatory endpoints ---
+
+
+@app.get("/observatory/top-concepts", response_model=TopConceptsResult)
+async def observatory_top_concepts(limit: int = 20):
+    """Rank fragments by meaning_mass and show trends over time."""
+    return get_top_concepts(fragment_store, edge_store, limit=limit)
+
+
+@app.get("/observatory/galaxies", response_model=GalaxyWatchResult)
+async def observatory_galaxies():
+    """List detected galaxies with size, density, center, and growth."""
+    return get_galaxy_watch(fragment_store, edge_store)
+
+
+@app.get("/observatory/reflection-impact", response_model=ReflectionImpactResult)
+async def observatory_reflection_impact():
+    """Measure structural impact of each reflection."""
+    return get_reflection_impact(fragment_store, edge_store, reflection_store)
+
+
+@app.get("/observatory/domain-balance", response_model=DomainBalanceResult)
+async def observatory_domain_balance():
+    """Visualize domain distribution and highlight imbalances."""
+    return get_domain_balance(fragment_store, edge_store)
+
+
+@app.get("/observatory/emerging-signals", response_model=EmergingSignalsResult)
+async def observatory_emerging_signals(limit: int = 20):
+    """Detect fragments with rising meaning_mass."""
+    return get_emerging_signals(fragment_store, edge_store, limit=limit)
 
 
 @app.get("/stats")
