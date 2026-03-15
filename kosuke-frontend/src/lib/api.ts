@@ -270,6 +270,23 @@ export interface CollectiveHub {
   cross_author_edges: number;
 }
 
+export interface MeaningWeather {
+  weather: "calm" | "breeze" | "active" | "storm" | "turbulence";
+  volatility: number;
+  new_edges: number;
+  new_edge_rate: number;
+  cluster_shift: number;
+  gravity_change: number;
+  galaxy_shift: number;
+  total_edges: number;
+  total_fragments: number;
+  total_clusters: number;
+  total_hubs: number;
+  total_galaxies: number;
+  window_hours: number;
+  snapshot_exists: boolean;
+}
+
 export interface CosmosData {
   authors: CosmosAuthor[];
   cross_cosmos_edges: CrossCosmosEdge[];
@@ -423,4 +440,8 @@ export const api = {
     request<CosmosData>(`/cosmos?similarity_threshold=${similarityThreshold}`),
   getCosmosAuthors: () =>
     request<{ authors: string[] }>("/cosmos/authors"),
+
+  // Weather
+  getMeaningWeather: (windowHours = 24) =>
+    request<MeaningWeather>(`/meaning-weather?window_hours=${windowHours}`),
 };

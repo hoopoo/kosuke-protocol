@@ -28,6 +28,7 @@ from app.models import (
     FlukeResult,
     GalaxyData,
     GalaxyWatchResult,
+    MeaningWeather,
     NetworkData,
     NetworkMetrics,
     Reflection,
@@ -466,6 +467,29 @@ async def get_cosmos(similarity_threshold: float = 0.75):
 async def get_cosmos_authors():
     """List all unique authors in the ecosystem."""
     return {"authors": list_authors(fragment_store)}
+
+
+# --- Weather endpoints ---
+
+
+@app.get("/meaning-weather", response_model=MeaningWeather)
+async def get_meaning_weather(window_hours: float = 24.0):
+    """Compute the meaning weather - volatility of the network.
+
+    Analyzes new edge rate, cluster change rate, gravity hub change,
+    and galaxy membership shift to determine a weather state:
+    calm, breeze, active, storm, or turbulence.
+
+    The window_hours parameter controls how far back to look
+    for new edges (default: 24 hours).
+    """
+    from app.weather_engine import compute_meaning_weather
+
+    return compute_meaning_weather(
+        fragment_store,
+        edge_store,
+        window_hours=window_hours,
+    )
 
 
 @app.get("/stats")

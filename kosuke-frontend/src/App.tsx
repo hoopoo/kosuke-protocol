@@ -8,9 +8,10 @@ import { NetworkPanel } from "@/components/NetworkPanel";
 import { DriftPanel } from "@/components/DriftPanel";
 import { ObservatoryPanel } from "@/components/ObservatoryPanel";
 import { CosmosPanel } from "@/components/CosmosPanel";
-import { Layers, Sparkles, PenLine, Network, Clock, Telescope, Globe } from "lucide-react";
+import { WeatherPanel } from "@/components/WeatherPanel";
+import { Layers, Sparkles, PenLine, Network, Clock, Telescope, Globe, CloudSun } from "lucide-react";
 
-type Tab = "fragments" | "flukes" | "reflections" | "network" | "drift" | "observatory" | "cosmos";
+type Tab = "fragments" | "flukes" | "reflections" | "network" | "drift" | "observatory" | "cosmos" | "weather";
 
 function App() {
   const [tab, setTab] = useState<Tab>("fragments");
@@ -69,6 +70,7 @@ function App() {
     { id: "drift", label: "Drift", icon: <Clock size={16} />, count: 0 },
     { id: "observatory", label: "Observatory", icon: <Telescope size={16} />, count: 0 },
     { id: "cosmos", label: "Cosmos", icon: <Globe size={16} />, count: 0 },
+    { id: "weather", label: "Weather", icon: <CloudSun size={16} />, count: 0 },
   ];
 
   return (
@@ -136,6 +138,7 @@ function App() {
         {tab === "drift" && <DriftPanel />}
         {tab === "observatory" && <ObservatoryPanel />}
         {tab === "cosmos" && <CosmosPanel />}
+        {tab === "weather" && <WeatherPanel />}
       </main>
     </div>
   );
