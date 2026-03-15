@@ -11,6 +11,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 
+from app.edge_store import EdgeStore
 from app.fluke_engine import SlowModeTracker, generate_fluke
 from app.fragment_store import FragmentStore
 from app.models import (
@@ -20,6 +21,8 @@ from app.models import (
     FragmentIngest,
     FlukeRequest,
     FlukeResult,
+    NetworkData,
+    NetworkMetrics,
     Reflection,
     ReflectionCreate,
     SampleRequest,
@@ -50,6 +53,7 @@ app.add_middleware(
 # Initialize stores and engines
 fragment_store = FragmentStore(persist_directory="./chroma_data")
 reflection_store = ReflectionStore(storage_path="./reflections.json")
+edge_store = EdgeStore(storage_path="./edges.json")
 sampling_engine = SamplingEngine(fragment_store)
 slow_mode_tracker = SlowModeTracker()
 
@@ -165,6 +169,21 @@ async def generate_fluke_endpoint(request: FlukeRequest):
     # Record generation for slow mode tracking
     slow_mode_tracker.record_generation(session_id)
 
+    # Create fluke edge in the network
+    edge_store.create_fluke_edge(
+        result.fragment_a.id,
+        result.fragment_b.id,
+        result.distance,
+    )
+
+    # Create domain-crossing edge if applicable
+    if result.domain_crossing > 0:
+        edge_store.create_domain_crossing_edge(
+            result.fragment_a.id,
+            result.fragment_b.id,
+            result.domain_crossing,
+        )
+
     return result
 
 
@@ -200,13 +219,17 @@ async def create_reflection(reflection: ReflectionCreate):
     result = reflection_store.add_reflection(reflection)
 
     # Also store the reflection as a new fragment to feed back into the ecosystem
-    fragment_store.add_fragment(
+    reflection_fragment = fragment_store.add_fragment(
         FragmentCreate(
             text=reflection.text,
             source="reflection",
             tags=["reflection"],
         )
     )
+
+    # Create reflection edges linking to the original fragments
+    for frag_id in reflection.linked_fragment_ids:
+        edge_store.create_reflection_edge(frag_id, reflection_fragment.id)
 
     return result
 
@@ -286,10 +309,42 @@ async def export_markdown(request: ExportRequest):
     return "\n".join(lines)
 
 
+# --- Network endpoints ---
+
+
+@app.get("/network", response_model=NetworkData)
+async def get_network():
+    """Get the full fragment network for visualization."""
+    return edge_store.build_network(fragment_store)
+
+
+@app.get("/network/metrics", response_model=NetworkMetrics)
+async def get_network_metrics():
+    """Get metrics about the fragment network."""
+    return edge_store.get_metrics(fragment_store)
+
+
+@app.post("/network/generate-edges")
+async def generate_semantic_edges(threshold: float = 0.82):
+    """Generate semantic similarity edges between fragments.
+
+    This scans all fragment pairs and creates edges where
+    cosine similarity exceeds the threshold.
+    """
+    new_edges = edge_store.generate_semantic_edges(
+        fragment_store, similarity_threshold=threshold
+    )
+    return {
+        "new_edges_created": len(new_edges),
+        "total_edges": edge_store.count(),
+    }
+
+
 @app.get("/stats")
 async def get_stats():
     """Get ecosystem statistics."""
     return {
         "fragments": fragment_store.count(),
         "reflections": reflection_store.count(),
+        "edges": edge_store.count(),
     }

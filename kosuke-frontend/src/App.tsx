@@ -4,9 +4,10 @@ import { api, type Fragment, type Reflection, type FlukeResult } from "@/lib/api
 import { FragmentPanel } from "@/components/FragmentPanel";
 import { FlukePanel } from "@/components/FlukePanel";
 import { ReflectionPanel } from "@/components/ReflectionPanel";
-import { Layers, Sparkles, PenLine } from "lucide-react";
+import { NetworkPanel } from "@/components/NetworkPanel";
+import { Layers, Sparkles, PenLine, Network } from "lucide-react";
 
-type Tab = "fragments" | "flukes" | "reflections";
+type Tab = "fragments" | "flukes" | "reflections" | "network";
 
 function App() {
   const [tab, setTab] = useState<Tab>("fragments");
@@ -61,6 +62,7 @@ function App() {
     { id: "fragments", label: "Fragments", icon: <Layers size={16} />, count: stats.fragments },
     { id: "flukes", label: "Flukes", icon: <Sparkles size={16} />, count: 0 },
     { id: "reflections", label: "Reflections", icon: <PenLine size={16} />, count: stats.reflections },
+    { id: "network", label: "Network", icon: <Network size={16} />, count: stats.edges || 0 },
   ];
 
   return (
@@ -121,6 +123,9 @@ function App() {
             activeFluke={activeFluke}
             onRefresh={refreshAll}
           />
+        )}
+        {tab === "network" && (
+          <NetworkPanel fragmentCount={stats.fragments} />
         )}
       </main>
     </div>

@@ -46,9 +46,37 @@ export interface SlowModeConfig {
   cooldown_message: string;
 }
 
+export interface NetworkNode {
+  id: string;
+  text: string;
+  domain: string | null;
+  type: string;
+  is_boundary: boolean;
+}
+
+export interface NetworkEdge {
+  source: string;
+  target: string;
+  weight: number;
+  relation: string;
+}
+
+export interface NetworkData {
+  nodes: NetworkNode[];
+  edges: NetworkEdge[];
+}
+
+export interface NetworkMetrics {
+  fragments: number;
+  edges: number;
+  clusters: number;
+  boundary_nodes: number;
+}
+
 export interface Stats {
   fragments: number;
   reflections: number;
+  edges: number;
 }
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
@@ -149,4 +177,13 @@ export const api = {
         include_reflections: true,
       }),
     }),
+
+  // Network
+  getNetwork: () => request<NetworkData>("/network"),
+  getNetworkMetrics: () => request<NetworkMetrics>("/network/metrics"),
+  generateSemanticEdges: (threshold = 0.82) =>
+    request<{ new_edges_created: number; total_edges: number }>(
+      `/network/generate-edges?threshold=${threshold}`,
+      { method: "POST" }
+    ),
 };
