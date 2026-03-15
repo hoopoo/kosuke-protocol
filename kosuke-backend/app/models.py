@@ -6,12 +6,33 @@ from typing import Optional
 from pydantic import BaseModel, Field
 
 
+# Predefined domains for boundary-crossing fluke generation
+DOMAINS = [
+    "philosophy",
+    "technology",
+    "art",
+    "science",
+    "urban",
+    "body",
+    "nature",
+    "politics",
+    "economics",
+    "culture",
+    "psychology",
+    "literature",
+    "music",
+    "spirituality",
+    "mathematics",
+]
+
+
 class FragmentCreate(BaseModel):
     """Input model for creating a fragment."""
 
     text: str
     source: str = "manual"
     tags: list[str] = Field(default_factory=list)
+    domain: Optional[str] = None  # domain tag for boundary-crossing flukes
 
 
 class Fragment(BaseModel):
@@ -22,6 +43,7 @@ class Fragment(BaseModel):
     source: str
     timestamp: str
     tags: list[str] = Field(default_factory=list)
+    domain: Optional[str] = None  # domain tag for boundary-crossing flukes
 
 
 class FragmentIngest(BaseModel):
@@ -30,6 +52,7 @@ class FragmentIngest(BaseModel):
     text: str
     source: str = "manual"
     tags: list[str] = Field(default_factory=list)
+    domain: Optional[str] = None  # domain tag for boundary-crossing flukes
     chunk_size: int = 300
     chunk_overlap: int = 50
 
@@ -48,6 +71,7 @@ class FlukeRequest(BaseModel):
 
     query: Optional[str] = None  # optional context for ContextFit
     n_candidates: int = 10  # number of candidate fragments to consider
+    session_id: Optional[str] = None  # session ID for slow mode tracking
 
 
 class FlukeResult(BaseModel):
@@ -59,9 +83,11 @@ class FlukeResult(BaseModel):
     core_resonance: float
     tension_score: float
     context_fit: float
+    domain_crossing: float  # bonus score for cross-domain pairing
     fluke_score: float
     tension: str
     reflection_prompt: str
+    generation_method: str = "standard"  # standard, serendipity, domain_cross
 
 
 class ReflectionCreate(BaseModel):
@@ -80,6 +106,25 @@ class Reflection(BaseModel):
     linked_fragment_ids: list[str] = Field(default_factory=list)
     linked_fluke_tension: Optional[str] = None
     timestamp: str
+
+
+class SlowModeConfig(BaseModel):
+    """Configuration for slow mode - limits fluke generation per session."""
+
+    enabled: bool = True
+    max_flukes_per_session: int = 5
+    cooldown_message: str = "Take time to reflect on the connections you've seen before generating more."
+
+
+class SlowModeStatus(BaseModel):
+    """Status of slow mode for the current session."""
+
+    enabled: bool
+    flukes_remaining: int
+    flukes_generated: int
+    max_flukes: int
+    cooldown_active: bool
+    message: Optional[str] = None
 
 
 class ExportRequest(BaseModel):

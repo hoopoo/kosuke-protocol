@@ -30,6 +30,7 @@ class FragmentStore:
                     "source": fragment.source,
                     "timestamp": timestamp,
                     "tags": ",".join(fragment.tags) if fragment.tags else "",
+                    "domain": fragment.domain or "",
                 }
             ],
             ids=[fragment_id],
@@ -41,6 +42,7 @@ class FragmentStore:
             source=fragment.source,
             timestamp=timestamp,
             tags=fragment.tags,
+            domain=fragment.domain,
         )
 
     def add_fragments_bulk(self, fragments: list[FragmentCreate]) -> list[Fragment]:
@@ -66,6 +68,7 @@ class FragmentStore:
             source=meta.get("source", ""),
             timestamp=meta.get("timestamp", ""),
             tags=meta.get("tags", "").split(",") if meta.get("tags") else [],
+            domain=meta.get("domain", "") or None,
         )
 
     def get_all_fragments(self, limit: int = 100, offset: int = 0) -> list[Fragment]:
@@ -87,6 +90,7 @@ class FragmentStore:
                     source=meta.get("source", ""),
                     timestamp=meta.get("timestamp", ""),
                     tags=meta.get("tags", "").split(",") if meta.get("tags") else [],
+                    domain=meta.get("domain", "") or None,
                 )
             )
         return fragments
@@ -118,6 +122,7 @@ class FragmentStore:
                     source=meta.get("source", ""),
                     timestamp=meta.get("timestamp", ""),
                     tags=meta.get("tags", "").split(",") if meta.get("tags") else [],
+                    domain=meta.get("domain", "") or None,
                 )
             )
         return fragments

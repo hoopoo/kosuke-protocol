@@ -1,17 +1,51 @@
-import { useState } from "react";
-import { api, type FlukeResult } from "@/lib/api";
-import { Sparkles, RotateCw } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { api, type FlukeResult, type SlowModeStatus } from "@/lib/api";
+import { Sparkles, RotateCw, Globe, Shuffle, Zap, Clock } from "lucide-react";
 
 interface Props {
   onReflect: (fluke: FlukeResult) => void;
   fragmentCount: number;
 }
 
+const SESSION_ID = `session-${Date.now()}`;
+
+const METHOD_LABELS: Record<string, { label: string; icon: React.ReactNode; color: string }> = {
+  serendipity: {
+    label: "Serendipity",
+    icon: <Shuffle size={12} />,
+    color: "text-purple-400 bg-purple-500/10 border-purple-500/20",
+  },
+  domain_cross: {
+    label: "Domain Crossing",
+    icon: <Globe size={12} />,
+    color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+  },
+  standard: {
+    label: "Distant Pair",
+    icon: <Zap size={12} />,
+    color: "text-amber-400 bg-amber-500/10 border-amber-500/20",
+  },
+};
+
 export function FlukePanel({ onReflect, fragmentCount }: Props) {
   const [query, setQuery] = useState("");
   const [fluke, setFluke] = useState<FlukeResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [slowMode, setSlowMode] = useState<SlowModeStatus | null>(null);
+
+  const loadSlowModeStatus = useCallback(async () => {
+    try {
+      const status = await api.getSlowModeStatus(SESSION_ID);
+      setSlowMode(status);
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  useEffect(() => {
+    loadSlowModeStatus();
+  }, [loadSlowModeStatus]);
 
   const generateFluke = async () => {
     setLoading(true);
@@ -19,20 +53,63 @@ export function FlukePanel({ onReflect, fragmentCount }: Props) {
     try {
       const result = await api.generateFluke(
         query.trim() || undefined,
-        Math.min(fragmentCount, 20)
+        Math.min(fragmentCount, 20),
+        SESSION_ID
       );
       setFluke(result);
+      await loadSlowModeStatus();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to generate fluke");
+      await loadSlowModeStatus();
     } finally {
       setLoading(false);
     }
   };
 
+  const handleResetSlowMode = async () => {
+    try {
+      const status = await api.resetSlowMode(SESSION_ID);
+      setSlowMode(status);
+      setError("");
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const method = fluke ? METHOD_LABELS[fluke.generation_method] || METHOD_LABELS.standard : null;
+  const canGenerate = !slowMode?.cooldown_active && fragmentCount >= 2;
+
   return (
     <div className="flex flex-col h-full">
       {/* Controls */}
       <div className="border-b border-zinc-800 p-4 space-y-3">
+        {/* Slow mode indicator */}
+        {slowMode?.enabled && (
+          <div className="flex items-center justify-between bg-zinc-900/50 border border-zinc-800 rounded-md px-3 py-2">
+            <div className="flex items-center gap-2">
+              <Clock size={14} className="text-zinc-500" />
+              <span className="text-xs text-zinc-400">Slow Mode</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex gap-1">
+                {Array.from({ length: slowMode.max_flukes }).map((_, i) => (
+                  <div
+                    key={i}
+                    className={`w-2 h-2 rounded-full ${
+                      i < slowMode.flukes_remaining
+                        ? "bg-amber-500"
+                        : "bg-zinc-700"
+                    }`}
+                  />
+                ))}
+              </div>
+              <span className="text-xs text-zinc-500">
+                {slowMode.flukes_remaining} remaining
+              </span>
+            </div>
+          </div>
+        )}
+
         <textarea
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -42,7 +119,7 @@ export function FlukePanel({ onReflect, fragmentCount }: Props) {
         />
         <button
           onClick={generateFluke}
-          disabled={loading || fragmentCount < 2}
+          disabled={loading || !canGenerate}
           className="w-full bg-amber-500/90 text-zinc-900 py-2.5 rounded-md text-sm font-medium hover:bg-amber-400 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
         >
           {loading ? (
@@ -60,13 +137,40 @@ export function FlukePanel({ onReflect, fragmentCount }: Props) {
             Add at least 2 fragments to generate flukes
           </p>
         )}
-        {error && <p className="text-red-400 text-xs">{error}</p>}
+        {slowMode?.cooldown_active && (
+          <div className="text-center space-y-2">
+            <p className="text-amber-400/80 text-xs">
+              {slowMode.message}
+            </p>
+            <button
+              onClick={handleResetSlowMode}
+              className="text-xs text-zinc-500 hover:text-zinc-300 underline transition-colors"
+            >
+              Reset session
+            </button>
+          </div>
+        )}
+        {error && !slowMode?.cooldown_active && (
+          <p className="text-red-400 text-xs">{error}</p>
+        )}
       </div>
 
       {/* Fluke result */}
       <div className="flex-1 overflow-y-auto p-4">
         {fluke ? (
           <div className="space-y-6">
+            {/* Generation method badge */}
+            {method && (
+              <div className="flex items-center justify-center">
+                <span
+                  className={`inline-flex items-center gap-1.5 text-xs border px-2.5 py-1 rounded-full ${method.color}`}
+                >
+                  {method.icon}
+                  {method.label}
+                </span>
+              </div>
+            )}
+
             {/* Fragment A */}
             <div className="space-y-1">
               <p className="text-xs text-zinc-500 uppercase tracking-wider font-medium">
@@ -74,20 +178,35 @@ export function FlukePanel({ onReflect, fragmentCount }: Props) {
               </p>
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-4">
                 <p className="text-sm text-zinc-200 leading-relaxed italic">
-                  "{fluke.fragment_a.text}"
+                  &ldquo;{fluke.fragment_a.text}&rdquo;
                 </p>
-                <p className="text-xs text-zinc-600 mt-2">
-                  {fluke.fragment_a.source}
-                </p>
+                <div className="flex items-center gap-2 mt-2">
+                  <p className="text-xs text-zinc-600">
+                    {fluke.fragment_a.source}
+                  </p>
+                  {fluke.fragment_a.domain && (
+                    <span className="inline-flex items-center gap-0.5 text-xs text-emerald-400/80 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">
+                      <Globe size={10} />
+                      {fluke.fragment_a.domain}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 
             {/* Connection line */}
             <div className="flex items-center justify-center">
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
-              <span className="px-3 text-xs text-amber-500/70">
-                distance: {fluke.distance.toFixed(2)}
-              </span>
+              <div className="px-3 flex items-center gap-2">
+                <span className="text-xs text-amber-500/70">
+                  distance: {fluke.distance.toFixed(2)}
+                </span>
+                {fluke.domain_crossing > 0 && (
+                  <span className="text-xs text-emerald-400/70">
+                    cross-domain
+                  </span>
+                )}
+              </div>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
             </div>
 
@@ -98,11 +217,19 @@ export function FlukePanel({ onReflect, fragmentCount }: Props) {
               </p>
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-4">
                 <p className="text-sm text-zinc-200 leading-relaxed italic">
-                  "{fluke.fragment_b.text}"
+                  &ldquo;{fluke.fragment_b.text}&rdquo;
                 </p>
-                <p className="text-xs text-zinc-600 mt-2">
-                  {fluke.fragment_b.source}
-                </p>
+                <div className="flex items-center gap-2 mt-2">
+                  <p className="text-xs text-zinc-600">
+                    {fluke.fragment_b.source}
+                  </p>
+                  {fluke.fragment_b.domain && (
+                    <span className="inline-flex items-center gap-0.5 text-xs text-emerald-400/80 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">
+                      <Globe size={10} />
+                      {fluke.fragment_b.domain}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -127,12 +254,13 @@ export function FlukePanel({ onReflect, fragmentCount }: Props) {
             </div>
 
             {/* Scores */}
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-5 gap-2">
               {[
                 { label: "Fluke", value: fluke.fluke_score },
                 { label: "Distance", value: fluke.distance },
                 { label: "Resonance", value: fluke.core_resonance },
                 { label: "Tension", value: fluke.tension_score },
+                { label: "Domain", value: fluke.domain_crossing },
               ].map((s) => (
                 <div
                   key={s.label}

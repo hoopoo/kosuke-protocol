@@ -11,7 +11,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 
-from app.fluke_engine import generate_fluke
+from app.fluke_engine import SlowModeTracker, generate_fluke
 from app.fragment_store import FragmentStore
 from app.models import (
     ExportRequest,
@@ -23,6 +23,8 @@ from app.models import (
     Reflection,
     ReflectionCreate,
     SampleRequest,
+    SlowModeConfig,
+    SlowModeStatus,
 )
 from app.reflection_store import ReflectionStore
 from app.sampling_engine import SamplingEngine
@@ -49,6 +51,7 @@ app.add_middleware(
 fragment_store = FragmentStore(persist_directory="./chroma_data")
 reflection_store = ReflectionStore(storage_path="./reflections.json")
 sampling_engine = SamplingEngine(fragment_store)
+slow_mode_tracker = SlowModeTracker()
 
 
 @app.get("/healthz")
@@ -73,7 +76,7 @@ async def ingest_text(ingest: FragmentIngest):
         raise HTTPException(status_code=400, detail="No fragments could be extracted from the text.")
 
     fragment_creates = [
-        FragmentCreate(text=chunk, source=ingest.source, tags=ingest.tags)
+        FragmentCreate(text=chunk, source=ingest.source, tags=ingest.tags, domain=ingest.domain)
         for chunk in chunks
     ]
     return fragment_store.add_fragments_bulk(fragment_creates)
@@ -128,7 +131,21 @@ async def sample_fragments(request: SampleRequest):
 
 @app.post("/fluke", response_model=FlukeResult)
 async def generate_fluke_endpoint(request: FlukeRequest):
-    """Generate a fluke - an unexpected conceptual connection between fragments."""
+    """Generate a fluke - an unexpected conceptual connection between fragments.
+
+    Uses domain-crossing prioritization (80%) and serendipity/random pairing (20%).
+    Respects slow mode session limits.
+    """
+    session_id = request.session_id or "default"
+
+    # Check slow mode limits
+    if not slow_mode_tracker.can_generate(session_id):
+        status = slow_mode_tracker.get_status(session_id)
+        raise HTTPException(
+            status_code=429,
+            detail=status.message or "Slow mode limit reached. Take time to reflect.",
+        )
+
     if fragment_store.count() < 2:
         raise HTTPException(
             status_code=400,
@@ -145,7 +162,33 @@ async def generate_fluke_endpoint(request: FlukeRequest):
     if not result:
         raise HTTPException(status_code=500, detail="Could not generate a fluke. Try again.")
 
+    # Record generation for slow mode tracking
+    slow_mode_tracker.record_generation(session_id)
+
     return result
+
+
+# --- Slow Mode endpoints ---
+
+
+@app.get("/slow-mode/status", response_model=SlowModeStatus)
+async def get_slow_mode_status(session_id: str = "default"):
+    """Get the current slow mode status for a session."""
+    return slow_mode_tracker.get_status(session_id)
+
+
+@app.post("/slow-mode/reset", response_model=SlowModeStatus)
+async def reset_slow_mode(session_id: str = "default"):
+    """Reset the fluke count for a session."""
+    slow_mode_tracker.reset_session(session_id)
+    return slow_mode_tracker.get_status(session_id)
+
+
+@app.put("/slow-mode/config", response_model=SlowModeConfig)
+async def update_slow_mode_config(config: SlowModeConfig):
+    """Update slow mode configuration."""
+    slow_mode_tracker.update_config(config)
+    return config
 
 
 # --- Reflection endpoints ---

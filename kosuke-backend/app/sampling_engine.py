@@ -110,6 +110,56 @@ class SamplingEngine:
 
         return best_pair
 
+    def sample_domain_crossing_pair(
+        self, n_candidates: int = 20
+    ) -> tuple[Fragment, Fragment] | None:
+        """Sample a pair of fragments from different domains.
+
+        Prioritizes pairs where fragments come from distinct domains
+        to encourage boundary-crossing insights.
+        """
+        candidates = self.store.get_random(min(n_candidates, self.store.count()))
+        if len(candidates) < 2:
+            return None
+
+        # Separate candidates by domain
+        domain_groups: dict[str, list[Fragment]] = {}
+        no_domain: list[Fragment] = []
+        for frag in candidates:
+            if frag.domain:
+                domain_groups.setdefault(frag.domain, []).append(frag)
+            else:
+                no_domain.append(frag)
+
+        # Try to pick from two different domains
+        domains_with_frags = [d for d, frags in domain_groups.items() if frags]
+
+        if len(domains_with_frags) >= 2:
+            # Pick two different domains
+            two_domains = random.sample(domains_with_frags, 2)
+            frag_a = random.choice(domain_groups[two_domains[0]])
+            frag_b = random.choice(domain_groups[two_domains[1]])
+            return (frag_a, frag_b)
+
+        if len(domains_with_frags) == 1 and no_domain:
+            # Cross a domain fragment with a non-domain fragment
+            frag_a = random.choice(domain_groups[domains_with_frags[0]])
+            frag_b = random.choice(no_domain)
+            return (frag_a, frag_b)
+
+        # Fallback: use distant pair sampling
+        return self.sample_distant_pair(n_candidates)
+
+    def sample_random_pair(self) -> tuple[Fragment, Fragment] | None:
+        """Sample a completely random pair for serendipity."""
+        if self.store.count() < 2:
+            return None
+        candidates = self.store.get_random(min(20, self.store.count()))
+        if len(candidates) < 2:
+            return None
+        pair = random.sample(candidates, 2)
+        return (pair[0], pair[1])
+
     @staticmethod
     def _cosine_distance(a: list[float], b: list[float]) -> float:
         """Calculate cosine distance between two vectors."""
