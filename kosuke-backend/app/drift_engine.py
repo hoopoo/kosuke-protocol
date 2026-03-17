@@ -27,7 +27,6 @@ def _parse_timestamp(ts: str) -> datetime:
     except (ValueError, AttributeError):
         return datetime.now(timezone.utc)
 
-
 def _get_slice_boundaries(
     fragments: list[Fragment],
     mode: str = "monthly",
@@ -43,6 +42,17 @@ def _get_slice_boundaries(
     min_time = min(timestamps)
     max_time = max(timestamps)
 
+    # Normalize everything to UTC-aware datetimes
+    if min_time.tzinfo is None:
+        min_time = min_time.replace(tzinfo=timezone.utc)
+    else:
+        min_time = min_time.astimezone(timezone.utc)
+
+    if max_time.tzinfo is None:
+        max_time = max_time.replace(tzinfo=timezone.utc)
+    else:
+        max_time = max_time.astimezone(timezone.utc)
+
     slices: list[tuple[str, str, str]] = []
 
     if mode == "monthly":
@@ -52,15 +62,15 @@ def _get_slice_boundaries(
             month = current.month
             label = f"{year}-{month:02d}"
 
-            start = current.replace(tzinfo=timezone.utc)
+            start = current
             # Next month
             if month == 12:
-                end = current.replace(year=year + 1, month=1, tzinfo=timezone.utc)
+                end = current.replace(year=year + 1, month=1)
             else:
-                end = current.replace(month=month + 1, tzinfo=timezone.utc)
+                end = current.replace(month=month + 1)
 
             slices.append((label, start.isoformat(), end.isoformat()))
-            current = end.replace(tzinfo=None)
+            current = end
 
     elif mode == "quarterly":
         current = min_time.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
@@ -72,18 +82,16 @@ def _get_slice_boundaries(
             quarter = (current.month - 1) // 3 + 1
             label = f"{year}-Q{quarter}"
 
-            start = current.replace(tzinfo=timezone.utc)
+            start = current
             # Next quarter
             next_month = current.month + 3
             if next_month > 12:
-                end = current.replace(
-                    year=year + 1, month=next_month - 12, tzinfo=timezone.utc
-                )
+                end = current.replace(year=year + 1, month=next_month - 12)
             else:
-                end = current.replace(month=next_month, tzinfo=timezone.utc)
+                end = current.replace(month=next_month)
 
             slices.append((label, start.isoformat(), end.isoformat()))
-            current = end.replace(tzinfo=None)
+            current = end
 
     elif mode == "yearly":
         current_year = min_time.year
@@ -98,8 +106,8 @@ def _get_slice_boundaries(
         # Default: treat all as one slice
         slices.append((
             "all",
-            min_time.replace(tzinfo=timezone.utc).isoformat(),
-            max_time.replace(tzinfo=timezone.utc).isoformat(),
+            min_time.isoformat(),
+            max_time.isoformat(),
         ))
 
     return slices
