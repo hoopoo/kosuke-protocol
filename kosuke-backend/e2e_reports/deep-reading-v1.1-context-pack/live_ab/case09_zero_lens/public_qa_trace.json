@@ -1,0 +1,77 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "pack_fact_ids": [
+    "pack_current_work_001",
+    "pack_relevant_social_context_002"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_current_work_001",
+      "content": "地元で事務の仕事をしている",
+      "tags": [
+        "context_pack",
+        "category:current_work",
+        "pack_id:pack_live_20260808T070000Z_6222",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_relevant_social_context_002",
+      "content": "近所の人と暮らしている",
+      "tags": [
+        "context_pack",
+        "category:relevant_social_context",
+        "pack_id:pack_live_20260808T070000Z_6222",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T070000Z_6222",
+    "pack_fact_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ]
+  },
+  "residue": [
+    {
+      "statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact_1"
+      ],
+      "present_anchor_ids": [
+        "fact_4"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": [
+    {
+      "id": "rebranch_measure_001",
+      "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+      "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+      "support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002",
+        "fact_1"
+      ],
+      "pack_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "body_markdown": "45歳のとき、不妊治療を経て子どもを授かった。妻と息子との三人で暮らしている。不妊治療を諦めることも、当時には置かれていた可能性だった。\n\n息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。その後も、二人目を持っていたらどうだったかと考えることがある。\n\nいま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳のときに子どもを授かったことと、この家で続く現在の時間を並べて見ることはできる。ただし、そのあいだには、まだ接続しきれていないものが残っている。\n",
+  "title_candidates": [
+    "三人の暮らしと、残る問い",
+    "45歳のあとにある家",
+    "息子の友人が来る家で"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経て子どもを授かり、二人目の治療をやめた後の現在"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "具体的な再検討先となる名詞が、確認済みの記録にはないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。妻と息子との三人で暮らしている。不妊治療を諦めることも、当時には置かれていた可能性だった。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact4",
+        "question1"
+      ],
+      "contains_inference": false,
+      "text_preview": "息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。その後も、二人目を持っていたらどうだったかと考えることがある。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "feeling1"
+      ],
+      "contains_inference": true,
+      "text_preview": "いま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳のときに子どもを授かったことと、この家で続く現在の時間を並べて見ることはできる。ただし、そのあいだには、まだ接続しきれていないものが残っている。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 254
+}

@@ -1,0 +1,95 @@
+{
+  "body_markdown": "## 28歳で始めた写真\n\n28歳のとき、趣味で写真を始めた。写真はその後も趣味として続き、仕事にすることはしなかった。\n\n## 趣味として続くこと\n\n仕事ではなく趣味として写真を続ける時間があった。写真を仕事にする可能性も並んでいたが、その可能性について当時の事情や判断の中身を結びつける材料はない。\n\n## いまも撮る写真\n\n今もたまに写真を撮る。28歳で趣味として写真を始めたことと、現在もたまに撮っていることのあいだには、まだ接続しきれていないものが残っている。写真が生活のなかから完全になくなったわけではない、というところまでが確かに書ける。\n\n## 残る問い\n\n「写真を仕事にしていたらどうだったかな」という問いがある。その答えや、別の生活の具体的な姿は確認できない。けれど、趣味として続いた写真と、仕事にしなかった写真を並べたとき、この問いは答えを急がずに残る。\n",
+  "title_candidates": [
+    "趣味として続いた写真、その先に残る問い",
+    "28歳で始めた写真と、いまも撮る時間",
+    "仕事にしなかった写真をめぐって"
+  ],
+  "subtitle_candidates": [
+    "趣味として続いた写真と、仕事にしていたかもしれない可能性のあいだで"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "28歳で始めた写真",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section2",
+      "public_heading": "趣味として続くこと",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section3",
+      "public_heading": "いまも撮る写真",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section4",
+      "public_heading": "残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "確認済みの情報には、写真に関して新たに具体化できる行動や場面がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "28歳のとき、趣味で写真を始めた。写真はその後も趣味として続き、仕事にすることはしなかった。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "仕事ではなく趣味として写真を続ける時間があった。写真を仕事にする可能性も並んでいたが、その可能性について当時の事情や判断の中身を結びつける材料はない。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "今もたまに写真を撮る。28歳で趣味として写真を始めたことと、現在もたまに撮っていることのあいだには、まだ接続しきれていないものが残っている。写真が生活のなかから完全になくなったわけではない、というところまでが確かに書ける。"
+    },
+    {
+      "paragraph_id": "p04",
+      "support_ids": [
+        "fact2",
+        "fact3",
+        "question1"
+      ],
+      "contains_inference": true,
+      "text_preview": "「写真を仕事にしていたらどうだったかな」という問いがある。その答えや、別の生活の具体的な姿は確認できない。けれど、趣味として続いた写真と、仕事にしなかった写真を並べたとき、この問いは答えを急がずに残る。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 388
+}

@@ -1,0 +1,43 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "pack_fact_ids": [],
+  "pack_facts": [],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T065800Z_3960",
+    "pack_fact_ids": [],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": []
+  },
+  "residue": [
+    {
+      "statement": "「会社を辞めて起業した」を振り返る問いは、「小さな会社を経営している」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "pack_career_history_001"
+      ],
+      "present_anchor_ids": [
+        "pack_current_work_002"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "起業を選んだ結果、現在の不安が生じているが、選択の自由があることは重要である。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": [
+    {
+      "id": "rebranch_measure_001",
+      "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+      "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+      "support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ],
+      "pack_support_ids": []
+    }
+  ]
+}

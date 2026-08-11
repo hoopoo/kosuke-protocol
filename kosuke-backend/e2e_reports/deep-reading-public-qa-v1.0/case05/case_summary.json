@@ -1,0 +1,283 @@
+{
+  "id": "case05",
+  "title": "Multiple secondary branches",
+  "purpose": "multiple chronological branches",
+  "expect": [
+    "first deliberation may be actual branch",
+    "later move/change remain separate",
+    "no collapse into one branch",
+    "no unsupported causal claim staying→later change"
+  ],
+  "fields": {
+    "branch_period": "35歳",
+    "triggering_event": "転職の話が出た",
+    "chosen_path": "今の会社に残った",
+    "unchosen_path": "別の会社へ移ること",
+    "present_question": "転職していたらどうだったか",
+    "current_context": "その後、部署異動をして、数年後には別の会社へ転職した",
+    "additional_context": "最初の転職話のときは実際にかなり迷った"
+  },
+  "source_text": "時期: 35歳\n出来事: 転職の話が出た\n選んだ道: 今の会社に残った\n選ばなかった道: 別の会社へ移ること\nいまの問い: 転職していたらどうだったか\nいまの状況: その後、部署異動をして、数年後には別の会社へ転職した\n補足: 最初の転職話のときは実際にかなり迷った",
+  "started_at": "2026-08-07T04:33:00.821956+00:00",
+  "errors": [],
+  "session_id": "879fee8e-3e2e-4ad2-b4e7-9b4294da5bad",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.4",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": false,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": false
+    },
+    "gaps": [
+      "confirmation_timestamp",
+      "latency",
+      "token_usage",
+      "estimated_cost",
+      "publication_reached"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_3_model",
+      "candidate",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version"
+    ]
+  },
+  "call1": {
+    "status": "needs_additional_input",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "転職の話が出た",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact2",
+        "content": "今の会社に残った",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact3",
+        "content": "別の会社へ移ること",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact5",
+        "content": "その後、部署異動をして、数年後には別の会社へ転職した",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "転職していたらどうだったか",
+        "boundary": "user_question"
+      },
+      {
+        "id": "question_source_005",
+        "content": "いまの問い: 転職していたらどうだったか",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "35歳",
+      "triggering_event": "転職の話が出た",
+      "available_paths": [
+        "今の会社に残った",
+        "別の会社へ移ること"
+      ],
+      "realized_path": "今の会社に残った",
+      "unrealized_paths": [
+        "別の会社へ移ること"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "転職していたらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      },
+      {
+        "id": "cf_question_source_005",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "いまの問い: 転職していたらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "residue": [],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [
+      "いまの生活のなかで、その分岐がいまでも触れている具体的な場面・習慣・関係を教えてください。"
+    ],
+    "additional_required": true,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": [
+        "いまの生活のなかで、その分岐がいまでも触れている具体的な場面・習慣・関係を教えてください。"
+      ]
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "35歳",
+      "triggering_event": "転職の話が出た",
+      "chosen_path": "今の会社に残った",
+      "unchosen_path": "別の会社へ移ること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "転職していたらどうだったか",
+        "いまの問い: 転職していたらどうだったか"
+      ],
+      "present_questions": [
+        "転職していたらどうだったか",
+        "いまの問い: 転職していたらどうだったか"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "転職していた場合の影響を考えることは重要である。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "central_thesis": "転職していた場合の影響を考えることは重要である。",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "residue:no_valid_residue_anchors"
+      ],
+      "source_coverage_missing": []
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": false,
+    "outcome_bucket": "B_request_clarification",
+    "reasons_stop": [
+      "status=needs_additional_input",
+      "additional_questions_required",
+      "no_validated_residue"
+    ],
+    "reasons_ok": [],
+    "contradiction_analysis": {
+      "input_level_contradiction": false,
+      "facts_contain_reject": false,
+      "facts_contain_join": false,
+      "silently_resolved_suspected": false,
+      "confirmation_items": []
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [
+      "いまの生活のなかで、その分岐がいまでも触れている具体的な場面・習慣・関係を教えてください。"
+    ],
+    "clarification_count": 1,
+    "residue_count": 0,
+    "status": "needs_additional_input"
+  },
+  "call2_reached": false,
+  "call3_reached": false,
+  "published": false,
+  "confirmation_approved": false,
+  "safe_stop": true,
+  "generation_should_proceed": false,
+  "abort_recorded": true,
+  "latency_ms_total": 15605,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 15586,
+      "prompt_tokens": 3787,
+      "completion_tokens": 1177,
+      "estimated_cost_usd": 0.001274,
+      "stage_hint": "call1"
+    }
+  ],
+  "estimated_cost_usd": 0.001274,
+  "finished_at": "2026-08-07T04:33:16.409769+00:00"
+}

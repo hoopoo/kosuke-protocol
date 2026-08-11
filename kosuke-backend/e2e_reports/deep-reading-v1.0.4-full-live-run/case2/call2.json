@@ -1,0 +1,90 @@
+{
+  "body_markdown": "45歳のとき、不妊治療を経て子どもを授かった。この出来事は、私の人生において大きな転機となった。実際に選んだのは、妻と息子と三人で暮らす人生だった。息子を授かることは、私たちにとって新たな喜びをもたらし、日々の生活に活気を与えている。息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しいと感じている。\n\nしかし、選ばなかった道も存在した。それは、不妊治療を諦めることだった。この選択肢については、今も時折考えることがある。息子を授かった後、二人目を目指す治療を続けるかどうかを妻と話し合った結果、私たちはその道を選ばなかった。今の生活は幸せだが、二人目を持つことについての思索は、心のどこかに残っている。どのような生活が待っていたのか、想像することがある。\n",
+  "title_candidates": [
+    "不妊治療と家族の形成",
+    "二人目を持つことの考察",
+    "現在の幸せと未来の可能性"
+  ],
+  "subtitle_candidates": [],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "不妊治療と家族の形成",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section2",
+      "public_heading": "二人目を持つことの考察",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。この出来事は、私の人生において大きな転機となった。実際に選んだのは、妻と息子と三人で暮らす人生だった。息子を授かることは、私たちにとって新たな喜びをもたらし、日々の生活に活気を与えている。息子を"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact4",
+        "question1"
+      ],
+      "contains_inference": false,
+      "text_preview": "しかし、選ばなかった道も存在した。それは、不妊治療を諦めることだった。この選択肢については、今も時折考えることがある。息子を授かった後、二人目を目指す治療を続けるかどうかを妻と話し合った結果、私たちはその道を選ばなかった。今の生活は幸せだが"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [
+      {
+        "excerpt": "今の生活は幸せだが、二人目を持つことについての思索は、心のどこかに残っている。",
+        "frame_type": "unsupported_meaning_completion",
+        "missing_support": "evaluative_completion_absent",
+        "category": "unsupported"
+      }
+    ],
+    "schema_leakage_prose": [
+      {
+        "excerpt": "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+        "leakage_type": "actual_chosen_wa",
+        "missing_support": "schema_verbalization",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_affect": [
+      {
+        "excerpt": "息子を授かることは、私たちにとって新たな喜びをもたらし、日々の生活に活気を与えている。",
+        "affect_type": "喜び",
+        "missing_support": "affect_absent:喜び",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "今の生活は幸せだが、二人目を持つことについての思索は、心のどこかに残っている。",
+        "affect_type": "幸せ",
+        "missing_support": "affect_absent:幸せ",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 330
+}

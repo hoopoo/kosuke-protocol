@@ -1,0 +1,22 @@
+{
+  "staging_strict": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "schema": "parallel-life-runtime-v1.0.6",
+    "pack": false
+  },
+  "staging_contextual": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.1.4-exp",
+    "schema": "parallel-life-runtime-v1.1.4-exp",
+    "pack": true,
+    "has_interpretive_claims": true,
+    "lost": "一つの制度の内部で時間を積み上げ、その蓄積を役職・評価・関係などで確認できる連続性",
+    "protected": "所属先が変わっても、自分の仕事を別の言葉で定義し直す余白"
+  },
+  "production": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack": null
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "status": "structural_ambiguity",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "なんとなく今まで働いてきた",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "出来事: なんとなく今まで働いてきた",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "今の人生",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選んだ道: 今の人生",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "もっと自由な人生",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道: もっと自由な人生",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact5",
+        "content": "今も仕事をしている",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "いまの状況: 今も仕事をしている",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "別の人生もあったのかな",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "いまの問い: 別の人生もあったのかな",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": [
+      "『別の人生もあったのかな』と思うきっかけになった、具体的な出来事や時期はありますか？",
+      "そのとき、実際に選べた別の道はありましたか？"
+    ]
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "特にない",
+      "triggering_event": "出来事: なんとなく今まで働いてきた",
+      "available_paths": [],
+      "realized_path": "今の人生",
+      "unrealized_paths": [
+        "もっと自由な人生"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4",
+        "fact5"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "別の人生もあったのかな",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "present_question_ids": [
+      "fact4"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "life_choice",
+    "statement": "今の人生を選んだことに対する問い",
+    "pole_a": "今の人生",
+    "pole_b": "もっと自由な人生",
+    "supported_by": [
+      "fact2",
+      "fact3"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": []
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": true,
+    "questions": [
+      "『別の人生もあったのかな』と思うきっかけになった、具体的な出来事や時期はありますか？",
+      "そのとき、実際に選べた別の道はありましたか？"
+    ]
+  },
+  "user_confirmation_view": {
+    "branch_period": "特にない",
+    "triggering_event": "出来事: なんとなく今まで働いてきた",
+    "chosen_path": "今の人生",
+    "unchosen_path": "もっと自由な人生",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      "別の人生もあったのかな"
+    ],
+    "present_questions": [
+      "別の人生もあったのかな"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "今の人生を選んだことに対する問い",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [
+      "residue:model_empty_assisted_from_anchors",
+      "residue:cleared_due_to_vague_branch",
+      "vague_branch:vague_period",
+      "vague_branch:vague_chosen",
+      "vague_branch:vague_unchosen"
+    ],
+    "source_coverage_missing": [],
+    "material_contradictions": [],
+    "material_contradiction_count": 0,
+    "branch_concreteness_ok": false,
+    "thesis_deferred_due_to_contradiction": false,
+    "sensitive_thesis_rejected": false
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.2",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

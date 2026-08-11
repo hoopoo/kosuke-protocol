@@ -1,0 +1,178 @@
+{
+  "case_id": "case06_entrepreneurship",
+  "arm": "public_qa",
+  "mode": "contextual",
+  "ok": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:chosen_path",
+        "required_section_unrealized:lost",
+        "required_section_unrealized:protected",
+        "required_section_unrealized:observatory",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ],
+      "final_title": "会社を辞めたあとに残る問い",
+      "final_subtitle": ""
+    }
+  },
+  "session_id": "63b18de0-bf12-4280-b3b5-43609d3f3ac6",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065800Z_3960",
+      "pack_fact_ids": [],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「会社を辞めて起業した」を振り返る問いは、「小さな会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_001"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_002"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "起業を選んだ結果、現在の不安が生じているが、選択の自由があることは重要である。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065800Z_3960",
+      "pack_fact_ids": [],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「会社を辞めて起業した」を振り返る問いは、「小さな会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_001"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_002"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "起業を選んだ結果、現在の不安が生じているが、選択の自由があることは重要である。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "manuscript": {
+    "title": "会社を辞めたあとに残る問い",
+    "subtitle": "",
+    "body_markdown": "## 分岐点\n33歳のとき、会社を辞めて起業するか、それとも会社員として残るかを選ぶ分岐があった。\n\n## 選んだ道\n選んだのは、会社を辞めて自分の会社を始めることだった。現在は小さな会社を経営し、顧客向けの制作を続けている。\n\n## 選ばなかった人生\n会社員として残る道は選ばなかった。その先にどのような仕事や生活があったかを、ここで具体的に描くことはできない。ただ、その可能性は選ばれなかった道として残っている。\n\n## 失ったもの\n会社に残る道を選ばなかった以上、その先を自分の経験として確かめることはできない。会社のなかで時間を重ねる生活がどのようなものだったかも、いまは仮定のままである。\n\n## 守られたもの\n何が守られたのかを一つに定める材料はない。会社を辞めて起業したことと、いま小さな会社を経営していることは、ひとまず並べて置ける。仕事をどう受け止めるかは、そのつど言葉にし直すものとして残る。\n\n## 今に残った構造\n「会社に残っていたら、いまの不安は少なかったか」という問いがある。会社を辞めて起業した過去と、小さな会社を経営している現在を並べると、この問いが残る。\n\n会社に残った場合の不安の大きさはわからない。直接比べる材料もない。それでも、選ばなかった道を消さずに置きながら、いまの仕事を続けることはできる。\n\n## 社会との接続\n何かを形にしたあとにも、別の問いが残ることがある。評価だけでは収まらない問いがある、という見方は、現在を考える際の背景の一つになる。\n\n## これからの再分岐\n役職や年収だけを、唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す。\n\n一つの会社のなかで進み具合を測ることと、場を移りながら仕事を重ねること。そのあいだに残る問いとともに、いまの仕事を見ていく。\n",
+    "char_count": 779
+  },
+  "trace_final": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065800Z_3960",
+      "pack_fact_ids": [],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「会社を辞めて起業した」を振り返る問いは、「小さな会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_001"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_002"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "起業を選んだ結果、現在の不安が生じているが、選択の自由があることは重要である。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "elapsed_s": 66.27
+}

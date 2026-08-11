@@ -1,0 +1,265 @@
+{
+  "case_id": "ntt_v117",
+  "arm": "rebranch_editorial",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "final_title": "残らなかった会社の時間",
+      "final_subtitle": ""
+    }
+  },
+  "session_id": "a4eb7ecd-8276-4b06-895e-3503f4632839",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_career_history_003",
+      "pack_current_projects_005"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T064517Z_5053",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T064517Z_5053",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T064517Z_5053",
+      "pack_fact_ids": [
+        "pack_career_history_003",
+        "pack_current_projects_005"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_003"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_004"
+        ],
+        "pack_ids_used": [
+          "pack_career_history_003"
+        ]
+      }
+    ],
+    "central_thesis": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_career_history_003",
+      "pack_current_projects_005"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T064517Z_5053",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T064517Z_5053",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T064517Z_5053",
+      "pack_fact_ids": [
+        "pack_career_history_003",
+        "pack_current_projects_005"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_003"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_004"
+        ],
+        "pack_ids_used": [
+          "pack_career_history_003"
+        ]
+      }
+    ],
+    "central_thesis": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "manuscript": {
+    "title": "残らなかった会社の時間",
+    "subtitle": "",
+    "body_markdown": "## 分岐点\n28歳のとき、かつての勤め先に残るか、外資系企業へ移るかという分かれ目があった。それは単に勤務先を替えるかどうかではなかった。同じ組織のなかで自分の進み具合を確かめていく道と、外へ出て仕事の意味を捉え直していく道が、そこにあった。\n\n## 選んだ道\n外資系企業へ移り、一つの企業の内部で役割を重ね続ける道から、所属が変わるたびに自分の仕事を言い直す道へ進んだ。優劣を決めるための移動ではない。けれど、いま自分の会社を経営する生活のなかにも、「あのとき残っていたら」という思いが残っている。\n\n## 選ばなかった人生\n残る側には、特定の役職や出来事を想像で補わなくてもよい、一つの企業のなかで役割を重ねていく時間があった。その可能性は実現しなかった。だから成功でも失敗でもなく、別の時間の流れとして、閉じきらずに残っている。\n\n## 失ったもの\n失ったのは、安定という一語では足りない。同じ組織で過ごす時間のなかで、自分がどこまで来たかを確かめ続ける目印だったのかもしれない。仕事の変化だけでなく、過去の自分との距離も、同じ場所で読み取れたはずである。\n\n## 守られたもの\n一方で、所属先が変わっても、自分の仕事を別の言葉で定義し直す余白は残った。移動の価値を証明する話ではない。一つの所属に人生全体の判断を預け切らないあり方も、外資系企業への転職後の時間にはあった。\n\n## 今に残った構造\nその後、複数の業界や企業を経験し、現在は自分の会社を経営している。この現在と「あのとき残っていたら」を並べると、残る道は単なる過去の選択肢ではなく、一つの場で自分の進み具合を知る、別の目印として浮かぶ。場を移りながら仕事を持ち運んできた時間と、その目印との隔たりは、いまも残っている。\n\n## 社会との接続\nこの去就には、一社のなかで地位や役割を重ねていく働き方と、企業を移りながら専門性を持ち運ぶ働き方が並んでいる。「残る」ことが標準の進路として見えやすい時代や場面があったとしても、それだけで個人の決定を説明することはできない。ただ、会社を選ぶという個人の決定には、二つの働き方が張り合う場所が映っている。\n\n## これからの再分岐\n一社の時間のなかで自分の進み具合を確かめる感覚と、場を移って仕事を持ち運ぶ感覚を、どちらが正しかったかで裁かない。役職や年収だけを、唯一の到達指標にしなくてよい。自分の会社を経営する現在、長い時間をかけて何を積み重ねてきたと認めるかを、自分で選び直す。残らなかった道は否定せず、現在の仕事を見直す静かな背景として置いておく。\n",
+    "char_count": 1086
+  },
+  "trace_final": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_career_history_003",
+      "pack_current_projects_005"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T064517Z_5053",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T064517Z_5053",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T064517Z_5053",
+      "pack_fact_ids": [
+        "pack_career_history_003",
+        "pack_current_projects_005"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_003"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_004"
+        ],
+        "pack_ids_used": [
+          "pack_career_history_003"
+        ]
+      }
+    ],
+    "central_thesis": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "elapsed_s": 59.82
+}

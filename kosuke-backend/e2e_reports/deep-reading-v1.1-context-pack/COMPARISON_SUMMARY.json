@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-08-08T02:21:22.674265+00:00",
+  "fixture": "NTT_career_branch",
+  "mode": "offline_structural_ab",
+  "success_criterion": "B expands approved evidence (career arc, projects) without inventing unsupported biography; gates remain equally strict on IDs/causality/title.",
+  "verdict": {
+    "b_has_more_facts": true,
+    "b_has_pack_present_anchors": true,
+    "b_corpus_larger": true,
+    "a_has_zero_pack_facts": true,
+    "b_project_tokens_in_corpus": true,
+    "passed": true
+  },
+  "scorecards": [
+    {
+      "arm": "A_strict",
+      "prompt_pin_expected": "parallel-life-call-1-v1.0.3",
+      "runtime_pin_expected": "parallel-life-runtime-v1.0.6",
+      "fact_count": 3,
+      "pack_fact_count": 0,
+      "current_context_lines": 1,
+      "corpus_chars": 94,
+      "present_anchor_ids": [
+        "fact_current_preserved_001",
+        "ctx_001"
+      ],
+      "pack_present_anchor_ids": [],
+      "residue_count": 1,
+      "selected_lens_count": 1,
+      "lenses_with_pack_evidence": 0,
+      "context_pack_usage": null,
+      "blocking_notes": [],
+      "depth_signals": {
+        "has_career_arc_tokens": true,
+        "has_project_tokens": false,
+        "temporal_arc_present_anchors": false
+      }
+    },
+    {
+      "arm": "B_contextual",
+      "prompt_pin_expected": "parallel-life-call-1-v1.1.0",
+      "runtime_pin_expected": "parallel-life-runtime-v1.1.0-exp",
+      "fact_count": 9,
+      "pack_fact_count": 6,
+      "current_context_lines": 4,
+      "corpus_chars": 281,
+      "present_anchor_ids": [
+        "pack_current_work_003",
+        "pack_current_projects_004",
+        "pack_current_projects_005",
+        "fact_current_preserved_001",
+        "ctx_001",
+        "ctx_002",
+        "ctx_003",
+        "ctx_004"
+      ],
+      "pack_present_anchor_ids": [
+        "pack_current_work_003",
+        "pack_current_projects_004",
+        "pack_current_projects_005"
+      ],
+      "residue_count": 1,
+      "selected_lens_count": 2,
+      "lenses_with_pack_evidence": 2,
+      "context_pack_usage": {
+        "mode": "contextual",
+        "pack_id": "pack_7de99309021b",
+        "pack_fact_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_projects_004",
+          "pack_current_projects_005",
+          "pack_current_work_003",
+          "pack_major_life_events_006"
+        ],
+        "residue_present_anchor_ids": [],
+        "residue_past_anchor_ids": [],
+        "lens_explicit_evidence_ids": [
+          "pack_current_work_003",
+          "pack_major_life_events_006"
+        ],
+        "rebranch_support_ids": []
+      },
+      "blocking_notes": [
+        "runtime:parallel-life-runtime-v1.1.0-exp"
+      ],
+      "depth_signals": {
+        "has_career_arc_tokens": true,
+        "has_project_tokens": true,
+        "temporal_arc_present_anchors": true
+      }
+    }
+  ]
+}

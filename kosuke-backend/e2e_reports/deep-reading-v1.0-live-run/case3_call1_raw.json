@@ -1,0 +1,55 @@
+{
+  "grounded_input": {
+    "chosen_path": "第一志望の早稲田大学第一文学部へ進学した",
+    "unchosen_path": "別の大学へ進学すること"
+  },
+  "input_sufficiency": true,
+  "branch_structure": {
+    "chosen_path": {
+      "description": "早稲田大学第一文学部に進学した結果、現在の職業に至る経緯",
+      "outcomes": [
+        "複数の業界を経験",
+        "文章やプロトコルをまとめる仕事に従事"
+      ]
+    },
+    "unchosen_path": {
+      "description": "別の大学へ進学した場合の可能性",
+      "outcomes": [
+        "仕事や人間関係の変化についての考察"
+      ]
+    }
+  },
+  "central_thesis": "選択した進路が現在の職業や人間関係に与えた影響と、選ばなかった進路の可能性を考察することが重要である。",
+  "lost_structure": {
+    "description": "別の大学に進学した場合の具体的な影響や結果についての詳細が欠如している"
+  },
+  "protected_structure": {
+    "description": "現在の職業に至るまでの経緯や経験が明確に示されている"
+  },
+  "residue_candidates": [],
+  "evaluated_observatory_lenses": [],
+  "selected_observatory_lenses": [],
+  "editorial_outline": [
+    {
+      "section_title": "選択した進路の影響",
+      "content": "早稲田大学第一文学部への進学がもたらした職業的な成果"
+    },
+    {
+      "section_title": "選ばなかった進路の可能性",
+      "content": "別の大学に進学した場合の仕事や人間関係の変化についての考察"
+    },
+    {
+      "section_title": "結論",
+      "content": "選択の重要性とその影響についての総括"
+    }
+  ],
+  "rebranch_design": {
+    "source_meaning": "進学の選択が人生に与える影響",
+    "current_receiver": "読者",
+    "branch_specific_form": "選択肢の比較とその結果の分析",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "additional_questions": [],
+  "user_confirmation_view": "この内容で進めてよろしいでしょうか？"
+}

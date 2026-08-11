@@ -1,0 +1,83 @@
+{
+  "body_markdown": "会社員として複数の業界で働いてきた。さまざまな職場での経験が、現在の生活に影響を与えている。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。このような活動は、過去の選択と密接に関連している。創作を中心にした人生を選ばなかったことが、今の自分を形成していると感じることがある。\n\n創作中心の人生を選んでいた場合、今とは異なる生活があったかもしれない。選ばなかった道を振り返ると、創作に対する思いが強くなる瞬間がある。過去の選択から現在の生活が続いているが、その間にはまだ接続しきれていないものが残っているように思える。これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。ただ、過去の選択と現在の生活の間にある構造的なつながりを感じることがある。\n",
+  "title_candidates": [
+    "過去の選択と現在の生活",
+    "創作と企業経験の交差点",
+    "選ばれなかった道の影響"
+  ],
+  "subtitle_candidates": [
+    "会社員としての経験と創作の可能性"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "過去の選択と現在の生活",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "会社員として複数の業界で働いてきた。さまざまな職場での経験が、現在の生活に影響を与えている。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。このような活動は、過去の選択と密接に関連している。創作を中心にした人生を選"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact2",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "創作中心の人生を選んでいた場合、今とは異なる生活があったかもしれない。選ばなかった道を振り返ると、創作に対する思いが強くなる瞬間がある。過去の選択から現在の生活が続いているが、その間にはまだ接続しきれていないものが残っているように思える。こ"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [
+      {
+        "excerpt": "さまざまな職場での経験が、現在の生活に影響を与えている。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "創作を中心にした人生を選ばなかったことが、今の自分を形成していると感じることがある。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。",
+        "causality_strength": 2,
+        "missing_support": "qualified_causal_wording_absent",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_causal_frame": [
+      {
+        "excerpt": "これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。",
+        "frame_type": "causal_presupposition",
+        "missing_support": "causal_frame_without_explicit_support",
+        "category": "unsupported"
+      }
+    ],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 362
+}

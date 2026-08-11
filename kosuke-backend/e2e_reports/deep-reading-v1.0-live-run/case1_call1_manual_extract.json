@@ -1,0 +1,35 @@
+{
+  "case": "case1",
+  "facts_n": 0,
+  "questions_n": 0,
+  "feelings_n": 0,
+  "current_context": null,
+  "primary": null,
+  "secondary_raw_type": "list",
+  "secondary_raw": [],
+  "counterfactual_raw_type": "list",
+  "counterfactual_raw": [
+    "不妊治療を諦めることを選んでいた場合の人生"
+  ],
+  "central_thesis": "選択した人生と選ばなかった道の対比を通じて、家族との関係や自己実現について考察する。",
+  "selected_lenses": [],
+  "evaluated_lenses": [],
+  "rebranch_design_type": "dict",
+  "rebranch_design": {
+    "source_meaning": "選択とその結果に対する内面的な探求",
+    "current_receiver": "家族の重要性や選択の影響を考える読者",
+    "branch_specific_form": "選択の影響を深く掘り下げる",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "user_confirmation_view": true,
+  "input_sufficiency": true,
+  "type_mismatches": {
+    "input_sufficiency": "bool",
+    "user_confirmation_view": "bool",
+    "central_thesis": "str",
+    "rebranch_design": "dict",
+    "lost_structure": "dict",
+    "protected_structure": "dict"
+  }
+}

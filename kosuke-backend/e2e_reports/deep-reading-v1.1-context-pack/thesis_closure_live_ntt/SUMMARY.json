@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-08-08T06:25:39.403911+00:00",
+  "pins": {
+    "staging_strict": {
+      "http": 200,
+      "call1": "parallel-life-call-1-v1.0.3",
+      "schema": "parallel-life-runtime-v1.0.6"
+    },
+    "staging_contextual": {
+      "http": 200,
+      "call1": "parallel-life-call-1-v1.1.6-exp",
+      "schema": "parallel-life-runtime-v1.1.6-exp",
+      "pack": true,
+      "chosen_path_fields": {
+        "factual_choice": true,
+        "structural_shift": true,
+        "thesis_link": true,
+        "realization_required": true
+      },
+      "re_branch_fields": {
+        "unresolved_tension": true,
+        "present_choice": true,
+        "measurement_shift": true,
+        "non_genericity": true
+      },
+      "residue_claim": "「あのとき残っていたら」が自分の会社を経営しているという状況のなかで消えないのは、外資へ移るが別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+      "residue_malformed": false,
+      "labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "社会との接続",
+        "これからの再分岐"
+      ]
+    },
+    "production": {
+      "http": 200,
+      "call1": "parallel-life-call-1-v1.0.3",
+      "pack": null
+    }
+  },
+  "pins_ready": true,
+  "pipeline_ok": false,
+  "elapsed_s": 74.27,
+  "session_id": "1c26e912-34fe-4ece-8a6b-a484508c1401",
+  "claims": {
+    "chosen_path": {
+      "interpretive_claim": "振り返ると、一企業の内部で役割を積み上げ続けるから、所属が変わるたびに自分の仕事を定義し直す道へ移った（当時の意図や優劣の断定ではない）",
+      "required_public_label": "選んだ道",
+      "factual_choice": "外資系企業へ移る",
+      "structural_shift": "一企業の内部で役割を積み上げ続けるから、所属が変わるたびに自分の仕事を定義し直す道へ移った",
+      "thesis_link": "いまも残る問いの起点として、この移り方が現在の生活につながっている",
+      "unresolved_tension": "",
+      "present_choice": "",
+      "measurement_shift": "",
+      "claim_atoms": {
+        "present_anchor": "自分の会社を経営している",
+        "past_anchor": "外資へ移る",
+        "unresolved_question": "あのとき残っていたら",
+        "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+      }
+    },
+    "lost": {
+      "interpretive_claim": "失われたのは安定の一覧ではなく、同じ制度の時間のなかで、自分がどこまで来たかを確かめ続ける物差し（一企業内での役割を積み上げ続ける道を選ばなかったこと）だったとも読める",
+      "required_public_label": "失ったもの",
+      "factual_choice": "",
+      "structural_shift": "",
+      "thesis_link": "",
+      "unresolved_tension": "",
+      "present_choice": "",
+      "measurement_shift": "",
+      "claim_atoms": {
+        "present_anchor": "自分の会社を経営している",
+        "past_anchor": "外資へ移る",
+        "unresolved_question": "あのとき残っていたら",
+        "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+      }
+    },
+    "protected": {
+      "interpretive_claim": "一つの所属に人生の尺度を固定しきらず、所属先が変わっても自分の仕事を別の言葉で定義し直す余白が残った（優劣や成功の証明ではない）",
+      "required_public_label": "守られたもの",
+      "factual_choice": "",
+      "structural_shift": "",
+      "thesis_link": "",
+      "unresolved_tension": "",
+      "present_choice": "",
+      "measurement_shift": "",
+      "claim_atoms": {
+        "present_anchor": "自分の会社を経営している",
+        "past_anchor": "外資へ移る",
+        "unresolved_question": "あのとき残っていたら",
+        "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+      }
+    },
+    "residue": {
+      "interpretive_claim": "「あのとき残っていたら」が自分の会社を経営しているという状況のなかで消えないのは、外資へ移るが別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+      "required_public_label": "今に残った構造",
+      "factual_choice": "",
+      "structural_shift": "",
+      "thesis_link": "",
+      "unresolved_tension": "",
+      "present_choice": "",
+      "measurement_shift": "",
+      "claim_atoms": {
+        "present_anchor": "自分の会社を経営している",
+        "past_anchor": "外資へ移る",
+        "unresolved_question": "あのとき残っていたら",
+        "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+      }
+    },
+    "re_branch": {
+      "interpretive_claim": "役職や年収だけを唯一の到達指標にしない。これから何を自分の蓄積として認めるかを、自分で選び直す余地がある",
+      "required_public_label": "これからの再分岐",
+      "factual_choice": "",
+      "structural_shift": "",
+      "thesis_link": "",
+      "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+      "present_choice": "これから何を自分の蓄積として認めるかを、自分で選び直す余地がある",
+      "measurement_shift": "役職や年収だけを唯一の到達指標にしない",
+      "claim_atoms": {
+        "present_anchor": "自分の会社を経営している",
+        "past_anchor": "外資へ移る",
+        "unresolved_question": "あのとき残っていたら",
+        "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+      }
+    }
+  },
+  "title": "残らなかった道と、残る問い",
+  "body_markdown": "## 分岐点\n\n28歳のとき、NTTに残るか、外資へ移るかという分岐があった。そこには、一つの企業の内部で役割を積み上げていく道と、企業を移る道が並んでいた。\n\n## 選んだ道\n\nNTTを離れ、外資系企業へ移った。その後は複数の業界・企業を経験し、現在は自分の会社を経営している。\n\nこの経歴を並べると、一社の内部で役割を積み上げ続ける道とは異なるかたちで、仕事を続けてきたことが見えてくる。\n\n## 選ばなかった人生\n\n選ばなかったのは、一企業の内部で役割を積み上げ続ける道である。その先にどのような役割や出来事があったかを示す材料はない。\n\nただし、その道そのものは消えない。一つの組織の時間のなかで役割を重ねていく可能性として、開いたまま残っている。\n\n## 失ったもの\n\n手放したものとして置けるのは、一企業内で役割を積み上げ続ける道である。同じ組織のなかで仕事の蓄積を確かめていく連続性も、その道の側にあった。\n\n## 守られたもの\n\n企業を移る経歴には、所属先が変わっても、自分の仕事を別の言葉で捉え直す余白を読むことができる。それは選択の優劣や成功を示すものではない。一社内での蓄積とは異なるしかたで、仕事を見直す余地である。\n\n## 今に残った構造\n\n現在は自分の会社を経営している。いまも「あのとき残っていたら」と考えることがある。\n\n一社のなかで役割を重ねながら蓄積を測るあり方と、企業を移りながら仕事を捉え直すあり方。その二つを並べたところに、この問いは残っている。\n\n## 社会との接続\n\nこれは個人の会社選択であると同時に、一社内で役割を積み上げるキャリアと、企業間を移動するキャリアの境界としても読める。日本では、長期雇用や一社内での役割の蓄積を軸とする働き方と、企業間の移動を含む働き方が併存してきた。\n\nどちらかを正解として置くのではなく、二つの道が異なる蓄積の形を持つことを見ておきたい。\n\n## これからの再分岐\n\n現在は会社を経営し、複数の観測、Protocol、文章制作を行っている。この現在で、何を長期の蓄積として数えるのかは、あらためて置かれる問いになる。\n\n残らなかった人生の答えを確定する材料はない。その不確定さを残したまま、一社のなかで積み上げることと、場を移りながら積み上げることを、別々の尺度として見ていくことはできる。\n",
+  "validation": {
+    "publishable": false,
+    "blocking_reasons": [
+      "title_validation_failed",
+      "required_section_unrealized:re_branch",
+      "thesis_closure_missing:re_branch_present_choice"
+    ],
+    "required_section_realization_ok": false,
+    "required_section_realization_details": {
+      "branch_point": {
+        "ok": true,
+        "label": "分岐点",
+        "label_present": true,
+        "paragraphs": 1,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "chosen_path": {
+        "ok": true,
+        "label": "選んだ道",
+        "label_present": true,
+        "paragraphs": 2,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "unchosen_life": {
+        "ok": true,
+        "label": "選ばなかった人生",
+        "label_present": true,
+        "paragraphs": 2,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "lost": {
+        "ok": true,
+        "label": "失ったもの",
+        "label_present": true,
+        "paragraphs": 1,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "protected": {
+        "ok": true,
+        "label": "守られたもの",
+        "label_present": true,
+        "paragraphs": 1,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "residue": {
+        "ok": true,
+        "label": "今に残った構造",
+        "label_present": true,
+        "paragraphs": 2,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "observatory": {
+        "ok": true,
+        "label": "社会との接続",
+        "label_present": true,
+        "paragraphs": 2,
+        "realization_status": "realized",
+        "used_interpretive_claim": true
+      },
+      "re_branch": {
+        "ok": false,
+        "label": "これからの再分岐",
+        "label_present": true,
+        "paragraphs": 2,
+        "claim_preview": "役職や年収だけを唯一の到達指標にしない。これから何を自分の蓄積として認めるかを、自分で選び直す余地がある",
+        "realization_status": "failed",
+        "section_excerpt": "現在は会社を経営し、複数の観測、Protocol、文章制作を行っている。この現在で、何を長期の蓄積として数えるのかは、あらためて置かれる問いになる。\n\n残らなかった人生の答えを確定する材料はない。その不確定さを残したまま、一社のなかで積み上げることと、場を移りながら積み上げることを、別々の尺度として見ていくことはできる"
+      },
+      "thesis_closure": {
+        "chosen_path": {
+          "structural_shift_ok": true,
+          "thesis_link_ok": true,
+          "excerpt": "NTTを離れ、外資系企業へ移った。その後は複数の業界・企業を経験し、現在は自分の会社を経営している。\n\nこの経歴を並べると、一社の内部で役割を積み上げ続ける道とは異なるかたちで、仕事を続けてきたことが見えてくる。"
+        },
+        "residue": {
+          "ok": true,
+          "excerpt": "現在は自分の会社を経営している。いまも「あのとき残っていたら」と考えることがある。\n\n一社のなかで役割を重ねながら蓄積を測るあり方と、企業を移りながら仕事を捉え直すあり方。その二つを並べたところに、この問いは残っている。"
+        },
+        "re_branch": {
+          "ok": false,
+          "excerpt": "現在は会社を経営し、複数の観測、Protocol、文章制作を行っている。この現在で、何を長期の蓄積として数えるのかは、あらためて置かれる問いになる。\n\n残らなかった人生の答えを確定する材料はない。その不確定さを残したまま、一社のなかで積み上げることと、場を移りながら積み上げることを、別々の尺度として見ていくことはできる"
+        },
+        "ok": false
+      }
+    }
+  },
+  "scores": {
+    "factual_fidelity": 10,
+    "context_value_add": 9,
+    "resume_density": 3.0,
+    "naturalness": 7,
+    "depth": 7,
+    "life_read": "mixed",
+    "template_phrase_count": 0,
+    "marker_hits": {
+      "測る": 1,
+      "尺度": 1,
+      "蓄積": 6
+    },
+    "present_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "社会との接続",
+      "これからの再分岐"
+    ],
+    "missing_labels": [],
+    "malformed_claims": [],
+    "chosen_path_strong": true,
+    "lost_strong": true,
+    "protected_strong": true,
+    "residue_strong": true,
+    "rebranch_strong": false,
+    "remaining_resume_markers": [
+      "複数の業界",
+      "Protocol",
+      "文章制作",
+      "観測"
+    ],
+    "thesis_closure_ok": false,
+    "thesis_closure_missing": [
+      "thesis_closure_missing:re_branch_present_choice"
+    ],
+    "thesis_closure_details": {
+      "chosen_path": {
+        "structural_shift_ok": true,
+        "thesis_link_ok": true,
+        "excerpt": "NTTを離れ、外資系企業へ移った。その後は複数の業界・企業を経験し、現在は自分の会社を経営している。\n\nこの経歴を並べると、一社の内部で役割を積み上げ続ける道とは異なるかたちで、仕事を続けてきたことが見えてくる。"
+      },
+      "residue": {
+        "ok": true,
+        "excerpt": "現在は自分の会社を経営している。いまも「あのとき残っていたら」と考えることがある。\n\n一社のなかで役割を重ねながら蓄積を測るあり方と、企業を移りながら仕事を捉え直すあり方。その二つを並べたところに、この問いは残っている。"
+      },
+      "re_branch": {
+        "ok": false,
+        "excerpt": "現在は会社を経営し、複数の観測、Protocol、文章制作を行っている。この現在で、何を長期の蓄積として数えるのかは、あらためて置かれる問いになる。\n\n残らなかった人生の答えを確定する材料はない。その不確定さを残したまま、一社のなかで積み上げることと、場を移りながら積み上げることを、別々の尺度として見ていくことはできる"
+      },
+      "ok": false
+    },
+    "required_section_realization_ok": false,
+    "publishable": false,
+    "section_excerpts": {
+      "chosen_path": "NTTを離れ、外資系企業へ移った。その後は複数の業界・企業を経験し、現在は自分の会社を経営している。\n\nこの経歴を並べると、一社の内部で役割を積み上げ続ける道とは異なるかたちで、仕事を続けてきたことが見えてくる。",
+      "lost": "手放したものとして置けるのは、一企業内で役割を積み上げ続ける道である。同じ組織のなかで仕事の蓄積を確かめていく連続性も、その道の側にあった。",
+      "protected": "企業を移る経歴には、所属先が変わっても、自分の仕事を別の言葉で捉え直す余白を読むことができる。それは選択の優劣や成功を示すものではない。一社内での蓄積とは異なるしかたで、仕事を見直す余地である。",
+      "residue": "現在は自分の会社を経営している。いまも「あのとき残っていたら」と考えることがある。\n\n一社のなかで役割を重ねながら蓄積を測るあり方と、企業を移りながら仕事を捉え直すあり方。その二つを並べたところに、この問いは残っている。",
+      "re_branch": "現在は会社を経営し、複数の観測、Protocol、文章制作を行っている。この現在で、何を長期の蓄積として数えるのかは、あらためて置かれる問いになる。\n\n残らなかった人生の答えを確定する材料はない。その不確定さを残したまま、一社のなかで積み上げることと、場を移りながら積み上げることを、別々の尺度として見ていくことはできる。"
+    }
+  },
+  "targets": {
+    "fidelity": true,
+    "cva": true,
+    "resume_density": true,
+    "naturalness": false,
+    "depth": false,
+    "life_read_yes": false,
+    "chosen_path_strong": true,
+    "lost_strong": true,
+    "protected_strong": true,
+    "residue_strong": true,
+    "rebranch_strong": false,
+    "thesis_closure": false,
+    "publishable": false
+  },
+  "stop_hit": true,
+  "verdict": "PROMISING — NEEDS REVISION",
+  "before_after": {
+    "chosen_path_before": "選ばれたのは、別の企業へ移る道だった。その後、いくつかの場を経験している。ここにあるのは経歴の項目の連なりだけではなく、所属先が変わるなかで仕事を重ねてきたという事実である。",
+    "chosen_path_after": "NTTを離れ、外資系企業へ移った。その後は複数の業界・企業を経験し、現在は自分の会社を経営している。\n\nこの経歴を並べると、一社の内部で役割を積み上げ続ける道とは異なるかたちで、仕事を続けてきたことが見えてくる。",
+    "re_branch_before": "過去の選択を正解か不正解かに閉じるよりも、現在の生活のなかで何を蓄積と呼び、何によってそれを確かめるかを考える余地がある。自分の会社を経営する現在においても、一つの場で続けた時間と、移りながら重ねた経験は、単純には交換できない。その交換できなさを残したまま、これからの尺度を置いていくことが、いまの問いになる。",
+    "re_branch_after": "現在は会社を経営し、複数の観測、Protocol、文章制作を行っている。この現在で、何を長期の蓄積として数えるのかは、あらためて置かれる問いになる。\n\n残らなかった人生の答えを確定する材料はない。その不確定さを残したまま、一社のなかで積み上げることと、場を移りながら積み上げることを、別々の尺度として見ていくことはできる。"
+  },
+  "v115_comparison": {
+    "resume_density": 4.0,
+    "naturalness": 7,
+    "depth": 7,
+    "life_read": "mixed",
+    "publishable": false,
+    "title": "残っていたら、という問いのそばで"
+  },
+  "production_untouched": true
+}

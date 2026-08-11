@@ -1,0 +1,66 @@
+{
+  "case_id": "case04_romance",
+  "category": "romance / relationship",
+  "title": "Romance — breakup branch",
+  "pipeline_ok": false,
+  "elapsed_s": 20.1,
+  "session_id": "8c8923c0-1ee9-42c1-86ce-546d1205e615",
+  "call1_status": null,
+  "call1_prompt": null,
+  "call3_prompt": null,
+  "factual_fidelity": 10,
+  "naturalness": null,
+  "depth": null,
+  "life_read": "n/a",
+  "resume_density": 0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": false,
+  "protected_realization": false,
+  "residue_realization": false,
+  "rebranch_realization": false,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 0,
+  "confirmation_issues": [
+    "confirm_failed"
+  ],
+  "hard_failures": [],
+  "classification": "INCOMPLETE",
+  "final_title": "",
+  "body_excerpt": "",
+  "abstract_vocab": {},
+  "pipeline_error": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 400
+    }
+  }
+}

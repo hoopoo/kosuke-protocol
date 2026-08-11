@@ -1,0 +1,74 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+  "pack_fact_ids": [
+    "pack_current_creative_activity_003",
+    "pack_current_projects_002",
+    "pack_current_work_001"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_current_work_001",
+      "content": "現在は自分の会社を経営している",
+      "tags": [
+        "context_pack",
+        "category:current_work",
+        "pack_id:pack_live_20260808T025026Z_7342",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_projects_002",
+      "content": "文章やプロトコルをまとめている",
+      "tags": [
+        "context_pack",
+        "category:current_projects",
+        "pack_id:pack_live_20260808T025026Z_7342",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_creative_activity_003",
+      "content": "観測・Protocol・文章制作を行っている",
+      "tags": [
+        "context_pack",
+        "category:current_creative_activity",
+        "pack_id:pack_live_20260808T025026Z_7342",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T025026Z_7342",
+    "pack_fact_ids": [
+      "pack_current_creative_activity_003",
+      "pack_current_projects_002",
+      "pack_current_work_001"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": []
+  },
+  "residue": [
+    {
+      "statement": "別の大学へ進学していた場合、現在の仕事や人間関係がどのように変わっていたかを考えることが、今の自分に影響を与えている。",
+      "past_anchor_ids": [
+        "fact_2"
+      ],
+      "present_anchor_ids": [
+        "fact_3",
+        "fact_4",
+        "fact_5",
+        "fact_6"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "別の大学へ進学していたら、現在の仕事や人間関係は異なっていたかもしれない。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

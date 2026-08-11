@@ -1,0 +1,195 @@
+{
+  "case_id": "case07_creative",
+  "category": "creative work",
+  "title": "Creative work — side project vs full-time craft",
+  "pipeline_ok": true,
+  "safe_stop": true,
+  "elapsed_s": 28.28,
+  "session_id": "ef44ff98-eeb7-420d-babe-43a3f08b8a05",
+  "call1_status": "ready_for_user_confirmation",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": null,
+  "branch_semantics": {
+    "domain": "creative",
+    "changed_dimension": "表現に割く時間／生計との配分",
+    "chosen_structure": "会社員を続けながら創作を副業として続けること",
+    "unchosen_structure": "創作を本業にすること",
+    "central_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+    "lost_verifiability": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+    "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+    "present_residue": "「創作を本業にしていた場合の自分はどうなっていたのか？」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+    "possible_rebranch_modes": [
+      "choose",
+      "preserve",
+      "revisit"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.9,
+    "diagnostics": {
+      "domain_reasons": [
+        "creative:creative"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_user_confirmation",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": null,
+  "depth": null,
+  "life_read": "n/a",
+  "resume_density": 0,
+  "cva": null,
+  "personal_focus": null,
+  "social_depth": null,
+  "thesis_closure": null,
+  "title_quality": null,
+  "section_realization": {
+    "branch_point": false,
+    "chosen_path": false,
+    "unchosen_life": false,
+    "lost": false,
+    "protected": false,
+    "residue": false,
+    "observatory": false,
+    "re_branch": false,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "education-employment",
+      "after-success"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_ee_001",
+      "obs_ee_002",
+      "obs_as_001"
+    ],
+    "structures": [
+      "creative_vs_corporate"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS_SAFE_STOP",
+  "final_title": "",
+  "body_excerpt": "",
+  "abstract_vocab": {},
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "creative",
+    "changed_dimension": "表現に割く時間／生計との配分",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "claim_weak",
+    "all": [
+      "claim_weak"
+    ],
+    "blocking_reasons": [],
+    "section_realization": {
+      "branch_point": false,
+      "chosen_path": false,
+      "unchosen_life": false,
+      "lost": false,
+      "protected": false,
+      "residue": false,
+      "observatory": false,
+      "re_branch": false,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.9-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "creative",
+        "changed_dimension": "表現に割く時間／生計との配分",
+        "chosen_structure": "会社員を続けながら創作を副業として続けること",
+        "unchosen_structure": "創作を本業にすること",
+        "central_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+        "lost_verifiability": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+        "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+        "present_residue": "「創作を本業にしていた場合の自分はどうなっていたのか？」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+        "possible_rebranch_modes": [
+          "choose",
+          "preserve",
+          "revisit"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "fact_005",
+          "pack_current_work_001",
+          "pack_current_creative_activity_002",
+          "fact_006"
+        ],
+        "confidence": 0.9,
+        "diagnostics": {
+          "domain_reasons": [
+            "creative:creative"
+          ],
+          "branch_employment_evidence": false,
+          "background_employment_context": true,
+          "explicit_employment_evidence": false,
+          "allows_career_product_logic": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_user_confirmation"
+    }
+  }
+}

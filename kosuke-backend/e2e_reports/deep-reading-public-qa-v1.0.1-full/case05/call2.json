@@ -1,0 +1,86 @@
+{
+  "body_markdown": "35歳のとき、転職の話が出た。今の会社に残ることと、別の会社へ移ることが並んでおり、最初の転職話のときは実際にかなり迷った。それでも、その時点では今の会社に残った。\n\nその後、部署異動をし、数年後には別の会社へ転職した。現在の生活は、この経過の先にある。35歳のときに転職の話が出たことと、いま続いている生活とのあいだには、まだ接続しきれていないものが残っている。\n\nいま、「転職していたらどうだったか」という問いがある。35歳の時点で別の会社へ移っていた場合の具体的な仕事や生活について、確認できる材料はない。だから、その先を一つの物語として定めることはできない。ただ、かなり迷った転職話、今の会社に残った時間、部署異動、そして数年後の転職という順序のそばに、この問いは置かれている。\n",
+  "title_candidates": [
+    "35歳の転職話と、その後の現在",
+    "残った時間、移った時間",
+    "「転職していたらどうだったか」を前にして"
+  ],
+  "subtitle_candidates": [
+    "かなり迷った転職話から、部署異動と数年後の転職を経た現在まで"
+  ],
+  "sections": [
+    {
+      "internal_id": "s01",
+      "public_heading": "35歳の転職話",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "s02",
+      "public_heading": "現在まで続く経過",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "s03",
+      "public_heading": "残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "別の会社へ移った場合の勤務先、仕事内容、生活状況に関する確認済みの具体名詞がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact6"
+      ],
+      "contains_inference": false,
+      "text_preview": "35歳のとき、転職の話が出た。今の会社に残ることと、別の会社へ移ることが並んでおり、最初の転職話のときは実際にかなり迷った。それでも、その時点では今の会社に残った。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact5",
+        "ctx_001"
+      ],
+      "contains_inference": true,
+      "text_preview": "その後、部署異動をし、数年後には別の会社へ転職した。現在の生活は、この経過の先にある。35歳のときに転職の話が出たことと、いま続いている生活とのあいだには、まだ接続しきれていないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4",
+        "question_source_005",
+        "fact5",
+        "fact6"
+      ],
+      "contains_inference": false,
+      "text_preview": "いま、「転職していたらどうだったか」という問いがある。35歳の時点で別の会社へ移っていた場合の具体的な仕事や生活について、確認できる材料はない。だから、その先を一つの物語として定めることはできない。ただ、かなり迷った転職話、今の会社に残った"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 343
+}

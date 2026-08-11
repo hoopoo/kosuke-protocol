@@ -1,0 +1,101 @@
+{
+  "body_markdown": "## 三人で暮らす現在\n\n不妊治療を諦める道もあった。けれど、45歳のとき、不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生へ進んだ。\n\n現在も妻と息子との三人家族で暮らし、自分の会社を経営している。45歳の出来事から、この現在まで年月は続いている。ただ、その間の詳しい歩みは語られておらず、過去と現在のあいだには、まだ接続しきれない部分が残っている。家庭での暮らしと会社経営は、因果で結びつけるのではなく、同じ現在を構成する二つの事実として並んでいる。\n\n息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。三人で暮らす日々のなかには、そうした具体的な感情と時間がある。\n\n不妊治療を経て子どもを授かり、妻と息子と三人で暮らすことを、私は幸せな人生と捉えている。その一方で、今も、二人目を持っていたらどうだったかと考えることがある。その問いに答えを置く材料はない。三人で暮らす現在と、二人目を持つ暮らしへの想像が、ともに今のなかに残っている。\n",
+  "title_candidates": [
+    "三人で暮らす現在、二人目を思うとき",
+    "45歳の記憶と、三人家族のいま",
+    "可愛い息子と、まだ残る想像"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経た45歳から、妻と息子との暮らし、会社経営、二人目について考える現在まで"
+  ],
+  "sections": [
+    {
+      "internal_id": "s01",
+      "public_heading": "三人で暮らす現在",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "不妊治療を諦める道もあった。けれど、45歳のとき、不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生へ進んだ。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在も妻と息子との三人家族で暮らし、自分の会社を経営している。45歳の出来事から、この現在まで年月は続いている。ただ、その間の詳しい歩みは語られておらず、過去と現在のあいだには、まだ接続しきれない部分が残っている。家庭での暮らしと会社経営は"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。三人で暮らす日々のなかには、そうした具体的な感情と時間がある。"
+    },
+    {
+      "paragraph_id": "p04",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4",
+        "fact5",
+        "fact6"
+      ],
+      "contains_inference": true,
+      "text_preview": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らすことを、私は幸せな人生と捉えている。その一方で、今も、二人目を持っていたらどうだったかと考えることがある。その問いに答えを置く材料はない。三人で暮らす現在と、二人目を持つ暮らしへの想像が、"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [
+      {
+        "id": "",
+        "source_meaning": "",
+        "current_receiver": "",
+        "branch_specific_form": "",
+        "support_ids": [
+          "fact6"
+        ],
+        "genericity_score": 2,
+        "invented_scene_used": false,
+        "risks": [],
+        "publishable": false,
+        "selected_for_manuscript": false
+      }
+    ],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [
+      {
+        "excerpt": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らすことを、私は幸せな人生と捉えている。",
+        "affect_type": "幸せ",
+        "missing_support": "affect_absent:幸せ",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 433
+}

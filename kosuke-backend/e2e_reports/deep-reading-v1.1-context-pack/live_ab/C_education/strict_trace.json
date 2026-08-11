@@ -1,0 +1,24 @@
+{
+  "deep_reading_mode": "strict",
+  "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+  "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+  "pack_fact_ids": [],
+  "pack_facts": [],
+  "context_pack_usage": {},
+  "residue": [
+    {
+      "statement": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」を振り返る問いは、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact1"
+      ],
+      "present_anchor_ids": [
+        "fact3"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

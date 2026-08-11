@@ -1,0 +1,184 @@
+{
+  "case_id": "case03_education",
+  "category": "education",
+  "title": "Education — university choice",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 110.52,
+  "session_id": "3cf60846-2a75-4b96-a785-86988b7c02d9",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.8-exp",
+  "branch_semantics": {
+    "domain": "mixed",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張",
+    "lost_verifiability": "「別の大学へ進学すること」を選ばなかったことで、そこで何が続いていたかを確かめ続ける道が閉じたこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、まだ閉じきらない可能性",
+    "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.6625,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education",
+        "career:employment_evidence"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [
+      "education_auto_career_mobility",
+      "unexplained_career_template_leakage"
+    ],
+    "ok": false
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 7,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 8.0,
+  "personal_focus": 8,
+  "social_depth": 5,
+  "thesis_closure": 5,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": true,
+    "re_branch": false,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "education-employment"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_ee_002",
+      "obs_ee_001"
+    ],
+    "structures": [
+      "education_transition"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "unrealized_path_modality_violation",
+    "required_section_unrealized:branch_point",
+    "required_section_unrealized:lost",
+    "required_public_label_missing:protected:守られたもの",
+    "required_section_unrealized:re_branch",
+    "thesis_closure_missing:re_branch_present_choice",
+    "re_branch_missing_released_alternative"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [
+    "career_template_leakage:education_auto_career_mobility,unexplained_career_template_leakage"
+  ],
+  "classification": "HARD_FAIL",
+  "final_title": "進学の分かれ目が、いまの仕事に残すもの",
+  "body_excerpt": "## 分岐点\n\n19歳で第一志望の大学に合格した。進学先としては、その大学と別の大学があった。\n\n## 選んだ道\n\n選んだのは、第一志望の大学だった。その後、複数の業界を経験し、現在は文章や制作の仕事をしている。進学と現在の仕事を直接結びつける材料はない。大学に進んだ後の時間の先に、いまの仕事がある。\n\n## 選ばなかった人生\n\n別の大学への進学は選ばなかった。その先で何を学び、どのような仕事に就いたかは分からない。別の大学へ進む道もあった。\n\n## 失ったもの\n\n別の大学へ進んだ後を、自分の経験として確かめることはできない。その道がどこへ続いたかは、現在と比べられないまま残る。\n\n## 進んだ後の時間\n\n第一志望の大学に進んだ後、複数の業界を経て、現在は文章や制作の仕事をしている。この経過を進学の結果とみなすことはできない。それでも、現在の位置から過去の進学を見直すことはできる。\n\n## 今に残った構造\n\nいまも、別の大学へ進む道について考えることがある。進んだ大学と進まなかった大学は、過去の二択として閉じきってはいない。\n\n## 社会との接続\n\n進学と就労のつながりは、個人の選択だ",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 2,
+    "分岐": 2,
+    "選択": 1
+  },
+  "rebranch_missing": [
+    "re_branch_missing_released_alternative"
+  ],
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "mixed",
+        "changed_dimension": "教育の機会／制度上の進路",
+        "chosen_structure": "その大学へ進学すること",
+        "unchosen_structure": "別の大学へ進学すること",
+        "central_tension": "「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張",
+        "lost_verifiability": "「別の大学へ進学すること」を選ばなかったことで、そこで何が続いていたかを確かめ続ける道が閉じたこと",
+        "protected_possibility": "「その大学へ進学すること」を取った側に残った、まだ閉じきらない可能性",
+        "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "fact_4",
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_5"
+        ],
+        "confidence": 0.6625,
+        "diagnostics": {
+          "domain_reasons": [
+            "education:education",
+            "career:employment_evidence"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

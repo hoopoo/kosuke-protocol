@@ -1,0 +1,64 @@
+{
+  "body_markdown": "18歳で進学先を決めたとき、家から通える大学を進学先にした。もう一方には、地方の大学へ行くという行き先があった。進学という出来事は、そのときの決定として残っている。\n\nいまの現在の生活の中には、「地方に行っていたら違ったかな」という問いがある。18歳の進学先の決定と現在の生活を並べて見ることはできるが、両者を因果で結びつける材料はない。それでも、進学から現在に至るあいだには、まだ接続しきれていないものが残っている。地方の大学という行き先は、その問いの中で、決めなかった場所として置かれている。\n",
+  "title_candidates": [
+    "地方の大学という行き先",
+    "18歳の進学と、いまの問い",
+    "まだ接続しきれていないあいだ"
+  ],
+  "subtitle_candidates": [
+    "家から通える大学を進学先にした記憶と、「地方に行っていたら違ったかな」という現在の問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "section_01",
+      "public_heading": "18歳の進学先",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section_02",
+      "public_heading": "いま残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "現在の生活における具体的な対象や行為について、確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact_entity_retention_001",
+        "fact_decision_auto_001"
+      ],
+      "contains_inference": false,
+      "text_preview": "18歳で進学先を決めたとき、家から通える大学を進学先にした。もう一方には、地方の大学へ行くという行き先があった。進学という出来事は、そのときの決定として残っている。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact_entity_retention_001",
+        "fact_decision_auto_001",
+        "q1"
+      ],
+      "contains_inference": true,
+      "text_preview": "いまの現在の生活の中には、「地方に行っていたら違ったかな」という問いがある。18歳の進学先の決定と現在の生活を並べて見ることはできるが、両者を因果で結びつける材料はない。それでも、進学から現在に至るあいだには、まだ接続しきれていないものが残"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 248
+}

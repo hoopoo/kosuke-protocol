@@ -1,0 +1,106 @@
+{
+  "product": "Parallel Life Deep Reading",
+  "freeze_label": "Parallel Life Deep Reading v1.1.0",
+  "status": "PRODUCTION V1.1.0 / FROZEN",
+  "frozen_at": "2026-08-08T19:20:00+00:00",
+  "promoted_from": "PRODUCTION_MANIFEST_v1.1.0-rc1.json",
+  "immutable": true,
+  "parent_experimental": "PRODUCTION_MANIFEST_v1.1.11-exp.json",
+  "scope": [
+    "Freeze RC pins from v1.1.11-exp Track A+B (no editorial retune)",
+    "Production remains Strict v1.0.2 path: Context Pack OFF, Contextual Mode OFF",
+    "UX: sanitize internal validator codes for users (gates unchanged)",
+    "Known realization defects recorded as v1.1.x backlog — do not chase 10/10"
+  ],
+  "versions": {
+    "product": "Parallel Life Deep Reading v1.1.0",
+    "call_1_prompt_strict": "parallel-life-call-1-v1.0.3",
+    "call_1_prompt_contextual": "parallel-life-call-1-v1.1.9",
+    "call_1_schema_strict": "parallel-life-call-1-schema-v1.0.2",
+    "call_2_prompt_strict": "parallel-life-call-2-v1.0.3",
+    "call_2_prompt_contextual": "parallel-life-call-2-v1.1.11",
+    "call_3_prompt_strict": "parallel-life-call-3-v1.0.3",
+    "call_3_prompt_contextual": "parallel-life-call-3-v1.1.11",
+    "runtime_validation_strict": "parallel-life-runtime-v1.0.6",
+    "runtime_validation_contextual": "parallel-life-runtime-v1.1.11",
+    "production_models": "parallel-life-production-models-v1.0"
+  },
+  "models": {
+    "call_1": "gpt-4o-mini",
+    "call_2": "gpt-5.6-terra",
+    "call_3": "gpt-5.6-terra",
+    "notes": "Same production model split as v1.0.2; not retuned for RC freeze."
+  },
+  "feature_flags": {
+    "production": {
+      "DEEP_READING_ENABLED": true,
+      "DEEP_READING_CONTEXT_PACK_ENABLED": false,
+      "contextual_mode_public": false,
+      "strict_mode": "unchanged_default"
+    },
+    "staging": {
+      "DEEP_READING_ENABLED": true,
+      "DEEP_READING_CONTEXT_PACK_ENABLED": true,
+      "contextual_mode_public": "staging_only_flag_gated",
+      "notes": "Contextual beta remains staging/flag-gated; not production-public."
+    }
+  },
+  "schema_versions": {
+    "call_1_strict": "parallel-life-call-1-schema-v1.0.2",
+    "runtime_strict": "parallel-life-runtime-v1.0.6",
+    "runtime_contextual_rc": "parallel-life-runtime-v1.1.11"
+  },
+  "qa_report_references": [
+    "e2e_reports/deep-reading-v1.1-public-qa/PUBLIC_QA_V1111_RAW.json",
+    "e2e_reports/deep-reading-v1.1-public-qa/TARGETED_EDITORIAL_V1111_REPORT.md",
+    "e2e_reports/deep-reading-v1.1-public-qa/DETERMINISTIC_REALIZATION_V1110_REPORT.md",
+    "e2e_reports/deep-reading-v1.1-release/RELEASE_CANDIDATE_READINESS_REPORT.md",
+    "e2e_reports/deep-reading-v1.1-release/V1_1_0_RC_FREEZE_REPORT.md"
+  ],
+  "observatory_status": {
+    "architecture": "present",
+    "candidate_lenses_generated": true,
+    "qa_selected_lenses": 0,
+    "public_section_frequency_in_v1111_qa": 0,
+    "evidence_store_expansion": "v1.2 backlog — do not claim production Observatory depth"
+  },
+  "known_limitations": [
+    "entrepreneurship: residue realization intermittent gate-block",
+    "zero_lens: chosen_path / lost realization underrealized",
+    "sensitive: branch_point realization underrealized",
+    "creative: shallow chosen_path quality (publishable but thin)",
+    "Observatory public section rarely appears (selected=0 in RC QA)",
+    "End-to-end latency ~60s/case typical on staging"
+  ],
+  "known_defect_backlog_v1_1_x": [
+    {
+      "id": "ent-residue",
+      "case": "entrepreneurship",
+      "issue": "required_section_unrealized:residue",
+      "action": "targeted realization only — do not loosen gate"
+    },
+    {
+      "id": "place-chosen-lost",
+      "case": "zero_lens",
+      "issue": "chosen_path / lost underrealization",
+      "action": "place-domain realization — do not loosen gate"
+    },
+    {
+      "id": "sensitive-branch-point",
+      "case": "sensitive",
+      "issue": "branch_point underrealization",
+      "action": "safety-preserving Branch Point prose — do not weaken causality detector"
+    },
+    {
+      "id": "creative-chosen-depth",
+      "case": "creative",
+      "issue": "shallow chosen_path",
+      "action": "editorial depth only — not a safety blocker"
+    }
+  ],
+  "title_validation_changed": false,
+  "publication_blockers_loosened": false,
+  "editorial_prompts_changed": false,
+  "production_v1_0_2_unchanged": true,
+  "freeze_rule": "Do not retune prompts or loosen gates for publishable count. Contextual beta stays non-public until explicit cutover."
+}

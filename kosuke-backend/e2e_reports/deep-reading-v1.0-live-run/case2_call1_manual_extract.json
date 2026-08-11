@@ -1,0 +1,38 @@
+{
+  "case": "case2",
+  "facts_n": 0,
+  "questions_n": 0,
+  "feelings_n": 0,
+  "current_context": null,
+  "primary": null,
+  "secondary_raw_type": "list",
+  "secondary_raw": [
+    {
+      "branch_type": "later_branch",
+      "content": "息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。"
+    }
+  ],
+  "counterfactual_raw_type": "NoneType",
+  "counterfactual_raw": null,
+  "central_thesis": "選択した人生は、妻と息子との三人家族であり、経営者としての生活を楽しんでいる。",
+  "selected_lenses": [],
+  "evaluated_lenses": [],
+  "rebranch_design_type": "dict",
+  "rebranch_design": {
+    "source_meaning": "二人目を持つことへの考え",
+    "current_receiver": "ユーザー",
+    "branch_specific_form": "選択肢の再評価",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "user_confirmation_view": "この内容で問題ありませんか？",
+  "input_sufficiency": "sufficient",
+  "type_mismatches": {
+    "input_sufficiency": "str",
+    "user_confirmation_view": "str",
+    "central_thesis": "str",
+    "rebranch_design": "dict",
+    "lost_structure": "dict",
+    "protected_structure": "dict"
+  }
+}

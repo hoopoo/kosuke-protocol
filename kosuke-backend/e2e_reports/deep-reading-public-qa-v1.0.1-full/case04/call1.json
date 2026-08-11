@@ -1,0 +1,257 @@
+{
+  "status": "ready_for_user_confirmation",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "20代の時期に長く付き合っていた人と別れた",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "時期: 20代\n出来事: 長く付き合っていた人と別れた",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "別れた道を選んだ",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選んだ道: 別れた",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "一緒にいることを選ばなかった",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道: 一緒にいること",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact4",
+        "content": "今は普通に暮らしている",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "いまの状況: 今は普通に暮らしている",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [
+      {
+        "id": "fact6",
+        "content": "思い出すと少し寂しいと感じる",
+        "boundary_type": "user_feeling",
+        "source_field": "source_text",
+        "source_text": "補足: 思い出すと少し寂しい",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "questions": [
+      {
+        "id": "fact5",
+        "content": "あのままだったら幸せだったのかなという問いを持っている",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "いまの問い: あのままだったら幸せだったのかな",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": []
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "20代",
+      "triggering_event": "長く付き合っていた人と別れた",
+      "available_paths": [
+        "別れた",
+        "一緒にいること"
+      ],
+      "realized_path": "別れた",
+      "unrealized_paths": [
+        "一緒にいること"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact5",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "あのままだったら幸せだったのかなという問いを持っている",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "present_question_ids": [
+      "fact5"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "reflection",
+    "statement": "別れたことが本当に幸せだったのか疑問に思う",
+    "pole_a": "別れたことが幸せだった",
+    "pole_b": "一緒にいることが幸せだった",
+    "supported_by": [
+      "fact5",
+      "fact6"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": [
+      {
+        "residue_statement": "「別れた道を選んだ」という過去の分岐のあとで、「思い出すと少し寂しいと感じる」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「別れた道を選んだ」という過去の分岐のあとで、「思い出すと少し寂しいと感じる」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact2"
+        ],
+        "present_anchor_ids": [
+          "fact6"
+        ],
+        "support_ids": [
+          "fact2",
+          "fact6"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ]
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": false,
+    "questions": []
+  },
+  "user_confirmation_view": {
+    "branch_period": "20代",
+    "triggering_event": "長く付き合っていた人と別れた",
+    "chosen_path": "別れた",
+    "unchosen_path": "一緒にいること",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      "あのままだったら幸せだったのかなという問いを持っている"
+    ],
+    "present_questions": [
+      "あのままだったら幸せだったのかなという問いを持っている"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "feelings": [
+      "思い出すと少し寂しいと感じる"
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "別れたことが本当に幸せだったのか疑問に思う",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": [],
+    "material_contradictions": [],
+    "material_contradiction_count": 0,
+    "branch_concreteness_ok": true,
+    "thesis_deferred_due_to_contradiction": false,
+    "sensitive_thesis_rejected": false
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.2",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

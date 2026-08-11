@@ -1,0 +1,673 @@
+{
+  "session_id": "36f54f2d-bbdd-48ec-874c-da17e9b04366",
+  "raw_user_input": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。\n実際に選んだ道はNTTを離れ、外資系企業へ移ること。\n選ばなかった道は、一企業の内部で役割を積み上げ続けること。\nいまは自分の会社を経営している。\nいまも「あのとき残っていたら」と考えることがある。",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact_001",
+          "content": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_002",
+          "content": "実際に選んだ道はNTTを離れ、外資系企業へ移ること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道はNTTを離れ、外資系企業へ移ること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_003",
+          "content": "選ばなかった道は、一企業の内部で役割を積み上げ続けること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、一企業の内部で役割を積み上げ続けること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_004",
+          "content": "現在は自分の会社を経営している。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_current_work_004",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_career_history_001",
+          "content": "NTT東日本で勤務した",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "NTT東日本で勤務した",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_career_history_002",
+          "content": "外資系半導体企業へ転職した",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "外資系半導体企業へ転職した",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_career_history_003",
+          "content": "その後、複数業界・企業を経験した",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "その後、複数業界・企業を経験した",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_work_004",
+          "content": "現在は自分の会社を経営している",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_projects_005",
+          "content": "現在、複数の観測・Protocol・文章制作を行っている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "現在、複数の観測・Protocol・文章制作を行っている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_projects",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「あのとき残っていたら」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「あのとき残っていたら」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "現在は自分の会社を経営している",
+        "現在、複数の観測・Protocol・文章制作を行っている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "28歳のとき",
+        "triggering_event": "NTTに残るか、外資へ移るかを選ぶ分岐",
+        "available_paths": [
+          "NTTに残る",
+          "外資へ移る"
+        ],
+        "realized_path": "外資系企業へ移る",
+        "unrealized_paths": [
+          "NTTに残る"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_fact_005",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「あのとき残っていたら」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "central_thesis": {
+      "thesis_type": "career_choice",
+      "statement": "キャリアの選択が現在の自分にどのように影響を与えたか。",
+      "pole_a": "NTTに残る",
+      "pole_b": "外資系企業へ移る",
+      "supported_by": [
+        "fact_001",
+        "fact_002",
+        "fact_003",
+        "fact_004"
+      ],
+      "risks": [],
+      "validation_status": "pending"
+    },
+    "lost_structure": {
+      "items": []
+    },
+    "protected_structure": {
+      "items": []
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "もしあのときNTTに残っていたら、現在の自分はどうなっていたか。",
+          "content": "もしあのときNTTに残っていたら、現在の自分はどうなっていたか。",
+          "past_anchor_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_003"
+          ],
+          "present_anchor_ids": [
+            "pack_current_work_004",
+            "pack_current_projects_005"
+          ],
+          "support_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_003",
+            "pack_current_work_004",
+            "pack_current_projects_005"
+          ],
+          "inference_distance": "medium",
+          "present_life_domain": "career",
+          "overreach_risk": "low",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": []
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": []
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "28歳のとき",
+      "triggering_event": "NTTに残るか、外資へ移るかを選ぶ分岐",
+      "chosen_path": "外資系企業へ移る",
+      "unchosen_path": "NTTに残る",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "いまも「あのとき残っていたら」と考えることがある。"
+      ],
+      "present_questions": [
+        "いまも「あのとき残っていたら」と考えることがある。"
+      ],
+      "current_context": [
+        "現在は自分の会社を経営している",
+        "現在、複数の観測・Protocol・文章制作を行っている"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "キャリアの選択が現在の自分にどのように影響を与えたか。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "runtime:parallel-life-runtime-v1.1.0-exp"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.0",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T025454Z_8207",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [
+        "pack_current_work_004",
+        "pack_current_projects_005"
+      ],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T02:55:28.053213+00:00",
+  "call2": {
+    "body_markdown": "28歳のとき、NTTに残ることと外資へ移ることの間に、進路を決める場面があった。NTT東日本で勤務したのち、NTTを離れ、外資系半導体企業へ転職した。一企業の内部で役割を積み上げ続ける時間は、ここでは続かなかった。\n\n外資系半導体企業への転職の後には、複数の業界と企業を経験している。ただし、NTTに残っていた場合にどのような経歴になったかを確かめる材料はない。比較できるのは、社内で役割を重ねていく可能性があったことと、その後に複数の業界・企業を経てきたという経歴までである。\n\n現在は自分の会社を経営し、複数の観測、Protocol、文章制作を行っている。その現在の仕事のなかに、「あのとき残っていたら」という問いが残っている。NTTにとどまった現在像を描き切ることはできない。それでも、会社を経営しながら観測と文章制作を続ける今日と、28歳でNTTを離れた場面は、同じ問いの両端に置かれている。\n",
+    "title_candidates": [
+      "28歳のNTTと、いまの会社",
+      "「残っていたら」が残る現在",
+      "NTTを離れた後、会社を経営するまで"
+    ],
+    "subtitle_candidates": [
+      "外資系半導体企業への転職、その後の複数業界・企業の経験、そして現在に残る問い"
+    ],
+    "sections": [
+      {
+        "internal_id": "main",
+        "public_heading": "28歳のNTTと現在",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "追加の出来事や具体的な再検討対象を示す確認済みの記録がないため。",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "contains_inference": false,
+        "text_preview": "28歳のとき、NTTに残ることと外資へ移ることの間に、進路を決める場面があった。NTT東日本で勤務したのち、NTTを離れ、外資系半導体企業へ転職した。一企業の内部で役割を積み上げ続ける時間は、ここでは続かなかった。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact_003",
+          "pack_career_history_002",
+          "pack_career_history_003"
+        ],
+        "contains_inference": false,
+        "text_preview": "外資系半導体企業への転職の後には、複数の業界と企業を経験している。ただし、NTTに残っていた場合にどのような経歴になったかを確かめる材料はない。比較できるのは、社内で役割を重ねていく可能性があったことと、その後に複数の業界・企業を経てきたと"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_current_work_004",
+          "pack_current_projects_005",
+          "q_confirm_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "現在は自分の会社を経営し、複数の観測、Protocol、文章制作を行っている。その現在の仕事のなかに、「あのとき残っていたら」という問いが残っている。NTTにとどまった現在像を描き切ることはできない。それでも、会社を経営しながら観測と文章制"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1
+    },
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 400
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "NTTを離れた後の経歴と、残る問い",
+    "final_subtitle": "外資系半導体企業への転職、複数業界・企業での経験、現在の会社経営",
+    "body_markdown": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。NTT東日本で勤務した後、NTTを離れ、外資系半導体企業へ転職した。選ばなかったのは、一企業の内部で役割を積み上げ続ける道だった。\n\nその後、複数の業界と企業を経験した。現在は自分の会社を経営し、複数の観測、Protocol、文章制作を行っている。\n\nNTTに残っていた場合の経歴を確かめる材料はない。社内で役割を積み上げ続ける道と、外資系半導体企業への転職の後に複数の業界・企業を経験し、現在は会社を経営している経歴を、並べて見ることができる。\n\nいまも、「あのとき残っていたら」と考えることがある。もしあのときNTTに残っていたら、現在の自分はどうなっていたか。その問いには、描き切れないもう一つの経歴が残っている。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "NTTを離れた後の経歴と、残る問い",
+        "selected_subtitle": "外資系半導体企業への転職、複数業界・企業での経験、現在の会社経営",
+        "title_supported_by_fact_ids": [],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "character_count": 342
+  },
+  "final_manuscript": "# NTTを離れた後の経歴と、残る問い\n\n*外資系半導体企業への転職、複数業界・企業での経験、現在の会社経営*\n\n28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。NTT東日本で勤務した後、NTTを離れ、外資系半導体企業へ転職した。選ばなかったのは、一企業の内部で役割を積み上げ続ける道だった。\n\nその後、複数の業界と企業を経験した。現在は自分の会社を経営し、複数の観測、Protocol、文章制作を行っている。\n\nNTTに残っていた場合の経歴を確かめる材料はない。社内で役割を積み上げ続ける道と、外資系半導体企業への転職の後に複数の業界・企業を経験し、現在は会社を経営している経歴を、並べて見ることができる。\n\nいまも、「あのとき残っていたら」と考えることがある。もしあのときNTTに残っていたら、現在の自分はどうなっていたか。その問いには、描き切れないもう一つの経歴が残っている。\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.0",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.0",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call_1_prompt_version": "parallel-life-call-1-v1.1.0",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T025454Z_8207",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [
+        "pack_current_work_004",
+        "pack_current_projects_005"
+      ],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "runtime_version": "parallel-life-runtime-v1.1.0-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.0-exp",
+  "created_at": "2026-08-08T02:55:01.287562+00:00",
+  "updated_at": "2026-08-08T02:56:04.842Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T02:56:04.842Z",
+  "idempotency_keys": {
+    "draft:v11ab-A_ntt-contextual-20260808T025528Z": "complete",
+    "edit:v11ab-A_ntt-contextual-20260808T025528Z-edit": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T025454Z_8207",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T02:54:54.920989+00:00",
+    "updated_at": "2026-08-08T02:55:01.287493+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T02:55:01.287493+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "category": "career_history",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 10,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "category": "career_history",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 11,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "category": "career_history",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 12,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 103,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "category": "current_projects",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 104,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

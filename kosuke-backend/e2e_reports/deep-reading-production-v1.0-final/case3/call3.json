@@ -1,0 +1,63 @@
+{
+  "status": "validation_failed",
+  "final_title": "十九歳の合格と、現在",
+  "final_subtitle": "文章やプロトコルをまとめる生活のそばに残る、別の大学についての問い",
+  "body_markdown": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。別の大学へ進学する道は選ばなかった。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。十九歳の合格と現在を並べると、そのあいだには、ひと続きの説明にならない部分が残る。\n\n別の大学なら、仕事や人間関係がどう変わったかと考えることがある。早稲田大学第一文学部に合格した十九歳のこと、文章やプロトコルをまとめている現在のこと、そして別の大学についての問い。これらは並べて置くことができるが、その間隔には、まだ言葉になりきらないものが残っている。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "unsupported_personal_details": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unrealized_path_modality_violations": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "十九歳の合格と、現在",
+      "selected_subtitle": "文章やプロトコルをまとめる生活のそばに残る、別の大学についての問い",
+      "title_supported_by_fact_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "title_supported_by_central_thesis": false,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": false,
+      "notes": [
+        "title_not_linked_to_central_thesis"
+      ]
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "unsupported_paragraphs": [],
+    "unsupported_causality_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "schema_leakage_prose_count": 0,
+    "unrealized_path_modality_violation_count": 0,
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "manual_fidelity_gap_possible": false,
+    "central_thesis_maintained": true,
+    "residue_centrality": true,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": false,
+    "blocking_reasons": [
+      "title_validation_failed"
+    ]
+  },
+  "prompt_version": "parallel-life-call-3-v1.0.3",
+  "character_count": 259
+}

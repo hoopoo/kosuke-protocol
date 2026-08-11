@@ -1,0 +1,70 @@
+{
+  "healthz": {
+    "ok": true,
+    "detail": {
+      "status": "ok",
+      "deep_reading_enabled": true,
+      "env": "production"
+    }
+  },
+  "A_standard_happy": {
+    "ok": true,
+    "detail": {
+      "status": 200,
+      "keys": [
+        "title",
+        "subtitle",
+        "branch_point",
+        "chosen_path",
+        "unchosen_life",
+        "lost",
+        "protected",
+        "residue",
+        "observatory_layers",
+        "cross_lens_synthesis",
+        "rebranch",
+        "closing"
+      ]
+    }
+  },
+  "B_deep_reading_happy": {
+    "ok": true,
+    "detail": {
+      "session_id": "20d90885-8b39-4018-9b40-7ebab84cd39b",
+      "draft": 200,
+      "edit": 200,
+      "status": "complete"
+    }
+  },
+  "F_session_persistence": {
+    "ok": true,
+    "detail": {
+      "session_get": 200,
+      "confirm": 200,
+      "draft": 200,
+      "edit": 200
+    }
+  },
+  "C_case09_contradiction": {
+    "ok": true,
+    "detail": {
+      "ground": 200,
+      "status": "needs_additional_input",
+      "confirm_blocked": true
+    }
+  },
+  "D_case10_vague_branch": {
+    "ok": true,
+    "detail": {
+      "ground": 200,
+      "status": "structural_ambiguity",
+      "ambiguous": true
+    }
+  },
+  "E_kill_switch_probe_enabled": {
+    "ok": true,
+    "detail": {
+      "enabled": true
+    }
+  }
+}

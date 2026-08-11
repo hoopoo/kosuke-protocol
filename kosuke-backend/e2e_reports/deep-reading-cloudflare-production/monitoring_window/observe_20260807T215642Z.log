@@ -1,0 +1,63 @@
+=== observe start 20260807T215642Z ===
+--- healthz ---
+{"status":"ok","deep_reading_enabled":true,"env":"production"}
+HTTP 200 time_total=0.571502
+--- enabled ---
+{"enabled":true}
+HTTP 200 time_total=0.283829
+--- pages home ---
+HTTP 200 time_total=0.125841
+--- pages spa nested ---
+HTTP 200 time_total=0.102916
+--- session DO healthz ---
+{"status":"ok","service":"parallel-life-session-do"}
+HTTP 200 time_total=0.109940
+--- containers list ---
+┌──────────────────────────────────────┬───────────────────────────────────────────────────────┬────────┬────────────────┬────────────────────────────────┐
+│ ID                                   │ NAME                                                  │ STATE  │ LIVE INSTANCES │ LAST MODIFIED                  │
+├──────────────────────────────────────┼───────────────────────────────────────────────────────┼────────┼────────────────┼────────────────────────────────┤
+│ a038580f-683c-4a16-8a86-e42db39cb688 │ parallel-life-api-parallellifebackend-production      │ active │ 7              │ 2026-08-07T21:53:20.151000064Z │
+├──────────────────────────────────────┼───────────────────────────────────────────────────────┼────────┼────────────────┼────────────────────────────────┤
+│ a032c112-8987-4c52-99e8-8da2d76c2166 │ parallel-life-api-staging-parallellifebackend-staging │ active │ 2              │ 2026-08-07T10:33:45.625999872Z │
+└──────────────────────────────────────┴───────────────────────────────────────────────────────┴────────┴────────────────┴────────────────────────────────┘
+--- prod deployments (latest) ---
+
+ ⛅️ wrangler 4.119.0 (update available 4.120.0)
+───────────────────────────────────────────────
+Created:     2026-08-07T21:22:36.732Z
+Author:      shiroandco.office@gmail.com
+Source:      Secret Change
+Message:     -
+Version(s):  (100%) 062d5950-b8a4-4be8-84a9-f74e024da3d5
+                 Created:  2026-08-07T21:22:36.732Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-07T21:24:35.450Z
+Author:      shiroandco.office@gmail.com
+Source:      Upload
+Message:     Automatic deployment on upload.
+Version(s):  (100%) cb1ea254-525f-45dc-922e-f081d14228e7
+                 Created:  2026-08-07T21:24:35.450Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-07T21:28:06.408Z
+Author:      shiroandco.office@gmail.com
+Source:      Upload
+Message:     Automatic deployment on upload.
+Version(s):  (100%) da10b0fb-979c-4d38-8cbc-f616407b6cc9
+                 Created:  2026-08-07T21:28:06.408Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-07T21:29:12.677Z
+Author:      shiroandco.office@gmail.com
+Source:      Upload
+Message:     Automatic deployment on upload.
+Version(s):  (100%) 6c35c95c-b24e-4435-a717-b1c77903261e
+                 Created:  2026-08-07T21:29:12.677Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-07T21:30:36.346Z

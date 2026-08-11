@@ -1,0 +1,70 @@
+{
+  "body_markdown": "40歳の時に会社を辞め、独立した。その時、会社員を続けることも選択肢にあった。\n\nいまも働いている。その現在に、「会社員を続けていたらどうだったか」という問いが置かれている。会社員を続けた場合の仕事や生活については、ここで確かめられる記録はない。だから、その先を具体的な伝記として語ることはできない。\n\n40歳で会社を辞めた過去と、いまも働いている現在のあいだには、まだ接続しきれていないものが残っている。独立して働いている現在を前に、会社員を続けた時間を問う声もまた、そこに残る。\n",
+  "title_candidates": [
+    "四十歳の退職と、いまも続く仕事",
+    "独立した現在、会社員を続けた時間",
+    "働き続ける現在のそばにある問い"
+  ],
+  "subtitle_candidates": [
+    "「会社員を続けていたらどうだったか」を、答えのないまま見つめる"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "現在の資料には、再検討の起点として扱える具体的な事物・場面・固有の対象がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "40歳の時に会社を辞め、独立した。その時、会社員を続けることも選択肢にあった。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact4",
+        "question1",
+        "question_source_005"
+      ],
+      "contains_inference": false,
+      "text_preview": "いまも働いている。その現在に、「会社員を続けていたらどうだったか」という問いが置かれている。会社員を続けた場合の仕事や生活については、ここで確かめられる記録はない。だから、その先を具体的な伝記として語ることはできない。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact4",
+        "question1"
+      ],
+      "contains_inference": true,
+      "text_preview": "40歳で会社を辞めた過去と、いまも働いている現在のあいだには、まだ接続しきれていないものが残っている。独立して働いている現在を前に、会社員を続けた時間を問う声もまた、そこに残る。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 241
+}

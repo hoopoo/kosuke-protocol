@@ -1,0 +1,260 @@
+{
+  "status": "ready_for_user_confirmation",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact_001",
+        "content": "28歳のときNTTに残るか外資へ移るかを選んだ",
+        "boundary_type": "explicit_fact",
+        "source_field": "triggering_event",
+        "source_text": "",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_002",
+        "content": "NTTを離れ外資系企業へ移った",
+        "boundary_type": "explicit_fact",
+        "source_field": "chosen_path",
+        "source_text": "",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_current_preserved_001",
+        "content": "いまは自分の会社を経営している",
+        "boundary_type": "explicit_fact",
+        "source_field": "current_context_preserved",
+        "source_text": "いまは自分の会社を経営している",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "q1",
+        "content": "あのときNTTに残っていたらどうなっていたか",
+        "boundary_type": "user_question",
+        "source_field": "",
+        "source_text": "",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "いまは自分の会社を経営している"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": []
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "28歳",
+      "triggering_event": "NTTに残るか外資へ移るか",
+      "available_paths": [],
+      "realized_path": "NTTを離れ外資系企業へ移った",
+      "unrealized_paths": [
+        "一企業の内部で役割を積み上げ続ける"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact_001",
+        "fact_002"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_q1",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "あのときNTTに残っていたらどうなっていたか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "present_question_ids": [
+      "q1"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "",
+    "statement": "制度の内側から外へ移る選択",
+    "pole_a": "",
+    "pole_b": "",
+    "supported_by": [],
+    "risks": [],
+    "validation_status": "pending"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": [
+      {
+        "residue_statement": "一企業の内部で役割を積み上げる道を離れた経験は、現在の経営と並べて読むことができる",
+        "content": "一企業の内部で役割を積み上げる道を離れた経験は、現在の経営と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "ctx_001"
+        ],
+        "support_ids": [
+          "fact_001",
+          "ctx_001"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "",
+        "overreach_risk": "",
+        "advances_manuscript": true
+      }
+    ]
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [
+      {
+        "lens_id": "protocol_publishing",
+        "explicit_evidence_ids": [
+          "fact_002"
+        ],
+        "residue_evidence_ids": [
+          "res_001"
+        ],
+        "new_meaning_added": "出版プロトコルという制度枠から分岐を読む",
+        "evidence_gate_passed": true,
+        "rejection_reason": "",
+        "confidence": 0.0
+      },
+      {
+        "lens_id": "education_employment",
+        "explicit_evidence_ids": [],
+        "residue_evidence_ids": [
+          "res_001"
+        ],
+        "new_meaning_added": "",
+        "evidence_gate_passed": false,
+        "rejection_reason": "missing_explicit_evidence;missing_new_meaning",
+        "confidence": 0.0
+      }
+    ],
+    "selected": [
+      {
+        "lens_id": "protocol_publishing",
+        "explicit_evidence_ids": [
+          "fact_002"
+        ],
+        "residue_evidence_ids": [
+          "res_001"
+        ],
+        "new_meaning_added": "出版プロトコルという制度枠から分岐を読む",
+        "evidence_gate_passed": true,
+        "rejection_reason": "",
+        "confidence": 0.0
+      }
+    ]
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": false,
+    "questions": []
+  },
+  "user_confirmation_view": {
+    "branch_period": "28歳",
+    "triggering_event": "NTTに残るか外資へ移るか",
+    "chosen_path": "NTTを離れ外資系企業へ移った",
+    "unchosen_path": "一企業の内部で役割を積み上げ続ける",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      "あのときNTTに残っていたらどうなっていたか"
+    ],
+    "present_questions": [
+      "あのときNTTに残っていたらどうなっていたか"
+    ],
+    "current_context": [
+      "いまは自分の会社を経営している"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "制度の内側から外へ移る選択",
+    "observatory_lens_candidates": [
+      "protocol_publishing: 出版プロトコルという制度枠から分岐を読む"
+    ],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [
+      "education_employment"
+    ],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": [],
+    "material_contradictions": [],
+    "material_contradiction_count": 0,
+    "branch_concreteness_ok": true,
+    "thesis_deferred_due_to_contradiction": false,
+    "sensitive_thesis_rejected": false
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.3",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": null,
+  "context_pack_usage": null
+}

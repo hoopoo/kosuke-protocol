@@ -1,0 +1,54 @@
+{
+    "id": "a038580f-683c-4a16-8a86-e42db39cb688",
+    "created_at": "2026-08-07T21:22:29.665999872Z",
+    "updated_at": "2026-08-07T21:53:20.151000064Z",
+    "account_id": "53154fa721b9ebb31574651fc9f10081",
+    "name": "parallel-life-api-parallellifebackend-production",
+    "version": 2,
+    "scheduling_policy": "default",
+    "instances": 7,
+    "max_instances": 10,
+    "configuration": {
+        "image": "registry.cloudflare.com/53154fa721b9ebb31574651fc9f10081/parallel-life-api-parallellifebackend-production@sha256:74607d8e7385b56274f8dd7b555847f8c40a205fa288d194fb49f7b719176c78",
+        "vcpu": 0.5,
+        "memory": "4GiB",
+        "memory_mib": 4096,
+        "disk": {
+            "size_mb": 8000,
+            "size": "8GB"
+        },
+        "network": {
+            "assign_ipv6": "none",
+            "assign_ipv4": "none",
+            "mode": "private"
+        },
+        "command": [],
+        "entrypoint": [],
+        "runtime": "firecracker"
+    },
+    "constraints": {
+        "tiers": [
+            1,
+            2
+        ]
+    },
+    "durable_objects": {
+        "namespace_id": "16ec5366e4dc4f11a28c9796bae8df80"
+    },
+    "rollout_active_grace_period": 0,
+    "health": {
+        "errors": [],
+        "instances": {
+            "active": 1,
+            "assigned": 0,
+            "healthy": 6,
+            "stopped": 0,
+            "failed": 0,
+            "scheduling": 0,
+            "starting": 0
+        }
+    },
+    "network": {
+        "bandwidth_limit_mbps": 500
+    }
+}

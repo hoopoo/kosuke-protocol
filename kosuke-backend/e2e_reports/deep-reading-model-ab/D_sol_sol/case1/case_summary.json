@@ -1,0 +1,80 @@
+{
+  "config_id": "D_sol_sol",
+  "case_id": "case1",
+  "call2_model": "gpt-5.6-sol",
+  "call3_model": "gpt-5.6-sol",
+  "errors": [],
+  "final_title": "三人で暮らす現在と、二人目のこと",
+  "final_subtitle": "45歳で子どもを授かってから、妻と息子との暮らし、会社経営、今も残る問いまで",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 332,
+  "latency_ms": {
+    "call2_wall": 31118,
+    "call3_wall": 31325,
+    "total_wall": 62444,
+    "sum_api_calls": 62417
+  },
+  "tokens": {
+    "prompt": 7906,
+    "completion": 4312,
+    "reasoning": 2703,
+    "total": 12218
+  },
+  "estimated_cost_usd": 0.14733,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 31108,
+      "prompt_tokens": 3700,
+      "completion_tokens": 2377,
+      "reasoning_tokens": 1536,
+      "estimated_cost_usd": 0.077925,
+      "response_model": "gpt-5.6-sol"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 31309,
+      "prompt_tokens": 4206,
+      "completion_tokens": 1935,
+      "reasoning_tokens": 1167,
+      "estimated_cost_usd": 0.069405,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 31108,
+      "prompt_tokens": 3700,
+      "completion_tokens": 2377,
+      "reasoning_tokens": 1536,
+      "estimated_cost_usd": 0.077925,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "body_preview": "## 三人で暮らす現在\n\n不妊治療を諦める道もあった。45歳のとき、不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだ。\n\n現在も妻と息子との三人家族で暮らし、自分の会社を経営している。45歳で子どもを授かってから現在に至るまでの具体的な歩みは、ここにある事実だけではたどれない。過去の分岐と現在の生活のあいだには、まだつながりを語りきれない部分が残っている。\n\n息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。三人で暮らす現在には、そうした日々がある。\n\n同時に、今も二人目を持っていたらどうだったかと考えることがある。二人目がいた場合について、これ以上の答えを出せる材料はない。問いは問いのまま、三人で暮らす現在に残っている。\n"
+}

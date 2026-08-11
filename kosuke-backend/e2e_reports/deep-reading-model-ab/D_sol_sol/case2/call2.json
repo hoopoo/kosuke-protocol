@@ -1,0 +1,82 @@
+{
+  "body_markdown": "## 45歳と三人の暮らし\n\n45歳のとき、不妊治療を経て子どもを授かった。当時には、不妊治療を諦める道もあった。その先にあるのが、妻と息子と三人で暮らす人生である。\n\n現在、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳で子どもを授かったことと、こうした現在の暮らしは、同じ時間の中に並んでいる。ただし、そのあいだのすべてを結びつける材料はない。過去と現在のあいだには、まだ接続しきれていないものが残っている。\n\n## 二人目をめぐる余白\n\n息子を授かった後、二人目を目指す治療を続けるかどうかを妻と話し合い、治療をやめた。\n\n今も、二人目を持っていたらどうだったかと考えることがある。妻と息子との三人の暮らしがあり、息子を可愛いと感じ、友人たちが遊びに来る時間を楽しいと感じている。その現在と、二人目のいた暮らしへの問いは、どちらかがどちらかを打ち消すのではなく、答えの定まらないまま並んでいる。\n",
+  "title_candidates": [
+    "三人の暮らしと、二人目への問い",
+    "45歳からの家族、いま残る余白",
+    "息子のいる現在と、もう一つの家族像"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経た日々と、今もときどき考えること"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "45歳と三人の暮らし",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section2",
+      "public_heading": "二人目をめぐる余白",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "具体的な展開方向を支える確認済みの材料がないため省略した。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。当時には、不妊治療を諦める道もあった。その先にあるのが、妻と息子と三人で暮らす人生である。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "feeling1"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳で子どもを授かったことと、こうした現在の暮らしは、同じ時間の中に並んでいる。ただし、そのあいだのすべてを結びつける材料はない。過去と現在のあいだには、まだ接続しき"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "息子を授かった後、二人目を目指す治療を続けるかどうかを妻と話し合い、治療をやめた。"
+    },
+    {
+      "paragraph_id": "p04",
+      "support_ids": [
+        "fact2",
+        "feeling1",
+        "question1"
+      ],
+      "contains_inference": true,
+      "text_preview": "今も、二人目を持っていたらどうだったかと考えることがある。妻と息子との三人の暮らしがあり、息子を可愛いと感じ、友人たちが遊びに来る時間を楽しいと感じている。その現在と、二人目のいた暮らしへの問いは、どちらかがどちらかを打ち消すのではなく、答"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 413
+}

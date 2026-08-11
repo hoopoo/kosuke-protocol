@@ -1,0 +1,57 @@
+{
+  "body_markdown": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この選択は、私の学問に対する情熱を具現化した瞬間であり、大学生活のスタートを切る重要な出来事であった。選ばなかった道は、別の大学へ進学することだったが、その選択肢は私の人生の中で実現することはなかった。現在、私は複数の業界を経験したあと、文章やプロトコルをまとめている。これまでの経験が、どのように私の現在の仕事に影響を与えているのかは、確認できないものの、大学選択がその後の人生に影響を与える可能性があることは感じている。時折、別の大学なら仕事や人間関係がどう変わったかと考えることがある。過去の選択と現在の生活構造が続いており、そのあいだにはまだ接続しきれていないものが残っている。\n",
+  "title_candidates": [
+    "大学選択とその後の人生",
+    "過去の選択と現在の生活",
+    "人生の分岐点"
+  ],
+  "subtitle_candidates": [
+    "19歳のときの決断がもたらしたもの"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "大学選択の影響",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この選択は、私の学問に対する情熱を具現化した瞬間であり、大学生活のスタートを切る重要な出来事であった。選ばなかった道は、別の大学へ進学することだったが、その選択肢は私の人生の中で実現す"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [
+      {
+        "excerpt": "これまでの経験が、どのように私の現在の仕事に影響を与えているのかは、確認できないものの、大学選択がその後の人生に影響を与える可能性があることは感じている。",
+        "frame_type": "causal_presupposition",
+        "missing_support": "causal_frame_without_explicit_support",
+        "category": "unsupported"
+      }
+    ],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 321
+}

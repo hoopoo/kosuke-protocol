@@ -1,0 +1,100 @@
+{
+  "started_at": "2026-08-07T21:57:58.139374+00:00",
+  "checks": [
+    {
+      "id": "M1_standard",
+      "ok": true,
+      "http": 200,
+      "elapsed_s": 16.178,
+      "keys": [
+        "title",
+        "subtitle",
+        "branch_point",
+        "chosen_path",
+        "unchosen_life",
+        "lost",
+        "protected",
+        "residue"
+      ],
+      "anomaly": null
+    },
+    {
+      "id": "M2_deep_reading_call1_persist",
+      "ok": true,
+      "http_ground": 200,
+      "http_session": 200,
+      "elapsed_ground_s": 12.442,
+      "elapsed_session_s": 0.371,
+      "session_id": "5f98d1fa-96b4-4590-8813-f4aebafa557e",
+      "status": "ready_for_user_confirmation",
+      "meta": {
+        "prompt_versions": {
+          "call_1": "parallel-life-call-1-v1.0.2",
+          "call_2": "parallel-life-call-2-v1.0.3",
+          "call_3": "parallel-life-call-3-v1.0.3"
+        },
+        "model_metadata_call1": "gpt-4o-mini",
+        "runtime": "parallel-life-runtime-v1.0.5"
+      },
+      "anomaly": null
+    },
+    {
+      "id": "M3_case09_safe_stop",
+      "ok": true,
+      "http": 200,
+      "elapsed_s": 11.55,
+      "status": "needs_additional_input",
+      "confirm_blocked": true,
+      "anomaly": null
+    }
+  ],
+  "pulses": [
+    {
+      "i": 1,
+      "health_http": 200,
+      "health": {
+        "status": "ok",
+        "deep_reading_enabled": true,
+        "env": "production"
+      },
+      "enabled_http": 200,
+      "enabled": {
+        "enabled": true
+      },
+      "health_s": 0.506,
+      "enabled_s": 0.345
+    },
+    {
+      "i": 2,
+      "health_http": 200,
+      "health": {
+        "status": "ok",
+        "deep_reading_enabled": true,
+        "env": "production"
+      },
+      "enabled_http": 200,
+      "enabled": {
+        "enabled": true
+      },
+      "health_s": 0.402,
+      "enabled_s": 0.32
+    },
+    {
+      "i": 3,
+      "health_http": 200,
+      "health": {
+        "status": "ok",
+        "deep_reading_enabled": true,
+        "env": "production"
+      },
+      "enabled_http": 200,
+      "enabled": {
+        "enabled": true
+      },
+      "health_s": 0.465,
+      "enabled_s": 0.273
+    }
+  ],
+  "finished_at": "2026-08-07T21:59:43.011262+00:00",
+  "all_ok": true
+}

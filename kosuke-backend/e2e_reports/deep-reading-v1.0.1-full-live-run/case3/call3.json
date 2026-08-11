@@ -1,0 +1,43 @@
+{
+  "status": "validation_failed",
+  "final_title": "早稲田大学第一文学部への進学とその影響",
+  "final_subtitle": "",
+  "body_markdown": "# 早稲田大学第一文学部への進学とその影響\n\n19歳のとき、私は第一志望の早稲田大学第一文学部に合格した。この瞬間は、私の人生における大きな転機であった。早稲田大学は日本の名門大学の一つであり、文学部は特に多くの優れた人材を輩出している。そのため、合格したことは私にとって一つの誇りであり、同時に新たな挑戦の始まりでもあった。\n\n## 別の選択肢\n\nしかし、もし私が別の道を選んでいたとしたら、どのような人生が待っていたのだろうか。選ばなかった道は、別の大学へ進学することだった。大学選びは人生の中で非常に重要な選択であり、どの大学に進学するかによって、将来のキャリアや人間関係が大きく変わることは間違いない。私の中には、別の大学へ進学していたらどのような仕事や人間関係が築かれていたのかという疑問が常に存在している。\n\n## 現在のキャリア\n\n現在、私は複数の業界を経験した後、文章やプロトコルをまとめる仕事をしている。大学での学びは、私のキャリアにおいて非常に重要な役割を果たしている。早稲田大学で得た知識やスキルは、今の私の仕事に直接的に影響を与えていると感じている。特に、文学部で学んだ表現力や批判的思考は、文章を書く上で欠かせない要素となっている。\n\n## 早稲田大学第一文学部に進学したことが与えた影響\n\n早稲田大学第一文学部に進学したことが、現在のキャリアに与えた影響は計り知れない。大学での学びを通じて、多くの友人や先輩、教授との出会いがあり、それが私の視野を広げてくれた。文学部では、さまざまなジャンルの文学や思想を学ぶことができ、これが私の考え方や価値観に大きな影響を与えた。\n\nまた、早稲田大学での学生生活は、自己表現やコミュニケーション能力を高める貴重な経験でもあった。サークル活動やゼミでのディスカッションを通じて、人との関わり方や意見の伝え方を学び、これが今の仕事にも活かされている。\n\n## 別の大学に進学していた場合の想像\n\n一方で、別の大学に進学していた場合、私の人生はどのように変わっていたのかという考えは、時折私の心に浮かぶ。別の大学で学んでいたら、全く異なる友人や環境に囲まれていたかもしれない。新たな出会いや経験が、私のキャリアや人間関係にどのように影響を与えていたのかを考えると、少し興味深い。\n\nもしかしたら、別の大学での経験が新たなキャリアパスを開いていたかもしれないし、全く異なる業界で働いていた可能性もある。仕事のスタイルや人間関係の築き方も、異なるものになっていたのではないかと想像する。\n\n## 結論\n\n結局のところ、早稲田大学第一文学部に進学したことは、私の人生において非常に重要な選択であったと確信している。もちろん、別の道を選んでいた場合の人生も興味深いが、今の私を形作っているのは、早稲田での経験である。これからも、早稲田大学での学びを活かし、さらなる成長を目指していきたいと思う。人生は選択の連続であり、その選択が私たちの未来を形作っていくのだと実感している。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "早稲田大学第一文学部への進学とその影響",
+      "selected_subtitle": "",
+      "title_supported_by_fact_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "passed": true,
+      "notes": []
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "central_thesis_maintained": true,
+    "residue_centrality": false,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": false,
+    "blocking_reasons": [
+      "residue_centrality_failed"
+    ]
+  },
+  "prompt_version": "parallel-life-call-3-v1.0",
+  "character_count": 1264
+}

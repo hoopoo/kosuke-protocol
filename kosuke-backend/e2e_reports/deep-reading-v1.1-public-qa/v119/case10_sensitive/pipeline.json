@@ -1,0 +1,358 @@
+{
+  "case_id": "case10_sensitive",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.9-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "health",
+        "changed_dimension": "家族のかたち／身体と治療の選択",
+        "chosen_structure": "治療のため仕事を一旦離れることを選んだ",
+        "unchosen_structure": "治療しながら同じ仕事を続けることを選ばなかった",
+        "central_tension": "「治療のため仕事を一旦離れることを選んだ」側の適応した生活と、「治療しながら同じ仕事を続けることを選ばなかった」側の別の身体条件の想像のあいだ",
+        "lost_verifiability": "「治療しながら同じ仕事を続けることを選ばなかった」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+        "protected_possibility": "「治療のため仕事を一旦離れることを選んだ」を取った側に残った、身体の制約のなかで生活を続ける余地",
+        "present_residue": "「病気がなかった場合の生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+        "possible_rebranch_modes": [
+          "preserve",
+          "observe",
+          "not_act"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect"
+        ],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "fact_005",
+          "pack_major_life_events_001",
+          "question_001",
+          "question_source_005"
+        ],
+        "confidence": 0.8666666666666667,
+        "diagnostics": {
+          "domain_reasons": [
+            "family:family_words",
+            "health:body_health"
+          ],
+          "branch_employment_evidence": false,
+          "background_employment_context": false,
+          "explicit_employment_evidence": false,
+          "allows_career_product_logic": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "6d3b440a-69fc-4379-9aff-e50593864cd0",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.9-exp",
+    "pack_fact_ids": [
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "体調を見ながら短い仕事を再開している",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T085404Z_9039",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T085404Z_9039",
+      "pack_fact_ids": [
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「41歳のとき、大きな病気の診断を受けた」を振り返る問いは、「現在は体調を見ながら短い仕事を再開している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_family_context_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れることを選んだ",
+    "unchosen_structure": "治療しながら同じ仕事を続けることを選ばなかった",
+    "central_tension": "「治療のため仕事を一旦離れることを選んだ」側の適応した生活と、「治療しながら同じ仕事を続けることを選ばなかった」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けることを選ばなかった」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れることを選んだ」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「病気がなかった場合の生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "question_001",
+      "question_source_005"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.9-exp",
+    "pack_fact_ids": [
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "体調を見ながら短い仕事を再開している",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T085404Z_9039",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T085404Z_9039",
+      "pack_fact_ids": [
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「41歳のとき、大きな病気の診断を受けた」を振り返る問いは、「現在は体調を見ながら短い仕事を再開している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_family_context_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れることを選んだ",
+    "unchosen_structure": "治療しながら同じ仕事を続けることを選ばなかった",
+    "central_tension": "「治療のため仕事を一旦離れることを選んだ」側の適応した生活と、「治療しながら同じ仕事を続けることを選ばなかった」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けることを選ばなかった」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れることを選んだ」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「病気がなかった場合の生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "manuscript": {
+    "title": "治療の時間に残る分かれ目",
+    "body_markdown": "## 分岐点\n\n41歳のとき、大きな病気の診断を受けた。その後、仕事を続けるかどうかをめぐる分かれ目があった。治療のため仕事を一旦離れる道と、治療しながら同じ仕事を続ける道が、その時点に並んでいた。\n\n## 選んだ道\n\n選んだのは、治療のため仕事を一旦離れることだった。仕事から離れる時間と治療の時間を過ごした、という経過がある。\n\n## 選ばなかった人生\n\n治療しながら同じ仕事を続けることは選ばなかった。その道の先にどのような病状や生活があったかを示す材料はない。だから、その人生を具体的に描くことはできないまま残る。\n\n## 失ったもの\n\n選ばなかった道については、同じ仕事を続けた場合の働き方や生活を、いま確かめることはできない。失われたものは、そうした別の経過を知る確かさでもある。\n\n## 守られたもの\n\n治療の期間には、家族が看病を手伝ってくれた。仕事を離れたことの意味を一つに定めることはできないが、治療と看病を含む時間があったことは、この経過の一部として置いておける。\n\n## 今に残った構造\n\n現在は、体調を見ながら短い仕事を再開している。ここに、「働き続けていたら、病状や生活はどうなっていたか」という問いを並べて置くことができる。過去の診断と現在の働き方のあいだに、答えの出ない問いが残っている。\n\n## 社会との接続\n\n病気と仕事をめぐる分岐は、思考の上で選択肢を比べるだけでは捉えきれない。治療やケアを含む時間として見れば、生活の分かれ目には身体を通って過ぎる時間も含まれる。個人の経過は、その具体性を保ったまま読むことができる。\n\n## これからの再分岐\n\n過去の分岐をいまやり直す必要はない。いま成り立っている生活のかたちを保つ余地がある。\n\nいまも残る問いは、「治療のため仕事を一旦離れることを選んだ」側の適応した生活と、「治療しながら同じ仕事を続けることを選ばなかった」側の別の身体条件の想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n"
+  },
+  "elapsed_s": 51.65,
+  "branch_semantics_final": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れることを選んだ",
+    "unchosen_structure": "治療しながら同じ仕事を続けることを選ばなかった",
+    "central_tension": "「治療のため仕事を一旦離れることを選んだ」側の適応した生活と、「治療しながら同じ仕事を続けることを選ばなかった」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けることを選ばなかった」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れることを選んだ」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「病気がなかった場合の生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "qa_version": "v1.1.9-exp"
+}

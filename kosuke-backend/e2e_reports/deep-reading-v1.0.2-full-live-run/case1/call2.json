@@ -1,0 +1,73 @@
+{
+  "body_markdown": "不妊治療を経て子どもを授かるという選択は、人生において大きな分岐点となった。45歳のとき、この決断を下し、妻と息子と三人で暮らす人生を選んだ。これは、他の選択肢、すなわち不妊治療を諦めることを選ばなかった結果である。\n\n現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。家族との生活は、日々の中で息子の成長を見守る喜びをもたらしている。息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しむ日々が続いている。\n\nただし、選択肢の一つであった二人目を持つことについては、今も考えることがある。もし二人目を持っていたら、どのような生活が待っていたのだろうか。この思いは、選んだ道に対する反省や、未だに接続しきれていない感情を浮き彫りにする。\n",
+  "title_candidates": [
+    "選択と家族の幸せ",
+    "不妊治療を経て",
+    "三人家族の生活"
+  ],
+  "subtitle_candidates": [
+    "選んだ道と考える未来"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "不妊治療を経て子どもを授かる",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section2",
+      "public_heading": "現在の家族と生活",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section3",
+      "public_heading": "選択肢としての二人目",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "不妊治療を経て子どもを授かるという選択は、人生において大きな分岐点となった。45歳のとき、この決断を下し、妻と息子と三人で暮らす人生を選んだ。これは、他の選択肢、すなわち不妊治療を諦めることを選ばなかった結果である。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact2",
+        "fact4",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。家族との生活は、日々の中で息子の成長を見守る喜びをもたらしている。息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しむ日々が続いている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact6"
+      ],
+      "contains_inference": false,
+      "text_preview": "ただし、選択肢の一つであった二人目を持つことについては、今も考えることがある。もし二人目を持っていたら、どのような生活が待っていたのだろうか。この思いは、選んだ道に対する反省や、未だに接続しきれていない感情を浮き彫りにする。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.1",
+  "character_count": 326
+}

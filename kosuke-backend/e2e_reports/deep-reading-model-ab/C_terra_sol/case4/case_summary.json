@@ -1,0 +1,71 @@
+{
+  "config_id": "C_terra_sol",
+  "case_id": "case4",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-sol",
+  "errors": [],
+  "final_title": "現在に並ぶ、創作という可能性",
+  "final_subtitle": "複数業界での会社員経験と、観測サイト・文章・プロトコルを制作する現在のあいだで",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 290,
+  "latency_ms": {
+    "call2_wall": 9513,
+    "call3_wall": 3,
+    "total_wall": 9516,
+    "sum_api_calls": 9503
+  },
+  "tokens": {
+    "prompt": 3236,
+    "completion": 957,
+    "reasoning": 439,
+    "total": 4193
+  },
+  "estimated_cost_usd": 0.022445,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9503,
+      "prompt_tokens": 3236,
+      "completion_tokens": 957,
+      "reasoning_tokens": 439,
+      "estimated_cost_usd": 0.022445,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9503,
+      "prompt_tokens": 3236,
+      "completion_tokens": 957,
+      "reasoning_tokens": 439,
+      "estimated_cost_usd": 0.022445,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "会社員として複数業界で働いてきた。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。複数の業界で働いた時間と、観測サイト、文章、プロトコルを制作する現在の生活は、同じ記述のなかに置かれている。そのあいだには、まだ接続しきれていないものが残っている。\n\n創作を中心にした人生は、歩まなかった人生として残っている。創作中心なら今とは違う人生だったかと考えることがある。ただし、どのように違っていたかを示す材料はない。企業での経験を持ちながら観測サイトや文章、プロトコルを制作している現在と、創作を中心にした人生という可能性は、答えの定まらないまま並んでいる。\n"
+}

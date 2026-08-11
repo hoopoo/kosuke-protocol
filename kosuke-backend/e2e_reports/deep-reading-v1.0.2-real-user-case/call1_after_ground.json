@@ -1,0 +1,230 @@
+{
+  "status": "needs_additional_input",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "30歳のとき、当時お付き合いしていた中国人女性と別れた。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "30歳のとき、当時お付き合いしていた中国人女性と別れた。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "中国人女性とは別れ、その後、今の妻（日本人）と結婚しました。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "中国人女性とは別れ、その後、今の妻（日本人）と結婚しました。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "選ばなかった道は、中国人女性とお付き合いを継続すること。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道は、中国人女性とお付き合いを継続すること。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact4",
+        "content": "息子が一人と妻の三人で生活しています。また、猫がいます。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "息子が一人と妻の三人で生活しています。また、猫がいます。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_current_preserved_001",
+        "content": "息子が一人と妻の三人で生活しています。また、猫がいます",
+        "boundary_type": "explicit_fact",
+        "source_field": "current_context_preserved",
+        "source_text": "息子が一人と妻の三人で生活しています。また、猫がいます",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "息子が一人と妻の三人で生活しています。また、猫がいます"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": false,
+    "current_context_requirement_met": true,
+    "missing_fields": [
+      "present_question"
+    ],
+    "additional_questions": [
+      "もし中国人女性とお付き合いを継続するを選んでいたら、と今でも考えることはありますか？",
+      "現在の家族構成について、他に知りたいことはありますか？"
+    ]
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "30歳",
+      "triggering_event": "中国人女性と別れた",
+      "available_paths": [
+        "今の妻（日本人）と結婚する"
+      ],
+      "realized_path": "今の妻（日本人）と結婚する",
+      "unrealized_paths": [
+        "中国人女性とお付き合いを継続する"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [],
+    "present_question_ids": []
+  },
+  "central_thesis": {
+    "thesis_type": "life_choice",
+    "statement": "別れたことで今の家族ができたかもしれない",
+    "pole_a": "中国人女性とお付き合いを続ける",
+    "pole_b": "今の妻と結婚する",
+    "supported_by": [
+      "fact1",
+      "fact2",
+      "fact3"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": [
+      {
+        "residue_statement": "「30歳のとき、当時お付き合いしていた中国人女性と別れた。」を振り返る問いは、「中国人女性とは別れ、その後、今の妻（日本人）と結婚しました。」という現在の生活と並べて読むことができる",
+        "content": "「30歳のとき、当時お付き合いしていた中国人女性と別れた。」を振り返る問いは、「中国人女性とは別れ、その後、今の妻（日本人）と結婚しました。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact2"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact2"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ]
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": true,
+    "questions": [
+      "もし中国人女性とお付き合いを継続するを選んでいたら、と今でも考えることはありますか？",
+      "現在の家族構成について、他に知りたいことはありますか？"
+    ]
+  },
+  "user_confirmation_view": {
+    "branch_period": "30歳",
+    "triggering_event": "中国人女性と別れた",
+    "chosen_path": "今の妻（日本人）と結婚する",
+    "unchosen_path": "中国人女性とお付き合いを継続する",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [],
+    "present_questions": [],
+    "current_context": [
+      "息子が一人と妻の三人で生活しています。また、猫がいます"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "別れたことで今の家族ができたかもしれない",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": [
+      "present_question"
+    ],
+    "material_contradictions": [],
+    "material_contradiction_count": 0,
+    "branch_concreteness_ok": true,
+    "thesis_deferred_due_to_contradiction": false,
+    "sensitive_thesis_rejected": false
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": false,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.3",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

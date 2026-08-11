@@ -1,0 +1,71 @@
+{
+  "config_id": "B_terra_terra",
+  "case_id": "case2",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-terra",
+  "errors": [],
+  "final_title": "三人でいる現在と、二人目の問い",
+  "final_subtitle": "不妊治療を経て子どもを授かった後の、三人の暮らしと残る問い",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 327,
+  "latency_ms": {
+    "call2_wall": 10730,
+    "call3_wall": 2,
+    "total_wall": 10732,
+    "sum_api_calls": 10722
+  },
+  "tokens": {
+    "prompt": 4124,
+    "completion": 1153,
+    "reasoning": 479,
+    "total": 5277
+  },
+  "estimated_cost_usd": 0.027605,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 10722,
+      "prompt_tokens": 4124,
+      "completion_tokens": 1153,
+      "reasoning_tokens": 479,
+      "estimated_cost_usd": 0.027605,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 10722,
+      "prompt_tokens": 4124,
+      "completion_tokens": 1153,
+      "reasoning_tokens": 479,
+      "estimated_cost_usd": 0.027605,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "## 三人でいる現在\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦めるという可能性もあったなかで、妻と息子の三人で暮らす人生がある。\n\n息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。治療を続けないという決定は、三人でいる現在の暮らしのそばに置かれている。\n\nいま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳で子どもを授かったことと、こうした家の現在を並べて見ると、そのあいだにはまだ接続しきれていないものが残っている。今も、二人目を持っていたらどうだったかと考えることがある。その問いは、三人で過ごす日々の楽しさを消すものではなく、答えの定まらないまま現在に置かれている。\n"
+}

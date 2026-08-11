@@ -1,0 +1,82 @@
+{
+  "case_id": "case08_vague",
+  "category": "vague or weak branch",
+  "title": "Vague / weak branch — thin options",
+  "pipeline_ok": true,
+  "elapsed_s": 24.88,
+  "session_id": "5ea3af90-d1b2-4f11-85fd-8a34b4fed6f6",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.0.3",
+  "call3_prompt": "parallel-life-call-3-v1.0.3",
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 7,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": false,
+  "protected_realization": false,
+  "residue_realization": false,
+  "rebranch_realization": false,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 0,
+  "confirmation_issues": [],
+  "hard_failures": [],
+  "classification": "PASS_WITH_NOTES",
+  "final_title": "覚えていない選択のそばで",
+  "body_excerpt": "## 覚えていない選択のそばで\n\n二十代のどこかに、何かを選んだ気がする分かれ目がある。そのとき何を選んだのかは、よく覚えていない。選ばなかったほうについても、当時は特に考えていなかった。記憶に残っているのは、道の名前や事情ではなく、選んだ気がする、という輪郭だけである。\n\nいまも、「別の道があったのかな」と考えることがある。その問いは、過去を詳しく再現するためのものではない。詳しく覚えていない選択と、かつては考えなかった別の道を、現在からあらためて並べる問いとして残っている。\n\n現在は、今も普通に暮らしている。妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のそばに、二十代のどこかにあったという分かれ目の記憶がある。二つを結びつける出来事や因果関係までは確認できない。それでも、普通に続く現在と、名前を失った過去の分かれ目は、同じ時間の中に並んでいる。「別の道があったのかな」という問いは、答えを急がず、その並びの中に残っている。\n",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 0,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 0,
+    "選択": 3
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "deep_reading_mode": "strict",
+      "schema_version": "parallel-life-runtime-v1.0.6",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.0.3",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.0.3",
+      "context_pack_enabled_meta": false
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "final_title": "覚えていない選択のそばで",
+      "final_subtitle": "二十代のどこかにあった輪郭の薄い選択を、現在の日常から見つめる"
+    }
+  }
+}

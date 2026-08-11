@@ -1,0 +1,62 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "pack_fact_ids": [
+    "pack_career_history_003"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_career_history_003",
+      "content": "その後、複数業界・企業を経験した",
+      "tags": [
+        "context_pack",
+        "category:career_history",
+        "pack_id:pack_live_20260808T070454Z_8233",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T070454Z_8233",
+    "pack_fact_ids": [
+      "pack_career_history_003"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [
+      "pack_career_history_003"
+    ],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": []
+  },
+  "residue": [
+    {
+      "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "present_anchor_ids": [
+        "pack_current_work_004"
+      ],
+      "pack_ids_used": [
+        "pack_career_history_003"
+      ]
+    }
+  ],
+  "central_thesis": "選択の結果としての現在の状況は、過去の選択と密接に関連している",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": [
+    {
+      "id": "rebranch_measure_001",
+      "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+      "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+      "support_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002"
+      ],
+      "pack_support_ids": []
+    }
+  ]
+}

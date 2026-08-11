@@ -1,0 +1,90 @@
+{
+  "case_id": "case05_health",
+  "category": "health / body",
+  "title": "Health / body — treatment vs work pace",
+  "pipeline_ok": false,
+  "elapsed_s": 84.98,
+  "session_id": "a60ad6cb-4d43-4d78-89f5-85dc3064835e",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.7-exp",
+  "factual_fidelity": 7,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": true,
+  "protected_realization": false,
+  "residue_realization": true,
+  "rebranch_realization": true,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "residue_centrality_failed",
+    "required_section_unrealized:protected",
+    "required_section_unrealized:observatory"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 2,
+  "confirmation_issues": [],
+  "hard_failures": [
+    "possible_invented_sensitive:年収"
+  ],
+  "classification": "HARD_FAIL",
+  "final_title": "在宅で続く仕事と、残る不安",
+  "body_excerpt": "## 分岐点\n\n38歳で体調を崩し、働き方を変えるかを考える分岐があった。仕事量を減らして治療と休養を優先する道と、以前と同じペースで働き続ける道が並んでいた。\n\n## 選んだ道\n\n選んだのは、仕事量を減らし、治療と休養を優先することだった。現在は治療を続けながら在宅中心で仕事をし、仕事量も抑えている。\n\n## 選ばなかった人生\n\n以前と同じペースで働き続ける道は選ばなかった。その先に何があったかを直接知る材料はない。ただ、「無理をして働き続けていたらどうなっていたか」という問いは、いまも残っている。\n\n## 失ったもの\n\n以前と同じペースを続ける側には、仕事の時間の積み重ねのなかで、自分の進み具合を確かめる手がかりがあったとも読める。その手がかりを、いまの働き方のなかで以前と同じ形に置くことは難しいのかもしれない。\n\n## 守られたもの\n\n治療を続けながら在宅中心で働き、仕事量を抑える現在には、仕事を生活の条件と切り離さずに組み立てる余地がある。これは選んだ道の優位を示すものではなく、別の尺度が必要になる現在の形である。\n\n## 今に残った構造\n\n「無理をして働き続けていたらどうなっ",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 1,
+    "制度": 0,
+    "分岐": 4,
+    "選択": 0
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed",
+        "required_section_unrealized:protected",
+        "required_section_unrealized:observatory"
+      ],
+      "final_title": "在宅で続く仕事と、残る不安",
+      "final_subtitle": ""
+    }
+  }
+}

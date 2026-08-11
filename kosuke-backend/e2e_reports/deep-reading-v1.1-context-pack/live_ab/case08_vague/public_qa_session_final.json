@@ -1,0 +1,499 @@
+{
+  "session_id": "5ea3af90-d1b2-4f11-85fd-8a34b4fed6f6",
+  "raw_user_input": "二十代のどこかのとき、何か選んだ気がするという分岐があった。\n実際に選んだ道は、よく覚えていない。\n選ばなかった道は、特に考えていなかった。\n現在は、今も普通に暮らしている。\nいまも「別の道があったのかな」と考えることがある。\n",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact1",
+          "content": "二十代のどこかのとき、何か選んだ気がするという分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "二十代のどこかのとき、何か選んだ気がするという分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact2",
+          "content": "実際に選んだ道は、よく覚えていない。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道は、よく覚えていない。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact3",
+          "content": "選ばなかった道は、特に考えていなかった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、特に考えていなかった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact4",
+          "content": "現在は、今も普通に暮らしている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "現在は、今も普通に暮らしている。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_001",
+          "content": "今も普通に暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "今も普通に暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_002",
+          "content": "妻と息子と三人で暮らし、仕事と制作の日常が続いている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "妻と息子と三人で暮らし、仕事と制作の日常が続いている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「別の道があったのかな」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「別の道があったのかな」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "今も普通に暮らしている",
+        "妻と息子と三人で暮らし、仕事と制作の日常が続いている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "二十代のどこかのとき",
+        "triggering_event": "何か選んだ気がするという分岐",
+        "available_paths": [
+          "実際に選んだ道",
+          "選ばなかった道"
+        ],
+        "realized_path": "実際に選んだ道",
+        "unrealized_paths": [
+          "選ばなかった道"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact1",
+          "fact2",
+          "fact3",
+          "fact4"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_fact5",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「別の道があったのかな」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [],
+      "classifications": [],
+      "manuscript_logic_ids": [],
+      "withheld_ids": []
+    },
+    "meaning_compression": {
+      "past_structure": "二十代のどこかのときに選択があったが、選んだ道は覚えていない。",
+      "alternative_structure": "選択の結果、現在の生活が続いている。",
+      "present_structure": "今も普通に暮らしているが、別の道を考えることがある。",
+      "tension": "選択の影響を考えることと、現在の生活の満足度の間に緊張がある。",
+      "continuity": "過去の選択が現在の思考に影響を与えている。",
+      "transformation": "選択が現在の生活にどのように影響しているかを考えることが重要。",
+      "central_question": "別の道があった場合、今の生活はどうなっていたのか？",
+      "personal_tension": "選択の影響を考えることが、現在の生活にどのように影響しているか。",
+      "social_institutional_parallel": "",
+      "present_life_connection": "現在の生活と過去の選択の関連性。",
+      "unresolved_question": "別の道があった場合、今の生活はどうなっていたのか？",
+      "cross_lens_relation_ids": [],
+      "support_ids": [],
+      "validation_status": "未確認"
+    },
+    "central_thesis": {
+      "thesis_type": "選択の影響",
+      "statement": "過去の選択が現在の思考に影響を与えている。",
+      "pole_a": "選択した道",
+      "pole_b": "選ばなかった道",
+      "supported_by": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "risks": [],
+      "validation_status": "未確認"
+    },
+    "lost_structure": {
+      "items": []
+    },
+    "protected_structure": {
+      "items": []
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+          "content": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact1"
+          ],
+          "present_anchor_ids": [
+            "fact4"
+          ],
+          "support_ids": [
+            "fact1",
+            "fact4"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": []
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": []
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "二十代のどこかのとき",
+      "triggering_event": "何か選んだ気がするという分岐",
+      "chosen_path": "実際に選んだ道",
+      "unchosen_path": "選ばなかった道",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "いまも「別の道があったのかな」と考えることがある。"
+      ],
+      "present_questions": [
+        "いまも「別の道があったのかな」と考えることがある。"
+      ],
+      "current_context": [
+        "今も普通に暮らしている",
+        "妻と息子と三人で暮らし、仕事と制作の日常が続いている"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "過去の選択が現在の思考に影響を与えている。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.0.3",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": null,
+    "resume_density_report": null,
+    "selection_compression_diagnostics": null,
+    "candidate_lens_selection": null,
+    "retrieved_observatory_evidence": null,
+    "cross_lens_relations": null,
+    "observatory_core_diagnostics": null,
+    "section_contracts": null,
+    "call2_writing_pack_diagnostics": null
+  },
+  "user_corrections": [
+    "妻と息子と三人で暮らし、仕事と制作の日常が続いている。"
+  ],
+  "confirmation_timestamp": "2026-08-08T06:59:50.642008+00:00",
+  "call2": {
+    "body_markdown": "## 覚えていない選択のそばで\n\n二十代のどこかに、何かを選んだ気がする分かれ目がある。そのとき何を選んだのかは、よく覚えていない。選ばなかったほうについても、当時は特に考えていなかった。記憶に残っているのは、道の名前や事情ではなく、選んだ気がする、という輪郭だけである。\n\nいまも、「別の道があったのかな」と考えることがある。その問いは、過去を詳しく再現するためのものではない。詳しく覚えていない選択と、かつては考えなかった別の道を、現在からあらためて並べる問いとして残っている。\n\n現在は、今も普通に暮らしている。妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のそばに、二十代のどこかにあったという分かれ目の記憶がある。二つを結びつける出来事や因果関係までは確認できない。それでも、普通に続く現在と、名前を失った過去の分かれ目は、同じ時間の中に並んでいる。「別の道があったのかな」という問いは、答えを急がず、その並びの中に残っている。\n",
+    "title_candidates": [
+      "覚えていない選択のそばで",
+      "名前を失った分かれ目",
+      "普通に暮らす現在と、別の道"
+    ],
+    "subtitle_candidates": [
+      "二十代のどこかにあった輪郭の薄い選択を、現在の日常から見つめる"
+    ],
+    "sections": [
+      {
+        "internal_id": "memory_and_present",
+        "public_heading": "覚えていない選択のそばで",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "具体的な出来事・場所・人物など、再び辿るための名詞が確認されていないため。",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact1",
+          "fact2",
+          "fact3"
+        ],
+        "contains_inference": false,
+        "text_preview": "二十代のどこかに、何かを選んだ気がする分かれ目がある。そのとき何を選んだのかは、よく覚えていない。選ばなかったほうについても、当時は特に考えていなかった。記憶に残っているのは、道の名前や事情ではなく、選んだ気がする、という輪郭だけである。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "q_confirm_001",
+          "fact2",
+          "fact3"
+        ],
+        "contains_inference": true,
+        "text_preview": "いまも、「別の道があったのかな」と考えることがある。その問いは、過去を詳しく再現するためのものではない。詳しく覚えていない選択と、かつては考えなかった別の道を、現在からあらためて並べる問いとして残っている。"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact4",
+          "fact_current_preserved_001",
+          "fact_current_preserved_002",
+          "fact1",
+          "q_confirm_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "現在は、今も普通に暮らしている。妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のそばに、二十代のどこかにあったという分かれ目の記憶がある。二つを結びつける出来事や因果関係までは確認できない。それでも、普通に続く現在と、名前を"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1
+    },
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 427
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "覚えていない選択のそばで",
+    "final_subtitle": "二十代のどこかにあった輪郭の薄い選択を、現在の日常から見つめる",
+    "body_markdown": "## 覚えていない選択のそばで\n\n二十代のどこかに、何かを選んだ気がする分かれ目がある。そのとき何を選んだのかは、よく覚えていない。選ばなかったほうについても、当時は特に考えていなかった。記憶に残っているのは、道の名前や事情ではなく、選んだ気がする、という輪郭だけである。\n\nいまも、「別の道があったのかな」と考えることがある。その問いは、過去を詳しく再現するためのものではない。詳しく覚えていない選択と、かつては考えなかった別の道を、現在からあらためて並べる問いとして残っている。\n\n現在は、今も普通に暮らしている。妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のそばに、二十代のどこかにあったという分かれ目の記憶がある。二つを結びつける出来事や因果関係までは確認できない。それでも、普通に続く現在と、名前を失った過去の分かれ目は、同じ時間の中に並んでいる。「別の道があったのかな」という問いは、答えを急がず、その並びの中に残っている。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "覚えていない選択のそばで",
+        "selected_subtitle": "二十代のどこかにあった輪郭の薄い選択を、現在の日常から見つめる",
+        "title_supported_by_fact_ids": [],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": true,
+      "required_section_realization_details": {},
+      "resume_density_report": null,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "character_count": 428
+  },
+  "final_manuscript": "# 覚えていない選択のそばで\n\n*二十代のどこかにあった輪郭の薄い選択を、現在の日常から見つめる*\n\n## 覚えていない選択のそばで\n\n二十代のどこかに、何かを選んだ気がする分かれ目がある。そのとき何を選んだのかは、よく覚えていない。選ばなかったほうについても、当時は特に考えていなかった。記憶に残っているのは、道の名前や事情ではなく、選んだ気がする、という輪郭だけである。\n\nいまも、「別の道があったのかな」と考えることがある。その問いは、過去を詳しく再現するためのものではない。詳しく覚えていない選択と、かつては考えなかった別の道を、現在からあらためて並べる問いとして残っている。\n\n現在は、今も普通に暮らしている。妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のそばに、二十代のどこかにあったという分かれ目の記憶がある。二つを結びつける出来事や因果関係までは確認できない。それでも、普通に続く現在と、名前を失った過去の分かれ目は、同じ時間の中に並んでいる。「別の道があったのかな」という問いは、答えを急がず、その並びの中に残っている。\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.0.3",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.3",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "strict",
+    "context_pack_enabled": false,
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.3",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": null,
+    "selection_compression": null,
+    "resume_density_report": null,
+    "manuscript_logic_ids": [],
+    "runtime_version": "parallel-life-runtime-v1.0.6",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.0.6",
+  "created_at": "2026-08-08T06:59:34.486268+00:00",
+  "updated_at": "2026-08-08T06:59:59.177Z",
+  "session_revision": 7,
+  "expires_at": "2026-08-09T06:59:59.177Z",
+  "idempotency_keys": {
+    "draft:v11ab-case08_vague-public_qa-20260808T065950Z": "complete",
+    "edit:v11ab-case08_vague-public_qa-20260808T065950Z-edit": "complete"
+  },
+  "deep_reading_mode": "strict",
+  "context_pack": null
+}

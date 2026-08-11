@@ -1,0 +1,315 @@
+{
+  "case_id": "case09_zero_lens",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.9-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "place",
+        "changed_dimension": "暮らす場所／日常の所属",
+        "chosen_structure": "地元に残る",
+        "unchosen_structure": "都会へ出る",
+        "central_tension": "「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだ",
+        "lost_verifiability": "「都会へ出る」側の暮らしの連続を、いま体験として辿れないこと",
+        "protected_possibility": "「地元に残る」を取った側に残った、いまの場所での日常を続ける余地",
+        "present_residue": "「都会へ出ていたら、いまの日常はどうなっていたか？」がいまも残るのは、「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだが消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "preserve",
+          "reconsider",
+          "leave_unresolved"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "fact_4",
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_5"
+        ],
+        "confidence": 0.7666666666666667,
+        "diagnostics": {
+          "domain_reasons": [
+            "place:place"
+          ],
+          "branch_employment_evidence": false,
+          "background_employment_context": true,
+          "explicit_employment_evidence": false,
+          "allows_career_product_logic": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_user_confirmation"
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_user_confirmation",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_user_confirmation",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": true,
+  "session_id": "88bd1498-d2f7-43c5-a2c5-6eebcb24e967",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.9-exp",
+    "pack_fact_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "地元で事務の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T085341Z_9666",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_relevant_social_context_002",
+        "content": "近所の人と暮らしている",
+        "tags": [
+          "context_pack",
+          "category:relevant_social_context",
+          "pack_id:pack_live_20260808T085341Z_9666",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T085341Z_9666",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "地元に残る選択が現在の生活を形成しているが、都会へ出る選択も考え続けている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "place",
+    "changed_dimension": "暮らす場所／日常の所属",
+    "chosen_structure": "地元に残る",
+    "unchosen_structure": "都会へ出る",
+    "central_tension": "「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだ",
+    "lost_verifiability": "「都会へ出る」側の暮らしの連続を、いま体験として辿れないこと",
+    "protected_possibility": "「地元に残る」を取った側に残った、いまの場所での日常を続ける余地",
+    "present_residue": "「都会へ出ていたら、いまの日常はどうなっていたか？」がいまも残るのは、「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "reconsider",
+      "leave_unresolved"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "pack_current_work_001",
+      "pack_relevant_social_context_002",
+      "fact_5"
+    ],
+    "confidence": 0.7666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "place:place"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.9-exp",
+    "pack_fact_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "地元で事務の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T085341Z_9666",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_relevant_social_context_002",
+        "content": "近所の人と暮らしている",
+        "tags": [
+          "context_pack",
+          "category:relevant_social_context",
+          "pack_id:pack_live_20260808T085341Z_9666",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T085341Z_9666",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "地元に残る選択が現在の生活を形成しているが、都会へ出る選択も考え続けている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "place",
+    "changed_dimension": "暮らす場所／日常の所属",
+    "chosen_structure": "地元に残る",
+    "unchosen_structure": "都会へ出る",
+    "central_tension": "「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだ",
+    "lost_verifiability": "「都会へ出る」側の暮らしの連続を、いま体験として辿れないこと",
+    "protected_possibility": "「地元に残る」を取った側に残った、いまの場所での日常を続ける余地",
+    "present_residue": "「都会へ出ていたら、いまの日常はどうなっていたか？」がいまも残るのは、「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "reconsider",
+      "leave_unresolved"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "pack_current_work_001",
+      "pack_relevant_social_context_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.7666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "place:place"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "elapsed_s": 21.96,
+  "qa_version": "v1.1.9-exp"
+}

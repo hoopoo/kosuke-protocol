@@ -1,0 +1,167 @@
+{
+  "case_id": "case04_romance",
+  "category": "romance / relationship",
+  "title": "Romance — breakup branch",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 41.52,
+  "session_id": "1a71d819-a57a-48e4-b6d3-4403d00be12b",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "romance",
+    "changed_dimension": "関係の継続／別れ",
+    "chosen_structure": "別れること",
+    "unchosen_structure": "一緒にいること",
+    "central_tension": "「別れること」側の単独の連続と、「一緒にいること」側の関係の連続のあいだ",
+    "lost_verifiability": "「一緒にいること」として続いていた関係の生活を、いま知る手がかりが残らないこと",
+    "protected_possibility": "「別れること」を取った側に残った、一人の生活を閉じきらずに続ける余地",
+    "present_residue": "「あのままだったらどうなっていたか？」がいまも残るのは、関係の続き方についての未解決の想像が残るからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "revisit",
+      "leave_unresolved",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_invented_affect",
+      "no_reunion_advice"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "romance:relationship"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "mixed",
+  "resume_density": 1.0,
+  "cva": 8.7,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": true,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [],
+    "selected": [],
+    "evidence_ids": [],
+    "structures": [],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:branch_point"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "別れのあとに残る、もう一つの連続",
+  "body_excerpt": "## 分岐点\n\n20代後半に、長く付き合っていた人と別れた。この出来事は、ただ一度の別れというより、関係を続けることと別れることの境目に立った時間だった。\n\n## 選んだ道\n\n別れることを選んだことで、関係が続くことを前提にした生活から離れ、一人で暮らす現在へと別の組み立てが始まった。当時の意図やその選択の優劣を決めるためではなく、この移り方がいまも「あのままだったらどうなっていたか」という問いの起点になっている。\n\n## 選ばなかった人生\n\n選ばなかった側には、一緒にいることがある。その先にどんな生活があったかを具体的に埋めることはできないが、関係を続けるという可能性そのものは、別れによって完全に説明し尽くされるものではない。\n\n## 失ったもの\n\n失ったのは、何かの一覧ではない。一緒にいることとして続いていたかもしれない関係の生活を、いま確かめる手がかりが残らないことだ。その連続は現実にならなかったため、後から中身を知ることもできない。\n\n## 守られたもの\n\n一方で、別れることを取った側には、一人で暮らす生活を閉じきらずに続ける余地が残った。今は一人で普通に暮らしているという事実",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 2,
+    "選択": 1
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "romance",
+    "changed_dimension": "関係の継続／別れ",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "validator_too_strict",
+    "all": [
+      "validator_too_strict"
+    ],
+    "blocking_reasons": [
+      "required_section_unrealized:branch_point"
+    ],
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": "sufficient_for_deep_reading"
+  }
+}

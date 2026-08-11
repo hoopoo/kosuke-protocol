@@ -1,0 +1,14 @@
+{
+  "case_id": "case3_university_admission",
+  "title": "First-choice university admission",
+  "started_at": "2026-08-07T01:34:37.411062+00:00",
+  "model": "gpt-4o-mini",
+  "expect": {
+    "must_keep_admission": true,
+    "forbid_rejection_inversion": true
+  },
+  "error": "AttributeError: 'bool' object has no attribute 'get'",
+  "stages": {},
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/deep_reading_e2e_v1_live.py\", line 206, in run_case\n    g = service.ground(\n        DeepReadingGroundRequest(\n    ...<4 lines>...\n        )\n    )\n  File \"/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/service.py\", line 143, in ground\n    call1 = run_call1_grounding(\n        request.source_text,\n    ...<2 lines>...\n        answers_to_additional_questions=request.answers_to_additional_questions,\n    )\n  File \"/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/grounding.py\", line 432, in run_call1_grounding\n    return parse_call1_payload(data, source_text=source_text)\n  File \"/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/grounding.py\", line 269, in parse_call1_payload\n    required_fields_complete=bool(sufficiency_raw.get(\"required_fields_complete\", True)),\n                                  ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'bool' object has no attribute 'get'\n",
+  "finished_at": "2026-08-07T01:34:44.579420+00:00"
+}

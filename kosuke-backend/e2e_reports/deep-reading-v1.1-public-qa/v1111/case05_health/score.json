@@ -1,0 +1,166 @@
+{
+  "case_id": "case05_health",
+  "category": "health / body",
+  "title": "Health / body — treatment vs work pace",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 40.07,
+  "session_id": "9556d84c-195a-4981-b6b4-757910de9ee6",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.11-exp",
+  "branch_semantics": {
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+    "unchosen_structure": "以前と同じペースで働き続けること",
+    "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「無理をして働き続けていたらどうなっていたかという問いが残る。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "pack_major_life_events_001",
+      "pack_current_work_002",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "YES",
+  "resume_density": 0.0,
+  "cva": 8.7,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": true,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001"
+    ],
+    "structures": [
+      "embodied_or_fertility"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "休養を優先したあとに残る問い",
+  "body_excerpt": "## 分岐点\n\n38歳のとき、体調を崩した時期に、働き方をどう置くかを考える分かれ目があった。それは単に仕事の量を調整する判断ではなく、身体の制約のなかで日々の生活をどう成り立たせるかが分かれる境界でもあった。\n\n## 選んだ道\n\n仕事量を減らし、治療と休養を優先することが選ばれた。振り返れば、この移り方は、身体に合わせて生活を組み立てる別のかたちを開き始めたように見える。いまも治療を続けながら在宅中心で仕事をしている現在と並ぶことで、この選択は、なお残る問いの起点としてある。\n\n## 選ばなかった人生\n\n選ばなかった側には、以前と同じペースで働き続けることがある。その先に何があったかを具体的に描くことはできない。ただ、その可能性を閉じた結論にせず、実現しなかった生活のかたちとして置いておくことはできる。\n\n## 失ったもの\n\n失われたのは、以前と同じペースで働き続ける側で続いていたはずの身体条件や働き方を、いま同じように辿ることではないか。どのような状態が続いたかは確かめられず、その連続そのものが、現在からは検証できないまま残っている。\n\n## 守られたもの\n\n一方で、仕事量を減らし",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 2
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  },
+  "editorial_target": {
+    "target": "causality+lost",
+    "ok": true,
+    "unsupported_causality": false,
+    "lost_ok": true,
+    "excerpt_lost": "失われたのは、以前と同じペースで働き続ける側で続いていたはずの身体条件や働き方を、いま同じように辿ることではないか。どのような状態が続いたかは確かめられず、その連続そのものが、現在からは検証できないまま残っている。",
+    "hard": []
+  },
+  "track_a_regressions": []
+}

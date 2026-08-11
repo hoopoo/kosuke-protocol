@@ -210,23 +210,50 @@ def compute_fluke_score(
     }
 
 
+def _is_ja(language: str | None) -> bool:
+    return bool(language) and language.lower().startswith("ja")
+
+
+def _has_cjk(text: str) -> bool:
+    import re
+
+    return bool(re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", text))
+
+
+def _snippet(text: str, limit: int = 26) -> str:
+    """A short, quotable snippet of a fragment."""
+    text = text.strip().strip('"').strip("“”").strip("「」")
+    if len(text) <= limit:
+        return text
+    return text[:limit].rstrip() + "…"
+
+
 async def generate_tension_and_prompt(
-    frag_a: Fragment, frag_b: Fragment, query: str | None = None
+    frag_a: Fragment,
+    frag_b: Fragment,
+    query: str | None = None,
+    language: str = "en",
 ) -> tuple[str, str]:
     """Generate tension analysis and reflection prompt using LLM.
 
-    Falls back to heuristic generation if OpenAI is not available.
+    Falls back to heuristic generation if OpenAI is not available. When the
+    language is Japanese, an English LLM result is discarded in favor of the
+    Japanese heuristic so no English template ever leaks through.
     """
     api_key = os.environ.get("OPENAI_API_KEY", "")
 
     if api_key:
         try:
-            return await _llm_generate(frag_a, frag_b, query, api_key)
+            tension, prompt = await _llm_generate(frag_a, frag_b, query, api_key, language)
+            # Language safeguard: never return English text in Japanese mode.
+            if _is_ja(language) and (not _has_cjk(tension) or not _has_cjk(prompt)):
+                return _heuristic_generate(frag_a, frag_b, language)
+            return tension, prompt
         except Exception:
             pass
 
     # Fallback: heuristic generation
-    return _heuristic_generate(frag_a, frag_b)
+    return _heuristic_generate(frag_a, frag_b, language)
 
 
 async def _llm_generate(
@@ -234,32 +261,49 @@ async def _llm_generate(
     frag_b: Fragment,
     query: str | None,
     api_key: str,
+    language: str = "en",
 ) -> tuple[str, str]:
     """Generate tension and prompt using OpenAI."""
     from openai import AsyncOpenAI
 
     client = AsyncOpenAI(api_key=api_key)
+    ja = _is_ja(language)
 
-    context_str = f"\nThe user is exploring: {query}" if query else ""
+    if ja:
+        context_str = f"\nいま向き合っていること：{query}" if query else ""
+        system_prompt = """あなたは Kosuke Protocol の一部として、二つの断片のあいだにある静かな緊張を見つけ、問いを立てます。
+守ること：
+- 二つの断片に固有の、具体的な緊張を書く
+- 自然で落ち着いた日本語で書く（翻訳調にしない）
+- 「境界」「様式」「交差」「共鳴」などの抽象語や専門用語を使わない
+- 励ましやスローガンにしない
+- 緊張は1〜3の短い文、問いは1文にする
+- すべて日本語で答える"""
+        user_prompt = f"""断片A：「{frag_a.text}」
 
-    system_prompt = """You are the Fluke Engine of Kosuke Protocol, an intelligence ecosystem for meaning generation.
-Your role is to identify productive conceptual tensions between two text fragments and generate reflection prompts.
+断片B：「{frag_b.text}」
+{context_str}
 
-You should:
-- Find the deepest conceptual tension between the fragments
-- Frame the tension as a productive contradiction, not a simple difference
-- Generate a reflection prompt that provokes genuine thinking
-- Aim for philosophical depth without being pretentious
-- Keep responses concise and evocative"""
-
-    user_prompt = f"""Fragment A: "{frag_a.text}"
+次の形式で、日本語だけで答えてください：
+TENSION: （二つの断片のあいだにある緊張。1〜3の短い文）
+PROMPT: （そこから生まれる問い。1文）"""
+    else:
+        context_str = f"\nThe person is exploring: {query}" if query else ""
+        system_prompt = """You are part of Kosuke Protocol. You find the quiet tension between two fragments and pose a question.
+Rules:
+- Write a specific tension particular to these two fragments
+- Use plain, calm language; avoid jargon (boundary, mode, intersection, resonance)
+- No encouragement or slogans
+- Tension: one to three short sentences. Question: one sentence.
+- Respond in English only."""
+        user_prompt = f"""Fragment A: "{frag_a.text}"
 
 Fragment B: "{frag_b.text}"
 {context_str}
 
-Respond in exactly this format:
-TENSION: [one sentence describing the conceptual tension]
-PROMPT: [one reflective question that emerges from this tension]"""
+Respond in English only, in exactly this format:
+TENSION: [the tension between the two fragments, one to three short sentences]
+PROMPT: [one question that emerges]"""
 
     response = await client.chat.completions.create(
         model="gpt-4o-mini",
@@ -268,7 +312,7 @@ PROMPT: [one reflective question that emerges from this tension]"""
             {"role": "user", "content": user_prompt},
         ],
         temperature=0.9,
-        max_tokens=200,
+        max_tokens=220,
     )
 
     content = response.choices[0].message.content or ""
@@ -283,43 +327,63 @@ PROMPT: [one reflective question that emerges from this tension]"""
         elif line.startswith("PROMPT:"):
             prompt = line[len("PROMPT:"):].strip()
 
-    if not tension:
-        tension = f"The juxtaposition of '{frag_a.text[:30]}...' and '{frag_b.text[:30]}...' creates unexpected resonance."
-    if not prompt:
-        prompt = "What emerges when these two ideas are held together?"
+    if not tension or not prompt:
+        return _heuristic_generate(frag_a, frag_b, language)
 
     return tension, prompt
 
 
-def _heuristic_generate(frag_a: Fragment, frag_b: Fragment) -> tuple[str, str]:
-    """Generate tension and prompt without LLM using heuristics."""
-    # Extract key concepts
-    words_a = set(frag_a.text.lower().split())
-    words_b = set(frag_b.text.lower().split())
+# Native heuristic templates (no word-for-word translation between languages).
+_JA_TENSION_PATTERNS = [
+    "「{a}」と「{b}」。\nこの二つは、どこかで同じことを指しているのかもしれません。",
+    "「{a}」のとなりに「{b}」を置くと、まだ終わっていない何かが浮かびます。",
+    "「{a}」と「{b}」は、遠いようでいて、静かにつながっています。",
+    "「{a}」を見つめていると、その裏側に「{b}」があることに気づきます。",
+]
+_JA_PROMPT_POOL = [
+    "この二つを結んでいるものは、何だと思いますか。",
+    "片方だけを見ていたときには、気づかなかったことはありますか。",
+    "あなたにとって、どちらがより本当のことですか。",
+    "この二つが同じものだとしたら、それは何でしょうか。",
+    "いま、ここから動かせるものはありますか。",
+]
+_EN_TENSION_PATTERNS = [
+    "“{a}” and “{b}”.\nThe two may be pointing at the same unfinished thing.",
+    "Placing “{a}” beside “{b}”, something not yet resolved comes into view.",
+    "“{a}” and “{b}” feel far apart, yet they quietly hold together.",
+    "Looking at “{a}”, you notice “{b}” waiting behind it.",
+]
+_EN_PROMPT_POOL = [
+    "What do you think connects these two?",
+    "Is there something you missed while looking at only one of them?",
+    "Which of the two feels more true to you?",
+    "If these two were the same thing, what would it be?",
+    "Is there anything here you can move, right now?",
+]
 
-    # Find shared and unique concepts
-    shared = words_a & words_b
-    unique_a = words_a - words_b
-    unique_b = words_b - words_a
 
-    # Generate tension description
-    snippet_a = frag_a.text[:50].strip()
-    snippet_b = frag_b.text[:50].strip()
-
-    tension = f"The encounter between '{snippet_a}' and '{snippet_b}' reveals a boundary where different modes of understanding collide."
-
-    # Generate reflection prompt
-    prompts = [
-        "What new form of understanding emerges at the intersection of these two fragments?",
-        "How does the tension between these ideas reshape what we consider meaningful?",
-        "What would it mean to hold both of these truths simultaneously?",
-        "Where does the boundary between these two perspectives become most productive?",
-        "What question becomes visible only when these fragments are placed together?",
-    ]
-
+def _heuristic_generate(
+    frag_a: Fragment, frag_b: Fragment, language: str = "en"
+) -> tuple[str, str]:
+    """Generate tension and prompt without an LLM, natively per language."""
     import hashlib
+
+    ja = _is_ja(language)
+    snippet_a = _snippet(frag_a.text)
+    snippet_b = _snippet(frag_b.text)
+
     hash_val = int(hashlib.md5((frag_a.id + frag_b.id).encode()).hexdigest(), 16)
-    prompt = prompts[hash_val % len(prompts)]
+
+    if ja:
+        tension = _JA_TENSION_PATTERNS[hash_val % len(_JA_TENSION_PATTERNS)].format(
+            a=snippet_a, b=snippet_b
+        )
+        prompt = _JA_PROMPT_POOL[(hash_val // 7) % len(_JA_PROMPT_POOL)]
+    else:
+        tension = _EN_TENSION_PATTERNS[hash_val % len(_EN_TENSION_PATTERNS)].format(
+            a=snippet_a, b=snippet_b
+        )
+        prompt = _EN_PROMPT_POOL[(hash_val // 7) % len(_EN_PROMPT_POOL)]
 
     return tension, prompt
 
@@ -371,6 +435,7 @@ async def generate_fluke(
     sampling_engine: SamplingEngine,
     query: str | None = None,
     n_candidates: int = 10,
+    language: str = "en",
 ) -> FlukeResult | None:
     """Generate a single fluke - the core operation of Kosuke Protocol.
 
@@ -409,7 +474,9 @@ async def generate_fluke(
     scores = compute_fluke_score(store, frag_a, frag_b, query)
 
     # Generate tension and reflection prompt
-    tension, reflection_prompt = await generate_tension_and_prompt(frag_a, frag_b, query)
+    tension, reflection_prompt = await generate_tension_and_prompt(
+        frag_a, frag_b, query, language
+    )
 
     return FlukeResult(
         fragment_a=frag_a,

@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "final_title": "不妊治療を経て選んだ家族の形",
+  "final_subtitle": "不妊治療から得た家族の絆",
+  "body_markdown": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。45歳のとき、不妊治療を経て子どもを授かった。この選択は、妻と息子と三人で暮らす人生を実現するものであり、選ばなかった道は不妊治療を諦めることだった。このように、家族を持つことは人生において重要な決断であり、選択の結果がどのように現在の生活に影響を与えるかを考えさせられる。\n\n息子を授かった後、二人目を目指す治療を続けるかについて妻と話し合い、最終的にやめることにした。この決断は、家族の形をどのようにするかという重要な選択を反映している。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じていることからも、現在の家族の形に満足していることが伺える。しかし、今も二人目を持っていたらどうだったかと考えることがある。この思考は、選択の結果としての家族の形がどのように変わっていたかを想像させるものである。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "unsupported_personal_details": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "不妊治療を経て選んだ家族の形",
+      "selected_subtitle": "不妊治療から得た家族の絆",
+      "title_supported_by_fact_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "passed": true,
+      "notes": []
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "unsupported_paragraphs": [],
+    "central_thesis_maintained": true,
+    "residue_centrality": true,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": true,
+    "blocking_reasons": []
+  },
+  "prompt_version": "parallel-life-call-3-v1.0.1",
+  "character_count": 389
+}

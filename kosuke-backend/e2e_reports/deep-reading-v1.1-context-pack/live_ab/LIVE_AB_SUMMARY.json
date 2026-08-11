@@ -1,0 +1,582 @@
+{
+  "started_at": "2026-08-08T02:43:35.649637+00:00",
+  "finished_at": "2026-08-08T02:54:38.249685+00:00",
+  "staging_api": "https://parallel-life-api-staging.shiroandco-office.workers.dev",
+  "prod_api": "https://parallel-life-api.shiroandco-office.workers.dev",
+  "flags": {
+    "staging": {
+      "http": 200,
+      "body": {
+        "enabled": true,
+        "context_pack_enabled": true
+      }
+    },
+    "production": {
+      "http": 200,
+      "body": {
+        "enabled": true
+      }
+    },
+    "staging_context_pack_on": true,
+    "production_context_pack_off": true
+  },
+  "ux": {
+    "staging_seed_http": 200,
+    "seed_items": 2,
+    "items_start_unapproved": true,
+    "pack_starts_unapproved": true,
+    "no_raw_internal_ids_in_content": true,
+    "can_edit_delete_add_locally": true,
+    "production_seed_blocked": true,
+    "production_seed_http": 404
+  },
+  "mode_separation": {
+    "strict": {
+      "ok": true,
+      "prompt": "parallel-life-call-1-v1.0.3",
+      "mode": "strict",
+      "schema": "parallel-life-runtime-v1.0.6",
+      "leak": {
+        "pack_fact_count": 0,
+        "unique_pack_phrase_hits_in_session_json": [],
+        "leak_detected": false
+      }
+    },
+    "contextual": {
+      "ok": true,
+      "prompt": "parallel-life-call-1-v1.1.0",
+      "mode": "contextual",
+      "schema": "parallel-life-runtime-v1.1.0-exp",
+      "pack_fact_count": 5
+    }
+  },
+  "cases": [
+    {
+      "case": "A_ntt",
+      "label": "NTT career branch",
+      "strict": {
+        "ok": true,
+        "elapsed_s": 59.73,
+        "title": "「残っていたら」という現在形",
+        "char_count": 410,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.0.3",
+        "schema": "parallel-life-runtime-v1.0.6",
+        "trace": {
+          "deep_reading_mode": "strict",
+          "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+          "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+          "pack_fact_ids": [],
+          "pack_facts": [],
+          "context_pack_usage": {},
+          "residue": [
+            {
+              "statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+              "past_anchor_ids": [
+                "fact1"
+              ],
+              "present_anchor_ids": [
+                "fact4"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "28歳のときの選択が現在の自分に影響を与えているかもしれない。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      },
+      "contextual": {
+        "ok": true,
+        "elapsed_s": 70.01,
+        "title": "NTTを離れた後の経歴と、残る問い",
+        "char_count": 342,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.1.0",
+        "schema": "parallel-life-runtime-v1.1.0-exp",
+        "trace": {
+          "deep_reading_mode": "contextual",
+          "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+          "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+          "pack_fact_ids": [
+            "pack_career_history_001",
+            "pack_career_history_002",
+            "pack_career_history_003",
+            "pack_current_projects_005",
+            "pack_current_work_004"
+          ],
+          "pack_facts": [
+            {
+              "id": "pack_career_history_001",
+              "content": "NTT東日本で勤務した",
+              "tags": [
+                "context_pack",
+                "category:career_history",
+                "pack_id:pack_live_20260808T025454Z_8207",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_career_history_002",
+              "content": "外資系半導体企業へ転職した",
+              "tags": [
+                "context_pack",
+                "category:career_history",
+                "pack_id:pack_live_20260808T025454Z_8207",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_career_history_003",
+              "content": "その後、複数業界・企業を経験した",
+              "tags": [
+                "context_pack",
+                "category:career_history",
+                "pack_id:pack_live_20260808T025454Z_8207",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_work_004",
+              "content": "現在は自分の会社を経営している",
+              "tags": [
+                "context_pack",
+                "category:current_work",
+                "pack_id:pack_live_20260808T025454Z_8207",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_projects_005",
+              "content": "現在、複数の観測・Protocol・文章制作を行っている",
+              "tags": [
+                "context_pack",
+                "category:current_projects",
+                "pack_id:pack_live_20260808T025454Z_8207",
+                "live_ab_approved"
+              ]
+            }
+          ],
+          "context_pack_usage": {
+            "mode": "contextual",
+            "pack_id": "pack_live_20260808T025454Z_8207",
+            "pack_fact_ids": [
+              "pack_career_history_001",
+              "pack_career_history_002",
+              "pack_career_history_003",
+              "pack_current_projects_005",
+              "pack_current_work_004"
+            ],
+            "residue_present_anchor_ids": [
+              "pack_current_work_004",
+              "pack_current_projects_005"
+            ],
+            "residue_past_anchor_ids": [],
+            "lens_explicit_evidence_ids": [],
+            "rebranch_support_ids": []
+          },
+          "residue": [
+            {
+              "statement": "もしあのときNTTに残っていたら、現在の自分はどうなっていたか。",
+              "past_anchor_ids": [
+                "fact_001",
+                "fact_002",
+                "fact_003"
+              ],
+              "present_anchor_ids": [
+                "pack_current_work_004",
+                "pack_current_projects_005"
+              ],
+              "pack_ids_used": [
+                "pack_current_work_004",
+                "pack_current_projects_005"
+              ]
+            }
+          ],
+          "central_thesis": "キャリアの選択が現在の自分にどのように影響を与えたか。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null,
+        "note": "first_attempt_draft_failed_retry_succeeded"
+      }
+    },
+    {
+      "case": "B_family",
+      "label": "Family / fertility",
+      "strict": {
+        "ok": true,
+        "elapsed_s": 63.94,
+        "title": "三人で暮らす現在と、二人目をめぐる問い",
+        "char_count": 347,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.0.3",
+        "schema": "parallel-life-runtime-v1.0.6",
+        "trace": {
+          "deep_reading_mode": "strict",
+          "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+          "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+          "pack_fact_ids": [],
+          "pack_facts": [],
+          "context_pack_usage": {},
+          "residue": [
+            {
+              "statement": "「45歳のとき、不妊治療を経て子どもを授かった。」を振り返る問いは、「現在も妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+              "past_anchor_ids": [
+                "fact1"
+              ],
+              "present_anchor_ids": [
+                "fact4"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "不妊治療を経て子どもを授かり、現在は妻と息子との三人家族で暮らしている。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      },
+      "contextual": {
+        "ok": true,
+        "elapsed_s": 79.83,
+        "title": "三人で暮らす現在と、仕事のある日々",
+        "char_count": 477,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.1.0",
+        "schema": "parallel-life-runtime-v1.1.0-exp",
+        "trace": {
+          "deep_reading_mode": "contextual",
+          "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+          "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+          "pack_fact_ids": [
+            "pack_current_creative_activity_003",
+            "pack_current_work_002",
+            "pack_family_context_001"
+          ],
+          "pack_facts": [
+            {
+              "id": "pack_family_context_001",
+              "content": "妻と息子との三人家族で暮らしている",
+              "tags": [
+                "context_pack",
+                "category:family_context",
+                "pack_id:pack_live_20260808T024802Z_7953",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_work_002",
+              "content": "現在は自分の会社を経営している",
+              "tags": [
+                "context_pack",
+                "category:current_work",
+                "pack_id:pack_live_20260808T024802Z_7953",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_creative_activity_003",
+              "content": "文章やプロトコルの制作を続けている",
+              "tags": [
+                "context_pack",
+                "category:current_creative_activity",
+                "pack_id:pack_live_20260808T024802Z_7953",
+                "live_ab_approved"
+              ]
+            }
+          ],
+          "context_pack_usage": {
+            "mode": "contextual",
+            "pack_id": "pack_live_20260808T024802Z_7953",
+            "pack_fact_ids": [
+              "pack_current_creative_activity_003",
+              "pack_current_work_002",
+              "pack_family_context_001"
+            ],
+            "residue_present_anchor_ids": [],
+            "residue_past_anchor_ids": [],
+            "lens_explicit_evidence_ids": [],
+            "rebranch_support_ids": []
+          },
+          "residue": [
+            {
+              "statement": "「45歳のとき、不妊治療を経て子どもを授かった。」を振り返る問いは、「現在も妻と息子との三人家族で暮らしている。」という現在の生活と並べて読むことができる",
+              "past_anchor_ids": [
+                "fact_1"
+              ],
+              "present_anchor_ids": [
+                "fact_4"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "家族との生活と仕事の両立について考える",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      }
+    },
+    {
+      "case": "C_education",
+      "label": "Education (Waseda)",
+      "strict": {
+        "ok": true,
+        "elapsed_s": 64.98,
+        "title": "十九歳の合格と、いま残る問い",
+        "char_count": 341,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.0.3",
+        "schema": "parallel-life-runtime-v1.0.6",
+        "trace": {
+          "deep_reading_mode": "strict",
+          "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+          "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+          "pack_fact_ids": [],
+          "pack_facts": [],
+          "context_pack_usage": {},
+          "residue": [
+            {
+              "statement": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」を振り返る問いは、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活と並べて読むことができる",
+              "past_anchor_ids": [
+                "fact1"
+              ],
+              "present_anchor_ids": [
+                "fact3"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      },
+      "contextual": {
+        "ok": true,
+        "elapsed_s": 69.6,
+        "title": "別の大学を考える現在",
+        "char_count": 339,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.1.0",
+        "schema": "parallel-life-runtime-v1.1.0-exp",
+        "trace": {
+          "deep_reading_mode": "contextual",
+          "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+          "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+          "pack_fact_ids": [
+            "pack_current_creative_activity_003",
+            "pack_current_projects_002",
+            "pack_current_work_001"
+          ],
+          "pack_facts": [
+            {
+              "id": "pack_current_work_001",
+              "content": "現在は自分の会社を経営している",
+              "tags": [
+                "context_pack",
+                "category:current_work",
+                "pack_id:pack_live_20260808T025026Z_7342",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_projects_002",
+              "content": "文章やプロトコルをまとめている",
+              "tags": [
+                "context_pack",
+                "category:current_projects",
+                "pack_id:pack_live_20260808T025026Z_7342",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_creative_activity_003",
+              "content": "観測・Protocol・文章制作を行っている",
+              "tags": [
+                "context_pack",
+                "category:current_creative_activity",
+                "pack_id:pack_live_20260808T025026Z_7342",
+                "live_ab_approved"
+              ]
+            }
+          ],
+          "context_pack_usage": {
+            "mode": "contextual",
+            "pack_id": "pack_live_20260808T025026Z_7342",
+            "pack_fact_ids": [
+              "pack_current_creative_activity_003",
+              "pack_current_projects_002",
+              "pack_current_work_001"
+            ],
+            "residue_present_anchor_ids": [],
+            "residue_past_anchor_ids": [],
+            "lens_explicit_evidence_ids": [],
+            "rebranch_support_ids": []
+          },
+          "residue": [
+            {
+              "statement": "別の大学へ進学していた場合、現在の仕事や人間関係がどのように変わっていたかを考えることが、今の自分に影響を与えている。",
+              "past_anchor_ids": [
+                "fact_2"
+              ],
+              "present_anchor_ids": [
+                "fact_3",
+                "fact_4",
+                "fact_5",
+                "fact_6"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "別の大学へ進学していたら、現在の仕事や人間関係は異なっていたかもしれない。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      }
+    },
+    {
+      "case": "D_creative",
+      "label": "Creative vs corporate",
+      "strict": {
+        "ok": true,
+        "elapsed_s": 58.72,
+        "title": "現在の制作と、創作中心の人生という問い",
+        "char_count": 394,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.0.3",
+        "schema": "parallel-life-runtime-v1.0.6",
+        "trace": {
+          "deep_reading_mode": "strict",
+          "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+          "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+          "pack_fact_ids": [],
+          "pack_facts": [],
+          "context_pack_usage": {},
+          "residue": [
+            {
+              "statement": "「会社員として複数業界で働いてきた。」を振り返る問いは、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している」という現在の生活と並べて読むことができる",
+              "past_anchor_ids": [
+                "fact1"
+              ],
+              "present_anchor_ids": [
+                "fact3"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "創作中心の人生を選んでいた場合、現在の生活は異なっていた可能性がある。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      },
+      "contextual": {
+        "ok": true,
+        "elapsed_s": 58.4,
+        "title": "経営と文章制作の現在、その傍らにある創作",
+        "char_count": 503,
+        "blockers": [],
+        "prompt": "parallel-life-call-1-v1.1.0",
+        "schema": "parallel-life-runtime-v1.1.0-exp",
+        "trace": {
+          "deep_reading_mode": "contextual",
+          "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+          "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+          "pack_fact_ids": [
+            "pack_current_creative_activity_002",
+            "pack_current_projects_003",
+            "pack_current_projects_004",
+            "pack_current_work_001"
+          ],
+          "pack_facts": [
+            {
+              "id": "pack_current_work_001",
+              "content": "現在は自分の会社を経営している",
+              "tags": [
+                "context_pack",
+                "category:current_work",
+                "pack_id:pack_live_20260808T025241Z_5281",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_creative_activity_002",
+              "content": "文章制作を行っている",
+              "tags": [
+                "context_pack",
+                "category:current_creative_activity",
+                "pack_id:pack_live_20260808T025241Z_5281",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_projects_003",
+              "content": "観測プロジェクトを進めている",
+              "tags": [
+                "context_pack",
+                "category:current_projects",
+                "pack_id:pack_live_20260808T025241Z_5281",
+                "live_ab_approved"
+              ]
+            },
+            {
+              "id": "pack_current_projects_004",
+              "content": "Protocol 関連の仕事をしている",
+              "tags": [
+                "context_pack",
+                "category:current_projects",
+                "pack_id:pack_live_20260808T025241Z_5281",
+                "live_ab_approved"
+              ]
+            }
+          ],
+          "context_pack_usage": {
+            "mode": "contextual",
+            "pack_id": "pack_live_20260808T025241Z_5281",
+            "pack_fact_ids": [
+              "pack_current_creative_activity_002",
+              "pack_current_projects_003",
+              "pack_current_projects_004",
+              "pack_current_work_001"
+            ],
+            "residue_present_anchor_ids": [],
+            "residue_past_anchor_ids": [],
+            "lens_explicit_evidence_ids": [],
+            "rebranch_support_ids": []
+          },
+          "residue": [
+            {
+              "statement": "創作中心の人生を選んでいた場合、現在のビジネス中心の人生とは異なる選択があったかもしれない。",
+              "past_anchor_ids": [
+                "fact_002"
+              ],
+              "present_anchor_ids": [
+                "fact_003",
+                "fact_004"
+              ],
+              "pack_ids_used": []
+            }
+          ],
+          "central_thesis": "創作中心の人生を選んでいた場合、現在の状況は大きく異なっていた可能性がある。",
+          "thesis_mentions_pack_content": false,
+          "observatory_selected": [],
+          "rebranch": []
+        },
+        "error": null
+      }
+    }
+  ],
+  "ntt_retry_note": "A_ntt contextual first attempt failed at draft with generation error; retry succeeded publishable."
+}

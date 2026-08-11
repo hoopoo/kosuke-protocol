@@ -1,0 +1,24 @@
+{
+  "deep_reading_mode": "strict",
+  "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+  "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+  "pack_fact_ids": [],
+  "pack_facts": [],
+  "context_pack_usage": {},
+  "residue": [
+    {
+      "statement": "「45歳のとき、不妊治療を経て子どもを授かった。」を振り返る問いは、「現在も妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact1"
+      ],
+      "present_anchor_ids": [
+        "fact4"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "不妊治療を経て子どもを授かり、現在は妻と息子との三人家族で暮らしている。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

@@ -1,0 +1,90 @@
+{
+  "body_markdown": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める可能性もあったなかで、妻と息子との三人の暮らしがある。私にとって、それは幸せな人生である。\n\n現在も、妻と息子との三人家族で暮らしながら、自分の会社を経営している。45歳で子どもを授かったという時間と、この現在の生活とのあいだには、言葉で接続しきれていないものが残っている。ただ、三人で暮らす日々は続いている。\n\n息子を可愛いと感じる。息子の友人が家に遊びに来ることも楽しい。会社を経営する現在の生活のなかに、息子とその友人たちがいる家の時間がある。\n\n今も、二人目を持っていたらどうだったかと考えることがある。その問いに、ここで答えを置く材料はない。三人で暮らす現在の喜びと、その問いは、どちらも消えずに残っている。\n",
+  "title_candidates": [
+    "三人で暮らす現在と、残る問い",
+    "45歳のあとに続く家の時間",
+    "息子の友人が遊びに来る日"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経て子どもを授かり、妻と息子との三人家族で暮らす現在"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "三人で暮らす現在",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "二人目についての現在の問いは確認されているが、具体的な経緯や条件は確認されていないため、展開は省く。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める可能性もあったなかで、妻と息子との三人の暮らしがある。私にとって、それは幸せな人生である。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在も、妻と息子との三人家族で暮らしながら、自分の会社を経営している。45歳で子どもを授かったという時間と、この現在の生活とのあいだには、言葉で接続しきれていないものが残っている。ただ、三人で暮らす日々は続いている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact4",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "息子を可愛いと感じる。息子の友人が家に遊びに来ることも楽しい。会社を経営する現在の生活のなかに、息子とその友人たちがいる家の時間がある。"
+    },
+    {
+      "paragraph_id": "p04",
+      "support_ids": [
+        "fact4",
+        "fact5",
+        "fact6"
+      ],
+      "contains_inference": false,
+      "text_preview": "今も、二人目を持っていたらどうだったかと考えることがある。その問いに、ここで答えを置く材料はない。三人で暮らす現在の喜びと、その問いは、どちらも消えずに残っている。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [
+      {
+        "excerpt": "私にとって、それは幸せな人生である。",
+        "affect_type": "幸せ",
+        "missing_support": "affect_absent:幸せ",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "三人で暮らす現在の喜びと、その問いは、どちらも消えずに残っている。",
+        "affect_type": "喜び",
+        "missing_support": "affect_absent:喜び",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 340
+}

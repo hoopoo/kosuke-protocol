@@ -1,0 +1,392 @@
+{
+  "case_id": "case07_creative",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "mixed",
+        "changed_dimension": "表現に割く時間／生計との配分",
+        "chosen_structure": "会社員を続けながら創作を副業として続けること",
+        "unchosen_structure": "創作を本業にすること",
+        "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+        "lost_verifiability": "「創作を本業にすること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+        "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、場を移しながら生活を組み立てる余白",
+        "present_residue": "「創作を本業にしていたらどうなっていたか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "fact_005",
+          "pack_current_work_001",
+          "pack_current_creative_activity_002",
+          "fact_006"
+        ],
+        "confidence": 0.6625,
+        "diagnostics": {
+          "domain_reasons": [
+            "creative:creative",
+            "career:employment_evidence"
+          ],
+          "explicit_employment_evidence": true,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "needs_additional_input"
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "answer",
+        "http": 200,
+        "questions": [
+          "いまの生活の具体的な場面を教えてください"
+        ],
+        "answers": {
+          "0": "平日は会社で働き、夜と週末に文章と写真の制作をしている。"
+        },
+        "resp_status": "needs_additional_input",
+        "clarification_required": true
+      },
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "needs_additional_input",
+        "clarification_required": true,
+        "questions": []
+      },
+      {
+        "round": 1,
+        "action": "answer",
+        "http": 200,
+        "questions": [
+          "いまの生活の具体的な場面を教えてください"
+        ],
+        "answers": {
+          "0": "平日は会社で働き、夜と週末に文章と写真の制作をしている。"
+        },
+        "resp_status": "needs_additional_input",
+        "clarification_required": true
+      },
+      {
+        "round": 1,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "needs_additional_input",
+        "clarification_required": true,
+        "questions": []
+      },
+      {
+        "round": 2,
+        "action": "answer",
+        "http": 200,
+        "questions": [
+          "いまの生活の具体的な場面を教えてください"
+        ],
+        "answers": {
+          "0": "平日は会社で働き、夜と週末に文章と写真の制作をしている。"
+        },
+        "resp_status": "needs_additional_input",
+        "clarification_required": true
+      },
+      {
+        "round": 2,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "needs_additional_input",
+        "clarification_required": true,
+        "questions": []
+      },
+      {
+        "round": 3,
+        "action": "answer",
+        "http": 200,
+        "questions": [
+          "いまの生活の具体的な場面を教えてください"
+        ],
+        "answers": {
+          "0": "平日は会社で働き、夜と週末に文章と写真の制作をしている。"
+        },
+        "resp_status": "needs_additional_input",
+        "clarification_required": true
+      },
+      {
+        "round": 3,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "needs_additional_input",
+        "clarification_required": true,
+        "questions": []
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [
+      "いまの生活の具体的な場面を教えてください",
+      "いまの生活の具体的な場面を教えてください",
+      "いまの生活の具体的な場面を教えてください"
+    ],
+    "schema_leakage": true,
+    "continued_after_clarification": true,
+    "final_status": "needs_additional_input",
+    "clarification_required_flags": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "safe_stop": true,
+  "session_id": "bac961a8-664a-4b47-a1f2-496dabcc0cd2",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_current_creative_activity_002",
+      "pack_current_work_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "平日は会社で働いている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T074420Z_5412",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_creative_activity_002",
+        "content": "夜と週末に文章と写真の制作をしている",
+        "tags": [
+          "context_pack",
+          "category:current_creative_activity",
+          "pack_id:pack_live_20260808T074420Z_5412",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T074420Z_5412",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_002",
+        "pack_current_work_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_current_creative_activity_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐」を振り返る問いは、「現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "創作を本業にする選択肢を持ちながらも、会社員としての道を選んだことが現在の創作活動に影響を与えている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "会社の場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "mixed",
+    "changed_dimension": "表現に割く時間／生計との配分",
+    "chosen_structure": "会社員を続けながら創作を副業として続けること",
+    "unchosen_structure": "創作を本業にすること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「創作を本業にすること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、場を移しながら生活を組み立てる余白",
+    "present_residue": "「創作を本業にしていたらどうなっていたか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_current_work_001",
+      "pack_current_creative_activity_002",
+      "fact_006"
+    ],
+    "confidence": 0.6625,
+    "diagnostics": {
+      "domain_reasons": [
+        "creative:creative",
+        "career:employment_evidence"
+      ],
+      "explicit_employment_evidence": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_current_creative_activity_002",
+      "pack_current_work_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "平日は会社で働いている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T074420Z_5412",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_creative_activity_002",
+        "content": "夜と週末に文章と写真の制作をしている",
+        "tags": [
+          "context_pack",
+          "category:current_creative_activity",
+          "pack_id:pack_live_20260808T074420Z_5412",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T074420Z_5412",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_002",
+        "pack_current_work_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_current_creative_activity_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐」を振り返る問いは、「現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "創作を本業にする選択肢を持ちながらも、会社員としての道を選んだことが現在の創作活動に影響を与えている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "会社の場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "mixed",
+    "changed_dimension": "表現に割く時間／生計との配分",
+    "chosen_structure": "会社員を続けながら創作を副業として続けること",
+    "unchosen_structure": "創作を本業にすること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「創作を本業にすること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、場を移しながら生活を組み立てる余白",
+    "present_residue": "「創作を本業にしていたらどうなっていたか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_current_work_001",
+      "pack_current_creative_activity_002",
+      "fact_current_preserved_003",
+      "q_confirm_001"
+    ],
+    "confidence": 0.6625,
+    "diagnostics": {
+      "domain_reasons": [
+        "creative:creative",
+        "career:employment_evidence"
+      ],
+      "explicit_employment_evidence": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "elapsed_s": 27.51
+}

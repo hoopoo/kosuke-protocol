@@ -1,0 +1,1709 @@
+{
+  "session_id": "7bb0de31-ced0-4eb0-a252-9ee717bf5b0f",
+  "raw_user_input": "29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐があった。\n実際に選んだ道は、会社員を続けながら創作を副業として続けること。\n選ばなかった道は、創作を本業にすること。\n現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。\nいまも「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。\n",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact_001",
+          "content": "29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_002",
+          "content": "実際に選んだ道は、会社員を続けながら創作を副業として続けること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道は、会社員を続けながら創作を副業として続けること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_003",
+          "content": "選ばなかった道は、創作を本業にすること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、創作を本業にすること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_004",
+          "content": "現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_current_work_001",
+          "source_text": "平日は会社で働いている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_005",
+          "content": "現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_current_creative_activity_002",
+          "source_text": "夜と週末に文章と写真の制作をしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_current_work_001",
+          "content": "平日は会社で働いている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "平日は会社で働いている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T141042Z_3244",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_creative_activity_002",
+          "content": "夜と週末に文章と写真の制作をしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "夜と週末に文章と写真の制作をしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_creative_activity",
+            "pack_id:pack_live_20260808T141042Z_3244",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "平日は会社で働いている",
+        "夜と週末に文章と写真の制作をしている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "29歳のとき",
+        "triggering_event": "創作を本業にするか、会社員のまま続けるかを考えた",
+        "available_paths": [
+          "創作を本業にすること",
+          "会社員を続けながら創作を副業として続けること"
+        ],
+        "realized_path": "会社員を続けながら創作を副業として続けること",
+        "unrealized_paths": [
+          "創作を本業にすること"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [
+        "平日は会社で働いている",
+        "夜と週末に文章と写真の制作をしている"
+      ],
+      "secondary_branches": [
+        {
+          "id": "sec_auto_001",
+          "classification": "actual_secondary_branch",
+          "parent_branch_id": "primary",
+          "description": "29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐があった。実際に選んだ道は、会社員を続けながら創作を副業として続けること。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [
+            "fact_001"
+          ],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": false
+        }
+      ],
+      "retrospective_counterfactuals": [],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [
+        "pack_current_work_001",
+        "pack_current_creative_activity_002"
+      ],
+      "classifications": [
+        {
+          "id": "pack_current_creative_activity_002",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        },
+        {
+          "id": "pack_current_work_001",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        }
+      ],
+      "manuscript_logic_ids": [
+        "pack_current_work_001",
+        "pack_current_creative_activity_002"
+      ],
+      "withheld_ids": []
+    },
+    "meaning_compression": {
+      "past_structure": "創作を本業にするか、会社員のまま続けるかを考えた分岐があった。",
+      "alternative_structure": "会社員を続けながら創作を副業として続ける選択をした。",
+      "present_structure": "現在は平日は会社で働き、夜と週末に創作活動を行っている。",
+      "tension": "創作を本業にしていた場合の作り方の違いを考えることがある。",
+      "continuity": "選択した道と現在の活動がつながっている。",
+      "transformation": "創作活動を副業として続けることで、現在の生活が形成されている。",
+      "central_question": "創作を本業にしていたら、今の作り方はどうなっていたのか。",
+      "personal_tension": "創作を本業にすることへの未練がある。",
+      "social_institutional_parallel": "日本型の長期雇用と創作活動の両立が求められる社会構造。",
+      "present_life_connection": "現在の仕事と創作活動の両立が、過去の選択に影響を与えている。",
+      "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか。",
+      "cross_lens_relation_ids": [],
+      "support_ids": [
+        "fact_001",
+        "fact_002",
+        "fact_003",
+        "pack_current_work_001",
+        "pack_current_creative_activity_002"
+      ],
+      "validation_status": "未確認"
+    },
+    "central_thesis": {
+      "thesis_type": "個人の選択と社会構造の影響",
+      "statement": "創作を本業にする選択をしなかったことで、現在の生活が形成されている。",
+      "pole_a": "創作を本業にすること",
+      "pole_b": "会社員を続けながら創作を副業として続けること",
+      "supported_by": [
+        "fact_001",
+        "fact_002",
+        "fact_004",
+        "fact_005"
+      ],
+      "risks": [],
+      "validation_status": "failed_causal_framing"
+    },
+    "lost_structure": {
+      "items": [
+        {
+          "content": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+          "loss_type": "structural_continuity",
+          "support_ids": [
+            "fact_003"
+          ],
+          "certainty": "不確実",
+          "allowed_wording_strength": "qualified"
+        }
+      ]
+    },
+    "protected_structure": {
+      "items": [
+        {
+          "content": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+          "support_ids": [
+            "fact_004",
+            "fact_005"
+          ],
+          "causality_status": "non_causal_possibility",
+          "allowed_statement_strength": "qualified"
+        }
+      ]
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐」を振り返る問いは、「現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。」という現在の生活と並べて読むことができる",
+          "content": "「29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐」を振り返る問いは、「現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact_001"
+          ],
+          "present_anchor_ids": [
+            "fact_004"
+          ],
+          "support_ids": [
+            "fact_001",
+            "fact_004"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": [
+        {
+          "internal_id": "section_001",
+          "public_heading": "分岐の背景",
+          "required": true,
+          "new_meaning": "創作を本業にするか、会社員のまま続けるかを考えた分岐があった。",
+          "allowed_boundary_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_003"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "なし",
+          "next_section_transition": "次に、実際に選んだ道について考察する。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_002",
+          "public_heading": "選択した道",
+          "required": true,
+          "new_meaning": "会社員を続けながら創作を副業として続ける選択をした。",
+          "allowed_boundary_ids": [
+            "fact_002",
+            "fact_004",
+            "fact_005"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "分岐の背景からの具体的な選択の説明。",
+          "next_section_transition": "次に、現在の活動について考察する。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_003",
+          "public_heading": "現在の活動",
+          "required": true,
+          "new_meaning": "現在は平日は会社で働き、夜と週末に創作活動を行っている。",
+          "allowed_boundary_ids": [
+            "fact_004",
+            "fact_005"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "選択した道から現在の活動への流れ。",
+          "next_section_transition": "次に、選択に対する問いについて考察する。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_004",
+          "public_heading": "選択に対する問い",
+          "required": true,
+          "new_meaning": "創作を本業にしていた場合の作り方の違いを考えることがある。",
+          "allowed_boundary_ids": [
+            "fact_006"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "現在の活動から選択に対する問いへの流れ。",
+          "next_section_transition": "次に、全体のまとめに入る。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_005",
+          "public_heading": "まとめ",
+          "required": true,
+          "new_meaning": "創作を本業にする選択をしなかったことで、現在の生活が形成されている。",
+          "allowed_boundary_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_004",
+            "fact_005"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "全体の流れをまとめる。",
+          "next_section_transition": "次に、今後の展望について考察する。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        }
+      ]
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": [
+        {
+          "id": "rebranch_semantics_001",
+          "source_meaning": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "current_receiver": "現在の生活で、この緊張をどう置くか",
+          "branch_specific_form": "いまの表現の置き方のなかで、表現に割く時間を、いまの生活のなかで選び直す",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_current_creative_activity_002",
+            "fact_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": true
+        }
+      ]
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "29歳のとき",
+      "triggering_event": "創作を本業にするか、会社員のまま続けるかを考えた",
+      "chosen_path": "会社員を続けながら創作を副業として続けること",
+      "unchosen_path": "創作を本業にすること",
+      "actual_secondary_branches": [
+        "29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐があった。実際に選んだ道は、会社員を続けながら創作を副業として続けること。"
+      ],
+      "retrospective_counterfactuals": [],
+      "present_questions": [
+        "いまも「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。"
+      ],
+      "current_context": [
+        "平日は会社で働いている",
+        "夜と週末に文章と写真の制作をしている"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "創作を本業にする選択をしなかったことで、現在の生活が形成されている。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "runtime:parallel-life-runtime-v1.1.11-exp",
+        "observatory_section:omitted_pre_thesis_relations",
+        "selection:thesis_gate:unsupported_causal_framing",
+        "runtime:parallel-life-runtime-v1.1.11-exp",
+        "section_repair:rebranch_evaluated_present",
+        "section_contract_evidence_check:passed"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T141042Z_3244",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_002",
+        "pack_current_work_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "selection_compression_diagnostics": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_creative_activity_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_current_work_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "創作を本業にするか、会社員のまま続けるかを考えた分岐があった。",
+        "alternative_structure": "会社員を続けながら創作を副業として続ける選択をした。",
+        "present_structure": "現在は平日は会社で働き、夜と週末に創作活動を行っている。",
+        "tension": "創作を本業にしていた場合の作り方の違いを考えることがある。",
+        "continuity": "選択した道と現在の活動がつながっている。",
+        "transformation": "創作活動を副業として続けることで、現在の生活が形成されている。",
+        "central_question": "創作を本業にしていたら、今の作り方はどうなっていたのか。",
+        "personal_tension": "創作を本業にすることへの未練がある。",
+        "social_institutional_parallel": "日本型の長期雇用と創作活動の両立が求められる社会構造。",
+        "present_life_connection": "現在の仕事と創作活動の両立が、過去の選択に影響を与えている。",
+        "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか。",
+        "cross_lens_relation_ids": [],
+        "support_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "validation_status": "未確認"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [
+        "thesis_gate:unsupported_causal_framing"
+      ],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.11-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.9-exp"
+    },
+    "candidate_lens_selection": {
+      "candidates": [
+        {
+          "lens_id": "education-employment",
+          "structural_reason": "進路・就労の制度と表現活動のあいだの分岐",
+          "structures_matched": [
+            "creative_vs_corporate"
+          ],
+          "confidence": 0.72,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "after-success",
+          "structural_reason": "どちらの達成尺度が残るかを問う構造",
+          "structures_matched": [
+            "creative_vs_corporate"
+          ],
+          "confidence": 0.65,
+          "rejected_promo": false
+        }
+      ],
+      "zero_lens_reason": "",
+      "selection_method": "structural_v1"
+    },
+    "retrieved_observatory_evidence": [
+      {
+        "id": "obs_ee_001",
+        "lens_id": "education-employment",
+        "observation_id": "ee_longterm_vs_mobile",
+        "structural_pattern": "日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきた",
+        "scope": "employment_regime",
+        "time_context": "japan_postwar_to_present",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:education-employment;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "stay_inside_one_firm_vs_leave_for_mobile_career",
+        "confidence": 0.9,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_ee_002",
+        "lens_id": "education-employment",
+        "observation_id": "ee_institution_sets_terms",
+        "structural_pattern": "教育から就労への移行や配属・転勤の制度が、仕事だけでなく住む場所や独立のタイミングまで同時に条件づけることがある",
+        "scope": "school_to_work_and_firm_internal",
+        "time_context": "japan_institutional_transition",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:education-employment;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "education_to_employment_or_internal_ladder",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_as_001",
+        "lens_id": "after-success",
+        "observation_id": "as_questions_after_achievement",
+        "structural_pattern": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "scope": "post_achievement",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:after-success;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "achievement_then_unresolved_life_question",
+        "confidence": 0.8,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      }
+    ],
+    "cross_lens_relations": [],
+    "observatory_core_diagnostics": {
+      "structures_detected": [
+        "creative_vs_corporate"
+      ],
+      "candidate_lens_ids": [
+        "education-employment",
+        "after-success"
+      ],
+      "evidence_ids": [
+        "obs_ee_001",
+        "obs_ee_002",
+        "obs_as_001"
+      ],
+      "relation_ids": [],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": false,
+      "branch_semantics_domain": "creative",
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    },
+    "section_contracts": {
+      "contracts": [
+        {
+          "section_id": "branch_point",
+          "structural_purpose": "establish the fork",
+          "required_meaning": "創作を本業にするか、会社員のまま続けるかを考えた",
+          "interpretive_claim": "この分かれ目は一点の出来事ではなく、表現に割く時間／生計との配分が分かれた境界だった",
+          "realization_goal": "分岐を一点の出来事ではなく、変わった生活次元の境界として置く（claimを実質化）",
+          "required_public_label": "分岐点",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "employer_chronology_as_spine"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "chosen_path",
+          "structural_purpose": "state the realized path without résumé tour",
+          "required_meaning": "会社員を続けながら創作を副業として続けること",
+          "interpretive_claim": "振り返ると、会社員を続けながら創作を副業として続けることという選択が、表現に割く時間／生計との配分の次元で別の組み立てを開き始めた（当時の意図や優劣の断定ではない）",
+          "realization_goal": "選択＋構造転換＋thesis連結を一段落で実現する（年表禁止）（claimを実質化）",
+          "required_public_label": "選んだ道",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "industry_tour",
+            "project_list",
+            "chronology_only",
+            "intention_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "会社員を続けながら創作を副業として続けること",
+          "structural_shift": "会社員を続けながら創作を副業として続けることという選択が、表現に割く時間／生計との配分の次元で別の組み立てを開き始めた",
+          "thesis_link": "いまも残る問いの起点として、この移り方が現在の生活と並んでいる",
+          "realization_required": true,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "unchosen_life",
+          "structural_purpose": "keep unrealized path open without invention",
+          "required_meaning": "創作を本業にすること",
+          "interpretive_claim": "残らなかった側には、発明せずに置いておける「創作を本業にすること」という可能性が閉じずに残る",
+          "realization_goal": "選ばなかった道を発明せず開いたまま置く（claimを実質化）",
+          "required_public_label": "選ばなかった人生",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "invented_rank_salary_scene"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "lost",
+          "structural_purpose": "structural continuity left behind",
+          "required_meaning": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+          "interpretive_claim": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと（一覧や断定ではない）",
+          "realization_goal": "失ったものを一覧ではなく、確かめられなくなった連続として実現する（claimを実質化）",
+          "required_public_label": "失ったもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_003"
+          ],
+          "prohibited_claims": [
+            "salary_inventory",
+            "title_inventory",
+            "pension_inventory",
+            "colleague_network_list"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "protected",
+          "structural_purpose": "structural possibility preserved",
+          "required_meaning": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+          "interpretive_claim": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地（優劣や成功の証明ではない）",
+          "realization_goal": "守られたものを成功談ではなく、残った可能性／余白として実現する（claimを実質化）",
+          "required_public_label": "守られたもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_004"
+          ],
+          "prohibited_claims": [
+            "success_moral",
+            "freedom_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "residue",
+          "structural_purpose": "return to present through structural tension",
+          "required_meaning": "「創作を本業にしていた場合の生活はどうなっていたのか。」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+          "interpretive_claim": "「創作を本業にしていた場合の生活はどうなっていたのか。」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない。平日は会社で働いているという状況のなかで残る緊張として読む余地がある",
+          "realization_goal": "現在の問いが古い分岐のどの部分を残しているかを慎重に書く（claimを実質化）",
+          "required_public_label": "今に残った構造",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001",
+            "fact_004"
+          ],
+          "prohibited_claims": [
+            "unsupported_causality",
+            "psychological_fact_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "observatory",
+          "structural_purpose": "social parallel without lens-name advertising",
+          "required_meaning": "",
+          "interpretive_claim": "",
+          "realization_goal": "社会の並置をレンズ名なしで織り込む（証拠が無いなら薄く）",
+          "required_public_label": "社会との接続",
+          "minimum_paragraphs": 0,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 0,
+          "realization_status": "omitted",
+          "supporting_evidence_ids": [],
+          "prohibited_claims": [
+            "lens_name_advertising",
+            "sociology_takeover"
+          ],
+          "concrete_example_budget": 0,
+          "must_be_present": false,
+          "omission_allowed": true,
+          "omission_reason": "zero_selected_observatory_lenses",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [
+            "obs_ee_001",
+            "obs_ee_002",
+            "obs_as_001"
+          ],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "re_branch",
+          "structural_purpose": "close residue tension as a present choice",
+          "required_meaning": "いまの表現の置き方のなかで、表現に割く時間を、いまの生活のなかで選び直す",
+          "interpretive_claim": "表現を後回しにすることを唯一の正解にしなくてよい。表現に割く時間を、いまの生活のなかで選び直す余地がある（優劣や成功の断定ではない）",
+          "realization_goal": "Residueの緊張を、いまの静かな選択／非選択へ閉じる（問いだけで終わらせない）（claimを実質化）",
+          "required_public_label": "これからの再分岐",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_001",
+            "pack_current_creative_activity_002"
+          ],
+          "prohibited_claims": [
+            "shiro_growth_promo",
+            "protocol_expansion_promo",
+            "app_launch_promo",
+            "productivity_advice",
+            "career_coaching",
+            "reflection_only_no_choice",
+            "question_only_rebranch",
+            "growth_challenge_rhetoric"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "平日は会社で働いている",
+            "past_anchor": "創作を本業にするか",
+            "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+            "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": true,
+          "unresolved_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "present_choice": "表現に割く時間を、いまの生活のなかで選び直す",
+          "measurement_shift": "表現を後回しにすることを唯一の正解にしなくてよい",
+          "non_genericity": true,
+          "what_is_no_longer_required": "表現を後回しにすることを唯一の正解にしなくてよい",
+          "what_can_now_be_chosen": "表現に割く時間を、いまの生活のなかで選び直す",
+          "non_genericity_score": 0.95,
+          "rebranch_decision": {
+            "unresolved_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+            "present_choice": "表現に割く時間を、いまの生活のなかで選び直す",
+            "what_is_no_longer_required": "表現を後回しにすることを唯一の正解にしなくてよい",
+            "what_can_now_be_chosen": "表現に割く時間を、いまの生活のなかで選び直す",
+            "evidence_ids": [
+              "pack_current_work_001",
+              "pack_current_creative_activity_002"
+            ],
+            "non_genericity_score": 0.95,
+            "interpretive_claim": "表現を後回しにすることを唯一の正解にしなくてよい。表現に割く時間を、いまの生活のなかで選び直す余地がある（優劣や成功の断定ではない）"
+          },
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        }
+      ],
+      "diagnostics": {
+        "runtime_pin": "parallel-life-runtime-v1.1.11-exp",
+        "branch_semantics": {
+          "domain": "creative",
+          "changed_dimension": "表現に割く時間／生計との配分",
+          "chosen_structure": "会社員を続けながら創作を副業として続けること",
+          "unchosen_structure": "創作を本業にすること",
+          "central_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "lost_verifiability": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+          "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+          "present_residue": "「創作を本業にしていた場合の生活はどうなっていたのか。」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+          "possible_rebranch_modes": [
+            "choose",
+            "preserve",
+            "revisit"
+          ],
+          "sensitive_boundaries": [],
+          "evidence_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_003",
+            "fact_004",
+            "fact_005",
+            "pack_current_work_001",
+            "pack_current_creative_activity_002",
+            "q_confirm_001"
+          ],
+          "confidence": 0.9,
+          "diagnostics": {
+            "domain_reasons": [
+              "creative:creative"
+            ],
+            "branch_employment_evidence": false,
+            "background_employment_context": true,
+            "explicit_employment_evidence": false,
+            "allows_career_product_logic": false,
+            "vague": false,
+            "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+          }
+        },
+        "semantic_domain_leak": {
+          "leaked": false,
+          "hits": [],
+          "domain": "creative",
+          "changed_dimension": "表現に割く時間／生計との配分",
+          "authority": "non_career_guard"
+        },
+        "required_ids": [
+          "branch_point",
+          "chosen_path",
+          "unchosen_life",
+          "lost",
+          "protected",
+          "residue",
+          "re_branch"
+        ],
+        "required_public_labels": [
+          "分岐点",
+          "選んだ道",
+          "選ばなかった人生",
+          "失ったもの",
+          "守られたもの",
+          "今に残った構造",
+          "これからの再分岐"
+        ],
+        "lost_items": 1,
+        "protected_items": 1,
+        "residue_items": 1,
+        "rebranch_directions": 1,
+        "rebranch_decision": {
+          "unresolved_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "present_choice": "表現に割く時間を、いまの生活のなかで選び直す",
+          "what_is_no_longer_required": "表現を後回しにすることを唯一の正解にしなくてよい",
+          "what_can_now_be_chosen": "表現に割く時間を、いまの生活のなかで選び直す",
+          "evidence_ids": [
+            "pack_current_work_001",
+            "pack_current_creative_activity_002"
+          ],
+          "non_genericity_score": 0.95,
+          "interpretive_claim": "表現を後回しにすることを唯一の正解にしなくてよい。表現に割く時間を、いまの生活のなかで選び直す余地がある（優劣や成功の断定ではない）"
+        },
+        "claim_atoms": {
+          "present_anchor": "平日は会社で働いている",
+          "past_anchor": "創作を本業にするか",
+          "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか",
+          "active_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "measurement_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ"
+        },
+        "interpretive_claims": {
+          "branch_point": true,
+          "chosen_path": true,
+          "unchosen_life": true,
+          "lost": true,
+          "protected": true,
+          "residue": true,
+          "re_branch": true
+        },
+        "malformed_claims": []
+      }
+    },
+    "call2_writing_pack_diagnostics": {
+      "writing_pack_chars": 21440,
+      "full_call1_chars": 30864,
+      "reduction_ratio": 0.305,
+      "evidence_fact_count": 7,
+      "duplicate_full_call1_in_writing_pack": false
+    },
+    "branch_semantics": {
+      "domain": "creative",
+      "changed_dimension": "表現に割く時間／生計との配分",
+      "chosen_structure": "会社員を続けながら創作を副業として続けること",
+      "unchosen_structure": "創作を本業にすること",
+      "central_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+      "lost_verifiability": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+      "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+      "present_residue": "「創作を本業にしていた場合の生活はどうなっていたのか。」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+      "possible_rebranch_modes": [
+        "choose",
+        "preserve",
+        "revisit"
+      ],
+      "sensitive_boundaries": [],
+      "evidence_ids": [
+        "fact_001",
+        "fact_002",
+        "fact_003",
+        "fact_004",
+        "fact_005",
+        "pack_current_work_001",
+        "pack_current_creative_activity_002",
+        "q_confirm_001"
+      ],
+      "confidence": 0.9,
+      "diagnostics": {
+        "domain_reasons": [
+          "creative:creative"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": true,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T14:11:11.843285+00:00",
+  "call2": {
+    "body_markdown": "## 分岐点\n\n29歳のとき、創作を本業にするか、会社員のまま続けるかを考えた。その分かれ目は職業名を替える一点の決断というより、表現にどれだけの時間を渡し、生計とどう並べるかという生活の境界だった。\n\n## 選んだ道\n\n会社員を続けながら、創作を副業として続ける道を取った。振り返れば、その選択は表現を断つのではなく、日々の生計と並べながら制作を置く組み立てを開いたのだと思う。この移り方が、創作を本業にしていたなら作り方は違ったのではないか、という現在の問いの起点にもなっている。\n\n## 選ばなかった人生\n\n選ばなかった側には、創作を本業にすることが残っている。どんな作品を作り、どんな一日を送ったかを補うことはできない。しかし、その生活を具体的に決めないからこそ、可能性は閉じた物語にならずに留まる。\n\n## 失ったもの\n\n失ったのは、創作を本業にする生活のなかで表現に割けていた時間や、その時間から続いていたはずの暮らしを、いまと同じ連続として確かめることだ。その道を選ばなかった以上、その連続は比較のために取り戻せるものではない。\n\n## 守られたもの\n\n一方で、会社で働きながら夜と週末に文章と写真を制作する現在には、表現を未完のまま持ち続ける余地が残っている。完成や一本化を急がず、まだ形になりきらないものに触れ続けられることは、この道が優れていることの証明ではなく、ここに残った余白である。\n\n## 今に残った構造\n\n平日は会社で働く生活のなかで、「創作を本業にしていた場合の生活はどうなっていたのか」という問いが残る。これは過去を単に悔やむ問いというより、未完の表現の可能性が、いまの制作のそばにまだ触れているためかもしれない。生計と表現を配分してきた側と、表現を本業にする生活の側とのあいだは、解消されずに現在へ続いている。\n\n## これからの再分岐\n\n表現を後回しにすることだけを唯一の正解として置かない。平日の仕事と、夜と週末の文章・写真の制作があるいまの生活のなかで、表現に割く時間を選び直していく。その選び直しは、創作を本業にするかどうかをただちに決めることではなく、未完の表現を現在の時間のなかに置き続ける選択である。\n",
+    "title_candidates": [
+      "未完の表現を置く時間",
+      "創作を本業にしなかった生活",
+      "夜と週末に残る分岐"
+    ],
+    "subtitle_candidates": [],
+    "sections": [
+      {
+        "internal_id": "branch_point",
+        "public_heading": "分岐点",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "chosen_path",
+        "public_heading": "選んだ道",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "unchosen_life",
+        "public_heading": "選ばなかった人生",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "lost",
+        "public_heading": "失ったもの",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "protected",
+        "public_heading": "守られたもの",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "residue",
+        "public_heading": "今に残った構造",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "re_branch",
+        "public_heading": "これからの再分岐",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "29歳のとき、創作を本業にするか、会社員のまま続けるかを考えた。その分かれ目は職業名を替える一点の決断というより、表現にどれだけの時間を渡し、生計とどう並べるかという生活の境界だった。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "会社員を続けながら、創作を副業として続ける道を取った。振り返れば、その選択は表現を断つのではなく、日々の生計と並べながら制作を置く組み立てを開いたのだと思う。この移り方が、創作を本業にしていたなら作り方は違ったのではないか、という現在の問い"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact_001",
+          "fact_003"
+        ],
+        "contains_inference": true,
+        "text_preview": "選ばなかった側には、創作を本業にすることが残っている。どんな作品を作り、どんな一日を送ったかを補うことはできない。しかし、その生活を具体的に決めないからこそ、可能性は閉じた物語にならずに留まる。"
+      },
+      {
+        "paragraph_id": "p04",
+        "support_ids": [
+          "fact_003"
+        ],
+        "contains_inference": true,
+        "text_preview": "失ったのは、創作を本業にする生活のなかで表現に割けていた時間や、その時間から続いていたはずの暮らしを、いまと同じ連続として確かめることだ。その道を選ばなかった以上、その連続は比較のために取り戻せるものではない。"
+      },
+      {
+        "paragraph_id": "p05",
+        "support_ids": [
+          "fact_004",
+          "pack_current_creative_activity_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "一方で、会社で働きながら夜と週末に文章と写真を制作する現在には、表現を未完のまま持ち続ける余地が残っている。完成や一本化を急がず、まだ形になりきらないものに触れ続けられることは、この道が優れていることの証明ではなく、ここに残った余白である。"
+      },
+      {
+        "paragraph_id": "p06",
+        "support_ids": [
+          "fact_001",
+          "fact_004"
+        ],
+        "contains_inference": true,
+        "text_preview": "平日は会社で働く生活のなかで、「創作を本業にしていた場合の生活はどうなっていたのか」という問いが残る。これは過去を単に悔やむ問いというより、未完の表現の可能性が、いまの制作のそばにまだ触れているためかもしれない。生計と表現を配分してきた側と"
+      },
+      {
+        "paragraph_id": "p07",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "表現を後回しにすることだけを唯一の正解として置かない。平日の仕事と、夜と週末の文章・写真の制作があるいまの生活のなかで、表現に割く時間を選び直していく。その選び直しは、創作を本業にするかどうかをただちに決めることではなく、未完の表現を現在の"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [
+        {
+          "id": "rebranch_semantics_001",
+          "source_meaning": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "current_receiver": "現在の生活で、この緊張をどう置くか",
+          "branch_specific_form": "いまの表現の置き方のなかで、表現に割く時間を、いまの生活のなかで選び直す",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_current_creative_activity_002",
+            "fact_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": false,
+          "selected_for_manuscript": false
+        }
+      ],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1,
+      "call2_writing_pack": {
+        "writing_pack_chars": 21440,
+        "full_call1_chars": 30864,
+        "reduction_ratio": 0.305,
+        "evidence_fact_count": 7,
+        "duplicate_full_call1_in_writing_pack": false
+      },
+      "call2_prompt_version": "parallel-life-call-2-v1.1.11-exp"
+    },
+    "prompt_version": "parallel-life-call-2-v1.1.11-exp",
+    "character_count": 925
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "夜と週末に続ける創作",
+    "final_subtitle": "29歳の分岐と、いまの作り方",
+    "body_markdown": "## 分岐点\n\n29歳のとき、創作を本業にするか、会社員のまま続けるかを考えた。その分かれ目は職業名を替える一点の決断というより、表現にどれだけの時間を渡し、生計とどう並べるかという生活の境界だった。\n\n## 選んだ道\n\n選んだのは、会社員を続けながら創作を副業として続ける道だった。現在は平日に会社で働き、夜と週末に文章と写真を制作している。\n\n## 選ばなかった人生\n\n選ばなかったのは、創作を本業にする道である。その先の仕事や暮らしを、ここで具体的に描く材料はない。ただ、選ばれなかった道として、その可能性は残る。\n\n## 失ったもの\n\n創作を本業にする生活は経験されなかった。その道で制作にどれほどの時間を使い、どのように作っていたかは、いまの生活と同じ連続として確かめることができない。\n\n## 守られたもの\n\n一方で、会社で働きながら夜と週末に文章と写真を制作する現在には、表現を未完のまま持ち続ける余地が残っている。完成や一本化を急がず、まだ形になりきらないものに触れ続けられることは、この道が優れていることの証明ではなく、ここに残った余白である。\n\n## 今に残った構造\n\n「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。その問いは、29歳のときに考えた分岐と、平日は会社で働き、夜と週末に制作する現在を並べて見るところに残っている。\n\n## これからの再分岐\n\n表現を後回しにすることだけを唯一の正解として置かない。平日の仕事と、夜と週末の文章・写真の制作があるいまの生活のなかで、表現に割く時間を選び直していく。その選び直しは、創作を本業にするかどうかをただちに決めることではなく、未完の表現を現在の時間のなかに置き続ける選択である。\n\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [
+        {
+          "id": "rebranch_semantics_001",
+          "source_meaning": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+          "current_receiver": "現在の生活で、この緊張をどう置くか",
+          "branch_specific_form": "いまの表現の置き方のなかで、表現に割く時間を、いまの生活のなかで選び直す",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_current_creative_activity_002",
+            "fact_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": false,
+          "selected_for_manuscript": false
+        }
+      ],
+      "title_validation": {
+        "selected_title": "夜と週末に続ける創作",
+        "selected_subtitle": "29歳の分岐と、いまの作り方",
+        "title_supported_by_fact_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_current_creative_activity_002"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": true,
+      "required_section_realization_details": {
+        "branch_point": {
+          "ok": true,
+          "label": "分岐点",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "chosen_path": {
+          "ok": true,
+          "label": "選んだ道",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "unchosen_life": {
+          "ok": true,
+          "label": "選ばなかった人生",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "lost": {
+          "ok": true,
+          "label": "失ったもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "protected": {
+          "ok": true,
+          "label": "守られたもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "residue": {
+          "ok": true,
+          "label": "今に残った構造",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "observatory": {
+          "ok": true,
+          "realization_status": "omitted",
+          "omission_reason": "zero_selected_observatory_lenses"
+        },
+        "re_branch": {
+          "ok": true,
+          "label": "これからの再分岐",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": {
+            "excerpt": "表現を後回しにすることだけを唯一の正解として置かない。平日の仕事と、夜と週末の文章・写真の制作があるいまの生活のなかで、表現に割く時間を選び直していく。その選び直しは、創作を本業にするかどうかをただちに決めることではなく、未完の表現を現在の時間のなかに置き続ける選択である。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false
+          }
+        },
+        "thesis_closure": {
+          "chosen_path": {
+            "structural_shift_ok": true,
+            "thesis_link_ok": true,
+            "excerpt": "選んだのは、会社員を続けながら創作を副業として続ける道だった。現在は平日に会社で働き、夜と週末に文章と写真を制作している。"
+          },
+          "residue": {
+            "ok": true,
+            "excerpt": "「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。その問いは、29歳のときに考えた分岐と、平日は会社で働き、夜と週末に制作する現在を並べて見るところに残っている。"
+          },
+          "re_branch": {
+            "excerpt": "表現を後回しにすることだけを唯一の正解として置かない。平日の仕事と、夜と週末の文章・写真の制作があるいまの生活のなかで、表現に割く時間を選び直していく。その選び直しは、創作を本業にするかどうかをただちに決めることではなく、未完の表現を現在の時間のなかに置き続ける選択である。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false,
+            "ok": true
+          },
+          "arc": "closed",
+          "ok": true
+        }
+      },
+      "resume_density_report": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "section_flags": {
+          "employer_enumeration": false,
+          "industry_enumeration": false,
+          "project_enumeration": false,
+          "chronology_stack": false,
+          "biography_repetition": false
+        },
+        "compression_required": false
+      },
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.1.11-exp",
+    "character_count": 740
+  },
+  "final_manuscript": "# 夜と週末に続ける創作\n\n*29歳の分岐と、いまの作り方*\n\n## 分岐点\n\n29歳のとき、創作を本業にするか、会社員のまま続けるかを考えた。その分かれ目は職業名を替える一点の決断というより、表現にどれだけの時間を渡し、生計とどう並べるかという生活の境界だった。\n\n## 選んだ道\n\n選んだのは、会社員を続けながら創作を副業として続ける道だった。現在は平日に会社で働き、夜と週末に文章と写真を制作している。\n\n## 選ばなかった人生\n\n選ばなかったのは、創作を本業にする道である。その先の仕事や暮らしを、ここで具体的に描く材料はない。ただ、選ばれなかった道として、その可能性は残る。\n\n## 失ったもの\n\n創作を本業にする生活は経験されなかった。その道で制作にどれほどの時間を使い、どのように作っていたかは、いまの生活と同じ連続として確かめることができない。\n\n## 守られたもの\n\n一方で、会社で働きながら夜と週末に文章と写真を制作する現在には、表現を未完のまま持ち続ける余地が残っている。完成や一本化を急がず、まだ形になりきらないものに触れ続けられることは、この道が優れていることの証明ではなく、ここに残った余白である。\n\n## 今に残った構造\n\n「創作を本業にしていたら、いまの作り方は違ったか」と考えることがある。その問いは、29歳のときに考えた分岐と、平日は会社で働き、夜と週末に制作する現在を並べて見るところに残っている。\n\n## これからの再分岐\n\n表現を後回しにすることだけを唯一の正解として置かない。平日の仕事と、夜と週末の文章・写真の制作があるいまの生活のなかで、表現に割く時間を選び直していく。その選び直しは、創作を本業にするかどうかをただちに決めることではなく、未完の表現を現在の時間のなかに置き続ける選択である。\n\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.9-exp",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.9-exp",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call_1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "call_1_schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T141042Z_3244",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_002",
+        "pack_current_work_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "selection_compression": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_creative_activity_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_current_work_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "創作を本業にするか、会社員のまま続けるかを考えた分岐があった。",
+        "alternative_structure": "会社員を続けながら創作を副業として続ける選択をした。",
+        "present_structure": "現在は平日は会社で働き、夜と週末に創作活動を行っている。",
+        "tension": "創作を本業にしていた場合の作り方の違いを考えることがある。",
+        "continuity": "選択した道と現在の活動がつながっている。",
+        "transformation": "創作活動を副業として続けることで、現在の生活が形成されている。",
+        "central_question": "創作を本業にしていたら、今の作り方はどうなっていたのか。",
+        "personal_tension": "創作を本業にすることへの未練がある。",
+        "social_institutional_parallel": "日本型の長期雇用と創作活動の両立が求められる社会構造。",
+        "present_life_connection": "現在の仕事と創作活動の両立が、過去の選択に影響を与えている。",
+        "unresolved_question": "創作を本業にしていた場合の生活はどうなっていたのか。",
+        "cross_lens_relation_ids": [],
+        "support_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ],
+        "validation_status": "未確認"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [
+        "thesis_gate:unsupported_causal_framing"
+      ],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.11-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.9-exp"
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "manuscript_logic_ids": [
+      "pack_current_work_001",
+      "pack_current_creative_activity_002"
+    ],
+    "clarification_asked_questions": [],
+    "clarification_rounds": 2,
+    "clarification_exit": "sufficient_for_deep_reading",
+    "draft_progression": "soft_gate_bypass_after_clarification",
+    "runtime_version": "parallel-life-runtime-v1.1.11-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.1.11-exp",
+    "call_3_prompt_version": "parallel-life-call-3-v1.1.11-exp"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.11-exp",
+  "created_at": "2026-08-08T14:10:42.423813+00:00",
+  "updated_at": "2026-08-08T14:11:37.793Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T14:11:37.793Z",
+  "idempotency_keys": {
+    "draft:v118qa-case07_creative-20260808T141112Z": "complete",
+    "edit:v118qa-case07_creative-20260808T141112Z-e": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T141042Z_3244",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T14:10:42.249329+00:00",
+    "updated_at": "2026-08-08T14:10:42.423705+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T14:10:42.423705+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_current_work_001",
+        "content": "平日は会社で働いている",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 100,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_creative_activity_002",
+        "content": "夜と週末に文章と写真の制作をしている",
+        "category": "current_creative_activity",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 101,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

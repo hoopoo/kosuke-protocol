@@ -1,0 +1,460 @@
+{
+  "session_id": "b0da559b-f7e8-473b-8643-7abb01b80bf8",
+  "raw_user_input": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。\n実際に選んだ道はNTTを離れ、外資系企業へ移ること。\n選ばなかった道は、一企業の内部で役割を積み上げ続けること。\nいまは自分の会社を経営している。\nいまも「あのとき残っていたら」と考えることがある。",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact1",
+          "content": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact2",
+          "content": "実際に選んだ道はNTTを離れ、外資系企業へ移ること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道はNTTを離れ、外資系企業へ移ること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact3",
+          "content": "選ばなかった道は、一企業の内部で役割を積み上げ続けること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、一企業の内部で役割を積み上げ続けること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact4",
+          "content": "いまは自分の会社を経営している。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "いまは自分の会社を経営している。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_001",
+          "content": "いまは自分の会社を経営している",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "いまは自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_002",
+          "content": "妻と息子と三人で暮らし、仕事と制作の日常が続いている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "妻と息子と三人で暮らし、仕事と制作の日常が続いている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「あのとき残っていたら」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「あのとき残っていたら」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "いまは自分の会社を経営している",
+        "妻と息子と三人で暮らし、仕事と制作の日常が続いている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "28歳のとき",
+        "triggering_event": "NTTに残るか、外資へ移るかを選ぶ分岐",
+        "available_paths": [
+          "NTTに残る",
+          "外資へ移る"
+        ],
+        "realized_path": "外資系企業へ移ること",
+        "unrealized_paths": [
+          "一企業の内部で役割を積み上げ続けること"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact1",
+          "fact2",
+          "fact3"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_fact5",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「あのとき残っていたら」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "central_thesis": {
+      "thesis_type": "personal_choice",
+      "statement": "28歳のときの選択が現在の生活に影響を与えたかもしれない。",
+      "pole_a": "NTTに残る",
+      "pole_b": "外資へ移る",
+      "supported_by": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "risks": [],
+      "validation_status": "unvalidated"
+    },
+    "lost_structure": {
+      "items": []
+    },
+    "protected_structure": {
+      "items": []
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+          "content": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact1"
+          ],
+          "present_anchor_ids": [
+            "fact4"
+          ],
+          "support_ids": [
+            "fact1",
+            "fact4"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": []
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": []
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "28歳のとき",
+      "triggering_event": "NTTに残るか、外資へ移るかを選ぶ分岐",
+      "chosen_path": "外資系企業へ移ること",
+      "unchosen_path": "一企業の内部で役割を積み上げ続けること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "いまも「あのとき残っていたら」と考えることがある。"
+      ],
+      "present_questions": [
+        "いまも「あのとき残っていたら」と考えることがある。"
+      ],
+      "current_context": [
+        "いまは自分の会社を経営している",
+        "妻と息子と三人で暮らし、仕事と制作の日常が続いている"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "28歳のときの選択が現在の生活に影響を与えたかもしれない。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.0.3",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": null
+  },
+  "user_corrections": [
+    "妻と息子と三人で暮らし、仕事と制作の日常が続いている。"
+  ],
+  "confirmation_timestamp": "2026-08-08T02:44:30.488353+00:00",
+  "call2": {
+    "body_markdown": "二十八歳のとき、NTTに残ることと、外資へ移ることのあいだに分かれ目があった。NTTを離れ、外資系企業へ移った。その脇には、一企業の内部で役割を積み上げ続けるという、進まなかった可能性が残っている。\n\nいまは自分の会社を経営している。二十八歳のNTTでの分かれ目と、この現在を並べることはできる。ただし、両者を因果で結びつける材料までは確認できない。だからこそ、「あのとき残っていたら」という問いは、過去を確定させるためではなく、現在の位置からなお振り返られる言葉として残る。\n\n妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のなかに、自分の会社を経営する現在がある。一企業の内部で役割を積み上げ続けていたなら何があったかは、ここから先には書かれていない。書かれているのは、二十八歳でNTTを離れて外資系企業へ移ったこと、そしていま、家族との暮らしと仕事と制作のなかで会社を経営していることだけである。\n",
+    "title_candidates": [
+      "二十八歳のNTTと、いまの会社",
+      "「あのとき残っていたら」を置く場所",
+      "外資へ移ったあとに続く日常"
+    ],
+    "subtitle_candidates": [
+      "NTTを離れた二十八歳の記憶と、会社を経営する現在を並べて"
+    ],
+    "sections": [
+      {
+        "internal_id": "main",
+        "public_heading": "",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "NTTに残った場合の具体的な出来事や生活について、確認済みの記述がないため。",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact1",
+          "fact2",
+          "fact3"
+        ],
+        "contains_inference": false,
+        "text_preview": "二十八歳のとき、NTTに残ることと、外資へ移ることのあいだに分かれ目があった。NTTを離れ、外資系企業へ移った。その脇には、一企業の内部で役割を積み上げ続けるという、進まなかった可能性が残っている。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact1",
+          "fact4",
+          "q_confirm_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "いまは自分の会社を経営している。二十八歳のNTTでの分かれ目と、この現在を並べることはできる。ただし、両者を因果で結びつける材料までは確認できない。だからこそ、「あのとき残っていたら」という問いは、過去を確定させるためではなく、現在の位置か"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact2",
+          "fact_current_preserved_001",
+          "fact_current_preserved_002"
+        ],
+        "contains_inference": false,
+        "text_preview": "妻と息子と三人で暮らし、仕事と制作の日常が続いている。その日常のなかに、自分の会社を経営する現在がある。一企業の内部で役割を積み上げ続けていたなら何があったかは、ここから先には書かれていない。書かれているのは、二十八歳でNTTを離れて外資系"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1
+    },
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 409
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "「あのとき残っていたら」を置く場所",
+    "final_subtitle": "NTTを離れて外資へ移ったことと、会社を経営する現在",
+    "body_markdown": "二十八歳のとき、NTTに残るか、外資へ移るかという分かれ目があった。選んだのは、NTTを離れ、外資系企業へ移る道だった。もう一方には、一企業の内部で役割を積み上げ続ける道があった。\n\nいまは自分の会社を経営している。二十八歳の分かれ目と、この現在を並べて見ることはできる。けれど、その二つを直接結びつける材料はない。いまも「あのとき残っていたら」と考えることがある。\n\n妻と息子と三人で暮らし、仕事と制作の日常が続いている。そのなかで、自分の会社を経営している。NTTに残っていた先のことは分からない。残っているのは、二十八歳で外資系企業へ移ったことと、いまここにある暮らしと仕事である。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "「あのとき残っていたら」を置く場所",
+        "selected_subtitle": "NTTを離れて外資へ移ったことと、会社を経営する現在",
+        "title_supported_by_fact_ids": [],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "character_count": 295
+  },
+  "final_manuscript": "# 「あのとき残っていたら」を置く場所\n\n*NTTを離れて外資へ移ったことと、会社を経営する現在*\n\n二十八歳のとき、NTTに残るか、外資へ移るかという分かれ目があった。選んだのは、NTTを離れ、外資系企業へ移る道だった。もう一方には、一企業の内部で役割を積み上げ続ける道があった。\n\nいまは自分の会社を経営している。二十八歳の分かれ目と、この現在を並べて見ることはできる。けれど、その二つを直接結びつける材料はない。いまも「あのとき残っていたら」と考えることがある。\n\n妻と息子と三人で暮らし、仕事と制作の日常が続いている。そのなかで、自分の会社を経営している。NTTに残っていた先のことは分からない。残っているのは、二十八歳で外資系企業へ移ったことと、いまここにある暮らしと仕事である。\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.0.3",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.3",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "strict",
+    "context_pack_enabled": false,
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.3",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": null,
+    "runtime_version": "parallel-life-runtime-v1.0.6",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.0.6",
+  "created_at": "2026-08-08T02:43:56.248430+00:00",
+  "updated_at": "2026-08-08T02:45:04.036Z",
+  "session_revision": 7,
+  "expires_at": "2026-08-09T02:45:04.036Z",
+  "idempotency_keys": {
+    "draft:v11ab-mode_sep-strict-20260808T024430Z": "complete",
+    "edit:v11ab-mode_sep-strict-20260808T024430Z-edit": "complete"
+  },
+  "deep_reading_mode": "strict",
+  "context_pack": null
+}

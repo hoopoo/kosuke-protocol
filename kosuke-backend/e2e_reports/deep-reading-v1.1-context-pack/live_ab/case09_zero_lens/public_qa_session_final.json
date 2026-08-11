@@ -1,0 +1,1475 @@
+{
+  "session_id": "3ddd3fa2-0dd0-4d96-961e-107d872a1156",
+  "raw_user_input": "22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。\n実際に選んだ道は、地元に残ること。\n選ばなかった道は、都会へ出ること。\n現在は、地元で事務の仕事をしながら、近所の人と暮らしている。\nいまも「都会へ出ていたら、いまの日常は違ったか」と考えることがある。\n",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact_1",
+          "content": "22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_2",
+          "content": "実際に選んだ道は、地元に残ること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道は、地元に残ること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_3",
+          "content": "選ばなかった道は、都会へ出ること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、都会へ出ること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_4",
+          "content": "現在は、地元で事務の仕事をしながら、近所の人と暮らしている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_current_work_001",
+          "source_text": "地元で事務の仕事をしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_current_work_001",
+          "content": "地元で事務の仕事をしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "地元で事務の仕事をしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T070000Z_6222",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_relevant_social_context_002",
+          "content": "近所の人と暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "近所の人と暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:relevant_social_context",
+            "pack_id:pack_live_20260808T070000Z_6222",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「都会へ出ていたら、いまの日常は違ったか」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「都会へ出ていたら、いまの日常は違ったか」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "地元で事務の仕事をしている",
+        "近所の人と暮らしている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "22歳のとき",
+        "triggering_event": "地元に残るか、都会へ出るかを考えた",
+        "available_paths": [
+          "地元に残る",
+          "都会へ出る"
+        ],
+        "realized_path": "地元に残る",
+        "unrealized_paths": [
+          "都会へ出る"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "fact_4",
+          "fact_5"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_fact_5",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「都会へ出ていたら、いまの日常は違ったか」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "classifications": [
+        {
+          "id": "pack_current_work_001",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        },
+        {
+          "id": "pack_relevant_social_context_002",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        }
+      ],
+      "manuscript_logic_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "withheld_ids": []
+    },
+    "meaning_compression": {
+      "past_structure": "地元に残る選択と都会へ出る選択の分岐",
+      "alternative_structure": "都会へ出る選択をした場合の生活",
+      "present_structure": "地元で事務の仕事をし、近所の人と暮らす日常",
+      "tension": "都会へ出る選択をした場合の生活への思い",
+      "continuity": "現在の生活と過去の選択の関連性",
+      "transformation": "選択による生活の変化",
+      "central_question": "都会へ出ていたら、いまの日常は違ったか",
+      "personal_tension": "都会への憧れと地元での安定",
+      "social_institutional_parallel": "地域社会と都市生活の対比",
+      "present_life_connection": "現在の生活と過去の選択の影響",
+      "unresolved_question": "都会へ出ていたら、どのような日常が待っていたのか",
+      "cross_lens_relation_ids": [],
+      "support_ids": [
+        "fact_1",
+        "fact_2",
+        "fact_3",
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "validation_status": "valid"
+    },
+    "central_thesis": {
+      "thesis_type": "personal",
+      "statement": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+      "pole_a": "地元に残る",
+      "pole_b": "都会へ出る",
+      "supported_by": [
+        "fact_1",
+        "fact_2",
+        "fact_3",
+        "fact_4",
+        "fact_5"
+      ],
+      "risks": [],
+      "validation_status": "passed"
+    },
+    "lost_structure": {
+      "items": [
+        {
+          "content": "「都会へ出る」側にあった、時間を一続きとして積める連続性",
+          "loss_type": "structural_continuity",
+          "support_ids": [],
+          "certainty": "高い",
+          "allowed_wording_strength": "qualified"
+        }
+      ]
+    },
+    "protected_structure": {
+      "items": [
+        {
+          "content": "選んだ道の側に残った、別の尺度で生活を組み立て直す余白",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_relevant_social_context_002"
+          ],
+          "causality_status": "non_causal_possibility",
+          "allowed_statement_strength": "qualified"
+        }
+      ]
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+          "content": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact_1"
+          ],
+          "present_anchor_ids": [
+            "fact_4"
+          ],
+          "support_ids": [
+            "fact_1",
+            "fact_4"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": [
+        {
+          "internal_id": "section_1",
+          "public_heading": "分岐の背景",
+          "required": true,
+          "new_meaning": "地元に残るか都会へ出るかの選択があったことを示す。",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "過去の選択の影響を考察する。",
+          "next_section_transition": "現在の生活との関連性を探る。",
+          "reserved_fact_ids": [
+            "fact_1",
+            "fact_2",
+            "fact_3"
+          ],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_2",
+          "public_heading": "現在の生活",
+          "required": true,
+          "new_meaning": "地元での生活の安定性を強調する。",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "選択の結果としての現在の生活を描写する。",
+          "next_section_transition": "過去の選択が現在に与える影響を考える。",
+          "reserved_fact_ids": [
+            "fact_4",
+            "fact_5"
+          ],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_3",
+          "public_heading": "選択の意味",
+          "required": true,
+          "new_meaning": "選択がもたらした影響を考察する。",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "選択の結果としての生活の変化を探る。",
+          "next_section_transition": "今後の選択に対する示唆を得る。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        }
+      ]
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_relevant_social_context_002",
+            "fact_1"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": false
+        }
+      ]
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "22歳のとき",
+      "triggering_event": "地元に残るか、都会へ出るかを考えた",
+      "chosen_path": "地元に残る",
+      "unchosen_path": "都会へ出る",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "いまも「都会へ出ていたら、いまの日常は違ったか」と考えることがある。"
+      ],
+      "present_questions": [
+        "いまも「都会へ出ていたら、いまの日常は違ったか」と考えることがある。"
+      ],
+      "current_context": [
+        "地元で事務の仕事をしている",
+        "近所の人と暮らしている"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "runtime:parallel-life-runtime-v1.1.7-exp",
+        "observatory_section:omitted_pre_thesis_relations",
+        "runtime:parallel-life-runtime-v1.1.7-exp",
+        "section_contract_evidence_check:passed"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070000Z_6222",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "selection_compression_diagnostics": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_work_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_relevant_social_context_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "地元に残る選択と都会へ出る選択の分岐",
+        "alternative_structure": "都会へ出る選択をした場合の生活",
+        "present_structure": "地元で事務の仕事をし、近所の人と暮らす日常",
+        "tension": "都会へ出る選択をした場合の生活への思い",
+        "continuity": "現在の生活と過去の選択の関連性",
+        "transformation": "選択による生活の変化",
+        "central_question": "都会へ出ていたら、いまの日常は違ったか",
+        "personal_tension": "都会への憧れと地元での安定",
+        "social_institutional_parallel": "地域社会と都市生活の対比",
+        "present_life_connection": "現在の生活と過去の選択の影響",
+        "unresolved_question": "都会へ出ていたら、どのような日常が待っていたのか",
+        "cross_lens_relation_ids": [],
+        "support_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "validation_status": "valid"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.7-exp"
+    },
+    "candidate_lens_selection": {
+      "candidates": [],
+      "zero_lens_reason": "no_structural_lens_advantage",
+      "selection_method": "structural_v1"
+    },
+    "retrieved_observatory_evidence": [],
+    "cross_lens_relations": [],
+    "observatory_core_diagnostics": {
+      "structures_detected": [],
+      "candidate_lens_ids": [],
+      "evidence_ids": [],
+      "relation_ids": [],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    },
+    "section_contracts": {
+      "contracts": [
+        {
+          "section_id": "branch_point",
+          "structural_purpose": "establish the fork",
+          "required_meaning": "地元に残るか、都会へ出るかを考えた",
+          "interpretive_claim": "この分かれ目は勤務先の一点ではなく、内部で積み上げる道と外へ持ち運ぶ道の境界だった",
+          "realization_goal": "分岐を一点の転職ではなく測り方の境界として置く（claimを実質化）",
+          "required_public_label": "分岐点",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_1"
+          ],
+          "prohibited_claims": [
+            "employer_chronology_as_spine"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "chosen_path",
+          "structural_purpose": "state the realized path without résumé tour",
+          "required_meaning": "地元に残る",
+          "interpretive_claim": "振り返ると、都会へ出るから、所属が変わるたびに自分の仕事を定義し直す道へ移った（当時の意図や優劣の断定ではない）",
+          "realization_goal": "選択＋構造転換＋thesis連結を一段落で実現する（年表禁止）（claimを実質化）",
+          "required_public_label": "選んだ道",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_1"
+          ],
+          "prohibited_claims": [
+            "industry_tour",
+            "project_list",
+            "chronology_only",
+            "intention_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "地元に残る",
+          "structural_shift": "都会へ出るから、所属が変わるたびに自分の仕事を定義し直す道へ移った",
+          "thesis_link": "いまも残る問いの起点として、この移り方が現在の生活につながっている",
+          "realization_required": true,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "unchosen_life",
+          "structural_purpose": "keep unrealized path open without invention",
+          "required_meaning": "都会へ出る",
+          "interpretive_claim": "残らなかった側には、発明せずに置いておける「都会へ出る」という可能性が閉じずに残る",
+          "realization_goal": "選ばなかった道を発明せず開いたまま置く（claimを実質化）",
+          "required_public_label": "選ばなかった人生",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_1"
+          ],
+          "prohibited_claims": [
+            "invented_rank_salary_scene"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "lost",
+          "structural_purpose": "structural continuity left behind",
+          "required_meaning": "「都会へ出る」側にあった、時間を一続きとして積める連続性",
+          "interpretive_claim": "失われたのは安定の一覧ではなく、同じ制度の時間のなかで、自分がどこまで来たかを確かめ続ける物差し（都会へ出る」側にあった）だったとも読める",
+          "realization_goal": "失ったものを一覧ではなく物差し／確認の連続性として実現する（claimを実質化）",
+          "required_public_label": "失ったもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_001"
+          ],
+          "prohibited_claims": [
+            "salary_inventory",
+            "title_inventory",
+            "pension_inventory",
+            "colleague_network_list"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "protected",
+          "structural_purpose": "structural possibility preserved",
+          "required_meaning": "選んだ道の側に残った、別の尺度で生活を組み立て直す余白",
+          "interpretive_claim": "一つの所属に人生の尺度を固定しきらず、所属先が変わっても自分の仕事を別の言葉で定義し直す余白が残った（優劣や成功の証明ではない）",
+          "realization_goal": "守られたものを成功談ではなく定義し直す余白として実現する（claimを実質化）",
+          "required_public_label": "守られたもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_001"
+          ],
+          "prohibited_claims": [
+            "success_moral",
+            "freedom_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "residue",
+          "structural_purpose": "return to present through structural tension",
+          "required_meaning": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+          "interpretive_claim": "「都会へ出ていたら」が地元で事務の仕事をしているという状況のなかで消えないのは、地元に残るかが別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+          "realization_goal": "現在の問いが別の物差しの想像として残ることを慎重に書く（claimを実質化）",
+          "required_public_label": "今に残った構造",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_1",
+            "fact_4"
+          ],
+          "prohibited_claims": [
+            "unsupported_causality",
+            "psychological_fact_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "observatory",
+          "structural_purpose": "social parallel without lens-name advertising",
+          "required_meaning": "",
+          "interpretive_claim": "個人の分岐の横に、長期雇用と企業間移動という社会の並びが透けて見える",
+          "realization_goal": "社会の並置をレンズ名なしで織り込む（claimを実質化）",
+          "required_public_label": "社会との接続",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 0,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [],
+          "prohibited_claims": [
+            "lens_name_advertising",
+            "sociology_takeover"
+          ],
+          "concrete_example_budget": 0,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "re_branch",
+          "structural_purpose": "close residue tension as a present choice",
+          "required_meaning": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）",
+          "realization_goal": "Residueの緊張を、いま何を積み重ねと見なすかという現在の選択へ閉じる（問いだけで終わらせない）（claimを実質化）",
+          "required_public_label": "これからの再分岐",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_001",
+            "pack_relevant_social_context_002"
+          ],
+          "prohibited_claims": [
+            "shiro_growth_promo",
+            "protocol_expansion_promo",
+            "app_launch_promo",
+            "productivity_advice",
+            "career_coaching",
+            "reflection_only_no_choice",
+            "question_only_rebranch",
+            "growth_challenge_rhetoric"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "地元で事務の仕事をしている",
+            "past_anchor": "地元に残るか",
+            "unresolved_question": "都会へ出ていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": true,
+          "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+          "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "measurement_shift": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "non_genericity": true,
+          "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "non_genericity_score": 0.95,
+          "rebranch_decision": {
+            "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+            "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+            "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+            "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+            "evidence_ids": [
+              "pack_current_work_001",
+              "pack_relevant_social_context_002"
+            ],
+            "non_genericity_score": 0.95,
+            "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+          }
+        }
+      ],
+      "diagnostics": {
+        "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+        "required_ids": [
+          "branch_point",
+          "chosen_path",
+          "unchosen_life",
+          "lost",
+          "protected",
+          "residue",
+          "observatory",
+          "re_branch"
+        ],
+        "required_public_labels": [
+          "分岐点",
+          "選んだ道",
+          "選ばなかった人生",
+          "失ったもの",
+          "守られたもの",
+          "今に残った構造",
+          "社会との接続",
+          "これからの再分岐"
+        ],
+        "lost_items": 1,
+        "protected_items": 1,
+        "residue_items": 1,
+        "rebranch_directions": 1,
+        "rebranch_decision": {
+          "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+          "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "evidence_ids": [
+            "pack_current_work_001",
+            "pack_relevant_social_context_002"
+          ],
+          "non_genericity_score": 0.95,
+          "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+        },
+        "claim_atoms": {
+          "present_anchor": "地元で事務の仕事をしている",
+          "past_anchor": "地元に残るか",
+          "unresolved_question": "都会へ出ていたら",
+          "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+        },
+        "interpretive_claims": {
+          "branch_point": true,
+          "chosen_path": true,
+          "unchosen_life": true,
+          "lost": true,
+          "protected": true,
+          "residue": true,
+          "observatory": true,
+          "re_branch": true
+        },
+        "malformed_claims": []
+      }
+    },
+    "call2_writing_pack_diagnostics": {
+      "writing_pack_chars": 19056,
+      "full_call1_chars": 22789,
+      "reduction_ratio": 0.164,
+      "evidence_fact_count": 7,
+      "duplicate_full_call1_in_writing_pack": false
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T07:00:21.872677+00:00",
+  "call2": {
+    "body_markdown": "## 分岐点\n\n22歳のときに考えた地元に残るか、都会へ出るかという分かれ目は、勤務先を一つ選ぶ話だけではなかった。ひとつの場で時間を重ねて自分の位置を確かめる道と、場が変わっても仕事の意味を持ち運ぶ道との、見え方の違いを含んでいた。\n\n## 選んだ道\n\n地元に残った。都会へ出て、所属が変わるたびに自分の仕事を定義し直す道とは別に、地元で続く日常の側へ現在は置かれている。その違いがあるからこそ、都会へ出ていたらという思いは、過去の一度きりの判断ではなく、いまの暮らしに触れる問いとして残っている。\n\n## 選ばなかった人生\n\n選ばなかった側にあるのは、具体的な成功や失敗の場面ではなく、「都会へ出る」という開いた可能性である。どんな仕事や暮らしになったかは決められないまま、地元を離れた自分の日常だけが、閉じずに残る。\n\n## 失ったもの\n\n失ったものは、安定にまつわる項目の一覧ではない。同じ組織の時間のなかで、自分がどこまで来たかを確かめ続けるための物差しだった、と考える余地がある。地元で事務の仕事をしている現在から振り返ると、都会へ出る側には、時間を一続きに置いてみる可能性もあったように見える。\n\n## 守られたもの\n\n一方で、一つの所属に人生の見方を固定しきらない余白は残った。地元で事務の仕事をするいまの自分を、肩書きだけではなく、日々の仕事と生活の結び目として言い直せるからである。これは選んだ道の優劣ではなく、仕事の意味を一つの言葉に閉じ込めずに済むことでもある。\n\n## 今に残った構造\n\nいまも「都会へ出ていたら、日常は違ったか」と考えることがある。その言葉は、地元で事務の仕事をしながら近所の人と暮らす現在と並べると、同じ場で進み具合を確かめる見方と、場を移っても持ち運べるものを考える見方との間に残る。過去への後悔と決めるより、別の物差しがなお想像できることの跡と受け取るほうが近い。\n\n## 社会との接続\n\n長く同じ会社で働くことに安心の輪郭を見いだす道と、会社をまたいで働き方を組み替える道は、個人の迷いの外にも並んでいる。22歳のときの小さな分かれ目には、その二つの時間の置き方が重なっていた。\n\n## これからの再分岐\n\n同じ場で進み具合を確かめる見方と、場を移っても持ち運べるものを考える見方の間にある緊張は、消さなくてよい。地元で事務の仕事をしている現在、役職や年収だけを唯一の到達点にしないと決め、これから何を長く積み重なったものとして認めるかを、自分で選び直していく。その選択によって、都会へ出ていたらという残り方は、現在の仕事を測り直す静かな基準になる。\n",
+    "title_candidates": [
+      "都会へ出なかった先に残るもの",
+      "地元に残った日常と、閉じない可能性",
+      "22歳の分かれ目をいま測り直す"
+    ],
+    "subtitle_candidates": [],
+    "sections": [
+      {
+        "internal_id": "re_branch",
+        "public_heading": "これからの再分岐",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [
+      {
+        "id": "rebranch_measure_001",
+        "source_meaning": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_1"
+        ],
+        "genericity_score": 1,
+        "invented_scene_used": false,
+        "risks": [
+          "must_not_become_product_promo"
+        ],
+        "publishable": true,
+        "selected_for_manuscript": true
+      }
+    ],
+    "rebranch_omitted_reason": null,
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact_1"
+        ],
+        "contains_inference": true,
+        "text_preview": "22歳のときに考えた地元に残るか、都会へ出るかという分かれ目は、勤務先を一つ選ぶ話だけではなかった。ひとつの場で時間を重ねて自分の位置を確かめる道と、場が変わっても仕事の意味を持ち運ぶ道との、見え方の違いを含んでいた。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact_1"
+        ],
+        "contains_inference": true,
+        "text_preview": "地元に残った。都会へ出て、所属が変わるたびに自分の仕事を定義し直す道とは別に、地元で続く日常の側へ現在は置かれている。その違いがあるからこそ、都会へ出ていたらという思いは、過去の一度きりの判断ではなく、いまの暮らしに触れる問いとして残ってい"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact_1"
+        ],
+        "contains_inference": true,
+        "text_preview": "選ばなかった側にあるのは、具体的な成功や失敗の場面ではなく、「都会へ出る」という開いた可能性である。どんな仕事や暮らしになったかは決められないまま、地元を離れた自分の日常だけが、閉じずに残る。"
+      },
+      {
+        "paragraph_id": "p04",
+        "support_ids": [
+          "pack_current_work_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "失ったものは、安定にまつわる項目の一覧ではない。同じ組織の時間のなかで、自分がどこまで来たかを確かめ続けるための物差しだった、と考える余地がある。地元で事務の仕事をしている現在から振り返ると、都会へ出る側には、時間を一続きに置いてみる可能性"
+      },
+      {
+        "paragraph_id": "p05",
+        "support_ids": [
+          "pack_current_work_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "一方で、一つの所属に人生の見方を固定しきらない余白は残った。地元で事務の仕事をするいまの自分を、肩書きだけではなく、日々の仕事と生活の結び目として言い直せるからである。これは選んだ道の優劣ではなく、仕事の意味を一つの言葉に閉じ込めずに済むこ"
+      },
+      {
+        "paragraph_id": "p06",
+        "support_ids": [
+          "fact_1",
+          "fact_4"
+        ],
+        "contains_inference": true,
+        "text_preview": "いまも「都会へ出ていたら、日常は違ったか」と考えることがある。その言葉は、地元で事務の仕事をしながら近所の人と暮らす現在と並べると、同じ場で進み具合を確かめる見方と、場を移っても持ち運べるものを考える見方との間に残る。過去への後悔と決めるよ"
+      },
+      {
+        "paragraph_id": "p07",
+        "support_ids": [],
+        "contains_inference": true,
+        "text_preview": "長く同じ会社で働くことに安心の輪郭を見いだす道と、会社をまたいで働き方を組み替える道は、個人の迷いの外にも並んでいる。22歳のときの小さな分かれ目には、その二つの時間の置き方が重なっていた。"
+      },
+      {
+        "paragraph_id": "p08",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "同じ場で進み具合を確かめる見方と、場を移っても持ち運べるものを考える見方の間にある緊張は、消さなくてよい。地元で事務の仕事をしている現在、役職や年収だけを唯一の到達点にしないと決め、これから何を長く積み重なったものとして認めるかを、自分で選"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_relevant_social_context_002",
+            "fact_1"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": false
+        }
+      ],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [
+        {
+          "excerpt": "その選択によって、都会へ出ていたらという残り方は、現在の仕事を測り直す静かな基準になる。",
+          "causality_strength": 3,
+          "missing_support": "explicit_causal_evidence_absent",
+          "category": "unsupported"
+        }
+      ],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 0.875,
+      "call2_writing_pack": {
+        "writing_pack_chars": 19056,
+        "full_call1_chars": 22789,
+        "reduction_ratio": 0.164,
+        "evidence_fact_count": 7,
+        "duplicate_full_call1_in_writing_pack": false
+      },
+      "call2_prompt_version": "parallel-life-call-2-v1.1.7-exp"
+    },
+    "prompt_version": "parallel-life-call-2-v1.1.7-exp",
+    "character_count": 1101
+  },
+  "call3": {
+    "status": "validation_failed",
+    "final_title": "22歳の分岐と、いまの日常",
+    "final_subtitle": "",
+    "body_markdown": "## 分岐点\n\n22歳のとき、地元に残るか、都会へ出るかを考えた。選んだのは地元に残る道で、都会へ出る道は選ばなかった。\n\nこの分岐について、当時の事情や二つの道の優劣を示す材料はない。ただ、二つの方向を前にしていたことは、現在を振り返る際の起点として残っている。\n\n## 選んだ道\n\n現在は地元で事務の仕事をし、近所の人と暮らしている。\n\n22歳のときに地元に残る道を選んだことと、この現在の生活を直接結びつける材料はない。それでも、過去の分岐といまの日常を並べることはできる。\n\n## 選ばなかった人生\n\n選ばなかったのは、都会へ出る道だった。\n\nその先の仕事や暮らしがどのようなものだったかは分からない。成功や失敗、出会いや変化を補って語るのではなく、「都会へ出る」という可能性を、具体化しないまま置いておく。\n\n## 失ったもの\n\n都会へ出なかったことで何を失ったかは、決められない。地元に残ることと都会へ出ることのどちらに、よりよい仕事や暮らしがあったかも、この記録からは言えない。\n\n失われたものを一覧にする代わりに、選ばなかった道があったという事実を残す。そこには、現在とは異なる日常の可能性が、答えの出ないまま含まれている。\n\n## 守られたもの\n\n地元には、事務の仕事と近所の人と暮らす日常がある。\n\nこの日常を、過去の選択の成果と呼ぶ必要はない。また、都会へ出る道より優れているとする根拠もない。現在の生活は、過去の分岐を考えるためにここにある、具体的な足場である。\n\n## 今に残った構造\n\nいまも、「都会へ出ていたら、いまの日常は違ったか」と考えることがある。\n\nこの問いは、22歳のときに地元に残るか都会へ出るかを考えたことと、地元で事務の仕事をし、近所の人と暮らす現在を並べたところにある。別の人生を確定する問いではなく、過去にあった二つの道と、いまの生活を同時に見つめるための問いとして残る。\n\n## これからの再分岐\n\n役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_current_work_001",
+            "pack_relevant_social_context_002",
+            "fact_1"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": true
+        }
+      ],
+      "title_validation": {
+        "selected_title": "22歳の分岐と、いまの日常",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact_1"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": false,
+      "required_section_realization_details": {
+        "branch_point": {
+          "ok": true,
+          "label": "分岐点",
+          "label_present": true,
+          "paragraphs": 2,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "chosen_path": {
+          "ok": false,
+          "label": "選んだ道",
+          "label_present": true,
+          "paragraphs": 2,
+          "claim_preview": "振り返ると、都会へ出るから、所属が変わるたびに自分の仕事を定義し直す道へ移った（当時の意図や優劣の断定ではない）",
+          "realization_status": "failed",
+          "section_excerpt": "現在は地元で事務の仕事をし、近所の人と暮らしている。\n\n22歳のときに地元に残る道を選んだことと、この現在の生活を直接結びつける材料はない。それでも、過去の分岐といまの日常を並べることはできる。",
+          "re_branch_gate": null,
+          "re_branch_missing": null
+        },
+        "unchosen_life": {
+          "ok": true,
+          "label": "選ばなかった人生",
+          "label_present": true,
+          "paragraphs": 2,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "lost": {
+          "ok": false,
+          "label": "失ったもの",
+          "label_present": true,
+          "paragraphs": 2,
+          "claim_preview": "失われたのは安定の一覧ではなく、同じ制度の時間のなかで、自分がどこまで来たかを確かめ続ける物差し（都会へ出る」側にあった）だったとも読める",
+          "realization_status": "failed",
+          "section_excerpt": "都会へ出なかったことで何を失ったかは、決められない。地元に残ることと都会へ出ることのどちらに、よりよい仕事や暮らしがあったかも、この記録からは言えない。\n\n失われたものを一覧にする代わりに、選ばなかった道があったという事実を残す。そこには、現在とは異なる日常の可能性が、答えの出ないまま含まれている。",
+          "re_branch_gate": null,
+          "re_branch_missing": null
+        },
+        "protected": {
+          "ok": false,
+          "label": "守られたもの",
+          "label_present": true,
+          "paragraphs": 2,
+          "claim_preview": "一つの所属に人生の尺度を固定しきらず、所属先が変わっても自分の仕事を別の言葉で定義し直す余白が残った（優劣や成功の証明ではない）",
+          "realization_status": "failed",
+          "section_excerpt": "地元には、事務の仕事と近所の人と暮らす日常がある。\n\nこの日常を、過去の選択の成果と呼ぶ必要はない。また、都会へ出る道より優れているとする根拠もない。現在の生活は、過去の分岐を考えるためにここにある、具体的な足場である。",
+          "re_branch_gate": null,
+          "re_branch_missing": null
+        },
+        "residue": {
+          "ok": true,
+          "label": "今に残った構造",
+          "label_present": true,
+          "paragraphs": 2,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "observatory": {
+          "ok": false,
+          "label": "社会との接続",
+          "label_present": false,
+          "realization_status": "failed"
+        },
+        "re_branch": {
+          "ok": true,
+          "label": "これからの再分岐",
+          "label_present": true,
+          "paragraphs": 2,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": {
+            "excerpt": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false
+          }
+        },
+        "thesis_closure": {
+          "chosen_path": {
+            "structural_shift_ok": false,
+            "thesis_link_ok": true,
+            "excerpt": "現在は地元で事務の仕事をし、近所の人と暮らしている。\n\n22歳のときに地元に残る道を選んだことと、この現在の生活を直接結びつける材料はない。それでも、過去の分岐といまの日常を並べることはできる。",
+            "ok": false
+          },
+          "residue": {
+            "ok": true,
+            "excerpt": "いまも、「都会へ出ていたら、いまの日常は違ったか」と考えることがある。\n\nこの問いは、22歳のときに地元に残るか都会へ出るかを考えたことと、地元で事務の仕事をし、近所の人と暮らす現在を並べたところにある。別の人生を確定する問いではなく、過去にあった二つの道と、いまの生活を同時に見つめるための問いとして残る。"
+          },
+          "re_branch": {
+            "excerpt": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false,
+            "ok": true
+          },
+          "ok": false
+        }
+      },
+      "resume_density_report": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "section_flags": {
+          "employer_enumeration": false,
+          "industry_enumeration": false,
+          "project_enumeration": false,
+          "chronology_stack": false,
+          "biography_repetition": false
+        },
+        "compression_required": false
+      },
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:chosen_path",
+        "required_section_unrealized:lost",
+        "required_section_unrealized:protected",
+        "required_public_label_missing:observatory:社会との接続",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ]
+    },
+    "prompt_version": "parallel-life-call-3-v1.1.7-exp",
+    "character_count": 969
+  },
+  "final_manuscript": null,
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.7-exp",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.7-exp",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call_1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070000Z_6222",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "selection_compression": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_work_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_relevant_social_context_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "地元に残る選択と都会へ出る選択の分岐",
+        "alternative_structure": "都会へ出る選択をした場合の生活",
+        "present_structure": "地元で事務の仕事をし、近所の人と暮らす日常",
+        "tension": "都会へ出る選択をした場合の生活への思い",
+        "continuity": "現在の生活と過去の選択の関連性",
+        "transformation": "選択による生活の変化",
+        "central_question": "都会へ出ていたら、いまの日常は違ったか",
+        "personal_tension": "都会への憧れと地元での安定",
+        "social_institutional_parallel": "地域社会と都市生活の対比",
+        "present_life_connection": "現在の生活と過去の選択の影響",
+        "unresolved_question": "都会へ出ていたら、どのような日常が待っていたのか",
+        "cross_lens_relation_ids": [],
+        "support_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ],
+        "validation_status": "valid"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.7-exp"
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "manuscript_logic_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "runtime_version": "parallel-life-runtime-v1.1.7-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.1.7-exp",
+    "call_3_prompt_version": "parallel-life-call-3-v1.1.7-exp"
+  },
+  "status": "validation_failed",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "created_at": "2026-08-08T07:00:00.393449+00:00",
+  "updated_at": "2026-08-08T07:01:21.903Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T07:01:21.903Z",
+  "idempotency_keys": {
+    "draft:v11ab-case09_zero_lens-public_qa-20260808T070021Z": "complete",
+    "edit:v11ab-case09_zero_lens-public_qa-20260808T070021Z-edit": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T070000Z_6222",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T07:00:00.112904+00:00",
+    "updated_at": "2026-08-08T07:00:00.393371+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T07:00:00.393371+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_current_work_001",
+        "content": "地元で事務の仕事をしている",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 100,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_relevant_social_context_002",
+        "content": "近所の人と暮らしている",
+        "category": "relevant_social_context",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 101,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

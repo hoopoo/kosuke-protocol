@@ -1,0 +1,20 @@
+{
+  "strict": {
+    "ok": true,
+    "prompt": "parallel-life-call-1-v1.0.3",
+    "mode": "strict",
+    "schema": "parallel-life-runtime-v1.0.6",
+    "leak": {
+      "pack_fact_count": 0,
+      "unique_pack_phrase_hits_in_session_json": [],
+      "leak_detected": false
+    }
+  },
+  "contextual": {
+    "ok": true,
+    "prompt": "parallel-life-call-1-v1.1.0",
+    "mode": "contextual",
+    "schema": "parallel-life-runtime-v1.1.0-exp",
+    "pack_fact_count": 5
+  }
+}

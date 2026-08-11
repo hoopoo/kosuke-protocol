@@ -1,0 +1,89 @@
+{
+  "body_markdown": "## 複数業界の時間と現在\n\n会社員として、複数の業界で働いてきた。異なる業界を経てきたという輪郭はあるが、それぞれの時期や職務について、ここで確かめられることは限られている。\n\n現在は、企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。企業での経験と制作のどちらか一方ではなく、両方が現在の生活に置かれている。\n\n複数業界で会社員として働いてきた時間のあとに、企業での経験を持ちながら制作する現在が続いている。ただし、過去の会社員経験が現在の制作を生んだと結びつける材料はない。時間的に並ぶ二つの生活構造のあいだには、まだ接続しきれていないものが残っている。\n\n## 創作中心という可能性\n\nその現在の傍らには、創作を中心にした人生という、歩まれなかった可能性がある。創作中心なら今とは違う人生だったかと考えることがあるが、その違いが何であったかは確定できない。\n\n創作を中心に据えた人生の具体像は示されていない。一方、現在の生活には、企業での経験と、観測サイト、文章、プロトコルの制作が併存している。現在にも制作はあるが、それを創作中心の人生と同じものとして扱うことはできない。二つの人生像を並べたとき、どこまでが異なり、どこかに重なる部分があるのかは、まだ開かれたままである。\n",
+  "title_candidates": [
+    "複数業界の時間、制作の現在",
+    "創作中心の人生を傍らに置いて",
+    "企業経験と、まだ開かれた問い"
+  ],
+  "subtitle_candidates": [
+    "観測サイト、文章、プロトコルを制作する現在と、もう一つの人生像"
+  ],
+  "sections": [
+    {
+      "internal_id": "s01",
+      "public_heading": "複数業界の時間と現在",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "s02",
+      "public_heading": "創作中心という可能性",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "具体的な再検討方向が確認されていないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1"
+      ],
+      "contains_inference": false,
+      "text_preview": "会社員として、複数の業界で働いてきた。異なる業界を経てきたという輪郭はあるが、それぞれの時期や職務について、ここで確かめられることは限られている。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "現在は、企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。企業での経験と制作のどちらか一方ではなく、両方が現在の生活に置かれている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": true,
+      "text_preview": "複数業界で会社員として働いてきた時間のあとに、企業での経験を持ちながら制作する現在が続いている。ただし、過去の会社員経験が現在の制作を生んだと結びつける材料はない。時間的に並ぶ二つの生活構造のあいだには、まだ接続しきれていないものが残ってい"
+    },
+    {
+      "paragraph_id": "p04",
+      "support_ids": [
+        "fact2",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "その現在の傍らには、創作を中心にした人生という、歩まれなかった可能性がある。創作中心なら今とは違う人生だったかと考えることがあるが、その違いが何であったかは確定できない。"
+    },
+    {
+      "paragraph_id": "p05",
+      "support_ids": [
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "創作を中心に据えた人生の具体像は示されていない。一方、現在の生活には、企業での経験と、観測サイト、文章、プロトコルの制作が併存している。現在にも制作はあるが、それを創作中心の人生と同じものとして扱うことはできない。二つの人生像を並べたとき、"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 550
+}

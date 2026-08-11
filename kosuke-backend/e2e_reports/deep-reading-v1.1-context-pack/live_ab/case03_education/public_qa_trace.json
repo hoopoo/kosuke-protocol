@@ -1,0 +1,77 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "pack_fact_ids": [
+    "pack_career_history_001",
+    "pack_current_work_002"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_career_history_001",
+      "content": "複数業界を経験した",
+      "tags": [
+        "context_pack",
+        "category:career_history",
+        "pack_id:pack_live_20260808T065459Z_1563",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_work_002",
+      "content": "文章や制作の仕事をしている",
+      "tags": [
+        "context_pack",
+        "category:current_work",
+        "pack_id:pack_live_20260808T065459Z_1563",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T065459Z_1563",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_work_002"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": [
+      "pack_career_history_001",
+      "pack_current_work_002"
+    ]
+  },
+  "residue": [
+    {
+      "statement": "「19歳のとき、第一志望の大学に合格した」を振り返る問いは、「現在は、複数業界を経験したあと、文章や制作の仕事をしている」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact_001"
+      ],
+      "present_anchor_ids": [
+        "fact_004"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "進学・就労の分岐を個人の選択として生きたという個人の分岐を、日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきたと並べて読むことができる。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": [
+    {
+      "id": "rebranch_measure_001",
+      "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+      "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+      "support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002",
+        "fact_001"
+      ],
+      "pack_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    }
+  ]
+}

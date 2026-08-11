@@ -1,0 +1,31 @@
+{
+  "product": "Parallel Life Deep Reading",
+  "freeze_label": "Parallel Life Deep Reading v1.1.11-exp (Track B Targeted Editorial Realization)",
+  "status": "EXPERIMENTAL / FLAG-GATED — Production v1.0.2 unchanged when DEEP_READING_CONTEXT_PACK_ENABLED=false or mode=strict",
+  "created_at": "2026-08-08T10:45:00+00:00",
+  "parent_manifest": "PRODUCTION_MANIFEST_v1.1.10-exp.json",
+  "scope": [
+    "Track A (v1.1.10) frozen: locked labels, parser, clarification exit, Observatory FN fix, BranchSemantics authority",
+    "career chosen_path: structural shift = one-institution continuity → work across organizations (anti-résumé)",
+    "education re_branch: domain place from BranchSemantics; reconsider release language; valid omission still allowed",
+    "romance branch_point: first-paragraph fork (trigger + choice + unchosen); 境目≈境界 realization",
+    "health: rewrite 「働き方を変える」causal assertion trips without loosening detector; Lost = bodily unverifiability",
+    "Title validation / publication gates / Observatory thresholds / production unchanged"
+  ],
+  "versions": {
+    "call_1_prompt_strict": "parallel-life-call-1-v1.0.3",
+    "call_1_prompt_contextual": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_validation_strict": "parallel-life-runtime-v1.0.6",
+    "runtime_validation_contextual": "parallel-life-runtime-v1.1.11-exp",
+    "call_2_prompt_contextual": "parallel-life-call-2-v1.1.11-exp",
+    "call_2_prompt_strict": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_strict": "parallel-life-call-3-v1.0.3",
+    "call_3_prompt_contextual": "parallel-life-call-3-v1.1.11-exp"
+  },
+  "title_validation_changed": false,
+  "publication_blockers_loosened": false,
+  "track_a_frozen": true,
+  "kill_switch": "DEEP_READING_CONTEXT_PACK_ENABLED=false forces Strict",
+  "success_signal": "career chosen_path + education re_branch (or omit) + romance branch_point + health causality=0 and Lost ok; Track A regressions=0",
+  "stop_rule": "If Track A regresses or health causality remains: STOP. Do not chase 10/10 publishable."
+}

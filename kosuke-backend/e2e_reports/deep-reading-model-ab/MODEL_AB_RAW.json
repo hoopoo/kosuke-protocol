@@ -1,0 +1,1285 @@
+{
+  "started_at": "2026-08-07T03:55:02.699691+00:00",
+  "call1_source": "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/e2e_reports/deep-reading-v1.0.4-full-live-run",
+  "prompts_modified": false,
+  "runtime_modified": false,
+  "configs": [
+    {
+      "id": "A_baseline",
+      "label": "Baseline gpt-4o-mini / gpt-4o-mini",
+      "call2_model": "gpt-4o-mini",
+      "call3_model": "gpt-4o-mini"
+    },
+    {
+      "id": "B_terra_terra",
+      "label": "Balanced GPT-5.6 Terra / Terra",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-terra"
+    },
+    {
+      "id": "C_terra_sol",
+      "label": "Editorial Terra / Sol",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-sol"
+    },
+    {
+      "id": "D_sol_sol",
+      "label": "Maximum Sol / Sol",
+      "call2_model": "gpt-5.6-sol",
+      "call3_model": "gpt-5.6-sol"
+    }
+  ],
+  "results": [
+    {
+      "config_id": "A_baseline",
+      "case_id": "case1",
+      "call2_model": "gpt-4o-mini",
+      "call3_model": "gpt-4o-mini",
+      "errors": [],
+      "final_title": "過去の選択と現在の生活",
+      "final_subtitle": "選択の重みとその後の生活",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 305,
+      "latency_ms": {
+        "call2_wall": 6402,
+        "call3_wall": 4468,
+        "total_wall": 10871,
+        "sum_api_calls": 10453
+      },
+      "tokens": {
+        "prompt": 7640,
+        "completion": 893,
+        "reasoning": 0,
+        "total": 8533
+      },
+      "estimated_cost_usd": 0.001682,
+      "usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 6000,
+          "prompt_tokens": 3701,
+          "completion_tokens": 498,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000854,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        },
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 4453,
+          "prompt_tokens": 3939,
+          "completion_tokens": 395,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000828,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 6000,
+          "prompt_tokens": 3701,
+          "completion_tokens": 498,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000854,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。その後、私は妻と息子と三人で暮らす選択をした。現在も妻と息子との三人家族で暮らし、自分の会社を経営している。息子は可愛い存在であり、彼の友人が家に遊びに来ることも楽しいと感じている。これらの経験は、私の日常生活の一部となっている。\n\n一方で、私は時折、二人目を持っていたらどうだったかと考えることがある。この思考は、過去の選択と現在の生活の間にまだ接続しきれていないものが残っていることを示している。私の選択肢の中には、不妊治療を諦めることもあったが、それを選ばなかったことで今の家族の形がある。これらの思いは、私の人生における選択の重みを感じさせるものである。\n"
+    },
+    {
+      "config_id": "A_baseline",
+      "case_id": "case2",
+      "call2_model": "gpt-4o-mini",
+      "call3_model": "gpt-4o-mini",
+      "errors": [],
+      "final_title": "不妊治療とその後の生活",
+      "final_subtitle": "過去の選択が現在に与える影響",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": [
+          "転機",
+          "結びつ"
+        ]
+      },
+      "character_count": 385,
+      "latency_ms": {
+        "call2_wall": 6619,
+        "call3_wall": 5983,
+        "total_wall": 12602,
+        "sum_api_calls": 12583
+      },
+      "tokens": {
+        "prompt": 8860,
+        "completion": 1165,
+        "reasoning": 0,
+        "total": 10025
+      },
+      "estimated_cost_usd": 0.002028,
+      "usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 6611,
+          "prompt_tokens": 4125,
+          "completion_tokens": 637,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.001001,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        },
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 5972,
+          "prompt_tokens": 4735,
+          "completion_tokens": 528,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.001027,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 6611,
+          "prompt_tokens": 4125,
+          "completion_tokens": 637,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.001001,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。この出来事は、私の人生において大きな転機となった。選んだのは、妻と息子と三人で暮らす人生だった。息子を授かった後、私は息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しいと感じている。\n\nしかし、選ばなかった道もあった。それは、不妊治療を諦めることだった。この選択肢を考えることはなかったが、今でも時折、二人目を持っていたらどうだったかと考えることがある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。\n\nこのように、過去の選択と現在の生活は密接に結びついている。息子との時間を大切にしながらも、心の奥にはまだ接続しきれていない思いが残っている。私たちの家族がどのように形成されてきたかを振り返ると、様々な選択があったことを思い出す。今の生活において、二人目を持つことについての思索は続いている。\n"
+    },
+    {
+      "config_id": "A_baseline",
+      "case_id": "case3",
+      "call2_model": "gpt-4o-mini",
+      "call3_model": "gpt-4o-mini",
+      "errors": [],
+      "final_title": "大学選択とその後の人生",
+      "final_subtitle": "",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 325,
+      "latency_ms": {
+        "call2_wall": 5938,
+        "call3_wall": 4852,
+        "total_wall": 10791,
+        "sum_api_calls": 10772
+      },
+      "tokens": {
+        "prompt": 6817,
+        "completion": 960,
+        "reasoning": 0,
+        "total": 7777
+      },
+      "estimated_cost_usd": 0.001598,
+      "usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 5929,
+          "prompt_tokens": 3280,
+          "completion_tokens": 532,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000811,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        },
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 4843,
+          "prompt_tokens": 3537,
+          "completion_tokens": 428,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000787,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 5929,
+          "prompt_tokens": 3280,
+          "completion_tokens": 532,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000811,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "body_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この選択は、私の人生における重要な分岐点となった。早稲田大学第一文学部への進学を選ぶことで、私は新しい学びや人との出会いを経験することができた。この選択肢は、私の人生の中での別の可能性を示している。もし別の大学に進学していたら、現在の仕事や人間関係はどのように変わっていたのだろうかと、時折考えることがある。\n\n現在は複数の業界を経験した後、文章やプロトコルをまとめている。早稲田大学での学びが私の基盤となっていることは確かだが、過去の選択と現在の生活の間には、まだ接続しきれていないものが残っているように感じる。これらの経験を通じて、私は自分のキャリアや人間関係についての理解を深めている。\n"
+    },
+    {
+      "config_id": "A_baseline",
+      "case_id": "case4",
+      "call2_model": "gpt-4o-mini",
+      "call3_model": "gpt-4o-mini",
+      "errors": [],
+      "final_title": "過去の選択と現在の生活",
+      "final_subtitle": "会社員としての経験と創作の選択",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 184,
+      "latency_ms": {
+        "call2_wall": 5152,
+        "call3_wall": 3589,
+        "total_wall": 8741,
+        "sum_api_calls": 8724
+      },
+      "tokens": {
+        "prompt": 6589,
+        "completion": 731,
+        "reasoning": 0,
+        "total": 7320
+      },
+      "estimated_cost_usd": 0.001427,
+      "usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 5145,
+          "prompt_tokens": 3237,
+          "completion_tokens": 461,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000762,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        },
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 3579,
+          "prompt_tokens": 3352,
+          "completion_tokens": 270,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000665,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-4o-mini",
+          "latency_ms": 5145,
+          "prompt_tokens": 3237,
+          "completion_tokens": 461,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0.000762,
+          "response_model": "gpt-4o-mini-2024-07-18"
+        }
+      ],
+      "body_preview": "会社員として複数の業界で働いてきた。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。一方で、創作を中心にした人生があったことを思い返すことがある。もしその道を選んでいたなら、現在の生活は異なっていたのではないかと考えることがある。過去の分岐の後、現在の生活構造が続いており、そのあいだにはまだ接続しきれていないものが残っているように感じる。\n"
+    },
+    {
+      "config_id": "B_terra_terra",
+      "case_id": "case1",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-terra",
+      "errors": [],
+      "final_title": "三人で暮らす現在と、二人目のこと",
+      "final_subtitle": "不妊治療を経て子どもを授かった後の日々",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 321,
+      "latency_ms": {
+        "call2_wall": 9204,
+        "call3_wall": 7668,
+        "total_wall": 16873,
+        "sum_api_calls": 16853
+      },
+      "tokens": {
+        "prompt": 7670,
+        "completion": 1894,
+        "reasoning": 647,
+        "total": 9564
+      },
+      "estimated_cost_usd": 0.047585,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9197,
+          "prompt_tokens": 3700,
+          "completion_tokens": 1060,
+          "reasoning_tokens": 410,
+          "estimated_cost_usd": 0.02515,
+          "response_model": "gpt-5.6-terra"
+        },
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 7656,
+          "prompt_tokens": 3970,
+          "completion_tokens": 834,
+          "reasoning_tokens": 237,
+          "estimated_cost_usd": 0.022435,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9197,
+          "prompt_tokens": 3700,
+          "completion_tokens": 1060,
+          "reasoning_tokens": 410,
+          "estimated_cost_usd": 0.02515,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。妻と息子との三人で暮らしている。不妊治療を諦める道もあった。\n\n現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。息子を可愛いと感じる。息子の友人が家に遊びに来ることも楽しい。家族との暮らしと会社の経営が、同じ現在にある。\n\n45歳で子どもを授かったことと、三人家族で暮らしながら会社を経営している現在。そのあいだには、まだ接続しきれていないものが残っている。今も、二人目を持っていたらどうだったかと考えることがある。\n\nその問いがあっても、息子のいる三人の暮らしは続いている。息子の友人が遊びに来る家で過ごす時間もある。二人目のことは、答えを決めないまま現在のそばに残っている。\n"
+    },
+    {
+      "config_id": "B_terra_terra",
+      "case_id": "case2",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-terra",
+      "errors": [],
+      "final_title": "三人でいる現在と、二人目の問い",
+      "final_subtitle": "不妊治療を経て子どもを授かった後の、三人の暮らしと残る問い",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 327,
+      "latency_ms": {
+        "call2_wall": 10730,
+        "call3_wall": 2,
+        "total_wall": 10732,
+        "sum_api_calls": 10722
+      },
+      "tokens": {
+        "prompt": 4124,
+        "completion": 1153,
+        "reasoning": 479,
+        "total": 5277
+      },
+      "estimated_cost_usd": 0.027605,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 10722,
+          "prompt_tokens": 4124,
+          "completion_tokens": 1153,
+          "reasoning_tokens": 479,
+          "estimated_cost_usd": 0.027605,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 10722,
+          "prompt_tokens": 4124,
+          "completion_tokens": 1153,
+          "reasoning_tokens": 479,
+          "estimated_cost_usd": 0.027605,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "## 三人でいる現在\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦めるという可能性もあったなかで、妻と息子の三人で暮らす人生がある。\n\n息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。治療を続けないという決定は、三人でいる現在の暮らしのそばに置かれている。\n\nいま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳で子どもを授かったことと、こうした家の現在を並べて見ると、そのあいだにはまだ接続しきれていないものが残っている。今も、二人目を持っていたらどうだったかと考えることがある。その問いは、三人で過ごす日々の楽しさを消すものではなく、答えの定まらないまま現在に置かれている。\n"
+    },
+    {
+      "config_id": "B_terra_terra",
+      "case_id": "case3",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-terra",
+      "errors": [],
+      "final_title": "接続しきれていないものを残して",
+      "final_subtitle": "早稲田大学第一文学部と、選ばなかった別の大学のあいだで",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 260,
+      "latency_ms": {
+        "call2_wall": 8638,
+        "call3_wall": 5765,
+        "total_wall": 14403,
+        "sum_api_calls": 14381
+      },
+      "tokens": {
+        "prompt": 6864,
+        "completion": 1594,
+        "reasoning": 333,
+        "total": 8458
+      },
+      "estimated_cost_usd": 0.041069,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 8629,
+          "prompt_tokens": 3279,
+          "completion_tokens": 988,
+          "reasoning_tokens": 253,
+          "estimated_cost_usd": 0.023017,
+          "response_model": "gpt-5.6-terra"
+        },
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 5752,
+          "prompt_tokens": 3585,
+          "completion_tokens": 606,
+          "reasoning_tokens": 80,
+          "estimated_cost_usd": 0.018052,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 8629,
+          "prompt_tokens": 3279,
+          "completion_tokens": 988,
+          "reasoning_tokens": 253,
+          "estimated_cost_usd": 0.023017,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。別の大学へ進学することがあった。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格とこの現在を並べると、そのあいだには複数の業界を経た時間がある。\n\n別の大学へ進んでいたなら、仕事や人間関係はどう変わっていただろうかと考えることがある。別の大学での仕事や人間関係を具体的に語る材料はない。ただ、早稲田大学第一文学部に合格した19歳の時点と、文章やプロトコルをまとめている現在とのあいだには、まだ接続しきれていないものが残っている。\n"
+    },
+    {
+      "config_id": "B_terra_terra",
+      "case_id": "case4",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-terra",
+      "errors": [],
+      "final_title": "現在に並ぶ、創作と企業での経験",
+      "final_subtitle": "複数業界での会社員経験と、創作中心の人生についての問い",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": [
+          "結びつ"
+        ]
+      },
+      "character_count": 304,
+      "latency_ms": {
+        "call2_wall": 9558,
+        "call3_wall": 3,
+        "total_wall": 9561,
+        "sum_api_calls": 9549
+      },
+      "tokens": {
+        "prompt": 3236,
+        "completion": 971,
+        "reasoning": 484,
+        "total": 4207
+      },
+      "estimated_cost_usd": 0.022655,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9549,
+          "prompt_tokens": 3236,
+          "completion_tokens": 971,
+          "reasoning_tokens": 484,
+          "estimated_cost_usd": 0.022655,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9549,
+          "prompt_tokens": 3236,
+          "completion_tokens": 971,
+          "reasoning_tokens": 484,
+          "estimated_cost_usd": 0.022655,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "複数業界で、会社員として働いてきた。その経歴は、ひとつの業界に限られない企業での経験として、現在にも記されている。\n\n現在は、企業での経験を持ちながら、観測サイトや文章、プロトコルを制作している。複数業界での会社員としての時間と、この制作のある生活は並んでいる。そのあいだには、まだ接続しきれていないものが残っている。\n\n創作を中心にした人生も、いまの生活のそばに置かれている。創作中心なら今とは違う人生だったかと考えることがある。ただ、どのような生活になっていたか、企業での経験や観測サイト、文章、プロトコルとどう並んでいたかを結びつける材料はない。答えは定めず、その問いを現在の制作とともに残しておく。\n"
+    },
+    {
+      "config_id": "C_terra_sol",
+      "case_id": "case1",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "三人で暮らす現在と、残る問い",
+      "final_subtitle": "不妊治療を経て子どもを授かり、妻と息子と暮らす今",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 285,
+      "latency_ms": {
+        "call2_wall": 10426,
+        "call3_wall": 32532,
+        "total_wall": 42959,
+        "sum_api_calls": 42941
+      },
+      "tokens": {
+        "prompt": 7765,
+        "completion": 3261,
+        "reasoning": 1878,
+        "total": 11026
+      },
+      "estimated_cost_usd": 0.10067,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 10420,
+          "prompt_tokens": 3700,
+          "completion_tokens": 1043,
+          "reasoning_tokens": 349,
+          "estimated_cost_usd": 0.024895,
+          "response_model": "gpt-5.6-terra"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 32521,
+          "prompt_tokens": 4065,
+          "completion_tokens": 2218,
+          "reasoning_tokens": 1529,
+          "estimated_cost_usd": 0.075775,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 10420,
+          "prompt_tokens": 3700,
+          "completion_tokens": 1043,
+          "reasoning_tokens": 349,
+          "estimated_cost_usd": 0.024895,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める道は選ばず、妻と息子と三人で暮らす人生を選んだ。\n\n現在も妻と息子との三人家族で暮らし、自分の会社を経営している。45歳で子どもを授かった過去と、会社を経営しながら三人で暮らす現在。そのあいだには、まだ言葉でつなぎきれない部分がある。それでも、三人の暮らしは今も続いている。\n\n息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。そうした時間が、現在の暮らしのなかにある。\n\n今も、二人目を持っていたらどうだったかと考えることがある。妻と息子と暮らす現在が続くなかにも、その考えは残っている。\n"
+    },
+    {
+      "config_id": "C_terra_sol",
+      "case_id": "case2",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "三人の暮らしと、残る問い",
+      "final_subtitle": "不妊治療を経て息子を授かり、三人で暮らす日々のなかで考えること",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 286,
+      "latency_ms": {
+        "call2_wall": 7439,
+        "call3_wall": 1,
+        "total_wall": 7441,
+        "sum_api_calls": 7429
+      },
+      "tokens": {
+        "prompt": 4124,
+        "completion": 698,
+        "reasoning": 165,
+        "total": 4822
+      },
+      "estimated_cost_usd": 0.02078,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 7429,
+          "prompt_tokens": 4124,
+          "completion_tokens": 698,
+          "reasoning_tokens": 165,
+          "estimated_cost_usd": 0.02078,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 7429,
+          "prompt_tokens": 4124,
+          "completion_tokens": 698,
+          "reasoning_tokens": 165,
+          "estimated_cost_usd": 0.02078,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "## 三人で暮らすまで\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める可能性もあったなかで、妻と息子との三人暮らしがある。\n\n## 家にいる友人たちと、残る問い\n\n息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。いま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。\n\n45歳のときに子どもを授かったことと、息子やその友人たちのいる現在の家の時間は、同じ生活のなかに置かれている。そのあいだには、まだ接続しきれていないものが残っている。今も、ときに、二人目を持っていたらどうだったかと考えることがある。\n"
+    },
+    {
+      "config_id": "C_terra_sol",
+      "case_id": "case3",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "19歳の合格と、文章やプロトコルをまとめる現在",
+      "final_subtitle": "選ばなかった別の大学を現在から振り返る",
+      "status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "title_validation_failed"
+      ],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": [
+          "結びつ"
+        ]
+      },
+      "character_count": 459,
+      "latency_ms": {
+        "call2_wall": 9272,
+        "call3_wall": 45979,
+        "total_wall": 55251,
+        "sum_api_calls": 55213
+      },
+      "tokens": {
+        "prompt": 10101,
+        "completion": 4202,
+        "reasoning": 2279,
+        "total": 14303
+      },
+      "estimated_cost_usd": 0.138028,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9262,
+          "prompt_tokens": 3279,
+          "completion_tokens": 933,
+          "reasoning_tokens": 341,
+          "estimated_cost_usd": 0.022193,
+          "response_model": "gpt-5.6-terra"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 20131,
+          "prompt_tokens": 3427,
+          "completion_tokens": 1489,
+          "reasoning_tokens": 914,
+          "estimated_cost_usd": 0.05436,
+          "response_model": "gpt-5.6-sol"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 25820,
+          "prompt_tokens": 3395,
+          "completion_tokens": 1780,
+          "reasoning_tokens": 1024,
+          "estimated_cost_usd": 0.061475,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9262,
+          "prompt_tokens": 3279,
+          "completion_tokens": 933,
+          "reasoning_tokens": 341,
+          "estimated_cost_usd": 0.022193,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "## 19歳の分岐\n\n19歳のとき、第一志望の早稲田大学第一文学部に合格した。進んだのは早稲田大学第一文学部で、別の大学へ進学する道は選ばなかった。\n\n## 文章やプロトコルをまとめる現在\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格とこの現在は並べて見ることができる。ただ、そのあいだの経緯までは示されていない。過去の分岐と現在の営みのあいだには、まだ接続しきれない部分が残っている。\n\n## 選ばなかった大学\n\n別の大学なら、仕事や人間関係がどう変わっていただろうかと考えることがある。大学が違えば仕事や人間関係も異なっていたかもしれない。しかし、選ばなかった進学先と特定の仕事や人間関係を直接結びつける材料はない。\n\n早稲田大学第一文学部への進学、複数の業界での経験、文章やプロトコルをまとめる現在。これらは一つの時間の中に並んでいる。一方、別の大学へ進んだ場合に何が違っていたかは、答えのないまま残る。大学選択とその後の人生をめぐる考えは、その未確定の部分に置かれている。\n"
+    },
+    {
+      "config_id": "C_terra_sol",
+      "case_id": "case4",
+      "call2_model": "gpt-5.6-terra",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "現在に並ぶ、創作という可能性",
+      "final_subtitle": "複数業界での会社員経験と、観測サイト・文章・プロトコルを制作する現在のあいだで",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 290,
+      "latency_ms": {
+        "call2_wall": 9513,
+        "call3_wall": 3,
+        "total_wall": 9516,
+        "sum_api_calls": 9503
+      },
+      "tokens": {
+        "prompt": 3236,
+        "completion": 957,
+        "reasoning": 439,
+        "total": 4193
+      },
+      "estimated_cost_usd": 0.022445,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9503,
+          "prompt_tokens": 3236,
+          "completion_tokens": 957,
+          "reasoning_tokens": 439,
+          "estimated_cost_usd": 0.022445,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-terra",
+          "latency_ms": 9503,
+          "prompt_tokens": 3236,
+          "completion_tokens": 957,
+          "reasoning_tokens": 439,
+          "estimated_cost_usd": 0.022445,
+          "response_model": "gpt-5.6-terra"
+        }
+      ],
+      "body_preview": "会社員として複数業界で働いてきた。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。複数の業界で働いた時間と、観測サイト、文章、プロトコルを制作する現在の生活は、同じ記述のなかに置かれている。そのあいだには、まだ接続しきれていないものが残っている。\n\n創作を中心にした人生は、歩まなかった人生として残っている。創作中心なら今とは違う人生だったかと考えることがある。ただし、どのように違っていたかを示す材料はない。企業での経験を持ちながら観測サイトや文章、プロトコルを制作している現在と、創作を中心にした人生という可能性は、答えの定まらないまま並んでいる。\n"
+    },
+    {
+      "config_id": "D_sol_sol",
+      "case_id": "case1",
+      "call2_model": "gpt-5.6-sol",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "三人で暮らす現在と、二人目のこと",
+      "final_subtitle": "45歳で子どもを授かってから、妻と息子との暮らし、会社経営、今も残る問いまで",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": []
+      },
+      "character_count": 332,
+      "latency_ms": {
+        "call2_wall": 31118,
+        "call3_wall": 31325,
+        "total_wall": 62444,
+        "sum_api_calls": 62417
+      },
+      "tokens": {
+        "prompt": 7906,
+        "completion": 4312,
+        "reasoning": 2703,
+        "total": 12218
+      },
+      "estimated_cost_usd": 0.14733,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 31108,
+          "prompt_tokens": 3700,
+          "completion_tokens": 2377,
+          "reasoning_tokens": 1536,
+          "estimated_cost_usd": 0.077925,
+          "response_model": "gpt-5.6-sol"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 31309,
+          "prompt_tokens": 4206,
+          "completion_tokens": 1935,
+          "reasoning_tokens": 1167,
+          "estimated_cost_usd": 0.069405,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 31108,
+          "prompt_tokens": 3700,
+          "completion_tokens": 2377,
+          "reasoning_tokens": 1536,
+          "estimated_cost_usd": 0.077925,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "body_preview": "## 三人で暮らす現在\n\n不妊治療を諦める道もあった。45歳のとき、不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだ。\n\n現在も妻と息子との三人家族で暮らし、自分の会社を経営している。45歳で子どもを授かってから現在に至るまでの具体的な歩みは、ここにある事実だけではたどれない。過去の分岐と現在の生活のあいだには、まだつながりを語りきれない部分が残っている。\n\n息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。三人で暮らす現在には、そうした日々がある。\n\n同時に、今も二人目を持っていたらどうだったかと考えることがある。二人目がいた場合について、これ以上の答えを出せる材料はない。問いは問いのまま、三人で暮らす現在に残っている。\n"
+    },
+    {
+      "config_id": "D_sol_sol",
+      "case_id": "case2",
+      "call2_model": "gpt-5.6-sol",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "三人の暮らしと、二人目への問い",
+      "final_subtitle": "不妊治療を経た日々と、今もときどき考えること",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": [
+          "結びつ"
+        ]
+      },
+      "character_count": 414,
+      "latency_ms": {
+        "call2_wall": 22002,
+        "call3_wall": 3,
+        "total_wall": 22005,
+        "sum_api_calls": 21990
+      },
+      "tokens": {
+        "prompt": 4124,
+        "completion": 1586,
+        "reasoning": 787,
+        "total": 5710
+      },
+      "estimated_cost_usd": 0.06027,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 21990,
+          "prompt_tokens": 4124,
+          "completion_tokens": 1586,
+          "reasoning_tokens": 787,
+          "estimated_cost_usd": 0.06027,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 21990,
+          "prompt_tokens": 4124,
+          "completion_tokens": 1586,
+          "reasoning_tokens": 787,
+          "estimated_cost_usd": 0.06027,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "body_preview": "## 45歳と三人の暮らし\n\n45歳のとき、不妊治療を経て子どもを授かった。当時には、不妊治療を諦める道もあった。その先にあるのが、妻と息子と三人で暮らす人生である。\n\n現在、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳で子どもを授かったことと、こうした現在の暮らしは、同じ時間の中に並んでいる。ただし、そのあいだのすべてを結びつける材料はない。過去と現在のあいだには、まだ接続しきれていないものが残っている。\n\n## 二人目をめぐる余白\n\n息子を授かった後、二人目を目指す治療を続けるかどうかを妻と話し合い、治療をやめた。\n\n今も、二人目を持っていたらどうだったかと考えることがある。妻と息子との三人の暮らしがあり、息子を可愛いと感じ、友人たちが遊びに来る時間を楽しいと感じている。その現在と、二人目のいた暮らしへの問いは、どちらかがどちらかを打ち消すのではなく、答えの定まらないまま並んでいる。\n"
+    },
+    {
+      "config_id": "D_sol_sol",
+      "case_id": "case3",
+      "call2_model": "gpt-5.6-sol",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "二つの大学、その後に残る問い",
+      "final_subtitle": "早稲田大学第一文学部、別の大学、そして複数の業界を経た現在",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": [
+          "結びつ"
+        ]
+      },
+      "character_count": 365,
+      "latency_ms": {
+        "call2_wall": 23649,
+        "call3_wall": 29822,
+        "total_wall": 53471,
+        "sum_api_calls": 53445
+      },
+      "tokens": {
+        "prompt": 6887,
+        "completion": 3930,
+        "reasoning": 2560,
+        "total": 10817
+      },
+      "estimated_cost_usd": 0.132685,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 23642,
+          "prompt_tokens": 3279,
+          "completion_tokens": 1779,
+          "reasoning_tokens": 1024,
+          "estimated_cost_usd": 0.06087,
+          "response_model": "gpt-5.6-sol"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 29803,
+          "prompt_tokens": 3608,
+          "completion_tokens": 2151,
+          "reasoning_tokens": 1536,
+          "estimated_cost_usd": 0.071815,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 23642,
+          "prompt_tokens": 3279,
+          "completion_tokens": 1779,
+          "reasoning_tokens": 1024,
+          "estimated_cost_usd": 0.06087,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "body_preview": "## 十九歳の進路\n\n19歳のとき、第一志望の早稲田大学第一文学部に合格した。選ばなかったのは、別の大学へ進学する道だった。\n\n## 合格と現在\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格と現在の営みは、同じ経歴の中にある。しかし、その間の具体的な経過はわからず、大学の選択と現在の営みを直接結びつける材料もない。十九歳の分岐と現在の生活のあいだには、まだ接続しきれていない部分が残っている。\n\n## 別の大学だったなら\n\n別の大学なら、仕事や人間関係がどう変わったかと考えることがある。別の大学に進んだ場合の仕事や人間関係を確かめる材料はない。\n\n早稲田大学第一文学部に合格した過去と、複数の業界を経験した現在は確かにある。一方、別の大学に進んだ場合は確かめられず、問いとして残っている。\n"
+    },
+    {
+      "config_id": "D_sol_sol",
+      "case_id": "case4",
+      "call2_model": "gpt-5.6-sol",
+      "call3_model": "gpt-5.6-sol",
+      "errors": [],
+      "final_title": "複数業界の時間、制作の現在",
+      "final_subtitle": "観測サイト、文章、プロトコルを制作する現在と、もう一つの人生像",
+      "status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "runtime_counts": {
+        "unsupported_personal_detail_count": 0,
+        "unsupported_scene_count": 0,
+        "unsupported_causality_count": 0,
+        "unsupported_causal_frame_count": 0,
+        "unsupported_affect_count": 0,
+        "unsupported_role_behavior_count": 0,
+        "schema_leakage_prose_count": 0,
+        "generic_advice_count": 0
+      },
+      "independent_analysis": {
+        "unsupported_personal_details": [],
+        "unsupported_causal_frame": [],
+        "unsupported_causality": [],
+        "unsupported_affect": [],
+        "unsupported_role_behavior": [],
+        "generic_advice": [],
+        "unsupported_scenes": [],
+        "schema_leakage_prose": [],
+        "title_causal_frame_violation": false,
+        "soft_watch_hits": [
+          "結びつ"
+        ]
+      },
+      "character_count": 551,
+      "latency_ms": {
+        "call2_wall": 33349,
+        "call3_wall": 2,
+        "total_wall": 33351,
+        "sum_api_calls": 33328
+      },
+      "tokens": {
+        "prompt": 3236,
+        "completion": 2271,
+        "reasoning": 1383,
+        "total": 5507
+      },
+      "estimated_cost_usd": 0.072955,
+      "usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 33328,
+          "prompt_tokens": 3236,
+          "completion_tokens": 2271,
+          "reasoning_tokens": 1383,
+          "estimated_cost_usd": 0.072955,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "call2_usage_events": [
+        {
+          "model": "gpt-5.6-sol",
+          "latency_ms": 33328,
+          "prompt_tokens": 3236,
+          "completion_tokens": 2271,
+          "reasoning_tokens": 1383,
+          "estimated_cost_usd": 0.072955,
+          "response_model": "gpt-5.6-sol"
+        }
+      ],
+      "body_preview": "## 複数業界の時間と現在\n\n会社員として、複数の業界で働いてきた。異なる業界を経てきたという輪郭はあるが、それぞれの時期や職務について、ここで確かめられることは限られている。\n\n現在は、企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。企業での経験と制作のどちらか一方ではなく、両方が現在の生活に置かれている。\n\n複数業界で会社員として働いてきた時間のあとに、企業での経験を持ちながら制作する現在が続いている。ただし、過去の会社員経験が現在の制作を生んだと結びつける材料はない。時間的に並ぶ二つの生活構造のあいだには、まだ接続しきれていないものが残っている。\n\n## 創作中心という可能性\n\nその現在の傍らには、創作を中心にした人生という、歩まれなかった可能性がある。創作中心なら今とは違う人生だったかと考えることがあるが、その違いが何であったかは確定できない。\n\n創作を中心に据えた人生の具体像は示されていない。一方、現在の生活には、企業での経験と、観測サイト、文章、プロトコルの制作が併存している。現在にも制作はあるが、それを創作中心の人生と同じものとして扱うことはできない。"
+    }
+  ],
+  "finished_at": "2026-08-07T04:01:23.991730+00:00"
+}

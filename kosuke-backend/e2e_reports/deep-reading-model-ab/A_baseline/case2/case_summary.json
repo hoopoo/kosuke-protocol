@@ -1,0 +1,83 @@
+{
+  "config_id": "A_baseline",
+  "case_id": "case2",
+  "call2_model": "gpt-4o-mini",
+  "call3_model": "gpt-4o-mini",
+  "errors": [],
+  "final_title": "不妊治療とその後の生活",
+  "final_subtitle": "過去の選択が現在に与える影響",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": [
+      "転機",
+      "結びつ"
+    ]
+  },
+  "character_count": 385,
+  "latency_ms": {
+    "call2_wall": 6619,
+    "call3_wall": 5983,
+    "total_wall": 12602,
+    "sum_api_calls": 12583
+  },
+  "tokens": {
+    "prompt": 8860,
+    "completion": 1165,
+    "reasoning": 0,
+    "total": 10025
+  },
+  "estimated_cost_usd": 0.002028,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 6611,
+      "prompt_tokens": 4125,
+      "completion_tokens": 637,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.001001,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 5972,
+      "prompt_tokens": 4735,
+      "completion_tokens": 528,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.001027,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 6611,
+      "prompt_tokens": 4125,
+      "completion_tokens": 637,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.001001,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。この出来事は、私の人生において大きな転機となった。選んだのは、妻と息子と三人で暮らす人生だった。息子を授かった後、私は息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しいと感じている。\n\nしかし、選ばなかった道もあった。それは、不妊治療を諦めることだった。この選択肢を考えることはなかったが、今でも時折、二人目を持っていたらどうだったかと考えることがある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。\n\nこのように、過去の選択と現在の生活は密接に結びついている。息子との時間を大切にしながらも、心の奥にはまだ接続しきれていない思いが残っている。私たちの家族がどのように形成されてきたかを振り返ると、様々な選択があったことを思い出す。今の生活において、二人目を持つことについての思索は続いている。\n"
+}

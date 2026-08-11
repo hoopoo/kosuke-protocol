@@ -1,0 +1,358 @@
+{
+  "id": "case01",
+  "title": "Ambiguous branch — thought about quitting",
+  "purpose": "thought-about-quitting vs completed secondary decision",
+  "expect": [
+    "no invented resignation",
+    "no invented reason for staying",
+    "no invented reason for later job change",
+    "retrospective question preserved",
+    "later job change not attributed to earlier branch"
+  ],
+  "fields": {
+    "branch_period": "30代後半",
+    "triggering_event": "仕事を辞めようかと思っていた",
+    "chosen_path": "結局そのまま働いた",
+    "unchosen_path": "辞めること",
+    "present_question": "辞めていたらどうなっていたかな",
+    "current_context": "今は別の仕事をしている"
+  },
+  "source_text": "時期: 30代後半\n出来事: 仕事を辞めようかと思っていた\n選んだ道: 結局そのまま働いた\n選ばなかった道: 辞めること\nいまの問い: 辞めていたらどうなっていたかな\nいまの状況: 今は別の仕事をしている",
+  "started_at": "2026-08-07T04:30:46.977956+00:00",
+  "errors": [],
+  "session_id": "e6cc32ab-de5e-416f-8d6e-437daf750089",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.4",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": true,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": true
+    },
+    "gaps": [
+      "latency",
+      "token_usage",
+      "estimated_cost"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_2_prompt_version",
+      "call_3_model",
+      "call_3_prompt_version",
+      "candidate",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version"
+    ]
+  },
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "30代後半の時期に仕事を辞めようかと思っていた",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact2",
+        "content": "結局そのまま働いた",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact3",
+        "content": "辞めることを選ばなかった",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact4",
+        "content": "今は別の仕事をしている",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact5",
+        "content": "辞めていたらどうなっていたかな",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "30代後半",
+      "triggering_event": "仕事を辞めようかと思っていた",
+      "available_paths": [
+        "結局そのまま働いた",
+        "辞めること"
+      ],
+      "realized_path": "結局そのまま働いた",
+      "unrealized_paths": [
+        "辞めること"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact5",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "辞めていたらどうなっていたかな",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "residue": [
+      {
+        "residue_statement": "「辞めることを選ばなかった」という過去の分岐のあとで、「現在の生活」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「辞めることを選ばなかった」という過去の分岐のあとで、「現在の生活」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact3"
+        ],
+        "present_anchor_ids": [
+          "ctx_001"
+        ],
+        "support_ids": [
+          "fact3",
+          "ctx_001"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [],
+    "additional_required": false,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "30代後半",
+      "triggering_event": "仕事を辞めようかと思っていた",
+      "chosen_path": "結局そのまま働いた",
+      "unchosen_path": "辞めること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "辞めていたらどうなっていたかな"
+      ],
+      "present_questions": [
+        "辞めていたらどうなっていたかな"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "辞めていたらどうなっていたかを考えることは、現在の選択を見直す手助けになる。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "central_thesis": "辞めていたらどうなっていたかを考えることは、現在の選択を見直す手助けになる。",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": []
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": true,
+    "outcome_bucket": "A_proceed_to_confirmation",
+    "reasons_stop": [],
+    "reasons_ok": [
+      "ready_for_user_confirmation_with_residue"
+    ],
+    "contradiction_analysis": {
+      "input_level_contradiction": false,
+      "facts_contain_reject": false,
+      "facts_contain_join": false,
+      "silently_resolved_suspected": false,
+      "confirmation_items": []
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [],
+    "clarification_count": 0,
+    "residue_count": 1,
+    "status": "ready_for_user_confirmation"
+  },
+  "call2_reached": true,
+  "call3_reached": true,
+  "published": true,
+  "confirmation_approved": true,
+  "generation_should_proceed": true,
+  "safe_stop": false,
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 311,
+    "title_candidates": [
+      "辞めなかった仕事、その後に残る問い",
+      "30代後半の迷いと、いまの別の仕事",
+      "「辞めていたらどうなっていたかな」のそばで"
+    ],
+    "observatory_omitted": true,
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "具体的な再検討対象となる名詞が、確認済みの記録には十分に示されていないため。",
+    "soft_watch": [],
+    "body_preview": "### 30代後半にあった迷い\n\n30代後半、仕事を辞めようかと思っていた。辞めることも視野にありながら、結局はそのまま働いた。辞めることは実行されなかった。この時期について、いま「辞めていたらどうなっていたかな」という問いが置かれている。\n\nいまは別の仕事をしており、現在の生活がある。仕事を辞めなかった過去と、別の仕事をしている現在は並んでいるが、そのあいだを一つの因果関係として結びつける材料はない。それでも、辞めることを選ばなかった時点と現在の生活のあいだには、まだ接続しきれていないものが残っている。「辞めていたらどうなっていたかな」という問いは、その残りを急いで答えに変えず、現在の生活のそばに置かれている。\n"
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "complete",
+    "final_title": "辞めなかった仕事、その後に残る問い",
+    "final_subtitle": "辞めなかった時点と現在の生活のあいだに残る、まだ接続しきれていないもの",
+    "character_count": 311,
+    "publishable": true,
+    "blocking_reasons": [],
+    "title_validation": {
+      "selected_title": "辞めなかった仕事、その後に残る問い",
+      "selected_subtitle": "辞めなかった時点と現在の生活のあいだに残る、まだ接続しきれていないもの",
+      "title_supported_by_fact_ids": [
+        "fact1",
+        "fact4"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": true,
+      "notes": []
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch": [],
+    "residue_represented": true,
+    "body_preview": "### 30代後半にあった迷い\n\n30代後半、仕事を辞めようかと思っていた。辞めることも視野にありながら、結局はそのまま働いた。辞めることは実行されなかった。この時期について、いま「辞めていたらどうなっていたかな」という問いが置かれている。\n\nいまは別の仕事をしており、現在の生活がある。仕事を辞めなかった過去と、別の仕事をしている現在は並んでいるが、そのあいだを一つの因果関係として結びつける材料はない。それでも、辞めることを選ばなかった時点と現在の生活のあいだには、まだ接続しきれていないものが残っている。「辞めていたらどうなっていたかな」という問いは、その残りを急いで答えに変えず、現在の生活のそばに置かれている。\n"
+  },
+  "latency_ms_total": 25028,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 15406,
+      "prompt_tokens": 3758,
+      "completion_tokens": 1073,
+      "estimated_cost_usd": 0.001207,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9235,
+      "prompt_tokens": 3120,
+      "completion_tokens": 859,
+      "estimated_cost_usd": 0.020685,
+      "stage_hint": "terra"
+    }
+  ],
+  "estimated_cost_usd": 0.021892,
+  "token_split": {
+    "call1_in": 3758,
+    "call1_out": 1073,
+    "terra_events": 1,
+    "terra_in": 3120,
+    "terra_out": 859,
+    "call2_in": 3120,
+    "call2_out": 859,
+    "call3_in": 0,
+    "call3_out": 0
+  },
+  "finished_at": "2026-08-07T04:31:12.007085+00:00"
+}

@@ -4,12 +4,18 @@ FastAPI backend providing fragment ingestion, vector memory,
 sampling, fluke generation, reflection storage, and markdown export.
 """
 
+import logging
+import os
+import re
+import time
+import uuid
 from datetime import datetime, timezone
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.drift_engine import compute_drift
 from app.edge_store import EdgeStore
@@ -20,6 +26,14 @@ from app.models import (
     DriftAnalysis,
     DomainBalanceResult,
     EmergingSignalsResult,
+    ExperienceExportRequest,
+    ExperienceFlukeRequest,
+    ExperienceFragmentRequest,
+    ExperienceFragmentResponse,
+    ExperienceMeaningRequest,
+    ExperienceMeaningResponse,
+    ExperienceSampleRequest,
+    ExperienceSampleResponse,
     ExportRequest,
     Fragment,
     FragmentCreate,
@@ -28,8 +42,18 @@ from app.models import (
     FlukeResult,
     GalaxyData,
     GalaxyWatchResult,
+    LensInfo,
     NetworkData,
     NetworkMetrics,
+    ParallelLifeClarifyRequest,
+    ParallelLifeClarifyResponse,
+    ParallelLifeEditorialClarifyRequest,
+    ParallelLifeEditorialRequest,
+    ParallelLifeEditorialResponse,
+    ParallelLifeExportRequest,
+    ParallelLifeLensConfig,
+    ParallelLifeRequest,
+    ParallelLifeResult,
     Reflection,
     ReflectionCreate,
     ReflectionImpactResult,
@@ -38,7 +62,20 @@ from app.models import (
     SlowModeStatus,
     TopConceptsResult,
 )
+from app.experience_engine import get_seed_fragments, generate_fragments, generate_meaning
+from app.fluke_engine import compute_fluke_score, generate_tension_and_prompt
+from app.lenses import LENSES, get_lens
 from app.cosmos_engine import analyze_cosmos, list_authors
+from app.parallel_life_engine import (
+    export_parallel_life_markdown,
+    generate_clarification_questions,
+    generate_parallel_life,
+)
+from app.parallel_life_editorial import (
+    generate_editorial_clarification_questions,
+    generate_editorial_parallel_life,
+)
+from app.parallel_life_lens import get_parallel_life_lens_config
 from app.observatory_engine import (
     get_domain_balance,
     get_emerging_signals,
@@ -52,19 +89,90 @@ from app.text_chunker import chunk_text
 
 load_dotenv()
 
+_logger = logging.getLogger("kosuke.observability")
+
+
+def _cors_allow_origins() -> list[str]:
+    raw = os.environ.get("CORS_ALLOW_ORIGINS", "").strip()
+    if not raw:
+        return ["*"]
+    return [o.strip() for o in raw.split(",") if o.strip()]
+
+
+def deep_reading_enabled() -> bool:
+    return os.environ.get("DEEP_READING_ENABLED", "true").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
+
+
+def _require_deep_reading_enabled() -> None:
+    if not deep_reading_enabled():
+        raise HTTPException(
+            status_code=503,
+            detail="Deep Reading は現在メンテナンス中です。しばらくしてから再度お試しください。",
+        )
+
+
+class ObservabilityMiddleware(BaseHTTPMiddleware):
+    """Lightweight request logging — no raw input / manuscript / prompts / keys."""
+
+    async def dispatch(self, request: Request, call_next):
+        request_id = request.headers.get("X-Request-Id") or str(uuid.uuid4())
+        request.state.request_id = request_id
+        started = time.perf_counter()
+        status_code = 500
+        failure_category = None
+        try:
+            response = await call_next(request)
+            status_code = response.status_code
+            response.headers["X-Request-Id"] = request_id
+            if status_code >= 500:
+                failure_category = "server_error"
+            elif status_code >= 400:
+                failure_category = "client_error"
+            return response
+        except Exception:
+            failure_category = "unhandled_exception"
+            raise
+        finally:
+            latency_ms = int((time.perf_counter() - started) * 1000)
+            runtime_version = None
+            try:
+                from app.parallel_life_deep_reading import SCHEMA_VERSION
+
+                runtime_version = SCHEMA_VERSION
+            except Exception:
+                runtime_version = None
+            _logger.info(
+                "request_id=%s method=%s path=%s status=%s latency_ms=%s "
+                "runtime_version=%s env=%s failure_category=%s",
+                request_id,
+                request.method,
+                request.url.path,
+                status_code,
+                latency_ms,
+                runtime_version,
+                os.environ.get("ENV", ""),
+                failure_category,
+            )
+
+
 app = FastAPI(
     title="Kosuke Protocol",
     description="An Intelligence Ecosystem for Meaning Generation in the Age of AI",
     version="0.1.0",
 )
 
-# Disable CORS. Do not remove this for full-stack development.
+app.add_middleware(ObservabilityMiddleware)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
+    allow_origins=_cors_allow_origins(),
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Initialize stores and engines
@@ -77,7 +185,11 @@ slow_mode_tracker = SlowModeTracker()
 
 @app.get("/healthz")
 async def healthz():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "deep_reading_enabled": deep_reading_enabled(),
+        "env": os.environ.get("ENV", ""),
+    }
 
 
 # --- Fragment endpoints ---
@@ -324,6 +436,610 @@ async def export_markdown(request: ExportRequest):
     lines.append("*Kosuke Protocol - An Intelligence Ecosystem for Meaning Generation*")
 
     return "\n".join(lines)
+
+
+# --- Protocol Experience endpoints ---
+
+
+def _lang_tag(language: str) -> str:
+    return "lang:ja" if (language or "").lower().startswith("ja") else "lang:en"
+
+
+_CJK_RE = re.compile(r"[\u3040-\u30ff\u4e00-\u9fff]")
+
+
+def _fragment_is_japanese(fragment: Fragment) -> bool:
+    """Detect whether a fragment is Japanese via tag or content.
+
+    Content detection makes this robust to legacy fragments that were stored
+    before language tagging existed.
+    """
+    if "lang:ja" in fragment.tags:
+        return True
+    return bool(_CJK_RE.search(fragment.text))
+
+
+def _language_pool(language: str, all_frags: list[Fragment]) -> list[Fragment]:
+    """Return fragments that belong to the active language.
+
+    A Japanese session only sees Japanese fragments; an English session only
+    sees non-Japanese fragments. Both tag and content are checked so a session
+    never receives a mixed-language counterpart.
+    """
+    if (language or "").lower().startswith("ja"):
+        return [f for f in all_frags if _fragment_is_japanese(f)]
+    return [f for f in all_frags if not _fragment_is_japanese(f)]
+
+
+def _ensure_seed_corpus(language: str) -> None:
+    """Seed a small curated corpus in the active language if the language pool
+    is nearly empty. Keeps the experience usable (and single-language) on a
+    fresh install.
+    """
+    pool = _language_pool(language, fragment_store.get_all_fragments(limit=1000))
+    if len(pool) >= 4:
+        return
+    lang_tag = _lang_tag(language)
+    for seed in get_seed_fragments(language):
+        fragment_store.add_fragment(
+            FragmentCreate(
+                text=seed["text"],
+                source="seed",
+                tags=["seed", "experience", lang_tag],
+                domain=seed.get("domain"),
+            )
+        )
+
+
+def _select_from_pool(
+    mode: str, selected: Fragment, pool: list[Fragment]
+) -> Fragment | None:
+    """Select one counterpart from a language-scoped pool, per sampling mode.
+
+    Reuses the sampling engine's cosine distance and fragment embeddings so no
+    sampling logic is duplicated; only the human-readable mode mapping and the
+    language scoping live here.
+    """
+    import random
+
+    if not pool:
+        return None
+
+    if mode in ("near", "far"):
+        ids = [selected.id] + [f.id for f in pool]
+        embeddings = fragment_store.get_embeddings(ids)
+        base = embeddings.get(selected.id)
+        if base:
+            best: Fragment | None = None
+            best_dist = -1.0 if mode == "far" else 2.0
+            for frag in pool:
+                emb = embeddings.get(frag.id)
+                if not emb:
+                    continue
+                dist = sampling_engine._cosine_distance(base, emb)
+                if (mode == "far" and dist > best_dist) or (
+                    mode == "near" and dist < best_dist
+                ):
+                    best_dist = dist
+                    best = frag
+            if best is not None:
+                return best
+        return random.choice(pool)
+
+    if mode == "time":
+        try:
+            ordered = sorted(pool, key=lambda f: f.timestamp, reverse=True)
+        except Exception:
+            ordered = pool
+        # Favor a recent-but-not-identical fragment.
+        return ordered[0]
+
+    # chance (and any unknown mode)
+    return random.choice(pool)
+
+
+def _lens_infos() -> list[LensInfo]:
+    return [
+        LensInfo(
+            id=lens.id,
+            name_en=lens.name_en,
+            name_ja=lens.name_ja,
+            description_en=lens.description_en,
+            description_ja=lens.description_ja,
+            available=lens.available,
+        )
+        for lens in LENSES.values()
+    ]
+
+
+@app.get("/experience/lenses", response_model=list[LensInfo])
+async def experience_lenses():
+    """List available and upcoming lenses for the experience."""
+    return _lens_infos()
+
+
+@app.post("/experience/fragment", response_model=ExperienceFragmentResponse)
+async def experience_fragment(request: ExperienceFragmentRequest):
+    """Transform raw user input into 4-7 minimal thought units."""
+    if not request.text.strip():
+        raise HTTPException(status_code=400, detail="Please write something first.")
+
+    lens = get_lens(request.lens)
+    fragments = await generate_fragments(
+        text=request.text,
+        language=request.language,
+        lens_id=lens.id,
+    )
+    return ExperienceFragmentResponse(
+        source_text=request.text,
+        fragments=fragments,
+        language=request.language,
+        lens=lens.id,
+    )
+
+
+@app.post("/experience/sample", response_model=ExperienceSampleResponse)
+async def experience_sample(request: ExperienceSampleRequest):
+    """Sample a counterpart fragment from the ecosystem for the selected fragment.
+
+    Human-readable modes map onto the existing sampling engine:
+    near -> semantic, far -> semantic-distance, time -> temporal, chance -> random.
+    """
+    if not request.fragment_text.strip():
+        raise HTTPException(status_code=400, detail="Select a fragment to explore first.")
+
+    lens = get_lens(request.lens)
+    language = request.language
+
+    # Persist the selected fragment so it gains an embedding and joins the
+    # living ecosystem. It is tagged with the active language so future
+    # sampling stays single-language. This also lets the fluke engine compute
+    # a real semantic distance.
+    selected = fragment_store.add_fragment(
+        FragmentCreate(
+            text=request.fragment_text,
+            source="experience",
+            tags=["experience", lens.id, _lang_tag(language)],
+        )
+    )
+
+    _ensure_seed_corpus(language)
+
+    exclude = set(request.exclude_ids) | {selected.id}
+    mode = request.mode.lower()
+    mode_to_method = {
+        "near": "semantic",
+        "far": "semantic-distance",
+        "time": "temporal",
+        "chance": "random",
+    }
+    method = mode_to_method.get(mode, "random")
+
+    # Build the language-scoped candidate pool (never mixes languages).
+    all_frags = fragment_store.get_all_fragments(limit=1000)
+    pool = [
+        f
+        for f in _language_pool(language, all_frags)
+        if f.id not in exclude
+    ]
+
+    sampled: Fragment | None = _select_from_pool(
+        mode, selected, pool
+    )
+
+    if sampled is None:
+        raise HTTPException(
+            status_code=409,
+            detail="Not enough fragments to sample from yet. Please try again.",
+        )
+
+    return ExperienceSampleResponse(
+        selected_fragment=selected,
+        sampled_fragment=sampled,
+        mode=mode,
+        method=method,
+    )
+
+
+@app.post("/experience/fluke", response_model=FlukeResult)
+async def experience_fluke(request: ExperienceFlukeRequest):
+    """Generate a fluke connection between two specific fragments."""
+    frag_a = request.original_fragment
+    frag_b = request.sampled_fragment
+
+    # Ensure the original fragment exists in the store so distance is meaningful.
+    if not frag_a.id or not fragment_store.get_fragment(frag_a.id):
+        frag_a = fragment_store.add_fragment(
+            FragmentCreate(
+                text=frag_a.text,
+                source="experience",
+                tags=["experience", _lang_tag(request.language)],
+            )
+        )
+
+    query = request.query or frag_a.text
+    scores = compute_fluke_score(fragment_store, frag_a, frag_b, query)
+    tension, reflection_prompt = await generate_tension_and_prompt(
+        frag_a, frag_b, query, request.language
+    )
+
+    # Record the connection in the network (best-effort).
+    try:
+        edge_store.create_fluke_edge(frag_a.id, frag_b.id, scores["distance"])
+        if scores["domain_crossing"] > 0:
+            edge_store.create_domain_crossing_edge(
+                frag_a.id, frag_b.id, scores["domain_crossing"]
+            )
+    except Exception:
+        pass
+
+    return FlukeResult(
+        fragment_a=frag_a,
+        fragment_b=frag_b,
+        distance=scores["distance"],
+        core_resonance=scores["core_resonance"],
+        tension_score=scores["tension_score"],
+        context_fit=scores["context_fit"],
+        domain_crossing=scores["domain_crossing"],
+        fluke_score=scores["fluke_score"],
+        tension=tension,
+        reflection_prompt=reflection_prompt,
+        generation_method="experience",
+    )
+
+
+@app.post("/experience/meaning", response_model=ExperienceMeaningResponse)
+async def experience_meaning(request: ExperienceMeaningRequest):
+    """Generate a concise emergent meaning that builds on the user's reflection."""
+    lens = get_lens(request.lens)
+    meaning = await generate_meaning(
+        source_text=request.source_text,
+        original_text=request.original_fragment.text,
+        sampled_text=request.sampled_fragment.text,
+        tension=request.fluke.tension,
+        reflection=request.reflection,
+        language=request.language,
+        lens_id=lens.id,
+    )
+    return ExperienceMeaningResponse(meaning=meaning)
+
+
+@app.post("/experience/export", response_class=PlainTextResponse)
+async def experience_export(request: ExperienceExportRequest):
+    """Export a single Meaning Card as a clean Living Book markdown entry."""
+    created = request.created_at or datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    title = request.title or "Kosuke Protocol - Meaning Card"
+
+    lines: list[str] = []
+    lines.append(f"# {title}")
+    lines.append("")
+    lines.append(f"*{created}*")
+    if request.sampling_mode:
+        lines.append(f"*Sampling mode: {request.sampling_mode}*")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Source")
+    lines.append("")
+    lines.append(f"> {request.source_text}")
+    lines.append("")
+    lines.append("## Connection")
+    lines.append("")
+    lines.append(f"- **Fragment:** {request.original_fragment_text}")
+    lines.append(f"- **Sampled:** {request.sampled_fragment_text}")
+    lines.append("")
+    if request.tension:
+        lines.append("## Tension")
+        lines.append("")
+        lines.append(request.tension)
+        lines.append("")
+    if request.reflection_question:
+        lines.append("## Question")
+        lines.append("")
+        lines.append(f"*{request.reflection_question}*")
+        lines.append("")
+    if request.reflection:
+        lines.append("## Reflection")
+        lines.append("")
+        lines.append(request.reflection)
+        lines.append("")
+    if request.meaning:
+        lines.append("## Meaning")
+        lines.append("")
+        lines.append(f"**{request.meaning}**")
+        lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("*Kosuke Protocol - Protocol Experience*")
+
+    return "\n".join(lines)
+
+
+# --- Parallel Life endpoints ---
+#
+# Parallel Life is the first primary public experience of Kosuke Protocol. It
+# reuses the same LLM + heuristic fallback pattern as the rest of the
+# experience, but is a self-contained structured-generation flow: it does not
+# read from or write to the fragment ecosystem (FragmentStore / ChromaDB), and
+# it does not use the six-stage Fragment/Sample/Fluke/Reflection/Meaning loop.
+
+
+@app.get("/experience/parallel-life/lens", response_model=ParallelLifeLensConfig)
+async def parallel_life_lens():
+    """Return the typed Parallel Life lens configuration for the frontend."""
+    return get_parallel_life_lens_config()
+
+
+@app.post("/experience/parallel-life/clarify", response_model=ParallelLifeClarifyResponse)
+async def parallel_life_clarify(request: ParallelLifeClarifyRequest):
+    """Return 0-4 optional clarification questions for a written life branch."""
+    if not request.source_text.strip():
+        raise HTTPException(status_code=400, detail="Please write the branch first.")
+    questions = await generate_clarification_questions(request.source_text, request.language)
+    return ParallelLifeClarifyResponse(questions=questions, language=request.language)
+
+
+@app.post("/experience/parallel-life", response_model=ParallelLifeResult)
+async def parallel_life_generate(request: ParallelLifeRequest):
+    """Generate a structured Parallel Life reading from a written life branch.
+
+    Standard depth: LLM with heuristic fallback.
+    Editorial / legacy deep: LLM-required book-style essay (no heuristic fallback).
+    """
+    from app.parallel_life_editorial_essay import (
+        EditorialGenerationError,
+        EditorialLLMRequiredError,
+    )
+
+    if not request.source_text.strip():
+        raise HTTPException(status_code=400, detail="Please write the branch first.")
+    try:
+        return await generate_parallel_life(request)
+    except EditorialLLMRequiredError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except EditorialGenerationError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except Exception:
+        raise HTTPException(
+            status_code=500,
+            detail="The reading could not be completed. Your input has been preserved. Please try again.",
+        )
+
+
+@app.post("/experience/parallel-life/export", response_class=PlainTextResponse)
+async def parallel_life_export(request: ParallelLifeExportRequest):
+    """Export a Parallel Life reading as clean, publishable Markdown."""
+    return export_parallel_life_markdown(request.result, request.created_at)
+
+
+@app.post(
+    "/experience/parallel-life/editorial/clarify",
+    response_model=ParallelLifeClarifyResponse,
+)
+async def parallel_life_editorial_clarify(request: ParallelLifeEditorialClarifyRequest):
+    """Return up to 5 optional Editorial Edition preparation questions."""
+    if not request.source_text.strip():
+        raise HTTPException(status_code=400, detail="Please write the branch first.")
+    questions = generate_editorial_clarification_questions(
+        request.source_text,
+        request.language,
+        request.clarifications,
+        request.answered_editorial_ids,
+    )
+    return ParallelLifeClarifyResponse(questions=questions, language=request.language)
+
+
+@app.post(
+    "/experience/parallel-life/editorial",
+    response_model=ParallelLifeEditorialResponse,
+)
+async def parallel_life_editorial_generate(request: ParallelLifeEditorialRequest):
+    """Generate the Editorial Edition (depth=editorial) from a life branch.
+
+    LLM-required book-style single essay. No heuristic fallback — on failure
+    the session is preserved and the client may retry.
+    """
+    from app.parallel_life_editorial_essay import (
+        EditorialGenerationError,
+        EditorialLLMRequiredError,
+    )
+
+    if not request.source_text.strip():
+        raise HTTPException(status_code=400, detail="Please write the branch first.")
+    try:
+        return await generate_editorial_parallel_life(request)
+    except EditorialLLMRequiredError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except EditorialGenerationError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except Exception:
+        raise HTTPException(
+            status_code=500,
+            detail="編集版を生成できませんでした。入力は保存されています。もう一度お試しください。",
+        )
+
+
+# --- Deep Reading Production Candidate v1.0 (Call 1 / 2 / 3) ---
+# Separate from Standard and legacy Editorial Edition. No heuristic long-form
+# fallback. Session state is server-side; do not rely on localStorage alone.
+
+
+@app.get("/experience/parallel-life/deep-reading/enabled")
+async def deep_reading_enabled_endpoint():
+    """Kill-switch probe for frontend CTA visibility (+ v1.1 Context Pack flag)."""
+    from app.parallel_life_deep_reading.context_pack import context_pack_feature_enabled
+
+    return {
+        "enabled": deep_reading_enabled(),
+        "context_pack_enabled": bool(
+            deep_reading_enabled() and context_pack_feature_enabled()
+        ),
+    }
+
+
+@app.post("/experience/parallel-life/deep-reading/context-pack/seed")
+async def deep_reading_context_pack_seed(request: dict):
+    """Deterministic extractive Context Pack draft (v1.1-exp). Never invents biography."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.context_pack import (
+        context_pack_feature_enabled,
+        seed_context_pack_from_text,
+    )
+
+    if not context_pack_feature_enabled():
+        raise HTTPException(status_code=404, detail="context_pack_disabled")
+    text = str(request.get("text") or "").strip()
+    language = str(request.get("language") or "ja")
+    source = str(request.get("source") or "session_seeded_draft")
+    if source not in {"session_seeded_draft", "imported_paste"}:
+        source = "session_seeded_draft"
+    pack = seed_context_pack_from_text(text, language=language, source=source)  # type: ignore[arg-type]
+    return {"context_pack": pack.model_dump(mode="json")}
+
+
+@app.post("/experience/parallel-life/deep-reading/ground")
+async def deep_reading_ground(request: dict):
+    """Call 1: grounding and editorial design → user confirmation."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.llm import (
+        DeepReadingGenerationError,
+        DeepReadingLLMRequiredError,
+    )
+    from app.parallel_life_deep_reading.models import DeepReadingGroundRequest
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    payload = DeepReadingGroundRequest.model_validate(request)
+    if not payload.source_text.strip():
+        raise HTTPException(status_code=400, detail="Please write the branch first.")
+    try:
+        return get_deep_reading_service().ground(payload)
+    except DeepReadingLLMRequiredError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except DeepReadingGenerationError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/experience/parallel-life/deep-reading/confirm")
+async def deep_reading_confirm(request: dict):
+    """User confirmation / edit / answer / abort for grounded_input."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.llm import DeepReadingGenerationError
+    from app.parallel_life_deep_reading.models import DeepReadingConfirmRequest
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    payload = DeepReadingConfirmRequest.model_validate(request)
+    try:
+        return get_deep_reading_service().confirm(payload)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Deep Reading session not found.")
+    except DeepReadingGenerationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.post("/experience/parallel-life/deep-reading/draft")
+async def deep_reading_draft(request: dict):
+    """Call 2: single-manuscript draft (requires confirmed grounded_input)."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.llm import (
+        DeepReadingGenerationError,
+        DeepReadingLLMRequiredError,
+    )
+    from app.parallel_life_deep_reading.models import DeepReadingDraftRequest
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    payload = DeepReadingDraftRequest.model_validate(request)
+    try:
+        return get_deep_reading_service().draft(
+            payload.session_id,
+            idempotency_key=payload.idempotency_key,
+        )
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Deep Reading session not found.")
+    except DeepReadingLLMRequiredError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except DeepReadingGenerationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.post("/experience/parallel-life/deep-reading/edit-validate")
+async def deep_reading_edit_validate(request: dict):
+    """Call 3: whole-document edit and runtime validation gate."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.llm import (
+        DeepReadingGenerationError,
+        DeepReadingLLMRequiredError,
+    )
+    from app.parallel_life_deep_reading.models import DeepReadingEditValidateRequest
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    payload = DeepReadingEditValidateRequest.model_validate(request)
+    try:
+        return get_deep_reading_service().edit_validate(
+            payload.session_id,
+            idempotency_key=payload.idempotency_key,
+        )
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Deep Reading session not found.")
+    except DeepReadingLLMRequiredError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except DeepReadingGenerationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.get("/experience/parallel-life/deep-reading/session/{session_id}")
+async def deep_reading_session(session_id: str):
+    """Fetch Deep Reading session state (server-side)."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    try:
+        return get_deep_reading_service().get_session(session_id)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Deep Reading session not found.")
+
+
+@app.post("/experience/parallel-life/deep-reading/regenerate")
+async def deep_reading_regenerate(request: dict):
+    """Retry from ground / draft / edit-validate without heuristic fallback."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.llm import (
+        DeepReadingGenerationError,
+        DeepReadingLLMRequiredError,
+    )
+    from app.parallel_life_deep_reading.models import DeepReadingRegenerateRequest
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    payload = DeepReadingRegenerateRequest.model_validate(request)
+    try:
+        return get_deep_reading_service().regenerate(
+            payload.session_id, from_stage=payload.from_stage
+        )
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Deep Reading session not found.")
+    except DeepReadingLLMRequiredError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except DeepReadingGenerationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.post("/experience/parallel-life/deep-reading/export", response_class=PlainTextResponse)
+async def deep_reading_export(request: dict):
+    """Export completed Deep Reading manuscript as Markdown."""
+    _require_deep_reading_enabled()
+    from app.parallel_life_deep_reading.llm import DeepReadingGenerationError
+    from app.parallel_life_deep_reading.models import DeepReadingExportRequest
+    from app.parallel_life_deep_reading.service import get_deep_reading_service
+
+    payload = DeepReadingExportRequest.model_validate(request)
+    try:
+        return get_deep_reading_service().export(
+            payload.session_id,
+            include_diagnostics=payload.include_diagnostics,
+        )
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Deep Reading session not found.")
+    except DeepReadingGenerationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 # --- Network endpoints ---

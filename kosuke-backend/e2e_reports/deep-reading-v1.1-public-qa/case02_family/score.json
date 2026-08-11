@@ -1,0 +1,88 @@
+{
+  "case_id": "case02_family",
+  "category": "family / fertility",
+  "title": "Family / fertility — second child question",
+  "pipeline_ok": false,
+  "elapsed_s": 53.26,
+  "session_id": "659adf8c-6d5b-40cf-a9c3-aef08f7df371",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.7-exp",
+  "factual_fidelity": 7,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": true,
+  "protected_realization": true,
+  "residue_realization": false,
+  "rebranch_realization": true,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_public_label_missing:residue:今に残った構造",
+    "required_section_unrealized:observatory",
+    "thesis_closure_missing:residue_unresolved_question"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 2,
+  "confirmation_issues": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "三人で暮らす選択と、残り続ける問い",
+  "body_excerpt": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。家族の人数をめぐるこの分かれ目には、ひとつの場所で自分の歩みを確かめていく感覚と、場所が変わっても仕事を持ち運んでいく感覚も重なっている。\n\n## 選んだ道\n\n妻と息子との三人で暮らす人生を続けることを選んだ。二人目を目指して治療を続ける可能性は手放し、所属が変わるたびに仕事を自分の言葉で引き受け直す日々を生きてきた。いまの暮らしには、答えの出ない問いも含まれている。\n\n## 選ばなかった人生\n\n二人目を目指して治療を続けることは、起こらなかった未来として、詳しい輪郭を与えずに残しておける。そこに別の幸福や後悔の場面を補う必要はない。選ばなかった可能性が閉じ切らないことが、現在の三人の暮らしを単純な結論にはしない。\n\n## 失ったもの\n\n離れたのは、安定を並べた一覧ではない。ひとつの組織で長く過ごし、役割や評価を手がかりに、自分がどこまで来たかを確かめ続ける連続性だった。その連続性に代わる、ひとつに定まった測り方はない。\n\n## 守られたもの\n\n一方で、ひとつの所属だけに人生のものさしを預け切ら",
+  "abstract_vocab": {
+    "蓄積": 1,
+    "構造": 0,
+    "尺度": 0,
+    "制度": 1,
+    "分岐": 2,
+    "選択": 1
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_public_label_missing:residue:今に残った構造",
+        "required_section_unrealized:observatory",
+        "thesis_closure_missing:residue_unresolved_question"
+      ],
+      "final_title": "三人で暮らす選択と、残り続ける問い",
+      "final_subtitle": ""
+    }
+  }
+}

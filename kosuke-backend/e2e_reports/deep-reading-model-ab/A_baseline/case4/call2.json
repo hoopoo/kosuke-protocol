@@ -1,0 +1,68 @@
+{
+  "body_markdown": "会社員として複数の業界で働いてきた。これまでの経験は、さまざまな職場での学びをもたらし、現在の生活に影響を与えている。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。このような活動は、過去の職業経験と結びついており、日々の仕事の中で新たな視点を得る機会を与えている。一方で、選ばなかった道として、創作を中心にした人生があったことを思い返すことがある。もしその道を選んでいたなら、現在の生活は異なっていたのではないかと考えることがある。過去の分岐の後、現在の生活構造が続いており、そのあいだにはまだ接続しきれていないものが残っているように感じる。これらの経験や思考は、今後の選択にも影響を与えるかもしれない。\n",
+  "title_candidates": [
+    "過去の選択と現在の生活",
+    "選ばなかった道を振り返る",
+    "経験の積み重ねと未来への影響"
+  ],
+  "subtitle_candidates": [
+    "会社員としての経験と創作の選択"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "職業経験と現在の活動",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "会社員として複数の業界で働いてきた。これまでの経験は、さまざまな職場での学びをもたらし、現在の生活に影響を与えている。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。このような活動は、過去の職業経験と結びついており"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [
+      {
+        "excerpt": "これまでの経験は、さまざまな職場での学びをもたらし、現在の生活に影響を与えている。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "これらの経験や思考は、今後の選択にも影響を与えるかもしれない。",
+        "causality_strength": 2,
+        "missing_support": "qualified_causal_wording_absent",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [
+      {
+        "excerpt": "一方で、選ばなかった道として、創作を中心にした人生があったことを思い返すことがある。",
+        "leakage_type": "unchosen_as",
+        "missing_support": "schema_verbalization",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 316
+}

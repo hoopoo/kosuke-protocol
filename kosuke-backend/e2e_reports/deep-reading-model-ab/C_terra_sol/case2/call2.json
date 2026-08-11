@@ -1,0 +1,74 @@
+{
+  "body_markdown": "## 三人で暮らすまで\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める可能性もあったなかで、妻と息子との三人暮らしがある。\n\n## 家にいる友人たちと、残る問い\n\n息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。いま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。\n\n45歳のときに子どもを授かったことと、息子やその友人たちのいる現在の家の時間は、同じ生活のなかに置かれている。そのあいだには、まだ接続しきれていないものが残っている。今も、ときに、二人目を持っていたらどうだったかと考えることがある。\n",
+  "title_candidates": [
+    "三人の暮らしと、残る問い",
+    "家に遊びに来る友人たち",
+    "二人目をめぐる現在形"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経て息子を授かり、三人で暮らす日々のなかで考えること"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "三人で暮らすまで",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section2",
+      "public_heading": "家にいる友人たちと、残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "確認済みの材料には、具体名詞を伴う新たな再分岐の方向がない。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める可能性もあったなかで、妻と息子との三人暮らしがある。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact4",
+        "feeling1"
+      ],
+      "contains_inference": false,
+      "text_preview": "息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。いま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "feeling1",
+        "question1"
+      ],
+      "contains_inference": true,
+      "text_preview": "45歳のときに子どもを授かったことと、息子やその友人たちのいる現在の家の時間は、同じ生活のなかに置かれている。そのあいだには、まだ接続しきれていないものが残っている。今も、ときに、二人目を持っていたらどうだったかと考えることがある。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 285
+}

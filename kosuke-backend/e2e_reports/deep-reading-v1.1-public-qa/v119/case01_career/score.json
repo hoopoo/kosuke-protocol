@@ -1,0 +1,197 @@
+{
+  "case_id": "case01_career",
+  "category": "career",
+  "title": "Career — NTT vs foreign firm",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 47.99,
+  "session_id": "0e3e3860-d202-4dde-888f-456103b6390f",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.9-exp",
+  "branch_semantics": {
+    "domain": "career",
+    "changed_dimension": "制度的な所属／移動の仕方",
+    "chosen_structure": "外資系企業へ移ること",
+    "unchosen_structure": "NTTに残る",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「あのとき残っていたらどうなっていたか？」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "career:branch_employment",
+        "career:background_employment_context",
+        "background_employment_context:pack"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "YES",
+  "resume_density": 1.5,
+  "cva": 8.7,
+  "personal_focus": 8,
+  "social_depth": 5,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": true,
+    "residue": true,
+    "observatory": true,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "education-employment",
+      "after-success",
+      "clean-society"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_ee_001",
+      "obs_cs_001",
+      "obs_as_001",
+      "obs_ee_002"
+    ],
+    "structures": [
+      "employment_regime_boundary",
+      "normative_standard_path",
+      "post_achievement_question"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "残らなかった場所の物差し",
+  "body_excerpt": "## 分岐点\n28歳のとき、NTTに残るか、外資へ移るかという分かれ目があった。それは勤務先を替える一点の出来事というより、一つの組織の時間のなかで歩むのか、組織のあいだを移っていくのかという、所属の仕方そのものが分かれた境界だった。\n\n## 選んだ道\n選んだのは外資系企業へ移ることだった。振り返れば、NTTに残る道から、所属が変わるたびに自分の仕事を定義し直す道へ移ったことになる。その移り方は、現在も残る「あのとき残っていたら」という思いの起点として、いまの生活にもつながっている。\n\n## 選ばなかった人生\n選ばなかった側には、NTTに残る人生がある。ただし、その先に何があったかを具体的に描く必要はない。実現しなかったからこそ、同じ場所にとどまっていた可能性は、結末を与えられないまま残っている。\n\n## 失ったもの\n残らなかったことで閉じたのは、同じ制度の時間のなかで、自分がどこまで進んでいるかを確かめ続ける道だった。外へ移った後の歩みを否定することではなく、同じ基準に沿って長く自分の位置を見続ける連続が、もはや自分のものではなくなったということである。\n\n## 守られたもの\nその代",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 1,
+    "制度": 3,
+    "分岐": 2,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "career",
+    "authority": "career_allowed"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.9-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "career",
+        "changed_dimension": "制度的な所属／移動の仕方",
+        "chosen_structure": "外資系企業へ移ること",
+        "unchosen_structure": "NTTに残る",
+        "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+        "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+        "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+        "present_residue": "「あのとき残っていたらどうなっていたか？」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_career_history_003",
+          "pack_current_work_004",
+          "pack_current_projects_005",
+          "fact_005"
+        ],
+        "confidence": 0.95,
+        "diagnostics": {
+          "domain_reasons": [
+            "career:branch_employment",
+            "career:background_employment_context",
+            "background_employment_context:pack"
+          ],
+          "branch_employment_evidence": true,
+          "background_employment_context": true,
+          "explicit_employment_evidence": true,
+          "allows_career_product_logic": true,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "status": "ready_for_user_confirmation",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "選ばなかった道は、別の大学へ進学することだった。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道は、別の大学へ進学することだった。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": []
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "19歳のとき",
+      "triggering_event": "第一志望の早稲田大学第一文学部に合格した",
+      "available_paths": [
+        "早稲田大学第一文学部に進学する"
+      ],
+      "realized_path": "早稲田大学第一文学部に進学する",
+      "unrealized_paths": [
+        "別の大学へ進学する"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "present_question_ids": [
+      "fact4"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "personal_experience",
+    "statement": "選ばなかった道について考えることがある。",
+    "pole_a": "早稲田大学第一文学部に進学した",
+    "pole_b": "別の大学へ進学した",
+    "supported_by": [
+      "fact1",
+      "fact2",
+      "fact4"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": [
+      {
+        "residue_statement": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」という過去の分岐のあとで、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」という過去の分岐のあとで、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact3"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ]
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": false,
+    "questions": []
+  },
+  "user_confirmation_view": {
+    "branch_period": "19歳のとき",
+    "triggering_event": "第一志望の早稲田大学第一文学部に合格した",
+    "chosen_path": "早稲田大学第一文学部に進学する",
+    "unchosen_path": "別の大学へ進学する",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      "別の大学なら仕事や人間関係がどう変わったかと考えることがある。"
+    ],
+    "present_questions": [
+      "別の大学なら仕事や人間関係がどう変わったかと考えることがある。"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "選ばなかった道について考えることがある。",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": []
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.2",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

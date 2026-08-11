@@ -1,0 +1,404 @@
+# Deep Reading v1.1.3-exp — Section Contracts Live NTT (STAGING)
+
+Generated: `2026-08-08T05:19:18.986471+00:00`  
+Staging: `https://parallel-life-api-staging.shiroandco-office.workers.dev`  
+Production: **untouched**
+
+## Verdict
+
+```
+SECTION CONTRACTS PROMISING — NEEDS REVISION
+```
+
+Pipeline ok: `True` · elapsed_s: `54.82`  
+Publishable: `True`  
+Blocking: `[]`
+
+---
+
+## 1. SectionContracts generated
+
+```json
+[
+  {
+    "section_id": "branch_point",
+    "structural_purpose": "establish the fork",
+    "required_meaning": "NTTに残るか、外資へ移るかを選ぶ分岐があった",
+    "supporting_evidence_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002"
+    ],
+    "prohibited_claims": [
+      "employer_chronology_as_spine"
+    ],
+    "concrete_example_budget": 1,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  },
+  {
+    "section_id": "chosen_path",
+    "structural_purpose": "state the realized path without résumé tour",
+    "required_meaning": "外資系企業へ移ること",
+    "supporting_evidence_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002"
+    ],
+    "prohibited_claims": [
+      "industry_tour",
+      "project_list"
+    ],
+    "concrete_example_budget": 2,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  },
+  {
+    "section_id": "unchosen_life",
+    "structural_purpose": "keep unrealized path open without invention",
+    "required_meaning": "NTTを離れ、一企業の内部で役割を積み上げ続けること",
+    "supporting_evidence_ids": [
+      "pack_career_history_001"
+    ],
+    "prohibited_claims": [
+      "invented_rank_salary_scene"
+    ],
+    "concrete_example_budget": 1,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  },
+  {
+    "section_id": "lost",
+    "structural_purpose": "structural continuity left behind",
+    "required_meaning": "NTTに残る選択をした場合のキャリア",
+    "supporting_evidence_ids": [
+      "pack_career_history_001"
+    ],
+    "prohibited_claims": [
+      "salary_inventory",
+      "title_inventory",
+      "pension_inventory",
+      "colleague_network_list"
+    ],
+    "concrete_example_budget": 1,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  },
+  {
+    "section_id": "protected",
+    "structural_purpose": "structural possibility preserved",
+    "required_meaning": "外資系企業へ転職したこと",
+    "supporting_evidence_ids": [
+      "pack_career_history_002"
+    ],
+    "prohibited_claims": [
+      "success_moral",
+      "freedom_claim",
+      "superiority_claim"
+    ],
+    "concrete_example_budget": 1,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  },
+  {
+    "section_id": "residue",
+    "structural_purpose": "return to present through structural tension",
+    "required_meaning": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+    "supporting_evidence_ids": [
+      "pack_career_history_003",
+      "pack_current_work_004"
+    ],
+    "prohibited_claims": [
+      "unsupported_causality",
+      "psychological_fact_claim"
+    ],
+    "concrete_example_budget": 2,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  },
+  {
+    "section_id": "observatory",
+    "structural_purpose": "social parallel without lens-name advertising",
+    "required_meaning": "個人の会社選択であると同時に、一社内で地位を蓄積するキャリアと、企業間を移動しながら専門性を持ち運ぶキャリアの境界として読むことができる",
+    "supporting_evidence_ids": [],
+    "prohibited_claims": [
+      "lens_name_advertising",
+      "sociology_takeover"
+    ],
+    "concrete_example_budget": 0,
+    "must_be_present": false,
+    "omission_allowed": true,
+    "omission_reason": "woven_into_thesis"
+  },
+  {
+    "section_id": "re_branch",
+    "structural_purpose": "future measure of accumulation from thesis/residue",
+    "required_meaning": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+    "supporting_evidence_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002"
+    ],
+    "prohibited_claims": [
+      "shiro_growth_promo",
+      "protocol_expansion_promo",
+      "app_launch_promo"
+    ],
+    "concrete_example_budget": 1,
+    "must_be_present": true,
+    "omission_allowed": false,
+    "omission_reason": ""
+  }
+]
+```
+
+---
+
+## 2–5. Lost / Protected / Residue / Re-branch
+
+### Lost
+```json
+{
+  "items": [
+    {
+      "content": "NTTに残る選択をした場合のキャリア",
+      "loss_type": "選択の結果",
+      "support_ids": [
+        "pack_career_history_001"
+      ],
+      "certainty": "不確実",
+      "allowed_wording_strength": "中程度"
+    }
+  ]
+}
+```
+
+### Protected
+```json
+{
+  "items": [
+    {
+      "content": "外資系企業へ転職したこと",
+      "support_ids": [
+        "pack_career_history_002"
+      ],
+      "causality_status": "non_causal_parallel",
+      "allowed_statement_strength": "強い"
+    }
+  ]
+}
+```
+
+### Residue
+```json
+{
+  "items": [
+    {
+      "residue_statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+      "content": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "present_anchor_ids": [
+        "pack_current_work_004"
+      ],
+      "support_ids": [
+        "pack_career_history_003",
+        "pack_current_work_004"
+      ],
+      "inference_distance": "near",
+      "present_life_domain": "present_life",
+      "overreach_risk": "low_structural_only",
+      "advances_manuscript": true
+    }
+  ]
+}
+```
+
+### Re-branch evaluation
+```json
+{
+  "directions": [
+    {
+      "id": "rebranch_measure_001",
+      "source_meaning": "選択の結果としての現在の自分と、選ばなかった道への思いが交錯している",
+      "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+      "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+      "support_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002"
+      ],
+      "genericity_score": 1,
+      "invented_scene_used": false,
+      "risks": [
+        "must_not_become_product_promo"
+      ],
+      "publishable": true,
+      "selected_for_manuscript": false
+    }
+  ]
+}
+```
+
+---
+
+## 6–7. Call2 payload size / duplicate biography
+
+```json
+{
+  "writing_pack_chars": 7639,
+  "full_call1_chars": 20632,
+  "reduction_ratio": 0.63,
+  "evidence_fact_count": 9,
+  "duplicate_full_call1_in_writing_pack": false
+}
+```
+
+Duplicate full `confirmed_call1` in writing pack: **False**  
+Call2 prompt: `parallel-life-call-2-v1.1.3-exp`
+
+---
+
+## 8–9. Call2 / Call3 manuscript
+
+**Title:** 残らなかった道が、いまも問うこと  
+**Subtitle:** (omitted)
+
+### Body
+
+## 分岐点
+
+<p id="p01">28歳のとき、NTTに残るか、外資系企業へ移るかという分岐があった。それは勤務先を替える一点の判断であると同時に、一つの企業の内部で役割を積み上げる道と、企業の間を移りながら仕事を持ち運ぶ道との境界として読むことができる。当時「残る」ことが標準の進路として見えやすかったとしても、その規範が選択を決めたとは断言しない。ただ、選べる道の輪郭には、そのような社会的な背景も重なっていた。</p>
+
+## 選んだ道
+
+<p id="p02">選ばれたのは、NTTを離れ、外資系半導体企業へ転職する道だった。この移動は、一社の内部で続く役割の連なりから離れ、企業間の移動を含むキャリアへ足を踏み出す選択として位置づけられる。選択の意味は転職そのものに尽きるのではなく、以後の仕事をどこに蓄積させていくかという問いを、別の形で引き受けた点にある。</p>
+
+## 選ばなかった人生
+
+<p id="p03">残らなかった側には、NTTで一企業の内部に役割を積み上げ続ける人生がある。そこで何になったか、どのような日々を送ったかは与えられていないため、具体的な姿を補うことはできない。それでも、外へ移る選択の向こうに、内部での継続という可能性が閉じずに残っている。</p>
+
+## 失ったもの
+
+<p id="p04">離れたことで失ったのは、NTTに残る選択をした場合に続いたはずのキャリアの連続性である。それは肩書きや待遇の一覧ではなく、同じ組織の時間のなかで役割を更新し、蓄積の手応えを確かめていくための構造だったと読むことができる。だから「あのとき残っていたらどうなっていたのだろう」という問いは、過去の比較である以上に、続かなかった時間への問いでもある。</p>
+
+## 守られたもの
+
+<p id="p05">外資系企業へ転職したことで守られたのは、組織の外へ出て仕事を組み立て直す可能性である。これを成功や優位さの証拠として扱う必要はない。残る道を一つの標準に固定せず、別の場所で経験を重ねうる余地を手放さなかった、という分岐の意味として読むことができる。</p>
+
+## 今に残った構造
+
+<p id="p06">その後、複数業界・企業を経験したという事実と、現在は自分の会社を経営しているという生活は、並べて読むことができる。何かを形にし、現在の立場を得たあとにも、残らなかった道への問いは必ずしも閉じない。達成や評価の有無とは別に、長い時間をどこで、何として蓄積してきたのかを問い直す余白が残る。</p>
+
+## これからの再分岐
+
+<p id="p07">これからの再分岐は、NTTの場で得られた「内部で積み上げる」という基準と、外資系企業へ移った選択が開いた「外で組み替える」という基準のあいだで、今後の蓄積を何で測るかを自分で選ぶことにある。過去のどちらかを正解にするのではなく、現在の経営という場所から、何を残った仕事と見なすかを定め直す問いとして置くことができる。</p>
+
+
+---
+
+## 10–13. Scores / realization
+
+| Metric | Value | Target | Met |
+|--------|-------|--------|-----|
+| fidelity | 10 | 10 | True |
+| CVA | 9 | ≥9 | True |
+| social | 9 | ≥8 | True |
+| personal | 9 | ≥9 | True |
+| depth | 7 | ≥9 | False |
+| naturalness | 6 | ≥8 | False |
+| resume_density | 4.0 | ≤3 | False |
+| relation_density | 8.0 | ≥7 | True |
+| Lost | True | present | True |
+| Protected | True | present | True |
+| Residue | True | strong | True |
+| life_read | mixed | YES | False |
+
+required_section_realization_ok: `True`
+
+```json
+{
+  "branch_point": {
+    "ok": true,
+    "token_hits": 2
+  },
+  "chosen_path": {
+    "ok": true,
+    "token_hits": 1
+  },
+  "unchosen_life": {
+    "ok": true,
+    "token_hits": 3
+  },
+  "lost": {
+    "ok": true,
+    "token_hits": 2
+  },
+  "protected": {
+    "ok": true,
+    "token_hits": 2
+  },
+  "residue": {
+    "ok": true,
+    "token_hits": 8
+  },
+  "re_branch": {
+    "ok": true,
+    "token_hits": 2
+  }
+}
+```
+
+---
+
+## 14. Final title
+
+残らなかった道が、いまも問うこと
+
+---
+
+## 15. Comparison with v1.1.2 live
+
+| Metric | v1.1.2 | v1.1.3 |
+|--------|--------|--------|
+| resume_density | 8.0 | 4.0 |
+| naturalness | 5 | 6 |
+| depth | 7 | 7 |
+| life_read | mixed | mixed |
+| title | 残ることと移ることのあいだ | 残らなかった道が、いまも問うこと |
+
+---
+
+## 16. Production untouched
+
+| Check | Result |
+|-------|--------|
+| Prod pack flag | `None` |
+| Prod Call1 | `parallel-life-call-1-v1.0.3` |
+| Title validation loosened? | **No** |
+| Publication blockers loosened? | **No** |
+| Observatory-Core selection modified? | **No** |
+
+---
+
+## 17. Recommendation
+
+```
+SECTION CONTRACTS PROMISING — NEEDS REVISION
+```
+
+### Stop rule (first live result — no auto-tune)
+
+Triggered because **naturalness &lt; 8** (scored 6).  
+Did **not** trigger: Lost/Protected/Residue empty, resume_density &gt; 5 (was 4.0), unsupported causality, required_section_realization failure.
+
+### Remaining revision focus (do not auto-tune here)
+
+1. Call 1 Lost/Protected `required_meaning` is still near-fact thin; manuscript prose is stronger than the contract text.
+2. `resume_density` 4 → target ≤3 (`employer_enumeration` remains).
+3. Depth/naturalness/life_read still short of success targets.
+
+Artifacts: `e2e_reports/deep-reading-v1.1-context-pack/section_contracts_live_ntt/`

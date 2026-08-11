@@ -1,0 +1,292 @@
+{
+  "case_id": "case04_romance",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.9-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "romance",
+        "changed_dimension": "関係の継続／別れ",
+        "chosen_structure": "別れること",
+        "unchosen_structure": "一緒にいること",
+        "central_tension": "「別れること」側の単独の連続と、「一緒にいること」側の関係の連続のあいだ",
+        "lost_verifiability": "「一緒にいること」として続いていた関係の生活を、いま知る手がかりが残らないこと",
+        "protected_possibility": "「別れること」を取った側に残った、一人の生活を閉じきらずに続ける余地",
+        "present_residue": "「別れたことが本当に正しかったのか？」がいまも残るのは、関係の続き方についての未解決の想像が残るからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "revisit",
+          "leave_unresolved",
+          "not_act"
+        ],
+        "sensitive_boundaries": [
+          "no_invented_affect",
+          "no_reunion_advice"
+        ],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_major_life_events_001",
+          "question_001"
+        ],
+        "confidence": 0.8666666666666667,
+        "diagnostics": {
+          "domain_reasons": [
+            "romance:relationship"
+          ],
+          "branch_employment_evidence": false,
+          "background_employment_context": false,
+          "explicit_employment_evidence": false,
+          "allows_career_product_logic": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_user_confirmation"
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_user_confirmation",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_user_confirmation",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": true,
+  "session_id": "282d23d2-99fc-465d-8c05-ac14d0e51ef6",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.9-exp",
+    "pack_fact_ids": [
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "今は一人で普通に暮らしている",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T085035Z_8591",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T085035Z_8591",
+      "pack_fact_ids": [
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「20代後半のとき、長く付き合っていた人と別れたという分岐があった。」を振り返る問いは、「今は一人で普通に暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "別れた選択が現在の一人暮らしに影響を与えている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "romanceの場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "fact_001",
+          "fact_002"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "romance",
+    "changed_dimension": "関係の継続／別れ",
+    "chosen_structure": "別れること",
+    "unchosen_structure": "一緒にいること",
+    "central_tension": "「別れること」側の単独の連続と、「一緒にいること」側の関係の連続のあいだ",
+    "lost_verifiability": "「一緒にいること」として続いていた関係の生活を、いま知る手がかりが残らないこと",
+    "protected_possibility": "「別れること」を取った側に残った、一人の生活を閉じきらずに続ける余地",
+    "present_residue": "「別れたことが本当に正しかったのか？」がいまも残るのは、関係の続き方についての未解決の想像が残るからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "revisit",
+      "leave_unresolved",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_invented_affect",
+      "no_reunion_advice"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_major_life_events_001",
+      "question_001"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "romance:relationship"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.9-exp",
+    "pack_fact_ids": [
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "今は一人で普通に暮らしている",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T085035Z_8591",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T085035Z_8591",
+      "pack_fact_ids": [
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「20代後半のとき、長く付き合っていた人と別れたという分岐があった。」を振り返る問いは、「今は一人で普通に暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "別れた選択が現在の一人暮らしに影響を与えている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "romanceの場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "fact_001",
+          "fact_002"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "romance",
+    "changed_dimension": "関係の継続／別れ",
+    "chosen_structure": "別れること",
+    "unchosen_structure": "一緒にいること",
+    "central_tension": "「別れること」側の単独の連続と、「一緒にいること」側の関係の連続のあいだ",
+    "lost_verifiability": "「一緒にいること」として続いていた関係の生活を、いま知る手がかりが残らないこと",
+    "protected_possibility": "「別れること」を取った側に残った、一人の生活を閉じきらずに続ける余地",
+    "present_residue": "「別れたことが本当に正しかったのか？」がいまも残るのは、関係の続き方についての未解決の想像が残るからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "revisit",
+      "leave_unresolved",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_invented_affect",
+      "no_reunion_advice"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_major_life_events_001",
+      "q_confirm_001"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "romance:relationship"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "elapsed_s": 21.41,
+  "qa_version": "v1.1.9-exp"
+}

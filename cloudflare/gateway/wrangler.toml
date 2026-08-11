@@ -1,0 +1,13 @@
+# Optional same-origin gateway: Pages / Worker routes /experience/* → Container.
+name = "parallel-life-gateway"
+main = "src/index.ts"
+compatibility_date = "2025-03-01"
+
+[env.staging]
+name = "parallel-life-gateway-staging"
+vars = { ENVIRONMENT = "staging" }
+# Configure route + UPSTREAM_API_URL secret/var to Container hostname.
+
+[env.production]
+name = "parallel-life-gateway"
+vars = { ENVIRONMENT = "production" }

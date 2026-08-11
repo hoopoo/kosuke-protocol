@@ -1,0 +1,92 @@
+{
+  "case_id": "case09_zero_lens",
+  "category": "zero-lens-appropriate",
+  "title": "Zero-lens-appropriate — quiet local stay",
+  "pipeline_ok": false,
+  "elapsed_s": 81.9,
+  "session_id": "3ddd3fa2-0dd0-4d96-961e-107d872a1156",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.7-exp",
+  "factual_fidelity": 7,
+  "naturalness": 8,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": false,
+  "protected_realization": false,
+  "residue_realization": true,
+  "rebranch_realization": true,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:chosen_path",
+    "required_section_unrealized:lost",
+    "required_section_unrealized:protected",
+    "required_public_label_missing:observatory:社会との接続",
+    "thesis_closure_missing:chosen_path_structural_shift"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 2,
+  "confirmation_issues": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "22歳の分岐と、いまの日常",
+  "body_excerpt": "## 分岐点\n\n22歳のとき、地元に残るか、都会へ出るかを考えた。選んだのは地元に残る道で、都会へ出る道は選ばなかった。\n\nこの分岐について、当時の事情や二つの道の優劣を示す材料はない。ただ、二つの方向を前にしていたことは、現在を振り返る際の起点として残っている。\n\n## 選んだ道\n\n現在は地元で事務の仕事をし、近所の人と暮らしている。\n\n22歳のときに地元に残る道を選んだことと、この現在の生活を直接結びつける材料はない。それでも、過去の分岐といまの日常を並べることはできる。\n\n## 選ばなかった人生\n\n選ばなかったのは、都会へ出る道だった。\n\nその先の仕事や暮らしがどのようなものだったかは分からない。成功や失敗、出会いや変化を補って語るのではなく、「都会へ出る」という可能性を、具体化しないまま置いておく。\n\n## 失ったもの\n\n都会へ出なかったことで何を失ったかは、決められない。地元に残ることと都会へ出ることのどちらに、よりよい仕事や暮らしがあったかも、この記録からは言えない。\n\n失われたものを一覧にする代わりに、選ばなかった道があったという事実を残す。そこには、現在とは異なる日常の",
+  "abstract_vocab": {
+    "蓄積": 1,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 1,
+    "分岐": 6,
+    "選択": 1
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:chosen_path",
+        "required_section_unrealized:lost",
+        "required_section_unrealized:protected",
+        "required_public_label_missing:observatory:社会との接続",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ],
+      "final_title": "22歳の分岐と、いまの日常",
+      "final_subtitle": ""
+    }
+  }
+}

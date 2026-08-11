@@ -1,0 +1,158 @@
+{
+  "case_id": "case02_family",
+  "category": "family / fertility",
+  "title": "Family / fertility — second child question",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 58.01,
+  "session_id": "bc7f89ce-197b-4868-9044-27cef178fc8c",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+    "unchosen_structure": "二人目を目指して治療を続けること",
+    "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+    "present_residue": "「二人目を持っていたらどうだったかという問いが残る。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "entrepreneurship:ownership"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "YES",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body",
+      "after-success"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001",
+      "obs_as_001"
+    ],
+    "structures": [
+      "embodied_or_fertility",
+      "family_life",
+      "post_achievement_question"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "三人で暮らす現在と、残る問い",
+  "body_excerpt": "## 分岐点\n\n<!-- p01 -->45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。この分かれ目は、一度の判断というより、家族のかたちと、身体を伴う治療を続けるかどうかが分かれていく境界だった。\n\n## 選んだ道\n\n妻と息子と三人で暮らす人生を続けることを選んだ。現在も、妻と息子との三人家族で暮らしている。\n\n## 選ばなかった人生\n\n選ばなかったのは、二人目を目指して治療を続けることだった。その道の先にどのような家族生活があったかは、ここからは分からない。\n\n## 失ったもの\n\n二人目を目指して治療を続ける道は選ばれなかった。その先を確かめることのできない可能性として、この分岐には残っている。\n\n## 守られたもの\n\n現在の生活には、妻と息子との三人家族としての暮らしがある。これは別の道との優劣ではなく、選ばれた側にある家族のかたちである。\n\n## 今に残った構造\n\nいまも、「二人目を持っていたらどうだったか」と考えることがある。三人家族で暮らし、自分の会社を経営している現在と、その問いは並んである。\n\n## これからの再分岐\n\nいまこの問いに一つの答",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  }
+}

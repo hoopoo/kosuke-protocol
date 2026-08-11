@@ -1,0 +1,186 @@
+{
+  "case_id": "case10_sensitive",
+  "category": "sensitive causal restraint",
+  "title": "Sensitive — illness timing vs career move",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 62.82,
+  "session_id": "3b52a147-1536-41ed-810b-5955f9363214",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.8-exp",
+  "branch_semantics": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れること",
+    "unchosen_structure": "治療しながら同じ仕事を続けること",
+    "central_tension": "「治療のため仕事を一旦離れること」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「働き続けていたら、病状や生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "confidence": 0.7666666666666666,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 7,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 8.0,
+  "personal_focus": 8,
+  "social_depth": 5,
+  "thesis_closure": 5,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": false,
+    "protected": false,
+    "residue": false,
+    "observatory": true,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001"
+    ],
+    "structures": [
+      "embodied_or_fertility",
+      "family_life"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:branch_point",
+    "required_section_unrealized:lost",
+    "required_section_unrealized:protected",
+    "required_public_label_missing:residue:今に残った構造",
+    "required_section_unrealized:observatory",
+    "thesis_closure_missing:residue_unresolved_question"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "「働き続けていたら」が残る場所",
+  "body_excerpt": "## 分岐点\n41歳のとき、大きな病気の診断を受け、仕事を辞めるかどうかを考えた。治療のためにいったん仕事を離れる道と、治療を続けながら同じ仕事を続ける道があった。\n\n## 選んだ道\n選んだのは、治療のためにいったん仕事を離れることだった。看病には家族も手を貸してくれた。治療にあてた時間と、仕事から離れていた時間がある。\n\n## 選ばなかった人生\n選ばなかったのは、治療を続けながら同じ仕事を続けることだった。その道を選んでいたら病状や暮らしがどうなっていたかを示す材料はない。かなわなかった一つの可能性として、そのまま残っている。\n\n## 失ったもの\nこのとき何を失ったのかを、ここで言い切ることはできない。ただ、治療を続けながら同じ仕事をしていた時間は経験されなかった。いまの生活から、その時間を同じ条件でたどり直すこともできない。\n\n## 守られたもの\n仕事をいったん離れたことが何を守ったのかも、断定はできない。現在は、体調を見ながら短い仕事を再開している。仕事を離れていた時間と、いまの働き方がある。\n\n## 今に残るもの\nいまも、「働き続けていたら、病状や生活はどうなっていたか」と考え",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 0,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 2,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "health",
+        "changed_dimension": "家族のかたち／身体と治療の選択",
+        "chosen_structure": "治療のため仕事を一旦離れること",
+        "unchosen_structure": "治療しながら同じ仕事を続けること",
+        "central_tension": "「治療のため仕事を一旦離れること」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+        "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+        "protected_possibility": "「治療のため仕事を一旦離れること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+        "present_residue": "「働き続けていたら、病状や生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+        "possible_rebranch_modes": [
+          "preserve",
+          "observe",
+          "not_act"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect"
+        ],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "fact_005",
+          "pack_major_life_events_001",
+          "pack_family_context_002",
+          "question_001",
+          "question_source_005"
+        ],
+        "confidence": 0.7666666666666666,
+        "diagnostics": {
+          "domain_reasons": [
+            "family:family_words",
+            "health:body_health"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

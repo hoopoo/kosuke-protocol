@@ -1,0 +1,34 @@
+[
+  {
+    "case_id": "case1_fertility_counterfactual_only",
+    "error": "AttributeError: 'bool' object has no attribute 'get'",
+    "final_status": null,
+    "publishable": null,
+    "title": null,
+    "session_id": null
+  },
+  {
+    "case_id": "case2_fertility_actual_secondary",
+    "error": "AttributeError: 'bool' object has no attribute 'get'",
+    "final_status": null,
+    "publishable": null,
+    "title": null,
+    "session_id": null
+  },
+  {
+    "case_id": "case3_university_admission",
+    "error": "AttributeError: 'bool' object has no attribute 'get'",
+    "final_status": null,
+    "publishable": null,
+    "title": null,
+    "session_id": null
+  },
+  {
+    "case_id": "case4_creative_vs_corporate",
+    "error": "AttributeError: 'str' object has no attribute 'get'",
+    "final_status": null,
+    "publishable": null,
+    "title": null,
+    "session_id": null
+  }
+]

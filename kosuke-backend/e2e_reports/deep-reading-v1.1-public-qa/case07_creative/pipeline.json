@@ -1,0 +1,106 @@
+{
+  "case_id": "case07_creative",
+  "arm": "public_qa",
+  "mode": "contextual",
+  "ok": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 400
+    }
+  },
+  "session_id": "2eeaa624-5180-43cc-8ca9-14338a9d77a8",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_creative_activity_002",
+      "pack_current_work_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "平日は会社で働いている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T065907Z_9999",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_creative_activity_002",
+        "content": "夜と週末に文章と写真の制作をしている",
+        "tags": [
+          "context_pack",
+          "category:current_creative_activity",
+          "pack_id:pack_live_20260808T065907Z_9999",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065907Z_9999",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_002",
+        "pack_current_work_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_current_creative_activity_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「29歳のとき、創作を本業にするか、会社員のまま続けるかを考えたという分岐」を振り返る問いは、「現在は、平日は会社で働き、夜と週末に文章と写真の制作をしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "創作を本業にする選択が、現在の作り方に影響を与えている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_current_creative_activity_002"
+        ]
+      }
+    ]
+  },
+  "error": {
+    "detail": "確認を完了できません。不足している情報を補ってから再度お進みください。"
+  },
+  "elapsed_s": 25.72
+}

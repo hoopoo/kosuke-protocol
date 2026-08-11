@@ -1,0 +1,73 @@
+{
+  "body_markdown": "## 十九歳にあった二つの進路\n\n19歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。別の大学へ進学する道もあった。二つの進路のうち、一方はその後の経歴に入り、もう一方は別の可能性として残った。\n\n## 合格の記憶と現在の営み\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格と現在の営みは一つの経歴の中に並んでいる。ただし、大学進学から複数の業界での経験を経て、文章やプロトコルをまとめる現在に至るまでの具体的な経過や因果関係を結びつける材料はない。そのあいだには、まだ接続しきれていないものが残っている。\n\n別の大学なら、仕事や人間関係がどう変わったかと考えることがある。その問いに答えられる経歴は存在せず、変化の内容を確かめる材料もない。早稲田大学第一文学部への進学、複数の業界を経た現在、そして別の大学だった場合をめぐる問いが、異なる輪郭のまま並んでいる。\n",
+  "title_candidates": [
+    "十九歳の合格と、文章をまとめる現在",
+    "早稲田大学第一文学部と別の大学",
+    "二つの大学、その後に残る問い"
+  ],
+  "subtitle_candidates": [
+    "複数の業界を経た現在から見つめる、十九歳の進路"
+  ],
+  "sections": [
+    {
+      "internal_id": "sec_01",
+      "public_heading": "十九歳にあった二つの進路",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "sec_02",
+      "public_heading": "合格の記憶と現在の営み",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "別の大学の名称や、そこで想定される具体的な学部・仕事・人間関係が確認されていないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。別の大学へ進学する道もあった。二つの進路のうち、一方はその後の経歴に入り、もう一方は別の可能性として残った。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格と現在の営みは一つの経歴の中に並んでいる。ただし、大学進学から複数の業界での経験を経て、文章やプロトコルをまとめる現在に至るまでの具体的な経過や因果関係を結びつけ"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "別の大学なら、仕事や人間関係がどう変わったかと考えることがある。その問いに答えられる経歴は存在せず、変化の内容を確かめる材料もない。早稲田大学第一文学部への進学、複数の業界を経た現在、そして別の大学だった場合をめぐる問いが、異なる輪郭のまま"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 408
+}

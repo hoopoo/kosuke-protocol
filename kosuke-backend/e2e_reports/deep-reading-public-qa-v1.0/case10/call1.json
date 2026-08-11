@@ -1,0 +1,236 @@
+{
+  "status": "ready_for_user_confirmation",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "特にない時期に、なんとなく今まで働いてきた。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "時期: 特にない\n出来事: なんとなく今まで働いてきた",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "今の人生を選んだ。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選んだ道: 今の人生",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "もっと自由な人生を選ばなかった。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道: もっと自由な人生",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact5",
+        "content": "今も仕事をしている。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "いまの状況: 今も仕事をしている",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "別の人生もあったのかなという問いがある。",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "いまの問い: 別の人生もあったのかな",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": []
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "特にない",
+      "triggering_event": "なんとなく今まで働いてきた",
+      "available_paths": [
+        "今の人生"
+      ],
+      "realized_path": "今の人生",
+      "unrealized_paths": [
+        "もっと自由な人生"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "別の人生もあったのかなという問いがある。",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "present_question_ids": [
+      "fact4"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "exploratory",
+    "statement": "別の人生の選択肢について考えることは、現在の選択を再評価する手助けになる。",
+    "pole_a": "自由な人生",
+    "pole_b": "今の人生",
+    "supported_by": [
+      "fact2",
+      "fact3"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": [
+      {
+        "residue_statement": "「特にない時期に、なんとなく今まで働いてきた。」という過去の分岐のあとで、「今も仕事をしている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「特にない時期に、なんとなく今まで働いてきた。」という過去の分岐のあとで、「今も仕事をしている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact5"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact5"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ]
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": false,
+    "questions": []
+  },
+  "user_confirmation_view": {
+    "branch_period": "特にない",
+    "triggering_event": "なんとなく今まで働いてきた",
+    "chosen_path": "今の人生",
+    "unchosen_path": "もっと自由な人生",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      "別の人生もあったのかなという問いがある。"
+    ],
+    "present_questions": [
+      "別の人生もあったのかなという問いがある。"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "別の人生の選択肢について考えることは、現在の選択を再評価する手助けになる。",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": []
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.2",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

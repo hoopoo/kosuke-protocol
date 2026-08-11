@@ -1,0 +1,374 @@
+{
+  "case_id": "case10_sensitive",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "health",
+        "changed_dimension": "家族のかたち／身体と治療の選択",
+        "chosen_structure": "治療のため仕事を一旦離れること",
+        "unchosen_structure": "治療しながら同じ仕事を続けること",
+        "central_tension": "「治療のため仕事を一旦離れること」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+        "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+        "protected_possibility": "「治療のため仕事を一旦離れること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+        "present_residue": "「働き続けていたら、病状や生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+        "possible_rebranch_modes": [
+          "preserve",
+          "observe",
+          "not_act"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect"
+        ],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "fact_005",
+          "pack_major_life_events_001",
+          "pack_family_context_002",
+          "question_001",
+          "question_source_005"
+        ],
+        "confidence": 0.7666666666666666,
+        "diagnostics": {
+          "domain_reasons": [
+            "family:family_words",
+            "health:body_health"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": []
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ]
+  },
+  "safe_stop": false,
+  "session_id": "3b52a147-1536-41ed-810b-5955f9363214",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_family_context_002",
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "体調を見ながら短い仕事を再開している",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T074613Z_9603",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_family_context_002",
+        "content": "家族が看病を手伝ってくれた",
+        "tags": [
+          "context_pack",
+          "category:family_context",
+          "pack_id:pack_live_20260808T074613Z_9603",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T074613Z_9603",
+      "pack_fact_ids": [
+        "pack_family_context_002",
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001",
+        "pack_family_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「41歳のとき、大きな病気の診断を受けたあと、仕事を辞めるかを考えたという」を振り返る問いは、「現在は、体調を見ながら短い仕事を再開している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_family_context_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001",
+          "pack_family_context_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れること",
+    "unchosen_structure": "治療しながら同じ仕事を続けること",
+    "central_tension": "「治療のため仕事を一旦離れること」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「働き続けていたら、病状や生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "pack_family_context_002",
+      "question_001",
+      "question_source_005"
+    ],
+    "confidence": 0.7666666666666666,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_family_context_002",
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "体調を見ながら短い仕事を再開している",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T074613Z_9603",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_family_context_002",
+        "content": "家族が看病を手伝ってくれた",
+        "tags": [
+          "context_pack",
+          "category:family_context",
+          "pack_id:pack_live_20260808T074613Z_9603",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T074613Z_9603",
+      "pack_fact_ids": [
+        "pack_family_context_002",
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001",
+        "pack_family_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「41歳のとき、大きな病気の診断を受けたあと、仕事を辞めるかを考えたという」を振り返る問いは、「現在は、体調を見ながら短い仕事を再開している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_family_context_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001",
+          "pack_family_context_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れること",
+    "unchosen_structure": "治療しながら同じ仕事を続けること",
+    "central_tension": "「治療のため仕事を一旦離れること」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「働き続けていたら、病状や生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "pack_family_context_002",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.7666666666666666,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "manuscript": {
+    "title": "「働き続けていたら」が残る場所",
+    "body_markdown": "## 分岐点\n41歳のとき、大きな病気の診断を受け、仕事を辞めるかどうかを考えた。治療のためにいったん仕事を離れる道と、治療を続けながら同じ仕事を続ける道があった。\n\n## 選んだ道\n選んだのは、治療のためにいったん仕事を離れることだった。看病には家族も手を貸してくれた。治療にあてた時間と、仕事から離れていた時間がある。\n\n## 選ばなかった人生\n選ばなかったのは、治療を続けながら同じ仕事を続けることだった。その道を選んでいたら病状や暮らしがどうなっていたかを示す材料はない。かなわなかった一つの可能性として、そのまま残っている。\n\n## 失ったもの\nこのとき何を失ったのかを、ここで言い切ることはできない。ただ、治療を続けながら同じ仕事をしていた時間は経験されなかった。いまの生活から、その時間を同じ条件でたどり直すこともできない。\n\n## 守られたもの\n仕事をいったん離れたことが何を守ったのかも、断定はできない。現在は、体調を見ながら短い仕事を再開している。仕事を離れていた時間と、いまの働き方がある。\n\n## 今に残るもの\nいまも、「働き続けていたら、病状や生活はどうなっていたか」と考えることがある。41歳のときの分かれ目と、体調を見ながら短い仕事をしている現在が、並んでいる。\n\n## 社会との接続\n病気と仕事のあいだにあることは、考えだけで収まるものではない。治療、回復を待つ時間、看病、日々の体調など、身体とともに過ごす時間がそこにはある。個人の経緯は、決断の言葉だけでは語りきれない。\n\n## これからの再分岐\n\n過去の分かれ目を、いまやり直す必要はない。いま成り立っている生活のかたちを保つ余地がある。\n\n「治療のため仕事をいったん離れること」と、「治療しながら同じ仕事を続けること」のあいだに残る問いは、答えのないままある。その問いを抱えながら、いまの暮らしを保っていくことができる。\n"
+  },
+  "elapsed_s": 62.82,
+  "branch_semantics_final": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れること",
+    "unchosen_structure": "治療しながら同じ仕事を続けること",
+    "central_tension": "「治療のため仕事を一旦離れること」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「働き続けていたら、病状や生活はどうなっていたか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "pack_family_context_002",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.7666666666666666,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  }
+}

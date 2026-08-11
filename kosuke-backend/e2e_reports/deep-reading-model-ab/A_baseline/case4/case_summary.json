@@ -1,0 +1,80 @@
+{
+  "config_id": "A_baseline",
+  "case_id": "case4",
+  "call2_model": "gpt-4o-mini",
+  "call3_model": "gpt-4o-mini",
+  "errors": [],
+  "final_title": "過去の選択と現在の生活",
+  "final_subtitle": "会社員としての経験と創作の選択",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 184,
+  "latency_ms": {
+    "call2_wall": 5152,
+    "call3_wall": 3589,
+    "total_wall": 8741,
+    "sum_api_calls": 8724
+  },
+  "tokens": {
+    "prompt": 6589,
+    "completion": 731,
+    "reasoning": 0,
+    "total": 7320
+  },
+  "estimated_cost_usd": 0.001427,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 5145,
+      "prompt_tokens": 3237,
+      "completion_tokens": 461,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000762,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 3579,
+      "prompt_tokens": 3352,
+      "completion_tokens": 270,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000665,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 5145,
+      "prompt_tokens": 3237,
+      "completion_tokens": 461,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000762,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "body_preview": "会社員として複数の業界で働いてきた。現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。一方で、創作を中心にした人生があったことを思い返すことがある。もしその道を選んでいたなら、現在の生活は異なっていたのではないかと考えることがある。過去の分岐の後、現在の生活構造が続いており、そのあいだにはまだ接続しきれていないものが残っているように感じる。\n"
+}

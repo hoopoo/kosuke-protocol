@@ -1,0 +1,30 @@
+{
+  "staging_strict": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "schema": "parallel-life-runtime-v1.0.6"
+  },
+  "staging_contextual": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.1.5-exp",
+    "schema": "parallel-life-runtime-v1.1.5-exp",
+    "pack": true,
+    "residue_claim": "「あのとき残っていたら」が現在の経営と過去の選択の影響のなかで消えないのは、NTTでの勤務から外資系企業への転職が別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+    "residue_malformed": false,
+    "labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "社会との接続",
+      "これからの再分岐"
+    ]
+  },
+  "production": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack": null
+  }
+}

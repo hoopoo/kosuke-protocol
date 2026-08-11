@@ -1,0 +1,80 @@
+{
+  "config_id": "A_baseline",
+  "case_id": "case3",
+  "call2_model": "gpt-4o-mini",
+  "call3_model": "gpt-4o-mini",
+  "errors": [],
+  "final_title": "大学選択とその後の人生",
+  "final_subtitle": "",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 325,
+  "latency_ms": {
+    "call2_wall": 5938,
+    "call3_wall": 4852,
+    "total_wall": 10791,
+    "sum_api_calls": 10772
+  },
+  "tokens": {
+    "prompt": 6817,
+    "completion": 960,
+    "reasoning": 0,
+    "total": 7777
+  },
+  "estimated_cost_usd": 0.001598,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 5929,
+      "prompt_tokens": 3280,
+      "completion_tokens": 532,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000811,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 4843,
+      "prompt_tokens": 3537,
+      "completion_tokens": 428,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000787,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 5929,
+      "prompt_tokens": 3280,
+      "completion_tokens": 532,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000811,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "body_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この選択は、私の人生における重要な分岐点となった。早稲田大学第一文学部への進学を選ぶことで、私は新しい学びや人との出会いを経験することができた。この選択肢は、私の人生の中での別の可能性を示している。もし別の大学に進学していたら、現在の仕事や人間関係はどのように変わっていたのだろうかと、時折考えることがある。\n\n現在は複数の業界を経験した後、文章やプロトコルをまとめている。早稲田大学での学びが私の基盤となっていることは確かだが、過去の選択と現在の生活の間には、まだ接続しきれていないものが残っているように感じる。これらの経験を通じて、私は自分のキャリアや人間関係についての理解を深めている。\n"
+}

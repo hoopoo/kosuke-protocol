@@ -1,0 +1,52 @@
+{
+  "grounded_input": {
+    "explicit_fact": {
+      "career": "会社員として複数業界で働いてきた",
+      "current_activity": "観測サイトや文章、プロトコルを制作している"
+    },
+    "user_feeling": "創作中心なら今とは違う人生だったかと考えることがある",
+    "user_question": "創作を中心にした人生だった場合、今の人生はどうなっていたのか？",
+    "user_hypothesis": "創作中心の人生には、今の人生とは異なる意味があったかもしれない",
+    "unknown": {},
+    "model_inference": {}
+  },
+  "input_sufficiency": "十分な情報が提供されている",
+  "branch_structure": {
+    "chosen_path": "会社員として複数業界で働く道",
+    "unchosen_path": "創作を中心にした人生"
+  },
+  "central_thesis": "選ばなかった道が今の人生に与える影響について考察する",
+  "lost_structure": {
+    "lost_path": "創作を中心にした人生",
+    "meaning": "創作中心の人生に託していた意味が今も気になる"
+  },
+  "protected_structure": {
+    "current_life": "観測サイトや文章、プロトコルを制作している"
+  },
+  "residue_candidates": [],
+  "evaluated_observatory_lenses": [],
+  "selected_observatory_lenses": [],
+  "editorial_outline": [
+    {
+      "section_title": "選ばなかった道の考察",
+      "content": "創作を中心にした人生の可能性とその影響"
+    },
+    {
+      "section_title": "現在の活動の意味",
+      "content": "企業での経験を活かした観測サイトや文章制作の意義"
+    },
+    {
+      "section_title": "選択の結果",
+      "content": "選んだ道と選ばなかった道の対比"
+    }
+  ],
+  "rebranch_design": {
+    "source_meaning": "選ばなかった道の影響を考える",
+    "current_receiver": "読者",
+    "branch_specific_form": "選択の結果に関するエッセイ",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "additional_questions": [],
+  "user_confirmation_view": "この内容で進めてよろしいでしょうか？"
+}

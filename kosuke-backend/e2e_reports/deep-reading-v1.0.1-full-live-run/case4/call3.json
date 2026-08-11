@@ -1,0 +1,42 @@
+{
+  "status": "validation_failed",
+  "final_title": "人生の選択とその影響",
+  "final_subtitle": "",
+  "body_markdown": "# 人生の選択とその影響\n\n## はじめに\n私たちの人生は、様々な選択によって形作られています。特に、職業選択はその後の人生に大きな影響を与える要素の一つです。本稿では、私自身の経験を通じて、選んだ道と選ばなかった道がどのように私の人生に影響を与えてきたかを考察します。\n\n## 会社員としての経験\n私は、会社員として複数の業界で働いてきました。異なる業種での経験は、私に多様な視点とスキルをもたらしてくれました。例えば、マーケティング、営業、プロジェクト管理など、さまざまな役割を担う中で、ビジネスの仕組みや人間関係の構築方法を学びました。これらの経験は、現在の私の職業選択においても大いに役立っています。\n\nしかし、その一方で、私は別の道を選ぶこともできました。それは、創作を中心にした人生です。創作の道を選んでいれば、果たしてどのような人生が待っていたのか、時折考えることがあります。\n\n## 選ばなかった道：創作中心の人生\n創作を中心にした人生は、私にとって魅力的な選択肢でした。創作活動は、自己表現の手段であり、他者とのコミュニケーションの方法でもあります。もしこの道を選んでいたなら、どのような作品を生み出していたのか、どのような人々と出会っていたのか、想像するだけでワクワクします。\n\n創作活動には、自由さや独自性が伴いますが、一方で不安定さやリスクも存在します。安定した収入が得られない可能性や、批評にさらされることなど、様々なデメリットも考慮しなければなりません。これらの要素が、私が創作の道を選ばなかった理由の一部です。\n\n## 現在の職業選択\n現在、私は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作しています。この仕事は、私のビジネススキルと創作的な要素を融合させることができるため、非常に充実感があります。特に、文章を書くことは私にとって創作的な表現の一環であり、日々の仕事の中で自己表現を楽しむことができます。\n\n## 選択の影響\n私が創作中心の人生を選ばなかったことは、現在の職業選択に影響を与えていると感じています。もし創作の道を選んでいたなら、現在のような企業での経験は得られていなかったかもしれません。逆に、企業での経験があったからこそ、今の仕事で成功を収めることができているとも言えます。\n\nこのように、選んだ道と選ばなかった道は、私の人生において複雑に絡み合っています。創作中心の人生を選ばなかったことが、今の私にとっての強みとなっている一方で、選んでいた場合の人生もまた魅力的であっただろうことは否めません。\n\n## 結論\n人生の選択は、常に何かを得ると同時に何かを失うことを意味します。私の経験から言えることは、どの道を選んだとしても、その選択が自分を形成する大切な要素であるということです。創作中心の人生を選ばなかったことが、現在の職業選択に与える影響を考えると、選択の重要性を改めて実感します。これからも、自分の選択を大切にしながら、人生を歩んでいきたいと思います。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "人生の選択とその影響",
+      "selected_subtitle": "",
+      "title_supported_by_fact_ids": [
+        "fact2"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "passed": true,
+      "notes": []
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "central_thesis_maintained": true,
+    "residue_centrality": false,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": false,
+    "blocking_reasons": [
+      "residue_centrality_failed"
+    ]
+  },
+  "prompt_version": "parallel-life-call-3-v1.0",
+  "character_count": 1264
+}

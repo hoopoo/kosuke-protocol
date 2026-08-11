@@ -1,0 +1,17 @@
+{
+  "staging": {
+    "http": 200,
+    "body": {
+      "enabled": true,
+      "context_pack_enabled": true
+    }
+  },
+  "production": {
+    "http": 200,
+    "body": {
+      "enabled": true
+    }
+  },
+  "staging_context_pack_on": true,
+  "production_context_pack_off": true
+}

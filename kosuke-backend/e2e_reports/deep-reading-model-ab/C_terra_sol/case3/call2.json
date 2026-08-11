@@ -1,0 +1,58 @@
+{
+  "body_markdown": "## 19歳の合格と、別の大学という余白\n\n19歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。その時点には、別の大学へ進学する可能性もあった。大学名も、その先の生活も、ここでは確かめられていない。ただ、早稲田大学第一文学部という固有の進学先のそばに、別の大学という輪郭の定まらない可能性が残っている。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳での合格から現在のこの仕事までには、多くの時間がある。両者のあいだには、まだ接続しきれていないものが残っている。別の大学なら仕事や人間関係がどう変わったかと考えることがあるが、その答えを確定する材料はない。問いは、文章やプロトコルをまとめる現在の生活のなかに、答えのないまま置かれている。\n",
+  "title_candidates": [
+    "早稲田大学第一文学部と、別の大学という余白",
+    "19歳の合格、その後の文章とプロトコル",
+    "答えのない別の大学"
+  ],
+  "subtitle_candidates": [
+    "複数の業界を経て、文章やプロトコルをまとめる現在から"
+  ],
+  "sections": [
+    {
+      "internal_id": "s01",
+      "public_heading": "19歳の合格と、別の大学という余白",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "別の大学について、大学名や具体的な生活条件が確認されていないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。その時点には、別の大学へ進学する可能性もあった。大学名も、その先の生活も、ここでは確かめられていない。ただ、早稲田大学第一文学部という固有の進学先のそばに、別の大学とい"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳での合格から現在のこの仕事までには、多くの時間がある。両者のあいだには、まだ接続しきれていないものが残っている。別の大学なら仕事や人間関係がどう変わったかと考えることが"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 343
+}

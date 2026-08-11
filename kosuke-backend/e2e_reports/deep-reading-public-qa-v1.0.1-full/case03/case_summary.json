@@ -1,0 +1,404 @@
+{
+  "id": "case03",
+  "title": "Very thin current context",
+  "purpose": "minimum present-context requirements",
+  "expect": [
+    "no invented business ownership/income/success",
+    "request current context if Residue ungrounded",
+    "question alone cannot be present_anchor"
+  ],
+  "fields": {
+    "branch_period": "40歳",
+    "triggering_event": "会社を辞めた",
+    "chosen_path": "独立した",
+    "unchosen_path": "会社員を続ける",
+    "present_question": "会社員を続けていたらどうだったか",
+    "current_context": "今も働いている"
+  },
+  "source_text": "時期: 40歳\n出来事: 会社を辞めた\n選んだ道: 独立した\n選ばなかった道: 会社員を続ける\nいまの問い: 会社員を続けていたらどうだったか\nいまの状況: 今も働いている",
+  "started_at": "2026-08-07T04:51:29.887586+00:00",
+  "errors": [],
+  "session_id": "e6d9ebac-a9c8-4bf8-9f06-b01efb5c6c6d",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": true,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": false
+    },
+    "gaps": [
+      "latency",
+      "token_usage",
+      "estimated_cost",
+      "publication_reached"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_2_prompt_version",
+      "call_3_model",
+      "call_3_prompt_version",
+      "candidate",
+      "clarification_count",
+      "failure_category",
+      "final_status",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version",
+      "runtime_version"
+    ]
+  },
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "40歳で会社を辞めた",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact2",
+        "content": "独立した",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact3",
+        "content": "会社員を続けることを選ばなかった",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact5",
+        "content": "今も働いている",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "会社員を続けていたらどうだったか",
+        "boundary": "user_question"
+      },
+      {
+        "id": "question_source_005",
+        "content": "いまの問い: 会社員を続けていたらどうだったか",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "40歳",
+      "triggering_event": "会社を辞めた",
+      "available_paths": [
+        "独立した",
+        "会社員を続ける"
+      ],
+      "realized_path": "独立した",
+      "unrealized_paths": [
+        "会社員を続ける"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "会社員を続けていたらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      },
+      {
+        "id": "cf_question_source_005",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "いまの問い: 会社員を続けていたらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "residue": [
+      {
+        "residue_statement": "「40歳で会社を辞めた」という過去の分岐のあとで、「今も働いている」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「40歳で会社を辞めた」という過去の分岐のあとで、「今も働いている」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact5"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact5"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [],
+    "additional_required": false,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "40歳",
+      "triggering_event": "会社を辞めた",
+      "chosen_path": "独立した",
+      "unchosen_path": "会社員を続ける",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "会社員を続けていたらどうだったか",
+        "いまの問い: 会社員を続けていたらどうだったか"
+      ],
+      "present_questions": [
+        "会社員を続けていたらどうだったか",
+        "いまの問い: 会社員を続けていたらどうだったか"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "会社員を続けていた場合の可能性を考えることは重要である。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "central_thesis": "会社員を続けていた場合の可能性を考えることは重要である。",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": true,
+    "outcome_bucket": "A_proceed_to_confirmation",
+    "reasons_stop": [],
+    "reasons_ok": [
+      "ready_for_user_confirmation_with_residue"
+    ],
+    "contradiction_analysis": {
+      "input_level_contradiction": false,
+      "facts_contain_reject": false,
+      "facts_contain_join": false,
+      "silently_resolved_suspected": false,
+      "confirmation_items": []
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [],
+    "clarification_count": 0,
+    "residue_count": 1,
+    "status": "ready_for_user_confirmation"
+  },
+  "call2_reached": true,
+  "call3_reached": true,
+  "published": false,
+  "confirmation_approved": true,
+  "generation_should_proceed": true,
+  "safe_stop": false,
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 619,
+    "title_candidates": [
+      "40歳で会社を辞めたあと、今も働いている",
+      "働き続ける現在と、残る問い",
+      "独立のあとに並ぶ二つの時間"
+    ],
+    "observatory_omitted": true,
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "会社員を続けていた場合の具体的な職場・役割・出来事について、確認済みの材料がないため。",
+    "soft_watch": [
+      "満足"
+    ],
+    "body_preview": "40歳で会社を辞め、独立した。会社員を続けることはなかった。その後の現在にも、働いているという事実がある。辞めた時点と、今も働いている日々は、時間を隔てながら同じ「働く」という輪郭の内側に置かれている。\n\nだからこそ、「会社員を続けていたらどうだったか」という問いは、過去を別の結末へ書き換えるためのものではない。40歳で会社を辞めたこと、独立したこと、そして今も働いていることを並べたとき、そのあいだにはまだ接続しきれていないものが残っている。会社員として働き続ける日々がどのようなものだったかについて、ここで言える材料はない。それでも、その可能性は問いとして現在に残っている。\n\n独立してから今までの仕事の内容や、その歩みの細部は示されていない。会社員を続けていた場合についても、職場、役割、暮らし、満足や不満を語ることはできない。わかっているのは、40歳で会社を辞めたことと、独立したこと、そして今も働いていることだけである。その限られた輪郭のなかで、過去の出来事は終わった一点ではなく、現在の問いと並んでいる。\n\n「会社員を続けていたらどうだったか」という問いに、ここで答えを与えることはできない。ただ、会社を辞めた40歳の時点と、今も働いている現在のあいだを見渡すと、二つの事実は途切れずに並んでいる。独立という言葉だけでは尽くせない時間がそこにはあり、会社員を続けるというもう一つの可能性も、答えのない問いとして残っている。\n"
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "validation_failed",
+    "final_title": "働き続ける現在と、残る問い",
+    "final_subtitle": "独立した現在に残る、「会社員を続けていたらどうだったか」という問い。",
+    "character_count": 268,
+    "publishable": false,
+    "blocking_reasons": [
+      "residue_centrality_failed"
+    ],
+    "title_validation": {
+      "selected_title": "働き続ける現在と、残る問い",
+      "selected_subtitle": "独立した現在に残る、「会社員を続けていたらどうだったか」という問い。",
+      "title_supported_by_fact_ids": [],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": true,
+      "notes": []
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch": [],
+    "residue_represented": true,
+    "body_preview": "40歳で会社を辞め、独立した。会社員を続ける道は選ばなかった。今も働いている。\n\n「会社員を続けていたらどうだったか」という問いがある。そこから別の人生を具体的に描く材料はない。会社員としての仕事や暮らしがどうなっていたかを、ここで決めることもできない。\n\nただ、40歳で会社を辞めた過去と、今も働いている現在は並んでいる。独立したという言葉だけでは収まりきらない時間が、そのあいだにある。\n\n答えのないまま、「会社員を続けていたらどうだったか」という問いは残る。過去の分岐と現在の生活のあいだには、まだ接続しきれていないものがある。\n"
+  },
+  "latency_ms_total": 34917,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 13534,
+      "prompt_tokens": 3814,
+      "completion_tokens": 1159,
+      "estimated_cost_usd": 0.001267,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 7872,
+      "prompt_tokens": 3548,
+      "completion_tokens": 770,
+      "estimated_cost_usd": 0.02042,
+      "stage_hint": "terra"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 7669,
+      "prompt_tokens": 4168,
+      "completion_tokens": 726,
+      "estimated_cost_usd": 0.02131,
+      "stage_hint": "terra"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 5810,
+      "prompt_tokens": 3947,
+      "completion_tokens": 611,
+      "estimated_cost_usd": 0.019033,
+      "stage_hint": "terra"
+    }
+  ],
+  "estimated_cost_usd": 0.06203,
+  "token_split": {
+    "call1_in": 3814,
+    "call1_out": 1159,
+    "terra_events": 3,
+    "terra_in": 11663,
+    "terra_out": 2107,
+    "call2_in": 3548,
+    "call2_out": 770,
+    "call3_in": 8115,
+    "call3_out": 1337
+  },
+  "finished_at": "2026-08-07T04:52:04.804964+00:00"
+}

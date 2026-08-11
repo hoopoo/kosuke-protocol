@@ -1,0 +1,42 @@
+{
+  "staging_strict": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "schema": "parallel-life-runtime-v1.0.6"
+  },
+  "staging_contextual": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.1.6-exp",
+    "schema": "parallel-life-runtime-v1.1.6-exp",
+    "pack": true,
+    "chosen_path_fields": {
+      "factual_choice": true,
+      "structural_shift": true,
+      "thesis_link": true,
+      "realization_required": true
+    },
+    "re_branch_fields": {
+      "unresolved_tension": true,
+      "present_choice": true,
+      "measurement_shift": true,
+      "non_genericity": true
+    },
+    "residue_claim": "「あのとき残っていたら」が自分の会社を経営しているという状況のなかで消えないのは、外資へ移るが別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+    "residue_malformed": false,
+    "labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "社会との接続",
+      "これからの再分岐"
+    ]
+  },
+  "production": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack": null
+  }
+}

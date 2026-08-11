@@ -1,0 +1,82 @@
+{
+  "config_id": "D_sol_sol",
+  "case_id": "case3",
+  "call2_model": "gpt-5.6-sol",
+  "call3_model": "gpt-5.6-sol",
+  "errors": [],
+  "final_title": "二つの大学、その後に残る問い",
+  "final_subtitle": "早稲田大学第一文学部、別の大学、そして複数の業界を経た現在",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": [
+      "結びつ"
+    ]
+  },
+  "character_count": 365,
+  "latency_ms": {
+    "call2_wall": 23649,
+    "call3_wall": 29822,
+    "total_wall": 53471,
+    "sum_api_calls": 53445
+  },
+  "tokens": {
+    "prompt": 6887,
+    "completion": 3930,
+    "reasoning": 2560,
+    "total": 10817
+  },
+  "estimated_cost_usd": 0.132685,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 23642,
+      "prompt_tokens": 3279,
+      "completion_tokens": 1779,
+      "reasoning_tokens": 1024,
+      "estimated_cost_usd": 0.06087,
+      "response_model": "gpt-5.6-sol"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 29803,
+      "prompt_tokens": 3608,
+      "completion_tokens": 2151,
+      "reasoning_tokens": 1536,
+      "estimated_cost_usd": 0.071815,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 23642,
+      "prompt_tokens": 3279,
+      "completion_tokens": 1779,
+      "reasoning_tokens": 1024,
+      "estimated_cost_usd": 0.06087,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "body_preview": "## 十九歳の進路\n\n19歳のとき、第一志望の早稲田大学第一文学部に合格した。選ばなかったのは、別の大学へ進学する道だった。\n\n## 合格と現在\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格と現在の営みは、同じ経歴の中にある。しかし、その間の具体的な経過はわからず、大学の選択と現在の営みを直接結びつける材料もない。十九歳の分岐と現在の生活のあいだには、まだ接続しきれていない部分が残っている。\n\n## 別の大学だったなら\n\n別の大学なら、仕事や人間関係がどう変わったかと考えることがある。別の大学に進んだ場合の仕事や人間関係を確かめる材料はない。\n\n早稲田大学第一文学部に合格した過去と、複数の業界を経験した現在は確かにある。一方、別の大学に進んだ場合は確かめられず、問いとして残っている。\n"
+}

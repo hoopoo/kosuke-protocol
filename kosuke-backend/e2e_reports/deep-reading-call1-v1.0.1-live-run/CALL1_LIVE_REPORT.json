@@ -1,0 +1,145 @@
+{
+  "rescored_at": "2026-08-07T01:54:03.565701+00:00",
+  "prompt_version": "parallel-life-call-1-v1.0.1",
+  "schema_version": "parallel-life-call-1-schema-v1.0.1",
+  "model": "gpt-4o-mini",
+  "cases": [
+    {
+      "id": "case1",
+      "PASS": true,
+      "checks": {
+        "raw_structured_response_valid": true,
+        "normalization_applied": [],
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "source_coverage_complete": true,
+        "fact_boundary_question_present": true,
+        "fact_boundary_no_feeling_leak": true,
+        "branch_classification_ok": true,
+        "actual_secondary_count": 0,
+        "retrospective_counterfactual_count": 1,
+        "rebranch_filtered_ok": true,
+        "rebranch_direction_count": 0,
+        "named_entity_retention": {},
+        "named_entity_ok": true,
+        "status": "ready_for_user_confirmation",
+        "confirmation_view_present": true,
+        "status_ready_for_confirmation": true,
+        "PASS": true
+      }
+    },
+    {
+      "id": "case2",
+      "PASS": true,
+      "checks": {
+        "raw_structured_response_valid": true,
+        "normalization_applied": [],
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "source_coverage_complete": true,
+        "fact_boundary_question_present": true,
+        "fact_boundary_no_feeling_leak": true,
+        "branch_classification_ok": true,
+        "actual_secondary_count": 1,
+        "retrospective_counterfactual_count": 0,
+        "rebranch_filtered_ok": true,
+        "rebranch_direction_count": 0,
+        "named_entity_retention": {
+          "話し合": true,
+          "やめた": true
+        },
+        "named_entity_ok": true,
+        "status": "ready_for_user_confirmation",
+        "confirmation_view_present": true,
+        "status_ready_for_confirmation": true,
+        "PASS": true
+      }
+    },
+    {
+      "id": "case3",
+      "PASS": true,
+      "checks": {
+        "raw_structured_response_valid": true,
+        "normalization_applied": [],
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "source_coverage_complete": true,
+        "fact_boundary_question_present": true,
+        "fact_boundary_no_feeling_leak": true,
+        "branch_classification_ok": true,
+        "actual_secondary_count": 0,
+        "retrospective_counterfactual_count": 1,
+        "rebranch_filtered_ok": true,
+        "rebranch_direction_count": 0,
+        "named_entity_retention": {
+          "第一志望": true,
+          "早稲田大学第一文学部": true,
+          "合格": true,
+          "進学": true,
+          "別の大学": true
+        },
+        "named_entity_ok": true,
+        "status": "ready_for_user_confirmation",
+        "confirmation_view_present": true,
+        "status_ready_for_confirmation": true,
+        "PASS": true
+      }
+    },
+    {
+      "id": "case4",
+      "PASS": true,
+      "checks": {
+        "raw_structured_response_valid": true,
+        "normalization_applied": [],
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "source_coverage_complete": true,
+        "fact_boundary_question_present": true,
+        "fact_boundary_no_feeling_leak": true,
+        "branch_classification_ok": true,
+        "actual_secondary_count": 0,
+        "retrospective_counterfactual_count": 1,
+        "rebranch_filtered_ok": true,
+        "rebranch_direction_count": 0,
+        "named_entity_retention": {
+          "会社員": true,
+          "創作": true,
+          "現在": true
+        },
+        "named_entity_ok": true,
+        "status": "ready_for_user_confirmation",
+        "confirmation_view_present": true,
+        "status_ready_for_confirmation": true,
+        "PASS": true
+      }
+    }
+  ],
+  "all_four_pass": true,
+  "call2_reachable": true,
+  "release_status": "Call1 milestone met — not Production Candidate frozen",
+  "note": "Rescored from live LLM outputs; case1-4 generated in same run."
+}

@@ -1,0 +1,72 @@
+{
+  "body_markdown": "50歳の時、体調を崩した。そこで働き方を変え、仕事量を減らした。以前と同じように働き続けることはしなかった。\n\n現在は、以前よりゆっくり働いている。今の働き方は楽だと感じている。50歳の時に体調を崩したことのあとには、現在の生活が続いている。その間には、ひとつの説明にまとめきれないまま、まだ接続しきれていないものが残っている。\n\n「そのまま働いていたらどうなっていたのか」という問いも残る。そこに答えを与える材料はない。ただ、仕事量を減らした現在のゆっくりした働き方と、続けなかった以前と同じ働き方とを、答えのない問いの両側に置くことはできる。\n",
+  "title_candidates": [
+    "ゆっくり働く現在と、残る問い",
+    "50歳のあとに続く生活",
+    "仕事量を減らしたあとで"
+  ],
+  "subtitle_candidates": [
+    "以前と同じようには働き続けなかったことと、現在の働き方"
+  ],
+  "sections": [
+    {
+      "internal_id": "current_working_pace",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "確認済みの具体名詞にもとづいて展開できる再分岐の材料がない。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "50歳の時、体調を崩した。そこで働き方を変え、仕事量を減らした。以前と同じように働き続けることはしなかった。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact5",
+        "fact6",
+        "ctx_001"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在は、以前よりゆっくり働いている。今の働き方は楽だと感じている。50歳の時に体調を崩したことのあとには、現在の生活が続いている。その間には、ひとつの説明にまとめきれないまま、まだ接続しきれていないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact3",
+        "fact4",
+        "fact5",
+        "question1"
+      ],
+      "contains_inference": false,
+      "text_preview": "「そのまま働いていたらどうなっていたのか」という問いも残る。そこに答えを与える材料はない。ただ、仕事量を減らした現在のゆっくりした働き方と、続けなかった以前と同じ働き方とを、答えのない問いの両側に置くことはできる。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 273
+}

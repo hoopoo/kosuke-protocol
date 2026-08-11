@@ -1,0 +1,1571 @@
+{
+  "session_id": "ad082fa3-4e3a-461a-8812-8256cb1b9a98",
+  "raw_user_input": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。\n選ばなかった道は、二人目を目指して治療を続けること。\n現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。\nいまも「二人目を持っていたらどうだったか」と考えることがある。\n息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている\n",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "pack_family_context_001",
+          "content": "妻と息子との三人家族で暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "妻と息子との三人家族で暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:family_context",
+            "pack_id:pack_live_20260808T140651Z_7384",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_work_002",
+          "content": "現在は自分の会社を経営している",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T140651Z_7384",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "fact_current_preserved_001",
+          "content": "いまの暮らしと仕事の具体的な場面が続いている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "いまの暮らしと仕事の具体的な場面が続いている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "あのとき別の道を選んでいたら、いまはどうだったか",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "あのとき別の道を選んでいたら、いまはどうだったか",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "question_source_005",
+          "content": "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "source_text",
+          "source_text": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。\n選ばなかった道は、二人目を目指して治療を続けること。\n現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。\nいまも「二人目を持っていたらどうだったか」と考えることがある。\n息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "いまの暮らしと仕事の具体的な場面が続いている",
+        "妻と息子との三人家族で暮らしている",
+        "現在は自分の会社を経営している"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "45歳",
+        "triggering_event": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。",
+        "available_paths": [],
+        "realized_path": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+        "unrealized_paths": [
+          "選ばなかった道は、二人目を目指して治療を続けること。"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_q_confirm_001",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "あのとき別の道を選んでいたら、いまはどうだったか",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        },
+        {
+          "id": "cf_question_source_005",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001",
+        "question_source_005"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "classifications": [
+        {
+          "id": "pack_current_work_002",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        },
+        {
+          "id": "pack_family_context_001",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        }
+      ],
+      "manuscript_logic_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "withheld_ids": []
+    },
+    "meaning_compression": {
+      "past_structure": "",
+      "alternative_structure": "",
+      "present_structure": "",
+      "tension": "個人史は身体経験として続き、制度説明に還元しない",
+      "continuity": "",
+      "transformation": "",
+      "central_question": "この分岐を、いまどう読み直すかがまだ開いている",
+      "personal_tension": "身体とケアの時間のなかで分岐が生きられた",
+      "social_institutional_parallel": "分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもある",
+      "present_life_connection": "",
+      "unresolved_question": "この分岐を、いまどう読み直すかがまだ開いている",
+      "cross_lens_relation_ids": [
+        "clr_body_001",
+        "clr_as_001"
+      ],
+      "support_ids": [
+        "fact_current_preserved_001",
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "validation_status": "pending"
+    },
+    "central_thesis": {
+      "thesis_type": "",
+      "statement": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+      "pole_a": "身体とケアの時間のなかで分岐が生きられた",
+      "pole_b": "",
+      "supported_by": [
+        "pack_current_work_002",
+        "pack_family_context_001",
+        "fact_current_preserved_001"
+      ],
+      "risks": [],
+      "validation_status": "passed"
+    },
+    "lost_structure": {
+      "items": [
+        {
+          "content": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+          "loss_type": "structural_continuity",
+          "support_ids": [
+            "fact_current_preserved_001",
+            "pack_current_work_002",
+            "pack_family_context_001"
+          ],
+          "certainty": "qualified",
+          "allowed_wording_strength": "qualified"
+        }
+      ]
+    },
+    "protected_structure": {
+      "items": [
+        {
+          "content": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+          "support_ids": [
+            "fact_current_preserved_001",
+            "pack_current_work_002",
+            "pack_family_context_001"
+          ],
+          "causality_status": "non_causal_possibility",
+          "allowed_statement_strength": "qualified"
+        }
+      ]
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+          "content": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+          "past_anchor_ids": [
+            "pack_current_work_002"
+          ],
+          "present_anchor_ids": [
+            "pack_current_work_002"
+          ],
+          "support_ids": [
+            "pack_current_work_002"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": []
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": [
+        {
+          "id": "rebranch_semantics_001",
+          "source_meaning": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "current_receiver": "現在の生活で、この緊張をどう置くか",
+          "branch_specific_form": "いまの暮らしのなかで、未解決のまま置いておく",
+          "support_ids": [
+            "pack_current_work_002",
+            "pack_family_context_001",
+            "fact_current_preserved_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": true
+        }
+      ]
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "45歳",
+      "triggering_event": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。",
+      "chosen_path": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+      "unchosen_path": "選ばなかった道は、二人目を目指して治療を続けること。",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "あのとき別の道を選んでいたら、いまはどうだったか",
+        "いまも「二人目を持っていたらどうだったか」と考えることがある。"
+      ],
+      "present_questions": [
+        "あのとき別の道を選んでいたら、いまはどうだったか",
+        "いまも「二人目を持っていたらどうだったか」と考えることがある。"
+      ],
+      "current_context": [
+        "いまの暮らしと仕事の具体的な場面が続いている",
+        "妻と息子との三人家族で暮らしている",
+        "現在は自分の会社を経営している"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "residue:residue_is_question_paraphrase",
+        "residue:no_valid_residue_anchors",
+        "runtime:parallel-life-runtime-v1.1.11-exp",
+        "observatory_section:omitted_pre_thesis_relations",
+        "selection:thesis_gate:supported_by_backfilled",
+        "runtime:parallel-life-runtime-v1.1.11-exp",
+        "section_repair:residue_backfilled",
+        "section_repair:rebranch_evaluated_present",
+        "section_contract_evidence_check:passed"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "parse_diagnostics": {
+      "validation_errors": [
+        "KeyError: 'pack_current_work_002'",
+        "KeyError: 'pack_current_work_002'"
+      ],
+      "offending_paths": [
+        "<root>"
+      ],
+      "repair_attempted": true,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T140651Z_7384",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "selection_compression_diagnostics": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_current_work_002",
+          "pack_family_context_001"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_work_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_family_context_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_current_work_002",
+          "pack_family_context_001"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "",
+        "alternative_structure": "",
+        "present_structure": "",
+        "tension": "個人史は身体経験として続き、制度説明に還元しない",
+        "continuity": "",
+        "transformation": "",
+        "central_question": "この分岐を、いまどう読み直すかがまだ開いている",
+        "personal_tension": "身体とケアの時間のなかで分岐が生きられた",
+        "social_institutional_parallel": "分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもある",
+        "present_life_connection": "",
+        "unresolved_question": "この分岐を、いまどう読み直すかがまだ開いている",
+        "cross_lens_relation_ids": [
+          "clr_body_001",
+          "clr_as_001"
+        ],
+        "support_ids": [
+          "fact_current_preserved_001",
+          "pack_current_work_002",
+          "pack_family_context_001"
+        ],
+        "validation_status": "pending"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [
+        "thesis_gate:supported_by_backfilled"
+      ],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.11-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.9-exp"
+    },
+    "candidate_lens_selection": {
+      "candidates": [
+        {
+          "lens_id": "body",
+          "structural_reason": "身体・ケア・生殖の経験として分岐が生きられている",
+          "structures_matched": [
+            "embodied_or_fertility"
+          ],
+          "confidence": 0.9,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "after-success",
+          "structural_reason": "達成後にも閉じない問いが残る構造",
+          "structures_matched": [
+            "post_achievement_question"
+          ],
+          "confidence": 0.82,
+          "rejected_promo": false
+        }
+      ],
+      "zero_lens_reason": "",
+      "selection_method": "structural_v1"
+    },
+    "retrieved_observatory_evidence": [
+      {
+        "id": "obs_body_001",
+        "lens_id": "body",
+        "observation_id": "body_lived_choice",
+        "structural_pattern": "分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもある",
+        "scope": "embodied_branch",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:body;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "illness_fatigue_care_or_fertility_body",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_as_001",
+        "lens_id": "after-success",
+        "observation_id": "as_questions_after_achievement",
+        "structural_pattern": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "scope": "post_achievement",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:after-success;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "achievement_then_unresolved_life_question",
+        "confidence": 0.8,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      }
+    ],
+    "cross_lens_relations": [
+      {
+        "id": "clr_body_001",
+        "personal_structure": "身体とケアの時間のなかで分岐が生きられた",
+        "social_structure": "分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもある",
+        "relation_type": "continuity",
+        "branch_evidence_ids": [
+          "fact_current_preserved_001"
+        ],
+        "context_pack_ids": [
+          "pack_family_context_001"
+        ],
+        "observatory_evidence_ids": [
+          "obs_body_001"
+        ],
+        "interpretation": "個人史は身体経験として続き、制度説明に還元しない",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.86
+      },
+      {
+        "id": "clr_as_001",
+        "personal_structure": "何かを形にしたあとも、閉じない問いが残っている",
+        "social_structure": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "relation_type": "tension",
+        "branch_evidence_ids": [
+          "fact_current_preserved_001"
+        ],
+        "context_pack_ids": [
+          "pack_current_work_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_as_001"
+        ],
+        "interpretation": "達成の事実と、なお残る問いを並置して読める",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.78
+      }
+    ],
+    "observatory_core_diagnostics": {
+      "structures_detected": [
+        "embodied_or_fertility",
+        "family_life",
+        "post_achievement_question"
+      ],
+      "candidate_lens_ids": [
+        "body",
+        "after-success"
+      ],
+      "evidence_ids": [
+        "obs_body_001",
+        "obs_as_001"
+      ],
+      "relation_ids": [
+        "clr_body_001",
+        "clr_as_001"
+      ],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": false,
+      "branch_semantics_domain": "family",
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    },
+    "section_contracts": {
+      "contracts": [
+        {
+          "section_id": "branch_point",
+          "structural_purpose": "establish the fork",
+          "required_meaning": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。",
+          "interpretive_claim": "この分かれ目は一点の出来事ではなく、家族のかたち／身体と治療の選択が分かれた境界だった",
+          "realization_goal": "分岐を一点の出来事ではなく、変わった生活次元の境界として置く（claimを実質化）",
+          "required_public_label": "分岐点",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_current_preserved_001"
+          ],
+          "prohibited_claims": [
+            "employer_chronology_as_spine"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "chosen_path",
+          "structural_purpose": "state the realized path without résumé tour",
+          "required_meaning": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+          "interpretive_claim": "振り返ると、実際に選んだ道はという選択が、家族のかたち／身体と治療の選択の次元で別の組み立てを開き始めた（当時の意図や優劣の断定ではない）",
+          "realization_goal": "選択＋構造転換＋thesis連結を一段落で実現する（年表禁止）（claimを実質化）",
+          "required_public_label": "選んだ道",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_002"
+          ],
+          "prohibited_claims": [
+            "industry_tour",
+            "project_list",
+            "chronology_only",
+            "intention_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "実際に選んだ道は",
+          "structural_shift": "実際に選んだ道はという選択が、家族のかたち／身体と治療の選択の次元で別の組み立てを開き始めた",
+          "thesis_link": "いまも残る問いの起点として、この移り方が現在の生活と並んでいる",
+          "realization_required": true,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "unchosen_life",
+          "structural_purpose": "keep unrealized path open without invention",
+          "required_meaning": "選ばなかった道は、二人目を目指して治療を続けること。",
+          "interpretive_claim": "残らなかった側には、発明せずに置いておける「選ばなかった道は」という可能性が閉じずに残る",
+          "realization_goal": "選ばなかった道を発明せず開いたまま置く（claimを実質化）",
+          "required_public_label": "選ばなかった人生",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_current_preserved_001"
+          ],
+          "prohibited_claims": [
+            "invented_rank_salary_scene"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "lost",
+          "structural_purpose": "structural continuity left behind",
+          "required_meaning": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+          "interpretive_claim": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと（一覧や断定ではない）",
+          "realization_goal": "失ったものを一覧ではなく、確かめられなくなった連続として実現する（claimを実質化）",
+          "required_public_label": "失ったもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_current_preserved_001"
+          ],
+          "prohibited_claims": [
+            "salary_inventory",
+            "title_inventory",
+            "pension_inventory",
+            "colleague_network_list"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "protected",
+          "structural_purpose": "structural possibility preserved",
+          "required_meaning": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+          "interpretive_claim": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）（優劣や成功の証明ではない）",
+          "realization_goal": "守られたものを成功談ではなく、残った可能性／余白として実現する（claimを実質化）",
+          "required_public_label": "守られたもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_current_preserved_001"
+          ],
+          "prohibited_claims": [
+            "success_moral",
+            "freedom_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "residue",
+          "structural_purpose": "return to present through structural tension",
+          "required_meaning": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+          "interpretive_claim": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない。自分の会社を経営しているという状況のなかで残る緊張として読む余地がある",
+          "realization_goal": "現在の問いが古い分岐のどの部分を残しているかを慎重に書く（claimを実質化）",
+          "required_public_label": "今に残った構造",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_002"
+          ],
+          "prohibited_claims": [
+            "unsupported_causality",
+            "psychological_fact_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "observatory",
+          "structural_purpose": "social parallel without lens-name advertising",
+          "required_meaning": "",
+          "interpretive_claim": "",
+          "realization_goal": "社会の並置をレンズ名なしで織り込む（証拠が無いなら薄く）",
+          "required_public_label": "社会との接続",
+          "minimum_paragraphs": 0,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 0,
+          "realization_status": "omitted",
+          "supporting_evidence_ids": [],
+          "prohibited_claims": [
+            "lens_name_advertising",
+            "sociology_takeover"
+          ],
+          "concrete_example_budget": 0,
+          "must_be_present": false,
+          "omission_allowed": true,
+          "omission_reason": "zero_selected_observatory_lenses",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {},
+          "supporting_observatory_evidence_ids": [
+            "obs_body_001",
+            "obs_as_001"
+          ],
+          "acceptable_semantic_variants": []
+        },
+        {
+          "section_id": "re_branch",
+          "structural_purpose": "close residue tension as a present choice",
+          "required_meaning": "いまの暮らしのなかで、未解決のまま置いておく",
+          "interpretive_claim": "いまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある（優劣や成功の断定ではない）",
+          "realization_goal": "Residueの緊張を、いまの静かな選択／非選択へ閉じる（問いだけで終わらせない）（claimを実質化）",
+          "required_public_label": "これからの再分岐",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_current_work_002",
+            "pack_family_context_001"
+          ],
+          "prohibited_claims": [
+            "shiro_growth_promo",
+            "protocol_expansion_promo",
+            "app_launch_promo",
+            "productivity_advice",
+            "career_coaching",
+            "reflection_only_no_choice",
+            "question_only_rebranch",
+            "growth_challenge_rhetoric"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "45歳のとき",
+            "unresolved_question": "この分岐を",
+            "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": true,
+          "unresolved_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "present_choice": "未解決のまま置いておく",
+          "measurement_shift": "いまこの問いに一つの答えを固定しなくてよい",
+          "non_genericity": true,
+          "what_is_no_longer_required": "いまこの問いに一つの答えを固定しなくてよい",
+          "what_can_now_be_chosen": "未解決のまま置いておく",
+          "non_genericity_score": 0.95,
+          "rebranch_decision": {
+            "unresolved_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+            "present_choice": "未解決のまま置いておく",
+            "what_is_no_longer_required": "いまこの問いに一つの答えを固定しなくてよい",
+            "what_can_now_be_chosen": "未解決のまま置いておく",
+            "evidence_ids": [
+              "pack_current_work_002",
+              "pack_family_context_001"
+            ],
+            "non_genericity_score": 0.95,
+            "interpretive_claim": "いまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある（優劣や成功の断定ではない）"
+          },
+          "supporting_observatory_evidence_ids": [],
+          "acceptable_semantic_variants": []
+        }
+      ],
+      "diagnostics": {
+        "runtime_pin": "parallel-life-runtime-v1.1.11-exp",
+        "branch_semantics": {
+          "domain": "family",
+          "changed_dimension": "家族のかたち／身体と治療の選択",
+          "chosen_structure": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+          "unchosen_structure": "選ばなかった道は、二人目を目指して治療を続けること。",
+          "central_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "lost_verifiability": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+          "protected_possibility": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+          "present_residue": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+          "possible_rebranch_modes": [
+            "leave_unresolved",
+            "preserve",
+            "observe"
+          ],
+          "sensitive_boundaries": [
+            "no_unsupported_causality",
+            "no_medical_invention",
+            "no_invented_affect",
+            "no_family_outcome_invention"
+          ],
+          "evidence_ids": [
+            "pack_family_context_001",
+            "pack_current_work_002",
+            "fact_current_preserved_001",
+            "q_confirm_001",
+            "question_source_005"
+          ],
+          "confidence": 0.95,
+          "diagnostics": {
+            "domain_reasons": [
+              "family:fertility_or_child",
+              "family:family_words",
+              "entrepreneurship:ownership"
+            ],
+            "branch_employment_evidence": false,
+            "background_employment_context": true,
+            "explicit_employment_evidence": false,
+            "allows_career_product_logic": false,
+            "vague": false,
+            "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+          }
+        },
+        "semantic_domain_leak": {
+          "leaked": false,
+          "hits": [],
+          "domain": "family",
+          "changed_dimension": "家族のかたち／身体と治療の選択",
+          "authority": "non_career_guard"
+        },
+        "required_ids": [
+          "branch_point",
+          "chosen_path",
+          "unchosen_life",
+          "lost",
+          "protected",
+          "residue",
+          "re_branch"
+        ],
+        "required_public_labels": [
+          "分岐点",
+          "選んだ道",
+          "選ばなかった人生",
+          "失ったもの",
+          "守られたもの",
+          "今に残った構造",
+          "これからの再分岐"
+        ],
+        "lost_items": 1,
+        "protected_items": 1,
+        "residue_items": 1,
+        "rebranch_directions": 1,
+        "rebranch_decision": {
+          "unresolved_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "present_choice": "未解決のまま置いておく",
+          "what_is_no_longer_required": "いまこの問いに一つの答えを固定しなくてよい",
+          "what_can_now_be_chosen": "未解決のまま置いておく",
+          "evidence_ids": [
+            "pack_current_work_002",
+            "pack_family_context_001"
+          ],
+          "non_genericity_score": 0.95,
+          "interpretive_claim": "いまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある（優劣や成功の断定ではない）"
+        },
+        "claim_atoms": {
+          "present_anchor": "自分の会社を経営している",
+          "past_anchor": "45歳のとき",
+          "unresolved_question": "この分岐を",
+          "active_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "measurement_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ"
+        },
+        "interpretive_claims": {
+          "branch_point": true,
+          "chosen_path": true,
+          "unchosen_life": true,
+          "lost": true,
+          "protected": true,
+          "residue": true,
+          "re_branch": true
+        },
+        "malformed_claims": []
+      }
+    },
+    "call2_writing_pack_diagnostics": {
+      "writing_pack_chars": 22731,
+      "full_call1_chars": 29648,
+      "reduction_ratio": 0.233,
+      "evidence_fact_count": 7,
+      "duplicate_full_call1_in_writing_pack": false
+    },
+    "branch_semantics": {
+      "domain": "family",
+      "changed_dimension": "家族のかたち／身体と治療の選択",
+      "chosen_structure": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+      "unchosen_structure": "選ばなかった道は、二人目を目指して治療を続けること。",
+      "central_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+      "lost_verifiability": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+      "protected_possibility": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+      "present_residue": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+      "possible_rebranch_modes": [
+        "leave_unresolved",
+        "preserve",
+        "observe"
+      ],
+      "sensitive_boundaries": [
+        "no_unsupported_causality",
+        "no_medical_invention",
+        "no_invented_affect",
+        "no_family_outcome_invention"
+      ],
+      "evidence_ids": [
+        "pack_family_context_001",
+        "pack_current_work_002",
+        "fact_current_preserved_001",
+        "q_confirm_001",
+        "question_source_005"
+      ],
+      "confidence": 0.95,
+      "diagnostics": {
+        "domain_reasons": [
+          "family:fertility_or_child",
+          "family:family_words",
+          "entrepreneurship:ownership"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": true,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T14:07:33.436975+00:00",
+  "call2": {
+    "body_markdown": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考える分かれ目があった。それは一度きりの判断というより、家族のかたちと、身体を伴う治療の時間をどこまで続けるかが分かれる境界だった。\n\n## 選んだ道\n\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選択によって、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。その移り方は、現在自分の会社を経営している暮らしのそばで、なお読み直される問いの起点として残っている。\n\n## 選ばなかった人生\n\n選ばなかった道は、二人目を目指して治療を続けることだった。その先にどのような家族があったかを補うことはできない。ただ、その可能性を、実現しなかったからといって消えたものとして閉じずに置くことはできる。\n\n## 失ったもの\n\n失われたのは、二人目を目指して治療を続ける側にあった家族のかたちを、いまから確かめる道である。その時間を続けた先に何があったかは、結果だけでなく、身体とケアを含む過程ごと、もう辿ることができない。\n\n## 守られたもの\n\n三人で暮らす道を続けた側には、いまの家族のかたちを壊さずに置く余白が残った。いまの暮らしと仕事の具体的な場面が続いていることは、その余白が成功の証明ではなく、現在をそのまま保つための可能性であることを示している。\n\n## 今に残った構造\n\n「二人目を持っていたらどうだったか」という問いが残るのは、選ばなかった家族のかたちが、想像のうちでなお開いているからかもしれない。自分の会社を経営している現在にも、その問いは過去の出来事として片づかず、達成や評価だけでは閉じない生活の問いとして並んでいる。\n\n## これからの再分岐\n\n三人で暮らす家族のかたちと、治療を続けていたかもしれない家族の想像とのあいだにある緊張へ、いま一つの答えを固定する必要はない。現在の暮らしのなかで、この問いは未解決のまま置いておくことを選ぶ。\n",
+    "title_candidates": [
+      "身体の時間として残る分かれ目",
+      "三人で暮らす道と、閉じない家族の想像",
+      "確かめられないもう一つの家族のかたち"
+    ],
+    "subtitle_candidates": [],
+    "sections": [
+      {
+        "internal_id": "branch_point",
+        "public_heading": "分岐点",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "chosen_path",
+        "public_heading": "選んだ道",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "unchosen_life",
+        "public_heading": "選ばなかった人生",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "lost",
+        "public_heading": "失ったもの",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "protected",
+        "public_heading": "守られたもの",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "residue",
+        "public_heading": "今に残った構造",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "re_branch",
+        "public_heading": "これからの再分岐",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact_current_preserved_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考える分かれ目があった。それは一度きりの判断というより、家族のかたちと、身体を伴う治療の時間をどこまで続けるかが分かれる境界だった。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "pack_current_work_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選択によって、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。その移り方は、現在自分の会社を経営している暮らしのそばで、なお読み直される問いの起点として残ってい"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact_current_preserved_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "選ばなかった道は、二人目を目指して治療を続けることだった。その先にどのような家族があったかを補うことはできない。ただ、その可能性を、実現しなかったからといって消えたものとして閉じずに置くことはできる。"
+      },
+      {
+        "paragraph_id": "p04",
+        "support_ids": [
+          "fact_current_preserved_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "失われたのは、二人目を目指して治療を続ける側にあった家族のかたちを、いまから確かめる道である。その時間を続けた先に何があったかは、結果だけでなく、身体とケアを含む過程ごと、もう辿ることができない。"
+      },
+      {
+        "paragraph_id": "p05",
+        "support_ids": [
+          "fact_current_preserved_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "三人で暮らす道を続けた側には、いまの家族のかたちを壊さずに置く余白が残った。いまの暮らしと仕事の具体的な場面が続いていることは、その余白が成功の証明ではなく、現在をそのまま保つための可能性であることを示している。"
+      },
+      {
+        "paragraph_id": "p06",
+        "support_ids": [
+          "pack_current_work_002",
+          "question_source_005"
+        ],
+        "contains_inference": true,
+        "text_preview": "「二人目を持っていたらどうだったか」という問いが残るのは、選ばなかった家族のかたちが、想像のうちでなお開いているからかもしれない。自分の会社を経営している現在にも、その問いは過去の出来事として片づかず、達成や評価だけでは閉じない生活の問いと"
+      },
+      {
+        "paragraph_id": "p07",
+        "support_ids": [
+          "pack_current_work_002",
+          "pack_family_context_001",
+          "fact_current_preserved_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "三人で暮らす家族のかたちと、治療を続けていたかもしれない家族の想像とのあいだにある緊張へ、いま一つの答えを固定する必要はない。現在の暮らしのなかで、この問いは未解決のまま置いておくことを選ぶ。"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [
+        {
+          "id": "rebranch_semantics_001",
+          "source_meaning": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "current_receiver": "現在の生活で、この緊張をどう置くか",
+          "branch_specific_form": "いまの暮らしのなかで、未解決のまま置いておく",
+          "support_ids": [
+            "pack_current_work_002",
+            "pack_family_context_001",
+            "fact_current_preserved_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": false,
+          "selected_for_manuscript": false
+        }
+      ],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [
+        {
+          "excerpt": "この選択によって、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。",
+          "causality_strength": 3,
+          "missing_support": "explicit_causal_evidence_absent",
+          "category": "unsupported"
+        }
+      ],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1,
+      "call2_writing_pack": {
+        "writing_pack_chars": 22731,
+        "full_call1_chars": 29648,
+        "reduction_ratio": 0.233,
+        "evidence_fact_count": 7,
+        "duplicate_full_call1_in_writing_pack": false
+      },
+      "call2_prompt_version": "parallel-life-call-2-v1.1.11-exp"
+    },
+    "prompt_version": "parallel-life-call-2-v1.1.11-exp",
+    "character_count": 838
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "身体の時間として残る分かれ目",
+    "final_subtitle": "",
+    "body_markdown": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考える分かれ目があった。それは一度きりの判断というより、家族のかたちと、身体を伴う治療の時間をどこまで続けるかが分かれる境界だった。\n\n## 選んだ道\n\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選択のあとで、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。その移り方は、現在自分の会社を経営している暮らしのそばで、なお読み直される問いの起点として残っている。\n\n## 選ばなかった人生\n\n選ばなかった道は、二人目を目指して治療を続けることだった。その先にどのような家族があったかを補うことはできない。ただ、その可能性を、実現しなかったからといって消えたものとして閉じずに置くことはできる。\n\n## 失ったもの\n\n失われたのは、二人目を目指して治療を続ける側にあった家族のかたちを、いまから確かめる道である。その時間を続けた先に何があったかは、結果だけでなく、身体とケアを含む過程ごと、もう辿ることができない。\n\n## 守られたもの\n\n三人で暮らす道を続けた側には、いまの家族のかたちを壊さずに置く余白が残った。いまの暮らしと仕事の具体的な場面が続いていることは、その余白が成功の証明ではなく、現在をそのまま保つための可能性であることを示している。\n\n## 今に残った構造\n\n「二人目を持っていたらどうだったか」という問いが残るのは、選ばなかった家族のかたちが、想像のうちでなお開いているからかもしれない。自分の会社を経営している現在にも、その問いは過去の出来事として片づかず、達成や評価だけでは閉じない生活の問いとして並んでいる。\n\n## これからの再分岐\n\nいまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある。\n\nいまも残る問いは、「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [
+        {
+          "id": "rebranch_semantics_001",
+          "source_meaning": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+          "current_receiver": "現在の生活で、この緊張をどう置くか",
+          "branch_specific_form": "いまの暮らしのなかで、未解決のまま置いておく",
+          "support_ids": [
+            "pack_current_work_002",
+            "pack_family_context_001",
+            "fact_current_preserved_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": false,
+          "selected_for_manuscript": false
+        }
+      ],
+      "title_validation": {
+        "selected_title": "身体の時間として残る分かれ目",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": true,
+      "required_section_realization_details": {
+        "branch_point": {
+          "ok": true,
+          "label": "分岐点",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "chosen_path": {
+          "ok": true,
+          "label": "選んだ道",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "unchosen_life": {
+          "ok": true,
+          "label": "選ばなかった人生",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "lost": {
+          "ok": true,
+          "label": "失ったもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "protected": {
+          "ok": true,
+          "label": "守られたもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "residue": {
+          "ok": true,
+          "label": "今に残った構造",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "observatory": {
+          "ok": true,
+          "realization_status": "omitted",
+          "omission_reason": "zero_selected_observatory_lenses"
+        },
+        "re_branch": {
+          "ok": true,
+          "label": "これからの再分岐",
+          "label_present": true,
+          "paragraphs": 2,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": {
+            "excerpt": "いまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある。\n\nいまも残る問いは、「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false
+          }
+        },
+        "thesis_closure": {
+          "chosen_path": {
+            "structural_shift_ok": true,
+            "thesis_link_ok": true,
+            "excerpt": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選択のあとで、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。その移り方は、現在自分の会社を経営している暮らしのそばで、なお読み直される問いの起点として残っている。"
+          },
+          "residue": {
+            "ok": true,
+            "excerpt": "「二人目を持っていたらどうだったか」という問いが残るのは、選ばなかった家族のかたちが、想像のうちでなお開いているからかもしれない。自分の会社を経営している現在にも、その問いは過去の出来事として片づかず、達成や評価だけでは閉じない生活の問いとして並んでいる。"
+          },
+          "re_branch": {
+            "excerpt": "いまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある。\n\nいまも残る問いは、「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false,
+            "ok": true
+          },
+          "arc": "closed",
+          "ok": true
+        }
+      },
+      "resume_density_report": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "section_flags": {
+          "employer_enumeration": false,
+          "industry_enumeration": false,
+          "project_enumeration": false,
+          "chronology_stack": false,
+          "biography_repetition": false
+        },
+        "compression_required": false
+      },
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.1.11-exp",
+    "character_count": 913
+  },
+  "final_manuscript": "# 身体の時間として残る分かれ目\n\n## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考える分かれ目があった。それは一度きりの判断というより、家族のかたちと、身体を伴う治療の時間をどこまで続けるかが分かれる境界だった。\n\n## 選んだ道\n\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選択のあとで、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。その移り方は、現在自分の会社を経営している暮らしのそばで、なお読み直される問いの起点として残っている。\n\n## 選ばなかった人生\n\n選ばなかった道は、二人目を目指して治療を続けることだった。その先にどのような家族があったかを補うことはできない。ただ、その可能性を、実現しなかったからといって消えたものとして閉じずに置くことはできる。\n\n## 失ったもの\n\n失われたのは、二人目を目指して治療を続ける側にあった家族のかたちを、いまから確かめる道である。その時間を続けた先に何があったかは、結果だけでなく、身体とケアを含む過程ごと、もう辿ることができない。\n\n## 守られたもの\n\n三人で暮らす道を続けた側には、いまの家族のかたちを壊さずに置く余白が残った。いまの暮らしと仕事の具体的な場面が続いていることは、その余白が成功の証明ではなく、現在をそのまま保つための可能性であることを示している。\n\n## 今に残った構造\n\n「二人目を持っていたらどうだったか」という問いが残るのは、選ばなかった家族のかたちが、想像のうちでなお開いているからかもしれない。自分の会社を経営している現在にも、その問いは過去の出来事として片づかず、達成や評価だけでは閉じない生活の問いとして並んでいる。\n\n## これからの再分岐\n\nいまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある。\n\nいまも残る問いは、「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.9-exp",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.9-exp",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call1_schema_error": {
+      "validation_errors": [
+        "KeyError: 'pack_current_work_002'",
+        "KeyError: 'pack_current_work_002'"
+      ],
+      "offending_paths": [
+        "<root>"
+      ],
+      "repair_attempted": true,
+      "repair_succeeded": false
+    },
+    "clarification_asked_questions": [],
+    "clarification_rounds": 1,
+    "clarification_exit": "sufficient_for_deep_reading",
+    "draft_progression": "clarification_exit_to_ready_for_draft",
+    "runtime_version": "parallel-life-runtime-v1.1.11-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.1.11-exp",
+    "call_3_prompt_version": "parallel-life-call-3-v1.1.11-exp"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.11-exp",
+  "created_at": "2026-08-08T14:06:51.283211+00:00",
+  "updated_at": "2026-08-08T14:07:48.871Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T14:07:48.871Z",
+  "idempotency_keys": {
+    "draft:v118qa-case02_family-20260808T140733Z": "complete",
+    "edit:v118qa-case02_family-20260808T140733Z-e": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T140651Z_7384",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T14:06:51.147734+00:00",
+    "updated_at": "2026-08-08T14:06:51.283141+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T14:06:51.283141+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_family_context_001",
+        "content": "妻と息子との三人家族で暮らしている",
+        "category": "family_context",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 100,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "現在は自分の会社を経営している",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 101,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

@@ -1,0 +1,8 @@
+[M1_standard] ok=True http=200 elapsed=16.178s
+[M2_deep_reading_call1_persist] ok=True ground=200 session=200 status=ready_for_user_confirmation elapsed=12.442s
+[M3_case09_safe_stop] ok=True http=200 status=needs_additional_input confirm_blocked=True elapsed=11.55s
+[pulse1] health=200 enabled=200 deep_reading_enabled=True
+[pulse2] health=200 enabled=200 deep_reading_enabled=True
+[pulse3] health=200 enabled=200 deep_reading_enabled=True
+Wrote /Users/shirakotadashi/kosuke-protocol/kosuke-backend/e2e_reports/deep-reading-cloudflare-production/monitoring_window/manual_checks_20260807T215758Z.json
+ALL_OK

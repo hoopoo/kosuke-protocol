@@ -1,0 +1,24 @@
+{
+  "deep_reading_mode": "strict",
+  "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+  "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+  "pack_fact_ids": [],
+  "pack_facts": [],
+  "context_pack_usage": {},
+  "residue": [
+    {
+      "statement": "「会社員として複数業界で働いてきた。」を振り返る問いは、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact1"
+      ],
+      "present_anchor_ids": [
+        "fact3"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "創作中心の人生を選んでいた場合、現在の生活は異なっていた可能性がある。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

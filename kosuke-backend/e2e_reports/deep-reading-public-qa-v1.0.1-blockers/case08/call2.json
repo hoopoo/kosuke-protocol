@@ -1,0 +1,72 @@
+{
+  "body_markdown": "18歳のとき、進学先を決めた。家から通える大学に進学し、地方の大学へ行くことはしなかった。二つの場所は並んでいたが、記されているのは、そのうち一方へ進学したということだけである。\n\nいま、その大学とは関係のない仕事をしている。18歳で進学先を決めた時点から現在の生活まで、時間は続いている。そのあいだには、進学先の決定と現在の生活とをまだ接続しきれないものが残っている。\n\n「地方に行っていたら違ったかな」という問いがある。地方の大学での生活や、その先に何があったかを結びつける材料はない。ただ、家から通える大学へ進んだ18歳の決定と、大学とは関係のない仕事をしている現在とを、同じ時間の上に置きながら、その問いは開いたままである。\n",
+  "title_candidates": [
+    "18歳の進学先と、いまの仕事",
+    "通った大学の外にある現在",
+    "地方に行っていたら"
+  ],
+  "subtitle_candidates": [
+    "家から通える大学へ進んだ記憶と、まだ答えのない問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "現在の問い以外に、具体名詞を伴って本文から独立させられる再検討の対象は確認できない。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "18歳のとき、進学先を決めた。家から通える大学に進学し、地方の大学へ行くことはしなかった。二つの場所は並んでいたが、記されているのは、そのうち一方へ進学したということだけである。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact4",
+        "ctx_001"
+      ],
+      "contains_inference": false,
+      "text_preview": "いま、その大学とは関係のない仕事をしている。18歳で進学先を決めた時点から現在の生活まで、時間は続いている。そのあいだには、進学先の決定と現在の生活とをまだ接続しきれないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4",
+        "question1",
+        "ctx_001"
+      ],
+      "contains_inference": false,
+      "text_preview": "「地方に行っていたら違ったかな」という問いがある。地方の大学での生活や、その先に何があったかを結びつける材料はない。ただ、家から通える大学へ進んだ18歳の決定と、大学とは関係のない仕事をしている現在とを、同じ時間の上に置きながら、その問いは"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 316
+}

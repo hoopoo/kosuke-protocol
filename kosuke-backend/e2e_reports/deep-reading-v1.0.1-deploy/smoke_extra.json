@@ -1,0 +1,50 @@
+[
+  {
+    "name": "happy_path_ui_flow",
+    "started": "2026-08-07T05:13:39.288446+00:00",
+    "session_id": "b00357c8-9f10-4f1c-807a-de94d37efffc",
+    "status": "ready_for_user_confirmation",
+    "runtime": "parallel-life-runtime-v1.0.5",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "prompts": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "publishable": true,
+    "title": "近所を歩く週末と、残っていた場合",
+    "blockers": [],
+    "body_len": 361,
+    "ok": true,
+    "latency_ms": 24117
+  },
+  {
+    "name": "frozen_case3_attempt1",
+    "started": "2026-08-07T05:14:03.407403+00:00",
+    "session_id": "153b9914-138c-4514-b9af-d707708903b9",
+    "status": "ready_for_user_confirmation",
+    "runtime": "parallel-life-runtime-v1.0.5",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "prompts": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "publishable": true,
+    "title": "早稲田大学第一文学部から現在まで",
+    "blockers": [],
+    "body_len": 446,
+    "ok": true,
+    "latency_ms": 35673
+  }
+]

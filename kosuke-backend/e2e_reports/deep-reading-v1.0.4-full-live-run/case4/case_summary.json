@@ -1,0 +1,356 @@
+{
+  "id": "case4",
+  "title": "Creative work vs corporate career",
+  "started_at": "2026-08-07T03:50:04.862154+00:00",
+  "errors": [],
+  "call1": {
+    "session_id": "931b47fc-13c1-4bfe-be9a-621990f302e5",
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "central_thesis": "創作中心の人生を選んでいた場合、現在の生活は異なっていた可能性がある。",
+    "actual_secondary_count": 0,
+    "actual_secondary_descriptions": [],
+    "retrospective_counterfactuals": [
+      "創作中心なら今とは違う人生だったかと考えることがある。"
+    ],
+    "questions": [
+      "創作中心なら今とは違う人生だったかと考えることがある。"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "selected_lenses": [],
+    "rebranch_directions": [],
+    "residue_generation_path": [],
+    "validated_residue": [
+      {
+        "residue_statement": "「会社員として複数業界で働いてきた。」という過去の分岐のあとで、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「会社員として複数業界で働いてきた。」という過去の分岐のあとで、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact3"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "confirmation_view": {
+      "branch_period": "現在",
+      "triggering_event": "現在の生活",
+      "chosen_path": "企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。",
+      "unchosen_path": "創作を中心にした人生",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "創作中心なら今とは違う人生だったかと考えることがある。"
+      ],
+      "present_questions": [
+        "創作中心なら今とは違う人生だったかと考えることがある。"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "創作中心の人生を選んでいた場合、現在の生活は異なっていた可能性がある。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    }
+  },
+  "confirmation": {
+    "status": "ready_for_draft",
+    "confirmed_by_user": true,
+    "timestamp": "2026-08-07T03:50:18.374672+00:00"
+  },
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 362,
+    "title_candidates": [
+      "過去の選択と現在の生活",
+      "創作と企業経験の交差点",
+      "選ばれなかった道の影響"
+    ],
+    "subtitle_candidates": [
+      "会社員としての経験と創作の可能性"
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+    "observatory_omitted": true,
+    "analysis": {
+      "char_count": 363,
+      "heading_count": 0,
+      "chapter_by_chapter_feel": false,
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [
+        {
+          "excerpt": "さまざまな職場での経験が、現在の生活に影響を与えている。",
+          "causality_strength": 3,
+          "missing_support": "explicit_causal_evidence_absent",
+          "category": "unsupported"
+        },
+        {
+          "excerpt": "創作を中心にした人生を選ばなかったことが、今の自分を形成していると感じることがある。",
+          "causality_strength": 3,
+          "missing_support": "explicit_causal_evidence_absent",
+          "category": "unsupported"
+        },
+        {
+          "excerpt": "これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。",
+          "causality_strength": 2,
+          "missing_support": "qualified_causal_wording_absent",
+          "category": "unsupported"
+        }
+      ],
+      "unsupported_causal_frame": [
+        {
+          "excerpt": "これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。",
+          "frame_type": "causal_presupposition",
+          "missing_support": "causal_frame_without_explicit_support",
+          "category": "unsupported"
+        }
+      ],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [
+        {
+          "excerpt": "さまざまな職場での経験が、現在の生活に影響を与えている。",
+          "causality_strength": 3,
+          "missing_support": "explicit_causal_evidence_absent",
+          "category": "unsupported"
+        },
+        {
+          "excerpt": "創作を中心にした人生を選ばなかったことが、今の自分を形成していると感じることがある。",
+          "causality_strength": 3,
+          "missing_support": "explicit_causal_evidence_absent",
+          "category": "unsupported"
+        },
+        {
+          "excerpt": "これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。",
+          "causality_strength": 2,
+          "missing_support": "qualified_causal_wording_absent",
+          "category": "unsupported"
+        }
+      ],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [
+        {
+          "excerpt": "これらの経験は、現在の自分の活動においても影響を与えているのかもしれないが、具体的な因果関係は確認できない。",
+          "frame_type": "causal_presupposition",
+          "missing_support": "causal_frame_without_explicit_support",
+          "category": "unsupported"
+        }
+      ],
+      "schema_leakage_prose": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "過去の選択と現在の生活",
+        "selected_subtitle": "会社員としての経験と創作の可能性",
+        "title_supported_by_fact_ids": [
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 3,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 1,
+      "schema_leakage_prose_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "unsupported_causality",
+        "unsupported_causal_frame"
+      ]
+    }
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "complete",
+    "final_title": "過去の選択と現在の生活",
+    "final_subtitle": "会社員としての経験と創作の可能性",
+    "character_count": 237,
+    "validation_from_runtime": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "過去の選択と現在の生活",
+        "selected_subtitle": "会社員としての経験と創作の可能性",
+        "title_supported_by_fact_ids": [
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "過去の選択と現在の生活",
+        "selected_subtitle": "会社員としての経験と創作の可能性",
+        "title_supported_by_fact_ids": [
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "analysis": {
+      "char_count": 237,
+      "heading_count": 0,
+      "chapter_by_chapter_feel": false,
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "named_entity_retention": {
+      "会社員": true,
+      "創作": true
+    },
+    "session_status": "complete",
+    "publishable": true,
+    "final_manuscript_present": true
+  },
+  "call1_present_anchors": [
+    {
+      "residue": "「会社員として複数業界で働いてきた。」という過去の分岐のあとで、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+      "present_anchor_ids": [
+        "fact3"
+      ]
+    }
+  ],
+  "machine_pass_hints": {
+    "complete_and_publishable": true,
+    "blocking_reasons": [],
+    "independent_blocking": []
+  },
+  "finished_at": "2026-08-07T03:50:29.252576+00:00"
+}

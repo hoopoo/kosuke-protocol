@@ -1,0 +1,1674 @@
+{
+  "session_id": "a4eb7ecd-8276-4b06-895e-3503f4632839",
+  "raw_user_input": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。\n実際に選んだ道はNTTを離れ、外資系企業へ移ること。\n選ばなかった道は、一企業の内部で役割を積み上げ続けること。\nいまは自分の会社を経営している。\nいまも「あのとき残っていたら」と考えることがある。",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "pack_career_history_001",
+          "content": "NTT東日本で勤務した",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack_approved_items",
+          "source_text": "NTT東日本で勤務した",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_career_history_002",
+          "content": "外資系半導体企業へ転職した",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack_approved_items",
+          "source_text": "外資系半導体企業へ転職した",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_current_work_004",
+          "content": "現在は自分の会社を経営している",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack_approved_items",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_career_history_003",
+          "content": "その後、複数業界・企業を経験した",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "その後、複数業界・企業を経験した",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T064517Z_5053",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_projects_005",
+          "content": "現在、複数の観測・Protocol・文章制作を行っている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "現在、複数の観測・Protocol・文章制作を行っている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_projects",
+            "pack_id:pack_live_20260808T064517Z_5053",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "あのとき残っていたらどうなっていたか",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "あのとき残っていたらどうなっていたか",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "現在は自分の会社を経営している",
+        "現在、複数の観測・Protocol・文章制作を行っている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "28歳のとき",
+        "triggering_event": "NTTに残るか、外資へ移るかを選ぶ分岐があった",
+        "available_paths": [
+          "NTTに残る",
+          "外資へ移る"
+        ],
+        "realized_path": "外資系企業へ移ること",
+        "unrealized_paths": [
+          "一企業の内部で役割を積み上げ続けること"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [
+        "外資系半導体企業へ転職した",
+        "その後、複数業界・企業を経験した"
+      ],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_user_question_001",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "あのとき残っていたらどうなっていたか",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_current_work_004",
+        "pack_current_projects_005"
+      ],
+      "classifications": [
+        {
+          "id": "pack_career_history_001",
+          "relevance": "high",
+          "reason": "NTTでの経験が外資系企業への転職に影響を与えた可能性がある"
+        },
+        {
+          "id": "pack_career_history_002",
+          "relevance": "high",
+          "reason": "外資系企業への転職が現在のキャリアに繋がっている"
+        },
+        {
+          "id": "pack_current_work_004",
+          "relevance": "現在の仕事が過去の選択に基づいていることを示している},{",
+          "reason": "現在の活動が過去の選択に影響を受けている"
+        },
+        {
+          "id": "pack_current_projects_005",
+          "relevance": "現在のプロジェクトが過去の選択に関連している",
+          "reason": "現在のプロジェクトが過去の選択に関連している"
+        },
+        {
+          "id": "pack_career_history_003",
+          "relevance": "irrelevant_for_this_branch",
+          "reason": "runtime_backfill_unclassified;runtime_withheld_over_cap"
+        }
+      ],
+      "manuscript_logic_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_current_work_004",
+        "pack_current_projects_005"
+      ],
+      "withheld_ids": [
+        "pack_career_history_003"
+      ]
+    },
+    "meaning_compression": {
+      "past_structure": "NTTでの勤務から外資系企業への転職",
+      "alternative_structure": "一企業内でのキャリア構築と企業間移動の選択",
+      "present_structure": "現在の会社経営と過去の選択の影響",
+      "tension": "過去の選択が現在の問いを生んでいる",
+      "continuity": "キャリアの選択が現在の状況に繋がっている",
+      "transformation": "転職によってキャリアが変化した",
+      "central_question": "あのとき残っていたらどうなっていたか",
+      "personal_tension": "過去の選択に対する未解決の問い",
+      "social_institutional_parallel": "日本型の長期雇用モデルと企業間移動モデルの緊張",
+      "present_life_connection": "現在の会社経営が過去の選択に基づいている",
+      "unresolved_question": "あのとき残っていたらどうなっていたか",
+      "cross_lens_relation_ids": [
+        "clr_ee_regime_001",
+        "clr_cs_norm_001",
+        "clr_as_001"
+      ],
+      "support_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_current_work_004"
+      ],
+      "validation_status": "valid"
+    },
+    "central_thesis": {
+      "thesis_type": "personal",
+      "statement": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+      "pole_a": "一企業内での役割蓄積",
+      "pole_b": "企業間移動による専門性の獲得",
+      "supported_by": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_current_work_004"
+      ],
+      "risks": [],
+      "validation_status": "passed"
+    },
+    "lost_structure": {
+      "items": [
+        {
+          "content": "一つの制度の内部で時間を積み上げ、その蓄積を役職・評価・関係などで確認できる連続性",
+          "loss_type": "structural_continuity",
+          "support_ids": [
+            "pack_career_history_001"
+          ],
+          "certainty": "high",
+          "allowed_wording_strength": "qualified"
+        },
+        {
+          "content": "日本型の長期雇用モデルに基づく安定性",
+          "loss_type": "stability",
+          "support_ids": [
+            "pack_career_history_001"
+          ],
+          "certainty": "medium",
+          "allowed_wording_strength": "medium"
+        }
+      ]
+    },
+    "protected_structure": {
+      "items": [
+        {
+          "content": "所属先が変わっても、自分の仕事を別の言葉で定義し直す余白",
+          "support_ids": [
+            "pack_career_history_002"
+          ],
+          "causality_status": "non_causal_possibility",
+          "allowed_statement_strength": "qualified"
+        },
+        {
+          "content": "現在の会社経営",
+          "support_ids": [
+            "pack_current_work_004"
+          ],
+          "causality_status": "non_causal_parallel",
+          "allowed_statement_strength": "strong"
+        }
+      ]
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+          "content": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "pack_career_history_003"
+          ],
+          "present_anchor_ids": [
+            "pack_current_work_004"
+          ],
+          "support_ids": [
+            "pack_career_history_003",
+            "pack_current_work_004"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": [
+        {
+          "internal_id": "section_1",
+          "public_heading": "キャリアの選択とその影響",
+          "required": true,
+          "new_meaning": "キャリア選択が現在の状況に与える影響を探る",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "過去の選択が現在の問いを生んでいる",
+          "next_section_transition": "現在の状況と過去の選択の関連性を考察する",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_2",
+          "public_heading": "社会的な雇用モデルとの緊張",
+          "required": true,
+          "new_meaning": "個人の選択が社会的な規範とどのように関連しているかを考察する",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "社会的な雇用モデルとの緊張を探る",
+          "next_section_transition": "現在の問いに対する考察を行う",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        }
+      ]
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_career_history_001",
+            "pack_career_history_002"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": false
+        }
+      ]
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "28歳のとき",
+      "triggering_event": "NTTに残るか、外資へ移るかを選ぶ分岐があった",
+      "chosen_path": "外資系企業へ移ること",
+      "unchosen_path": "一企業の内部で役割を積み上げ続けること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "あのとき残っていたらどうなっていたか"
+      ],
+      "present_questions": [
+        "あのとき残っていたらどうなっていたか"
+      ],
+      "current_context": [
+        "現在は自分の会社を経営している",
+        "現在、複数の観測・Protocol・文章制作を行っている"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "runtime:parallel-life-runtime-v1.1.7-exp",
+        "observatory_section:omitted_pre_thesis_relations",
+        "runtime:parallel-life-runtime-v1.1.7-exp",
+        "section_contract_evidence_check:passed"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T064517Z_5053",
+      "pack_fact_ids": [
+        "pack_career_history_003",
+        "pack_current_projects_005"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "resume_density_report": {
+      "resume_density": 4,
+      "resume_density_flags": [
+        "org_enumeration"
+      ],
+      "compression_required": false
+    },
+    "selection_compression_diagnostics": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004",
+          "pack_current_projects_005"
+        ],
+        "classifications": [
+          {
+            "id": "pack_career_history_001",
+            "relevance": "high",
+            "reason": "NTTでの経験が外資系企業への転職に影響を与えた可能性がある"
+          },
+          {
+            "id": "pack_career_history_002",
+            "relevance": "high",
+            "reason": "外資系企業への転職が現在のキャリアに繋がっている"
+          },
+          {
+            "id": "pack_current_work_004",
+            "relevance": "現在の仕事が過去の選択に基づいていることを示している},{",
+            "reason": "現在の活動が過去の選択に影響を受けている"
+          },
+          {
+            "id": "pack_current_projects_005",
+            "relevance": "現在のプロジェクトが過去の選択に関連している",
+            "reason": "現在のプロジェクトが過去の選択に関連している"
+          },
+          {
+            "id": "pack_career_history_003",
+            "relevance": "irrelevant_for_this_branch",
+            "reason": "runtime_backfill_unclassified;runtime_withheld_over_cap"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004",
+          "pack_current_projects_005"
+        ],
+        "withheld_ids": [
+          "pack_career_history_003"
+        ]
+      },
+      "meaning_compression": {
+        "past_structure": "NTTでの勤務から外資系企業への転職",
+        "alternative_structure": "一企業内でのキャリア構築と企業間移動の選択",
+        "present_structure": "現在の会社経営と過去の選択の影響",
+        "tension": "過去の選択が現在の問いを生んでいる",
+        "continuity": "キャリアの選択が現在の状況に繋がっている",
+        "transformation": "転職によってキャリアが変化した",
+        "central_question": "あのとき残っていたらどうなっていたか",
+        "personal_tension": "過去の選択に対する未解決の問い",
+        "social_institutional_parallel": "日本型の長期雇用モデルと企業間移動モデルの緊張",
+        "present_life_connection": "現在の会社経営が過去の選択に基づいている",
+        "unresolved_question": "あのとき残っていたらどうなっていたか",
+        "cross_lens_relation_ids": [
+          "clr_ee_regime_001",
+          "clr_cs_norm_001",
+          "clr_as_001"
+        ],
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004"
+        ],
+        "validation_status": "valid"
+      },
+      "resume_density": {
+        "resume_density": 4,
+        "resume_density_flags": [
+          "org_enumeration"
+        ],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.7-exp"
+    },
+    "candidate_lens_selection": {
+      "candidates": [
+        {
+          "lens_id": "education-employment",
+          "structural_reason": "一社内蓄積キャリアと企業間移動キャリアの境界として読める",
+          "structures_matched": [
+            "employment_regime_boundary"
+          ],
+          "confidence": 0.92,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "after-success",
+          "structural_reason": "達成後にも閉じない問いが残る構造",
+          "structures_matched": [
+            "post_achievement_question"
+          ],
+          "confidence": 0.82,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "clean-society",
+          "structural_reason": "標準化された進路規範との緊張として読める",
+          "structures_matched": [
+            "normative_standard_path",
+            "employment_regime_boundary"
+          ],
+          "confidence": 0.8,
+          "rejected_promo": false
+        }
+      ],
+      "zero_lens_reason": "",
+      "selection_method": "structural_v1"
+    },
+    "retrieved_observatory_evidence": [
+      {
+        "id": "obs_ee_001",
+        "lens_id": "education-employment",
+        "observation_id": "ee_longterm_vs_mobile",
+        "structural_pattern": "日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきた",
+        "scope": "employment_regime",
+        "time_context": "japan_postwar_to_present",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:education-employment;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "stay_inside_one_firm_vs_leave_for_mobile_career",
+        "confidence": 0.9,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_cs_001",
+        "lens_id": "clean-society",
+        "observation_id": "cs_normal_path_narrowing",
+        "structural_pattern": "『普通はこうするものだ』という規範が、一社に留まり役割を積む道を標準として選択の幅を静かに狭めることがある",
+        "scope": "normative_narrowing",
+        "time_context": "era_dependent_norms",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:clean-society;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "normal_large_firm_path_vs_exit",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_as_001",
+        "lens_id": "after-success",
+        "observation_id": "as_questions_after_achievement",
+        "structural_pattern": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "scope": "post_achievement",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:after-success;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "achievement_then_unresolved_life_question",
+        "confidence": 0.8,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_ee_002",
+        "lens_id": "education-employment",
+        "observation_id": "ee_institution_sets_terms",
+        "structural_pattern": "教育から就労への移行や配属・転勤の制度が、仕事だけでなく住む場所や独立のタイミングまで同時に条件づけることがある",
+        "scope": "school_to_work_and_firm_internal",
+        "time_context": "japan_institutional_transition",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:education-employment;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "education_to_employment_or_internal_ladder",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      }
+    ],
+    "cross_lens_relations": [
+      {
+        "id": "clr_ee_regime_001",
+        "personal_structure": "一企業の内部で役割を積み上げる道を離れた",
+        "social_structure": "日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきた",
+        "relation_type": "institutional_context",
+        "branch_evidence_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004"
+        ],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_career_history_003"
+        ],
+        "observatory_evidence_ids": [
+          "obs_ee_001"
+        ],
+        "interpretation": "個人の会社選択であると同時に、一社内で地位を蓄積するキャリアと、企業間を移動しながら専門性を持ち運ぶキャリアの境界として読むことができる",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.88
+      },
+      {
+        "id": "clr_cs_norm_001",
+        "personal_structure": "『残る』側が標準の進路として置かれていた",
+        "social_structure": "『普通はこうするものだ』という規範が、一社に留まり役割を積む道を標準として選択の幅を静かに狭めることがある",
+        "relation_type": "cultural_context",
+        "branch_evidence_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_cs_001"
+        ],
+        "interpretation": "個人の去就は、当時『普通』とされていた長期雇用パスと並べて読める（規範が強制したとは断言しない）",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.8
+      },
+      {
+        "id": "clr_as_001",
+        "personal_structure": "何かを形にしたあとも、閉じない問いが残っている",
+        "social_structure": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "relation_type": "tension",
+        "branch_evidence_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_as_001"
+        ],
+        "interpretation": "達成の事実と、なお残る問いを並置して読める",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.78
+      }
+    ],
+    "observatory_core_diagnostics": {
+      "structures_detected": [
+        "employment_regime_boundary",
+        "normative_standard_path",
+        "post_achievement_question"
+      ],
+      "candidate_lens_ids": [
+        "education-employment",
+        "after-success",
+        "clean-society"
+      ],
+      "evidence_ids": [
+        "obs_ee_001",
+        "obs_cs_001",
+        "obs_as_001",
+        "obs_ee_002"
+      ],
+      "relation_ids": [
+        "clr_ee_regime_001",
+        "clr_cs_norm_001",
+        "clr_as_001"
+      ],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    },
+    "section_contracts": {
+      "contracts": [
+        {
+          "section_id": "branch_point",
+          "structural_purpose": "establish the fork",
+          "required_meaning": "NTTに残るか、外資へ移るかを選ぶ分岐があった",
+          "interpretive_claim": "この分かれ目は勤務先の一点ではなく、内部で積み上げる道と外へ持ち運ぶ道の境界だった",
+          "realization_goal": "分岐を一点の転職ではなく測り方の境界として置く（claimを実質化）",
+          "required_public_label": "分岐点",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_001"
+          ],
+          "prohibited_claims": [
+            "employer_chronology_as_spine"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "chosen_path",
+          "structural_purpose": "state the realized path without résumé tour",
+          "required_meaning": "外資系企業へ移ること",
+          "interpretive_claim": "振り返ると、一企業の内部で役割を積み上げ続けることから、所属が変わるたびに自分の仕事を定義し直す道へ移った（当時の意図や優劣の断定ではない）",
+          "realization_goal": "選択＋構造転換＋thesis連結を一段落で実現する（年表禁止）（claimを実質化）",
+          "required_public_label": "選んだ道",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_001"
+          ],
+          "prohibited_claims": [
+            "industry_tour",
+            "project_list",
+            "chronology_only",
+            "intention_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "外資系企業へ移ること",
+          "structural_shift": "一企業の内部で役割を積み上げ続けることから、所属が変わるたびに自分の仕事を定義し直す道へ移った",
+          "thesis_link": "いまも残る問いの起点として、この移り方が現在の生活につながっている",
+          "realization_required": true,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "unchosen_life",
+          "structural_purpose": "keep unrealized path open without invention",
+          "required_meaning": "一企業の内部で役割を積み上げ続けること",
+          "interpretive_claim": "残らなかった側には、発明せずに置いておける「一企業の内部で役割を積み上げ続けること」という可能性が閉じずに残る",
+          "realization_goal": "選ばなかった道を発明せず開いたまま置く（claimを実質化）",
+          "required_public_label": "選ばなかった人生",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_001"
+          ],
+          "prohibited_claims": [
+            "invented_rank_salary_scene"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "lost",
+          "structural_purpose": "structural continuity left behind",
+          "required_meaning": "一つの制度の内部で時間を積み上げ、その蓄積を役職・評価・関係などで確認できる連続性",
+          "interpretive_claim": "失われたのは安定の一覧ではなく、同じ制度の時間のなかで、自分がどこまで来たかを確かめ続ける物差し（一つの制度の内部で時間を積み上げ）だったとも読める",
+          "realization_goal": "失ったものを一覧ではなく物差し／確認の連続性として実現する（claimを実質化）",
+          "required_public_label": "失ったもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_001"
+          ],
+          "prohibited_claims": [
+            "salary_inventory",
+            "title_inventory",
+            "pension_inventory",
+            "colleague_network_list"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "protected",
+          "structural_purpose": "structural possibility preserved",
+          "required_meaning": "所属先が変わっても、自分の仕事を別の言葉で定義し直す余白",
+          "interpretive_claim": "一つの所属に人生の尺度を固定しきらず、所属先が変わっても自分の仕事を別の言葉で定義し直す余白が残った（優劣や成功の証明ではない）",
+          "realization_goal": "守られたものを成功談ではなく定義し直す余白として実現する（claimを実質化）",
+          "required_public_label": "守られたもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_002"
+          ],
+          "prohibited_claims": [
+            "success_moral",
+            "freedom_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "residue",
+          "structural_purpose": "return to present through structural tension",
+          "required_meaning": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+          "interpretive_claim": "「あのとき残っていたら」が自分の会社を経営しているという状況のなかで消えないのは、外資へ移るが別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+          "realization_goal": "現在の問いが別の物差しの想像として残ることを慎重に書く（claimを実質化）",
+          "required_public_label": "今に残った構造",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_003",
+            "pack_current_work_004"
+          ],
+          "prohibited_claims": [
+            "unsupported_causality",
+            "psychological_fact_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "observatory",
+          "structural_purpose": "social parallel without lens-name advertising",
+          "required_meaning": "個人の会社選択であると同時に、一社内で地位を蓄積するキャリアと、企業間を移動しながら専門性を持ち運ぶキャリアの境界として読むことができる",
+          "interpretive_claim": "個人の会社選択であると同時に、一社内で地位を蓄積するキャリアと、企業間を移動しながら専門性を持ち運ぶキャリアの境界として読むことができる",
+          "realization_goal": "社会の並置をレンズ名なしで織り込む（claimを実質化）",
+          "required_public_label": "社会との接続",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 0,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [],
+          "prohibited_claims": [
+            "lens_name_advertising",
+            "sociology_takeover"
+          ],
+          "concrete_example_budget": 0,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "re_branch",
+          "structural_purpose": "close residue tension as a present choice",
+          "required_meaning": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）",
+          "realization_goal": "Residueの緊張を、いま何を積み重ねと見なすかという現在の選択へ閉じる（問いだけで終わらせない）（claimを実質化）",
+          "required_public_label": "これからの再分岐",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_career_history_001",
+            "pack_career_history_002"
+          ],
+          "prohibited_claims": [
+            "shiro_growth_promo",
+            "protocol_expansion_promo",
+            "app_launch_promo",
+            "productivity_advice",
+            "career_coaching",
+            "reflection_only_no_choice",
+            "question_only_rebranch",
+            "growth_challenge_rhetoric"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "外資へ移る",
+            "unresolved_question": "あのとき残っていたら",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": true,
+          "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+          "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "measurement_shift": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "non_genericity": true,
+          "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "non_genericity_score": 0.95,
+          "rebranch_decision": {
+            "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+            "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+            "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+            "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+            "evidence_ids": [
+              "pack_career_history_001",
+              "pack_career_history_002"
+            ],
+            "non_genericity_score": 0.95,
+            "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+          }
+        }
+      ],
+      "diagnostics": {
+        "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+        "required_ids": [
+          "branch_point",
+          "chosen_path",
+          "unchosen_life",
+          "lost",
+          "protected",
+          "residue",
+          "observatory",
+          "re_branch"
+        ],
+        "required_public_labels": [
+          "分岐点",
+          "選んだ道",
+          "選ばなかった人生",
+          "失ったもの",
+          "守られたもの",
+          "今に残った構造",
+          "社会との接続",
+          "これからの再分岐"
+        ],
+        "lost_items": 2,
+        "protected_items": 2,
+        "residue_items": 1,
+        "rebranch_directions": 1,
+        "rebranch_decision": {
+          "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+          "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "evidence_ids": [
+            "pack_career_history_001",
+            "pack_career_history_002"
+          ],
+          "non_genericity_score": 0.95,
+          "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+        },
+        "claim_atoms": {
+          "present_anchor": "自分の会社を経営している",
+          "past_anchor": "外資へ移る",
+          "unresolved_question": "あのとき残っていたら",
+          "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+        },
+        "interpretive_claims": {
+          "branch_point": true,
+          "chosen_path": true,
+          "unchosen_life": true,
+          "lost": true,
+          "protected": true,
+          "residue": true,
+          "observatory": true,
+          "re_branch": true
+        },
+        "malformed_claims": []
+      }
+    },
+    "call2_writing_pack_diagnostics": {
+      "writing_pack_chars": 21147,
+      "full_call1_chars": 28459,
+      "reduction_ratio": 0.257,
+      "evidence_fact_count": 7,
+      "duplicate_full_call1_in_writing_pack": false
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T06:45:39.404494+00:00",
+  "call2": {
+    "body_markdown": "## 分岐点\n28歳のとき、NTT東日本に残るか、外資系企業へ移るかという分かれ目があった。それは勤務先を替える一点というより、同じ組織の時間のなかで自分の進み具合を確かめる道と、外へ出て仕事の意味を持ち直す道との境目だった。\n\n## 選んだ道\n外資系企業へ移ったことで、一企業の内部で役割を重ね続ける道から、所属が変わるたびに自分の仕事を言い直す道へ移った。優劣を決めるための移動ではないが、この移り方が、いま自分の会社を経営する生活にまで続く「あのとき残っていたら」という問いの起点になっている。\n\n## 選ばなかった人生\n残る側にあったのは、特定の役職や出来事を想像して埋める必要のない、一企業のなかで役割を積み上げ続ける可能性である。その可能性は実現しなかったからこそ、成功でも失敗でもなく、別の時間の流れとして閉じずに残る。\n\n## 失ったもの\n失ったのは安定の項目ではなく、同じ組織で過ごす時間によって、自分がどこまで来たかを確かめ続けられる目印だったのかもしれない。そこでは仕事の変化だけでなく、過去の自分との距離も同じ場所で読み取れたはずである。\n\n## 守られたもの\n一方で、所属先が変わっても、自分の仕事を別の言葉で定義し直す余白は残った。これは移動の価値を証明する話ではなく、一つの所属に人生全体の判断を預け切らないあり方が、外資系企業への転職以後にも持ち越されたということだ。\n\n## 今に残った構造\nその後に複数の業界や企業を経験し、現在は自分の会社を経営している。この現在と「あのとき残っていたら」を並べると、残る道は単なる過去の選択肢ではなく、一つの場で進み具合を知る別の目印として想像されているのかもしれない。場を移りながら仕事を持ち運んできた時間があるからこそ、その目印との隔たりは消えずに残る。\n\n## 社会との接続\nこの去就には、一社のなかで地位や役割を重ねていく働き方と、企業を移りながら専門性を持ち運ぶ働き方が並んでいる。当時「残る」ことが標準の進路として見えやすかったとしても、それが個人の決定を一方的に決めたとは限らない。ただ、個人の会社選びには、二つの働き方が張り合う場所が映っている。\n\n## これからの再分岐\n一社の時間のなかで自分の進み具合を確かめる感覚と、場を移って仕事を持ち運ぶ感覚とのあいだにある問いを、どちらが正しかったかという判定にはしない。役職や年収だけを唯一の到達指標にしないことにする。自分の会社を経営する現在において、長い時間をかけて何を積み重ねたと認めるかは、自分で選び直す。その選び直しによって、残らなかった道は否定されず、現在の仕事を見直すための静かな背景になる。\n",
+    "title_candidates": [
+      "残らなかった会社の時間",
+      "進み具合を測る場所",
+      "あのとき残っていたら、の後で"
+    ],
+    "subtitle_candidates": [],
+    "sections": [
+      {
+        "internal_id": "re_branch",
+        "public_heading": "これからの再分岐",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [
+      {
+        "id": "rebranch_measure_001",
+        "source_meaning": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "genericity_score": 1,
+        "invented_scene_used": false,
+        "risks": [
+          "must_not_become_product_promo"
+        ],
+        "publishable": true,
+        "selected_for_manuscript": true
+      }
+    ],
+    "rebranch_omitted_reason": null,
+    "observatory_omitted": true,
+    "paragraph_support": [],
+    "diagnostics": {
+      "rebranch_validated": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_career_history_001",
+            "pack_career_history_002"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": false
+        }
+      ],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 0,
+      "call2_writing_pack": {
+        "writing_pack_chars": 21147,
+        "full_call1_chars": 28459,
+        "reduction_ratio": 0.257,
+        "evidence_fact_count": 7,
+        "duplicate_full_call1_in_writing_pack": false
+      },
+      "call2_prompt_version": "parallel-life-call-2-v1.1.7-exp"
+    },
+    "prompt_version": "parallel-life-call-2-v1.1.7-exp",
+    "character_count": 1121
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "残らなかった会社の時間",
+    "final_subtitle": "",
+    "body_markdown": "## 分岐点\n28歳のとき、かつての勤め先に残るか、外資系企業へ移るかという分かれ目があった。それは単に勤務先を替えるかどうかではなかった。同じ組織のなかで自分の進み具合を確かめていく道と、外へ出て仕事の意味を捉え直していく道が、そこにあった。\n\n## 選んだ道\n外資系企業へ移り、一つの企業の内部で役割を重ね続ける道から、所属が変わるたびに自分の仕事を言い直す道へ進んだ。優劣を決めるための移動ではない。けれど、いま自分の会社を経営する生活のなかにも、「あのとき残っていたら」という思いが残っている。\n\n## 選ばなかった人生\n残る側には、特定の役職や出来事を想像で補わなくてもよい、一つの企業のなかで役割を重ねていく時間があった。その可能性は実現しなかった。だから成功でも失敗でもなく、別の時間の流れとして、閉じきらずに残っている。\n\n## 失ったもの\n失ったのは、安定という一語では足りない。同じ組織で過ごす時間のなかで、自分がどこまで来たかを確かめ続ける目印だったのかもしれない。仕事の変化だけでなく、過去の自分との距離も、同じ場所で読み取れたはずである。\n\n## 守られたもの\n一方で、所属先が変わっても、自分の仕事を別の言葉で定義し直す余白は残った。移動の価値を証明する話ではない。一つの所属に人生全体の判断を預け切らないあり方も、外資系企業への転職後の時間にはあった。\n\n## 今に残った構造\nその後、複数の業界や企業を経験し、現在は自分の会社を経営している。この現在と「あのとき残っていたら」を並べると、残る道は単なる過去の選択肢ではなく、一つの場で自分の進み具合を知る、別の目印として浮かぶ。場を移りながら仕事を持ち運んできた時間と、その目印との隔たりは、いまも残っている。\n\n## 社会との接続\nこの去就には、一社のなかで地位や役割を重ねていく働き方と、企業を移りながら専門性を持ち運ぶ働き方が並んでいる。「残る」ことが標準の進路として見えやすい時代や場面があったとしても、それだけで個人の決定を説明することはできない。ただ、会社を選ぶという個人の決定には、二つの働き方が張り合う場所が映っている。\n\n## これからの再分岐\n一社の時間のなかで自分の進み具合を確かめる感覚と、場を移って仕事を持ち運ぶ感覚を、どちらが正しかったかで裁かない。役職や年収だけを、唯一の到達指標にしなくてよい。自分の会社を経営する現在、長い時間をかけて何を積み重ねてきたと認めるかを、自分で選び直す。残らなかった道は否定せず、現在の仕事を見直す静かな背景として置いておく。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "個人のキャリア選択は、社会的な雇用モデルとの緊張を生む",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_career_history_001",
+            "pack_career_history_002"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": true
+        }
+      ],
+      "title_validation": {
+        "selected_title": "残らなかった会社の時間",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "pack_current_work_004"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": true,
+      "required_section_realization_details": {
+        "branch_point": {
+          "ok": true,
+          "label": "分岐点",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "chosen_path": {
+          "ok": true,
+          "label": "選んだ道",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "unchosen_life": {
+          "ok": true,
+          "label": "選ばなかった人生",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "lost": {
+          "ok": true,
+          "label": "失ったもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "protected": {
+          "ok": true,
+          "label": "守られたもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "residue": {
+          "ok": true,
+          "label": "今に残った構造",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "observatory": {
+          "ok": true,
+          "label": "社会との接続",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "re_branch": {
+          "ok": true,
+          "label": "これからの再分岐",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": {
+            "excerpt": "一社の時間のなかで自分の進み具合を確かめる感覚と、場を移って仕事を持ち運ぶ感覚を、どちらが正しかったかで裁かない。役職や年収だけを、唯一の到達指標にしなくてよい。自分の会社を経営する現在、長い時間をかけて何を積み重ねてきたと認めるかを、自分で選び直す。残らなかった道は否定せず、現在の仕事を見直す静かな背景として置いておく。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false
+          }
+        },
+        "thesis_closure": {
+          "chosen_path": {
+            "structural_shift_ok": true,
+            "thesis_link_ok": true,
+            "excerpt": "外資系企業へ移り、一つの企業の内部で役割を重ね続ける道から、所属が変わるたびに自分の仕事を言い直す道へ進んだ。優劣を決めるための移動ではない。けれど、いま自分の会社を経営する生活のなかにも、「あのとき残っていたら」という思いが残っている。"
+          },
+          "residue": {
+            "ok": true,
+            "excerpt": "その後、複数の業界や企業を経験し、現在は自分の会社を経営している。この現在と「あのとき残っていたら」を並べると、残る道は単なる過去の選択肢ではなく、一つの場で自分の進み具合を知る、別の目印として浮かぶ。場を移りながら仕事を持ち運んできた時間と、その目印との隔たりは、いまも残っている。"
+          },
+          "re_branch": {
+            "excerpt": "一社の時間のなかで自分の進み具合を確かめる感覚と、場を移って仕事を持ち運ぶ感覚を、どちらが正しかったかで裁かない。役職や年収だけを、唯一の到達指標にしなくてよい。自分の会社を経営する現在、長い時間をかけて何を積み重ねてきたと認めるかを、自分で選び直す。残らなかった道は否定せず、現在の仕事を見直す静かな背景として置いておく。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false,
+            "ok": true
+          },
+          "arc": "closed",
+          "ok": true
+        }
+      },
+      "resume_density_report": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "section_flags": {
+          "employer_enumeration": false,
+          "industry_enumeration": false,
+          "project_enumeration": false,
+          "chronology_stack": false,
+          "biography_repetition": false
+        },
+        "compression_required": false
+      },
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.1.7-exp",
+    "character_count": 1086
+  },
+  "final_manuscript": "# 残らなかった会社の時間\n\n## 分岐点\n28歳のとき、かつての勤め先に残るか、外資系企業へ移るかという分かれ目があった。それは単に勤務先を替えるかどうかではなかった。同じ組織のなかで自分の進み具合を確かめていく道と、外へ出て仕事の意味を捉え直していく道が、そこにあった。\n\n## 選んだ道\n外資系企業へ移り、一つの企業の内部で役割を重ね続ける道から、所属が変わるたびに自分の仕事を言い直す道へ進んだ。優劣を決めるための移動ではない。けれど、いま自分の会社を経営する生活のなかにも、「あのとき残っていたら」という思いが残っている。\n\n## 選ばなかった人生\n残る側には、特定の役職や出来事を想像で補わなくてもよい、一つの企業のなかで役割を重ねていく時間があった。その可能性は実現しなかった。だから成功でも失敗でもなく、別の時間の流れとして、閉じきらずに残っている。\n\n## 失ったもの\n失ったのは、安定という一語では足りない。同じ組織で過ごす時間のなかで、自分がどこまで来たかを確かめ続ける目印だったのかもしれない。仕事の変化だけでなく、過去の自分との距離も、同じ場所で読み取れたはずである。\n\n## 守られたもの\n一方で、所属先が変わっても、自分の仕事を別の言葉で定義し直す余白は残った。移動の価値を証明する話ではない。一つの所属に人生全体の判断を預け切らないあり方も、外資系企業への転職後の時間にはあった。\n\n## 今に残った構造\nその後、複数の業界や企業を経験し、現在は自分の会社を経営している。この現在と「あのとき残っていたら」を並べると、残る道は単なる過去の選択肢ではなく、一つの場で自分の進み具合を知る、別の目印として浮かぶ。場を移りながら仕事を持ち運んできた時間と、その目印との隔たりは、いまも残っている。\n\n## 社会との接続\nこの去就には、一社のなかで地位や役割を重ねていく働き方と、企業を移りながら専門性を持ち運ぶ働き方が並んでいる。「残る」ことが標準の進路として見えやすい時代や場面があったとしても、それだけで個人の決定を説明することはできない。ただ、会社を選ぶという個人の決定には、二つの働き方が張り合う場所が映っている。\n\n## これからの再分岐\n一社の時間のなかで自分の進み具合を確かめる感覚と、場を移って仕事を持ち運ぶ感覚を、どちらが正しかったかで裁かない。役職や年収だけを、唯一の到達指標にしなくてよい。自分の会社を経営する現在、長い時間をかけて何を積み重ねてきたと認めるかを、自分で選び直す。残らなかった道は否定せず、現在の仕事を見直す静かな背景として置いておく。\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.7-exp",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.7-exp",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call_1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T064517Z_5053",
+      "pack_fact_ids": [
+        "pack_career_history_003",
+        "pack_current_projects_005"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "selection_compression": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004",
+          "pack_current_projects_005"
+        ],
+        "classifications": [
+          {
+            "id": "pack_career_history_001",
+            "relevance": "high",
+            "reason": "NTTでの経験が外資系企業への転職に影響を与えた可能性がある"
+          },
+          {
+            "id": "pack_career_history_002",
+            "relevance": "high",
+            "reason": "外資系企業への転職が現在のキャリアに繋がっている"
+          },
+          {
+            "id": "pack_current_work_004",
+            "relevance": "現在の仕事が過去の選択に基づいていることを示している},{",
+            "reason": "現在の活動が過去の選択に影響を受けている"
+          },
+          {
+            "id": "pack_current_projects_005",
+            "relevance": "現在のプロジェクトが過去の選択に関連している",
+            "reason": "現在のプロジェクトが過去の選択に関連している"
+          },
+          {
+            "id": "pack_career_history_003",
+            "relevance": "irrelevant_for_this_branch",
+            "reason": "runtime_backfill_unclassified;runtime_withheld_over_cap"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004",
+          "pack_current_projects_005"
+        ],
+        "withheld_ids": [
+          "pack_career_history_003"
+        ]
+      },
+      "meaning_compression": {
+        "past_structure": "NTTでの勤務から外資系企業への転職",
+        "alternative_structure": "一企業内でのキャリア構築と企業間移動の選択",
+        "present_structure": "現在の会社経営と過去の選択の影響",
+        "tension": "過去の選択が現在の問いを生んでいる",
+        "continuity": "キャリアの選択が現在の状況に繋がっている",
+        "transformation": "転職によってキャリアが変化した",
+        "central_question": "あのとき残っていたらどうなっていたか",
+        "personal_tension": "過去の選択に対する未解決の問い",
+        "social_institutional_parallel": "日本型の長期雇用モデルと企業間移動モデルの緊張",
+        "present_life_connection": "現在の会社経営が過去の選択に基づいている",
+        "unresolved_question": "あのとき残っていたらどうなっていたか",
+        "cross_lens_relation_ids": [
+          "clr_ee_regime_001",
+          "clr_cs_norm_001",
+          "clr_as_001"
+        ],
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_004"
+        ],
+        "validation_status": "valid"
+      },
+      "resume_density": {
+        "resume_density": 4,
+        "resume_density_flags": [
+          "org_enumeration"
+        ],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.7-exp"
+    },
+    "resume_density_report": {
+      "resume_density": 4,
+      "resume_density_flags": [
+        "org_enumeration"
+      ],
+      "compression_required": false
+    },
+    "manuscript_logic_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_current_work_004",
+      "pack_current_projects_005"
+    ],
+    "runtime_version": "parallel-life-runtime-v1.1.7-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.1.7-exp",
+    "call_3_prompt_version": "parallel-life-call-3-v1.1.7-exp"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "created_at": "2026-08-08T06:45:17.476017+00:00",
+  "updated_at": "2026-08-08T06:46:16.976Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T06:46:16.976Z",
+  "idempotency_keys": {
+    "draft:v11ab-ntt_v117-rebranch_editorial-20260808T064539Z": "complete",
+    "edit:v11ab-ntt_v117-rebranch_editorial-20260808T064539Z-edit": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T064517Z_5053",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T06:45:17.116230+00:00",
+    "updated_at": "2026-08-08T06:45:17.475800+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T06:45:17.475800+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "category": "career_history",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 10,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "category": "career_history",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 11,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "category": "career_history",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 12,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 103,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "category": "current_projects",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 104,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "case": "case3",
+  "facts_n": 0,
+  "questions_n": 0,
+  "feelings_n": 0,
+  "current_context": null,
+  "primary": null,
+  "secondary_raw_type": "NoneType",
+  "secondary_raw": null,
+  "counterfactual_raw_type": "NoneType",
+  "counterfactual_raw": null,
+  "central_thesis": "選択した進路が現在の職業や人間関係に与えた影響と、選ばなかった進路の可能性を考察することが重要である。",
+  "selected_lenses": [],
+  "evaluated_lenses": [],
+  "rebranch_design_type": "dict",
+  "rebranch_design": {
+    "source_meaning": "進学の選択が人生に与える影響",
+    "current_receiver": "読者",
+    "branch_specific_form": "選択肢の比較とその結果の分析",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "user_confirmation_view": "この内容で進めてよろしいでしょうか？",
+  "input_sufficiency": true,
+  "type_mismatches": {
+    "input_sufficiency": "bool",
+    "user_confirmation_view": "str",
+    "central_thesis": "str",
+    "rebranch_design": "dict",
+    "lost_structure": "dict",
+    "protected_structure": "dict"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "staging_contextual": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.1.9-exp",
+    "schema": "parallel-life-runtime-v1.1.9-exp",
+    "pack": true,
+    "branch_semantics_present": true,
+    "domain": "career",
+    "allows_career": true
+  },
+  "staging_strict": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3"
+  },
+  "production": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack": null
+  },
+  "flags": {
+    "staging": {
+      "http": 200,
+      "body": {
+        "enabled": true,
+        "context_pack_enabled": true
+      }
+    },
+    "production": {
+      "http": 200,
+      "body": {
+        "enabled": true
+      }
+    },
+    "staging_context_pack_on": true,
+    "production_context_pack_off": true
+  },
+  "expected": {
+    "call1": "parallel-life-call-1-v1.1.9-exp",
+    "runtime": "parallel-life-runtime-v1.1.9-exp"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "id": "case2",
+  "title": "Family formation / fertility — explicit later discussion/decision",
+  "started_at": "2026-08-07T02:13:49.263863+00:00",
+  "errors": [],
+  "call1": {
+    "session_id": "f211a03e-1f50-4293-8c8b-f7d8770bf225",
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "central_thesis": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。",
+    "actual_secondary_count": 1,
+    "actual_secondary_descriptions": [
+      "がある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。45歳のとき、不妊治療を経て子どもを授かった。実際に選んだのは、妻と息"
+    ],
+    "retrospective_counterfactuals": [],
+    "questions": [
+      "今も、二人目を持っていたらどうだったかと考えることがある。"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "selected_lenses": [],
+    "rebranch_directions": [],
+    "residue_generation_path": [],
+    "validated_residue": [
+      {
+        "residue_statement": "二人目を持っていたら、現在の家族の形はどうなっていたのか。",
+        "content": "二人目を持っていたら、現在の家族の形はどうなっていたのか。",
+        "past_anchor_ids": [
+          "fact4"
+        ],
+        "present_anchor_ids": [
+          "question1"
+        ],
+        "support_ids": [
+          "fact4",
+          "question1"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "家族",
+        "overreach_risk": "低",
+        "advances_manuscript": true
+      }
+    ],
+    "confirmation_view": {
+      "branch_period": "45歳のとき",
+      "triggering_event": "不妊治療を経て子どもを授かった。",
+      "chosen_path": "妻と息子と三人で暮らす人生",
+      "unchosen_path": "不妊治療を諦めること",
+      "actual_secondary_branches": [
+        "がある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。45歳のとき、不妊治療を経て子どもを授かった。実際に選んだのは、妻と息"
+      ],
+      "retrospective_counterfactuals": [],
+      "present_questions": [
+        "今も、二人目を持っていたらどうだったかと考えることがある。"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [
+        "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。"
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    }
+  },
+  "confirmation": {
+    "status": "ready_for_draft",
+    "confirmed_by_user": true,
+    "timestamp": "2026-08-07T02:14:11.050315+00:00"
+  },
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0.1",
+    "character_count": 388,
+    "title_candidates": [
+      "不妊治療を経て選んだ家族の形",
+      "選択の結果と家族の未来",
+      "現在の生活と過去の選択"
+    ],
+    "subtitle_candidates": [
+      "不妊治療から得た家族の絆"
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+    "observatory_omitted": true,
+    "analysis": {
+      "char_count": 389,
+      "heading_count": 0,
+      "chapter_by_chapter_feel": false,
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "不妊治療を経て選んだ家族の形",
+        "selected_subtitle": "不妊治療から得た家族の絆",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    }
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0.1",
+    "status": "complete",
+    "final_title": "不妊治療を経て選んだ家族の形",
+    "final_subtitle": "不妊治療から得た家族の絆",
+    "character_count": 389,
+    "validation_from_runtime": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "不妊治療を経て選んだ家族の形",
+        "selected_subtitle": "不妊治療から得た家族の絆",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "不妊治療を経て選んだ家族の形",
+        "selected_subtitle": "不妊治療から得た家族の絆",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "analysis": {
+      "char_count": 389,
+      "heading_count": 0,
+      "chapter_by_chapter_feel": false,
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "named_entity_retention": {
+      "話し合": true,
+      "やめた": false
+    },
+    "session_status": "complete",
+    "publishable": true,
+    "final_manuscript_present": true
+  },
+  "machine_pass_hints": {
+    "complete_and_publishable": false,
+    "blocking_reasons": [],
+    "independent_blocking": []
+  },
+  "finished_at": "2026-08-07T02:14:21.119060+00:00"
+}

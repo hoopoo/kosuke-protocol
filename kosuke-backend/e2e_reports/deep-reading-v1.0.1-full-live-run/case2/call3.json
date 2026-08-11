@@ -1,0 +1,43 @@
+{
+  "status": "validation_failed",
+  "final_title": "不妊治療と家族の選択",
+  "final_subtitle": "",
+  "body_markdown": "# 不妊治療を経て子どもを授かった人生の選択\n\n不妊治療を経て、45歳のときに子どもを授かるというのは、私にとって非常に大きな出来事でした。この経験は、私の人生の方向性を大きく変え、現在の家族の形を作り出しました。私は、妻と息子と三人で暮らす人生を選びましたが、この選択肢を選ぶ前には、もう一つの道がありました。それは、不妊治療を諦めることでした。\n\n## 家族の形を作る\n\n現在、私は妻と息子との三人家族で暮らしています。息子を授かったことは、私にとっての喜びであり、彼が成長する様子を見守ることができることは、何物にも代えがたい経験です。息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しむ日々は、私の生活に色を添えています。家族との時間は、私にとっての宝物です。\n\n## 二人目の治療を考えた日々\n\n息子を授かった後、私たちは二人目を目指す治療を続けるかどうか、妻と話し合いました。結果として、私たちはその治療をやめることに決めました。この決断は、私たちにとって非常に重要なものでした。なぜなら、家族の形を維持し、息子に十分な愛情を注ぐためには、私たちの選択が重要だと感じたからです。\n\n## 選ばなかった道を振り返る\n\n今でも、二人目を持っていたらどうだったかと考えることがあります。もし治療を続けていたら、私たちの生活はどう変わっていたのか？その選択肢を選んでいたら、どんな家族の形になっていたのか？これらの疑問は、私の心の中で時折浮かび上がります。しかし、私は今の家族の形に満足しており、その選択がもたらした幸福を大切にしています。\n\n## 結論\n\n不妊治療を経て子どもを授かったことが、私の人生において最も重要な選択の一つでした。この経験は、私にとって家族の大切さを再認識させるものであり、今後も妻と息子との関係を大切にしながら、幸せな日々を送っていきたいと考えています。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "不妊治療と家族の選択",
+      "selected_subtitle": "",
+      "title_supported_by_fact_ids": [
+        "fact_1",
+        "fact_3"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "passed": true,
+      "notes": []
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "central_thesis_maintained": true,
+    "residue_centrality": false,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": false,
+    "blocking_reasons": [
+      "residue_centrality_failed"
+    ]
+  },
+  "prompt_version": "parallel-life-call-3-v1.0",
+  "character_count": 796
+}

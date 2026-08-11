@@ -1,0 +1,26 @@
+Config OK prompts: {"call_1": "parallel-life-call-1-v1.0.2", "call_2": "parallel-life-call-2-v1.0.3", "call_3": "parallel-life-call-3-v1.0.3"}
+Runtime: parallel-life-runtime-v1.0.5 | frozen v1.0 runtime was parallel-life-runtime-v1.0.4
+Models: {'version': 'parallel-life-production-models-v1.0', 'call_1': 'gpt-4o-mini', 'call_2': 'gpt-5.6-terra', 'call_3': 'gpt-5.6-terra'}
+
+=== case06: Call 1 ===
+=== case06: status=ready_for_user_confirmation confirm=True bucket=A_proceed_to_confirmation aq=0 residue=1 lenses=0
+=== case06: Confirm (approved) ===
+=== case06: Call 2 ===
+=== case06: Call 3 ===
+=== case06: done pub=True cost=$0.025458 lat=37628ms
+
+=== case08: Call 1 ===
+=== case08: status=ready_for_user_confirmation confirm=True bucket=A_proceed_to_confirmation aq=0 residue=1 lenses=0
+=== case08: Confirm (approved) ===
+=== case08: Call 2 ===
+=== case08: Call 3 ===
+=== case08: done pub=True cost=$0.023432 lat=24410ms
+
+=== case09: Call 1 ===
+=== case09: status=needs_additional_input confirm=False bucket=B_request_clarification aq=1 residue=0 lenses=0
+
+=== case10: Call 1 ===
+=== case10: status=structural_ambiguity confirm=False bucket=B_request_clarification aq=2 residue=0 lenses=0
+
+Wrote /Users/shirakotadashi/kosuke-protocol/kosuke-backend/e2e_reports/deep-reading-v1.0.1-deploy/blocker-smoke/PUBLIC_QA_RAW.json
+session_isolation {'count': 4, 'unique': 4, 'all_unique': True, 'ids': ['9632224a-b9f3-4468-85b0-0c2f9617d649', 'd3436c0b-8051-466f-ba89-545309870c44', 'ba7fc930-8964-4b45-8403-b3847c0d71ae', 'b7e4cb8f-03fc-438c-b44f-ac75493cef40']}

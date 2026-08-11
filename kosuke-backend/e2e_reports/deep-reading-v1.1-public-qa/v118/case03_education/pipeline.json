@@ -1,0 +1,354 @@
+{
+  "case_id": "case03_education",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "mixed",
+        "changed_dimension": "教育の機会／制度上の進路",
+        "chosen_structure": "その大学へ進学すること",
+        "unchosen_structure": "別の大学へ進学すること",
+        "central_tension": "「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張",
+        "lost_verifiability": "「別の大学へ進学すること」を選ばなかったことで、そこで何が続いていたかを確かめ続ける道が閉じたこと",
+        "protected_possibility": "「その大学へ進学すること」を取った側に残った、まだ閉じきらない可能性",
+        "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "fact_4",
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_5"
+        ],
+        "confidence": 0.6625,
+        "diagnostics": {
+          "domain_reasons": [
+            "education:education",
+            "career:employment_evidence"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": []
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ]
+  },
+  "safe_stop": false,
+  "session_id": "3cf60846-2a75-4b96-a785-86988b7c02d9",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_work_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "複数業界を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T073854Z_7576",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "文章や制作の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T073854Z_7576",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T073854Z_7576",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれないという問いにも見える",
+        "past_anchor_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "進学選択がキャリアに与える影響は、教育制度の枠組みの中で考えるべきである",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "mixed",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張",
+    "lost_verifiability": "「別の大学へ進学すること」を選ばなかったことで、そこで何が続いていたかを確かめ続ける道が閉じたこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、まだ閉じきらない可能性",
+    "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "fact_5"
+    ],
+    "confidence": 0.6625,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education",
+        "career:employment_evidence"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_work_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "複数業界を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T073854Z_7576",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "文章や制作の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T073854Z_7576",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T073854Z_7576",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれないという問いにも見える",
+        "past_anchor_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "進学選択がキャリアに与える影響は、教育制度の枠組みの中で考えるべきである",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "mixed",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張",
+    "lost_verifiability": "「別の大学へ進学すること」を選ばなかったことで、そこで何が続いていたかを確かめ続ける道が閉じたこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、まだ閉じきらない可能性",
+    "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.6625,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education",
+        "career:employment_evidence"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "manuscript": {
+    "title": "進学の分かれ目が、いまの仕事に残すもの",
+    "body_markdown": "## 分岐点\n\n19歳で第一志望の大学に合格した。進学先としては、その大学と別の大学があった。\n\n## 選んだ道\n\n選んだのは、第一志望の大学だった。その後、複数の業界を経験し、現在は文章や制作の仕事をしている。進学と現在の仕事を直接結びつける材料はない。大学に進んだ後の時間の先に、いまの仕事がある。\n\n## 選ばなかった人生\n\n別の大学への進学は選ばなかった。その先で何を学び、どのような仕事に就いたかは分からない。別の大学へ進む道もあった。\n\n## 失ったもの\n\n別の大学へ進んだ後を、自分の経験として確かめることはできない。その道がどこへ続いたかは、現在と比べられないまま残る。\n\n## 進んだ後の時間\n\n第一志望の大学に進んだ後、複数の業界を経て、現在は文章や制作の仕事をしている。この経過を進学の結果とみなすことはできない。それでも、現在の位置から過去の進学を見直すことはできる。\n\n## 今に残った構造\n\nいまも、別の大学へ進む道について考えることがある。進んだ大学と進まなかった大学は、過去の二択として閉じきってはいない。\n\n## 社会との接続\n\n進学と就労のつながりは、個人の選択だけでなく、教育から就労へ移る制度上の条件と並べて見ることもできる。長く一つの組織で役割を積み重ねる働き方と、組織をまたいで経験を重ねる働き方は併存してきた。制度が個人の進路を決めたとは言えないが、十九歳の進学も、こうした移行の枠組みと並べて見ることができる。\n\n## これからの再分岐\n\n別の大学へ進む道は、いまも考える対象として残っている。現在の位置から進学を見直すこともできる。\n"
+  },
+  "elapsed_s": 110.52,
+  "branch_semantics_final": {
+    "domain": "mixed",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張",
+    "lost_verifiability": "「別の大学へ進学すること」を選ばなかったことで、そこで何が続いていたかを確かめ続ける道が閉じたこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、まだ閉じきらない可能性",
+    "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」がいまも残るのは、「その大学へ進学すること」と「別の大学へ進学すること」がいまも並んで残る緊張が消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.6625,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education",
+        "career:employment_evidence"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  }
+}

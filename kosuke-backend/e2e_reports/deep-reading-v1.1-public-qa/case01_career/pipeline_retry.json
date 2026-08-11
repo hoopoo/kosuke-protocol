@@ -1,0 +1,232 @@
+{
+  "case_id": "case01_career",
+  "arm": "public_qa_retry",
+  "mode": "contextual",
+  "ok": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:chosen_path",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ],
+      "final_title": "残らなかった場所の物差し",
+      "final_subtitle": ""
+    }
+  },
+  "session_id": "f85d7eed-0a21-4b22-a2d1-1a6f4d6a40a1",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_career_history_003"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T070454Z_8233",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070454Z_8233",
+      "pack_fact_ids": [
+        "pack_career_history_003"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_003"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_004"
+        ],
+        "pack_ids_used": [
+          "pack_career_history_003"
+        ]
+      }
+    ],
+    "central_thesis": "選択の結果としての現在の状況は、過去の選択と密接に関連している",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_career_history_003"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T070454Z_8233",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070454Z_8233",
+      "pack_fact_ids": [
+        "pack_career_history_003"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_003"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_004"
+        ],
+        "pack_ids_used": [
+          "pack_career_history_003"
+        ]
+      }
+    ],
+    "central_thesis": "選択の結果としての現在の状況は、過去の選択と密接に関連している",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "manuscript": {
+    "title": "残らなかった場所の物差し",
+    "subtitle": "",
+    "body_markdown": "## 分岐点\n二十八歳のとき、NTTに残るか、外資系企業へ移るかという分岐があった。ひとつの企業の内部で役割を重ねていく道と、企業を移る道が並んでいた。\n\n## 選んだ道\n選んだのは、別の企業へ移ることだった。確かに言えるのは、NTTに残る道ではなく、企業を移る道を歩んだということだ。\n\n## 選ばなかった人生\n残る側には、一企業の内部で役割を積み上げ続ける可能性があった。どのような役職や生活になったかを知る材料はない。ただ、同じ組織で仕事を続ける道が、選ばれなかった道として残っている。\n\n## 失ったもの\nその道を離れたことで、一つの制度のなかで時間を重ね、その積み重ねを確かめていく連続性は手放された、と見ることはできる。役職や評価、関係の具体的なあり方までは推測できない。けれど、同じ場にとどまることには、時間の重なりを同じ物差しで見続ける面がある。\n\n## 守られたもの\n現在は自分の会社を経営し、複数の仕事をしている。その現在は、一つの所属だけでは捉えきれない。ただし、これを二十八歳の転職の結果だと直接結びつける材料はない。\n\n## 今に残った構造\nその後にいくつかの場を経験し、現在は自分の会社を経営している。その現在には、「あのとき残っていたらどうなっていたか」という問いがある。\n\nこの問いだけから、過去の選択への否定や後悔までは読み取れない。一つの場で積み重ねを測る道と、場を移りながら仕事を続ける道は、同じ物差しでは比べにくい。その比べにくさは、現在と過去を並べたときにも残る。\n\n## 社会との接続\n一社の内部で役割を積み上げるキャリアと、企業間を移るキャリアは、並んで存在してきた。前者では組織の内部で積み重ねが見えやすく、後者では所属先が変わる。に残るか外資系企業へ移るかという分岐も、この二つのキャリアのあいだに置くことができる。\n\n## これからの再分岐\n役職や年収だけを、唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\n一つの制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ね。そのあいだにある比べにくさを抱えたまま、現在の積み重ねを何として数えるかは選び直せる。\n",
+    "char_count": 939
+  },
+  "trace_final": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_career_history_003"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T070454Z_8233",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070454Z_8233",
+      "pack_fact_ids": [
+        "pack_career_history_003"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [
+        "pack_career_history_003"
+      ],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「その後、複数業界・企業を経験した」を振り返る問いは、「現在は自分の会社を経営している」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_career_history_003"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_004"
+        ],
+        "pack_ids_used": [
+          "pack_career_history_003"
+        ]
+      }
+    ],
+    "central_thesis": "選択の結果としての現在の状況は、過去の選択と密接に関連している",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "elapsed_s": 77.42
+}

@@ -1,0 +1,509 @@
+{
+  "session_id": "12412ec4-5e3c-48dd-a82f-fefb9bbc63b0",
+  "raw_user_input": "二十代のどこかのとき、何か選んだ気がするという分岐があった。\n実際に選んだ道は、よく覚えていない。\n選ばなかった道は、特に考えていなかった。\n現在は、今も普通に暮らしている。\nいまも「別の道があったのかな」と考えることがある。\n",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact1",
+          "content": "二十代のどこかのとき、何か選んだ気がするという分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "二十代のどこかのとき、何か選んだ気がするという分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact2",
+          "content": "実際に選んだ道は、よく覚えていない。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道は、よく覚えていない。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact3",
+          "content": "選ばなかった道は、特に考えていなかった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、特に考えていなかった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact4",
+          "content": "現在は、今も普通に暮らしている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "現在は、今も普通に暮らしている。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_001",
+          "content": "今も普通に暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "今も普通に暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_002",
+          "content": "あの分岐がいまも残る問いとして触れることがある",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "あの分岐がいまも残る問いとして触れることがある",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「別の道があったのかな」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「別の道があったのかな」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "今も普通に暮らしている",
+        "あの分岐がいまも残る問いとして触れることがある"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "二十代のどこかのとき",
+        "triggering_event": "何か選んだ気がするという分岐",
+        "available_paths": [
+          "選んだ道"
+        ],
+        "realized_path": "選んだ道",
+        "unrealized_paths": [
+          "選ばなかった道"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact1",
+          "fact2",
+          "fact3"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_fact5",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「別の道があったのかな」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [],
+      "classifications": [],
+      "manuscript_logic_ids": [],
+      "withheld_ids": []
+    },
+    "meaning_compression": {
+      "past_structure": "",
+      "alternative_structure": "",
+      "present_structure": "",
+      "tension": "",
+      "continuity": "",
+      "transformation": "",
+      "central_question": "",
+      "personal_tension": "",
+      "social_institutional_parallel": "",
+      "present_life_connection": "",
+      "unresolved_question": "",
+      "cross_lens_relation_ids": [],
+      "support_ids": [],
+      "validation_status": ""
+    },
+    "central_thesis": {
+      "thesis_type": "",
+      "statement": "",
+      "pole_a": "",
+      "pole_b": "",
+      "supported_by": [],
+      "risks": [],
+      "validation_status": ""
+    },
+    "lost_structure": {
+      "items": []
+    },
+    "protected_structure": {
+      "items": []
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+          "content": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact1"
+          ],
+          "present_anchor_ids": [
+            "fact4"
+          ],
+          "support_ids": [
+            "fact1",
+            "fact4"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": []
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": []
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "二十代のどこかのとき",
+      "triggering_event": "何か選んだ気がするという分岐",
+      "chosen_path": "選んだ道",
+      "unchosen_path": "選ばなかった道",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "いまも「別の道があったのかな」と考えることがある。"
+      ],
+      "present_questions": [
+        "いまも「別の道があったのかな」と考えることがある。"
+      ],
+      "current_context": [
+        "今も普通に暮らしている",
+        "あの分岐がいまも残る問いとして触れることがある"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.0.3",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": null,
+    "resume_density_report": null,
+    "selection_compression_diagnostics": null,
+    "candidate_lens_selection": null,
+    "retrieved_observatory_evidence": null,
+    "cross_lens_relations": null,
+    "observatory_core_diagnostics": null,
+    "section_contracts": null,
+    "call2_writing_pack_diagnostics": null,
+    "branch_semantics": null
+  },
+  "user_corrections": [
+    "あの分岐がいまも残る問いとして触れることがある。"
+  ],
+  "confirmation_timestamp": "2026-08-08T14:11:53.211673+00:00",
+  "call2": {
+    "body_markdown": "## 覚えていない分岐\n\n二十代のどこかに、何かを選んだ気がするという分岐があった。ただ、そのとき何を選んだのかは、よく覚えていない。選ばなかった道についても、当時は特に考えていなかった。\n\n現在は、今も普通に暮らしている。その生活のそばに、二十代のどこかにあった分岐を振り返る問いが置かれている。過去の内容を詳しくたどる材料はなく、別の道の具体像も残されていない。\n\nそれでも、ときに「あのとき、別の道があったのかな」と考えることがある。答えの形に定まらない問いとして、その分岐に触れることがある。今も普通に暮らしているという現在と、何かを選んだ気がするという過去は、ここでは並んでいる。\n",
+    "title_candidates": [
+      "覚えていない分岐",
+      "普通の暮らしのそばの問い",
+      "別の道があったのかな"
+    ],
+    "subtitle_candidates": [
+      "二十代のどこかに残る、名づけきれない問い"
+    ],
+    "sections": [
+      {
+        "internal_id": "remembered_branch",
+        "public_heading": "覚えていない分岐",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "過去の分岐や別の道を具体的に示す名詞が確認されていないため。",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact1",
+          "fact2",
+          "fact3"
+        ],
+        "contains_inference": false,
+        "text_preview": "二十代のどこかに、何かを選んだ気がするという分岐があった。ただ、そのとき何を選んだのかは、よく覚えていない。選ばなかった道についても、当時は特に考えていなかった。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact1",
+          "fact4",
+          "fact_current_preserved_001",
+          "fact_current_preserved_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "現在は、今も普通に暮らしている。その生活のそばに、二十代のどこかにあった分岐を振り返る問いが置かれている。過去の内容を詳しくたどる材料はなく、別の道の具体像も残されていない。"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact1",
+          "fact4",
+          "fact_current_preserved_001",
+          "fact_current_preserved_002",
+          "q_confirm_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "それでも、ときに「あのとき、別の道があったのかな」と考えることがある。答えの形に定まらない問いとして、その分岐に触れることがある。今も普通に暮らしているという現在と、何かを選んだ気がするという過去は、ここでは並んでいる。"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1
+    },
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 295
+  },
+  "call3": {
+    "status": "validation_failed",
+    "final_title": "覚えていない分岐",
+    "final_subtitle": "二十代のどこかと、今の暮らし",
+    "body_markdown": "## 覚えていない分岐\n\n二十代のどこかに、何かを選んだ気がするという分岐があった。けれど、選んだ道はよく覚えていない。選ばなかった道についても、当時は特に考えていなかった。\n\n今も普通に暮らしている。その暮らしのなかで、二十代のどこかにあった分岐に触れることがある。\n\nときに、「別の道があったのかな」と考えることがある。答えを定めないまま、何かを選んだ気がする過去と、今の普通の暮らしが並んでいる。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "覚えていない分岐",
+        "selected_subtitle": "二十代のどこかと、今の暮らし",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact_current_preserved_002"
+        ],
+        "title_supported_by_central_thesis": false,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": false,
+        "notes": [
+          "title_not_linked_to_central_thesis"
+        ]
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": false,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": true,
+      "required_section_realization_details": {},
+      "resume_density_report": null,
+      "publishable": false,
+      "blocking_reasons": [
+        "central_thesis_not_maintained",
+        "title_validation_failed"
+      ]
+    },
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "character_count": 202
+  },
+  "final_manuscript": null,
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.0.3",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.3",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "strict",
+    "context_pack_enabled": false,
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.3",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": null,
+    "selection_compression": null,
+    "resume_density_report": null,
+    "manuscript_logic_ids": [],
+    "clarification_asked_questions": [
+      "今も考えていることについて、具体的にどのようなことを思い浮かべていますか？"
+    ],
+    "clarification_rounds": 2,
+    "clarification_answer_texts": [
+      "あの分岐がいまも残る問いとして触れることがある。"
+    ],
+    "runtime_version": "parallel-life-runtime-v1.0.6",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "status": "validation_failed",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.0.6",
+  "created_at": "2026-08-08T14:11:39.176456+00:00",
+  "updated_at": "2026-08-08T14:12:10.495Z",
+  "session_revision": 7,
+  "expires_at": "2026-08-09T14:12:10.495Z",
+  "idempotency_keys": {
+    "draft:v118qa-case08_vague-20260808T141153Z": "complete",
+    "edit:v118qa-case08_vague-20260808T141153Z-e": "complete"
+  },
+  "deep_reading_mode": "strict",
+  "context_pack": null
+}

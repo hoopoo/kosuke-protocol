@@ -1,0 +1,95 @@
+=== PREVERIFY ===
+--- healthz ---
+{"status":"ok","deep_reading_enabled":true,"env":"production"}
+HTTP 200
+--- enabled ---
+{"enabled":true}
+HTTP 200
+--- pages ---
+home 200
+spa 200
+--- DO ---
+{"status":"ok","service":"parallel-life-session-do"}
+HTTP 200
+--- containers ---
+┌──────────────────────────────────────┬───────────────────────────────────────────────────────┬────────┬────────────────┬────────────────────────────────┐
+│ ID                                   │ NAME                                                  │ STATE  │ LIVE INSTANCES │ LAST MODIFIED                  │
+├──────────────────────────────────────┼───────────────────────────────────────────────────────┼────────┼────────────────┼────────────────────────────────┤
+│ a038580f-683c-4a16-8a86-e42db39cb688 │ parallel-life-api-parallellifebackend-production      │ active │ 7              │ 2026-08-07T21:53:20.151000064Z │
+├──────────────────────────────────────┼───────────────────────────────────────────────────────┼────────┼────────────────┼────────────────────────────────┤
+│ a032c112-8987-4c52-99e8-8da2d76c2166 │ parallel-life-api-staging-parallellifebackend-staging │ ready  │ 2              │ 2026-08-07T10:33:45.625999872Z │
+└──────────────────────────────────────┴───────────────────────────────────────────────────────┴────────┴────────────────┴────────────────────────────────┘
+--- prod instances ---
+┌──────────────────────────────────────────────────────────────────┬────────────────────┬──────────┬──────────┬─────────┬──────────────────────────┐
+│ INSTANCE                                                         │ NAME               │ STATE    │ LOCATION │ VERSION │ CREATED                  │
+├──────────────────────────────────────────────────────────────────┼────────────────────┼──────────┼──────────┼─────────┼──────────────────────────┤
+│ d39a6ad2aa2ac3bd7eb098dc473a6965e915755e21bd323acdbe8bdce73b356a │ production-api-r3  │ running  │ sin11    │ 2       │ 2026-08-07T21:52:06.524Z │
+├──────────────────────────────────────────────────────────────────┼────────────────────┼──────────┼──────────┼─────────┼──────────────────────────┤
+│ 9189cfcdbba5e7ad6bfdf654ac35fddebdd8ba46b8eadfc6982730ddc5e436dd │ production-api     │ inactive │ -        │ -       │ 2026-08-07T21:59:37Z     │
+├──────────────────────────────────────────────────────────────────┼────────────────────┼──────────┼──────────┼─────────┼──────────────────────────┤
+│ 9b2ddd4fd2d6b132094d96d47f8193d583896d37fac6f1ee55fb7c1c7105c8ea │ staging-api        │ inactive │ -        │ -       │ 2026-08-07T21:59:00Z     │
+├──────────────────────────────────────────────────────────────────┼────────────────────┼──────────┼──────────┼─────────┼──────────────────────────┤
+│ c6f03a162eff059934031948d73c4ff2ba1612752287a2c60c9432124112615b │ production-api-off │ inactive │ -        │ -       │ 2026-08-07T21:53:02Z     │
+├──────────────────────────────────────────────────────────────────┼────────────────────┼──────────┼──────────┼─────────┼──────────────────────────┤
+│ d177d0ef0e683e643441c6d10fd6e145c62077de7bacc561143b6139396fb736 │ production-api-r2  │ inactive │ -        │ -       │ 2026-08-07T21:53:03Z     │
+└──────────────────────────────────────────────────────────────────┴────────────────────┴──────────┴──────────┴─────────┴──────────────────────────┘
+--- secret names (no values) ---
+[
+  {
+    "name": "OPENAI_API_KEY",
+    "type": "secret_text"
+  },
+  {
+    "name": "SESSION_STORE_TOKEN",
+    "type": "secret_text"
+  },
+  {
+    "name": "SESSION_STORE_URL",
+    "type": "secret_text"
+  }
+]
+MANIFEST Parallel Life Deep Reading Production v1.0.1
+models {'call_1': 'gpt-4o-mini', 'call_2': 'gpt-5.6-terra', 'call_3': 'gpt-5.6-terra', 'notes': 'Model split unchanged from v1.0. Call 3 prompt unchanged; modality repair is runtime-deterministic.'}
+versions {'call_1_prompt': 'parallel-life-call-1-v1.0.2', 'call_2_prompt': 'parallel-life-call-2-v1.0.3', 'call_3_prompt': 'parallel-life-call-3-v1.0.3', 'runtime_validation': 'parallel-life-runtime-v1.0.5'}
+MANIFEST_OK
+--- FE bundle API URL ---
+https://parallel-life-api.shiroandco-office.workers.dev
+=== DNS ===
+
+ ⛅️ wrangler 4.119.0 (update available 4.120.0)
+───────────────────────────────────────────────
+┌───────────────────────┬─────────────────────────────────┬──────────────┬───────────────┐
+│ Project Name          │ Project Domains                 │ Git Provider │ Last Modified │
+├───────────────────────┼─────────────────────────────────┼──────────────┼───────────────┤
+│ parallel-life         │ parallel-life.pages.dev         │ No           │ 3 hours ago   │
+├───────────────────────┼─────────────────────────────────┼──────────────┼───────────────┤
+│ parallel-life-staging │ parallel-life-staging.pages.dev │ No           │ 3 hours ago   │
+└───────────────────────┴─────────────────────────────────┴──────────────┴───────────────┘
+dig parallel-life.shiroand.io
+james.ns.cloudflare.com.
+megan.ns.cloudflare.com.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUnknown arguments: project-name, projectName, domain, list[0m
+
+
+wrangler pages
+
+⚡️ Configure Cloudflare Pages
+
+COMMANDS
+  wrangler pages dev [directory] [command]  Develop your full-stack Pages application locally
+  wrangler pages functions                  Helpers related to Pages Functions
+  wrangler pages project                    Interact with your Pages projects
+  wrangler pages deployment                 Interact with the deployments of a project
+  wrangler pages deploy [directory]         Deploy a directory of static assets as a Pages deployment
+  wrangler pages secret                     Generate a secret that can be referenced in a Pages project
+  wrangler pages download                   Download settings from your project
+
+GLOBAL FLAGS
+      --cwd             Run as if Wrangler was started in the specified directory instead of the current working directory  [string]
+      --env-file        Path to an .env file to load - can be specified multiple times - values from earlier files are overridden by values in later files  [array]
+  -h, --help            Show help  [boolean]
+      --install-skills  Install Cloudflare skills for detected AI coding agents before running the command  [boolean] [default: false]
+      --profile         Use a specific auth profile  [string]
+  -v, --version         Show version number  [boolean]
+🪵  Logs were written to "/Users/shirakotadashi/Library/Preferences/.wrangler/logs/wrangler-2026-08-08_00-26-35_767.log"

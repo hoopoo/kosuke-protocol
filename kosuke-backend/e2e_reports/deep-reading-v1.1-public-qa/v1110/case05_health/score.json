@@ -1,0 +1,177 @@
+{
+  "case_id": "case05_health",
+  "category": "health / body",
+  "title": "Health / body — treatment vs work pace",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 54.9,
+  "session_id": "2f00a9f1-b649-42ab-aaf6-53471d1a0eab",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+    "unchosen_structure": "以前と同じペースで働き続けること",
+    "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「無理をして働き続けていたらどうなっていたか」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "mixed",
+  "resume_density": 1.0,
+  "cva": 8.7,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": true,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001"
+    ],
+    "structures": [
+      "embodied_or_fertility"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "unsupported_causality",
+    "required_section_unrealized:lost"
+  ],
+  "unsupported_causality_count": 1,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [
+    "sensitive_unsupported_causality"
+  ],
+  "classification": "HARD_FAIL",
+  "final_title": "休養を優先した後に残る問い",
+  "body_excerpt": "## 分岐点\n\n38歳のときに体調を崩し、働き方を変えるかを考えたことは、一度きりの判断というより、身体の制約に合わせて生活をどう成り立たせるかが分かれた境界だった。治療を続けながら在宅中心で仕事をしている現在は、その境界が出来事の後にも続いていることを示している。\n\n## 選んだ道\n\n仕事量を減らして治療と休養を優先することを選んだ。その移り方によって、以前と同じ身体条件を前提に日々を組むのではなく、制約のなかで仕事と休養を並べて置く生活が始まったのだと思う。いまも残る「無理をして働き続けていたらどうなっていたか」という問いは、この選択が現在の生活へつながっているからこそ生じている。\n\n## 選ばなかった人生\n\n以前と同じペースで働き続ける道もあった。その先に何があったかを示す材料はない。良かったか悪かったかを決めず、選ばれなかった可能性として残しておく。失ったのは、以前と同じペースで働き続ける側で続いていた身体条件や働き方を、いま同じように辿って確かめることではないか。仕事量を抑えて働いている現在からは、その連続が実際にどこまで続いたのかを検証することはできない。\n\n## 失ったも",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 1
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "validator_too_strict",
+    "all": [
+      "validator_too_strict"
+    ],
+    "blocking_reasons": [
+      "unsupported_causality",
+      "required_section_unrealized:lost"
+    ],
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  }
+}

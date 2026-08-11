@@ -1,0 +1,83 @@
+{
+  "body_markdown": "18歳のとき、進学先を決めた。家から通える大学へ進学し、地方の大学へ行くことはなかった。その二つは同じ時期に並んでいた進路であり、ここで確認できるのは、その一方が日々通う大学になったということまでである。地方でどの大学に通い、どんな生活を送ったかについての記録はない。\n\n現在は、その大学とは関係のない仕事をしている。18歳で進学先を決めた時点から現在の生活までが続いている一方で、その間を一つの説明で結び切ることはできない。大学と現在の仕事のあいだに何があったのか、進学先が現在の仕事にどの程度関わるのかを示す材料もない。ただ、過去の進学先と、大学とは関係のない仕事をしている現在とが、同じ時間の並びに置かれている。\n\n「地方に行っていたら違ったかな」という問いは、その並びのなかに残る。違っていたものが仕事だったのか、暮らしだったのか、あるいは別の何かだったのかは定められていない。答えを補うことはできないが、18歳で家から通える大学へ進んだ記憶のそばに、地方の大学という行かなかった場所が残り、現在の生活とのあいだにはまだ接続しきれていないものがある。\n",
+  "title_candidates": [
+    "18歳の進学先と、現在の生活",
+    "家から通う大学、地方という問い",
+    "行かなかった地方の大学を前にして"
+  ],
+  "subtitle_candidates": [
+    "大学とは関係のない仕事をしている現在から、18歳の進学先を見直す"
+  ],
+  "sections": [
+    {
+      "internal_id": "section_01",
+      "public_heading": "18歳の進学先",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section_02",
+      "public_heading": "現在の生活",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section_03",
+      "public_heading": "残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "将来の再検討先として扱える具体的な行動や選択肢の記録がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact_1",
+        "fact_2",
+        "fact_3"
+      ],
+      "contains_inference": false,
+      "text_preview": "18歳のとき、進学先を決めた。家から通える大学へ進学し、地方の大学へ行くことはなかった。その二つは同じ時期に並んでいた進路であり、ここで確認できるのは、その一方が日々通う大学になったということまでである。地方でどの大学に通い、どんな生活を送"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact_1",
+        "fact_4",
+        "ctx_001"
+      ],
+      "contains_inference": false,
+      "text_preview": "現在は、その大学とは関係のない仕事をしている。18歳で進学先を決めた時点から現在の生活までが続いている一方で、その間を一つの説明で結び切ることはできない。大学と現在の仕事のあいだに何があったのか、進学先が現在の仕事にどの程度関わるのかを示す"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact_1",
+        "fact_2",
+        "fact_3",
+        "ctx_001",
+        "question_1"
+      ],
+      "contains_inference": false,
+      "text_preview": "「地方に行っていたら違ったかな」という問いは、その並びのなかに残る。違っていたものが仕事だったのか、暮らしだったのか、あるいは別の何かだったのかは定められていない。答えを補うことはできないが、18歳で家から通える大学へ進んだ記憶のそばに、地"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 479
+}

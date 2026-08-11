@@ -1,0 +1,120 @@
+{
+  "case_id": "case08_vague",
+  "category": "vague or weak branch",
+  "title": "Vague / weak branch — thin options",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 31.9,
+  "session_id": "ae28ccf8-8329-432f-838e-4a86fcb4316a",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.0.3",
+  "call3_prompt": "parallel-life-call-3-v1.0.3",
+  "branch_semantics": {
+    "domain": null,
+    "changed_dimension": null,
+    "chosen_structure": null,
+    "unchosen_structure": null,
+    "central_tension": null,
+    "lost_verifiability": null,
+    "protected_possibility": null,
+    "present_residue": null,
+    "possible_rebranch_modes": null,
+    "sensitive_boundaries": null,
+    "confidence": null,
+    "diagnostics": {}
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 2,
+    "questions_seen": [
+      "今の生活の具体的な状況について教えてください。"
+    ],
+    "duplicate_questions": [],
+    "continued": true,
+    "final_status": "ready_for_draft",
+    "schema_leakage": true
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 7,
+  "life_read": "mixed",
+  "resume_density": 1.0,
+  "cva": 7.0,
+  "personal_focus": 5,
+  "social_depth": 3,
+  "thesis_closure": 5,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": false,
+    "chosen_path": false,
+    "unchosen_life": false,
+    "lost": false,
+    "protected": false,
+    "residue": false,
+    "observatory": false,
+    "re_branch": false,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [],
+    "selected": [],
+    "evidence_ids": [],
+    "structures": null,
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS_WITH_NOTES",
+  "final_title": "二十代のどこかと現在",
+  "body_excerpt": "## 記憶に残る輪郭\n\n二十代のどこかに、何かを選んだ気がする分岐があった。けれど、選んだ道はよく覚えていない。選ばなかった道についても、特に考えていなかった。\n\n残っているのは、何かを選んだ気がするという輪郭である。選んだ道の内容も、選ばなかった道の内容も、ここでは定かではない。\n\n## 続いている現在\n\nいまも普通に暮らしている。暮らしと仕事の具体的な場面が、いまも続いている。\n\nその日々のなかで、ときどき「別の道があったのかな」と考えることがある。二十代の曖昧な分岐と、いま続いている暮らしを並べて見ることはできる。ただ、あのときの分岐と現在の暮らしを直接結びつける材料はない。\n\n覚えていない選択と、考えていなかったもう一方の道は、答えにはならないまま、いまの暮らしのそばにある。\n",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 0,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 1
+  },
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "schema_version": "parallel-life-runtime-v1.0.6",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.0.3",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.0.3",
+      "branch_semantics": null
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

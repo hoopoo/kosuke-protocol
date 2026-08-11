@@ -1,0 +1,147 @@
+{
+  "case_id": "case06_entrepreneurship",
+  "category": "entrepreneurship / business",
+  "title": "Entrepreneurship — leave company to found",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 57.15,
+  "session_id": "bfdf552e-9784-4004-b7be-232ec2223dff",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "career",
+    "changed_dimension": "所有と安定／リスクへの露出",
+    "chosen_structure": "会社を辞めて自分の会社を始めること",
+    "unchosen_structure": "会社員として残ること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「会社に残っていたら、どのような人生だったのか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.8166666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "entrepreneurship:ownership",
+        "career:branch_employment"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "YES",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "after-success"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_as_001"
+    ],
+    "structures": [
+      "post_achievement_question"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "33歳の分岐と、現在の会社",
+  "body_excerpt": "## 分岐点\n\n33歳のとき、会社を辞めて起業するかを選ぶ分かれ目があった。それは勤務先を替える一点の決定というより、安定のなかに留まることと、自分で事業を持ちリスクにさらされることとの境界だった。\n\n## 選んだ道\n\n選んだのは、会社を辞めて自分の会社を始めることだった。振り返れば、会社員として残ることから、所属が変わるたびに自分の仕事を定義し直す道へ移ったことになる。この移り方が、会社に残っていた場合を考える現在の問いの起点にもなっている。\n\n## 選ばなかった人生\n\n選ばなかった道は、会社員として残ることだった。その先の肩書きや暮らしについては、ここに材料がない。会社員として残るという可能性を、具体化しないまま置いておく。閉じたのは、同じ制度の時間のなかで、自分がどこまで進んだかを確かめ続ける道だった。会社員として残っていれば得られたはずの何かを数え上げることではなく、同じ物差しに自分を置き続ける連続が失われた、ということになる。\n\n## 失ったもの\n\n閉じたのは、同じ制度の時間のなかで、自分がどこまで進んだかを確かめ続ける道だった。会社員として残っていれば得られたはずの何かを数",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 3,
+    "分岐": 4,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "career",
+    "authority": "career_allowed"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  }
+}

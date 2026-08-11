@@ -1,0 +1,22 @@
+{
+  "case_id": "case4",
+  "error": null,
+  "top_level_types": {
+    "grounded_input": "dict",
+    "input_sufficiency": "str",
+    "branch_structure": "dict",
+    "central_thesis": "str",
+    "lost_structure": "dict",
+    "protected_structure": "dict",
+    "residue_candidates": "list",
+    "evaluated_observatory_lenses": "list",
+    "selected_observatory_lenses": "list",
+    "editorial_outline": "list",
+    "rebranch_design": "dict",
+    "additional_questions": "list",
+    "user_confirmation_view": "str"
+  },
+  "parsed_ok": false,
+  "parse_error": "AttributeError: 'str' object has no attribute 'get'",
+  "parse_traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 57, in <module>\n  File \"/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/grounding.py\", line 269, in parse_call1_payload\n    required_fields_complete=bool(sufficiency_raw.get(\"required_fields_complete\", True)),\n                                  ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'str' object has no attribute 'get'\n"
+}

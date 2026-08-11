@@ -1,0 +1,284 @@
+{
+  "case_id": "case05_health",
+  "arm": "public_qa",
+  "mode": "contextual",
+  "ok": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed",
+        "required_section_unrealized:protected",
+        "required_section_unrealized:observatory"
+      ],
+      "final_title": "在宅で続く仕事と、残る不安",
+      "final_subtitle": ""
+    }
+  },
+  "session_id": "a60ad6cb-4d43-4d78-89f5-85dc3064835e",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_work_002",
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "治療を続けながら在宅中心で仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T065634Z_2274",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "仕事量を抑えて働いている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T065634Z_2274",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065634Z_2274",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「今後の働き方についての不安が残る。」という問いは、一続きの制度の内部で進度を知る測定系を失ったこととして読むことができる",
+        "past_anchor_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "体調を崩したことが、働き方を見直すきっかけとなった。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_work_002",
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "治療を続けながら在宅中心で仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T065634Z_2274",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "仕事量を抑えて働いている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T065634Z_2274",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065634Z_2274",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「今後の働き方についての不安が残る。」という問いは、一続きの制度の内部で進度を知る測定系を失ったこととして読むことができる",
+        "past_anchor_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "体調を崩したことが、働き方を見直すきっかけとなった。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "manuscript": {
+    "title": "在宅で続く仕事と、残る不安",
+    "subtitle": "",
+    "body_markdown": "## 分岐点\n\n38歳で体調を崩し、働き方を変えるかを考える分岐があった。仕事量を減らして治療と休養を優先する道と、以前と同じペースで働き続ける道が並んでいた。\n\n## 選んだ道\n\n選んだのは、仕事量を減らし、治療と休養を優先することだった。現在は治療を続けながら在宅中心で仕事をし、仕事量も抑えている。\n\n## 選ばなかった人生\n\n以前と同じペースで働き続ける道は選ばなかった。その先に何があったかを直接知る材料はない。ただ、「無理をして働き続けていたらどうなっていたか」という問いは、いまも残っている。\n\n## 失ったもの\n\n以前と同じペースを続ける側には、仕事の時間の積み重ねのなかで、自分の進み具合を確かめる手がかりがあったとも読める。その手がかりを、いまの働き方のなかで以前と同じ形に置くことは難しいのかもしれない。\n\n## 守られたもの\n\n治療を続けながら在宅中心で働き、仕事量を抑える現在には、仕事を生活の条件と切り離さずに組み立てる余地がある。これは選んだ道の優位を示すものではなく、別の尺度が必要になる現在の形である。\n\n## 今に残った構造\n\n「無理をして働き続けていたらどうなっていたか」という問いは、選ばなかった道の結果を知りたいというだけではない。以前と同じペースのなかで進み具合を測る物差しと、治療を続けながら仕事量を抑える現在の物差しが、並んでいるようにも見える。\n\n不安を特定の理由へ結びつける材料はない。それでも、何を積み重ねと受け取り、何によって仕事の進み具合を知るのかという問いは、現在の働き方のそばに残る。\n\n## 社会との接続\n\n働き方は、勤務形態だけでは言い尽くせない。治療と休養の時間をどう置くかも、その一部になる。この分岐もまた、仕事についての判断であると同時に、身体の状態とケアの時間を含む生活の組み方として続いている。\n\n## これからの再分岐\n\n役職や年収だけを唯一の到達指標にしない読み方はありうる。治療を続けながら在宅中心で働き、仕事量を抑えている現在において、何を長い時間をかけた積み重ねとみなすか。その物差しを一つに固定しない余地がある。\n\n選ばなかった道への問いを消す必要はない。その問いを残したまま、現在の働き方に合う手がかりを置いていくことができる。\n",
+    "char_count": 960
+  },
+  "trace_final": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_work_002",
+      "pack_major_life_events_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_major_life_events_001",
+        "content": "治療を続けながら在宅中心で仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:major_life_events",
+          "pack_id:pack_live_20260808T065634Z_2274",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "仕事量を抑えて働いている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T065634Z_2274",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065634Z_2274",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_major_life_events_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_major_life_events_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「今後の働き方についての不安が残る。」という問いは、一続きの制度の内部で進度を知る測定系を失ったこととして読むことができる",
+        "past_anchor_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "体調を崩したことが、働き方を見直すきっかけとなった。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "elapsed_s": 84.98
+}

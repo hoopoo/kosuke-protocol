@@ -1,0 +1,81 @@
+{
+  "body_markdown": "19歳のとき、第一志望の早稲田大学第一文学部に合格し、そこへ進学した。そのときには、別の大学へ進学する可能性もあった。ここで確認できるのは大学名と進学先の対照までであり、もう一方の大学でどのような学生生活があったかを記す材料はない。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳で早稲田大学第一文学部に合格したことと、この現在の仕事のあり方を同じ時間の列に置くことはできる。ただし、そのあいだには、まだ接続しきれていないものが残っている。複数の業界を経験した経過や、文章とプロトコルをまとめる現在へ至る道筋を、大学進学だけで説明することはできない。\n\n別の大学なら、仕事や人間関係がどう変わっていたかと考えることがある。その問いには、いまの仕事と人間関係の具体的な経過、そして別の大学での生活を比べる材料が要る。しかし、ここにあるのは、早稲田大学第一文学部へ進学した19歳の事実と、文章やプロトコルをまとめている現在、そして別の大学について残る問いである。答えを補わず、その間隔を残しておく。\n",
+  "title_candidates": [
+    "十九歳の合格と、現在の文章",
+    "早稲田大学第一文学部から現在までの間隔",
+    "別の大学を考えるとき"
+  ],
+  "subtitle_candidates": [
+    "複数の業界を経て、文章やプロトコルをまとめる現在に残る問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "十九歳から現在まで",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "別の大学以外の具体的な進学先、仕事、人間関係に関する確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格し、そこへ進学した。そのときには、別の大学へ進学する可能性もあった。ここで確認できるのは大学名と進学先の対照までであり、もう一方の大学でどのような学生生活があったかを記す材料はない。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳で早稲田大学第一文学部に合格したことと、この現在の仕事のあり方を同じ時間の列に置くことはできる。ただし、そのあいだには、まだ接続しきれていないものが残っている。複数の業"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "別の大学なら、仕事や人間関係がどう変わっていたかと考えることがある。その問いには、いまの仕事と人間関係の具体的な経過、そして別の大学での生活を比べる材料が要る。しかし、ここにあるのは、早稲田大学第一文学部へ進学した19歳の事実と、文章やプロ"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [
+      {
+        "excerpt": "ここで確認できるのは大学名と進学先の対照までであり、もう一方の大学でどのような学生生活があったかを記す材料はない。",
+        "detail_type": "campus_scene",
+        "missing_support": "personal_detail_absent:campus_scene",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_scenes": [
+      {
+        "excerpt": "ここで確認できるのは大学名と進学先の対照までであり、もう一方の大学でどのような学生生活があったかを記す材料はない。",
+        "scene_type": "campus_scene",
+        "missing_support": "scene_framing_absent:campus_scene",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 461
+}

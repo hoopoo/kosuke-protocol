@@ -1,0 +1,452 @@
+{
+  "case_id": "case01_career",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.10-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "career",
+        "changed_dimension": "制度的な所属／移動の仕方",
+        "chosen_structure": "外資系企業へ移ること。",
+        "unchosen_structure": "NTTに残る",
+        "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+        "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+        "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+        "present_residue": "「あのとき残っていたらどうなっていたのか。」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_career_history_003",
+          "pack_current_work_004",
+          "pack_current_projects_005",
+          "fact_005",
+          "question_001"
+        ],
+        "confidence": 0.95,
+        "diagnostics": {
+          "domain_reasons": [
+            "career:branch_employment",
+            "career:background_employment_context",
+            "background_employment_context:pack"
+          ],
+          "branch_employment_evidence": true,
+          "background_employment_context": true,
+          "explicit_employment_evidence": true,
+          "allows_career_product_logic": true,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "80b38cf8-c935-49f8-b9a8-e2379a5e005c",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.10-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_projects_005",
+      "pack_current_work_004"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T093221Z_3657",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "個人のキャリア選択は、社会的な雇用モデルの影響を受ける。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "NTTの場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "career",
+    "changed_dimension": "制度的な所属／移動の仕方",
+    "chosen_structure": "外資系企業へ移ること。",
+    "unchosen_structure": "NTTに残る",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「あのとき残っていたらどうなっていたのか。」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_work_004",
+      "pack_current_projects_005",
+      "fact_005",
+      "question_001"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "career:branch_employment",
+        "career:background_employment_context",
+        "background_employment_context:pack"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.10-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_projects_005",
+      "pack_current_work_004"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T093221Z_3657",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T093221Z_3657",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "個人のキャリア選択は、社会的な雇用モデルの影響を受ける。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "NTTの場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "career",
+    "changed_dimension": "制度的な所属／移動の仕方",
+    "chosen_structure": "外資系企業へ移ること。",
+    "unchosen_structure": "NTTに残る",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「あのとき残っていたらどうなっていたのか。」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_work_004",
+      "pack_current_projects_005",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "career:branch_employment",
+        "career:background_employment_context",
+        "background_employment_context:pack"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "manuscript": {
+    "title": "残らなかった時間の物差し",
+    "body_markdown": "## 分岐点\n\n28歳のとき、NTTに残るか、外資へ移るかという分岐があった。そこには、一つの企業の内部で役割を積み上げていく道と、企業を移る道が並んでいた。\n\n## 選んだ道\n\n選んだのは、NTTを離れて外資系企業へ移ることだった。その後は複数の業界や企業を経験し、現在は自分の会社を経営している。経歴を年表として並べるよりも、一つの所属にとどまる道を選ばなかったこととして、この移り方を見ることができる。\n\n## 選ばなかった人生\n\n選ばなかったのは、NTTに残る道だった。その先にどんな役割や待遇があったかは、ここでは定めない。一企業の内部で役割を積み上げ続けるという可能性だけが、実現しなかった道として残る。\n\n## 失ったもの\n\nNTTに残る道を取らなかったため、同じ企業の内部で役割を積み上げ、その時間のなかで自分の進み具合を見ていく経歴は、この人生には含まれない。それを損得の一覧にせず、選ばれなかった連続として置いておく。\n\n## 守られたもの\n\n一方で、経歴は一つの所属だけでは記述されないものになった。外資系企業への転職の後にも複数の業界や企業を経験し、いまは自分の会社を経営している。仕事を一つの所属だけで測らない見方を置く材料は、この経歴のなかにある。\n\n## 今に残った構造\n\nいま自分の会社を経営する生活と、「あのとき残っていたらどうなっていたのか」という問いを並べて読むことができる。ここで答えをつくる材料はない。ただ、一つの企業の内部で積み上げる道と、所属を移りながら仕事を続ける道の両方が、問いの背景にある。\n\n日本では、一社に長く勤めて役割を積み上げる働き方と、企業間を移る働き方が併存してきた。28歳の分岐も、そのどちらかを選ぶ個別の場面として眺められる。社会の雇用モデルが選択を決めた、とまでは言えない。\n\n## これからの再分岐\n\nすぐに結論を出さなくてよい。緊張がどう残るかを、まず見ておく余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n\n"
+  },
+  "elapsed_s": 54.68,
+  "branch_semantics_final": {
+    "domain": "career",
+    "changed_dimension": "制度的な所属／移動の仕方",
+    "chosen_structure": "外資系企業へ移ること。",
+    "unchosen_structure": "NTTに残る",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「あのとき残っていたらどうなっていたのか。」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_work_004",
+      "pack_current_projects_005",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "career:branch_employment",
+        "career:background_employment_context",
+        "background_employment_context:pack"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "qa_version": "v1.1.10-exp"
+}

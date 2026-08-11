@@ -1,0 +1,1612 @@
+{
+  "session_id": "659adf8c-6d5b-40cf-a9c3-aef08f7df371",
+  "raw_user_input": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。\n選ばなかった道は、二人目を目指して治療を続けること。\n現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。\nいまも「二人目を持っていたらどうだったか」と考えることがある。\n息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている\n",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact_001",
+          "content": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えたという分岐があった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_002",
+          "content": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_003",
+          "content": "選ばなかった道は、二人目を目指して治療を続けること。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、二人目を目指して治療を続けること。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_004",
+          "content": "現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [
+            "pack_family_context_001",
+            "pack_current_work_002"
+          ],
+          "tags": []
+        },
+        {
+          "id": "pack_family_context_001",
+          "content": "妻と息子との三人家族で暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "妻と息子との三人家族で暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:family_context",
+            "pack_id:pack_live_20260808T065405Z_6834",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_work_002",
+          "content": "現在は自分の会社を経営している",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T065405Z_6834",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "feelings": [
+        {
+          "id": "feel_confirm_001",
+          "content": "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。",
+          "boundary_type": "user_feeling",
+          "source_field": "user_confirmation_view",
+          "source_text": "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "q_confirm_thesis",
+          "content": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "妻と息子との三人家族で暮らしている",
+        "現在は自分の会社を経営している"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "45歳のとき",
+        "triggering_event": "不妊治療を経て子どもを授かった",
+        "available_paths": [
+          "妻と息子と三人で暮らす人生を続けること",
+          "二人目を目指して治療を続けること"
+        ],
+        "realized_path": "妻と息子と三人で暮らす人生を続けること",
+        "unrealized_paths": [
+          "二人目を目指して治療を続けること"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_fact_005",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        },
+        {
+          "id": "cf_q_confirm_thesis",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001",
+        "q_confirm_thesis"
+      ]
+    },
+    "relevant_context_selection": {
+      "selected_ids": [
+        "pack_family_context_001",
+        "pack_current_work_002"
+      ],
+      "classifications": [
+        {
+          "id": "pack_current_work_002",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        },
+        {
+          "id": "pack_family_context_001",
+          "relevance": "supporting",
+          "reason": "runtime_backfill_unclassified"
+        }
+      ],
+      "manuscript_logic_ids": [
+        "pack_family_context_001",
+        "pack_current_work_002"
+      ],
+      "withheld_ids": []
+    },
+    "meaning_compression": {
+      "past_structure": "不妊治療を経て子どもを授かり、二人目を目指すかを考えたが、妻と息子と三人で暮らす道を選んだ。",
+      "alternative_structure": "二人目を持たない選択をしたが、今もその選択について考えることがある。",
+      "present_structure": "現在は妻と息子との三人家族で、自分の会社を経営している。",
+      "tension": "二人目を持つことへの思いと、現在の家族との生活の満足感の間に緊張がある。",
+      "continuity": "選択の結果としての現在の生活が、過去の選択とどのように繋がっているかを考える。",
+      "transformation": "選択を通じて、家族の形や自分の人生の方向性が変わった。",
+      "central_question": "二人目を持っていたらどうだったかという問いが、現在の生活にどのように影響しているのか。",
+      "personal_tension": "二人目を持つことへの思いと、現在の家族との生活の満足感の間に緊張がある。",
+      "social_institutional_parallel": "家族の形や育児に関する社会的期待と、個人の選択との間にある緊張。",
+      "present_life_connection": "現在の生活は、過去の選択と深く結びついている。",
+      "unresolved_question": "二人目を持っていたらどうだったかという問いは、今も解決されていない。",
+      "cross_lens_relation_ids": [
+        "clr_body_001",
+        "clr_as_001"
+      ],
+      "support_ids": [
+        "fact_001",
+        "fact_002",
+        "fact_003",
+        "pack_family_context_001",
+        "pack_current_work_002"
+      ],
+      "validation_status": "validated"
+    },
+    "central_thesis": {
+      "thesis_type": "personal",
+      "statement": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+      "pole_a": "二人目を持つことへの思い",
+      "pole_b": "現在の家族との生活の満足感",
+      "supported_by": [
+        "fact_001",
+        "fact_002"
+      ],
+      "risks": [],
+      "validation_status": "passed"
+    },
+    "lost_structure": {
+      "items": [
+        {
+          "content": "一つの制度の内部で時間を積み上げ、その蓄積を役職・評価・関係などで確認できる連続性",
+          "loss_type": "structural_continuity",
+          "support_ids": [
+            "fact_001",
+            "fact_002",
+            "pack_family_context_001"
+          ],
+          "certainty": "qualified",
+          "allowed_wording_strength": "qualified"
+        }
+      ]
+    },
+    "protected_structure": {
+      "items": [
+        {
+          "content": "所属先が変わっても、自分の仕事を別の言葉で定義し直す余白",
+          "support_ids": [
+            "fact_004"
+          ],
+          "causality_status": "non_causal_possibility",
+          "allowed_statement_strength": "qualified"
+        }
+      ]
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考え」を振り返る問いは、「現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+          "content": "「45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考え」を振り返る問いは、「現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact_001"
+          ],
+          "present_anchor_ids": [
+            "fact_004"
+          ],
+          "support_ids": [
+            "fact_001",
+            "fact_004"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": [
+        {
+          "internal_id": "section_001",
+          "public_heading": "家族と選択の分岐",
+          "required": true,
+          "new_meaning": "不妊治療を経ての選択が、現在の家族との生活にどのように影響しているか。",
+          "allowed_boundary_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_003",
+            "fact_004"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "家族との生活の選択が、どのように形成されたかを探る。",
+          "next_section_transition": "現在の生活と過去の選択の関係を考察する。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_002",
+          "public_heading": "現在の生活と過去の選択",
+          "required": true,
+          "new_meaning": "現在の家族との生活が、過去の選択の影響を受けていることを示す。",
+          "allowed_boundary_ids": [
+            "fact_004"
+          ],
+          "forbidden_inferences": [],
+          "previous_section_difference": "過去の選択が現在の生活に与える影響を考える。",
+          "next_section_transition": "現在の生活の満足感と、過去の選択の重みを考察する。",
+          "reserved_fact_ids": [],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        }
+      ]
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_family_context_001",
+            "pack_current_work_002",
+            "fact_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": false
+        }
+      ]
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "45歳のとき",
+      "triggering_event": "不妊治療を経て子どもを授かった",
+      "chosen_path": "妻と息子と三人で暮らす人生を続けること",
+      "unchosen_path": "二人目を目指して治療を続けること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+        "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。"
+      ],
+      "present_questions": [
+        "いまも「二人目を持っていたらどうだったか」と考えることがある。",
+        "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。"
+      ],
+      "current_context": [
+        "妻と息子との三人家族で暮らしている",
+        "現在は自分の会社を経営している"
+      ],
+      "feelings": [
+        "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。"
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "runtime:parallel-life-runtime-v1.1.7-exp",
+        "observatory_section:omitted_pre_thesis_relations",
+        "runtime:parallel-life-runtime-v1.1.7-exp",
+        "section_contract_evidence_check:passed"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065405Z_6834",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_family_context_001",
+        "pack_current_work_002"
+      ]
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "selection_compression_diagnostics": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_work_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_family_context_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "不妊治療を経て子どもを授かり、二人目を目指すかを考えたが、妻と息子と三人で暮らす道を選んだ。",
+        "alternative_structure": "二人目を持たない選択をしたが、今もその選択について考えることがある。",
+        "present_structure": "現在は妻と息子との三人家族で、自分の会社を経営している。",
+        "tension": "二人目を持つことへの思いと、現在の家族との生活の満足感の間に緊張がある。",
+        "continuity": "選択の結果としての現在の生活が、過去の選択とどのように繋がっているかを考える。",
+        "transformation": "選択を通じて、家族の形や自分の人生の方向性が変わった。",
+        "central_question": "二人目を持っていたらどうだったかという問いが、現在の生活にどのように影響しているのか。",
+        "personal_tension": "二人目を持つことへの思いと、現在の家族との生活の満足感の間に緊張がある。",
+        "social_institutional_parallel": "家族の形や育児に関する社会的期待と、個人の選択との間にある緊張。",
+        "present_life_connection": "現在の生活は、過去の選択と深く結びついている。",
+        "unresolved_question": "二人目を持っていたらどうだったかという問いは、今も解決されていない。",
+        "cross_lens_relation_ids": [
+          "clr_body_001",
+          "clr_as_001"
+        ],
+        "support_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "validation_status": "validated"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.7-exp"
+    },
+    "candidate_lens_selection": {
+      "candidates": [
+        {
+          "lens_id": "body",
+          "structural_reason": "身体・ケア・生殖の経験として分岐が生きられている",
+          "structures_matched": [
+            "embodied_or_fertility"
+          ],
+          "confidence": 0.9,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "after-success",
+          "structural_reason": "達成後にも閉じない問いが残る構造",
+          "structures_matched": [
+            "post_achievement_question"
+          ],
+          "confidence": 0.82,
+          "rejected_promo": false
+        }
+      ],
+      "zero_lens_reason": "",
+      "selection_method": "structural_v1"
+    },
+    "retrieved_observatory_evidence": [
+      {
+        "id": "obs_body_001",
+        "lens_id": "body",
+        "observation_id": "body_lived_choice",
+        "structural_pattern": "分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもある",
+        "scope": "embodied_branch",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:body;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "illness_fatigue_care_or_fertility_body",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_as_001",
+        "lens_id": "after-success",
+        "observation_id": "as_questions_after_achievement",
+        "structural_pattern": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "scope": "post_achievement",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:after-success;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "achievement_then_unresolved_life_question",
+        "confidence": 0.8,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      }
+    ],
+    "cross_lens_relations": [
+      {
+        "id": "clr_body_001",
+        "personal_structure": "身体とケアの時間のなかで分岐が生きられた",
+        "social_structure": "分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもある",
+        "relation_type": "continuity",
+        "branch_evidence_ids": [
+          "fact_001",
+          "fact_002"
+        ],
+        "context_pack_ids": [
+          "pack_family_context_001"
+        ],
+        "observatory_evidence_ids": [
+          "obs_body_001"
+        ],
+        "interpretation": "個人史は身体経験として続き、制度説明に還元しない",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.86
+      },
+      {
+        "id": "clr_as_001",
+        "personal_structure": "何かを形にしたあとも、閉じない問いが残っている",
+        "social_structure": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "relation_type": "tension",
+        "branch_evidence_ids": [
+          "fact_001",
+          "fact_002"
+        ],
+        "context_pack_ids": [
+          "pack_current_work_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_as_001"
+        ],
+        "interpretation": "達成の事実と、なお残る問いを並置して読める",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.78
+      }
+    ],
+    "observatory_core_diagnostics": {
+      "structures_detected": [
+        "embodied_or_fertility",
+        "family_life",
+        "post_achievement_question"
+      ],
+      "candidate_lens_ids": [
+        "body",
+        "after-success"
+      ],
+      "evidence_ids": [
+        "obs_body_001",
+        "obs_as_001"
+      ],
+      "relation_ids": [
+        "clr_body_001",
+        "clr_as_001"
+      ],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    },
+    "section_contracts": {
+      "contracts": [
+        {
+          "section_id": "branch_point",
+          "structural_purpose": "establish the fork",
+          "required_meaning": "不妊治療を経て子どもを授かった",
+          "interpretive_claim": "この分かれ目は勤務先の一点ではなく、内部で積み上げる道と外へ持ち運ぶ道の境界だった",
+          "realization_goal": "分岐を一点の転職ではなく測り方の境界として置く（claimを実質化）",
+          "required_public_label": "分岐点",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "employer_chronology_as_spine"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "chosen_path",
+          "structural_purpose": "state the realized path without résumé tour",
+          "required_meaning": "妻と息子と三人で暮らす人生を続けること",
+          "interpretive_claim": "振り返ると、二人目を目指して治療を続けることから、所属が変わるたびに自分の仕事を定義し直す道へ移った（当時の意図や優劣の断定ではない）",
+          "realization_goal": "選択＋構造転換＋thesis連結を一段落で実現する（年表禁止）（claimを実質化）",
+          "required_public_label": "選んだ道",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "industry_tour",
+            "project_list",
+            "chronology_only",
+            "intention_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "妻と息子と三人で暮らす人生を続けること",
+          "structural_shift": "二人目を目指して治療を続けることから、所属が変わるたびに自分の仕事を定義し直す道へ移った",
+          "thesis_link": "いまも残る問いの起点として、この移り方が現在の生活につながっている",
+          "realization_required": true,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "unchosen_life",
+          "structural_purpose": "keep unrealized path open without invention",
+          "required_meaning": "二人目を目指して治療を続けること",
+          "interpretive_claim": "残らなかった側には、発明せずに置いておける「二人目を目指して治療を続けること」という可能性が閉じずに残る",
+          "realization_goal": "選ばなかった道を発明せず開いたまま置く（claimを実質化）",
+          "required_public_label": "選ばなかった人生",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "invented_rank_salary_scene"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "lost",
+          "structural_purpose": "structural continuity left behind",
+          "required_meaning": "一つの制度の内部で時間を積み上げ、その蓄積を役職・評価・関係などで確認できる連続性",
+          "interpretive_claim": "失われたのは安定の一覧ではなく、同じ制度の時間のなかで、自分がどこまで来たかを確かめ続ける物差し（一つの制度の内部で時間を積み上げ）だったとも読める",
+          "realization_goal": "失ったものを一覧ではなく物差し／確認の連続性として実現する（claimを実質化）",
+          "required_public_label": "失ったもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001"
+          ],
+          "prohibited_claims": [
+            "salary_inventory",
+            "title_inventory",
+            "pension_inventory",
+            "colleague_network_list"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "protected",
+          "structural_purpose": "structural possibility preserved",
+          "required_meaning": "所属先が変わっても、自分の仕事を別の言葉で定義し直す余白",
+          "interpretive_claim": "一つの所属に人生の尺度を固定しきらず、所属先が変わっても自分の仕事を別の言葉で定義し直す余白が残った（優劣や成功の証明ではない）",
+          "realization_goal": "守られたものを成功談ではなく定義し直す余白として実現する（claimを実質化）",
+          "required_public_label": "守られたもの",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_004"
+          ],
+          "prohibited_claims": [
+            "success_moral",
+            "freedom_claim",
+            "superiority_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "residue",
+          "structural_purpose": "return to present through structural tension",
+          "required_meaning": "「45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考え」を振り返る問いは、「現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+          "interpretive_claim": "「二人目を持っていたらどうだったかという問いは」が自分の会社を経営しているという状況のなかで消えないのは、不妊治療を経て子どもを授かったが別の物差しとして想像されるからかもしれない。感情の断定ではなく、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして残る",
+          "realization_goal": "現在の問いが別の物差しの想像として残ることを慎重に書く（claimを実質化）",
+          "required_public_label": "今に残った構造",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "fact_001",
+            "fact_004"
+          ],
+          "prohibited_claims": [
+            "unsupported_causality",
+            "psychological_fact_claim"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "observatory",
+          "structural_purpose": "social parallel without lens-name advertising",
+          "required_meaning": "個人史は身体経験として続き、制度説明に還元しない",
+          "interpretive_claim": "個人史は身体経験として続き、制度説明に還元しない",
+          "realization_goal": "社会の並置をレンズ名なしで織り込む（claimを実質化）",
+          "required_public_label": "社会との接続",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 1,
+          "evidence_budget": 0,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [],
+          "prohibited_claims": [
+            "lens_name_advertising",
+            "sociology_takeover"
+          ],
+          "concrete_example_budget": 0,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": false,
+          "unresolved_tension": "",
+          "present_choice": "",
+          "measurement_shift": "",
+          "non_genericity": false,
+          "what_is_no_longer_required": "",
+          "what_can_now_be_chosen": "",
+          "non_genericity_score": 0,
+          "rebranch_decision": {}
+        },
+        {
+          "section_id": "re_branch",
+          "structural_purpose": "close residue tension as a present choice",
+          "required_meaning": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）",
+          "realization_goal": "Residueの緊張を、いま何を積み重ねと見なすかという現在の選択へ閉じる（問いだけで終わらせない）（claimを実質化）",
+          "required_public_label": "これからの再分岐",
+          "minimum_paragraphs": 1,
+          "maximum_paragraphs": 2,
+          "evidence_budget": 1,
+          "realization_status": "pending",
+          "supporting_evidence_ids": [
+            "pack_family_context_001",
+            "pack_current_work_002"
+          ],
+          "prohibited_claims": [
+            "shiro_growth_promo",
+            "protocol_expansion_promo",
+            "app_launch_promo",
+            "productivity_advice",
+            "career_coaching",
+            "reflection_only_no_choice",
+            "question_only_rebranch",
+            "growth_challenge_rhetoric"
+          ],
+          "concrete_example_budget": 1,
+          "must_be_present": true,
+          "omission_allowed": false,
+          "omission_reason": "",
+          "claim_atoms": {
+            "present_anchor": "自分の会社を経営している",
+            "past_anchor": "不妊治療を経て子どもを授かった",
+            "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+            "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+          },
+          "factual_choice": "",
+          "structural_shift": "",
+          "thesis_link": "",
+          "realization_required": true,
+          "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+          "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "measurement_shift": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "non_genericity": true,
+          "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "non_genericity_score": 0.95,
+          "rebranch_decision": {
+            "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+            "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+            "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+            "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+            "evidence_ids": [
+              "pack_family_context_001",
+              "pack_current_work_002"
+            ],
+            "non_genericity_score": 0.95,
+            "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+          }
+        }
+      ],
+      "diagnostics": {
+        "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+        "required_ids": [
+          "branch_point",
+          "chosen_path",
+          "unchosen_life",
+          "lost",
+          "protected",
+          "residue",
+          "observatory",
+          "re_branch"
+        ],
+        "required_public_labels": [
+          "分岐点",
+          "選んだ道",
+          "選ばなかった人生",
+          "失ったもの",
+          "守られたもの",
+          "今に残った構造",
+          "社会との接続",
+          "これからの再分岐"
+        ],
+        "lost_items": 1,
+        "protected_items": 1,
+        "residue_items": 1,
+        "rebranch_directions": 1,
+        "rebranch_decision": {
+          "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+          "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+          "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+          "evidence_ids": [
+            "pack_family_context_001",
+            "pack_current_work_002"
+          ],
+          "non_genericity_score": 0.95,
+          "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+        },
+        "claim_atoms": {
+          "present_anchor": "自分の会社を経営している",
+          "past_anchor": "不妊治療を経て子どもを授かった",
+          "unresolved_question": "二人目を持っていたらどうだったかという問いは",
+          "measurement_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ"
+        },
+        "interpretive_claims": {
+          "branch_point": true,
+          "chosen_path": true,
+          "unchosen_life": true,
+          "lost": true,
+          "protected": true,
+          "residue": true,
+          "observatory": true,
+          "re_branch": true
+        },
+        "malformed_claims": []
+      }
+    },
+    "call2_writing_pack_diagnostics": {
+      "writing_pack_chars": 20559,
+      "full_call1_chars": 26995,
+      "reduction_ratio": 0.238,
+      "evidence_fact_count": 7,
+      "duplicate_full_call1_in_writing_pack": false
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T06:54:27.829938+00:00",
+  "call2": {
+    "body_markdown": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。この出来事は家族の人数だけを決める一点ではなく、同じ場所で時間の進み具合を確かめる道と、場所が変わっても自分の仕事を持ち運ぶ道との境目にもなった。\n\n## 選んだ道\n\n妻と息子との三人で暮らす人生を続けることを選んだ。振り返れば、二人目を目指して治療を続ける可能性から、所属が変わるたびに仕事を自分の言葉で定義し直す日々へと移っていった。その移り方があるからこそ、いまの生活には、答えの出ない問いも含まれている。\n\n## 選ばなかった人生\n\n二人目を目指して治療を続けることは、起こらなかった未来として詳細を与えずに残しておける。そこに別の幸福や後悔の場面を補う必要はない。ただ、選ばなかった可能性が閉じ切らないこと自体が、現在の三人の暮らしを単純な結論にしない。\n\n## 失ったもの\n\n離れたのは、安定を並べた一覧ではない。一つの組織のなかで長い時間を過ごし、役割や評価を手がかりに、自分がどこまで来たかを確かめ続ける連続性だった。二人目をめぐる分かれ目のあとには、その確認の仕方まで一つに定まらない時間が残った。\n\n## 守られたもの\n\n一方で、一つの所属だけに人生のものさしを預け切らずにすむ余白は残った。現在、自分の会社を経営している事実は、仕事を以前と同じ呼び方に固定せず、その都度引き受け直せる場所があることを示している。それは成功の証明ではなく、問いを抱えたまま仕事を続けられる余地である。\n\n## 今に残った構造\n\nいまも「二人目を持っていたらどうだったか」と考えることがある。その問いは、妻と息子との三人家族で暮らし、自分の会社を経営している現在と並んで残っている。不妊治療を経て子どもを授かった経験は、何かを得たあとにも別の進み方を想像させるのかもしれない。ひとつの場で歩みを確かめる感覚と、場を移りながら仕事を引き受ける感覚のあいだに、問いの居場所がある。\n\n## 社会との接続\n\n家族についての決断は、考えだけで完了するものではない。治療、待つ時間、回復やケアを含む身体の経験として続くため、家族の形に関する一般的な期待だけでは捉え切れない。個人の歩みは、説明しやすい分類の外側にも残る。\n\n## これからの再分岐\n\nひとつの場で進み具合を確かめたい感覚と、場を移りながら仕事を持ち運んできた感覚の緊張は、消さなくてよい。役職や年収だけを唯一の到達指標にする必要は、もうない。\n\n会社の場で、これから何を長い時間をかけて認める仕事とするかを、自分で選び直す。その選択には、三人で続けてきた生活と、閉じないまま残る二人目への問いの両方が含まれている。\n",
+    "title_candidates": [
+      "三人で暮らす選択と、残り続ける問い",
+      "二人目を考えたあとで、自分の仕事を選び直す",
+      "閉じない問いと、これから認める時間"
+    ],
+    "subtitle_candidates": [],
+    "sections": [
+      {
+        "internal_id": "re_branch",
+        "public_heading": "これからの再分岐",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [
+      {
+        "id": "rebranch_measure_001",
+        "source_meaning": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "genericity_score": 1,
+        "invented_scene_used": false,
+        "risks": [
+          "must_not_become_product_promo"
+        ],
+        "publishable": true,
+        "selected_for_manuscript": true
+      }
+    ],
+    "rebranch_omitted_reason": null,
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。この出来事は家族の人数だけを決める一点ではなく、同じ場所で時間の進み具合を確かめる道と、場所が変わっても自分の仕事を持ち運ぶ道との境目にもなった。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "妻と息子との三人で暮らす人生を続けることを選んだ。振り返れば、二人目を目指して治療を続ける可能性から、所属が変わるたびに仕事を自分の言葉で定義し直す日々へと移っていった。その移り方があるからこそ、いまの生活には、答えの出ない問いも含まれてい"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "二人目を目指して治療を続けることは、起こらなかった未来として詳細を与えずに残しておける。そこに別の幸福や後悔の場面を補う必要はない。ただ、選ばなかった可能性が閉じ切らないこと自体が、現在の三人の暮らしを単純な結論にしない。"
+      },
+      {
+        "paragraph_id": "p04",
+        "support_ids": [
+          "fact_001"
+        ],
+        "contains_inference": true,
+        "text_preview": "離れたのは、安定を並べた一覧ではない。一つの組織のなかで長い時間を過ごし、役割や評価を手がかりに、自分がどこまで来たかを確かめ続ける連続性だった。二人目をめぐる分かれ目のあとには、その確認の仕方まで一つに定まらない時間が残った。"
+      },
+      {
+        "paragraph_id": "p05",
+        "support_ids": [
+          "fact_004"
+        ],
+        "contains_inference": true,
+        "text_preview": "一方で、一つの所属だけに人生のものさしを預け切らずにすむ余白は残った。現在、自分の会社を経営している事実は、仕事を以前と同じ呼び方に固定せず、その都度引き受け直せる場所があることを示している。それは成功の証明ではなく、問いを抱えたまま仕事を"
+      },
+      {
+        "paragraph_id": "p06",
+        "support_ids": [
+          "fact_001",
+          "fact_004"
+        ],
+        "contains_inference": true,
+        "text_preview": "いまも「二人目を持っていたらどうだったか」と考えることがある。その問いは、妻と息子との三人家族で暮らし、自分の会社を経営している現在と並んで残っている。不妊治療を経て子どもを授かった経験は、何かを得たあとにも別の進み方を想像させるのかもしれ"
+      },
+      {
+        "paragraph_id": "p07",
+        "support_ids": [],
+        "contains_inference": true,
+        "text_preview": "家族についての決断は、考えだけで完了するものではない。治療、待つ時間、回復やケアを含む身体の経験として続くため、家族の形に関する一般的な期待だけでは捉え切れない。個人の歩みは、説明しやすい分類の外側にも残る。"
+      },
+      {
+        "paragraph_id": "p08",
+        "support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "ひとつの場で進み具合を確かめたい感覚と、場を移りながら仕事を持ち運んできた感覚の緊張は、消さなくてよい。役職や年収だけを唯一の到達指標にする必要は、もうない。"
+      },
+      {
+        "paragraph_id": "p09",
+        "support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "contains_inference": true,
+        "text_preview": "会社の場で、これから何を長い時間をかけて認める仕事とするかを、自分で選び直す。その選択には、三人で続けてきた生活と、閉じないまま残る二人目への問いの両方が含まれている。"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_family_context_001",
+            "pack_current_work_002",
+            "fact_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": false
+        }
+      ],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 0.8888888888888888,
+      "call2_writing_pack": {
+        "writing_pack_chars": 20559,
+        "full_call1_chars": 26995,
+        "reduction_ratio": 0.238,
+        "evidence_fact_count": 7,
+        "duplicate_full_call1_in_writing_pack": false
+      },
+      "call2_prompt_version": "parallel-life-call-2-v1.1.7-exp"
+    },
+    "prompt_version": "parallel-life-call-2-v1.1.7-exp",
+    "character_count": 1132
+  },
+  "call3": {
+    "status": "validation_failed",
+    "final_title": "三人で暮らす選択と、残り続ける問い",
+    "final_subtitle": "",
+    "body_markdown": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。家族の人数をめぐるこの分かれ目には、ひとつの場所で自分の歩みを確かめていく感覚と、場所が変わっても仕事を持ち運んでいく感覚も重なっている。\n\n## 選んだ道\n\n妻と息子との三人で暮らす人生を続けることを選んだ。二人目を目指して治療を続ける可能性は手放し、所属が変わるたびに仕事を自分の言葉で引き受け直す日々を生きてきた。いまの暮らしには、答えの出ない問いも含まれている。\n\n## 選ばなかった人生\n\n二人目を目指して治療を続けることは、起こらなかった未来として、詳しい輪郭を与えずに残しておける。そこに別の幸福や後悔の場面を補う必要はない。選ばなかった可能性が閉じ切らないことが、現在の三人の暮らしを単純な結論にはしない。\n\n## 失ったもの\n\n離れたのは、安定を並べた一覧ではない。ひとつの組織で長く過ごし、役割や評価を手がかりに、自分がどこまで来たかを確かめ続ける連続性だった。その連続性に代わる、ひとつに定まった測り方はない。\n\n## 守られたもの\n\n一方で、ひとつの所属だけに人生のものさしを預け切らずにすむ余白は残った。現在、自分の会社を経営している。その場で、仕事を以前と同じ呼び方に固定せず、その都度引き受け直している。成功の証明ではなく、問いを抱えたまま仕事を続けられる余地である。\n\n## 今に残るもの\n\nいまも「二人目を持っていたらどうだったか」と考えることがある。その問いは、妻と息子との三人家族で暮らし、自分の会社を経営している現在と並んで残っている。不妊治療を経て子どもを授かった経験のそばには、得たものとは別の進み方への想像もある。ひとつの場で歩みを確かめる感覚と、場を移りながら仕事を引き受ける感覚。そのあいだに、問いの居場所がある。\n\n## 社会との接続\n\n家族についての決断は、考えだけで完了するものではない。不妊治療には待つ時間があり、家族の形をめぐる一般的な期待だけでは捉え切れない経験がある。個人の歩みは、説明しやすい分類の外側にも残る。\n\n## これからの再分岐\n\n役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [
+        {
+          "id": "rebranch_measure_001",
+          "source_meaning": "不妊治療を経て子どもを授かり、二人目を持つかどうかを考えたが、最終的には現在の家族との生活を選んだ。",
+          "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+          "branch_specific_form": "会社の場で、これからの蓄積を何で測るかを自分で選ぶ",
+          "support_ids": [
+            "pack_family_context_001",
+            "pack_current_work_002",
+            "fact_001"
+          ],
+          "genericity_score": 1,
+          "invented_scene_used": false,
+          "risks": [
+            "must_not_become_product_promo"
+          ],
+          "publishable": true,
+          "selected_for_manuscript": true
+        }
+      ],
+      "title_validation": {
+        "selected_title": "三人で暮らす選択と、残り続ける問い",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact_002"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "required_section_realization_ok": false,
+      "required_section_realization_details": {
+        "branch_point": {
+          "ok": true,
+          "label": "分岐点",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "chosen_path": {
+          "ok": true,
+          "label": "選んだ道",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "unchosen_life": {
+          "ok": true,
+          "label": "選ばなかった人生",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "lost": {
+          "ok": true,
+          "label": "失ったもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "protected": {
+          "ok": true,
+          "label": "守られたもの",
+          "label_present": true,
+          "paragraphs": 1,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": null
+        },
+        "residue": {
+          "ok": false,
+          "label": "今に残った構造",
+          "label_present": false,
+          "realization_status": "failed"
+        },
+        "observatory": {
+          "ok": false,
+          "label": "社会との接続",
+          "label_present": true,
+          "paragraphs": 1,
+          "claim_preview": "個人史は身体経験として続き、制度説明に還元しない",
+          "realization_status": "failed",
+          "section_excerpt": "家族についての決断は、考えだけで完了するものではない。不妊治療には待つ時間があり、家族の形をめぐる一般的な期待だけでは捉え切れない経験がある。個人の歩みは、説明しやすい分類の外側にも残る。",
+          "re_branch_gate": null,
+          "re_branch_missing": null
+        },
+        "re_branch": {
+          "ok": true,
+          "label": "これからの再分岐",
+          "label_present": true,
+          "paragraphs": 2,
+          "realization_status": "realized",
+          "used_interpretive_claim": true,
+          "re_branch_gate": {
+            "excerpt": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false
+          }
+        },
+        "thesis_closure": {
+          "chosen_path": {
+            "structural_shift_ok": true,
+            "thesis_link_ok": true,
+            "excerpt": "妻と息子との三人で暮らす人生を続けることを選んだ。二人目を目指して治療を続ける可能性は手放し、所属が変わるたびに仕事を自分の言葉で引き受け直す日々を生きてきた。いまの暮らしには、答えの出ない問いも含まれている。"
+          },
+          "residue": {
+            "ok": false,
+            "excerpt": ""
+          },
+          "re_branch": {
+            "excerpt": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。",
+            "has_choice": true,
+            "has_release": true,
+            "has_residue_link": true,
+            "question_only": false,
+            "reflection_only": false,
+            "coaching": false,
+            "ok": true
+          },
+          "ok": false
+        }
+      },
+      "resume_density_report": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "section_flags": {
+          "employer_enumeration": false,
+          "industry_enumeration": false,
+          "project_enumeration": false,
+          "chronology_stack": false,
+          "biography_repetition": false
+        },
+        "compression_required": false
+      },
+      "publishable": false,
+      "blocking_reasons": [
+        "required_public_label_missing:residue:今に残った構造",
+        "required_section_unrealized:observatory",
+        "thesis_closure_missing:residue_unresolved_question"
+      ]
+    },
+    "prompt_version": "parallel-life-call-3-v1.1.7-exp",
+    "character_count": 1043
+  },
+  "final_manuscript": null,
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.7-exp",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.7-exp",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call_1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T065405Z_6834",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_family_context_001",
+        "pack_current_work_002"
+      ]
+    },
+    "selection_compression": {
+      "relevant_context_selection": {
+        "selected_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "classifications": [
+          {
+            "id": "pack_current_work_002",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          },
+          {
+            "id": "pack_family_context_001",
+            "relevance": "supporting",
+            "reason": "runtime_backfill_unclassified"
+          }
+        ],
+        "manuscript_logic_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "withheld_ids": []
+      },
+      "meaning_compression": {
+        "past_structure": "不妊治療を経て子どもを授かり、二人目を目指すかを考えたが、妻と息子と三人で暮らす道を選んだ。",
+        "alternative_structure": "二人目を持たない選択をしたが、今もその選択について考えることがある。",
+        "present_structure": "現在は妻と息子との三人家族で、自分の会社を経営している。",
+        "tension": "二人目を持つことへの思いと、現在の家族との生活の満足感の間に緊張がある。",
+        "continuity": "選択の結果としての現在の生活が、過去の選択とどのように繋がっているかを考える。",
+        "transformation": "選択を通じて、家族の形や自分の人生の方向性が変わった。",
+        "central_question": "二人目を持っていたらどうだったかという問いが、現在の生活にどのように影響しているのか。",
+        "personal_tension": "二人目を持つことへの思いと、現在の家族との生活の満足感の間に緊張がある。",
+        "social_institutional_parallel": "家族の形や育児に関する社会的期待と、個人の選択との間にある緊張。",
+        "present_life_connection": "現在の生活は、過去の選択と深く結びついている。",
+        "unresolved_question": "二人目を持っていたらどうだったかという問いは、今も解決されていない。",
+        "cross_lens_relation_ids": [
+          "clr_body_001",
+          "clr_as_001"
+        ],
+        "support_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ],
+        "validation_status": "validated"
+      },
+      "resume_density": {
+        "resume_density": 0,
+        "resume_density_flags": [],
+        "compression_required": false
+      },
+      "thesis_gate_notes": [],
+      "lost_notes": [],
+      "runtime_pin": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.7-exp"
+    },
+    "resume_density_report": {
+      "resume_density": 0,
+      "resume_density_flags": [],
+      "compression_required": false
+    },
+    "manuscript_logic_ids": [
+      "pack_family_context_001",
+      "pack_current_work_002"
+    ],
+    "runtime_version": "parallel-life-runtime-v1.1.7-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.1.7-exp",
+    "call_3_prompt_version": "parallel-life-call-3-v1.1.7-exp"
+  },
+  "status": "validation_failed",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.7-exp",
+  "created_at": "2026-08-08T06:54:05.296567+00:00",
+  "updated_at": "2026-08-08T06:54:58.205Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T06:54:58.205Z",
+  "idempotency_keys": {
+    "draft:v11ab-case02_family-public_qa-20260808T065427Z": "complete",
+    "edit:v11ab-case02_family-public_qa-20260808T065427Z-edit": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T065405Z_6834",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T06:54:05.028545+00:00",
+    "updated_at": "2026-08-08T06:54:05.296497+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T06:54:05.296497+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_family_context_001",
+        "content": "妻と息子との三人家族で暮らしている",
+        "category": "family_context",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 100,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "現在は自分の会社を経営している",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 101,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

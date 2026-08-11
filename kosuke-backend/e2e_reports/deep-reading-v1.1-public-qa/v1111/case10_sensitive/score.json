@@ -1,0 +1,190 @@
+{
+  "case_id": "case10_sensitive",
+  "category": "sensitive causal restraint",
+  "title": "Sensitive — illness timing vs career move",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 49.73,
+  "session_id": "f9abdffd-ecc0-42a0-91ee-301b63c6b2e1",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.11-exp",
+  "branch_semantics": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "治療のため仕事を一旦離れることを選んだ",
+    "unchosen_structure": "治療しながら同じ仕事を続けること",
+    "central_tension": "「治療のため仕事を一旦離れることを選んだ」側の適応した生活と、「治療しながら同じ仕事を続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「治療しながら同じ仕事を続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「治療のため仕事を一旦離れることを選んだ」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「働き続けていたら、どのような生活が待っていたのか。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "fact_005",
+      "pack_major_life_events_001",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:family_words",
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001"
+    ],
+    "structures": [
+      "embodied_or_fertility",
+      "family_life"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:branch_point"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "「働き続けていたら」という問いのそばで",
+  "body_excerpt": "## 分岐点\n\n41歳のとき、大きな病気の診断を受けた。そこで、治療のために仕事を一旦離れることと、治療しながら同じ仕事を続けることが並んだ。\n\n## 選んだ道\n\n選んだのは、治療のため仕事を一旦離れることだった。家族は看病を手伝ってくれた。現在は、体調を見ながら短い仕事を再開している。\n\n## 選ばなかった人生\n\n選ばなかったのは、治療しながら同じ仕事を続けることだった。その先の病状や生活がどうなったかを知る材料はない。ただ、その道が選ばれなかったという事実は残る。\n\n## 失ったもの\n\n同じ仕事を続ける道の先にあった生活は、確かめられない。働き方や日々の状態を、いま同じようにたどることはできない。\n\n## 守られたもの\n\n仕事を一旦離れ、治療にあてる時間があった。家族の看病を受けながら過ごし、いまは体調を見ながら短い仕事を再開している。これを選択の正しさや成功として決めることはできない。\n\n## 今に残った構造\n\n「働き続けていたら、病状や生活はどうなっていたか」という問いがある。大きな病気の診断を受けた41歳のときのことと、体調を見ながら短い仕事を再開している現在とは、この問いを",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 1
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "manuscript_omission",
+    "all": [
+      "manuscript_omission"
+    ],
+    "blocking_reasons": [
+      "required_section_unrealized:branch_point"
+    ],
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": false,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  },
+  "editorial_target": {
+    "target": "n/a",
+    "ok": true
+  },
+  "track_a_regressions": []
+}

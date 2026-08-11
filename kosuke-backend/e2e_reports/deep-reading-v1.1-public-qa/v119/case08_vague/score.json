@@ -1,0 +1,151 @@
+{
+  "case_id": "case08_vague",
+  "category": "vague or weak branch",
+  "title": "Vague / weak branch — thin options",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 36.86,
+  "session_id": "2f358aaf-f365-4a1a-9c2e-f4782f659bf5",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.0.3",
+  "call3_prompt": "parallel-life-call-3-v1.0.3",
+  "branch_semantics": {
+    "domain": null,
+    "changed_dimension": null,
+    "chosen_structure": null,
+    "unchosen_structure": null,
+    "central_tension": null,
+    "lost_verifiability": null,
+    "protected_possibility": null,
+    "present_residue": null,
+    "possible_rebranch_modes": null,
+    "sensitive_boundaries": null,
+    "confidence": null,
+    "diagnostics": {}
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 2,
+    "questions_seen": [
+      "今も考えることがある「別の道」が具体的に何か教えてもらえますか？"
+    ],
+    "duplicate_questions": [],
+    "continued": true,
+    "final_status": "ready_for_draft",
+    "schema_leakage": true,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 7,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 7.0,
+  "personal_focus": 5,
+  "social_depth": 3,
+  "thesis_closure": 5,
+  "title_quality": 5,
+  "section_realization": {
+    "branch_point": false,
+    "chosen_path": false,
+    "unchosen_life": false,
+    "lost": false,
+    "protected": false,
+    "residue": false,
+    "observatory": false,
+    "re_branch": false,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [],
+    "selected": [],
+    "evidence_ids": [],
+    "structures": null,
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": false,
+  "publishable": false,
+  "blocking_reasons": [
+    "central_thesis_not_maintained",
+    "title_validation_failed"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "覚えていない分かれ目",
+  "body_excerpt": "二十代のどこかに、何かを選んだ気がする分かれ目があった。何を選んだのかは、よく覚えていない。選ばなかった道についても、当時は特に考えていなかった。\n\nいまも普通に暮らしている。その暮らしのなかで、あの分かれ目に触れることがある。「別の道があったのかな」と考えることもある。\n\n覚えていない分かれ目と、いま続く普通の暮らしが並んでいる。選んだ道も、選ばなかった道もはっきりしないまま、その問いは残っている。\n",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 0,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 0,
+    "選択": 0
+  },
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "semantic_domain_leak": {},
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "claim_weak",
+    "all": [
+      "claim_weak",
+      "validator_too_strict"
+    ],
+    "blocking_reasons": [
+      "central_thesis_not_maintained",
+      "title_validation_failed"
+    ],
+    "section_realization": {
+      "branch_point": false,
+      "chosen_path": false,
+      "unchosen_life": false,
+      "lost": false,
+      "protected": false,
+      "residue": false,
+      "observatory": false,
+      "re_branch": false,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "schema_version": "parallel-life-runtime-v1.0.6",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.0.3",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.0.3",
+      "branch_semantics": null
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

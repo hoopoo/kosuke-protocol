@@ -1,0 +1,59 @@
+{
+  "body_markdown": "複数業界で会社員として働いてきた時間がある。現在は、企業での経験を持ちながら、観測サイト、文章、プロトコルを制作している。会社で重ねた経験と、いま制作しているものは、ともに現在の生活のなかに置かれている。ただし、その二つのあいだには、まだ接続しきれていないものが残っている。\n\n創作を中心にした人生は、歩まなかった。だからこそ、ときに、創作中心なら今とは違う人生だったかと考えることがある。その問いに、ここで一つの答えを与える材料はない。いま手元にあるのは、複数の業界で会社員として働いてきた経歴と、観測サイトや文章、プロトコルを制作する現在である。創作中心の生活を具体的に描くことはできないが、その空白は、現在の制作のそばに残り続けている。\n",
+  "title_candidates": [
+    "制作のそばに残る空白",
+    "企業での経験と、いま作っているもの",
+    "創作中心だったかもしれない生活"
+  ],
+  "subtitle_candidates": [
+    "複数業界で働いた時間と、観測サイト・文章・プロトコルを制作する現在"
+  ],
+  "sections": [
+    {
+      "internal_id": "present_and_open_question",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "創作中心の人生について、具体的な生活内容や行為を示す確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "複数業界で会社員として働いてきた時間がある。現在は、企業での経験を持ちながら、観測サイト、文章、プロトコルを制作している。会社で重ねた経験と、いま制作しているものは、ともに現在の生活のなかに置かれている。ただし、その二つのあいだには、まだ接"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "創作を中心にした人生は、歩まなかった。だからこそ、ときに、創作中心なら今とは違う人生だったかと考えることがある。その問いに、ここで一つの答えを与える材料はない。いま手元にあるのは、複数の業界で会社員として働いてきた経歴と、観測サイトや文章、"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 321
+}

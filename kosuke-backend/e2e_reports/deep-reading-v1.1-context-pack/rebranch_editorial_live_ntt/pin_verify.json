@@ -1,0 +1,30 @@
+{
+  "staging_strict": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "schema": "parallel-life-runtime-v1.0.6"
+  },
+  "staging_contextual": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.1.7-exp",
+    "schema": "parallel-life-runtime-v1.1.7-exp",
+    "pack": true,
+    "rebranch_decision": {
+      "unresolved_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだ",
+      "present_choice": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+      "what_is_no_longer_required": "役職や年収だけを唯一の到達指標にしなくてよい",
+      "what_can_now_be_chosen": "これから何を長期の積み重ねとして認めるかを、自分で選び直す",
+      "evidence_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002"
+      ],
+      "non_genericity_score": 0.95,
+      "interpretive_claim": "役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある（優劣や成功の断定ではない）"
+    }
+  },
+  "production": {
+    "http": 200,
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack": null
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "case_id": "case06_entrepreneurship",
+  "category": "entrepreneurship / business",
+  "title": "Entrepreneurship — leave company to found",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 39.81,
+  "session_id": "ccf139de-78ff-4c90-b983-087e226d848c",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.9-exp",
+  "branch_semantics": {
+    "domain": "career",
+    "changed_dimension": "所有と安定／リスクへの露出",
+    "chosen_structure": "会社を辞めて自分の会社を始めること",
+    "unchosen_structure": "会社員として残ること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「会社に残っていたら、今の不安は少なかったか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.8166666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "entrepreneurship:ownership",
+        "career:branch_employment"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "mixed",
+  "resume_density": 1.0,
+  "cva": 8.7,
+  "personal_focus": 8,
+  "social_depth": 5,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": true,
+    "residue": true,
+    "observatory": true,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "after-success"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_as_001"
+    ],
+    "structures": [
+      "post_achievement_question"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:observatory"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "会社を辞めたあとに残る、進み具合の問い",
+  "body_excerpt": "## 分岐点\n\n33歳のとき、会社を辞めて起業するかを選ぶ分岐があった。それは退職という一点だけではなく、仕事の所有のしかたと、安定の外側でリスクを引き受ける度合いが分かれる境目でもあった。\n\n## 選んだ道\n\n選んだのは、会社を辞めて自分の会社を始めることだった。会社員として残る道から、所属が変わるたびに自分の仕事を定義し直す道へ移った、と振り返ることはできる。その移り方があるからこそ、現在の不安は単なる経営上の感情ではなく、過去の分かれ目に触れる問いとして残っている。\n\n## 選ばなかった人生\n\n選ばなかった側には、会社員として残ることがある。その先を役職や暮らしの細部で埋める必要はない。選ばれなかった可能性は、安定していたはずだという結論にも、不自由だったはずだという結論にも回収されず、開いたまま置かれている。\n\n## 失ったもの\n\n失われたのは、会社員として同じ制度の時間を過ごし、そのなかで自分の進み具合を確かめ続ける道だった。起業後にも仕事は続くが、以前と同じ物差しに照らして連続的に位置を確認することはできない。\n\n## 守られたもの\n\n一方で、一つの所属だけに人生の尺度を固",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 1,
+    "制度": 3,
+    "分岐": 3,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "career",
+    "authority": "career_allowed"
+  },
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "validator_too_strict",
+    "all": [
+      "validator_too_strict"
+    ],
+    "blocking_reasons": [
+      "required_section_unrealized:observatory"
+    ],
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": true,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.9-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "career",
+        "changed_dimension": "所有と安定／リスクへの露出",
+        "chosen_structure": "会社を辞めて自分の会社を始めること",
+        "unchosen_structure": "会社員として残ること",
+        "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+        "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+        "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+        "present_residue": "「会社に残っていたら、今の不安は少なかったか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "pack_current_projects_003",
+          "fact_005"
+        ],
+        "confidence": 0.8166666666666667,
+        "diagnostics": {
+          "domain_reasons": [
+            "entrepreneurship:ownership",
+            "career:branch_employment"
+          ],
+          "branch_employment_evidence": true,
+          "background_employment_context": true,
+          "explicit_employment_evidence": true,
+          "allows_career_product_logic": true,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

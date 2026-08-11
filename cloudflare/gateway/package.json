@@ -1,0 +1,13 @@
+{
+  "name": "parallel-life-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy:staging": "wrangler deploy --env staging",
+    "dev": "wrangler dev --env staging"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250317.0",
+    "wrangler": "^4.0.0"
+  }
+}

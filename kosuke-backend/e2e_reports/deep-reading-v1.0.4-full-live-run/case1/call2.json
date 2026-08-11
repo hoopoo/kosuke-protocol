@@ -1,0 +1,79 @@
+{
+  "body_markdown": "45歳のとき、不妊治療を経て子どもを授かった。この経験は、私の人生において重要な分岐点となった。選ばなかった道は、不妊治療を諦めることであったが、私は妻と息子と三人で暮らす人生を選んだ。現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しいと感じている。これらの要素は、私の現在の生活の中で大きな役割を果たしている。\n\nただ、時折、今も二人目を持っていたらどうだったかと考えることがある。この思いは、私の心の中に残っている未接続の部分であり、過去の選択と現在の生活が交差する瞬間を感じさせる。45歳のときの選択が、今の私の生活にどのように影響を与えているのかを考えると、まだ接続しきれていないものがあることに気づく。これが私の人生の一部であり、今後も考え続けるテーマである。\n",
+  "title_candidates": [
+    "選択と現在の生活",
+    "過去の選択と現在の思い",
+    "家族と人生の交差点"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経て得たもの"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "人生の選択",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。この経験は、私の人生において重要な分岐点となった。選ばなかった道は、不妊治療を諦めることであったが、私は妻と息子と三人で暮らす人生を選んだ。現在も、妻と息子との三人家族で暮らし、自分の会社を経営"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact6"
+      ],
+      "contains_inference": false,
+      "text_preview": "ただ、時折、今も二人目を持っていたらどうだったかと考えることがある。この思いは、私の心の中に残っている未接続の部分であり、過去の選択と現在の生活が交差する瞬間を感じさせる。45歳のときの選択が、今の私の生活にどのように影響を与えているのかを"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [
+      {
+        "excerpt": "45歳のときの選択が、今の私の生活にどのように影響を与えているのかを考えると、まだ接続しきれていないものがあることに気づく。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_causal_frame": [
+      {
+        "excerpt": "この経験は、私の人生において重要な分岐点となった。",
+        "frame_type": "unsupported_meaning_completion",
+        "missing_support": "evaluative_completion_absent",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "45歳のときの選択が、今の私の生活にどのように影響を与えているのかを考えると、まだ接続しきれていないものがあることに気づく。",
+        "frame_type": "causal_presupposition",
+        "missing_support": "causal_frame_without_explicit_support",
+        "category": "unsupported"
+      }
+    ],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 370
+}

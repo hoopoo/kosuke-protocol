@@ -1,0 +1,141 @@
+{
+  "case_id": "case09_zero_lens",
+  "category": "zero-lens-appropriate",
+  "title": "Zero-lens-appropriate — quiet local stay",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 64.74,
+  "session_id": "19a4ec45-bbd7-4fc0-871c-bcb1b68cbfc4",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "place",
+    "changed_dimension": "暮らす場所／日常の所属",
+    "chosen_structure": "地元に残る",
+    "unchosen_structure": "都会へ出る",
+    "central_tension": "「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだ",
+    "lost_verifiability": "「都会へ出る」側の暮らしの連続を、いま体験として辿れないこと",
+    "protected_possibility": "「地元に残る」を取った側に残った、いまの場所での日常を続ける余地",
+    "present_residue": "「都会へ出ていたら、いまの日常はどうなっていたか？」がいまも残るのは、「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "reconsider",
+      "leave_unresolved"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.7666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "place:place"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "YES",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [],
+    "selected": [],
+    "evidence_ids": [],
+    "structures": [],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "地元に残った日常と、都会へ出る道",
+  "body_excerpt": "## 分岐点\n\n22歳のときに考えたのは、地元に残るか、都会へ出るかだった。それは一度の決断というより、どこで暮らし、誰と日常を送るかが分かれる境界だった。\n\n## 選んだ道\n\n地元に残る道を取り、暮らす場所と日々の所属は、都会へ移る場合とは別のかたちになった。現在の生活を前にすると、選ばなかった側への思いも過去の話だけにはならない。\n\n## 選ばなかった人生\n\n都会へ出る道について、そこでどのような暮らしがあったかはわからない。仕事や人間関係、日々の姿を補う材料もない。ただ、22歳のときには、地元に残る道とは別に、都会へ出る道が考えられていた。その先は比較表にできるものではなく、地元で事務の仕事をしている現在からは確かめようのない時間として残っている。\n\n## 失ったもの\n\n都会へ出た先の暮らしは、いま自分の体験としては辿れない。その先は比較表にできるものではなく、地元で事務の仕事をしている現在からは確かめようのない時間として残っている。\n\n## 守られたもの\n\n地元に残った側には、いまの場所での日常がある。地元で事務の仕事をし、近所の人と暮らしている現在は、具体的な生活のかたちにな",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 1
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "place",
+    "changed_dimension": "暮らす場所／日常の所属",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": "sufficient_for_deep_reading"
+  }
+}

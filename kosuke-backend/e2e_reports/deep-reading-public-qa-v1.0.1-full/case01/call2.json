@@ -1,0 +1,68 @@
+{
+  "body_markdown": "30代後半、仕事を辞めようかと思っていた。辞めることは視野にありながら、結局はそのまま働いた。\n\nいまは別の仕事をしている。30代後半に立ち止まっていた仕事のことと、現在の生活とは、同じ一続きの時間のなかに置かれている。ただ、そのあいだには、まだ接続しきれていないものが残っている。\n\n「辞めていたらどうなっていたかな」という問いは、その空白を具体的な物語で埋めるものではない。辞めた後の仕事や生活について確認できる材料はない。それでも、辞めようかと思っていた時期と、別の仕事をしているいまを並べると、その問いは答えのないまま現在に残る。\n",
+  "title_candidates": [
+    "辞めようかと思った仕事と、いま別の仕事にいること",
+    "30代後半の逡巡、現在の生活",
+    "「辞めていたら」という問いのまま"
+  ],
+  "subtitle_candidates": [
+    "働き続けた時期と、別の仕事をしている現在を並べて見る"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "辞めた後の具体的な仕事や生活について、確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact_1",
+        "fact_2",
+        "fact_3"
+      ],
+      "contains_inference": false,
+      "text_preview": "30代後半、仕事を辞めようかと思っていた。辞めることは視野にありながら、結局はそのまま働いた。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact_1",
+        "fact_5"
+      ],
+      "contains_inference": true,
+      "text_preview": "いまは別の仕事をしている。30代後半に立ち止まっていた仕事のことと、現在の生活とは、同じ一続きの時間のなかに置かれている。ただ、そのあいだには、まだ接続しきれていないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact_4",
+        "fact_1",
+        "fact_5"
+      ],
+      "contains_inference": false,
+      "text_preview": "「辞めていたらどうなっていたかな」という問いは、その空白を具体的な物語で埋めるものではない。辞めた後の仕事や生活について確認できる材料はない。それでも、辞めようかと思っていた時期と、別の仕事をしているいまを並べると、その問いは答えのないまま"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 269
+}

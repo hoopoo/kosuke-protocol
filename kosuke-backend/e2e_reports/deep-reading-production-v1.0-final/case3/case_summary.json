@@ -1,0 +1,170 @@
+{
+  "id": "case3",
+  "title": "First-choice university admission",
+  "started_at": "2026-08-07T05:11:59.362730+00:00",
+  "errors": [],
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "model": "gpt-4o-mini",
+    "actual_secondary_count": 0,
+    "validated_residue": [
+      {
+        "residue_statement": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」という過去の分岐のあとで、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」という過去の分岐のあとで、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact3"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "selected_lenses": 0,
+    "central_thesis": "大学選択がその後の人生に与える影響を考えることは重要である。"
+  },
+  "call2": {
+    "model": "gpt-5.6-terra",
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 462,
+    "tokens_in": 3314,
+    "tokens_out": 932
+  },
+  "call3": {
+    "model": "gpt-5.6-terra",
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "validation_failed",
+    "final_title": "十九歳の合格と、現在",
+    "final_subtitle": "文章やプロトコルをまとめる生活のそばに残る、別の大学についての問い",
+    "character_count": 259,
+    "publishable": false,
+    "blocking_reasons": [
+      "title_validation_failed"
+    ],
+    "title_validation": {
+      "selected_title": "十九歳の合格と、現在",
+      "selected_subtitle": "文章やプロトコルをまとめる生活のそばに残る、別の大学についての問い",
+      "title_supported_by_fact_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "title_supported_by_central_thesis": false,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": false,
+      "notes": [
+        "title_not_linked_to_central_thesis"
+      ]
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch_hits": [],
+    "residue_represented": true,
+    "named_entity_retention": {
+      "第一志望": true,
+      "早稲田大学第一文学部": true,
+      "合格": true,
+      "進学": true
+    },
+    "tokens_in": 7268,
+    "tokens_out": 1356
+  },
+  "session_model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "runtime_version": "parallel-life-runtime-v1.0.5",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "latency_ms_total": 41194,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 18036,
+      "prompt_tokens": 3833,
+      "completion_tokens": 1200,
+      "estimated_cost_usd": 0.001295,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9441,
+      "prompt_tokens": 3314,
+      "completion_tokens": 932,
+      "estimated_cost_usd": 0.022265,
+      "stage_hint": "call2"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 8253,
+      "prompt_tokens": 3774,
+      "completion_tokens": 773,
+      "estimated_cost_usd": 0.02103,
+      "stage_hint": "call2"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 5443,
+      "prompt_tokens": 3494,
+      "completion_tokens": 583,
+      "estimated_cost_usd": 0.01748,
+      "stage_hint": "call2"
+    }
+  ],
+  "estimated_cost_usd": 0.06207,
+  "finished_at": "2026-08-07T05:12:40.558518+00:00"
+}

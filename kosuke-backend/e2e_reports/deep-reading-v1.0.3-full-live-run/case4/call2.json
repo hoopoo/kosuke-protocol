@@ -1,0 +1,53 @@
+{
+  "body_markdown": "会社員として複数業界で働いてきた。これは私の過去の分岐を示している。その後、現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。過去の選択肢として、創作を中心にした人生もあったが、それを選ばなかったことで、今の生活が形成されている。創作中心なら今とは違う人生だったかと考えることがあるが、その問いには明確な答えがない。現在の生活と過去の選択肢の間には、まだ接続しきれていないものが残っている。\n",
+  "title_candidates": [
+    "選択の分岐点",
+    "現在と過去の交差点",
+    "人生の選択とその影響"
+  ],
+  "subtitle_candidates": [
+    "創作と企業経験の狭間で"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "人生の選択とその影響",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "会社員として複数業界で働いてきた。これは私の過去の分岐を示している。その後、現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。過去の選択肢として、創作を中心にした人生もあったが、それを選ばなかったことで、今の生活が形"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [
+      {
+        "excerpt": "過去の選択肢として、創作を中心にした人生もあったが、それを選ばなかったことで、今の生活が形成されている。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.2",
+  "character_count": 207
+}

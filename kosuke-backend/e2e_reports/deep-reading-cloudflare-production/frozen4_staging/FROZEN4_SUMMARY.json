@@ -1,0 +1,380 @@
+{
+  "started_at": "2026-08-07T21:18:16.603061+00:00",
+  "api": "https://parallel-life-api-staging.shiroandco-office.workers.dev",
+  "cases": [
+    {
+      "id": "case1",
+      "attempt": 1,
+      "ok": true,
+      "stages": {
+        "ground": {
+          "status": 200,
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "prompt_versions": {
+            "call_1": "parallel-life-call-1-v1.0.2",
+            "call_2": "parallel-life-call-2-v1.0.3",
+            "call_3": "parallel-life-call-3-v1.0.3"
+          },
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+          }
+        },
+        "session_get": {
+          "status": 200
+        },
+        "confirm": {
+          "status": 200
+        },
+        "draft": {
+          "status": 200,
+          "duplicate_status": 200,
+          "attempts": [
+            1,
+            1
+          ],
+          "idempotent": true
+        },
+        "edit": {
+          "status": 200,
+          "session_status": "complete",
+          "publishable": true,
+          "blocking_reasons": [],
+          "final_title": "三人で暮らす現在と、残る問い",
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+            "runtime_version": "parallel-life-runtime-v1.0.5",
+            "final_status": "ready_for_draft",
+            "clarification_count": 0,
+            "failure_category": null,
+            "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+            "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+          }
+        }
+      },
+      "title_flake": false,
+      "notes": [],
+      "session_id": "da19941b-d9fc-4e13-972e-f618ec1cca48",
+      "elapsed_s": 34.69
+    },
+    {
+      "id": "case2",
+      "attempt": 1,
+      "ok": true,
+      "stages": {
+        "ground": {
+          "status": 200,
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "prompt_versions": {
+            "call_1": "parallel-life-call-1-v1.0.2",
+            "call_2": "parallel-life-call-2-v1.0.3",
+            "call_3": "parallel-life-call-3-v1.0.3"
+          },
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+          }
+        },
+        "session_get": {
+          "status": 200
+        },
+        "confirm": {
+          "status": 200
+        },
+        "draft": {
+          "status": 200,
+          "duplicate_status": 200,
+          "attempts": [
+            1,
+            1
+          ],
+          "idempotent": true
+        },
+        "edit": {
+          "status": 200,
+          "session_status": "complete",
+          "publishable": true,
+          "blocking_reasons": [],
+          "final_title": "三人で暮らす家、残る問い",
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+            "runtime_version": "parallel-life-runtime-v1.0.5",
+            "final_status": "ready_for_draft",
+            "clarification_count": 0,
+            "failure_category": null,
+            "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+            "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+          }
+        }
+      },
+      "title_flake": false,
+      "notes": [],
+      "session_id": "19c4a0a9-b70f-4d5f-927a-84edf60aec27",
+      "elapsed_s": 39.79
+    },
+    {
+      "id": "case3",
+      "attempt": 1,
+      "ok": true,
+      "stages": {
+        "ground": {
+          "status": 200,
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "prompt_versions": {
+            "call_1": "parallel-life-call-1-v1.0.2",
+            "call_2": "parallel-life-call-2-v1.0.3",
+            "call_3": "parallel-life-call-3-v1.0.3"
+          },
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+          }
+        },
+        "session_get": {
+          "status": 200
+        },
+        "confirm": {
+          "status": 200
+        },
+        "draft": {
+          "status": 200,
+          "duplicate_status": 200,
+          "attempts": [
+            1,
+            1
+          ],
+          "idempotent": true
+        },
+        "edit": {
+          "status": 200,
+          "session_status": "complete",
+          "publishable": true,
+          "blocking_reasons": [],
+          "final_title": "19歳の合格と、いままとめている文章",
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+            "runtime_version": "parallel-life-runtime-v1.0.5",
+            "final_status": "ready_for_draft",
+            "clarification_count": 0,
+            "failure_category": null,
+            "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+            "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+          }
+        }
+      },
+      "title_flake": false,
+      "notes": [],
+      "session_id": "4a89ce27-05d1-497b-878c-2fb4237cc931",
+      "elapsed_s": 32.09
+    },
+    {
+      "id": "case4",
+      "attempt": 1,
+      "ok": true,
+      "stages": {
+        "ground": {
+          "status": 200,
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "prompt_versions": {
+            "call_1": "parallel-life-call-1-v1.0.2",
+            "call_2": "parallel-life-call-2-v1.0.3",
+            "call_3": "parallel-life-call-3-v1.0.3"
+          },
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+          }
+        },
+        "session_get": {
+          "status": 200
+        },
+        "confirm": {
+          "status": 200
+        },
+        "draft": {
+          "status": 200,
+          "duplicate_status": 200,
+          "attempts": [
+            1,
+            1
+          ],
+          "idempotent": true
+        },
+        "edit": {
+          "status": 200,
+          "session_status": "complete",
+          "publishable": true,
+          "blocking_reasons": [],
+          "final_title": "制作の現在と、輪郭だけが残る人生",
+          "schema_version": "parallel-life-call-1-schema-v1.0.2",
+          "model_metadata": {
+            "production_models_version": "parallel-life-production-models-v1.0",
+            "call_1_model": "gpt-4o-mini",
+            "call_2_model": "gpt-5.6-terra",
+            "call_3_model": "gpt-5.6-terra",
+            "models": {
+              "version": "parallel-life-production-models-v1.0",
+              "call_1": "gpt-4o-mini",
+              "call_2": "gpt-5.6-terra",
+              "call_3": "gpt-5.6-terra"
+            },
+            "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+            "prompt_versions": {
+              "call_1": "parallel-life-call-1-v1.0.2",
+              "call_2": "parallel-life-call-2-v1.0.3",
+              "call_3": "parallel-life-call-3-v1.0.3"
+            },
+            "candidate": "Production Candidate v1.0",
+            "model": "gpt-4o-mini",
+            "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+            "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+            "runtime_version": "parallel-life-runtime-v1.0.5",
+            "final_status": "ready_for_draft",
+            "clarification_count": 0,
+            "failure_category": null,
+            "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+            "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+          }
+        }
+      },
+      "title_flake": false,
+      "notes": [],
+      "session_id": "6a50d10c-eed9-40ad-970b-ffb49b2c1d40",
+      "elapsed_s": 32.28
+    }
+  ],
+  "all_ok": true,
+  "finished_at": "2026-08-07T21:20:35.464929+00:00"
+}

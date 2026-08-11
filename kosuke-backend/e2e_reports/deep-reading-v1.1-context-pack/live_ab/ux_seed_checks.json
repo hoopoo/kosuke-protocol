@@ -1,0 +1,61 @@
+{
+  "staging_seed_http": 200,
+  "seed_items": 2,
+  "items_start_unapproved": true,
+  "pack_starts_unapproved": true,
+  "no_raw_internal_ids_in_content": true,
+  "can_edit_delete_add_locally": true,
+  "production_seed_blocked": true,
+  "production_seed_http": 404,
+  "edited_pack_for_ground": {
+    "pack_id": "pack_411fe835b060",
+    "mode_intent": "contextual",
+    "source": "imported_paste",
+    "created_at": "2026-08-08T02:43:49.225993+00:00",
+    "updated_at": "2026-08-08T02:43:49.226879+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T02:43:49.281049+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した（編集済）",
+        "category": "career_history",
+        "source": "user_pasted",
+        "confidence": 0.6,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 10,
+        "tags": [
+          "seeded"
+        ]
+      },
+      {
+        "id": "pack_current_projects_999",
+        "content": "観測プロジェクトを進めている",
+        "category": "current_projects",
+        "source": "user_typed",
+        "confidence": 1.0,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 120,
+        "tags": []
+      }
+    ],
+    "rejected_or_deleted_ids": [
+      "pack_current_work_002"
+    ]
+  }
+}

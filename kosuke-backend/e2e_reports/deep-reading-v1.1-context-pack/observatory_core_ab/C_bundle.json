@@ -1,0 +1,178 @@
+{
+  "bundle": {
+    "candidate_lens_selection": {
+      "candidates": [
+        {
+          "lens_id": "education-employment",
+          "structural_reason": "一社内蓄積キャリアと企業間移動キャリアの境界として読める",
+          "structures_matched": [
+            "employment_regime_boundary"
+          ],
+          "confidence": 0.92,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "after-success",
+          "structural_reason": "達成後にも閉じない問いが残る構造",
+          "structures_matched": [
+            "post_achievement_question"
+          ],
+          "confidence": 0.82,
+          "rejected_promo": false
+        },
+        {
+          "lens_id": "clean-society",
+          "structural_reason": "標準化された進路規範との緊張として読める",
+          "structures_matched": [
+            "normative_standard_path",
+            "employment_regime_boundary"
+          ],
+          "confidence": 0.8,
+          "rejected_promo": false
+        }
+      ],
+      "zero_lens_reason": "",
+      "selection_method": "structural_v1"
+    },
+    "retrieved_observatory_evidence": [
+      {
+        "id": "obs_ee_001",
+        "lens_id": "education-employment",
+        "observation_id": "ee_longterm_vs_mobile",
+        "structural_pattern": "日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきた",
+        "scope": "employment_regime",
+        "time_context": "japan_postwar_to_present",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:education-employment;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "stay_inside_one_firm_vs_leave_for_mobile_career",
+        "confidence": 0.9,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_cs_001",
+        "lens_id": "clean-society",
+        "observation_id": "cs_normal_path_narrowing",
+        "structural_pattern": "『普通はこうするものだ』という規範が、一社に留まり役割を積む道を標準として選択の幅を静かに狭めることがある",
+        "scope": "normative_narrowing",
+        "time_context": "era_dependent_norms",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:clean-society;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "normal_large_firm_path_vs_exit",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_as_001",
+        "lens_id": "after-success",
+        "observation_id": "as_questions_after_achievement",
+        "structural_pattern": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "scope": "post_achievement",
+        "time_context": "ahistorical_structural",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:after-success;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "achievement_then_unresolved_life_question",
+        "confidence": 0.8,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      },
+      {
+        "id": "obs_ee_002",
+        "lens_id": "education-employment",
+        "observation_id": "ee_institution_sets_terms",
+        "structural_pattern": "教育から就労への移行や配属・転勤の制度が、仕事だけでなく住む場所や独立のタイミングまで同時に条件づけることがある",
+        "scope": "school_to_work_and_firm_internal",
+        "time_context": "japan_institutional_transition",
+        "evidence_source": "kosuke-backend/app/observatory_lenses.py:education-employment;kosuke-backend/app/parallel_life_engine.py:_lens_body_ja",
+        "relevance_hint": "education_to_employment_or_internal_ladder",
+        "confidence": 0.85,
+        "freshness": "historical_conceptual",
+        "as_of": "",
+        "allowed_for_interpretation": true
+      }
+    ],
+    "cross_lens_relations": [
+      {
+        "id": "clr_ee_regime_001",
+        "personal_structure": "一企業の内部で役割を積み上げる道を離れた",
+        "social_structure": "日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきた",
+        "relation_type": "institutional_context",
+        "branch_evidence_ids": [],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_003"
+        ],
+        "observatory_evidence_ids": [
+          "obs_ee_001"
+        ],
+        "interpretation": "個人の会社選択であると同時に、一社内で地位を蓄積するキャリアと、企業間を移動しながら専門性を持ち運ぶキャリアの境界として読むことができる",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.88
+      },
+      {
+        "id": "clr_cs_norm_001",
+        "personal_structure": "『残る』側が標準の進路として置かれていた",
+        "social_structure": "『普通はこうするものだ』という規範が、一社に留まり役割を積む道を標準として選択の幅を静かに狭めることがある",
+        "relation_type": "cultural_context",
+        "branch_evidence_ids": [],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_cs_001"
+        ],
+        "interpretation": "個人の去就は、当時『普通』とされていた長期雇用パスと並べて読める（規範が強制したとは断言しない）",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.8
+      },
+      {
+        "id": "clr_as_001",
+        "personal_structure": "何かを形にしたあとも、閉じない問いが残っている",
+        "social_structure": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "relation_type": "tension",
+        "branch_evidence_ids": [],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_as_001"
+        ],
+        "interpretation": "達成の事実と、なお残る問いを並置して読める",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.78
+      }
+    ],
+    "diagnostics": {
+      "structures_detected": [
+        "employment_regime_boundary",
+        "normative_standard_path",
+        "post_achievement_question"
+      ],
+      "candidate_lens_ids": [
+        "education-employment",
+        "after-success",
+        "clean-society"
+      ],
+      "evidence_ids": [
+        "obs_ee_001",
+        "obs_cs_001",
+        "obs_as_001",
+        "obs_ee_002"
+      ],
+      "relation_ids": [
+        "clr_ee_regime_001",
+        "clr_cs_norm_001",
+        "clr_as_001"
+      ],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": true,
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    }
+  },
+  "thesis": "一企業の内部で役割を積み上げる道を離れたという個人の分岐を、日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきたと並べて読むことができる。"
+}

@@ -1,0 +1,973 @@
+{
+  "started_at": "2026-08-07T02:11:00.253845+00:00",
+  "model": "gpt-4o-mini",
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.0.2",
+    "call_1_schema": "parallel-life-call-1-schema-v1.0.2",
+    "call_2": "parallel-life-call-2-v1.0.1",
+    "call_3": "parallel-life-call-3-v1.0.1"
+  },
+  "prompts_modified_during_run": false,
+  "call1_frozen": true,
+  "cases": [
+    {
+      "id": "case1",
+      "title": "Family formation / fertility — retrospective counterfactual only",
+      "started_at": "2026-08-07T02:13:24.384647+00:00",
+      "errors": [],
+      "call1": {
+        "session_id": "b24289b1-4f40-4c54-892e-d40a66ae6ab7",
+        "status": "ready_for_user_confirmation",
+        "prompt_version": "parallel-life-call-1-v1.0.2",
+        "schema_version": "parallel-life-call-1-schema-v1.0.2",
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "central_thesis": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだことが、現在の幸せに繋がっている。",
+        "actual_secondary_count": 0,
+        "actual_secondary_descriptions": [],
+        "retrospective_counterfactuals": [
+          "今も、二人目を持っていたらどうだったかと考えることがある。"
+        ],
+        "questions": [
+          "今も、二人目を持っていたらどうだったかと考えることがある。"
+        ],
+        "current_context": [
+          "現在の生活"
+        ],
+        "selected_lenses": [],
+        "rebranch_directions": [],
+        "residue_generation_path": [],
+        "validated_residue": [
+          {
+            "residue_statement": "「45歳のとき、不妊治療を経て子どもを授かった。」という過去の分岐のあとで、「現在も妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+            "content": "「45歳のとき、不妊治療を経て子どもを授かった。」という過去の分岐のあとで、「現在も妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+            "past_anchor_ids": [
+              "fact1"
+            ],
+            "present_anchor_ids": [
+              "fact4"
+            ],
+            "support_ids": [
+              "fact1",
+              "fact4"
+            ],
+            "inference_distance": "near",
+            "present_life_domain": "present_life",
+            "overreach_risk": "low_structural_only",
+            "advances_manuscript": true
+          }
+        ],
+        "confirmation_view": {
+          "branch_period": "45歳",
+          "triggering_event": "不妊治療を経て子どもを授かった",
+          "chosen_path": "妻と息子と三人で暮らす人生",
+          "unchosen_path": "不妊治療を諦めること",
+          "actual_secondary_branches": [],
+          "retrospective_counterfactuals": [
+            "今も、二人目を持っていたらどうだったかと考えることがある。"
+          ],
+          "present_questions": [
+            "今も、二人目を持っていたらどうだったかと考えることがある。"
+          ],
+          "current_context": [
+            "現在の生活"
+          ],
+          "feelings": [],
+          "hypotheses": [],
+          "unknowns": [],
+          "central_thesis_preview": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだことが、現在の幸せに繋がっている。",
+          "observatory_lens_candidates": [],
+          "items_to_confirm": []
+        }
+      },
+      "confirmation": {
+        "status": "ready_for_draft",
+        "confirmed_by_user": true,
+        "timestamp": "2026-08-07T02:13:41.986140+00:00"
+      },
+      "call2": {
+        "prompt_version": "parallel-life-call-2-v1.0.1",
+        "character_count": 326,
+        "title_candidates": [
+          "選択と家族の幸せ",
+          "不妊治療を経て",
+          "三人家族の生活"
+        ],
+        "subtitle_candidates": [
+          "選んだ道と考える未来"
+        ],
+        "rebranch_candidates": [],
+        "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+        "observatory_omitted": true,
+        "analysis": {
+          "char_count": 327,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "選択と家族の幸せ",
+            "selected_subtitle": "選んだ道と考える未来",
+            "title_supported_by_fact_ids": [],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        }
+      },
+      "call3": {
+        "prompt_version": "parallel-life-call-3-v1.0.1",
+        "status": "complete",
+        "final_title": "選択と家族の幸せ",
+        "final_subtitle": "選んだ道と考える未来",
+        "character_count": 327,
+        "validation_from_runtime": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "選択と家族の幸せ",
+            "selected_subtitle": "選んだ道と考える未来",
+            "title_supported_by_fact_ids": [],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "選択と家族の幸せ",
+            "selected_subtitle": "選んだ道と考える未来",
+            "title_supported_by_fact_ids": [],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "analysis": {
+          "char_count": 327,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "named_entity_retention": {},
+        "session_status": "complete",
+        "publishable": true,
+        "final_manuscript_present": true
+      },
+      "machine_pass_hints": {
+        "complete_and_publishable": true,
+        "blocking_reasons": [],
+        "independent_blocking": []
+      },
+      "finished_at": "2026-08-07T02:13:49.263654+00:00"
+    },
+    {
+      "id": "case2",
+      "title": "Family formation / fertility — explicit later discussion/decision",
+      "started_at": "2026-08-07T02:13:49.263863+00:00",
+      "errors": [],
+      "call1": {
+        "session_id": "f211a03e-1f50-4293-8c8b-f7d8770bf225",
+        "status": "ready_for_user_confirmation",
+        "prompt_version": "parallel-life-call-1-v1.0.2",
+        "schema_version": "parallel-life-call-1-schema-v1.0.2",
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "central_thesis": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。",
+        "actual_secondary_count": 1,
+        "actual_secondary_descriptions": [
+          "がある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。45歳のとき、不妊治療を経て子どもを授かった。実際に選んだのは、妻と息"
+        ],
+        "retrospective_counterfactuals": [],
+        "questions": [
+          "今も、二人目を持っていたらどうだったかと考えることがある。"
+        ],
+        "current_context": [
+          "現在の生活"
+        ],
+        "selected_lenses": [],
+        "rebranch_directions": [],
+        "residue_generation_path": [],
+        "validated_residue": [
+          {
+            "residue_statement": "二人目を持っていたら、現在の家族の形はどうなっていたのか。",
+            "content": "二人目を持っていたら、現在の家族の形はどうなっていたのか。",
+            "past_anchor_ids": [
+              "fact4"
+            ],
+            "present_anchor_ids": [
+              "question1"
+            ],
+            "support_ids": [
+              "fact4",
+              "question1"
+            ],
+            "inference_distance": "near",
+            "present_life_domain": "家族",
+            "overreach_risk": "低",
+            "advances_manuscript": true
+          }
+        ],
+        "confirmation_view": {
+          "branch_period": "45歳のとき",
+          "triggering_event": "不妊治療を経て子どもを授かった。",
+          "chosen_path": "妻と息子と三人で暮らす人生",
+          "unchosen_path": "不妊治療を諦めること",
+          "actual_secondary_branches": [
+            "がある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。45歳のとき、不妊治療を経て子どもを授かった。実際に選んだのは、妻と息"
+          ],
+          "retrospective_counterfactuals": [],
+          "present_questions": [
+            "今も、二人目を持っていたらどうだったかと考えることがある。"
+          ],
+          "current_context": [
+            "現在の生活"
+          ],
+          "feelings": [
+            "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。"
+          ],
+          "hypotheses": [],
+          "unknowns": [],
+          "central_thesis_preview": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。",
+          "observatory_lens_candidates": [],
+          "items_to_confirm": []
+        }
+      },
+      "confirmation": {
+        "status": "ready_for_draft",
+        "confirmed_by_user": true,
+        "timestamp": "2026-08-07T02:14:11.050315+00:00"
+      },
+      "call2": {
+        "prompt_version": "parallel-life-call-2-v1.0.1",
+        "character_count": 388,
+        "title_candidates": [
+          "不妊治療を経て選んだ家族の形",
+          "選択の結果と家族の未来",
+          "現在の生活と過去の選択"
+        ],
+        "subtitle_candidates": [
+          "不妊治療から得た家族の絆"
+        ],
+        "rebranch_candidates": [],
+        "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+        "observatory_omitted": true,
+        "analysis": {
+          "char_count": 389,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "不妊治療を経て選んだ家族の形",
+            "selected_subtitle": "不妊治療から得た家族の絆",
+            "title_supported_by_fact_ids": [
+              "fact1",
+              "fact3"
+            ],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        }
+      },
+      "call3": {
+        "prompt_version": "parallel-life-call-3-v1.0.1",
+        "status": "complete",
+        "final_title": "不妊治療を経て選んだ家族の形",
+        "final_subtitle": "不妊治療から得た家族の絆",
+        "character_count": 389,
+        "validation_from_runtime": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "不妊治療を経て選んだ家族の形",
+            "selected_subtitle": "不妊治療から得た家族の絆",
+            "title_supported_by_fact_ids": [
+              "fact1",
+              "fact3"
+            ],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "不妊治療を経て選んだ家族の形",
+            "selected_subtitle": "不妊治療から得た家族の絆",
+            "title_supported_by_fact_ids": [
+              "fact1",
+              "fact3"
+            ],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "analysis": {
+          "char_count": 389,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "named_entity_retention": {
+          "話し合": true,
+          "やめた": false
+        },
+        "session_status": "complete",
+        "publishable": true,
+        "final_manuscript_present": true
+      },
+      "machine_pass_hints": {
+        "complete_and_publishable": false,
+        "blocking_reasons": [],
+        "independent_blocking": []
+      },
+      "finished_at": "2026-08-07T02:14:21.119060+00:00"
+    },
+    {
+      "id": "case3",
+      "title": "First-choice university admission",
+      "started_at": "2026-08-07T02:12:01.702528+00:00",
+      "errors": [],
+      "call1": {
+        "session_id": "da34d060-8e85-462c-8df6-934eee835b4a",
+        "status": "ready_for_user_confirmation",
+        "prompt_version": "parallel-life-call-1-v1.0.2",
+        "schema_version": "parallel-life-call-1-schema-v1.0.2",
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "central_thesis": "選ばなかった道について考えることは、現在の生活に影響を与えている。",
+        "actual_secondary_count": 0,
+        "actual_secondary_descriptions": [],
+        "retrospective_counterfactuals": [
+          "別の大学なら仕事や人間関係がどう変わったかと考えることがある。"
+        ],
+        "questions": [
+          "別の大学なら仕事や人間関係がどう変わったかと考えることがある。"
+        ],
+        "current_context": [
+          "現在の生活"
+        ],
+        "selected_lenses": [],
+        "rebranch_directions": [],
+        "residue_generation_path": [],
+        "validated_residue": [
+          {
+            "residue_statement": "早稲田大学に合格したことが、現在の仕事や人間関係に影響を与えているかもしれない。",
+            "content": "早稲田大学に合格したことが、現在の仕事や人間関係に影響を与えているかもしれない。",
+            "past_anchor_ids": [
+              "fact_2"
+            ],
+            "present_anchor_ids": [
+              "fact_3",
+              "question_1"
+            ],
+            "support_ids": [
+              "fact_2",
+              "fact_3",
+              "question_1"
+            ],
+            "inference_distance": "medium",
+            "present_life_domain": "現在の生活",
+            "overreach_risk": "低",
+            "advances_manuscript": true
+          }
+        ],
+        "confirmation_view": {
+          "branch_period": "19歳",
+          "triggering_event": "第一志望の早稲田大学第一文学部に合格した。",
+          "chosen_path": "早稲田大学第一文学部に合格した。",
+          "unchosen_path": "別の大学へ進学すること",
+          "actual_secondary_branches": [],
+          "retrospective_counterfactuals": [
+            "別の大学なら仕事や人間関係がどう変わったかと考えることがある。"
+          ],
+          "present_questions": [
+            "別の大学なら仕事や人間関係がどう変わったかと考えることがある。"
+          ],
+          "current_context": [
+            "現在の生活"
+          ],
+          "feelings": [],
+          "hypotheses": [],
+          "unknowns": [],
+          "central_thesis_preview": "選ばなかった道について考えることは、現在の生活に影響を与えている。",
+          "observatory_lens_candidates": [],
+          "items_to_confirm": []
+        }
+      },
+      "confirmation": {
+        "status": "ready_for_draft",
+        "confirmed_by_user": true,
+        "timestamp": "2026-08-07T02:12:22.368752+00:00"
+      },
+      "call2": {
+        "prompt_version": "parallel-life-call-2-v1.0.1",
+        "character_count": 403,
+        "title_candidates": [
+          "選ばなかった道の影響",
+          "早稲田大学合格の意義",
+          "人生の分岐点"
+        ],
+        "subtitle_candidates": [
+          "選択がもたらす影響を考える"
+        ],
+        "rebranch_candidates": [],
+        "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+        "observatory_omitted": true,
+        "analysis": {
+          "char_count": 404,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "選ばなかった道の影響",
+            "selected_subtitle": "選択がもたらす影響を考える",
+            "title_supported_by_fact_ids": [],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        }
+      },
+      "call3": {
+        "prompt_version": "parallel-life-call-3-v1.0.1",
+        "status": "complete",
+        "final_title": "選ばなかった道の影響",
+        "final_subtitle": "選択がもたらす影響を考える",
+        "character_count": 404,
+        "validation_from_runtime": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "選ばなかった道の影響",
+            "selected_subtitle": "選択がもたらす影響を考える",
+            "title_supported_by_fact_ids": [],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "選ばなかった道の影響",
+            "selected_subtitle": "選択がもたらす影響を考える",
+            "title_supported_by_fact_ids": [],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "analysis": {
+          "char_count": 404,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "named_entity_retention": {
+          "第一志望": true,
+          "早稲田大学第一文学部": true,
+          "合格": true,
+          "進学": true
+        },
+        "session_status": "complete",
+        "publishable": true,
+        "final_manuscript_present": true
+      },
+      "machine_pass_hints": {
+        "complete_and_publishable": true,
+        "blocking_reasons": [],
+        "independent_blocking": []
+      },
+      "finished_at": "2026-08-07T02:12:30.914593+00:00"
+    },
+    {
+      "id": "case4",
+      "title": "Creative work vs corporate career",
+      "started_at": "2026-08-07T02:12:30.914888+00:00",
+      "errors": [],
+      "call1": {
+        "session_id": "e2130dcc-fc79-4300-a9e3-f5b8f8e53396",
+        "status": "ready_for_user_confirmation",
+        "prompt_version": "parallel-life-call-1-v1.0.2",
+        "schema_version": "parallel-life-call-1-schema-v1.0.2",
+        "source_coverage": {
+          "branch_period": true,
+          "triggering_event": true,
+          "chosen_path": true,
+          "unchosen_path": true,
+          "present_question": true,
+          "current_context": true
+        },
+        "central_thesis": "創作を中心にした人生を選ばなかったことが、現在の生活に影響を与えている。",
+        "actual_secondary_count": 0,
+        "actual_secondary_descriptions": [],
+        "retrospective_counterfactuals": [
+          "創作中心なら今とは違う人生だったかと考えることがある。"
+        ],
+        "questions": [
+          "創作中心なら今とは違う人生だったかと考えることがある。"
+        ],
+        "current_context": [
+          "現在の生活"
+        ],
+        "selected_lenses": [],
+        "rebranch_directions": [],
+        "residue_generation_path": [],
+        "validated_residue": [
+          {
+            "residue_statement": "創作を中心にした人生を選ばなかったことが、現在の生活に影響を与えている。",
+            "content": "創作を中心にした人生を選ばなかったことが、現在の生活に影響を与えている。",
+            "past_anchor_ids": [
+              "fact2"
+            ],
+            "present_anchor_ids": [
+              "fact4"
+            ],
+            "support_ids": [
+              "fact2",
+              "fact4"
+            ],
+            "inference_distance": "near",
+            "present_life_domain": "現在の生活",
+            "overreach_risk": "低い",
+            "advances_manuscript": true
+          }
+        ],
+        "confirmation_view": {
+          "branch_period": "現在",
+          "triggering_event": "現在の生活",
+          "chosen_path": "企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。",
+          "unchosen_path": "創作を中心にした人生",
+          "actual_secondary_branches": [],
+          "retrospective_counterfactuals": [
+            "創作中心なら今とは違う人生だったかと考えることがある。"
+          ],
+          "present_questions": [
+            "創作中心なら今とは違う人生だったかと考えることがある。"
+          ],
+          "current_context": [
+            "現在の生活"
+          ],
+          "feelings": [],
+          "hypotheses": [],
+          "unknowns": [],
+          "central_thesis_preview": "創作を中心にした人生を選ばなかったことが、現在の生活に影響を与えている。",
+          "observatory_lens_candidates": [],
+          "items_to_confirm": []
+        }
+      },
+      "confirmation": {
+        "status": "ready_for_draft",
+        "confirmed_by_user": true,
+        "timestamp": "2026-08-07T02:12:45.391596+00:00"
+      },
+      "call2": {
+        "prompt_version": "parallel-life-call-2-v1.0.1",
+        "character_count": 349,
+        "title_candidates": [
+          "現在の生活と選ばなかった道",
+          "創作を中心にした人生の影響",
+          "選択がもたらす現在の生活"
+        ],
+        "subtitle_candidates": [
+          "現在の生活の形成と選択の影響"
+        ],
+        "rebranch_candidates": [],
+        "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+        "observatory_omitted": true,
+        "analysis": {
+          "char_count": 350,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "現在の生活と選ばなかった道",
+            "selected_subtitle": "現在の生活の形成と選択の影響",
+            "title_supported_by_fact_ids": [
+              "fact3"
+            ],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        }
+      },
+      "call3": {
+        "prompt_version": "parallel-life-call-3-v1.0.1",
+        "status": "complete",
+        "final_title": "現在の生活と選ばなかった道",
+        "final_subtitle": "現在の生活の形成と選択の影響",
+        "character_count": 350,
+        "validation_from_runtime": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "現在の生活と選ばなかった道",
+            "selected_subtitle": "現在の生活の形成と選択の影響",
+            "title_supported_by_fact_ids": [
+              "fact3"
+            ],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "independent_gate": {
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice_findings": [],
+          "rebranch_validations": [],
+          "title_validation": {
+            "selected_title": "現在の生活と選ばなかった道",
+            "selected_subtitle": "現在の生活の形成と選択の影響",
+            "title_supported_by_fact_ids": [
+              "fact3"
+            ],
+            "title_supported_by_central_thesis": true,
+            "title_introduces_new_unverified_theme": false,
+            "title_factual_consistency": true,
+            "title_overdramatizes_unchosen_life": false,
+            "title_matches_final_closing": true,
+            "passed": true,
+            "notes": []
+          },
+          "contradictions": [],
+          "questions_converted_to_facts": [],
+          "hypotheses_converted_to_facts": [],
+          "protections_stated_as_facts": [],
+          "unknowns_filled_by_model": [],
+          "sentence_fragments": [],
+          "copied_long_input_segments": [],
+          "unsupported_paragraphs": [],
+          "central_thesis_maintained": true,
+          "residue_centrality": true,
+          "observatory_takeover": false,
+          "closing_returns_to_present": true,
+          "publishable": true,
+          "blocking_reasons": []
+        },
+        "analysis": {
+          "char_count": 350,
+          "heading_count": 0,
+          "chapter_by_chapter_feel": false,
+          "unsupported_scenes": [],
+          "unsupported_personal_details": [],
+          "generic_advice": [],
+          "sentence_fragments": [],
+          "copied_long_segments": [],
+          "publishable_rebranch_count": 0
+        },
+        "named_entity_retention": {
+          "会社員": true,
+          "創作": true
+        },
+        "session_status": "complete",
+        "publishable": true,
+        "final_manuscript_present": true
+      },
+      "machine_pass_hints": {
+        "complete_and_publishable": true,
+        "blocking_reasons": [],
+        "independent_blocking": []
+      },
+      "finished_at": "2026-08-07T02:12:52.810784+00:00"
+    }
+  ],
+  "finished_at": "2026-08-07T02:12:52.812103+00:00"
+}

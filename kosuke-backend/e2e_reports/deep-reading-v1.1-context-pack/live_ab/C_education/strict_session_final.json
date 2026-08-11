@@ -1,0 +1,480 @@
+{
+  "session_id": "889f7ada-1fbf-4160-a585-67b69c83916c",
+  "raw_user_input": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。\n選ばなかった道は、別の大学へ進学することだった。\n現在は複数の業界を経験したあと、文章やプロトコルをまとめている。\n別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact1",
+          "content": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact2",
+          "content": "選ばなかった道は、別の大学へ進学することだった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、別の大学へ進学することだった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact3",
+          "content": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_001",
+          "content": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_current_preserved_002",
+          "content": "あの分岐がいまも残る問いとして触れることがある",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "あの分岐がいまも残る問いとして触れることがある",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "feelings": [],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "q_confirm_thesis",
+          "content": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "現在は複数の業界を経験したあと、文章やプロトコルをまとめている",
+        "あの分岐がいまも残る問いとして触れることがある"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "19歳",
+        "triggering_event": "第一志望の早稲田大学第一文学部に合格した",
+        "available_paths": [
+          "早稲田大学第一文学部に進学する"
+        ],
+        "realized_path": "早稲田大学第一文学部に進学する",
+        "unrealized_paths": [
+          "別の大学へ進学する"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact1",
+          "fact2"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_question1",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        },
+        {
+          "id": "cf_q_confirm_thesis",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001",
+        "q_confirm_thesis"
+      ]
+    },
+    "central_thesis": {
+      "thesis_type": "exploratory",
+      "statement": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+      "pole_a": "早稲田大学第一文学部に進学した",
+      "pole_b": "別の大学に進学した",
+      "supported_by": [],
+      "risks": [],
+      "validation_status": "unvalidated"
+    },
+    "lost_structure": {
+      "items": []
+    },
+    "protected_structure": {
+      "items": []
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」を振り返る問いは、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活と並べて読むことができる",
+          "content": "「19歳のとき、第一志望の早稲田大学第一文学部に合格した。」を振り返る問いは、「現在は複数の業界を経験したあと、文章やプロトコルをまとめている。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact1"
+          ],
+          "present_anchor_ids": [
+            "fact3"
+          ],
+          "support_ids": [
+            "fact1",
+            "fact3"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": []
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": []
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "19歳",
+      "triggering_event": "第一志望の早稲田大学第一文学部に合格した",
+      "chosen_path": "早稲田大学第一文学部に進学する",
+      "unchosen_path": "別の大学へ進学する",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+        "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。"
+      ],
+      "present_questions": [
+        "別の大学なら仕事や人間関係がどう変わったかと考えることがある。",
+        "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。"
+      ],
+      "current_context": [
+        "現在は複数の業界を経験したあと、文章やプロトコルをまとめている",
+        "あの分岐がいまも残る問いとして触れることがある"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "別の大学に進学していた場合、仕事や人間関係がどう変わったかを考えることがある。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.0.3",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": null
+  },
+  "user_corrections": [
+    "あの分岐がいまも残る問いとして触れることがある。"
+  ],
+  "confirmation_timestamp": "2026-08-08T02:51:04.584549+00:00",
+  "call2": {
+    "body_markdown": "## 十九歳の合格\n\n十九歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。別の大学へ進学するという可能性も、その時点にはあった。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。十九歳の合格という一点と、この現在の仕事を並べて見ることはできる。しかし、そのあいだを一つの因果関係として結びつける材料はない。\n\nそれでも、別の大学に進学していたなら、仕事や人間関係はどう変わっていたのか、という問いに触れることがある。その問いは答えとして固定されていない。早稲田大学第一文学部への進学、複数の業界での経験、そして文章やプロトコルをまとめる現在がある一方で、別の大学という可能性は、仕事と人間関係について考えるための未回答の形のまま残っている。\n",
+    "title_candidates": [
+      "十九歳の合格と、いま残る問い",
+      "早稲田大学第一文学部と別の大学のあいだ",
+      "文章とプロトコルの現在、別の大学への問い"
+    ],
+    "subtitle_candidates": [
+      "進学した場所と、答えの定まらない仕事・人間関係の想像"
+    ],
+    "sections": [
+      {
+        "internal_id": "section_01",
+        "public_heading": "十九歳の合格",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "section_02",
+        "public_heading": "現在に残る問い",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "将来の具体的な再検討対象について、確認済みの事実がないため。",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact1",
+          "fact2"
+        ],
+        "contains_inference": false,
+        "text_preview": "十九歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。別の大学へ進学するという可能性も、その時点にはあった。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact3",
+          "fact_current_preserved_001",
+          "fact1"
+        ],
+        "contains_inference": false,
+        "text_preview": "現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。十九歳の合格という一点と、この現在の仕事を並べて見ることはできる。しかし、そのあいだを一つの因果関係として結びつける材料はない。"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "q_confirm_001",
+          "q_confirm_thesis",
+          "fact_current_preserved_002",
+          "fact1",
+          "fact2",
+          "fact3"
+        ],
+        "contains_inference": false,
+        "text_preview": "それでも、別の大学に進学していたなら、仕事や人間関係はどう変わっていたのか、という問いに触れることがある。その問いは答えとして固定されていない。早稲田大学第一文学部への進学、複数の業界での経験、そして文章やプロトコルをまとめる現在がある一方"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1
+    },
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 340
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "十九歳の合格と、いま残る問い",
+    "final_subtitle": "進学した場所と、答えの定まらない仕事・人間関係の想像",
+    "body_markdown": "## 十九歳の合格\n\n十九歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。別の大学へ進学するという可能性も、その時点にはあった。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。十九歳の合格という一点と、この現在の仕事を並べて見ることはできる。しかし、そのあいだを一つの因果関係として結びつける材料はない。\n\nそれでも、別の大学に進学していたなら、仕事や人間関係はどう変わっていたのか、という問いに触れることがある。その問いは答えとして固定されていない。早稲田大学第一文学部への進学、複数の業界での経験、そして文章やプロトコルをまとめる現在がある一方で、別の大学という可能性は、仕事と人間関係について考えるための未回答の形のまま残っている。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "十九歳の合格と、いま残る問い",
+        "selected_subtitle": "進学した場所と、答えの定まらない仕事・人間関係の想像",
+        "title_supported_by_fact_ids": [
+          "fact1"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "character_count": 341
+  },
+  "final_manuscript": "# 十九歳の合格と、いま残る問い\n\n*進学した場所と、答えの定まらない仕事・人間関係の想像*\n\n## 十九歳の合格\n\n十九歳のとき、第一志望の早稲田大学第一文学部に合格し、同学部へ進学した。別の大学へ進学するという可能性も、その時点にはあった。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。十九歳の合格という一点と、この現在の仕事を並べて見ることはできる。しかし、そのあいだを一つの因果関係として結びつける材料はない。\n\nそれでも、別の大学に進学していたなら、仕事や人間関係はどう変わっていたのか、という問いに触れることがある。その問いは答えとして固定されていない。早稲田大学第一文学部への進学、複数の業界での経験、そして文章やプロトコルをまとめる現在がある一方で、別の大学という可能性は、仕事と人間関係について考えるための未回答の形のまま残っている。\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.0.3",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.3",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "strict",
+    "context_pack_enabled": false,
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.3",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": null,
+    "runtime_version": "parallel-life-runtime-v1.0.6",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.0.6",
+  "created_at": "2026-08-08T02:50:31.970031+00:00",
+  "updated_at": "2026-08-08T02:51:31.507Z",
+  "session_revision": 7,
+  "expires_at": "2026-08-09T02:51:31.507Z",
+  "idempotency_keys": {
+    "draft:v11ab-C_education-strict-20260808T025104Z": "complete",
+    "edit:v11ab-C_education-strict-20260808T025104Z-edit": "complete"
+  },
+  "deep_reading_mode": "strict",
+  "context_pack": null
+}

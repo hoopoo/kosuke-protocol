@@ -1,0 +1,26 @@
+
+=== case1: Call 1 ===
+=== case1: Confirm ===
+=== case1: Call 2 (Terra) ===
+=== case1: Call 3 (Terra) ===
+=== case1: done pub=True blockers=[] title='三人の暮らしと、残る問い' cost=$0.023628 lat=36013ms
+
+=== case2: Call 1 ===
+=== case2: Confirm ===
+=== case2: Call 2 (Terra) ===
+=== case2: Call 3 (Terra) ===
+=== case2: done pub=True blockers=[] title='三人の暮らしと、残る問い' cost=$0.022296 lat=33083ms
+
+=== case3: Call 1 ===
+=== case3: Confirm ===
+=== case3: Call 2 (Terra) ===
+=== case3: Call 3 (Terra) ===
+=== case3: done pub=False blockers=['title_validation_failed'] title='十九歳の合格と、現在' cost=$0.06207 lat=41194ms
+
+=== case4: Call 1 ===
+=== case4: Confirm ===
+=== case4: Call 2 (Terra) ===
+=== case4: Call 3 (Terra) ===
+=== case4: done pub=True blockers=[] title='制作のそばに残る空白' cost=$0.020784 lat=22789ms
+
+Wrote /Users/shirakotadashi/kosuke-protocol/kosuke-backend/e2e_reports/deep-reading-production-v1.0-final/FINAL_PRODUCTION_RAW.json

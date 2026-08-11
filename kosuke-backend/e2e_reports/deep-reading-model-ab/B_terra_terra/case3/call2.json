@@ -1,0 +1,79 @@
+{
+  "body_markdown": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。その時点には、別の大学へ進学するという道もあった。ここで確認できるのは、早稲田大学第一文学部への合格と、別の大学というもう一つの進学先が視野にあったことまでである。その後の仕事や交友について、当時の時点から記された記録はない。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格からこの現在までには時間があり、その間に複数の業界を経験している。ただし、大学と現在の仕事のあいだを一つの因果関係として結びつける材料はない。\n\nそれでも、別の大学なら仕事や人間関係がどう変わったかと考えることがある。そこでは、別の大学での具体的な仕事や人間関係を描くことはできない。早稲田大学第一文学部に合格した19歳の時点と、文章やプロトコルをまとめている現在は、ともに確かめられている。そのあいだには、まだ接続しきれていないものが残っている。\n",
+  "title_candidates": [
+    "19歳の合格と、いままとめている文章",
+    "早稲田大学第一文学部と別の大学のあいだ",
+    "接続しきれていないものを残して"
+  ],
+  "subtitle_candidates": [
+    "複数の業界を経た現在から、19歳の進学先を見返す"
+  ],
+  "sections": [
+    {
+      "internal_id": "past_anchor",
+      "public_heading": "19歳の合格",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "present_anchor",
+      "public_heading": "現在の仕事",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "open_question",
+      "public_heading": "残っている問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "別の大学での具体的な出来事、仕事、人間関係に関する確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。その時点には、別の大学へ進学するという道もあった。ここで確認できるのは、早稲田大学第一文学部への合格と、別の大学というもう一つの進学先が視野にあったことまでである。その後の仕事や交友に"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact3"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格からこの現在までには時間があり、その間に複数の業界を経験している。ただし、大学と現在の仕事のあいだを一つの因果関係として結びつける材料はない。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "それでも、別の大学なら仕事や人間関係がどう変わったかと考えることがある。そこでは、別の大学での具体的な仕事や人間関係を描くことはできない。早稲田大学第一文学部に合格した19歳の時点と、文章やプロトコルをまとめている現在は、ともに確かめられて"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 406
+}

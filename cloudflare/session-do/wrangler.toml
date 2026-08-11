@@ -1,0 +1,39 @@
+name = "parallel-life-session-do"
+main = "src/index.ts"
+compatibility_date = "2025-03-01"
+
+[[durable_objects.bindings]]
+name = "SESSION"
+class_name = "DeepReadingSessionDO"
+
+[[migrations]]
+tag = "v1"
+# Free plan requires SQLite-backed Durable Objects
+new_sqlite_classes = ["DeepReadingSessionDO"]
+
+[env.staging]
+name = "parallel-life-session-do-staging"
+vars = { ENVIRONMENT = "staging" }
+
+[[env.staging.durable_objects.bindings]]
+name = "SESSION"
+class_name = "DeepReadingSessionDO"
+
+[[env.staging.migrations]]
+tag = "v1"
+new_sqlite_classes = ["DeepReadingSessionDO"]
+
+[env.production]
+name = "parallel-life-session-do"
+vars = { ENVIRONMENT = "production" }
+
+[[env.production.durable_objects.bindings]]
+name = "SESSION"
+class_name = "DeepReadingSessionDO"
+
+[[env.production.migrations]]
+tag = "v1"
+new_sqlite_classes = ["DeepReadingSessionDO"]
+
+# Set secrets (never commit):
+#   npx wrangler secret put SESSION_STORE_TOKEN --env staging|production

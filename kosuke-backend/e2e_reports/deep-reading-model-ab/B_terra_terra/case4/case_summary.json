@@ -1,0 +1,73 @@
+{
+  "config_id": "B_terra_terra",
+  "case_id": "case4",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-terra",
+  "errors": [],
+  "final_title": "現在に並ぶ、創作と企業での経験",
+  "final_subtitle": "複数業界での会社員経験と、創作中心の人生についての問い",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": [
+      "結びつ"
+    ]
+  },
+  "character_count": 304,
+  "latency_ms": {
+    "call2_wall": 9558,
+    "call3_wall": 3,
+    "total_wall": 9561,
+    "sum_api_calls": 9549
+  },
+  "tokens": {
+    "prompt": 3236,
+    "completion": 971,
+    "reasoning": 484,
+    "total": 4207
+  },
+  "estimated_cost_usd": 0.022655,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9549,
+      "prompt_tokens": 3236,
+      "completion_tokens": 971,
+      "reasoning_tokens": 484,
+      "estimated_cost_usd": 0.022655,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9549,
+      "prompt_tokens": 3236,
+      "completion_tokens": 971,
+      "reasoning_tokens": 484,
+      "estimated_cost_usd": 0.022655,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "複数業界で、会社員として働いてきた。その経歴は、ひとつの業界に限られない企業での経験として、現在にも記されている。\n\n現在は、企業での経験を持ちながら、観測サイトや文章、プロトコルを制作している。複数業界での会社員としての時間と、この制作のある生活は並んでいる。そのあいだには、まだ接続しきれていないものが残っている。\n\n創作を中心にした人生も、いまの生活のそばに置かれている。創作中心なら今とは違う人生だったかと考えることがある。ただ、どのような生活になっていたか、企業での経験や観測サイト、文章、プロトコルとどう並んでいたかを結びつける材料はない。答えは定めず、その問いを現在の制作とともに残しておく。\n"
+}

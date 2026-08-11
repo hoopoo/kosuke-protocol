@@ -1,0 +1,38 @@
+{
+  "product": "Parallel Life Deep Reading",
+  "freeze_label": "Parallel Life Deep Reading Production v1.0.1",
+  "status": "PRODUCTION V1.0.1 / PATCH",
+  "patched_at": "2026-08-07T05:00:00+00:00",
+  "parent_manifest": "PRODUCTION_MANIFEST.json",
+  "parent_freeze_label": "Parallel Life Deep Reading Production v1.0",
+  "patch_scope": [
+    "Case 09 material contradiction gate",
+    "Case 08 unrealized-path modality validation + repair",
+    "Case 10 vague/non-branch concreteness gate",
+    "Case 06 sensitive-domain causal thesis validation"
+  ],
+  "confirmation_reports": {
+    "blocker_rerun": "e2e_reports/deep-reading-public-qa-v1.0.1-blockers/PUBLIC_QA_RAW.json",
+    "full_public_qa": "e2e_reports/deep-reading-public-qa-v1.0.1-full/PUBLIC_QA_RAW.json",
+    "frozen_four_regression": "e2e_reports/deep-reading-production-v1.0-final/FINAL_PRODUCTION_RAW.json"
+  },
+  "versions": {
+    "production_models": "parallel-life-production-models-v1.0",
+    "call_1_prompt": "parallel-life-call-1-v1.0.2",
+    "call_1_schema": "parallel-life-call-1-schema-v1.0.2",
+    "call_2_prompt": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt": "parallel-life-call-3-v1.0.3",
+    "runtime_validation": "parallel-life-runtime-v1.0.5",
+    "public_qa_suite": "deep-reading-public-qa-v1.0",
+    "regression_fixtures": "deep-reading-fixtures-v1.0"
+  },
+  "models": {
+    "call_1": "gpt-4o-mini",
+    "call_2": "gpt-5.6-terra",
+    "call_3": "gpt-5.6-terra",
+    "notes": "Model split unchanged from v1.0. Call 3 prompt unchanged; modality repair is runtime-deterministic."
+  },
+  "prompts_changed": false,
+  "call_3_bumped": false,
+  "freeze_rule": "Do not silently modify frozen v1.0 prompt/schema/model IDs. Runtime patches use v1.0.x; larger changes use v1.1."
+}

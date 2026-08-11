@@ -1,0 +1,28 @@
+# Staging / production Cloudflare Containers binding for Kosuke FastAPI.
+# Requires Paid Workers + Containers access on the account.
+#
+# Deploy flow (high level):
+#   1. Build image from ../../kosuke-backend/Dockerfile
+#   2. Push / register with Cloudflare Containers (account-specific CLI)
+#   3. Bind SESSION_STORE_URL to the session-do Worker URL
+#   4. Set secrets: OPENAI_API_KEY, SESSION_STORE_TOKEN
+#
+# This file documents intended names and env. Exact Containers wrangler
+# schema may vary by CF account beta; adjust after `wrangler containers --help`.
+
+name = "parallel-life-api"
+compatibility_date = "2025-03-01"
+
+[env.staging]
+name = "parallel-life-api-staging"
+vars = { ENV = "staging", DEEP_READING_ENABLED = "true", DEEP_READING_CONTEXT_PACK_ENABLED = "true", SESSION_STORE_BACKEND = "do", SESSION_TTL_HOURS = "24" }
+
+[env.production]
+name = "parallel-life-api"
+vars = { ENV = "production", DEEP_READING_ENABLED = "true", DEEP_READING_CONTEXT_PACK_ENABLED = "false", SESSION_STORE_BACKEND = "do", SESSION_TTL_HOURS = "24" }
+
+# Secrets (wrangler / dashboard — never commit):
+#   OPENAI_API_KEY
+#   SESSION_STORE_TOKEN
+#   SESSION_STORE_URL   (e.g. https://parallel-life-session-do-staging.<account>.workers.dev)
+#   CORS_ALLOW_ORIGINS  (staging Pages origin)

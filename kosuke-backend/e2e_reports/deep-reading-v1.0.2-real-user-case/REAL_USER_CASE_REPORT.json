@@ -1,0 +1,25 @@
+{
+  "at": "2026-08-08T01:37:49.873202+00:00",
+  "call_1_prompt": "parallel-life-call-1-v1.0.3",
+  "runtime": "parallel-life-runtime-v1.0.6",
+  "ground_status": "GenerationStatus.needs_additional_input",
+  "current_context_after_ground": [
+    "息子が一人と妻の三人で生活しています。また、猫がいます"
+  ],
+  "items_to_confirm_after_ground": [],
+  "additional_questions": [
+    "もし中国人女性とお付き合いを継続するを選んでいたら、と今でも考えることはありますか？",
+    "現在の家族構成について、他に知りたいことはありますか？"
+  ],
+  "final_status": "GenerationStatus.complete",
+  "final_title": "三十歳の別れと、いまの暮らし",
+  "publishable": true,
+  "blocking_reasons": [],
+  "title_notes": [],
+  "title_candidates": [
+    "三十歳の別れと、いまの暮らし",
+    "答えのない「もし」と家族のいる現在",
+    "交際を続けていたら、という問いのそばで"
+  ],
+  "elapsed_s": 21.52
+}

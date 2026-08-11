@@ -1,0 +1,74 @@
+{
+  "body_markdown": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この選択は、私の人生における重要な分岐点となった。早稲田大学第一文学部への進学を選ぶことで、私は新しい学びや人との出会いを経験することができた。一方で、選ばなかった道として別の大学への進学が存在していた。この選択肢は、私の人生の中での別の可能性を示している。もし別の大学に進学していたら、現在の仕事や人間関係はどのように変わっていたのだろうかと、時折考えることがある。\n\n現在は複数の業界を経験した後、文章やプロトコルをまとめている。これまでの経験がどのように私の現在の仕事に影響を与えているのかは明確にはわからないが、早稲田大学での学びが基盤となっていることは確かだ。過去の選択と現在の生活の間には、まだ接続しきれていないものが残っているように感じる。これらの経験を通じて、私は自分のキャリアや人間関係についての理解を深めている。\n",
+  "title_candidates": [
+    "大学選択とその後の人生",
+    "早稲田大学への進学と現在の仕事",
+    "選択肢と人生の道筋"
+  ],
+  "subtitle_candidates": [],
+  "sections": [
+    {
+      "internal_id": "sec1",
+      "public_heading": "大学選択の影響",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "sec2",
+      "public_heading": "現在の仕事と過去の経験",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この選択は、私の人生における重要な分岐点となった。早稲田大学第一文学部への進学を選ぶことで、私は新しい学びや人との出会いを経験することができた。一方で、選ばなかった道として別の大学への"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "現在は複数の業界を経験した後、文章やプロトコルをまとめている。これまでの経験がどのように私の現在の仕事に影響を与えているのかは明確にはわからないが、早稲田大学での学びが基盤となっていることは確かだ。過去の選択と現在の生活の間には、まだ接続し"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [
+      {
+        "excerpt": "これまでの経験がどのように私の現在の仕事に影響を与えているのかは明確にはわからないが、早稲田大学での学びが基盤となっていることは確かだ。",
+        "frame_type": "causal_presupposition",
+        "missing_support": "causal_frame_without_explicit_support",
+        "category": "unsupported"
+      }
+    ],
+    "schema_leakage_prose": [
+      {
+        "excerpt": "一方で、選ばなかった道として別の大学への進学が存在していた。",
+        "leakage_type": "unchosen_as",
+        "missing_support": "schema_verbalization",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 394
+}

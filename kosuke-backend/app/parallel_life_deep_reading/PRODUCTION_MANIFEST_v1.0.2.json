@@ -1,0 +1,39 @@
+{
+  "product": "Parallel Life Deep Reading",
+  "freeze_label": "Parallel Life Deep Reading Production v1.0.2",
+  "status": "PRODUCTION V1.0.2 / CALL1-v1.0.3 + RUNTIME-v1.0.6",
+  "patched_at": "2026-08-08T01:40:00+00:00",
+  "parent_manifest": "PRODUCTION_MANIFEST_v1.0.1.json",
+  "parent_freeze_label": "Parallel Life Deep Reading Production v1.0.1",
+  "patch_scope": [
+    "Call 1 prompt: stop collapsing current_context to abstract label 『現在の生活』",
+    "Runtime: preserve concrete present-life context from source/editorial corpus",
+    "UI: never surface raw schema field names (present_question etc.)",
+    "Approve errors: separate contradiction vs missing present_question vs missing context",
+    "Residue: cautious present-anchor wording without causal assertion",
+    "Title validation unchanged (not loosened)"
+  ],
+  "versions": {
+    "production_models": "parallel-life-production-models-v1.0",
+    "call_1_prompt": "parallel-life-call-1-v1.0.3",
+    "call_1_schema": "parallel-life-call-1-schema-v1.0.2",
+    "call_2_prompt": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt": "parallel-life-call-3-v1.0.3",
+    "runtime_validation": "parallel-life-runtime-v1.0.6",
+    "public_qa_suite": "deep-reading-public-qa-v1.0",
+    "regression_fixtures": "deep-reading-fixtures-v1.0.2"
+  },
+  "models": {
+    "call_1": "gpt-4o-mini",
+    "call_2": "gpt-5.6-terra",
+    "call_3": "gpt-5.6-terra",
+    "notes": "Call 2/3 prompts and title validation unchanged. Call 1 prompt bumped for current_context instruction only."
+  },
+  "prompts_changed": {
+    "call_1": true,
+    "call_2": false,
+    "call_3": false
+  },
+  "title_validation_changed": false,
+  "freeze_rule": "Do not loosen title validation or publication gates. Prefer Call 1 / normalization / UI fixes."
+}

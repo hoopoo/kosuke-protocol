@@ -1,0 +1,71 @@
+{
+  "config_id": "C_terra_sol",
+  "case_id": "case2",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-sol",
+  "errors": [],
+  "final_title": "三人の暮らしと、残る問い",
+  "final_subtitle": "不妊治療を経て息子を授かり、三人で暮らす日々のなかで考えること",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 286,
+  "latency_ms": {
+    "call2_wall": 7439,
+    "call3_wall": 1,
+    "total_wall": 7441,
+    "sum_api_calls": 7429
+  },
+  "tokens": {
+    "prompt": 4124,
+    "completion": 698,
+    "reasoning": 165,
+    "total": 4822
+  },
+  "estimated_cost_usd": 0.02078,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 7429,
+      "prompt_tokens": 4124,
+      "completion_tokens": 698,
+      "reasoning_tokens": 165,
+      "estimated_cost_usd": 0.02078,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 7429,
+      "prompt_tokens": 4124,
+      "completion_tokens": 698,
+      "reasoning_tokens": 165,
+      "estimated_cost_usd": 0.02078,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "## 三人で暮らすまで\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める可能性もあったなかで、妻と息子との三人暮らしがある。\n\n## 家にいる友人たちと、残る問い\n\n息子を授かった後には、二人目を目指す治療を続けるかどうかを妻と話し合い、やめた。いま、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。\n\n45歳のときに子どもを授かったことと、息子やその友人たちのいる現在の家の時間は、同じ生活のなかに置かれている。そのあいだには、まだ接続しきれていないものが残っている。今も、ときに、二人目を持っていたらどうだったかと考えることがある。\n"
+}

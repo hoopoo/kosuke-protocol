@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "final_title": "現在の生活と選ばなかった道",
+  "final_subtitle": "現在の生活の形成と選択の影響",
+  "body_markdown": "現在の生活と選ばなかった道\n\n現在の生活は、企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作するという形で構成されている。この生活は、会社員として複数業界で働いてきた経験に根ざしている。ここで重要なのは、選ばなかった道が創作を中心にした人生であったことだ。この選択は、現在の生活にどのような影響を与えているのかを考察することが必要である。\n\n創作を中心にした人生を選ばなかったことが、現在の生活に影響を与えている。選択肢として存在していた創作中心の人生は、現在の活動に対する反省や疑問を生じさせる要因となっている。創作に対する思いは、時折、現在の生活を振り返るきっかけとなり、別の可能性を考える材料となることがある。これにより、現在の生活がどのように形成されたのかを理解する手助けとなる。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "unsupported_personal_details": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "現在の生活と選ばなかった道",
+      "selected_subtitle": "現在の生活の形成と選択の影響",
+      "title_supported_by_fact_ids": [
+        "fact3"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "passed": true,
+      "notes": []
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "unsupported_paragraphs": [],
+    "central_thesis_maintained": true,
+    "residue_centrality": true,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": true,
+    "blocking_reasons": []
+  },
+  "prompt_version": "parallel-life-call-3-v1.0.1",
+  "character_count": 350
+}

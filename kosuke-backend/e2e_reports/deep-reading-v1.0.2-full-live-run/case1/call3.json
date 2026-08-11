@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "final_title": "選択と家族の幸せ",
+  "final_subtitle": "選んだ道と考える未来",
+  "body_markdown": "不妊治療を経て子どもを授かるという選択は、人生において大きな分岐点となった。45歳のとき、この決断を下し、妻と息子と三人で暮らす人生を選んだ。これは、他の選択肢、すなわち不妊治療を諦めることを選ばなかった結果である。\n\n現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。家族との生活は、日々の中で息子の成長を見守る喜びをもたらしている。息子を可愛いと感じ、彼の友人が家に遊びに来ることを楽しむ日々が続いている。\n\nただし、選択肢の一つであった二人目を持つことについては、今も考えることがある。もし二人目を持っていたら、どのような生活が待っていたのだろうか。この思いは、選んだ道に対する反省や、未だに接続しきれていない感情を浮き彫りにする。\n",
+  "validation": {
+    "unsupported_scenes": [],
+    "unsupported_personal_details": [],
+    "generic_advice_findings": [],
+    "rebranch_validations": [],
+    "title_validation": {
+      "selected_title": "選択と家族の幸せ",
+      "selected_subtitle": "選んだ道と考える未来",
+      "title_supported_by_fact_ids": [],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "passed": true,
+      "notes": []
+    },
+    "contradictions": [],
+    "questions_converted_to_facts": [],
+    "hypotheses_converted_to_facts": [],
+    "protections_stated_as_facts": [],
+    "unknowns_filled_by_model": [],
+    "sentence_fragments": [],
+    "copied_long_input_segments": [],
+    "unsupported_paragraphs": [],
+    "central_thesis_maintained": true,
+    "residue_centrality": true,
+    "observatory_takeover": false,
+    "closing_returns_to_present": true,
+    "publishable": true,
+    "blocking_reasons": []
+  },
+  "prompt_version": "parallel-life-call-3-v1.0.1",
+  "character_count": 327
+}

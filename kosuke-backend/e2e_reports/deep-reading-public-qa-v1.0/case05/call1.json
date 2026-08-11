@@ -1,0 +1,252 @@
+{
+  "status": "needs_additional_input",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "転職の話が出た",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "時期: 35歳\n出来事: 転職の話が出た",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "今の会社に残った",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選んだ道: 今の会社に残った",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "別の会社へ移ること",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道: 別の会社へ移ること",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact5",
+        "content": "その後、部署異動をして、数年後には別の会社へ転職した",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "いまの状況: その後、部署異動をして、数年後には別の会社へ転職した",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "転職していたらどうだったか",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "いまの問い: 転職していたらどうだったか",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "question_source_005",
+        "content": "いまの問い: 転職していたらどうだったか",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "時期: 35歳\n出来事: 転職の話が出た\n選んだ道: 今の会社に残った\n選ばなかった道: 別の会社へ移ること\nいまの問い: 転職していたらどうだったか\nいまの状況: その後、部署異動をして、数年後には別の会社へ転職した\n補足: 最初の転職話のときは実際にかなり迷った",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": [
+      "いまの生活のなかで、その分岐がいまでも触れている具体的な場面・習慣・関係を教えてください。"
+    ]
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "35歳",
+      "triggering_event": "転職の話が出た",
+      "available_paths": [
+        "今の会社に残った",
+        "別の会社へ移ること"
+      ],
+      "realized_path": "今の会社に残った",
+      "unrealized_paths": [
+        "別の会社へ移ること"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "転職していたらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      },
+      {
+        "id": "cf_question_source_005",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "いまの問い: 転職していたらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "present_question_ids": [
+      "fact4",
+      "question_source_005"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "exploratory",
+    "statement": "転職していた場合の影響を考えることは重要である。",
+    "pole_a": "転職していた場合の状況",
+    "pole_b": "今の会社に残った場合の状況",
+    "supported_by": [
+      "fact1",
+      "fact2",
+      "fact3",
+      "fact4",
+      "fact5"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": []
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": true,
+    "questions": [
+      "いまの生活のなかで、その分岐がいまでも触れている具体的な場面・習慣・関係を教えてください。"
+    ]
+  },
+  "user_confirmation_view": {
+    "branch_period": "35歳",
+    "triggering_event": "転職の話が出た",
+    "chosen_path": "今の会社に残った",
+    "unchosen_path": "別の会社へ移ること",
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      "転職していたらどうだったか",
+      "いまの問い: 転職していたらどうだったか"
+    ],
+    "present_questions": [
+      "転職していたらどうだったか",
+      "いまの問い: 転職していたらどうだったか"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "転職していた場合の影響を考えることは重要である。",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [
+      "residue:no_valid_residue_anchors"
+    ],
+    "source_coverage_missing": []
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.2",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

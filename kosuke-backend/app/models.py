@@ -425,3 +425,307 @@ class ExportRequest(BaseModel):
     include_fragments: bool = True
     include_reflections: bool = True
     include_flukes: bool = False
+
+
+# --- Protocol Experience models ---
+
+
+class ExperienceFragment(BaseModel):
+    """A minimal thought unit generated for the guided experience."""
+
+    id: str
+    text: str
+    type: str  # explicit | inferred | theme
+
+
+class ExperienceFragmentRequest(BaseModel):
+    """Request to transform raw input into experience fragments."""
+
+    text: str
+    language: str = "en"  # "ja" | "en"
+    lens: str = "open"
+
+
+class ExperienceFragmentResponse(BaseModel):
+    """Generated experience fragments for a source text."""
+
+    source_text: str
+    fragments: list[ExperienceFragment]
+    language: str
+    lens: str
+
+
+class ExperienceSampleRequest(BaseModel):
+    """Request to sample a counterpart fragment from the ecosystem."""
+
+    fragment_text: str
+    mode: str = "chance"  # near | far | time | chance
+    language: str = "en"
+    lens: str = "open"
+    exclude_ids: list[str] = Field(default_factory=list)
+
+
+class ExperienceSampleResponse(BaseModel):
+    """A sampled counterpart placed opposite the user's fragment."""
+
+    selected_fragment: Fragment
+    sampled_fragment: Fragment
+    mode: str
+    method: str  # internal sampling method used
+
+
+class ExperienceFlukeRequest(BaseModel):
+    """Request to generate a fluke between two specific fragments."""
+
+    original_fragment: Fragment
+    sampled_fragment: Fragment
+    query: Optional[str] = None
+    language: str = "en"
+
+
+class ExperienceMeaningRequest(BaseModel):
+    """Request to generate a concise emergent meaning for a session."""
+
+    source_text: str
+    original_fragment: Fragment
+    sampled_fragment: Fragment
+    fluke: FlukeResult
+    reflection: str = ""
+    language: str = "en"
+    lens: str = "open"
+
+
+class ExperienceMeaningResponse(BaseModel):
+    """A concise, one-line emergent meaning."""
+
+    meaning: str
+
+
+class ExperienceExportRequest(BaseModel):
+    """Request to export a single Meaning Card as a Living Book entry."""
+
+    source_text: str
+    original_fragment_text: str
+    sampled_fragment_text: str
+    tension: str = ""
+    reflection_question: str = ""
+    reflection: str = ""
+    meaning: str = ""
+    sampling_mode: str = ""
+    language: str = "en"
+    created_at: Optional[str] = None
+    title: Optional[str] = None
+
+
+class LensInfo(BaseModel):
+    """Public description of a lens for the experience UI."""
+
+    id: str
+    name_en: str
+    name_ja: str
+    description_en: str
+    description_ja: str
+    available: bool
+
+
+# --- Parallel Life models ---
+#
+# Parallel Life is the first primary public experience of Kosuke Protocol. It
+# reuses the same engines (LLM + heuristic fallback, language safeguards, seed
+# corpus pattern) but exposes a narrative "life branch" reading instead of the
+# generic six-stage protocol flow. The internal protocol mechanics stay active
+# but invisible.
+
+ParallelLifeDepth = str  # "standard" | "editorial" (legacy alias: "deep" → "editorial")
+ParallelLifeLanguage = str  # "ja" | "en"
+
+
+class ParallelLifeClarifications(BaseModel):
+    """Optional clarification answers. Every field is optional by design; the
+    user is never forced to disclose sensitive information."""
+
+    age: Optional[str] = None
+    chosen_path: Optional[str] = None
+    unchosen_path: Optional[str] = None
+    what_remains: Optional[str] = None
+    constraints: Optional[str] = None
+    lost: Optional[str] = None
+    protected: Optional[str] = None
+
+
+class ParallelLifeRequest(BaseModel):
+    """Request to generate a Parallel Life reading from a life branch."""
+
+    source_text: str
+    clarifications: ParallelLifeClarifications = Field(
+        default_factory=ParallelLifeClarifications
+    )
+    language: str = "ja"  # "ja" | "en"
+    depth: str = "standard"  # "standard" | "editorial" (alias: "deep")
+
+
+class ObservatoryLayer(BaseModel):
+    """A single observatory-lens reading of the personal branch.
+
+    ``title`` is always the official lens name (kept in English in both
+    languages, e.g. "Market Signals" — never translated or transliterated
+    inconsistently). ``descriptor`` is a short, concrete phrase in the
+    response language shown directly beneath the name (e.g. "生活を成立させ
+    る市場条件"), distinct from the longer free-text ``body`` reading.
+    """
+
+    id: str  # one of the enumerated ObservatoryLensId values
+    title: str
+    descriptor: str = ""
+    body: str
+
+
+class ParallelLifeResult(BaseModel):
+    """The structured Parallel Life document."""
+
+    title: str
+    subtitle: str
+    branch_point: str
+    chosen_path: str
+    unchosen_life: str
+    lost: list[str] = Field(default_factory=list)
+    protected: list[str] = Field(default_factory=list)
+    residue: str
+    observatory_layers: list[ObservatoryLayer] = Field(default_factory=list)
+    cross_lens_synthesis: str
+    rebranch: list[str] = Field(default_factory=list)
+    closing: str
+    generation_mode: str = "heuristic"  # "llm" | "heuristic"
+    language: str = "ja"
+    depth: str = "standard"
+
+
+class ObservatoryLensInfo(BaseModel):
+    """Public description of an observatory lens."""
+
+    id: str
+    name_en: str
+    name_ja: str
+    description_en: str
+    description_ja: str
+
+
+class ParallelLifeLensConfig(BaseModel):
+    """Typed configuration for the Parallel Life lens, consumed by the frontend
+    so Parallel Life logic is not hardcoded in the UI."""
+
+    id: str
+    name: str  # official product name (kept in English)
+    name_ja: str
+    description_en: str
+    description_ja: str
+    available: bool
+    entry_prompts_en: dict[str, str]
+    entry_prompts_ja: dict[str, str]
+    supported_depths: list[str]
+    observatory_lenses: list[ObservatoryLensInfo]
+    seed_corpus_id: str
+
+
+class ClarificationQuestion(BaseModel):
+    """A single optional clarification question."""
+
+    id: str
+    question: str
+
+
+class ParallelLifeClarifyRequest(BaseModel):
+    """Request to derive optional clarification questions for a branch."""
+
+    source_text: str
+    language: str = "ja"
+
+
+class ParallelLifeClarifyResponse(BaseModel):
+    """Optional clarification questions (0-4). Answers are never required."""
+
+    questions: list[ClarificationQuestion] = Field(default_factory=list)
+    language: str = "ja"
+
+
+class ParallelLifeExportRequest(BaseModel):
+    """Request to export a Parallel Life reading as clean markdown."""
+
+    result: ParallelLifeResult
+    created_at: Optional[str] = None
+
+
+class EditorialContext(BaseModel):
+    """Optional answers from the Editorial Edition preparation step.
+    Every field is optional; the user may skip any question."""
+
+    life_before: Optional[str] = None
+    changes_after: Optional[str] = None
+    unseen_conditions: Optional[str] = None
+    present_influence: Optional[str] = None
+    meaning_of_unchosen_life: Optional[str] = None
+    later_branches: Optional[str] = None
+    current_life_context: Optional[str] = None
+    social_connection: Optional[str] = None
+
+
+class EditorialBranchStructure(BaseModel):
+    """Internal multi-branch reading used to ground the Editorial Edition."""
+
+    primary_branch: str
+    realized_outcome: Optional[str] = None
+    secondary_branches: list[str] = Field(default_factory=list)
+    present_question: str = ""
+    current_life_context: list[str] = Field(default_factory=list)
+    explicit_facts: list[str] = Field(default_factory=list)
+    inferred_themes: list[str] = Field(default_factory=list)
+
+
+class NormalizedEditorialContext(BaseModel):
+    """Deduplicated, classified facts for Editorial Edition writing.
+
+    Raw user sentences must not enter public prose; generators interpret
+    these normalized facts into authored editorial language.
+    """
+
+    explicit_facts: list[str] = Field(default_factory=list)
+    present_life_facts: list[str] = Field(default_factory=list)
+    emotional_observations: list[str] = Field(default_factory=list)
+    current_roles: list[str] = Field(default_factory=list)
+    current_conditions: list[str] = Field(default_factory=list)
+    secondary_branches: list[str] = Field(default_factory=list)
+    unresolved_questions: list[str] = Field(default_factory=list)
+    # Compact signals for heuristic interpretation (not public prose).
+    signals: list[str] = Field(default_factory=list)
+    # All raw user strings retained only for reuse guards / whitelist.
+    raw_source_corpus: list[str] = Field(default_factory=list)
+
+
+class ParallelLifeEditorialClarifyRequest(BaseModel):
+    """Request for optional Editorial Edition preparation questions."""
+
+    source_text: str
+    clarifications: ParallelLifeClarifications = Field(
+        default_factory=ParallelLifeClarifications
+    )
+    language: str = "ja"
+    answered_editorial_ids: list[str] = Field(default_factory=list)
+
+
+class ParallelLifeEditorialRequest(BaseModel):
+    """Request to generate the Editorial Edition (depth=editorial)."""
+
+    source_text: str
+    standard_result: Optional[ParallelLifeResult] = None
+    clarifications: ParallelLifeClarifications = Field(
+        default_factory=ParallelLifeClarifications
+    )
+    editorial_context: EditorialContext = Field(default_factory=EditorialContext)
+    language: str = "ja"
+
+
+class ParallelLifeEditorialResponse(BaseModel):
+    """Editorial Edition response: multi-branch structure + full document."""
+
+    branch_structure: EditorialBranchStructure
+    result: ParallelLifeResult

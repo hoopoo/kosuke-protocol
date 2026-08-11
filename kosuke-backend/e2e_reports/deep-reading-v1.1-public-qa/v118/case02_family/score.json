@@ -1,0 +1,189 @@
+{
+  "case_id": "case02_family",
+  "category": "family / fertility",
+  "title": "Family / fertility — second child question",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 63.68,
+  "session_id": "98546eac-78f1-4d90-b7a6-5ff32cc69256",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.8-exp",
+  "branch_semantics": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+    "unchosen_structure": "二人目を目指して治療を続けること",
+    "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+    "present_residue": "「二人目を持つことへの思いが、今後の選択にどのように影響を与えるか。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "health:body_health",
+        "entrepreneurship:ownership"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 5,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": true,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body",
+      "after-success"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001",
+      "obs_as_001"
+    ],
+    "structures": [
+      "embodied_or_fertility",
+      "family_life",
+      "post_achievement_question"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:branch_point",
+    "required_section_unrealized:observatory"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "三人で暮らす現在と、残る問い",
+  "body_excerpt": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。妻と息子と三人で暮らす人生を続ける道と、二人目を目指して治療を続ける道があった。\n\n## 選んだ道\n\n妻と息子と三人で暮らす人生を続ける道を選んだ。現在も、妻と息子との三人家族で暮らしている。\n\n## 選ばなかった人生\n\n選ばなかったのは、二人目を目指して治療を続ける道だった。その先にどのような家族の暮らしがあったかを、ここから書き足すことはできない。\n\n## 失ったもの\n\n二人目を目指して治療を続ける道は、選ばれなかった。そこにありえた結果を、現在の事実として確かめることはできない。\n\n## 守られたもの\n\nいま、妻と息子との三人家族で暮らしている。この家族のかたちは、選択の正しさや優劣を示すものではない。いま目の前にある事実である。\n\n## 今に残った構造\n\nいまも、「二人目を持っていたらどうだったか」と考えることがある。不妊治療を経て二人目を目指すかを考えた過去と、三人家族で暮らし、自分の会社を経営している現在を、並べて見ることができる。その問いは、現在の生活を否定するものではなく、生活と",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 2
+  },
+  "rebranch_missing": [],
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "family",
+        "changed_dimension": "家族のかたち／身体と治療の選択",
+        "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+        "unchosen_structure": "二人目を目指して治療を続けること",
+        "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+        "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+        "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+        "present_residue": "「二人目を持つことへの思いが、今後の選択にどのように影響を与えるか。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+        "possible_rebranch_modes": [
+          "leave_unresolved",
+          "preserve",
+          "observe"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect",
+          "no_family_outcome_invention"
+        ],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_family_context_001",
+          "pack_current_work_002",
+          "fact_005"
+        ],
+        "confidence": 0.95,
+        "diagnostics": {
+          "domain_reasons": [
+            "family:fertility_or_child",
+            "family:family_words",
+            "health:body_health",
+            "entrepreneurship:ownership"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

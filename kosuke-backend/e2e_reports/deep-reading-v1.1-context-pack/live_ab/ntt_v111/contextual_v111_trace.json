@@ -1,0 +1,110 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.1",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.1-exp",
+  "pack_fact_ids": [
+    "pack_career_history_001",
+    "pack_career_history_002",
+    "pack_career_history_003",
+    "pack_current_projects_005",
+    "pack_current_work_004"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_career_history_001",
+      "content": "NTT東日本で勤務した",
+      "tags": [
+        "context_pack",
+        "category:career_history",
+        "pack_id:pack_live_20260808T040241Z_6593",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_career_history_002",
+      "content": "外資系半導体企業へ転職した",
+      "tags": [
+        "context_pack",
+        "category:career_history",
+        "pack_id:pack_live_20260808T040241Z_6593",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_career_history_003",
+      "content": "その後、複数業界・企業を経験した",
+      "tags": [
+        "context_pack",
+        "category:career_history",
+        "pack_id:pack_live_20260808T040241Z_6593",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_work_004",
+      "content": "現在は自分の会社を経営している",
+      "tags": [
+        "context_pack",
+        "category:current_work",
+        "pack_id:pack_live_20260808T040241Z_6593",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_projects_005",
+      "content": "現在、複数の観測・Protocol・文章制作を行っている",
+      "tags": [
+        "context_pack",
+        "category:current_projects",
+        "pack_id:pack_live_20260808T040241Z_6593",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T040241Z_6593",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_projects_005",
+      "pack_current_work_004"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": [
+      "pack_current_work_004"
+    ]
+  },
+  "residue": [
+    {
+      "statement": "選択の結果が現在の自己経営に繋がっている。",
+      "past_anchor_ids": [
+        "fact_1",
+        "fact_2"
+      ],
+      "present_anchor_ids": [
+        "fact_4"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "組織内役職から自己経営へと移行した選択が、今もなお影響を与えている。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": [
+    {
+      "id": "rebranch_1",
+      "branch_specific_form": "自己経営の選択が今後のキャリアにどのように影響するか。",
+      "current_receiver": "現在のキャリアの選択における影響を考察する。",
+      "support_ids": [
+        "pack_current_work_004"
+      ],
+      "pack_support_ids": [
+        "pack_current_work_004"
+      ]
+    }
+  ]
+}

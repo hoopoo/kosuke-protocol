@@ -1,0 +1,713 @@
+{
+  "session_id": "0ab00b2a-17cb-4543-9615-94d9448821a2",
+  "raw_user_input": "45歳のとき、不妊治療を経て子どもを授かった。\n実際に選んだのは、妻と息子と三人で暮らす人生だった。\n選ばなかった道は、不妊治療を諦めることだった。\n現在も妻と息子との三人家族で暮らし、自分の会社を経営している。\n息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。\n今も、二人目を持っていたらどうだったかと考えることがある。",
+  "language": "ja",
+  "clarifications": {},
+  "editorial_context": {},
+  "call1": {
+    "status": "ready_for_draft",
+    "grounded_input": {
+      "facts": [
+        {
+          "id": "fact_1",
+          "content": "45歳のとき、不妊治療を経て子どもを授かった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "45歳のとき、不妊治療を経て子どもを授かった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_2",
+          "content": "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_3",
+          "content": "選ばなかった道は、不妊治療を諦めることだった。",
+          "boundary_type": "explicit_fact",
+          "source_field": "source_text",
+          "source_text": "選ばなかった道は、不妊治療を諦めることだった。",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_4",
+          "content": "現在も妻と息子との三人家族で暮らしている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_family_context_001",
+          "source_text": "妻と息子との三人家族で暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_5",
+          "content": "現在は自分の会社を経営している。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_current_work_002",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "fact_6",
+          "content": "文章やプロトコルの制作を続けている。",
+          "boundary_type": "explicit_fact",
+          "source_field": "pack_current_creative_activity_003",
+          "source_text": "文章やプロトコルの制作を続けている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "near",
+          "supported_by": [],
+          "tags": []
+        },
+        {
+          "id": "pack_family_context_001",
+          "content": "妻と息子との三人家族で暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "妻と息子との三人家族で暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:family_context",
+            "pack_id:pack_live_20260808T024802Z_7953",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_work_002",
+          "content": "現在は自分の会社を経営している",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "現在は自分の会社を経営している",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T024802Z_7953",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_creative_activity_003",
+          "content": "文章やプロトコルの制作を続けている",
+          "boundary_type": "explicit_fact",
+          "source_field": "context_pack",
+          "source_text": "文章やプロトコルの制作を続けている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": [
+            "context_pack",
+            "category:current_creative_activity",
+            "pack_id:pack_live_20260808T024802Z_7953",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "fact_current_preserved_001",
+          "content": "現在も妻と息子との三人家族で暮らしている",
+          "boundary_type": "explicit_fact",
+          "source_field": "current_context_preserved",
+          "source_text": "現在も妻と息子との三人家族で暮らしている",
+          "confidence": 1.0,
+          "allowed_as_fact": true,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "feelings": [
+        {
+          "id": "feel_confirm_001",
+          "content": "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。",
+          "boundary_type": "user_feeling",
+          "source_field": "user_confirmation_view",
+          "source_text": "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "q_confirm_001",
+          "content": "今も、二人目を持っていたらどうだったかと考えることがある。",
+          "boundary_type": "user_question",
+          "source_field": "user_confirmation_view",
+          "source_text": "今も、二人目を持っていたらどうだったかと考えることがある。",
+          "confidence": 1.0,
+          "allowed_as_fact": false,
+          "inference_distance": "none",
+          "supported_by": [],
+          "tags": []
+        }
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "model_inferences": [],
+      "current_context": [
+        "現在も妻と息子との三人家族で暮らしている",
+        "現在は自分の会社を経営している",
+        "文章やプロトコルの制作を続けている",
+        "妻と息子との三人家族で暮らしている"
+      ],
+      "sensitive_domains": [],
+      "confirmed_by_user": true,
+      "requested_corrections": []
+    },
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "sensitive_domain_analysis": {
+      "domains": [],
+      "notes": [],
+      "clarification_required": false
+    },
+    "branch_structure": {
+      "primary_branch": {
+        "period": "45歳のとき",
+        "triggering_event": "不妊治療を経て子どもを授かった",
+        "available_paths": [
+          "妻と息子と三人で暮らす人生"
+        ],
+        "realized_path": "妻と息子と三人で暮らす人生",
+        "unrealized_paths": [
+          "不妊治療を諦めること"
+        ],
+        "constraints": [],
+        "supporting_fact_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3"
+        ],
+        "ambiguities": []
+      },
+      "realized_outcomes": [],
+      "secondary_branches": [],
+      "retrospective_counterfactuals": [
+        {
+          "id": "cf_question_1",
+          "classification": "retrospective_counterfactual",
+          "parent_branch_id": "primary",
+          "description": "今も、二人目を持っていたらどうだったかと考えることがある。",
+          "available_paths": [],
+          "realized_path": "",
+          "unrealized_paths": [],
+          "explicit_evidence_ids": [],
+          "evidence_type": null,
+          "ambiguity_status": "",
+          "present_relevance": "",
+          "must_not_be_treated_as_historical_choice": true
+        }
+      ],
+      "present_question_ids": [
+        "q_confirm_001"
+      ]
+    },
+    "central_thesis": {
+      "thesis_type": "exploratory",
+      "statement": "家族との生活と仕事の両立について考える",
+      "pole_a": "家族との生活を選んだ",
+      "pole_b": "二人目を持つ選択肢を考え続ける",
+      "supported_by": [
+        "fact_2",
+        "fact_4",
+        "fact_5"
+      ],
+      "risks": [
+        "選択肢を考え続けることで現在の生活に影響を与える可能性がある"
+      ],
+      "validation_status": "tentative"
+    },
+    "lost_structure": {
+      "items": []
+    },
+    "protected_structure": {
+      "items": []
+    },
+    "residue_candidates": {
+      "items": [
+        {
+          "residue_statement": "「45歳のとき、不妊治療を経て子どもを授かった。」を振り返る問いは、「現在も妻と息子との三人家族で暮らしている。」という現在の生活と並べて読むことができる",
+          "content": "「45歳のとき、不妊治療を経て子どもを授かった。」を振り返る問いは、「現在も妻と息子との三人家族で暮らしている。」という現在の生活と並べて読むことができる",
+          "past_anchor_ids": [
+            "fact_1"
+          ],
+          "present_anchor_ids": [
+            "fact_4"
+          ],
+          "support_ids": [
+            "fact_1",
+            "fact_4"
+          ],
+          "inference_distance": "near",
+          "present_life_domain": "present_life",
+          "overreach_risk": "low_structural_only",
+          "advances_manuscript": true
+        }
+      ]
+    },
+    "selected_observatory_lenses": {
+      "evaluated": [],
+      "selected": []
+    },
+    "editorial_outline": {
+      "sections": [
+        {
+          "internal_id": "section_1",
+          "public_heading": "家族との生活",
+          "required": true,
+          "new_meaning": "家族との生活の選択がもたらす影響を探る",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "",
+          "next_section_transition": "",
+          "reserved_fact_ids": [
+            "fact_2",
+            "fact_4"
+          ],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_2",
+          "public_heading": "仕事と家族の両立",
+          "required": true,
+          "new_meaning": "仕事と家族の両立についての考察",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "",
+          "next_section_transition": "",
+          "reserved_fact_ids": [
+            "fact_5"
+          ],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        },
+        {
+          "internal_id": "section_3",
+          "public_heading": "選択肢の考察",
+          "required": true,
+          "new_meaning": "二人目を持つ選択肢についての考察",
+          "allowed_boundary_ids": [],
+          "forbidden_inferences": [],
+          "previous_section_difference": "",
+          "next_section_transition": "",
+          "reserved_fact_ids": [
+            "question_1"
+          ],
+          "prohibited_repeat_ids": [],
+          "relative_weight": 1.0
+        }
+      ]
+    },
+    "repetition_prevention_map": {
+      "entries": []
+    },
+    "rebranch_design": {
+      "directions": []
+    },
+    "additional_questions": {
+      "required": false,
+      "questions": []
+    },
+    "user_confirmation_view": {
+      "branch_period": "45歳のとき",
+      "triggering_event": "不妊治療を経て子どもを授かった",
+      "chosen_path": "妻と息子と三人で暮らす人生",
+      "unchosen_path": "不妊治療を諦めること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "今も、二人目を持っていたらどうだったかと考えることがある。"
+      ],
+      "present_questions": [
+        "今も、二人目を持っていたらどうだったかと考えることがある。"
+      ],
+      "current_context": [
+        "現在も妻と息子との三人家族で暮らしている",
+        "現在は自分の会社を経営している",
+        "文章やプロトコルの制作を続けている",
+        "妻と息子との三人家族で暮らしている"
+      ],
+      "feelings": [
+        "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。"
+      ],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "家族との生活と仕事の両立について考える",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "validation": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "runtime:parallel-life-runtime-v1.1.0-exp"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "prompt_version": "parallel-life-call-1-v1.1.0",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "parse_diagnostics": {
+      "validation_errors": [],
+      "offending_paths": [],
+      "repair_attempted": false,
+      "repair_succeeded": false,
+      "normalization_applied": [],
+      "raw_response_saved_in_dev_only": false
+    },
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T024802Z_7953",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_003",
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    }
+  },
+  "user_corrections": [],
+  "confirmation_timestamp": "2026-08-08T02:49:45.765079+00:00",
+  "call2": {
+    "body_markdown": "## 三人で暮らす現在\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦めることは実現しなかった。妻と息子との三人で暮らす人生があり、現在も三人家族で暮らしている。\n\n45歳のときに子どもを授かったという出来事は、現在も続く三人の暮らしと並べて置くことができる。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。過去の一点と、家に人が集まる現在の時間とのあいだに、因果関係まで定める材料はない。ただ、どちらにも妻と息子との三人家族という同じ生活がある。\n\n## 仕事のある現在\n\n現在は自分の会社を経営し、文章やプロトコルの制作を続けている。その仕事のある現在に、妻と息子との三人で暮らす生活もある。家族との生活と仕事は、同じ日々に置かれているが、その具体的なあり方をここで一つに決めることはしない。\n\n## 残る問い\n\n今も、二人目を持っていたらどうだったかと考えることがある。この問いは、いま三人で暮らしていることや、息子を可愛いと感じることを打ち消すものとしては書かれていない。会社を経営し、文章やプロトコルを制作し、妻と息子と暮らす現在のそばに、二人目についての問いも残っている。\n",
+    "title_candidates": [
+      "三人で暮らす現在、二人目を思うとき",
+      "45歳から続く三人の暮らし",
+      "家族の現在と、仕事の現在"
+    ],
+    "subtitle_candidates": [
+      "不妊治療を経て授かった子どもと、三人家族である現在について"
+    ],
+    "sections": [
+      {
+        "internal_id": "section_1",
+        "public_heading": "三人で暮らす現在",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "section_2",
+        "public_heading": "仕事のある現在",
+        "included": true,
+        "char_count": 0
+      },
+      {
+        "internal_id": "section_3",
+        "public_heading": "残る問い",
+        "included": true,
+        "char_count": 0
+      }
+    ],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "確認済みの問いは、過去の具体的な選択として扱わない条件が付されているため。",
+    "observatory_omitted": true,
+    "paragraph_support": [
+      {
+        "paragraph_id": "p01",
+        "support_ids": [
+          "fact_1",
+          "fact_2",
+          "fact_3",
+          "fact_4"
+        ],
+        "contains_inference": false,
+        "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦めることは実現しなかった。妻と息子との三人で暮らす人生があり、現在も三人家族で暮らしている。"
+      },
+      {
+        "paragraph_id": "p02",
+        "support_ids": [
+          "fact_1",
+          "fact_4",
+          "feel_confirm_001"
+        ],
+        "contains_inference": false,
+        "text_preview": "45歳のときに子どもを授かったという出来事は、現在も続く三人の暮らしと並べて置くことができる。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。過去の一点と、家に人が集まる現在の時間とのあいだに、因果関係まで定める材料"
+      },
+      {
+        "paragraph_id": "p03",
+        "support_ids": [
+          "fact_4",
+          "fact_5",
+          "fact_6"
+        ],
+        "contains_inference": false,
+        "text_preview": "現在は自分の会社を経営し、文章やプロトコルの制作を続けている。その仕事のある現在に、妻と息子との三人で暮らす生活もある。家族との生活と仕事は、同じ日々に置かれているが、その具体的なあり方をここで一つに決めることはしない。"
+      },
+      {
+        "paragraph_id": "p04",
+        "support_ids": [
+          "q_confirm_001",
+          "fact_4",
+          "fact_5",
+          "fact_6",
+          "feel_confirm_001"
+        ],
+        "contains_inference": false,
+        "text_preview": "今も、二人目を持っていたらどうだったかと考えることがある。この問いは、いま三人で暮らしていることや、息子を可愛いと感じることを打ち消すものとしては書かれていない。会社を経営し、文章やプロトコルを制作し、妻と息子と暮らす現在のそばに、二人目に"
+      }
+    ],
+    "diagnostics": {
+      "rebranch_validated": [],
+      "selected_lens_count": 0,
+      "unsupported_personal_details": [],
+      "unsupported_scenes": [],
+      "unsupported_causality": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_bio_paragraphs": [],
+      "paragraph_support_coverage": 1
+    },
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 511
+  },
+  "call3": {
+    "status": "complete",
+    "final_title": "三人で暮らす現在と、仕事のある日々",
+    "final_subtitle": "45歳で子どもを授かったことと、いま残る問い",
+    "body_markdown": "## 三人で暮らす現在\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める道ではなく、妻と息子と三人で暮らす人生を歩んできた。現在も、妻と息子との三人家族で暮らしている。\n\n45歳で子どもを授かったことと、現在も続く三人の暮らしは、並べて見ることができる。息子を可愛いと感じ、息子の友人が家に遊びに来ることも楽しい。三人で暮らす現在には、そうした時間がある。\n\n## 家族と仕事\n\n現在は自分の会社を経営し、文章やプロトコルの制作を続けている。会社の経営と制作、そして妻と息子との生活が、同じ現在にある。\n\n家族との生活と仕事の両立について考えるとき、どちらか一方だけでは捉えきれない日々がある。三人で暮らすことと仕事を続けることを、それぞれ現在の事実として置いておきたい。\n\n## 残る問い\n\n今も、二人目を持っていたらどうだったかと考えることがある。\n\n妻と息子との三人で暮らし、会社を経営しながら文章やプロトコルを制作している現在に、その問いも残っている。答えを定めるのではなく、三人で暮らす現在とともに、その問いを書き留めておく。\n",
+    "validation": {
+      "unsupported_scenes": [],
+      "unsupported_personal_details": [],
+      "unsupported_causality": [],
+      "unsupported_affect": [],
+      "unsupported_role_behavior": [],
+      "unsupported_causal_frame": [],
+      "schema_leakage_prose": [],
+      "unrealized_path_modality_violations": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "三人で暮らす現在と、仕事のある日々",
+        "selected_subtitle": "45歳で子どもを授かったことと、いま残る問い",
+        "title_supported_by_fact_ids": [
+          "fact_2",
+          "fact_4",
+          "fact_5",
+          "pack_current_work_002",
+          "fact_current_preserved_001"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "title_causal_frame_violation": false,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "unsupported_paragraphs": [],
+      "unsupported_causality_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "schema_leakage_prose_count": 0,
+      "unrealized_path_modality_violation_count": 0,
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "manual_fidelity_gap_possible": false,
+      "central_thesis_maintained": true,
+      "residue_centrality": true,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": true,
+      "blocking_reasons": []
+    },
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "character_count": 477
+  },
+  "final_manuscript": "# 三人で暮らす現在と、仕事のある日々\n\n*45歳で子どもを授かったことと、いま残る問い*\n\n## 三人で暮らす現在\n\n45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦める道ではなく、妻と息子と三人で暮らす人生を歩んできた。現在も、妻と息子との三人家族で暮らしている。\n\n45歳で子どもを授かったことと、現在も続く三人の暮らしは、並べて見ることができる。息子を可愛いと感じ、息子の友人が家に遊びに来ることも楽しい。三人で暮らす現在には、そうした時間がある。\n\n## 家族と仕事\n\n現在は自分の会社を経営し、文章やプロトコルの制作を続けている。会社の経営と制作、そして妻と息子との生活が、同じ現在にある。\n\n家族との生活と仕事の両立について考えるとき、どちらか一方だけでは捉えきれない日々がある。三人で暮らすことと仕事を続けることを、それぞれ現在の事実として置いておきたい。\n\n## 残る問い\n\n今も、二人目を持っていたらどうだったかと考えることがある。\n\n妻と息子との三人で暮らし、会社を経営しながら文章やプロトコルを制作している現在に、その問いも残っている。答えを定めるのではなく、三人で暮らす現在とともに、その問いを書き留めておく。\n",
+  "generation_attempt_count": 3,
+  "draft_attempt_count": 1,
+  "edit_attempt_count": 1,
+  "prompt_versions": {
+    "call_1": "parallel-life-call-1-v1.1.0",
+    "call_2": "parallel-life-call-2-v1.0.3",
+    "call_3": "parallel-life-call-3-v1.0.3"
+  },
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.6",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.1.0",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Deep Reading v1.1.0-exp Contextual",
+    "model": "gpt-4o-mini",
+    "deep_reading_mode": "contextual",
+    "context_pack_enabled": true,
+    "call_1_prompt_version": "parallel-life-call-1-v1.1.0",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T024802Z_7953",
+      "pack_fact_ids": [
+        "pack_current_creative_activity_003",
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "runtime_version": "parallel-life-runtime-v1.1.0-exp",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "status": "complete",
+  "legacy": false,
+  "schema_version": "parallel-life-runtime-v1.1.0-exp",
+  "created_at": "2026-08-08T02:49:13.648356+00:00",
+  "updated_at": "2026-08-08T02:50:26.408Z",
+  "session_revision": 6,
+  "expires_at": "2026-08-09T02:50:26.408Z",
+  "idempotency_keys": {
+    "draft:v11ab-B_family-contextual-20260808T024945Z": "complete",
+    "edit:v11ab-B_family-contextual-20260808T024945Z-edit": "complete"
+  },
+  "deep_reading_mode": "contextual",
+  "context_pack": {
+    "pack_id": "pack_live_20260808T024802Z_7953",
+    "mode_intent": "contextual",
+    "source": "user_authored",
+    "created_at": "2026-08-08T02:48:02.735695+00:00",
+    "updated_at": "2026-08-08T02:49:13.648292+00:00",
+    "approved_by_user": true,
+    "approved_at": "2026-08-08T02:49:13.648292+00:00",
+    "language": "ja",
+    "items": [
+      {
+        "id": "pack_family_context_001",
+        "content": "妻と息子との三人家族で暮らしている",
+        "category": "family_context",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 100,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "現在は自分の会社を経営している",
+        "category": "current_work",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 101,
+        "tags": [
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_creative_activity_003",
+        "content": "文章やプロトコルの制作を続けている",
+        "category": "current_creative_activity",
+        "source": "user_typed",
+        "confidence": 1,
+        "approved": true,
+        "allowed_for_fact": true,
+        "allowed_for_interpretation": true,
+        "time_span": {
+          "start": "",
+          "end": "",
+          "precision": "unknown"
+        },
+        "chronology_rank": 102,
+        "tags": [
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "rejected_or_deleted_ids": []
+  }
+}

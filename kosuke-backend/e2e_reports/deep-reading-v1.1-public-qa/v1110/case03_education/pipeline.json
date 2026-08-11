@@ -1,0 +1,362 @@
+{
+  "case_id": "case03_education",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.10-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "education",
+        "changed_dimension": "教育の機会／制度上の進路",
+        "chosen_structure": "その大学へ進学すること",
+        "unchosen_structure": "別の大学へ進学すること",
+        "central_tension": "「その大学へ進学すること」側の進路上の自己と、「別の大学へ進学すること」側の別の形成のあいだ",
+        "lost_verifiability": "「別の大学へ進学すること」を歩んだ場合の形成や自己像を、いま検証できないこと",
+        "protected_possibility": "「その大学へ進学すること」を取った側に残った、別の形成経路を想像し続ける余地",
+        "present_residue": "「別の大学へ行っていたらどうなっていたか」がいまも残るのは、別の進路が自己像の想像として残るからかもしれない",
+        "possible_rebranch_modes": [
+          "reconsider",
+          "observe",
+          "leave_unresolved"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_005"
+        ],
+        "confidence": 0.9,
+        "diagnostics": {
+          "domain_reasons": [
+            "education:education"
+          ],
+          "branch_employment_evidence": false,
+          "background_employment_context": true,
+          "explicit_employment_evidence": false,
+          "allows_career_product_logic": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "d47af682-a686-4b81-9d91-2c918040876c",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.10-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_work_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "複数業界を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093416Z_9120",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "文章や制作の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T093416Z_9120",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T093416Z_9120",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「19歳のとき、第一志望の大学に合格した」を振り返る問いは、「現在は、複数業界を経験したあと、文章や制作の仕事をしている」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "進学・就労の分岐を個人の選択として生きたという個人の分岐を、日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきたと並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いまの問いの置き方を、静かに見直す",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "education",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」側の進路上の自己と、「別の大学へ進学すること」側の別の形成のあいだ",
+    "lost_verifiability": "「別の大学へ進学すること」を歩んだ場合の形成や自己像を、いま検証できないこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、別の形成経路を想像し続ける余地",
+    "present_residue": "「別の大学へ行っていたらどうなっていたか」がいまも残るのは、別の進路が自己像の想像として残るからかもしれない",
+    "possible_rebranch_modes": [
+      "reconsider",
+      "observe",
+      "leave_unresolved"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "fact_005"
+    ],
+    "confidence": 0.9,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.10-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_work_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "複数業界を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093416Z_9120",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "文章や制作の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T093416Z_9120",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T093416Z_9120",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「19歳のとき、第一志望の大学に合格した」を振り返る問いは、「現在は、複数業界を経験したあと、文章や制作の仕事をしている」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "進学・就労の分岐を個人の選択として生きたという個人の分岐を、日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきたと並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "仕事の場で、いまの問いの置き方を、静かに見直す",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "education",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」側の進路上の自己と、「別の大学へ進学すること」側の別の形成のあいだ",
+    "lost_verifiability": "「別の大学へ進学すること」を歩んだ場合の形成や自己像を、いま検証できないこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、別の形成経路を想像し続ける余地",
+    "present_residue": "「別の大学へ行っていたらどうなっていたか」がいまも残るのは、別の進路が自己像の想像として残るからかもしれない",
+    "possible_rebranch_modes": [
+      "reconsider",
+      "observe",
+      "leave_unresolved"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.9,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "manuscript": {
+    "title": "19歳の進学選択に残る問い",
+    "body_markdown": "## 分岐点\n\n19歳で第一志望の大学に合格したことは、合否という一点の出来事であると同時に、受けられる教育の機会と制度上の進路が分かれる境界でもあった。そこから先は、同じ年齢のまま別の大学へ進む可能性と、その大学へ進む現実とが、並んだままではなくなった。\n\n## 選んだ道\n\nその大学へ進学することは、教育の場とそこから続く進路の組み立てを開き始めた選択だった。当時それが何を意味すると考えていたかは断定できないが、この移り方があったからこそ、いまも「別の大学へ行っていたら」という問いが、現在の生活につながる起点として残っている。\n\n## 選ばなかった人生\n\n選ばなかったのは、別の大学へ進学する道だった。その先に何を学び、誰と出会い、どのように暮らしたかはわからない。わからない部分を補わずに残すことで、別の大学という可能性は仮定のまま置かれる。確かめられないのは、別の大学へ進学していた場合の経験や自己像である。二つの進路を後から並べ、どちらがよかったかを結論づけることはできない。選ばなかった側は、検証できない連続として残る。\n\n## 失ったもの\n\n失われたのは、別の大学へ進学した場合にどのように形づくられ、どのような自己像を持ったかを、いま確かめる手段である。二つの進路を後から比較して結論を出すことはできず、その形成は仮定の内部にとどまる。\n\n## 守られたもの\n\n同時に、別の大学へ進学する可能性を想像する余地も残っている。それは、現在の進路の正しさを証明するためのものではない。選ばなかった道を、優劣に回収せずに考え続けられる余白である。\n\n## 今に残った構造\n\n現在は、複数業界を経験したあと、文章や制作の仕事をしている。その現在と、19歳で第一志望の大学に合格した分岐を並べると、「別の大学へ行っていたら、いまの仕事の感じ方は違ったか」という問いが残る。大学から就労へ移る道には、長く一つの組織で役割を積み重ねるあり方も、企業間を移るあり方も並存してきた。個人の進学選択をそうした社会の枠組みと直接結びつける材料はない。ただ、教育を終えた先に複数の働き方があるという風景のなかで、大学選択と現在の仕事を並べてみることはできる。\n\n## これからの再分岐\n\n一度決めた測り方を固定し続けなくてよい。いまの問いの置き方を、静かに見直す余地がある。\n\nいまも残る問いは、「その大学へ進学すること」側の進路上の自己と、「別の大学へ進学すること」側の別の形成のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n\n"
+  },
+  "elapsed_s": 49.2,
+  "branch_semantics_final": {
+    "domain": "education",
+    "changed_dimension": "教育の機会／制度上の進路",
+    "chosen_structure": "その大学へ進学すること",
+    "unchosen_structure": "別の大学へ進学すること",
+    "central_tension": "「その大学へ進学すること」側の進路上の自己と、「別の大学へ進学すること」側の別の形成のあいだ",
+    "lost_verifiability": "「別の大学へ進学すること」を歩んだ場合の形成や自己像を、いま検証できないこと",
+    "protected_possibility": "「その大学へ進学すること」を取った側に残った、別の形成経路を想像し続ける余地",
+    "present_residue": "「別の大学へ行っていたらどうなっていたか」がいまも残るのは、別の進路が自己像の想像として残るからかもしれない",
+    "possible_rebranch_modes": [
+      "reconsider",
+      "observe",
+      "leave_unresolved"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.9,
+    "diagnostics": {
+      "domain_reasons": [
+        "education:education"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "qa_version": "v1.1.10-exp"
+}

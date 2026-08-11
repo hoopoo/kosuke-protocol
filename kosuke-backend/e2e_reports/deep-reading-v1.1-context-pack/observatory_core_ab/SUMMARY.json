@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-08-08T04:29:13.788141+00:00",
+  "A": {
+    "factual_fidelity": 10,
+    "naturalness": 8,
+    "resume_density": 6.0,
+    "relation_density": 2.0,
+    "context_value_add": 6,
+    "thesis_strength": 8,
+    "social_depth": 3,
+    "personal_focus": 9,
+    "life_read": "mixed",
+    "lens_name_advertising": false,
+    "arm": "A_v1.1.0_context_pack",
+    "title": "",
+    "subtitle": "",
+    "thesis": "キャリアの選択が現在の自分にどのように影響を与えたか。",
+    "body_preview": "28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。NTT東日本で勤務した後、NTTを離れ、外資系半導体企業へ転職した。選ばなかったのは、一企業の内部で役割を積み上げ続ける道だった。\n\nその後、複数の業界と企業を経験した。現在は自分の会社を経営し、複数の観測、Protocol、文章制作を行っている。\n\nNTTに残っていた場合の経歴を確かめる材料はない。社内で役割を積み上げ続ける道と、外資系半導体企業への転職の後に複数の業界・企業を経験し、現在は会社を経営している経歴を、並べて見ることができる。\n\nいまも、「あのとき残っていたら」と考えることがある。もしあのときNTTに残っていたら、現在の自分はどうなっていたか。その問いには、描き切れないもう一つの経歴が残っている。\n",
+    "prompt_pin": "parallel-life-call-1-v1.1.0",
+    "runtime_pin": "parallel-life-runtime-v1.1.0-exp",
+    "observatory_selected": []
+  },
+  "B": {
+    "factual_fidelity": 10,
+    "naturalness": 8,
+    "resume_density": 7.0,
+    "relation_density": 0.0,
+    "context_value_add": 6,
+    "thesis_strength": 8,
+    "social_depth": 3,
+    "personal_focus": 9,
+    "life_read": "mixed",
+    "lens_name_advertising": false,
+    "arm": "B_v1.1.1_selection_compression",
+    "title": "",
+    "subtitle": "",
+    "thesis": "組織内役職から自己経営へと移行した選択が、今もなお影響を与えている。",
+    "body_preview": "## 残った問い\n\nNTT東日本に勤務していた28歳のとき、NTTに残るか、外資へ移るかという分かれ目があった。進んだのは、NTTを離れて外資系企業へ移る道だった。そこには、一つの企業の内部で役割を積み上げ続ける可能性も並んでいた。\n\n外資系半導体企業への転職の後には、複数の業界と企業を経験している。職歴を単なる社名の連なりとして見るのではなく、28歳で外へ移った時点から、その後の複数の場を経る時間として置くことができる。一企業の内部にとどまる時間とは異なる広がりが、ここには記録されている。ただし、残っていた場合にどのような仕事や立場になっていたかを示す材料はない。\n\n現在は自分の会社を経営し、複数の観測、Protocol、文章制作を行っている。28歳で外資へ移ったことと、いま自己経営をしていることは、過去から現在へ続く一つの経路として並べられる。その間に複数業界・企業での経験がある。現在",
+    "prompt_pin": "parallel-life-call-1-v1.1.1",
+    "runtime_pin": "parallel-life-runtime-v1.1.1-exp",
+    "observatory_selected": []
+  },
+  "C": {
+    "arm": "C_v1.1.2_observatory_core",
+    "title": "残る問いと、持ち運ぶキャリア",
+    "subtitle": "一社内蓄積と企業間移動の境界",
+    "thesis": "一企業の内部で役割を積み上げる道を離れたという個人の分岐を、日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきたと並べて読むことができる。",
+    "body_preview": "一企業の内部で役割を積み上げる道を離れたという個人の分岐を、日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきたと並べて読むことができる。\n一社内で役割を積み上げる道と、企業間を移動しながら専門性を持ち運ぶ道の境界として、28歳の去就をいま読み直せる。因果までは確認できない。いまも『残っていたら』という問いが、自己経営の尺度の隣に残っている。",
+    "prompt_pin": "parallel-life-call-1-v1.1.2-exp",
+    "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+    "observatory_selected": [],
+    "candidate_lenses": [
+      "education-employment",
+      "after-success",
+      "clean-society"
+    ],
+    "evidence_ids": [
+      "obs_ee_001",
+      "obs_cs_001",
+      "obs_as_001",
+      "obs_ee_002"
+    ],
+    "cross_lens_relations": [
+      {
+        "id": "clr_ee_regime_001",
+        "personal_structure": "一企業の内部で役割を積み上げる道を離れた",
+        "social_structure": "日本型の長期雇用・一社内での役割蓄積モデルと、企業間移動を前提とするキャリアモデルが併存してきた",
+        "relation_type": "institutional_context",
+        "branch_evidence_ids": [],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_current_work_003"
+        ],
+        "observatory_evidence_ids": [
+          "obs_ee_001"
+        ],
+        "interpretation": "個人の会社選択であると同時に、一社内で地位を蓄積するキャリアと、企業間を移動しながら専門性を持ち運ぶキャリアの境界として読むことができる",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.88
+      },
+      {
+        "id": "clr_cs_norm_001",
+        "personal_structure": "『残る』側が標準の進路として置かれていた",
+        "social_structure": "『普通はこうするものだ』という規範が、一社に留まり役割を積む道を標準として選択の幅を静かに狭めることがある",
+        "relation_type": "cultural_context",
+        "branch_evidence_ids": [],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_cs_001"
+        ],
+        "interpretation": "個人の去就は、当時『普通』とされていた長期雇用パスと並べて読める（規範が強制したとは断言しない）",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.8
+      },
+      {
+        "id": "clr_as_001",
+        "personal_structure": "何かを形にしたあとも、閉じない問いが残っている",
+        "social_structure": "達成や評価のあとに残る問いは、達成前の問いとは形が違い、承認だけでは閉じない生活の問いが残ることがある",
+        "relation_type": "tension",
+        "branch_evidence_ids": [],
+        "context_pack_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ],
+        "observatory_evidence_ids": [
+          "obs_as_001"
+        ],
+        "interpretation": "達成の事実と、なお残る問いを並置して読める",
+        "causality_status": "non_causal_parallel",
+        "confidence": 0.78
+      }
+    ],
+    "structures": [
+      "employment_regime_boundary",
+      "normative_standard_path",
+      "post_achievement_question"
+    ],
+    "evaluation_mode": "structural_offline_pre_thesis",
+    "factual_fidelity": 10,
+    "naturalness": 8,
+    "resume_density": 0.0,
+    "relation_density": 8.0,
+    "context_value_add": 10,
+    "thesis_strength": 9,
+    "social_depth": 9,
+    "personal_focus": 9,
+    "life_read": "reading",
+    "lens_name_advertising": false
+  },
+  "curated_store_ids": [
+    "obs_ee_001",
+    "obs_ee_002",
+    "obs_ms_001",
+    "obs_ms_002",
+    "obs_cs_001",
+    "obs_body_001",
+    "obs_as_001",
+    "obs_pp_001"
+  ],
+  "regressions": [
+    {
+      "case": "family_fertility",
+      "lenses": [
+        "body"
+      ],
+      "relations": 1,
+      "ok": true
+    },
+    {
+      "case": "education",
+      "lenses": [
+        "education-employment"
+      ],
+      "relations": 1,
+      "ok": true
+    },
+    {
+      "case": "creative_corporate",
+      "lenses": [
+        "after-success",
+        "clean-society",
+        "education-employment"
+      ],
+      "relations": 2,
+      "ok": true
+    },
+    {
+      "case": "zero_lens_pen",
+      "lenses": [],
+      "relations": 0,
+      "ok": true
+    }
+  ],
+  "production_unchanged": true,
+  "targets_c": {
+    "fidelity": 10,
+    "cva": 8,
+    "resume_density_max": 4,
+    "relation_density_min": 7,
+    "social_depth_min": 8,
+    "personal_focus_min": 8
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "case01_career",
+  "arm": "public_qa",
+  "mode": "contextual",
+  "ok": false,
+  "stages": {
+    "ground": {
+      "status": 500
+    }
+  },
+  "error": {
+    "detail": "Deep Reading の生成に失敗しました。確認済み構造は保持されています。再試行してください。"
+  },
+  "elapsed_s": 41.12
+}

@@ -1,0 +1,61 @@
+{
+  "started_at": "2026-08-08T00:19:22.354503+00:00",
+  "finished_at": "2026-08-08T00:20:14.083690+00:00",
+  "pulses": [
+    {
+      "i": 1,
+      "at": "2026-08-08T00:19:22.354503+00:00",
+      "health_http": 200,
+      "health": {
+        "status": "ok",
+        "deep_reading_enabled": true,
+        "env": "production"
+      },
+      "health_s": 0.319,
+      "health_err": null,
+      "enabled_http": 200,
+      "enabled": {
+        "enabled": true
+      },
+      "enabled_s": 0.191,
+      "enabled_err": null
+    },
+    {
+      "i": 2,
+      "at": "2026-08-08T00:19:47.865363+00:00",
+      "health_http": 200,
+      "health": {
+        "status": "ok",
+        "deep_reading_enabled": true,
+        "env": "production"
+      },
+      "health_s": 0.316,
+      "health_err": null,
+      "enabled_http": 200,
+      "enabled": {
+        "enabled": true
+      },
+      "enabled_s": 0.224,
+      "enabled_err": null
+    },
+    {
+      "i": 3,
+      "at": "2026-08-08T00:20:13.408558+00:00",
+      "health_http": 200,
+      "health": {
+        "status": "ok",
+        "deep_reading_enabled": true,
+        "env": "production"
+      },
+      "health_s": 0.296,
+      "health_err": null,
+      "enabled_http": 200,
+      "enabled": {
+        "enabled": true
+      },
+      "enabled_s": 0.378,
+      "enabled_err": null
+    }
+  ],
+  "all_ok": true
+}

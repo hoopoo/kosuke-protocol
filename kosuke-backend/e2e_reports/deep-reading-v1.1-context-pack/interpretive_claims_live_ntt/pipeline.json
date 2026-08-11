@@ -1,0 +1,382 @@
+{
+  "case_id": "ntt_v114",
+  "arm": "interpretive_claims",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.4-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.4-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.4-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "complete",
+      "publishable": true,
+      "blocking_reasons": [],
+      "final_title": "残る道と移る道のあいだで",
+      "final_subtitle": "28歳の分岐を、いまの仕事の場所から振り返る"
+    }
+  },
+  "session_id": "96974207-a63e-4a63-984a-006d4c189f48",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.4-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.4-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_projects_005",
+      "pack_current_work_004"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T054104Z_3910",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "私のキャリア選択は、個人の選択であると同時に、社会的なキャリアモデルの影響を受けている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ]
+      }
+    ]
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.4-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.4-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_projects_005",
+      "pack_current_work_004"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T054104Z_3910",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "私のキャリア選択は、個人の選択であると同時に、社会的なキャリアモデルの影響を受けている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ]
+      }
+    ]
+  },
+  "manuscript": {
+    "title": "残る道と移る道のあいだで",
+    "subtitle": "28歳の分岐を、いまの仕事の場所から振り返る",
+    "body_markdown": "## 28歳の分岐\n\n28歳のとき、NTTに残るか、外資へ移るかという分岐があった。選んだのは、NTTを離れて外資系企業へ移る道だった。\n\nここで並んでいたのは勤務先の名前だけではない。一企業の内部で役割を積み上げ続ける道と、所属先を移る道である。後者を選んだからといって、前者の価値がなくなるわけではない。選ばなかった道は、そのまま残る。\n\n## 選ばなかった道\n\n残らなかった側について、昇進や待遇、その後の生活を想像で埋めることはできない。確かに言えるのは、一企業の内部で役割を積み上げ続ける道を選ばなかった、ということだけである。\n\nその道には、同じ組織の時間のなかで仕事と役割を重ねていく形がある。移る道を選んだ現在から見ても、その形は過去の選択肢として閉じない。\n\n## 移る道の先で\n\n外資系半導体企業への転職後、複数の業界と企業を経験した。現在は自分の会社を経営し、複数の観測、Protocol、文章制作に取り組んでいる。\n\nこの経歴を、28歳の選択から一直線に説明する材料はない。ただ、当時の分岐と現在の仕事を並べると、所属先が変わるなかで仕事を続けてきた時間が見える。一つの会社の内部で役割を積むこととは別のかたちで、仕事を置き直してきたとも読める。\n\n## 社会のなかの分岐\n\n長期に一社で役割を重ねるキャリアと、企業間を移りながら仕事を続けるキャリアは、社会のなかに併存してきた。NTTに残るか外資へ移るかという分岐も、その二つの経路と並べて見ることができる。\n\nただし、社会にあるキャリアの型が、この選択を決めたとは言えない。個人の去就と社会のモデルは、重なりながらも同じものではない。\n\n## 残る問い\n\nいまも「あのとき残っていたら」と考えることがある。その問いは、選ばなかった人生の中身を確定するためのものではない。\n\n現在、自分の会社を経営している。その現在と28歳の分岐を並べると、残る道と移る道は、過去に終わった二択ではなくなる。どちらが正しかったかではなく、選ばなかった道を消さずに、いまの場所を読むための問いとして残っている。\n",
+    "char_count": 885
+  },
+  "trace_final": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.4-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.4-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_career_history_002",
+      "pack_career_history_003",
+      "pack_current_projects_005",
+      "pack_current_work_004"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "NTT東日本で勤務した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_002",
+        "content": "外資系半導体企業へ転職した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_career_history_003",
+        "content": "その後、複数業界・企業を経験した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_004",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_005",
+        "content": "現在、複数の観測・Protocol・文章制作を行っている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T054104Z_3910",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T054104Z_3910",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「28歳のとき、NTTに残るか、外資へ移るかを選ぶ分岐があった。」を振り返る問いは、「いまは自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "私のキャリア選択は、個人の選択であると同時に、社会的なキャリアモデルの影響を受けている。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "NTTの場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002"
+        ]
+      }
+    ]
+  },
+  "elapsed_s": 55.45
+}

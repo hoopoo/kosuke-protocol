@@ -1,0 +1,19 @@
+=== re-eval start 20260808T001851Z ===
+local_time=Sat Aug  8 09:18:51 JST 2026
+--- 1 healthz ---
+{"status":"ok","deep_reading_enabled":true,"env":"production"}
+HTTP 200 t=0.377087
+--- 2 enabled ---
+{"enabled":true}
+HTTP 200 t=0.201363
+--- 3 pages home ---
+HTTP 200 t=0.164912
+--- 3 pages spa ---
+HTTP 200 t=0.113402
+--- 4 session DO ---
+{"status":"ok","service":"parallel-life-session-do"}
+HTTP 200 t=0.141355
+--- 5 containers list ---
+Wrangler requires at least Node.js v22.0.0. You are using v20.19.0. Please update your version of Node.js.
+
+Consider using a Node.js version manager such as https://volta.sh/ or https://github.com/nvm-sh/nvm.

@@ -1,0 +1,85 @@
+{
+  "body_markdown": "40歳で会社を辞め、独立した。会社員を続けることはなかった。その後の現在にも、働いているという事実がある。辞めた時点と、今も働いている日々は、時間を隔てながら同じ「働く」という輪郭の内側に置かれている。\n\nだからこそ、「会社員を続けていたらどうだったか」という問いは、過去を別の結末へ書き換えるためのものではない。40歳で会社を辞めたこと、独立したこと、そして今も働いていることを並べたとき、そのあいだにはまだ接続しきれていないものが残っている。会社員として働き続ける日々がどのようなものだったかについて、ここで言える材料はない。それでも、その可能性は問いとして現在に残っている。\n\n独立してから今までの仕事の内容や、その歩みの細部は示されていない。会社員を続けていた場合についても、職場、役割、暮らし、満足や不満を語ることはできない。わかっているのは、40歳で会社を辞めたことと、独立したこと、そして今も働いていることだけである。その限られた輪郭のなかで、過去の出来事は終わった一点ではなく、現在の問いと並んでいる。\n\n「会社員を続けていたらどうだったか」という問いに、ここで答えを与えることはできない。ただ、会社を辞めた40歳の時点と、今も働いている現在のあいだを見渡すと、二つの事実は途切れずに並んでいる。独立という言葉だけでは尽くせない時間がそこにはあり、会社員を続けるというもう一つの可能性も、答えのない問いとして残っている。\n",
+  "title_candidates": [
+    "40歳で会社を辞めたあと、今も働いている",
+    "働き続ける現在と、残る問い",
+    "独立のあとに並ぶ二つの時間"
+  ],
+  "subtitle_candidates": [
+    "会社を辞め、独立し、今も働いている。その現在に残る「会社員を続けていたらどうだったか」という問い。"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "会社員を続けていた場合の具体的な職場・役割・出来事について、確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact5"
+      ],
+      "contains_inference": true,
+      "text_preview": "40歳で会社を辞め、独立した。会社員を続けることはなかった。その後の現在にも、働いているという事実がある。辞めた時点と、今も働いている日々は、時間を隔てながら同じ「働く」という輪郭の内側に置かれている。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact4",
+        "question_source_005",
+        "fact5"
+      ],
+      "contains_inference": true,
+      "text_preview": "だからこそ、「会社員を続けていたらどうだったか」という問いは、過去を別の結末へ書き換えるためのものではない。40歳で会社を辞めたこと、独立したこと、そして今も働いていることを並べたとき、そのあいだにはまだ接続しきれていないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "独立してから今までの仕事の内容や、その歩みの細部は示されていない。会社員を続けていた場合についても、職場、役割、暮らし、満足や不満を語ることはできない。わかっているのは、40歳で会社を辞めたことと、独立したこと、そして今も働いていることだけ"
+    },
+    {
+      "paragraph_id": "p04",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4",
+        "question_source_005",
+        "fact5"
+      ],
+      "contains_inference": true,
+      "text_preview": "「会社員を続けていたらどうだったか」という問いに、ここで答えを与えることはできない。ただ、会社を辞めた40歳の時点と、今も働いている現在のあいだを見渡すと、二つの事実は途切れずに並んでいる。独立という言葉だけでは尽くせない時間がそこにはあり"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 618
+}

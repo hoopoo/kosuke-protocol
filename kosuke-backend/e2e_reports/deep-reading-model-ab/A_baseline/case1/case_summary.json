@@ -1,0 +1,80 @@
+{
+  "config_id": "A_baseline",
+  "case_id": "case1",
+  "call2_model": "gpt-4o-mini",
+  "call3_model": "gpt-4o-mini",
+  "errors": [],
+  "final_title": "過去の選択と現在の生活",
+  "final_subtitle": "選択の重みとその後の生活",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 305,
+  "latency_ms": {
+    "call2_wall": 6402,
+    "call3_wall": 4468,
+    "total_wall": 10871,
+    "sum_api_calls": 10453
+  },
+  "tokens": {
+    "prompt": 7640,
+    "completion": 893,
+    "reasoning": 0,
+    "total": 8533
+  },
+  "estimated_cost_usd": 0.001682,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 6000,
+      "prompt_tokens": 3701,
+      "completion_tokens": 498,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000854,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 4453,
+      "prompt_tokens": 3939,
+      "completion_tokens": 395,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000828,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 6000,
+      "prompt_tokens": 3701,
+      "completion_tokens": 498,
+      "reasoning_tokens": 0,
+      "estimated_cost_usd": 0.000854,
+      "response_model": "gpt-4o-mini-2024-07-18"
+    }
+  ],
+  "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。その後、私は妻と息子と三人で暮らす選択をした。現在も妻と息子との三人家族で暮らし、自分の会社を経営している。息子は可愛い存在であり、彼の友人が家に遊びに来ることも楽しいと感じている。これらの経験は、私の日常生活の一部となっている。\n\n一方で、私は時折、二人目を持っていたらどうだったかと考えることがある。この思考は、過去の選択と現在の生活の間にまだ接続しきれていないものが残っていることを示している。私の選択肢の中には、不妊治療を諦めることもあったが、それを選ばなかったことで今の家族の形がある。これらの思いは、私の人生における選択の重みを感じさせるものである。\n"
+}

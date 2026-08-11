@@ -1,0 +1,86 @@
+{
+  "case_id": "case03_education",
+  "category": "education",
+  "title": "Education — university choice",
+  "pipeline_ok": false,
+  "elapsed_s": 72.74,
+  "session_id": "845c6777-342e-4834-b455-759b5a894d74",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.7-exp",
+  "factual_fidelity": 7,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "mixed",
+  "resume_density": 3.0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": true,
+  "protected_realization": true,
+  "residue_realization": true,
+  "rebranch_realization": true,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [],
+  "title_validation_passed": false,
+  "publishable": false,
+  "blocking_reasons": [
+    "title_validation_failed",
+    "required_section_unrealized:branch_point"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 2,
+  "confirmation_issues": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "別の大学を想像するとき",
+  "body_excerpt": "## 分岐点\n\n19歳のとき、第一志望の大学に合格した。進学先として、その大学へ進む道と、別の大学へ進む道があった。選んだのは、第一志望の大学へ進学する道だった。\n\n## 選んだ道\n\nその大学へ進学した。その後、複数の業界を経験し、現在は文章や制作の仕事をしている。進学と現在の仕事を直接結びつける材料はない。ただ、19歳の進学と現在の仕事を並べて振り返ることはできる。\n\n## 選ばなかった人生\n\n選ばなかったのは、別の大学へ進学する道である。その先にどのような仕事や生活があったかは分からない。ここでは、「別の大学へ進学すること」を実現しなかった可能性として置いておく。\n\n## 失ったもの\n\n複数の業界を経験する歩みは、一つの組織の内部で時間を重ね、役割や評価を通じて進み具合を確かめるあり方とは異なる。どちらかを得た、失ったと断定することはできない。それでも、長い時間の蓄積を何によって確かめるかという物差しの違いは残る。\n\n## 守られたもの\n\n現在の仕事は、文章や制作の仕事として言い表せる。所属先や役職だけでなく、書くことやつくることから現在を捉える言葉もある。複数の業界を経験してきた",
+  "abstract_vocab": {
+    "蓄積": 1,
+    "構造": 1,
+    "尺度": 1,
+    "制度": 0,
+    "分岐": 2,
+    "選択": 0
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "title_validation_failed",
+        "required_section_unrealized:branch_point"
+      ],
+      "final_title": "別の大学を想像するとき",
+      "final_subtitle": ""
+    }
+  }
+}

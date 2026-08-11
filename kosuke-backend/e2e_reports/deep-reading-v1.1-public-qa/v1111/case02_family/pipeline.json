@@ -1,0 +1,236 @@
+{
+  "case_id": "case02_family",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "schema_validation_failed",
+      "schema_version": "parallel-life-runtime-v1.1.11-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": null,
+      "branch_semantics": null
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "ad082fa3-4e3a-461a-8812-8256cb1b9a98",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {},
+    "residue": [],
+    "central_thesis": "",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": []
+  },
+  "branch_semantics_after_ground": null,
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "pack_fact_ids": [
+      "pack_current_work_002",
+      "pack_family_context_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_family_context_001",
+        "content": "妻と息子との三人家族で暮らしている",
+        "tags": [
+          "context_pack",
+          "category:family_context",
+          "pack_id:pack_live_20260808T140651Z_7384",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T140651Z_7384",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T140651Z_7384",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+        "past_anchor_ids": [
+          "pack_current_work_002"
+        ],
+        "present_anchor_ids": [
+          "pack_current_work_002"
+        ],
+        "pack_ids_used": [
+          "pack_current_work_002",
+          "pack_current_work_002"
+        ]
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "いまの暮らしのなかで、未解決のまま置いておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_current_work_002",
+          "pack_family_context_001",
+          "fact_current_preserved_001"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_002",
+          "pack_family_context_001"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+    "unchosen_structure": "選ばなかった道は、二人目を目指して治療を続けること。",
+    "central_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+    "present_residue": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "evidence_ids": [
+      "pack_family_context_001",
+      "pack_current_work_002",
+      "fact_current_preserved_001",
+      "q_confirm_001",
+      "question_source_005"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "entrepreneurship:ownership"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "manuscript": {
+    "title": "身体の時間として残る分かれ目",
+    "body_markdown": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考える分かれ目があった。それは一度きりの判断というより、家族のかたちと、身体を伴う治療の時間をどこまで続けるかが分かれる境界だった。\n\n## 選んだ道\n\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選択のあとで、家族のかたちと身体と治療をめぐる時間は別の組み立てへ移った。その移り方は、現在自分の会社を経営している暮らしのそばで、なお読み直される問いの起点として残っている。\n\n## 選ばなかった人生\n\n選ばなかった道は、二人目を目指して治療を続けることだった。その先にどのような家族があったかを補うことはできない。ただ、その可能性を、実現しなかったからといって消えたものとして閉じずに置くことはできる。\n\n## 失ったもの\n\n失われたのは、二人目を目指して治療を続ける側にあった家族のかたちを、いまから確かめる道である。その時間を続けた先に何があったかは、結果だけでなく、身体とケアを含む過程ごと、もう辿ることができない。\n\n## 守られたもの\n\n三人で暮らす道を続けた側には、いまの家族のかたちを壊さずに置く余白が残った。いまの暮らしと仕事の具体的な場面が続いていることは、その余白が成功の証明ではなく、現在をそのまま保つための可能性であることを示している。\n\n## 今に残った構造\n\n「二人目を持っていたらどうだったか」という問いが残るのは、選ばなかった家族のかたちが、想像のうちでなお開いているからかもしれない。自分の会社を経営している現在にも、その問いは過去の出来事として片づかず、達成や評価だけでは閉じない生活の問いとして並んでいる。\n\n## これからの再分岐\n\nいまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある。\n\nいまも残る問いは、「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n\n"
+  },
+  "elapsed_s": 57.95,
+  "branch_semantics_final": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+    "unchosen_structure": "選ばなかった道は、二人目を目指して治療を続けること。",
+    "central_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+    "present_residue": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "evidence_ids": [
+      "pack_family_context_001",
+      "pack_current_work_002",
+      "fact_current_preserved_001",
+      "q_confirm_001",
+      "question_source_005"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "entrepreneurship:ownership"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "qa_version": "v1.1.11-exp"
+}

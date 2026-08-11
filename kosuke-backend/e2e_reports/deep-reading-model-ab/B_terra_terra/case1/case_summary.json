@@ -1,0 +1,80 @@
+{
+  "config_id": "B_terra_terra",
+  "case_id": "case1",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-terra",
+  "errors": [],
+  "final_title": "三人で暮らす現在と、二人目のこと",
+  "final_subtitle": "不妊治療を経て子どもを授かった後の日々",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 321,
+  "latency_ms": {
+    "call2_wall": 9204,
+    "call3_wall": 7668,
+    "total_wall": 16873,
+    "sum_api_calls": 16853
+  },
+  "tokens": {
+    "prompt": 7670,
+    "completion": 1894,
+    "reasoning": 647,
+    "total": 9564
+  },
+  "estimated_cost_usd": 0.047585,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9197,
+      "prompt_tokens": 3700,
+      "completion_tokens": 1060,
+      "reasoning_tokens": 410,
+      "estimated_cost_usd": 0.02515,
+      "response_model": "gpt-5.6-terra"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 7656,
+      "prompt_tokens": 3970,
+      "completion_tokens": 834,
+      "reasoning_tokens": 237,
+      "estimated_cost_usd": 0.022435,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9197,
+      "prompt_tokens": 3700,
+      "completion_tokens": 1060,
+      "reasoning_tokens": 410,
+      "estimated_cost_usd": 0.02515,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "45歳のとき、不妊治療を経て子どもを授かった。妻と息子との三人で暮らしている。不妊治療を諦める道もあった。\n\n現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。息子を可愛いと感じる。息子の友人が家に遊びに来ることも楽しい。家族との暮らしと会社の経営が、同じ現在にある。\n\n45歳で子どもを授かったことと、三人家族で暮らしながら会社を経営している現在。そのあいだには、まだ接続しきれていないものが残っている。今も、二人目を持っていたらどうだったかと考えることがある。\n\nその問いがあっても、息子のいる三人の暮らしは続いている。息子の友人が遊びに来る家で過ごす時間もある。二人目のことは、答えを決めないまま現在のそばに残っている。\n"
+}

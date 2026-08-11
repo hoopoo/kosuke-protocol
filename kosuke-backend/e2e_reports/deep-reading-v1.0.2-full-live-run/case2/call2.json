@@ -1,0 +1,66 @@
+{
+  "body_markdown": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。45歳のとき、不妊治療を経て子どもを授かった。この選択は、妻と息子と三人で暮らす人生を実現するものであり、選ばなかった道は不妊治療を諦めることだった。このように、家族を持つことは人生において重要な決断であり、選択の結果がどのように現在の生活に影響を与えるかを考えさせられる。\n\n息子を授かった後、二人目を目指す治療を続けるかについて妻と話し合い、最終的にやめることにした。この決断は、家族の形をどのようにするかという重要な選択を反映している。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じていることからも、現在の家族の形に満足していることが伺える。しかし、今も二人目を持っていたらどうだったかと考えることがある。この思考は、選択の結果としての家族の形がどのように変わっていたかを想像させるものである。\n",
+  "title_candidates": [
+    "不妊治療を経て選んだ家族の形",
+    "選択の結果と家族の未来",
+    "現在の生活と過去の選択"
+  ],
+  "subtitle_candidates": [
+    "不妊治療から得た家族の絆"
+  ],
+  "sections": [
+    {
+      "internal_id": "sec_1",
+      "public_heading": "不妊治療を経て授かった子ども",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "sec_2",
+      "public_heading": "選ばなかった道とその影響",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "sec_3",
+      "public_heading": "現在の家族と未来への思考",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "不妊治療を経て子どもを授かり、家族と共に暮らす選択をした。45歳のとき、不妊治療を経て子どもを授かった。この選択は、妻と息子と三人で暮らす人生を実現するものであり、選ばなかった道は不妊治療を諦めることだった。このように、家族を持つことは人生"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact4",
+        "feeling1",
+        "question1"
+      ],
+      "contains_inference": false,
+      "text_preview": "息子を授かった後、二人目を目指す治療を続けるかについて妻と話し合い、最終的にやめることにした。この決断は、家族の形をどのようにするかという重要な選択を反映している。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じていることか"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.1",
+  "character_count": 388
+}

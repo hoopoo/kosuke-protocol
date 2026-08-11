@@ -1,0 +1,33 @@
+{
+  "case": "case4",
+  "facts_n": 0,
+  "questions_n": 0,
+  "feelings_n": 0,
+  "current_context": null,
+  "primary": null,
+  "secondary_raw_type": "NoneType",
+  "secondary_raw": null,
+  "counterfactual_raw_type": "NoneType",
+  "counterfactual_raw": null,
+  "central_thesis": "選ばなかった道が今の人生に与える影響について考察する",
+  "selected_lenses": [],
+  "evaluated_lenses": [],
+  "rebranch_design_type": "dict",
+  "rebranch_design": {
+    "source_meaning": "選ばなかった道の影響を考える",
+    "current_receiver": "読者",
+    "branch_specific_form": "選択の結果に関するエッセイ",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "user_confirmation_view": "この内容で進めてよろしいでしょうか？",
+  "input_sufficiency": "十分な情報が提供されている",
+  "type_mismatches": {
+    "input_sufficiency": "str",
+    "user_confirmation_view": "str",
+    "central_thesis": "str",
+    "rebranch_design": "dict",
+    "lost_structure": "dict",
+    "protected_structure": "dict"
+  }
+}

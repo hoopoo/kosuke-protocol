@@ -1,0 +1,93 @@
+{
+  "config_id": "C_terra_sol",
+  "case_id": "case3",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-sol",
+  "errors": [],
+  "final_title": "19歳の合格と、文章やプロトコルをまとめる現在",
+  "final_subtitle": "選ばなかった別の大学を現在から振り返る",
+  "status": "validation_failed",
+  "publishable": false,
+  "blocking_reasons": [
+    "title_validation_failed"
+  ],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": [
+      "結びつ"
+    ]
+  },
+  "character_count": 459,
+  "latency_ms": {
+    "call2_wall": 9272,
+    "call3_wall": 45979,
+    "total_wall": 55251,
+    "sum_api_calls": 55213
+  },
+  "tokens": {
+    "prompt": 10101,
+    "completion": 4202,
+    "reasoning": 2279,
+    "total": 14303
+  },
+  "estimated_cost_usd": 0.138028,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9262,
+      "prompt_tokens": 3279,
+      "completion_tokens": 933,
+      "reasoning_tokens": 341,
+      "estimated_cost_usd": 0.022193,
+      "response_model": "gpt-5.6-terra"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 20131,
+      "prompt_tokens": 3427,
+      "completion_tokens": 1489,
+      "reasoning_tokens": 914,
+      "estimated_cost_usd": 0.05436,
+      "response_model": "gpt-5.6-sol"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 25820,
+      "prompt_tokens": 3395,
+      "completion_tokens": 1780,
+      "reasoning_tokens": 1024,
+      "estimated_cost_usd": 0.061475,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 9262,
+      "prompt_tokens": 3279,
+      "completion_tokens": 933,
+      "reasoning_tokens": 341,
+      "estimated_cost_usd": 0.022193,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "## 19歳の分岐\n\n19歳のとき、第一志望の早稲田大学第一文学部に合格した。進んだのは早稲田大学第一文学部で、別の大学へ進学する道は選ばなかった。\n\n## 文章やプロトコルをまとめる現在\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格とこの現在は並べて見ることができる。ただ、そのあいだの経緯までは示されていない。過去の分岐と現在の営みのあいだには、まだ接続しきれない部分が残っている。\n\n## 選ばなかった大学\n\n別の大学なら、仕事や人間関係がどう変わっていただろうかと考えることがある。大学が違えば仕事や人間関係も異なっていたかもしれない。しかし、選ばなかった進学先と特定の仕事や人間関係を直接結びつける材料はない。\n\n早稲田大学第一文学部への進学、複数の業界での経験、文章やプロトコルをまとめる現在。これらは一つの時間の中に並んでいる。一方、別の大学へ進んだ場合に何が違っていたかは、答えのないまま残る。大学選択とその後の人生をめぐる考えは、その未確定の部分に置かれている。\n"
+}

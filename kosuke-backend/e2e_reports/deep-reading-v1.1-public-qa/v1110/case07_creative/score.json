@@ -1,0 +1,150 @@
+{
+  "case_id": "case07_creative",
+  "category": "creative work",
+  "title": "Creative work — side project vs full-time craft",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 54.57,
+  "session_id": "23648b0e-b7d9-4084-b0dc-2403f63f3463",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "creative",
+    "changed_dimension": "表現に割く時間／生計との配分",
+    "chosen_structure": "会社員を続けながら創作を副業として続けること",
+    "unchosen_structure": "創作を本業にすること",
+    "central_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+    "lost_verifiability": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+    "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+    "present_residue": "「創作を本業にしていた場合の生活はどうなっていたか？」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+    "possible_rebranch_modes": [
+      "choose",
+      "preserve",
+      "revisit"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.9,
+    "diagnostics": {
+      "domain_reasons": [
+        "creative:creative"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": true,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 9,
+  "life_read": "YES",
+  "resume_density": 0.0,
+  "cva": 8.7,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": true,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "education-employment",
+      "after-success"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_ee_001",
+      "obs_ee_002",
+      "obs_as_001"
+    ],
+    "structures": [
+      "creative_vs_corporate"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "本業にしなかった創作",
+  "body_excerpt": "## 分岐点\n\n29歳のとき、創作を本業にするか、会社員のまま続けるかを考えた。この分かれ目は、職業名を二つ並べた選択というより、表現に割く時間と生計をどのように配分するかが分かれた境界だった。\n\n## 選んだ道\n\n選んだのは、会社員を続けながら創作を副業として続けることだった。現在も、平日は会社で働き、夜と週末には文章と写真を制作している。\n\n## 選ばなかった人生\n\n選ばなかった道は、創作を本業にすることだった。その道でどのような生活や制作があったかについて、ここに確かな材料はない。だからこそ、その可能性は具体的な物語にせず、選ばれなかった道として残しておく。\n\n## 失ったもの\n\n創作を本業にした場合の時間や生活を、いまの生活と同じ連続で確かめることはできない。平日の仕事と、夜・週末の制作からなる現在の外側に、もう一つの生活を置いて見るほかはない。\n\n## 守られたもの\n\n一方で、会社員を続けながら創作を副業として続ける道には、表現を未完のまま持ち続ける余地が残った。完成や本業化を急いで証明しなくても、文章や写真を制作する時間が生活の外へ消えずにいること自体が、その余地を示してい",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 3,
+    "選択": 1
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "creative",
+    "changed_dimension": "表現に割く時間／生計との配分",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": "sufficient_for_deep_reading"
+  }
+}

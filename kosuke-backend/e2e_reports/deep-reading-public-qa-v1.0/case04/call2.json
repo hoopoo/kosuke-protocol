@@ -1,0 +1,71 @@
+{
+  "body_markdown": "20代で、長く付き合っていた人と別れた。別れることと、一緒にいること。その二つは同じ時期の記憶のなかに並んでいる。\n\n今は普通に暮らしている。それでも、その人のことを思い出すと少し寂しい。過去の別れと、現在のこの寂しさのあいだには、まだ接続しきれていないものが残っている。\n\n「あのままだったら幸せだったのかな」という問いには、ここにある材料だけでは答えを置けない。一緒にいることがどのような時間になったかも、別れたことが幸せだったかどうかも、確認できない。ただ、普通に暮らしている現在のなかで、その問いと少しの寂しさが消えずにある。\n",
+  "title_candidates": [
+    "別れたあとに残る問い",
+    "普通に暮らす日々と、少しの寂しさ",
+    "一緒にいることを思い出すとき"
+  ],
+  "subtitle_candidates": [
+    "20代の別れと、現在に残る「あのままだったら」という問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "別れたあとに残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "具体的な人物名・場所・物件など、再検討の場面を支える具体名詞が確認されていないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "20代で、長く付き合っていた人と別れた。別れることと、一緒にいること。その二つは同じ時期の記憶のなかに並んでいる。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact4",
+        "feeling1",
+        "fact1"
+      ],
+      "contains_inference": true,
+      "text_preview": "今は普通に暮らしている。それでも、その人のことを思い出すと少し寂しい。過去の別れと、現在のこの寂しさのあいだには、まだ接続しきれていないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "question1",
+        "fact3",
+        "fact2",
+        "fact4",
+        "feeling1"
+      ],
+      "contains_inference": false,
+      "text_preview": "「あのままだったら幸せだったのかな」という問いには、ここにある材料だけでは答えを置けない。一緒にいることがどのような時間になったかも、別れたことが幸せだったかどうかも、確認できない。ただ、普通に暮らしている現在のなかで、その問いと少しの寂し"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 267
+}

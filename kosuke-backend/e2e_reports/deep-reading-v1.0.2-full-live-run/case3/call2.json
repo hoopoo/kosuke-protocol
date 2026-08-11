@@ -1,0 +1,73 @@
+{
+  "body_markdown": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この出来事は、私の人生の中で重要な分岐点となった。選ばなかった道は、別の大学へ進学することだったが、実際には早稲田大学に進むことを選んだ。この選択は、私の現在の職業や人間関係に影響を与えていると考えられる。\n\n現在は複数の業界を経験したあと、文章やプロトコルをまとめている。早稲田大学での学びや人との出会いが、今の仕事にどのように結びついているのかを考えると、別の大学に進学していた場合、どのような人生を歩んでいたのかと想像することがある。特に、仕事や人間関係がどう変わったかという点については、興味深い疑問が残る。\n\nこのように、選ばなかった道について考えることは、現在の生活に影響を与えている。早稲田大学に合格したことが、私のキャリアや人間関係にどのように寄与しているのかを振り返ることで、今後の選択にも新たな視点を持つことができるかもしれない。\n",
+  "title_candidates": [
+    "選ばなかった道の影響",
+    "早稲田大学合格の意義",
+    "人生の分岐点"
+  ],
+  "subtitle_candidates": [
+    "選択がもたらす影響を考える"
+  ],
+  "sections": [
+    {
+      "internal_id": "section_1",
+      "public_heading": "早稲田大学への合格",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section_2",
+      "public_heading": "現在の職業と人間関係",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "section_3",
+      "public_heading": "選ばなかった道の考察",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact_1",
+        "fact_2"
+      ],
+      "contains_inference": false,
+      "text_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。この出来事は、私の人生の中で重要な分岐点となった。選ばなかった道は、別の大学へ進学することだったが、実際には早稲田大学に進むことを選んだ。この選択は、私の現在の職業や人間関係に影響を与"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact_3"
+      ],
+      "contains_inference": false,
+      "text_preview": "現在は複数の業界を経験したあと、文章やプロトコルをまとめている。早稲田大学での学びや人との出会いが、今の仕事にどのように結びついているのかを考えると、別の大学に進学していた場合、どのような人生を歩んでいたのかと想像することがある。特に、仕事"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact_2",
+        "fact_3",
+        "question_1"
+      ],
+      "contains_inference": false,
+      "text_preview": "このように、選ばなかった道について考えることは、現在の生活に影響を与えている。早稲田大学に合格したことが、私のキャリアや人間関係にどのように寄与しているのかを振り返ることで、今後の選択にも新たな視点を持つことができるかもしれない。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.1",
+  "character_count": 403
+}

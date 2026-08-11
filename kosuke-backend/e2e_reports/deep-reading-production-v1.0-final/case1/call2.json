@@ -1,0 +1,75 @@
+{
+  "body_markdown": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦めることもありえたなかで、妻と息子との三人で暮らす日々が続いている。\n\n現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。45歳で子どもを授かったという出来事と、家族と暮らしながら会社を経営する現在との間には、まだ言葉として接続しきれていないものが残っている。\n\nその現在に、二人目を持っていたらどうだったかと考えることがある。これは過去についての結論ではなく、いまの三人家族の暮らしのそばに置かれている問いである。答えの定まらないまま、息子のいる家と、友人たちが訪れる時間は続いている。\n",
+  "title_candidates": [
+    "三人の暮らしと、残る問い",
+    "45歳のあとに続く家",
+    "息子の友人が訪れる日々"
+  ],
+  "subtitle_candidates": [
+    "不妊治療を経て子どもを授かった現在、三人家族の暮らしのそばにある二人目への問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "family_life",
+      "public_heading": "三人で続く暮らし",
+      "included": true,
+      "char_count": 0
+    },
+    {
+      "internal_id": "present_question",
+      "public_heading": "そばに残る問い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "二人目についての記述は、過去の具体的な行動や決定としては確認されておらず、現在の問いとして扱う。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。不妊治療を諦めることもありえたなかで、妻と息子との三人で暮らす日々が続いている。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact4",
+        "fact5"
+      ],
+      "contains_inference": true,
+      "text_preview": "現在も、妻と息子との三人家族で暮らし、自分の会社を経営している。息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。45歳で子どもを授かったという出来事と、家族と暮らしながら会社を経営する現在との間には、まだ言葉として接"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact4",
+        "fact5",
+        "question1"
+      ],
+      "contains_inference": false,
+      "text_preview": "その現在に、二人目を持っていたらどうだったかと考えることがある。これは過去についての結論ではなく、いまの三人家族の暮らしのそばに置かれている問いである。答えの定まらないまま、息子のいる家と、友人たちが訪れる時間は続いている。"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 316
+}

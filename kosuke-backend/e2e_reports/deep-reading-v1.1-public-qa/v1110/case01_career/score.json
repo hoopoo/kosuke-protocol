@@ -1,0 +1,179 @@
+{
+  "case_id": "case01_career",
+  "category": "career",
+  "title": "Career — NTT vs foreign firm",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 54.68,
+  "session_id": "80b38cf8-c935-49f8-b9a8-e2379a5e005c",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+  "branch_semantics": {
+    "domain": "career",
+    "changed_dimension": "制度的な所属／移動の仕方",
+    "chosen_structure": "外資系企業へ移ること。",
+    "unchosen_structure": "NTTに残る",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「NTTに残る」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「あのとき残っていたらどうなっていたのか。」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "career:branch_employment",
+        "career:background_employment_context",
+        "background_employment_context:pack"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 1.5,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "education-employment",
+      "after-success",
+      "clean-society"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_ee_001",
+      "obs_cs_001",
+      "obs_as_001",
+      "obs_ee_002"
+    ],
+    "structures": [
+      "employment_regime_boundary",
+      "normative_standard_path",
+      "post_achievement_question"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:chosen_path",
+    "thesis_closure_missing:chosen_path_structural_shift"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "残らなかった時間の物差し",
+  "body_excerpt": "## 分岐点\n\n28歳のとき、NTTに残るか、外資へ移るかという分岐があった。そこには、一つの企業の内部で役割を積み上げていく道と、企業を移る道が並んでいた。\n\n## 選んだ道\n\n選んだのは、NTTを離れて外資系企業へ移ることだった。その後は複数の業界や企業を経験し、現在は自分の会社を経営している。経歴を年表として並べるよりも、一つの所属にとどまる道を選ばなかったこととして、この移り方を見ることができる。\n\n## 選ばなかった人生\n\n選ばなかったのは、NTTに残る道だった。その先にどんな役割や待遇があったかは、ここでは定めない。一企業の内部で役割を積み上げ続けるという可能性だけが、実現しなかった道として残る。\n\n## 失ったもの\n\nNTTに残る道を取らなかったため、同じ企業の内部で役割を積み上げ、その時間のなかで自分の進み具合を見ていく経歴は、この人生には含まれない。それを損得の一覧にせず、選ばれなかった連続として置いておく。\n\n## 守られたもの\n\n一方で、経歴は一つの所属だけでは記述されないものになった。外資系企業への転職の後にも複数の業界や企業を経験し、いまは自分の会社を経営して",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 1,
+    "分岐": 4,
+    "選択": 1
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "career",
+    "authority": "career_allowed"
+  },
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "manuscript_omission",
+    "all": [
+      "manuscript_omission"
+    ],
+    "blocking_reasons": [
+      "required_section_unrealized:chosen_path",
+      "thesis_closure_missing:chosen_path_structural_shift"
+    ],
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": false,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  }
+}

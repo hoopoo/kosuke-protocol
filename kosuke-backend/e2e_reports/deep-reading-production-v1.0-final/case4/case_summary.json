@@ -1,0 +1,145 @@
+{
+  "id": "case4",
+  "title": "Creative work vs corporate career",
+  "started_at": "2026-08-07T05:12:40.558820+00:00",
+  "errors": [],
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "model": "gpt-4o-mini",
+    "actual_secondary_count": 0,
+    "validated_residue": [
+      {
+        "residue_statement": "「会社員として複数業界で働いてきた。」という過去の分岐のあとで、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「会社員として複数業界で働いてきた。」という過去の分岐のあとで、「現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact3"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "selected_lenses": 0,
+    "central_thesis": "創作中心の人生を選んでいた場合、現在の生活は異なっていた可能性がある。"
+  },
+  "call2": {
+    "model": "gpt-5.6-terra",
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 322,
+    "tokens_in": 3335,
+    "tokens_out": 746
+  },
+  "call3": {
+    "model": "gpt-5.6-terra",
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "complete",
+    "final_title": "制作のそばに残る空白",
+    "final_subtitle": "複数業界で働いた時間と、観測サイト・文章・プロトコルを制作する現在",
+    "character_count": 322,
+    "publishable": true,
+    "blocking_reasons": [],
+    "title_validation": {
+      "selected_title": "制作のそばに残る空白",
+      "selected_subtitle": "複数業界で働いた時間と、観測サイト・文章・プロトコルを制作する現在",
+      "title_supported_by_fact_ids": [],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": true,
+      "notes": []
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch_hits": [],
+    "residue_represented": true,
+    "named_entity_retention": {
+      "会社員": true,
+      "創作": true
+    },
+    "tokens_in": 0,
+    "tokens_out": 0
+  },
+  "session_model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "runtime_version": "parallel-life-runtime-v1.0.5",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "latency_ms_total": 22789,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 15481,
+      "prompt_tokens": 3821,
+      "completion_tokens": 1139,
+      "estimated_cost_usd": 0.001257,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 7286,
+      "prompt_tokens": 3335,
+      "completion_tokens": 746,
+      "estimated_cost_usd": 0.019527,
+      "stage_hint": "call2"
+    }
+  ],
+  "estimated_cost_usd": 0.020784,
+  "finished_at": "2026-08-07T05:13:03.348664+00:00"
+}

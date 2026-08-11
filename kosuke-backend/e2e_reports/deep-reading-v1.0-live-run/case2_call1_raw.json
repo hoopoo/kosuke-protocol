@@ -1,0 +1,55 @@
+{
+  "grounded_input": {
+    "explicit_fact": [
+      "45歳のとき、不妊治療を経て子どもを授かった。",
+      "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+      "現在も妻と息子との三人家族で暮らし、自分の会社を経営している。",
+      "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。"
+    ],
+    "user_feeling": [
+      "今も、二人目を持っていたらどうだったかと考えることがある。"
+    ],
+    "user_question": [],
+    "user_hypothesis": [],
+    "unknown": [],
+    "model_inference": []
+  },
+  "input_sufficiency": "sufficient",
+  "branch_structure": {
+    "actual_secondary_branch": [
+      {
+        "branch_type": "later_branch",
+        "content": "息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。"
+      }
+    ]
+  },
+  "central_thesis": "選択した人生は、妻と息子との三人家族であり、経営者としての生活を楽しんでいる。",
+  "lost_structure": {
+    "lost_choices": [
+      "不妊治療を諦めること"
+    ]
+  },
+  "protected_structure": {
+    "protected_choices": [
+      "妻と息子との三人家族で暮らすこと"
+    ]
+  },
+  "residue_candidates": [],
+  "evaluated_observatory_lenses": [],
+  "selected_observatory_lenses": [],
+  "editorial_outline": [
+    "1. 現在の生活状況",
+    "2. 不妊治療の経緯",
+    "3. 選択した人生の意義",
+    "4. 二人目を持つことへの思い"
+  ],
+  "rebranch_design": {
+    "source_meaning": "二人目を持つことへの考え",
+    "current_receiver": "ユーザー",
+    "branch_specific_form": "選択肢の再評価",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "additional_questions": [],
+  "user_confirmation_view": "この内容で問題ありませんか？"
+}

@@ -1,0 +1,247 @@
+{
+  "status": "ready_for_user_confirmation",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "18歳の時に進学先を決めた",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "時期: 18歳\n出来事: 進学先を決めた",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact2",
+        "content": "家から通える大学に進学した",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選んだ道: 家から通える大学にした",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact3",
+        "content": "地方の大学へ行く選択肢を選ばなかった",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道: 地方の大学へ行く",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact4",
+        "content": "今はその大学とは関係のない仕事をしている",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "いまの状況: 今はその大学とは関係のない仕事をしている",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "question1",
+        "content": "地方に行っていたら違ったかな",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "いまの問い: 地方に行っていたら違ったかな",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "near",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": []
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "18歳",
+      "triggering_event": "進学先を決めた",
+      "available_paths": [
+        "家から通える大学にした",
+        "地方の大学へ行く"
+      ],
+      "realized_path": "家から通える大学にした",
+      "unrealized_paths": [
+        "地方の大学へ行く"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact4"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [
+      {
+        "id": "sec_auto_001",
+        "classification": "actual_secondary_branch",
+        "parent_branch_id": "primary",
+        "description": "時期:18歳出来事:進学先を決めた選んだ道:家から通える大学にした選ばなかった道:地方の大学へ行くいまの問い:地方に行",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [
+          "fact1"
+        ],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": false
+      }
+    ],
+    "retrospective_counterfactuals": [],
+    "present_question_ids": [
+      "question1"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "decision_making",
+    "statement": "進学先の選択が現在の生活に影響を与えているかもしれない",
+    "pole_a": "家から通える大学",
+    "pole_b": "地方の大学",
+    "supported_by": [
+      "fact1",
+      "fact2",
+      "fact3",
+      "fact4"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": [
+      {
+        "residue_statement": "「18歳の時に進学先を決めた」という過去の分岐のあとで、「現在の生活」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「18歳の時に進学先を決めた」という過去の分岐のあとで、「現在の生活」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "ctx_001"
+        ],
+        "support_ids": [
+          "fact1",
+          "ctx_001"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ]
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": false,
+    "questions": []
+  },
+  "user_confirmation_view": {
+    "branch_period": "18歳",
+    "triggering_event": "進学先を決めた",
+    "chosen_path": "家から通える大学にした",
+    "unchosen_path": "地方の大学へ行く",
+    "actual_secondary_branches": [
+      "時期:18歳出来事:進学先を決めた選んだ道:家から通える大学にした選ばなかった道:地方の大学へ行くいまの問い:地方に行"
+    ],
+    "retrospective_counterfactuals": [],
+    "present_questions": [
+      "地方に行っていたら違ったかな"
+    ],
+    "current_context": [
+      "現在の生活"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "進学先の選択が現在の生活に影響を与えているかもしれない",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": [],
+    "material_contradictions": [],
+    "material_contradiction_count": 0,
+    "branch_concreteness_ok": true,
+    "thesis_deferred_due_to_contradiction": false,
+    "sensitive_thesis_rejected": false
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.2",
+  "schema_version": "parallel-life-call-1-schema-v1.0.2",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

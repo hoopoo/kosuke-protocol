@@ -1,0 +1,69 @@
+{
+  "body_markdown": "28歳のとき、趣味で写真を始めた。写真は趣味として続き、仕事にすることはなかった。\n\nいまも、たまに写真を撮る。28歳で始まったことと、現在の生活のなかでたまに撮ること。その二つの時点のあいだには、まだ言葉でつなぎきれないものが残っている。\n\n「写真を仕事にしていたらどうだったかな」という問いがある。そこに答えを足す材料はない。ただ、仕事にはしなかった写真が、いまも完全には過去形にならず、たまに撮る行為として残っている。その現在と問いを並べると、趣味として続いた写真をあらためて見直す余地が生まれる。\n",
+  "title_candidates": [
+    "たまに撮る写真と、残る問い",
+    "28歳から現在までの写真",
+    "仕事にしなかった写真をめぐって"
+  ],
+  "subtitle_candidates": [
+    "趣味として続いた写真と、現在に残る「もしも」の問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "section_01",
+      "public_heading": "たまに撮る写真",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "写真を仕事にした場合について、確認済みの具体的な出来事・生活・感情の材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "contains_inference": false,
+      "text_preview": "28歳のとき、趣味で写真を始めた。写真は趣味として続き、仕事にすることはなかった。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact4"
+      ],
+      "contains_inference": true,
+      "text_preview": "いまも、たまに写真を撮る。28歳で始まったことと、現在の生活のなかでたまに撮ること。その二つの時点のあいだには、まだ言葉でつなぎきれないものが残っている。"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact2",
+        "fact3",
+        "fact4",
+        "question1"
+      ],
+      "contains_inference": true,
+      "text_preview": "「写真を仕事にしていたらどうだったかな」という問いがある。そこに答えを足す材料はない。ただ、仕事にはしなかった写真が、いまも完全には過去形にならず、たまに撮る行為として残っている。その現在と問いを並べると、趣味として続いた写真をあらためて見"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 252
+}

@@ -1,0 +1,1126 @@
+[
+  {
+    "case_id": "case02_family",
+    "category": "family / fertility",
+    "title": "Family / fertility — second child question",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 81.48,
+    "session_id": "67ff965e-1ba3-4dd5-960b-7533408c4237",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "family",
+      "changed_dimension": "家族のかたち／身体と治療の選択",
+      "chosen_structure": "実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。",
+      "unchosen_structure": "選ばなかった道は、二人目を目指して治療を続けること。",
+      "central_tension": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「選ばなかった道は、二人目を目指して治療を続けること。」側の未実現の家族想像のあいだ",
+      "lost_verifiability": "「選ばなかった道は、二人目を目指して治療を続けること。」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+      "protected_possibility": "「実際に選んだ道は、妻と息子と三人で暮らす人生を続けること。」を取った側に残った、いまの家族のかたちを壊さずに置く余白（いまの暮らしと仕事の具体的な場面が続いている）",
+      "present_residue": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+      "possible_rebranch_modes": [
+        "leave_unresolved",
+        "preserve",
+        "observe"
+      ],
+      "sensitive_boundaries": [
+        "no_unsupported_causality",
+        "no_medical_invention",
+        "no_invented_affect",
+        "no_family_outcome_invention"
+      ],
+      "confidence": 0.95,
+      "diagnostics": {
+        "domain_reasons": [
+          "family:fertility_or_child",
+          "family:family_words",
+          "entrepreneurship:ownership"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": true,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 9,
+    "life_read": "YES",
+    "resume_density": 0.0,
+    "cva": 8.7,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 8,
+    "title_quality": 8,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [
+        "body",
+        "after-success"
+      ],
+      "selected": [],
+      "evidence_ids": [
+        "obs_body_001",
+        "obs_as_001"
+      ],
+      "structures": [
+        "embodied_or_fertility",
+        "family_life",
+        "post_achievement_question"
+      ],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": true,
+    "publishable": true,
+    "blocking_reasons": [],
+    "unsupported_causality_count": 0,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [],
+    "classification": "PASS",
+    "final_title": "三人で暮らす現在と、閉じない家族の想像",
+    "body_excerpt": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考える分かれ目があった。それは一度の判断というより、家族のかたちと、身体が治療の時間を引き受けるあり方とが、ともに別れうる境界だった。\n\n## 選んだ道\n\n実際に選んだ道は、妻と息子と三人で暮らす人生を続けることだった。この選び方によって、家族のかたちと身体と治療をめぐる時間は、別の組み立てへ移っていったのだと思う。現在は自分の会社を経営しているという事実も、その移り方のあとに続く生活の一場面としてあり、問いが消えずに残る起点にもなっている。\n\n## 選ばなかった人生\n\n選ばなかった道は、二人目を目指して治療を続けることだった。その先にどのような家族があったかを具体的に描くことはできない。ただ、その可能性を結末で埋めず、実現しなかった家族の想像として開いたまま置くことはできる。\n\n## 失ったもの\n\n失ったものは、二人目を目指して治療を続けた側にあったかもしれない家族のかたちを、いまから確かめる道である。失われたのは、別の暮らしの内容を言い切れることではなく、その暮らしが実際に続いたかどうかに触れる可能",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 0,
+      "制度": 0,
+      "分岐": 3,
+      "選択": 0
+    },
+    "rebranch_missing": [],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "family",
+      "changed_dimension": "家族のかたち／身体と治療の選択",
+      "authority": "non_career_guard"
+    },
+    "realization_taxonomy": {
+      "applicable": false
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": "sufficient_for_deep_reading"
+    }
+  },
+  {
+    "case_id": "case03_education",
+    "category": "education",
+    "title": "Education — university choice",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 73.41,
+    "session_id": "a39a1a9d-f640-48fc-b005-c8982af231d4",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "education",
+      "changed_dimension": "教育の機会／制度上の進路",
+      "chosen_structure": "その大学へ進学すること",
+      "unchosen_structure": "別の大学へ進学すること",
+      "central_tension": "「その大学へ進学すること」側の進路上の自己と、「別の大学へ進学すること」側の別の形成のあいだ",
+      "lost_verifiability": "「別の大学へ進学すること」を歩んだ場合の形成や自己像を、いま検証できないこと",
+      "protected_possibility": "「その大学へ進学すること」を取った側に残った、別の形成経路を想像し続ける余地",
+      "present_residue": "「別の大学へ行っていたら、いまの仕事の感じ方は違ったか？」がいまも残るのは、別の進路が自己像の想像として残るからかもしれない",
+      "possible_rebranch_modes": [
+        "reconsider",
+        "observe",
+        "leave_unresolved"
+      ],
+      "sensitive_boundaries": [],
+      "confidence": 0.9,
+      "diagnostics": {
+        "domain_reasons": [
+          "education:education"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": true,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 7,
+    "life_read": "mixed",
+    "resume_density": 0.0,
+    "cva": 8.0,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 5,
+    "title_quality": 5,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": false,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [
+        "education-employment"
+      ],
+      "selected": [],
+      "evidence_ids": [
+        "obs_ee_002",
+        "obs_ee_001"
+      ],
+      "structures": [
+        "education_transition"
+      ],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": false,
+    "publishable": false,
+    "blocking_reasons": [
+      "unrealized_path_modality_violation",
+      "title_validation_failed",
+      "required_section_unrealized:chosen_path",
+      "required_section_unrealized:re_branch",
+      "thesis_closure_missing:chosen_path_structural_shift",
+      "thesis_closure_missing:re_branch_present_choice",
+      "re_branch_missing_released_alternative"
+    ],
+    "unsupported_causality_count": 0,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [],
+    "classification": "GATE_BLOCKED",
+    "final_title": "第一志望と、選ばなかった大学",
+    "body_excerpt": "## 分岐点\n\n19歳で第一志望の大学に合格したことは、合否という一点の出来事であると同時に、受けられる教育の機会と制度上の進路が分かれる境界でもあった。第一志望の大学へ進む道と、別の大学へ進む道があった。\n\n## 選んだ道\n\n第一志望の大学へ進学したことを、その後の仕事まで説明する一本の線にすることはできない。現在は複数の業界を経験したあと、文章や制作の仕事をしている。19歳の進学と現在を並べると、ひとつの進学先から続く時間として振り返ることができる。\n\n## 選ばなかった人生\n\n別の大学へ進学する道は選ばなかった。その先で何を学び、どのような仕事に就いたかはわからない。具体的な人生で埋めないまま、別の大学へ進む可能性だけが残る。\n\n## 失ったもの\n\n別の大学へ進んでいた場合の経過や、そこで形づくられた自己像を、いま確かめることはできない。複数の業界を経験し、文章や制作の仕事をしている現在も、もう一方の進学先から続く時間と比べる材料にはならない。\n\n失われたのは、成果の一覧ではない。選ばなかった進学先から始まる時間を、自分の現在として確かめることができない点である。\n\n## 守られ",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 0,
+      "制度": 1,
+      "分岐": 2,
+      "選択": 0
+    },
+    "rebranch_missing": [
+      "re_branch_missing_released_alternative"
+    ],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "education",
+      "changed_dimension": "教育の機会／制度上の進路",
+      "authority": "non_career_guard"
+    },
+    "realization_taxonomy": {
+      "applicable": true,
+      "primary": "validator_too_strict",
+      "all": [
+        "validator_too_strict"
+      ],
+      "blocking_reasons": [
+        "unrealized_path_modality_violation",
+        "title_validation_failed",
+        "required_section_unrealized:chosen_path",
+        "required_section_unrealized:re_branch",
+        "thesis_closure_missing:chosen_path_structural_shift",
+        "thesis_closure_missing:re_branch_present_choice",
+        "re_branch_missing_released_alternative"
+      ],
+      "section_realization": {
+        "branch_point": true,
+        "chosen_path": true,
+        "unchosen_life": true,
+        "lost": true,
+        "protected": true,
+        "residue": true,
+        "observatory": false,
+        "re_branch": false,
+        "re_branch_omitted_valid": false
+      },
+      "malformed_claims": [],
+      "career_leaks": []
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": null
+    }
+  },
+  {
+    "case_id": "case04_romance",
+    "category": "romance / relationship",
+    "title": "Romance — breakup branch",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 35.46,
+    "session_id": "fc38252d-8f1e-4969-ae11-b36c91a314ad",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "romance",
+      "changed_dimension": "関係の継続／別れ",
+      "chosen_structure": "別れること",
+      "unchosen_structure": "一緒にいること",
+      "central_tension": "「別れること」側の単独の連続と、「一緒にいること」側の関係の連続のあいだ",
+      "lost_verifiability": "「一緒にいること」として続いていた関係の生活を、いま知る手がかりが残らないこと",
+      "protected_possibility": "「別れること」を取った側に残った、一人の生活を閉じきらずに続ける余地",
+      "present_residue": "「あのままだったらどうなっていたか」がいまも残るのは、関係の続き方についての未解決の想像が残るからかもしれない",
+      "possible_rebranch_modes": [
+        "observe",
+        "revisit",
+        "leave_unresolved",
+        "not_act"
+      ],
+      "sensitive_boundaries": [
+        "no_invented_affect",
+        "no_reunion_advice"
+      ],
+      "confidence": 0.8666666666666667,
+      "diagnostics": {
+        "domain_reasons": [
+          "romance:relationship"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": false,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 9,
+    "life_read": "YES",
+    "resume_density": 1.0,
+    "cva": 8.7,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 8,
+    "title_quality": 8,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [],
+      "selected": [],
+      "evidence_ids": [],
+      "structures": [],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": true,
+    "publishable": true,
+    "blocking_reasons": [],
+    "unsupported_causality_count": 0,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [],
+    "classification": "PASS",
+    "final_title": "別れた後に残る、もう一つの生活",
+    "body_excerpt": "## 分岐点\n\n20代後半に、長く付き合っていた人と別れた。この出来事は一点の終わりというより、関係を続けることと別れることのどちらに生活がつながるか、その境界になった。\n\n## 選んだ道\n\n選んだのは、別れることだった。それによって、関係が続くことを前提にしていた日々とは別の組み立てが始まり、今は一人で普通に暮らしている。あの移り方があるからこそ、「あのままだったらどうなっていたか」という問いも、現在から過去へ戻る形で残っている。\n\n## 選ばなかった人生\n\n選ばなかった側にあるのは、一緒にいることだった。その先に何があったかを具体的な物語にすることはできない。ただ、関係が続いていた可能性そのものは、別れたという事実によって完全に言い切れるものにはならない。\n\n## 失ったもの\n\n失ったのは、何かを数え上げられることではなく、一緒にいることとして続いていた関係の生活を、いま確かめる手がかりである。続いていたならどのような日々になっていたかは、その側に立って知ることができない。\n\n## 守られたもの\n\n別れることを取った側には、一人で暮らす生活を閉じきらずに続ける余地が残った。それは別",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 0,
+      "制度": 0,
+      "分岐": 2,
+      "選択": 0
+    },
+    "rebranch_missing": [],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "romance",
+      "changed_dimension": "関係の継続／別れ",
+      "authority": "non_career_guard"
+    },
+    "realization_taxonomy": {
+      "applicable": false
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": null
+    }
+  },
+  {
+    "case_id": "case05_health",
+    "category": "health / body",
+    "title": "Health / body — treatment vs work pace",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 65.54,
+    "session_id": "8c5e4011-f593-4a5d-bf88-d1a114cb9466",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "health",
+      "changed_dimension": "身体の制約／適応の仕方",
+      "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+      "unchosen_structure": "以前と同じペースで働き続けること",
+      "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+      "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+      "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+      "present_residue": "「無理をして働き続けていたらどうなっていたか」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+      "possible_rebranch_modes": [
+        "preserve",
+        "observe",
+        "not_act"
+      ],
+      "sensitive_boundaries": [
+        "no_unsupported_causality",
+        "no_medical_invention",
+        "no_invented_affect"
+      ],
+      "confidence": 0.8666666666666667,
+      "diagnostics": {
+        "domain_reasons": [
+          "health:body_health"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": false,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 9,
+    "life_read": "mixed",
+    "resume_density": 0.0,
+    "cva": 8.7,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 8,
+    "title_quality": 8,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [
+        "body"
+      ],
+      "selected": [],
+      "evidence_ids": [
+        "obs_body_001"
+      ],
+      "structures": [
+        "embodied_or_fertility"
+      ],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": true,
+    "publishable": false,
+    "blocking_reasons": [
+      "unsupported_causality"
+    ],
+    "unsupported_causality_count": 2,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [
+      "sensitive_unsupported_causality"
+    ],
+    "classification": "HARD_FAIL",
+    "final_title": "働くことと治療のあいだに残る問い",
+    "body_excerpt": "## 分岐点\n\n<!-- p01 -->38歳のとき、体調を崩し、働き方を変えるかを考えた。この分かれ目は一度きりの決断というより、身体の制約に合わせて生活をどう成り立たせるかが分かれた境界だった。\n\n## 選んだ道\n\n<!-- p02 -->仕事量を減らし、治療と休養を優先することが選ばれた。身体の状態に応じて日々を組み立てる方向へ移ったことで、治療を続けながら在宅中心で働く現在の生活につながっている。この移り方そのものが、いまも残る「無理をして働き続けていたらどうなっていたか」という問いの起点でもある。\n\n## 選ばなかった人生\n\n以前と同じペースで働き続ける道について、その先を具体的に語る材料はない。収入や役割、身体の状態を補って描くことはできない。ただ、その道は「無理をして働き続けていたらどうなっていたか」という問いのなかに、答えのない可能性として残る。以前と同じペースで働き続けることは、いまの生活と同じかたちでは辿られていない。その側にどのような身体の条件や働き方が続いたのかは、確かめられない。失われたものは一覧にできる何かというより、確かめようのない連続として置かれる。\n\n",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 0,
+      "制度": 0,
+      "分岐": 3,
+      "選択": 1
+    },
+    "rebranch_missing": [],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "health",
+      "changed_dimension": "身体の制約／適応の仕方",
+      "authority": "non_career_guard"
+    },
+    "realization_taxonomy": {
+      "applicable": true,
+      "primary": "validator_too_strict",
+      "all": [
+        "validator_too_strict"
+      ],
+      "blocking_reasons": [
+        "unsupported_causality"
+      ],
+      "section_realization": {
+        "branch_point": true,
+        "chosen_path": true,
+        "unchosen_life": true,
+        "lost": true,
+        "protected": true,
+        "residue": true,
+        "observatory": false,
+        "re_branch": true,
+        "re_branch_omitted_valid": false
+      },
+      "malformed_claims": [],
+      "career_leaks": []
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": null
+    }
+  },
+  {
+    "case_id": "case06_entrepreneurship",
+    "category": "entrepreneurship / business",
+    "title": "Entrepreneurship — leave company to found",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 51.96,
+    "session_id": "c3404147-6281-409a-8f22-0039211fb667",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "career",
+      "changed_dimension": "所有と安定／リスクへの露出",
+      "chosen_structure": "実際に選んだ道は、会社を辞めて自分の会社を始めること。",
+      "unchosen_structure": "選ばなかった道は、会社員として残ること。",
+      "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+      "lost_verifiability": "「選ばなかった道は、会社員として残ること。」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+      "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+      "present_residue": "「この分岐を、いまどう読み直すかがまだ開いている」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+      "possible_rebranch_modes": [
+        "observe",
+        "leave_unresolved",
+        "reconsider"
+      ],
+      "sensitive_boundaries": [],
+      "confidence": 0.8166666666666667,
+      "diagnostics": {
+        "domain_reasons": [
+          "entrepreneurship:ownership",
+          "career:branch_employment"
+        ],
+        "branch_employment_evidence": true,
+        "background_employment_context": true,
+        "explicit_employment_evidence": true,
+        "allows_career_product_logic": true,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 9,
+    "life_read": "YES",
+    "resume_density": 0.0,
+    "cva": 8.7,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 8,
+    "title_quality": 8,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": true,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [
+        "after-success"
+      ],
+      "selected": [],
+      "evidence_ids": [
+        "obs_as_001"
+      ],
+      "structures": [
+        "post_achievement_question"
+      ],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": true,
+    "publishable": true,
+    "blocking_reasons": [],
+    "unsupported_causality_count": 0,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [],
+    "classification": "PASS",
+    "final_title": "形にしたあとに残る問い",
+    "body_excerpt": "## 分岐点\n\n33歳で会社を辞め、自分の会社を始めたことは、勤め先を替えたという一点の出来事だけではない。仕事の所有の仕方と、安定からリスクへさらされる度合いが分かれた境界だった。いまも続く暮らしと仕事の場面から振り返ると、その境界は過去に閉じたものではない。\n\n## 選んだ道\n\n実際に選んだ道は、会社を辞めて自分の会社を始めることだった。振り返れば、会社員として残る道から、所属が変わるたびに自分の仕事を定義し直す道へ移った、と言える。その移り方があるからこそ、何かを形にしたあとにも、問いだけは達成や評価と別に残りうる。\n\n## 選ばなかった人生\n\n選ばなかった道は、会社員として残ることだった。その先にどんな役割や日々があったかを具体的に埋める必要はない。ただ、同じ組織の時間の中にとどまり続ける可能性は、選ばれなかった側として開いたまま残っている。\n\n## 失ったもの\n\n閉じたのは、同じ制度の時間のなかで、自分の進み具合を確かめ続ける道だった。比較できる項目を失ったというより、ひとつの連続した基準に自分を置き、時間とともに位置を見定める方法が、手元から離れた。\n\n## 守られたもの\n",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 1,
+      "制度": 3,
+      "分岐": 3,
+      "選択": 0
+    },
+    "rebranch_missing": [],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "career",
+      "authority": "career_allowed"
+    },
+    "realization_taxonomy": {
+      "applicable": false
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": null
+    }
+  },
+  {
+    "case_id": "case07_creative",
+    "category": "creative work",
+    "title": "Creative work — side project vs full-time craft",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 55.39,
+    "session_id": "22082c2a-7cbc-42ec-88f6-3c6ddd7548af",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "creative",
+      "changed_dimension": "表現に割く時間／生計との配分",
+      "chosen_structure": "会社員を続けながら創作を副業として続けること",
+      "unchosen_structure": "創作を本業にすること",
+      "central_tension": "「会社員を続けながら創作を副業として続けること」側の生計と表現の配分と、「創作を本業にすること」側の未完の表現生活のあいだ",
+      "lost_verifiability": "「創作を本業にすること」として表現に割けていた時間や生活を、いま同じ連続では確かめられないこと",
+      "protected_possibility": "「会社員を続けながら創作を副業として続けること」を取った側に残った、表現を未完のまま持ち続ける余地",
+      "present_residue": "「創作を本業にしていたら、今の作り方は違ったか。」がいまも残るのは、未完の表現の可能性がいまも触れているからかもしれない",
+      "possible_rebranch_modes": [
+        "choose",
+        "preserve",
+        "revisit"
+      ],
+      "sensitive_boundaries": [],
+      "confidence": 0.9,
+      "diagnostics": {
+        "domain_reasons": [
+          "creative:creative"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": true,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 8,
+    "life_read": "YES",
+    "resume_density": 0.0,
+    "cva": 8.3,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 8,
+    "title_quality": 8,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": false,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [
+        "education-employment",
+        "after-success"
+      ],
+      "selected": [],
+      "evidence_ids": [
+        "obs_ee_001",
+        "obs_ee_002",
+        "obs_as_001"
+      ],
+      "structures": [
+        "creative_vs_corporate"
+      ],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": true,
+    "publishable": true,
+    "blocking_reasons": [],
+    "unsupported_causality_count": 0,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [],
+    "classification": "PASS",
+    "final_title": "創作を本業にしなかったあとで",
+    "body_excerpt": "## 分岐点\n\n29歳のとき、創作を本業にするか、会社員のまま続けるかを考えた。これは一度の決断というより、表現に割く時間と生計をどのように配分するかが分かれた境界だった。\n\n## 選んだ道\n\n選んだのは、会社員を続けながら創作を副業として続けることだった。現在は平日に会社で働き、夜と週末に文章と写真を制作している。\n\n## 選ばなかった人生\n\n選ばなかったのは、創作を本業にすることだった。その生活がどのようなものになったかについての材料はない。成功や困難、制作の量や暮らし方を、ここで具体化することはできない。\n\n## 失ったもの\n\n創作を本業にした場合に、表現へどれほどの時間を割いていたか、どのような生活が続いていたかは、いま同じ連続として確かめられない。確かめられないのは、実現しなかった道の細部である。\n\n## 守られたもの\n\n会社員を続けながら創作を副業として続けるという形のなかで、現在も夜と週末には文章と写真の制作がある。この事実から、自由や成功を断定することはできない。ただ、創作が現在の生活から消えてはいない。\n\n## 今に残った構造\n\n「創作を本業にしていたら、いまの作り方",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 0,
+      "制度": 0,
+      "分岐": 3,
+      "選択": 0
+    },
+    "rebranch_missing": [],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "creative",
+      "changed_dimension": "表現に割く時間／生計との配分",
+      "authority": "non_career_guard"
+    },
+    "realization_taxonomy": {
+      "applicable": false
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": null
+    }
+  },
+  {
+    "case_id": "case09_zero_lens",
+    "category": "zero-lens-appropriate",
+    "title": "Zero-lens-appropriate — quiet local stay",
+    "pipeline_ok": true,
+    "safe_stop": false,
+    "elapsed_s": 61.17,
+    "session_id": "5b1f996a-326e-4e19-b159-c59b38cbcf9c",
+    "call1_status": "ready_for_draft",
+    "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+    "call3_prompt": "parallel-life-call-3-v1.1.10-exp",
+    "branch_semantics": {
+      "domain": "place",
+      "changed_dimension": "暮らす場所／日常の所属",
+      "chosen_structure": "地元に残る",
+      "unchosen_structure": "都会へ出る",
+      "central_tension": "「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだ",
+      "lost_verifiability": "「都会へ出る」側の暮らしの連続を、いま体験として辿れないこと",
+      "protected_possibility": "「地元に残る」を取った側に残った、いまの場所での日常を続ける余地",
+      "present_residue": "「都会へ出ていたら、いまの日常は違ったか」がいまも残るのは、「地元に残る」側の場所での日常と、「都会へ出る」側の別の暮らしの想像のあいだが消えていないからかもしれない",
+      "possible_rebranch_modes": [
+        "preserve",
+        "reconsider",
+        "leave_unresolved"
+      ],
+      "sensitive_boundaries": [],
+      "confidence": 0.7666666666666667,
+      "diagnostics": {
+        "domain_reasons": [
+          "place:place"
+        ],
+        "branch_employment_evidence": false,
+        "background_employment_context": true,
+        "explicit_employment_evidence": false,
+        "allows_career_product_logic": false,
+        "vague": false,
+        "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+      }
+    },
+    "career_leak": {
+      "leaks": [],
+      "ok": true
+    },
+    "clarification": {
+      "http_400": false,
+      "rounds": 1,
+      "questions_seen": [],
+      "duplicate_questions": [],
+      "continued": false,
+      "final_status": "ready_for_draft",
+      "schema_leakage": false,
+      "infinite_loop_suspected": false,
+      "exit_reason": null
+    },
+    "factual_fidelity": 10,
+    "naturalness": 9,
+    "depth": 8,
+    "life_read": "mixed",
+    "resume_density": 0.0,
+    "cva": 8.3,
+    "personal_focus": 8,
+    "social_depth": 3,
+    "thesis_closure": 8,
+    "title_quality": 8,
+    "section_realization": {
+      "branch_point": true,
+      "chosen_path": true,
+      "unchosen_life": true,
+      "lost": true,
+      "protected": false,
+      "residue": true,
+      "observatory": false,
+      "re_branch": true,
+      "re_branch_omitted_valid": false
+    },
+    "observatory": {
+      "candidates": [],
+      "selected": [],
+      "evidence_ids": [],
+      "structures": [],
+      "lenses_added_meaning": false,
+      "zero_lens_ok": true
+    },
+    "title_validation_passed": true,
+    "publishable": false,
+    "blocking_reasons": [
+      "unsupported_causality",
+      "required_section_unrealized:protected"
+    ],
+    "unsupported_causality_count": 1,
+    "unsupported_biography_count": 0,
+    "affect_inference_count": 0,
+    "self_help_coaching_drift": false,
+    "lens_overreach": false,
+    "schema_leakage": false,
+    "malformed_claims": [],
+    "hard_failures": [],
+    "classification": "GATE_BLOCKED",
+    "final_title": "地元に残った日常と、都会へ出たかもしれない道",
+    "body_excerpt": "## 分岐点\n\n22歳のとき、地元に残るか、都会へ出るかを考えた。その分かれ目は、進学や就職の一場面だけではなく、どこで暮らし、どの日常に身を置くかが二つに分かれる境目だった。\n\n## 選んだ道\n\n地元に残る道を選んだことで、暮らす場所と日々の所属は、都会へ移る場合とは別のかたちで組まれ始めたのだと思う。その移り方が現在の生活につながっているからこそ、都会へ出ていた場合をめぐる問いにも、過去の仮定だけではない重さが残る。\n\n## 選ばなかった人生\n\n選ばなかったのは、都会へ出る道である。その先でどのように暮らしたかを示す材料はない。仕事や人間関係、日々の場面を補うことはできない。都会へ出た場合の暮らしは、現在の経験としては辿れない。その道にどのような日常が続いたのかは、確かめようがないまま残る。\n\n## 失ったもの\n\nいま体験として辿れないのは、都会へ出た先の特定の出来事ではなく、そこで始まり、日々を重ねていった暮らしの連続そのものだろう。地元で暮らしている現在からは、その連続が実際にどう感じられたかを確かめることはできない。\n\n## 守られたもの\n\n一方で、ここには地元に残った現在の",
+    "abstract_vocab": {
+      "蓄積": 0,
+      "構造": 1,
+      "尺度": 0,
+      "制度": 0,
+      "分岐": 3,
+      "選択": 0
+    },
+    "rebranch_missing": [],
+    "semantic_domain_leak": {
+      "leaked": false,
+      "hits": [],
+      "domain": "place",
+      "changed_dimension": "暮らす場所／日常の所属",
+      "authority": "non_career_guard"
+    },
+    "realization_taxonomy": {
+      "applicable": true,
+      "primary": "manuscript_omission",
+      "all": [
+        "manuscript_omission"
+      ],
+      "blocking_reasons": [
+        "unsupported_causality",
+        "required_section_unrealized:protected"
+      ],
+      "section_realization": {
+        "branch_point": true,
+        "chosen_path": true,
+        "unchosen_life": true,
+        "lost": true,
+        "protected": false,
+        "residue": true,
+        "observatory": false,
+        "re_branch": true,
+        "re_branch_omitted_valid": false
+      },
+      "malformed_claims": [],
+      "career_leaks": []
+    },
+    "pipeline_error": false,
+    "deterministic": {
+      "observatory_required": false,
+      "observatory_omission_reason": "zero_selected_observatory_lenses",
+      "observatory_unrealized_block": false,
+      "observatory_false_negative": false,
+      "locked_label_mutation": false,
+      "alias_headings_raw": [],
+      "parsed_locked_labels": [
+        "分岐点",
+        "選んだ道",
+        "選ばなかった人生",
+        "失ったもの",
+        "守られたもの",
+        "今に残った構造",
+        "これからの再分岐"
+      ],
+      "heading_parser_inline_miss": false,
+      "heading_parser_period_form": false,
+      "clarification_dead_end": false,
+      "draft_reached": true,
+      "final_status": "ready_for_draft",
+      "clarification_exit": "sufficient_for_deep_reading"
+    }
+  }
+]

@@ -1,0 +1,361 @@
+{
+  "id": "case02",
+  "title": "Unchosen path unclear",
+  "purpose": "do not convert retrospective question into historical option",
+  "expect": [
+    "地元に残る may be retrospective_counterfactual",
+    "not automatic actual available path",
+    "clarification ok",
+    "no invented family/career reason for moving"
+  ],
+  "fields": {
+    "branch_period": "25歳くらい",
+    "triggering_event": "東京に出た",
+    "chosen_path": "東京で暮らした",
+    "unchosen_path": "特に考えていなかった",
+    "present_question": "地元に残っていたら違ったのかな",
+    "current_context": "今も東京に住んでいる"
+  },
+  "source_text": "時期: 25歳くらい\n出来事: 東京に出た\n選んだ道: 東京で暮らした\n選ばなかった道: 特に考えていなかった\nいまの問い: 地元に残っていたら違ったのかな\nいまの状況: 今も東京に住んでいる",
+  "started_at": "2026-08-07T04:31:12.007716+00:00",
+  "errors": [],
+  "session_id": "d2b230ae-99e1-48a2-8200-daf29c11c6e5",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.4",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": true,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": true
+    },
+    "gaps": [
+      "latency",
+      "token_usage",
+      "estimated_cost"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_2_prompt_version",
+      "call_3_model",
+      "call_3_prompt_version",
+      "candidate",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version"
+    ]
+  },
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "25歳くらいの時期に東京に出た",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact2",
+        "content": "東京で暮らした",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact3",
+        "content": "特に考えていなかった道を選ばなかった",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact5",
+        "content": "今も東京に住んでいる",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "地元に残っていたら違ったのかなという問いを持っている",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "25歳くらい",
+      "triggering_event": "東京に出た",
+      "available_paths": [
+        "東京で暮らした"
+      ],
+      "realized_path": "東京で暮らした",
+      "unrealized_paths": [
+        "特に考えていなかった"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "地元に残っていたら違ったのかなという問いを持っている",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "residue": [
+      {
+        "residue_statement": "「25歳くらいの時期に東京に出た」という過去の分岐のあとで、「今も東京に住んでいる」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「25歳くらいの時期に東京に出た」という過去の分岐のあとで、「今も東京に住んでいる」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "fact5"
+        ],
+        "support_ids": [
+          "fact1",
+          "fact5"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [],
+    "additional_required": false,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "25歳くらい",
+      "triggering_event": "東京に出た",
+      "chosen_path": "東京で暮らした",
+      "unchosen_path": "特に考えていなかった",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "地元に残っていたら違ったのかなという問いを持っている"
+      ],
+      "present_questions": [
+        "地元に残っていたら違ったのかなという問いを持っている"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "地元に残っていた場合の選択肢について考えることは重要である",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "central_thesis": "地元に残っていた場合の選択肢について考えることは重要である",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": []
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": true,
+    "outcome_bucket": "A_proceed_to_confirmation",
+    "reasons_stop": [],
+    "reasons_ok": [
+      "ready_for_user_confirmation_with_residue"
+    ],
+    "contradiction_analysis": {
+      "input_level_contradiction": false,
+      "facts_contain_reject": false,
+      "facts_contain_join": false,
+      "silently_resolved_suspected": false,
+      "confirmation_items": []
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [],
+    "clarification_count": 0,
+    "residue_count": 1,
+    "status": "ready_for_user_confirmation"
+  },
+  "call2_reached": true,
+  "call3_reached": true,
+  "published": true,
+  "confirmation_approved": true,
+  "generation_should_proceed": true,
+  "safe_stop": false,
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 299,
+    "title_candidates": [
+      "東京に出た二十五歳ごろと、いまの東京",
+      "地元に残っていたらという問い",
+      "続いている東京の生活"
+    ],
+    "observatory_omitted": true,
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "地元以外の具体的な場所や生活内容が確認されていないため。",
+    "soft_watch": [],
+    "body_preview": "## 東京に出た時期\n\n25歳くらいの時期に東京に出て、東京で暮らした。同時に、特に考えていなかった道を選ばなかった。\n\n## 続いている東京の生活\n\n現在も東京に住んでいる。25歳くらいで東京に出たことから、いまも東京で暮らしていることまで、生活の場所は続いている。そのあいだには、まだ接続しきれていないものが残っている。\n\nいま、「地元に残っていたら違ったのかな」という問いがある。地元に残った場合に何がどう違ったかを示す材料はなく、この問いに答えを置くことはできない。ただ、東京に出た時期と、現在も東京に住んでいる生活を並べるとき、地元に残ることについての問いは、結論を急がずそのまま残る。\n"
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "complete",
+    "final_title": "地元に残っていたらという問い",
+    "final_subtitle": "地元に残っていたらという問いを、結論にしないために",
+    "character_count": 286,
+    "publishable": true,
+    "blocking_reasons": [],
+    "title_validation": {
+      "selected_title": "地元に残っていたらという問い",
+      "selected_subtitle": "地元に残っていたらという問いを、結論にしないために",
+      "title_supported_by_fact_ids": [],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": true,
+      "notes": []
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch": [],
+    "residue_represented": true,
+    "body_preview": "## 東京に出た時期\n\n25歳くらいの時期に東京に出て、東京で暮らした。特に考えていなかった道は選ばなかった。\n\n## いまも続く東京の生活\n\n今も東京に住んでいる。25歳くらいで東京に出たことと、今も東京に住んでいること。その二つのあいだには、まだ接続しきれていないものが残っている。\n\n「地元に残っていたら違ったのかな」という問いがある。地元に残った場合の暮らしを、ここで決めることはできない。\n\nただ、二十五歳ごろに東京へ出たことと、いま東京に住んでいることを並べて見ると、地元に残るという可能性は消えずに残る。その問いを急いで答えに変えず、考え続ける余地がある。\n"
+  },
+  "latency_ms_total": 32899,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 15881,
+      "prompt_tokens": 3751,
+      "completion_tokens": 1139,
+      "estimated_cost_usd": 0.001246,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 8431,
+      "prompt_tokens": 3116,
+      "completion_tokens": 989,
+      "estimated_cost_usd": 0.022625,
+      "stage_hint": "terra"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 8552,
+      "prompt_tokens": 3258,
+      "completion_tokens": 876,
+      "estimated_cost_usd": 0.021285,
+      "stage_hint": "terra"
+    }
+  ],
+  "estimated_cost_usd": 0.045156,
+  "token_split": {
+    "call1_in": 3751,
+    "call1_out": 1139,
+    "terra_events": 2,
+    "terra_in": 6374,
+    "terra_out": 1865,
+    "call2_in": 3116,
+    "call2_out": 989,
+    "call3_in": 3258,
+    "call3_out": 876
+  },
+  "finished_at": "2026-08-07T04:31:44.907376+00:00"
+}

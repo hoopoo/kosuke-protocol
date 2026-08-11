@@ -1,0 +1,96 @@
+{
+  "case_id": "case10_sensitive",
+  "category": "sensitive causal restraint",
+  "title": "Sensitive — illness timing vs career move",
+  "pipeline_ok": false,
+  "elapsed_s": 71.91,
+  "session_id": "01c089af-6d51-4c51-9e4c-e36b90e895c0",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.7-exp",
+  "factual_fidelity": 7,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": false,
+  "protected_realization": false,
+  "residue_realization": true,
+  "rebranch_realization": true,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:branch_point",
+    "required_section_unrealized:chosen_path",
+    "required_section_unrealized:lost",
+    "required_section_unrealized:protected",
+    "required_section_unrealized:observatory",
+    "thesis_closure_missing:chosen_path_structural_shift"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 2,
+  "confirmation_issues": [],
+  "hard_failures": [
+    "possible_invented_sensitive:年収"
+  ],
+  "classification": "HARD_FAIL",
+  "final_title": "身体の時間と働き方を選び直す",
+  "body_excerpt": "## 分岐点\n\n41歳のとき、大きな病気の診断を受け、仕事を辞めるか考えた。治療のためにいったん仕事を離れることと、治療を続けながら同じ仕事を続けることが、そのときには並んでいた。\n\n## 選んだ道\n\n選んだのは、治療のために仕事をいったん離れることだった。仕事を離れていた時間には、治療を受ける時間があった。\n\n## 選ばなかった人生\n\n治療を続けながら同じ仕事を続ける道は選ばなかった。その先で病状や暮らしがどうなっていたかを述べる材料はない。ただ、その道は今も別の可能性として残っている。\n\n## 失ったもの\n\n同じ仕事を続ける時間は途切れた。そこで何が失われたかを、役職や評価、暮らしの細部にまで決めることはできない。\n\n## 守られたもの\n\n治療のあいだ、家族が看病を手伝ってくれた。仕事を離れていた時間には、治療を受けるだけでなく、ケアを受ける時間もあった。\n\n## 今に残った構造\n\n今は体調を見ながら、短い仕事を再開している。その暮らしとともに、「働き続けていたら、病状や生活はどうなっていたか」という問いがある。いまの仕事の量や体調だけで、その問いに答えを出す必要はない。\n\n## ",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 2,
+    "選択": 0
+  },
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:branch_point",
+        "required_section_unrealized:chosen_path",
+        "required_section_unrealized:lost",
+        "required_section_unrealized:protected",
+        "required_section_unrealized:observatory",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ],
+      "final_title": "身体の時間と働き方を選び直す",
+      "final_subtitle": ""
+    }
+  }
+}

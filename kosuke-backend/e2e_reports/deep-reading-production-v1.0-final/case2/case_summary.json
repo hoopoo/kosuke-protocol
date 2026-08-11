@@ -1,0 +1,147 @@
+{
+  "id": "case2",
+  "title": "Family formation / fertility — explicit later discussion/decision",
+  "started_at": "2026-08-07T05:11:26.278209+00:00",
+  "errors": [],
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "model": "gpt-4o-mini",
+    "actual_secondary_count": 1,
+    "validated_residue": [
+      {
+        "residue_statement": "「45歳のとき、不妊治療を経て子どもを授かった。」という過去の分岐のあとで、「息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「45歳のとき、不妊治療を経て子どもを授かった。」という過去の分岐のあとで、「息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact1"
+        ],
+        "present_anchor_ids": [
+          "feeling1"
+        ],
+        "support_ids": [
+          "fact1",
+          "feeling1"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "selected_lenses": 0,
+    "central_thesis": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだ。"
+  },
+  "call2": {
+    "model": "gpt-5.6-terra",
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 255,
+    "tokens_in": 3948,
+    "tokens_out": 711
+  },
+  "call3": {
+    "model": "gpt-5.6-terra",
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "complete",
+    "final_title": "三人の暮らしと、残る問い",
+    "final_subtitle": "不妊治療を経て子どもを授かり、二人目の治療をやめた後の現在",
+    "character_count": 255,
+    "publishable": true,
+    "blocking_reasons": [],
+    "title_validation": {
+      "selected_title": "三人の暮らしと、残る問い",
+      "selected_subtitle": "不妊治療を経て子どもを授かり、二人目の治療をやめた後の現在",
+      "title_supported_by_fact_ids": [
+        "fact2"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": true,
+      "notes": []
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch_hits": [],
+    "residue_represented": true,
+    "named_entity_retention": {
+      "話し合": true,
+      "やめた": true
+    },
+    "tokens_in": 0,
+    "tokens_out": 0
+  },
+  "session_model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "runtime_version": "parallel-life-runtime-v1.0.5",
+    "final_status": "ready_for_draft",
+    "clarification_count": 0,
+    "failure_category": null,
+    "call_2_prompt_version": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt_version": "parallel-life-call-3-v1.0.3"
+  },
+  "latency_ms_total": 33083,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 26487,
+      "prompt_tokens": 3919,
+      "completion_tokens": 1956,
+      "estimated_cost_usd": 0.001761,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 6569,
+      "prompt_tokens": 3948,
+      "completion_tokens": 711,
+      "estimated_cost_usd": 0.020535,
+      "stage_hint": "call2"
+    }
+  ],
+  "estimated_cost_usd": 0.022296,
+  "finished_at": "2026-08-07T05:11:59.362238+00:00"
+}

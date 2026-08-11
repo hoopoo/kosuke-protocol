@@ -1,0 +1,280 @@
+{
+  "case_id": "case09_zero_lens",
+  "arm": "public_qa",
+  "mode": "contextual",
+  "ok": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:chosen_path",
+        "required_section_unrealized:lost",
+        "required_section_unrealized:protected",
+        "required_public_label_missing:observatory:社会との接続",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ],
+      "final_title": "22歳の分岐と、いまの日常",
+      "final_subtitle": ""
+    }
+  },
+  "session_id": "3ddd3fa2-0dd0-4d96-961e-107d872a1156",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "地元で事務の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T070000Z_6222",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_relevant_social_context_002",
+        "content": "近所の人と暮らしている",
+        "tags": [
+          "context_pack",
+          "category:relevant_social_context",
+          "pack_id:pack_live_20260808T070000Z_6222",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070000Z_6222",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ]
+      }
+    ]
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "地元で事務の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T070000Z_6222",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_relevant_social_context_002",
+        "content": "近所の人と暮らしている",
+        "tags": [
+          "context_pack",
+          "category:relevant_social_context",
+          "pack_id:pack_live_20260808T070000Z_6222",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070000Z_6222",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ]
+      }
+    ]
+  },
+  "manuscript": {
+    "title": "22歳の分岐と、いまの日常",
+    "subtitle": "",
+    "body_markdown": "## 分岐点\n\n22歳のとき、地元に残るか、都会へ出るかを考えた。選んだのは地元に残る道で、都会へ出る道は選ばなかった。\n\nこの分岐について、当時の事情や二つの道の優劣を示す材料はない。ただ、二つの方向を前にしていたことは、現在を振り返る際の起点として残っている。\n\n## 選んだ道\n\n現在は地元で事務の仕事をし、近所の人と暮らしている。\n\n22歳のときに地元に残る道を選んだことと、この現在の生活を直接結びつける材料はない。それでも、過去の分岐といまの日常を並べることはできる。\n\n## 選ばなかった人生\n\n選ばなかったのは、都会へ出る道だった。\n\nその先の仕事や暮らしがどのようなものだったかは分からない。成功や失敗、出会いや変化を補って語るのではなく、「都会へ出る」という可能性を、具体化しないまま置いておく。\n\n## 失ったもの\n\n都会へ出なかったことで何を失ったかは、決められない。地元に残ることと都会へ出ることのどちらに、よりよい仕事や暮らしがあったかも、この記録からは言えない。\n\n失われたものを一覧にする代わりに、選ばなかった道があったという事実を残す。そこには、現在とは異なる日常の可能性が、答えの出ないまま含まれている。\n\n## 守られたもの\n\n地元には、事務の仕事と近所の人と暮らす日常がある。\n\nこの日常を、過去の選択の成果と呼ぶ必要はない。また、都会へ出る道より優れているとする根拠もない。現在の生活は、過去の分岐を考えるためにここにある、具体的な足場である。\n\n## 今に残った構造\n\nいまも、「都会へ出ていたら、いまの日常は違ったか」と考えることがある。\n\nこの問いは、22歳のときに地元に残るか都会へ出るかを考えたことと、地元で事務の仕事をし、近所の人と暮らす現在を並べたところにある。別の人生を確定する問いではなく、過去にあった二つの道と、いまの生活を同時に見つめるための問いとして残る。\n\n## これからの再分岐\n\n役職や年収だけを唯一の到達指標にしなくてよい。これから何を長期の積み重ねとして認めるかを、自分で選び直す余地がある。\n\nいまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ蓄積のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n",
+    "char_count": 969
+  },
+  "trace_final": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.7-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.7-exp",
+    "pack_fact_ids": [
+      "pack_current_work_001",
+      "pack_relevant_social_context_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_current_work_001",
+        "content": "地元で事務の仕事をしている",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T070000Z_6222",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_relevant_social_context_002",
+        "content": "近所の人と暮らしている",
+        "tags": [
+          "context_pack",
+          "category:relevant_social_context",
+          "pack_id:pack_live_20260808T070000Z_6222",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T070000Z_6222",
+      "pack_fact_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_001",
+        "pack_relevant_social_context_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「22歳のとき、地元に残るか、都会へ出るかを考えたという分岐があった。」を振り返る問いは、「現在は、地元で事務の仕事をしながら、近所の人と暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "地元に残る選択がもたらした安定した日常と、都会へ出る選択がもたらしたかもしれない変化の対比",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_measure_001",
+        "branch_specific_form": "仕事の場で、これからの蓄積を何で測るかを自分で選ぶ",
+        "current_receiver": "現在の生活で長期の蓄積をどう確認するか",
+        "support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002",
+          "fact_1"
+        ],
+        "pack_support_ids": [
+          "pack_current_work_001",
+          "pack_relevant_social_context_002"
+        ]
+      }
+    ]
+  },
+  "elapsed_s": 81.9
+}

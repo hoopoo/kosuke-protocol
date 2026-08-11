@@ -1,0 +1,126 @@
+{
+  "case_id": "case08_vague",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "needs_additional_input",
+      "schema_version": "parallel-life-runtime-v1.0.6",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.0.3",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.0.3",
+      "branch_semantics": null
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "answer",
+        "http": 200,
+        "questions": [
+          "今も考えることがある「別の道」が具体的に何か教えてもらえますか？"
+        ],
+        "answers": {
+          "0": "あの分岐がいまも残る問いとして触れることがある。"
+        },
+        "resp_status": "ready_for_user_confirmation",
+        "clarification_required": false,
+        "exit_reason": null
+      },
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": true,
+    "continued_after_clarification": true,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "2f358aaf-f365-4a1a-9c2e-f4782f659bf5",
+  "trace_after_ground": {
+    "deep_reading_mode": "strict",
+    "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+    "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {},
+    "residue": [
+      {
+        "statement": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": []
+  },
+  "branch_semantics_after_ground": null,
+  "trace_after_confirm": {
+    "deep_reading_mode": "strict",
+    "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+    "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {},
+    "residue": [
+      {
+        "statement": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "fact_4"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": []
+  },
+  "branch_semantics_after_confirm": null,
+  "manuscript": {
+    "title": "覚えていない分かれ目",
+    "body_markdown": "二十代のどこかに、何かを選んだ気がする分かれ目があった。何を選んだのかは、よく覚えていない。選ばなかった道についても、当時は特に考えていなかった。\n\nいまも普通に暮らしている。その暮らしのなかで、あの分かれ目に触れることがある。「別の道があったのかな」と考えることもある。\n\n覚えていない分かれ目と、いま続く普通の暮らしが並んでいる。選んだ道も、選ばなかった道もはっきりしないまま、その問いは残っている。\n"
+  },
+  "elapsed_s": 36.86,
+  "branch_semantics_final": null,
+  "qa_version": "v1.1.9-exp"
+}

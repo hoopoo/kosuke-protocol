@@ -1,0 +1,38 @@
+JSONDecodeError: Expecting ',' delimiter: line 217 column 4 (char 5669)
+Traceback (most recent call last):
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/scripts/run_production_v1_final_confirm.py", line 396, in main
+    entry = run_case(service, case)
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/scripts/run_production_v1_final_confirm.py", line 205, in run_case
+    ground = service.ground(
+        DeepReadingGroundRequest(source_text=case["source"], language="ja")
+    )
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/service.py", line 175, in ground
+    call1 = run_call1_grounding(
+        request.source_text,
+    ...<2 lines>...
+        answers_to_additional_questions=request.answers_to_additional_questions,
+    )
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/grounding.py", line 933, in run_call1_grounding
+    raw = chat_json_schema(system, user, response_format, max_tokens=5000, temperature=0.2)
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/llm.py", line 100, in chat_json_schema
+    return chat_json(
+        system,
+    ...<4 lines>...
+        model=model or CALL_1_MODEL,
+    )
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/scripts/run_production_v1_final_confirm.py", line 170, in chat_json_tracked
+    return llm_mod.parse_json_content(content)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/shirakotadashi/kosuke-protocol/kosuke-backend/app/parallel_life_deep_reading/llm.py", line 26, in parse_json_content
+    return json.loads(text)
+           ~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 217 column 4 (char 5669)

@@ -1,0 +1,298 @@
+{
+  "case_id": "case05_health",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.11-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "health",
+        "changed_dimension": "身体の制約／適応の仕方",
+        "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+        "unchosen_structure": "以前と同じペースで働き続けること",
+        "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+        "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+        "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+        "present_residue": "「無理をして働き続けていたらどうなっていたかという問いが残る。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+        "possible_rebranch_modes": [
+          "preserve",
+          "observe",
+          "not_act"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect"
+        ],
+        "evidence_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002",
+          "user_question_001",
+          "question_source_005"
+        ],
+        "confidence": 0.8666666666666667,
+        "diagnostics": {
+          "domain_reasons": [
+            "health:body_health"
+          ],
+          "branch_employment_evidence": false,
+          "background_employment_context": false,
+          "explicit_employment_evidence": false,
+          "allows_career_product_logic": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "9556d84c-195a-4981-b6b4-757910de9ee6",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T140915Z_7530",
+      "pack_fact_ids": [],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「治療を続けながら在宅中心で仕事をしている」を振り返る問いは、「治療を続けながら在宅中心で仕事をしている」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_major_life_events_001"
+        ],
+        "present_anchor_ids": [
+          "ctx_001"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "体調を崩したことが、働き方を見直すきっかけとなった。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "いまの生活のかたちのなかで、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+    "unchosen_structure": "以前と同じペースで働き続けること",
+    "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「無理をして働き続けていたらどうなっていたかという問いが残る。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "pack_major_life_events_001",
+      "pack_current_work_002",
+      "user_question_001",
+      "question_source_005"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.11-exp",
+    "pack_fact_ids": [],
+    "pack_facts": [],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T140915Z_7530",
+      "pack_fact_ids": [],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「治療を続けながら在宅中心で仕事をしている」を振り返る問いは、「治療を続けながら在宅中心で仕事をしている」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "pack_major_life_events_001"
+        ],
+        "present_anchor_ids": [
+          "ctx_001"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "体調を崩したことが、働き方を見直すきっかけとなった。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "いまの生活のかたちのなかで、いま成り立っている生活のかたちを保つ",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002"
+        ],
+        "pack_support_ids": []
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+    "unchosen_structure": "以前と同じペースで働き続けること",
+    "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「無理をして働き続けていたらどうなっていたかという問いが残る。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "pack_major_life_events_001",
+      "pack_current_work_002",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "manuscript": {
+    "title": "休養を優先したあとに残る問い",
+    "body_markdown": "## 分岐点\n\n38歳のとき、体調を崩した時期に、働き方をどう置くかを考える分かれ目があった。それは単に仕事の量を調整する判断ではなく、身体の制約のなかで日々の生活をどう成り立たせるかが分かれる境界でもあった。\n\n## 選んだ道\n\n仕事量を減らし、治療と休養を優先することが選ばれた。振り返れば、この移り方は、身体に合わせて生活を組み立てる別のかたちを開き始めたように見える。いまも治療を続けながら在宅中心で仕事をしている現在と並ぶことで、この選択は、なお残る問いの起点としてある。\n\n## 選ばなかった人生\n\n選ばなかった側には、以前と同じペースで働き続けることがある。その先に何があったかを具体的に描くことはできない。ただ、その可能性を閉じた結論にせず、実現しなかった生活のかたちとして置いておくことはできる。\n\n## 失ったもの\n\n失われたのは、以前と同じペースで働き続ける側で続いていたはずの身体条件や働き方を、いま同じように辿ることではないか。どのような状態が続いたかは確かめられず、その連続そのものが、現在からは検証できないまま残っている。\n\n## 守られたもの\n\n一方で、仕事量を減らして治療と休養を優先した側には、身体の制約のなかでも生活を続ける余地が残った。これは選択の優劣を示すものではなく、治療を続けながら在宅中心で仕事をする現在を成り立たせている、ひとつの可能性である。\n\n## 今に残った構造\n\nいまも「無理をして働き続けていたらどうなっていたか」と考えることがある。その問いが残るのは、以前の道の結果を知りたいからだけではなく、身体と生活には確かめきれない部分があるためかもしれない。仕事量を抑えて働く現在にも、適応した生活と、別の身体条件の想像とのあいだの緊張は残っている。\n\n## これからの再分岐\n\n以前と同じペースで働き続けることの側を想像することと、治療と休養を優先してきた現在の生活を保つことは、なお並んでいる。しかし、過去の分岐をいまやり直す必要はない。いまは、治療を続けながら在宅中心で仕事をする、成り立っている生活のかたちを保つことを選ぶ。\n\n"
+  },
+  "elapsed_s": 40.07,
+  "branch_semantics_final": {
+    "domain": "health",
+    "changed_dimension": "身体の制約／適応の仕方",
+    "chosen_structure": "仕事量を減らして治療と休養を優先すること",
+    "unchosen_structure": "以前と同じペースで働き続けること",
+    "central_tension": "「仕事量を減らして治療と休養を優先すること」側の適応した生活と、「以前と同じペースで働き続けること」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「以前と同じペースで働き続けること」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「仕事量を減らして治療と休養を優先すること」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「無理をして働き続けていたらどうなっていたかという問いが残る。」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "evidence_ids": [
+      "pack_major_life_events_001",
+      "pack_current_work_002",
+      "q_confirm_001",
+      "q_confirm_002"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "health:body_health"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "qa_version": "v1.1.11-exp"
+}

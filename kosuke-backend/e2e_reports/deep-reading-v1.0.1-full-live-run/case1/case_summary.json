@@ -1,0 +1,220 @@
+{
+  "id": "case1",
+  "title": "Family formation / fertility — retrospective counterfactual only",
+  "started_at": "2026-08-07T01:57:44.405300+00:00",
+  "errors": [],
+  "call1": {
+    "session_id": "ede7ff8c-33f3-4a21-a9c2-7bc31fb768b5",
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.1",
+    "schema_version": "parallel-life-call-1-schema-v1.0.1",
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "central_thesis": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだことは、現在の幸せに繋がっている。",
+    "actual_secondary_count": 0,
+    "actual_secondary_descriptions": [],
+    "retrospective_counterfactuals": [
+      "今も、二人目を持っていたらどうだったかと考えることがある。"
+    ],
+    "questions": [
+      "今も、二人目を持っていたらどうだったかと考えることがある。"
+    ],
+    "selected_lenses": [],
+    "rebranch_directions": [],
+    "residue": [],
+    "confirmation_view": {
+      "branch_period": "45歳",
+      "triggering_event": "不妊治療を経て子どもを授かった",
+      "chosen_path": "妻と息子と三人で暮らす人生",
+      "unchosen_path": "不妊治療を諦めること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "今も、二人目を持っていたらどうだったかと考えることがある。"
+      ],
+      "present_questions": [
+        "今も、二人目を持っていたらどうだったかと考えることがある。"
+      ],
+      "current_context": [
+        "妻と息子との三人家族で暮らし、自分の会社を経営している。"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "不妊治療を経て子どもを授かり、妻と息子と三人で暮らす人生を選んだことは、現在の幸せに繋がっている。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    }
+  },
+  "confirmation": {
+    "status": "ready_for_draft",
+    "confirmed_by_user": true,
+    "timestamp": "2026-08-07T01:58:00.068524+00:00"
+  },
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0",
+    "character_count": 620,
+    "title_candidates": [
+      "不妊治療を経て選んだ人生",
+      "家族との幸せな日々",
+      "子どもを授かるまでの道のり",
+      "選ばれた道とその先",
+      "家族の絆を深める"
+    ],
+    "subtitle_candidates": [],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+    "observatory_omitted": true,
+    "analysis": {
+      "char_count": 621,
+      "heading_count": 1,
+      "chapter_by_chapter_feel": false,
+      "unsupported_scenes": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "不妊治療を経て選んだ人生",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": false,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed"
+      ]
+    }
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0",
+    "status": "validation_failed",
+    "final_title": "不妊治療を経て選んだ人生",
+    "final_subtitle": "",
+    "character_count": 621,
+    "validation_from_runtime": {
+      "unsupported_scenes": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "不妊治療を経て選んだ人生",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": false,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed"
+      ]
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "不妊治療を経て選んだ人生",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact1",
+          "fact3"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": false,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed"
+      ]
+    },
+    "analysis": {
+      "char_count": 621,
+      "heading_count": 1,
+      "chapter_by_chapter_feel": false,
+      "unsupported_scenes": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "named_entity_retention": {},
+    "session_status": "validation_failed",
+    "publishable": false,
+    "final_manuscript_present": false
+  },
+  "machine_pass_hints": {
+    "complete_and_publishable": false,
+    "blocking_reasons": [
+      "residue_centrality_failed"
+    ],
+    "independent_blocking": [
+      "residue_centrality_failed"
+    ]
+  },
+  "finished_at": "2026-08-07T01:58:09.531943+00:00"
+}

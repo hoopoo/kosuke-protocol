@@ -1,0 +1,72 @@
+{
+  "body_markdown": "45歳のとき、不妊治療を経て子どもを授かった。これは私の人生における重要な出来事であり、私の家族の形を決定づけるものであった。その後、私は妻と息子と三人で暮らす選択をした。この選択によって、現在も妻と息子との三人家族で暮らし、自分の会社を経営している。息子は可愛い存在であり、彼の友人が家に遊びに来ることも楽しいと感じている。これらの経験は、私の日常生活の一部となっている。\n\n一方で、私は時折、二人目を持っていたらどうだったかと考えることがある。この思考は、過去の選択と現在の生活の間にまだ接続しきれていないものが残っていることを示している。私の選択肢の中には、不妊治療を諦めることもあったが、それを選ばなかったことで今の家族の形がある。これらの思いは、私の人生における選択の重みを感じさせるものである。\n",
+  "title_candidates": [
+    "過去の選択と現在の生活",
+    "家族の形とその影響",
+    "不妊治療と家族の未来"
+  ],
+  "subtitle_candidates": [
+    "選択の重みとその後の生活"
+  ],
+  "sections": [
+    {
+      "internal_id": "section1",
+      "public_heading": "家族の形成",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact4",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "45歳のとき、不妊治療を経て子どもを授かった。これは私の人生における重要な出来事であり、私の家族の形を決定づけるものであった。その後、私は妻と息子と三人で暮らす選択をした。この選択によって、現在も妻と息子との三人家族で暮らし、自分の会社を経"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact3",
+        "fact6"
+      ],
+      "contains_inference": false,
+      "text_preview": "一方で、私は時折、二人目を持っていたらどうだったかと考えることがある。この思考は、過去の選択と現在の生活の間にまだ接続しきれていないものが残っていることを示している。私の選択肢の中には、不妊治療を諦めることもあったが、それを選ばなかったこと"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [
+      {
+        "excerpt": "これは私の人生における重要な出来事であり、私の家族の形を決定づけるものであった。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      },
+      {
+        "excerpt": "この選択によって、現在も妻と息子との三人家族で暮らし、自分の会社を経営している。",
+        "causality_strength": 3,
+        "missing_support": "explicit_causal_evidence_absent",
+        "category": "unsupported"
+      }
+    ],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 353
+}

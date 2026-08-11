@@ -1,0 +1,59 @@
+Running Arm B live on staging...
+{
+  "B_ok": true,
+  "scores": {
+    "A": {
+      "factual_fidelity": 10,
+      "resume_density": 6.0,
+      "resume_flags": [
+        "org_enumeration",
+        "industry_enumeration"
+      ],
+      "thesis_strength": 4,
+      "temporal_depth": 7,
+      "structural_depth": 5,
+      "residue": 8,
+      "observatory": 3,
+      "rebranch": 3,
+      "title": 4,
+      "context_value_add": 8,
+      "life_being_read": "mixed",
+      "char_count": 342,
+      "logic_or_pack_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ]
+    },
+    "B": {
+      "factual_fidelity": 10,
+      "resume_density": 7.0,
+      "resume_flags": [
+        "org_enumeration",
+        "industry_enumeration",
+        "project_enumeration"
+      ],
+      "thesis_strength": 8,
+      "temporal_depth": 7,
+      "structural_depth": 5,
+      "residue": 7,
+      "observatory": 3,
+      "rebranch": 4,
+      "title": 8,
+      "context_value_add": 7,
+      "life_being_read": "summarized",
+      "char_count": 604,
+      "logic_or_pack_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ]
+    }
+  },
+  "prompt": "parallel-life-call-1-v1.1.1"
+}
+Wrote /Users/shirakotadashi/kosuke-protocol/kosuke-backend/e2e_reports/deep-reading-v1.1-context-pack/selection_compression_ab/SELECTION_COMPRESSION_AB_REPORT.md

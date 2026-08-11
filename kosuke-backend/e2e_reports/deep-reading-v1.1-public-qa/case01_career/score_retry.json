@@ -1,0 +1,87 @@
+{
+  "case_id": "case01_career",
+  "category": "career",
+  "title": "Career — NTT vs foreign firm",
+  "pipeline_ok": false,
+  "elapsed_s": 77.42,
+  "session_id": "f85d7eed-0a21-4b22-a2d1-1a6f4d6a40a1",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.7-exp",
+  "factual_fidelity": 7,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 1.5,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": true,
+  "protected_realization": false,
+  "residue_realization": true,
+  "rebranch_realization": true,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:chosen_path",
+    "thesis_closure_missing:chosen_path_structural_shift"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 1,
+  "confirmation_issues": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "残らなかった場所の物差し",
+  "body_excerpt": "## 分岐点\n二十八歳のとき、NTTに残るか、外資系企業へ移るかという分岐があった。ひとつの企業の内部で役割を重ねていく道と、企業を移る道が並んでいた。\n\n## 選んだ道\n選んだのは、別の企業へ移ることだった。確かに言えるのは、NTTに残る道ではなく、企業を移る道を歩んだということだ。\n\n## 選ばなかった人生\n残る側には、一企業の内部で役割を積み上げ続ける可能性があった。どのような役職や生活になったかを知る材料はない。ただ、同じ組織で仕事を続ける道が、選ばれなかった道として残っている。\n\n## 失ったもの\nその道を離れたことで、一つの制度のなかで時間を重ね、その積み重ねを確かめていく連続性は手放された、と見ることはできる。役職や評価、関係の具体的なあり方までは推測できない。けれど、同じ場にとどまることには、時間の重なりを同じ物差しで見続ける面がある。\n\n## 守られたもの\n現在は自分の会社を経営し、複数の仕事をしている。その現在は、一つの所属だけでは捉えきれない。ただし、これを二十八歳の転職の結果だと直接結びつける材料はない。\n\n## 今に残った構造\nその後にいくつかの場を経験し、現",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 2,
+    "分岐": 4,
+    "選択": 1
+  },
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "deep_reading_mode": "contextual",
+      "schema_version": "parallel-life-runtime-v1.1.7-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.7-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.7-exp",
+      "context_pack_enabled_meta": true
+    },
+    "confirm": {
+      "status": 200
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200,
+      "session_status": "validation_failed",
+      "publishable": false,
+      "blocking_reasons": [
+        "required_section_unrealized:chosen_path",
+        "thesis_closure_missing:chosen_path_structural_shift"
+      ],
+      "final_title": "残らなかった場所の物差し",
+      "final_subtitle": ""
+    }
+  },
+  "pipeline_error": false,
+  "retried": true
+}

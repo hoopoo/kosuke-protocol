@@ -1,0 +1,70 @@
+{
+  "body_markdown": "25歳くらいの時期に東京に出て、東京で暮らした。いまも東京に住んでいる。東京へ出た時期と現在の生活は、そのまま一続きに置かれている。その間に何があったかはここでは語られていないが、過去の移動と現在の居住のあいだには、まだ接続しきれていないものが残っている。\n\n当時には、特に考えていなかった道がある。ただし、それがどのような内容だったのか、地元に残ることを当時どの程度具体的に考えていたのかは確認できない。だから、25歳くらいの時期に東京へ出たことと、いま浮かんでいる地元の問いを、ひとつの明確な選択の物語として結びつける材料はない。\n\nそれでも現在、「地元に残っていたら違ったのかな」という問いがある。東京で暮らし、今も東京に住んでいるという現在の生活のそばに、その問いは置かれている。答えは示されていない。地元に残った場合の暮らしも、東京での生活との違いも、ここからは確定できない。ただ、東京に出た25歳くらいの時期と、いま東京に住む日々のあいだに、その問いが残っている。\n",
+  "title_candidates": [
+    "東京に出た時期と、いまの問い",
+    "いまも東京に住んでいる",
+    "地元に残っていたら"
+  ],
+  "subtitle_candidates": [
+    "25歳くらいで東京に出たことと、現在の生活のそばにある問い"
+  ],
+  "sections": [
+    {
+      "internal_id": "main",
+      "public_heading": "",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "地元に残る場合の具体的な生活、場所、活動について確認済みの材料がないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact5"
+      ],
+      "contains_inference": true,
+      "text_preview": "25歳くらいの時期に東京に出て、東京で暮らした。いまも東京に住んでいる。東京へ出た時期と現在の生活は、そのまま一続きに置かれている。その間に何があったかはここでは語られていないが、過去の移動と現在の居住のあいだには、まだ接続しきれていないも"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact1",
+        "fact3",
+        "fact4"
+      ],
+      "contains_inference": false,
+      "text_preview": "当時には、特に考えていなかった道がある。ただし、それがどのような内容だったのか、地元に残ることを当時どの程度具体的に考えていたのかは確認できない。だから、25歳くらいの時期に東京へ出たことと、いま浮かんでいる地元の問いを、ひとつの明確な選択"
+    },
+    {
+      "paragraph_id": "p03",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact4",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "それでも現在、「地元に残っていたら違ったのかな」という問いがある。東京で暮らし、今も東京に住んでいるという現在の生活のそばに、その問いは置かれている。答えは示されていない。地元に残った場合の暮らしも、東京での生活との違いも、ここからは確定で"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 438
+}

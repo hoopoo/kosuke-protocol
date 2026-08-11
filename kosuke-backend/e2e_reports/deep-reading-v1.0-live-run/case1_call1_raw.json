@@ -1,0 +1,67 @@
+{
+  "grounded_input": {
+    "explicit_fact": [
+      "45歳のとき、不妊治療を経て子どもを授かった。",
+      "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+      "選ばなかった道は、不妊治療を諦めることだった。",
+      "現在も妻と息子との三人家族で暮らし、自分の会社を経営している。",
+      "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。"
+    ],
+    "user_feeling": [
+      "今も、二人目を持っていたらどうだったかと考えることがある。"
+    ]
+  },
+  "input_sufficiency": true,
+  "branch_structure": {
+    "actual_secondary_branch": [],
+    "retrospective_counterfactual": [
+      "不妊治療を諦めることを選んでいた場合の人生"
+    ]
+  },
+  "central_thesis": "選択した人生と選ばなかった道の対比を通じて、家族との関係や自己実現について考察する。",
+  "lost_structure": {
+    "unexplored_paths": [
+      "二人目を持っていた場合の人生"
+    ]
+  },
+  "protected_structure": {
+    "current_life": "妻と息子との三人家族での生活と会社経営"
+  },
+  "residue_candidates": [],
+  "evaluated_observatory_lenses": [],
+  "selected_observatory_lenses": [],
+  "editorial_outline": [
+    {
+      "section_title": "選択した人生",
+      "content": [
+        "不妊治療を経て子どもを授かった経緯",
+        "妻と息子との三人家族の生活",
+        "自分の会社を経営することの意義"
+      ]
+    },
+    {
+      "section_title": "選ばなかった道",
+      "content": [
+        "不妊治療を諦める選択について",
+        "その選択がもたらした可能性"
+      ]
+    },
+    {
+      "section_title": "感情の反映",
+      "content": [
+        "息子への愛情",
+        "息子の友人との交流の楽しさ",
+        "二人目を持っていた場合の思索"
+      ]
+    }
+  ],
+  "rebranch_design": {
+    "source_meaning": "選択とその結果に対する内面的な探求",
+    "current_receiver": "家族の重要性や選択の影響を考える読者",
+    "branch_specific_form": "選択の影響を深く掘り下げる",
+    "support_ids": [],
+    "genericity_score": 0
+  },
+  "additional_questions": [],
+  "user_confirmation_view": true
+}

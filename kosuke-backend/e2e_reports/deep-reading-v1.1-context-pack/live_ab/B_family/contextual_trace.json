@@ -1,0 +1,71 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+  "pack_fact_ids": [
+    "pack_current_creative_activity_003",
+    "pack_current_work_002",
+    "pack_family_context_001"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_family_context_001",
+      "content": "妻と息子との三人家族で暮らしている",
+      "tags": [
+        "context_pack",
+        "category:family_context",
+        "pack_id:pack_live_20260808T024802Z_7953",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_work_002",
+      "content": "現在は自分の会社を経営している",
+      "tags": [
+        "context_pack",
+        "category:current_work",
+        "pack_id:pack_live_20260808T024802Z_7953",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_creative_activity_003",
+      "content": "文章やプロトコルの制作を続けている",
+      "tags": [
+        "context_pack",
+        "category:current_creative_activity",
+        "pack_id:pack_live_20260808T024802Z_7953",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T024802Z_7953",
+    "pack_fact_ids": [
+      "pack_current_creative_activity_003",
+      "pack_current_work_002",
+      "pack_family_context_001"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": []
+  },
+  "residue": [
+    {
+      "statement": "「45歳のとき、不妊治療を経て子どもを授かった。」を振り返る問いは、「現在も妻と息子との三人家族で暮らしている。」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact_1"
+      ],
+      "present_anchor_ids": [
+        "fact_4"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "家族との生活と仕事の両立について考える",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

@@ -1,0 +1,394 @@
+{
+  "case_id": "case06_entrepreneurship",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.10-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.9-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+      "branch_semantics": {
+        "domain": "career",
+        "changed_dimension": "所有と安定／リスクへの露出",
+        "chosen_structure": "会社を辞めて自分の会社を始めること",
+        "unchosen_structure": "会社員として残ること",
+        "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+        "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+        "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+        "present_residue": "「会社に残っていたら、どのような人生だったのか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+        "possible_rebranch_modes": [
+          "observe",
+          "leave_unresolved",
+          "reconsider"
+        ],
+        "sensitive_boundaries": [],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "pack_current_projects_003",
+          "fact_005"
+        ],
+        "confidence": 0.8166666666666667,
+        "diagnostics": {
+          "domain_reasons": [
+            "entrepreneurship:ownership",
+            "career:branch_employment"
+          ],
+          "branch_employment_evidence": true,
+          "background_employment_context": true,
+          "explicit_employment_evidence": true,
+          "allows_career_product_logic": true,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": [],
+        "exit_reason": null
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "infinite_loop_suspected": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ],
+    "exit_reason": null
+  },
+  "safe_stop": false,
+  "session_id": "bfdf552e-9784-4004-b7be-232ec2223dff",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.10-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_projects_003",
+      "pack_current_work_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "会社を辞めて起業した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093644Z_8479",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "小さな会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T093644Z_8479",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_003",
+        "content": "顧客向けの制作を続けている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T093644Z_8479",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T093644Z_8479",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_current_projects_003",
+        "pack_current_work_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「33歳のとき、会社を辞めて起業するかを選ぶ分岐があった」を振り返る問いは、「現在は、小さな会社を経営し、顧客向けの制作を続けている」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "起業の選択は不安を伴うが、成長の機会も提供する",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "会社の場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "career",
+    "changed_dimension": "所有と安定／リスクへの露出",
+    "chosen_structure": "会社を辞めて自分の会社を始めること",
+    "unchosen_structure": "会社員として残ること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「会社に残っていたら、どのような人生だったのか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "pack_current_projects_003",
+      "fact_005"
+    ],
+    "confidence": 0.8166666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "entrepreneurship:ownership",
+        "career:branch_employment"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.9-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.10-exp",
+    "pack_fact_ids": [
+      "pack_career_history_001",
+      "pack_current_projects_003",
+      "pack_current_work_002"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_career_history_001",
+        "content": "会社を辞めて起業した",
+        "tags": [
+          "context_pack",
+          "category:career_history",
+          "pack_id:pack_live_20260808T093644Z_8479",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "小さな会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T093644Z_8479",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_projects_003",
+        "content": "顧客向けの制作を続けている",
+        "tags": [
+          "context_pack",
+          "category:current_projects",
+          "pack_id:pack_live_20260808T093644Z_8479",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T093644Z_8479",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_current_projects_003",
+        "pack_current_work_002"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_career_history_001",
+        "pack_current_work_002"
+      ]
+    },
+    "residue": [
+      {
+        "statement": "「33歳のとき、会社を辞めて起業するかを選ぶ分岐があった」を振り返る問いは、「現在は、小さな会社を経営し、顧客向けの制作を続けている」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "起業の選択は不安を伴うが、成長の機会も提供する",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "会社の場で、緊張がどう残るかを、まず見ておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_career_history_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "career",
+    "changed_dimension": "所有と安定／リスクへの露出",
+    "chosen_structure": "会社を辞めて自分の会社を始めること",
+    "unchosen_structure": "会社員として残ること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「会社に残っていたら、どのような人生だったのか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "pack_current_projects_003",
+      "q_confirm_001"
+    ],
+    "confidence": 0.8166666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "entrepreneurship:ownership",
+        "career:branch_employment"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "manuscript": {
+    "title": "33歳の分岐と、現在の会社",
+    "body_markdown": "## 分岐点\n\n33歳のとき、会社を辞めて起業するかを選ぶ分かれ目があった。それは勤務先を替える一点の決定というより、安定のなかに留まることと、自分で事業を持ちリスクにさらされることとの境界だった。\n\n## 選んだ道\n\n選んだのは、会社を辞めて自分の会社を始めることだった。振り返れば、会社員として残ることから、所属が変わるたびに自分の仕事を定義し直す道へ移ったことになる。この移り方が、会社に残っていた場合を考える現在の問いの起点にもなっている。\n\n## 選ばなかった人生\n\n選ばなかった道は、会社員として残ることだった。その先の肩書きや暮らしについては、ここに材料がない。会社員として残るという可能性を、具体化しないまま置いておく。閉じたのは、同じ制度の時間のなかで、自分がどこまで進んだかを確かめ続ける道だった。会社員として残っていれば得られたはずの何かを数え上げることではなく、同じ物差しに自分を置き続ける連続が失われた、ということになる。\n\n## 失ったもの\n\n閉じたのは、同じ制度の時間のなかで、自分がどこまで進んだかを確かめ続ける道だった。会社員として残っていれば得られたはずの何かを数え上げることではなく、同じ物差しに自分を置き続ける連続が失われた、ということになる。\n\n## 守られたもの\n\n自分の会社を始め、現在はそれを経営している。この事実は、仕事を一つの所属だけで記述しない現在を示している。そこに自由や成功といった意味を付け加えることはしない。\n\n## 今に残った構造\n\n「会社に残っていたら、いまの不安は少なかったか」と考えることがある。33歳の分岐を振り返る問いは、小さな会社を経営し、顧客向けの制作を続けている現在と並べて読むことができる。会社員として残る道が不安を少なくしたかどうかは分からない。それでも、二つの道を並べると、選ばれなかった可能性は現在の問いの外に消えてはいない。\n\n## これからの再分岐\n\nすぐに結論を出さなくてよい。緊張がどう残るかを、まず見ておく余地がある。いまも残る問いは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n\n"
+  },
+  "elapsed_s": 57.15,
+  "branch_semantics_final": {
+    "domain": "career",
+    "changed_dimension": "所有と安定／リスクへの露出",
+    "chosen_structure": "会社を辞めて自分の会社を始めること",
+    "unchosen_structure": "会社員として残ること",
+    "central_tension": "一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだ",
+    "lost_verifiability": "「会社員として残ること」を取らなかったことで、同じ制度の時間のなかで進度を確かめ続ける道が閉じたこと",
+    "protected_possibility": "一つの所属に人生の尺度を固定しきらず、仕事を別の言葉で置き直す余白",
+    "present_residue": "「会社に残っていたら、どのような人生だったのか」がいまも残るのは、一制度のなかで進み具合を測る物差しと、場を移しながら持ち運ぶ積み重ねのあいだが消えていないからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "leave_unresolved",
+      "reconsider"
+    ],
+    "sensitive_boundaries": [],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_career_history_001",
+      "pack_current_work_002",
+      "pack_current_projects_003",
+      "q_confirm_001"
+    ],
+    "confidence": 0.8166666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "entrepreneurship:ownership",
+        "career:branch_employment"
+      ],
+      "branch_employment_evidence": true,
+      "background_employment_context": true,
+      "explicit_employment_evidence": true,
+      "allows_career_product_logic": true,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "qa_version": "v1.1.10-exp"
+}

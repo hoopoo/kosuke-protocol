@@ -1,0 +1,372 @@
+{
+  "case_id": "case02_family",
+  "arm": "public_qa_v118",
+  "mode": "contextual",
+  "ok": true,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "family",
+        "changed_dimension": "家族のかたち／身体と治療の選択",
+        "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+        "unchosen_structure": "二人目を目指して治療を続けること",
+        "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+        "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+        "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+        "present_residue": "「二人目を持つことへの思いが、今後の選択にどのように影響を与えるか。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+        "possible_rebranch_modes": [
+          "leave_unresolved",
+          "preserve",
+          "observe"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect",
+          "no_family_outcome_invention"
+        ],
+        "evidence_ids": [
+          "fact_001",
+          "fact_002",
+          "fact_003",
+          "fact_004",
+          "pack_family_context_001",
+          "pack_current_work_002",
+          "fact_005"
+        ],
+        "confidence": 0.95,
+        "diagnostics": {
+          "domain_reasons": [
+            "family:fertility_or_child",
+            "family:family_words",
+            "health:body_health",
+            "entrepreneurship:ownership"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  },
+  "clarification": {
+    "rounds": [
+      {
+        "round": 0,
+        "action": "approve",
+        "http": 200,
+        "resp_status": "ready_for_draft",
+        "clarification_required": false,
+        "questions": []
+      }
+    ],
+    "http_400_on_needs_additional_input": false,
+    "duplicate_questions": [],
+    "schema_leakage": false,
+    "continued_after_clarification": false,
+    "final_status": "ready_for_draft",
+    "clarification_required_flags": [
+      false
+    ]
+  },
+  "safe_stop": false,
+  "session_id": "98546eac-78f1-4d90-b7a6-5ff32cc69256",
+  "trace_after_ground": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_current_work_002",
+      "pack_family_context_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_family_context_001",
+        "content": "妻と息子との三人家族で暮らしている",
+        "tags": [
+          "context_pack",
+          "category:family_context",
+          "pack_id:pack_live_20260808T073749Z_4815",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T073749Z_4815",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T073749Z_4815",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考え」を振り返る問いは、「現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "家族の場で、未解決のまま置いておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_ground": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+    "unchosen_structure": "二人目を目指して治療を続けること",
+    "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+    "present_residue": "「二人目を持つことへの思いが、今後の選択にどのように影響を与えるか。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_family_context_001",
+      "pack_current_work_002",
+      "fact_005"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "health:body_health",
+        "entrepreneurship:ownership"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "trace_after_confirm": {
+    "deep_reading_mode": "contextual",
+    "call1_prompt_version": "parallel-life-call-1-v1.1.8-exp",
+    "runtime_schema_version": "parallel-life-runtime-v1.1.8-exp",
+    "pack_fact_ids": [
+      "pack_current_work_002",
+      "pack_family_context_001"
+    ],
+    "pack_facts": [
+      {
+        "id": "pack_family_context_001",
+        "content": "妻と息子との三人家族で暮らしている",
+        "tags": [
+          "context_pack",
+          "category:family_context",
+          "pack_id:pack_live_20260808T073749Z_4815",
+          "live_ab_approved"
+        ]
+      },
+      {
+        "id": "pack_current_work_002",
+        "content": "現在は自分の会社を経営している",
+        "tags": [
+          "context_pack",
+          "category:current_work",
+          "pack_id:pack_live_20260808T073749Z_4815",
+          "live_ab_approved"
+        ]
+      }
+    ],
+    "context_pack_usage": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T073749Z_4815",
+      "pack_fact_ids": [
+        "pack_current_work_002",
+        "pack_family_context_001"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": []
+    },
+    "residue": [
+      {
+        "statement": "「45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考え」を振り返る問いは、「現在は、妻と息子との三人家族で暮らし、自分の会社を経営している。」という現在の生活と並べて読むことができる",
+        "past_anchor_ids": [
+          "fact_001"
+        ],
+        "present_anchor_ids": [
+          "fact_004"
+        ],
+        "pack_ids_used": []
+      }
+    ],
+    "central_thesis": "身体とケアの時間のなかで分岐が生きられたという個人の分岐を、分岐は思考上の選択だけでなく、疲れ・回復・ケアなど身体で経験された時間でもあると並べて読むことができる。",
+    "thesis_mentions_pack_content": false,
+    "observatory_selected": [],
+    "rebranch": [
+      {
+        "id": "rebranch_semantics_001",
+        "branch_specific_form": "家族の場で、未解決のまま置いておく",
+        "current_receiver": "現在の生活で、この緊張をどう置くか",
+        "support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002",
+          "fact_001"
+        ],
+        "pack_support_ids": [
+          "pack_family_context_001",
+          "pack_current_work_002"
+        ]
+      }
+    ]
+  },
+  "branch_semantics_after_confirm": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+    "unchosen_structure": "二人目を目指して治療を続けること",
+    "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+    "present_residue": "「二人目を持つことへの思いが、今後の選択にどのように影響を与えるか。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_family_context_001",
+      "pack_current_work_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "health:body_health",
+        "entrepreneurship:ownership"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "manuscript": {
+    "title": "三人で暮らす現在と、残る問い",
+    "body_markdown": "## 分岐点\n\n45歳のとき、不妊治療を経て子どもを授かったあと、二人目を目指すかを考えた。妻と息子と三人で暮らす人生を続ける道と、二人目を目指して治療を続ける道があった。\n\n## 選んだ道\n\n妻と息子と三人で暮らす人生を続ける道を選んだ。現在も、妻と息子との三人家族で暮らしている。\n\n## 選ばなかった人生\n\n選ばなかったのは、二人目を目指して治療を続ける道だった。その先にどのような家族の暮らしがあったかを、ここから書き足すことはできない。\n\n## 失ったもの\n\n二人目を目指して治療を続ける道は、選ばれなかった。そこにありえた結果を、現在の事実として確かめることはできない。\n\n## 守られたもの\n\nいま、妻と息子との三人家族で暮らしている。この家族のかたちは、選択の正しさや優劣を示すものではない。いま目の前にある事実である。\n\n## 今に残った構造\n\nいまも、「二人目を持っていたらどうだったか」と考えることがある。不妊治療を経て二人目を目指すかを考えた過去と、三人家族で暮らし、自分の会社を経営している現在を、並べて見ることができる。その問いは、現在の生活を否定するものではなく、生活とともに残っている。\n\n## 社会との接続\n\n不妊治療を経たこの分岐は、考えの上だけの選択には収まらない。治療を経た時間を含む出来事として読むと、家族のかたちをめぐる判断には、言葉になりきらない部分も残る。\n\n## これからの再分岐\n\nいまこの問いに一つの答えを固定しなくてよい。未解決のまま置いておく余地がある。\n\nいまも残る問いは、「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだとして並んでいる。そのそばで、現在の読み方を少しだけ置き直すことができる。\n"
+  },
+  "elapsed_s": 63.68,
+  "branch_semantics_final": {
+    "domain": "family",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "妻と息子と三人で暮らす人生を続けること",
+    "unchosen_structure": "二人目を目指して治療を続けること",
+    "central_tension": "「妻と息子と三人で暮らす人生を続けること」側の家族のかたちと、「二人目を目指して治療を続けること」側の未実現の家族想像のあいだ",
+    "lost_verifiability": "「二人目を目指して治療を続けること」側にあった家族のかたちを、いまから確かめる道が閉じたこと",
+    "protected_possibility": "「妻と息子と三人で暮らす人生を続けること」を取った側に残った、いまの家族のかたちを壊さずに置く余白（妻と息子との三人家族で暮らしている）",
+    "present_residue": "「二人目を持つことへの思いが、今後の選択にどのように影響を与えるか。」がいまも残るのは、選ばなかった家族のかたちが想像として開いているからかもしれない",
+    "possible_rebranch_modes": [
+      "leave_unresolved",
+      "preserve",
+      "observe"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect",
+      "no_family_outcome_invention"
+    ],
+    "evidence_ids": [
+      "fact_001",
+      "fact_002",
+      "fact_003",
+      "fact_004",
+      "pack_family_context_001",
+      "pack_current_work_002",
+      "q_confirm_001"
+    ],
+    "confidence": 0.95,
+    "diagnostics": {
+      "domain_reasons": [
+        "family:fertility_or_child",
+        "family:family_words",
+        "health:body_health",
+        "entrepreneurship:ownership"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  }
+}

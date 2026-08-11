@@ -1,0 +1,9 @@
+[PASS] healthz: {"status": "ok", "deep_reading_enabled": true, "env": "production"}
+[PASS] A_standard_happy: {"status": 200, "keys": ["title", "subtitle", "branch_point", "chosen_path", "unchosen_life", "lost", "protected", "residue", "observatory_layers", "cross_lens_synthesis", "rebranch", "closing"]}
+[PASS] B_deep_reading_happy: {"session_id": "20d90885-8b39-4018-9b40-7ebab84cd39b", "draft": 200, "edit": 200, "status": "complete"}
+[PASS] F_session_persistence: {"session_get": 200, "confirm": 200, "draft": 200, "edit": 200}
+[PASS] C_case09_contradiction: {"ground": 200, "status": "needs_additional_input", "confirm_blocked": true}
+[PASS] D_case10_vague_branch: {"ground": 200, "status": "structural_ambiguity", "ambiguous": true}
+[PASS] E_kill_switch_probe_enabled: {"enabled": true}
+
+Wrote e2e_reports/deep-reading-cloudflare-production/pre_dns_smoke/RESULTS.json

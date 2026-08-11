@@ -1,0 +1,220 @@
+{
+  "id": "case4",
+  "title": "Creative work vs corporate career",
+  "started_at": "2026-08-07T01:59:17.581536+00:00",
+  "errors": [],
+  "call1": {
+    "session_id": "253e75f2-dec3-416c-bbd2-0dab80f7cc17",
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.1",
+    "schema_version": "parallel-life-call-1-schema-v1.0.1",
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "central_thesis": "創作中心の人生を選ばなかったことが、現在の職業選択に影響を与えている。",
+    "actual_secondary_count": 0,
+    "actual_secondary_descriptions": [],
+    "retrospective_counterfactuals": [
+      "創作中心なら今とは違う人生だったかと考えることがある。"
+    ],
+    "questions": [
+      "創作中心なら今とは違う人生だったかと考えることがある。"
+    ],
+    "selected_lenses": [],
+    "rebranch_directions": [],
+    "residue": [],
+    "confirmation_view": {
+      "branch_period": "現在",
+      "triggering_event": "会社員として複数業界で働いてきた。",
+      "chosen_path": "企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。",
+      "unchosen_path": "創作を中心にした人生",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "創作中心なら今とは違う人生だったかと考えることがある。"
+      ],
+      "present_questions": [
+        "創作中心なら今とは違う人生だったかと考えることがある。"
+      ],
+      "current_context": [
+        "現在は企業での経験を持ちつつ、観測サイトや文章、プロトコルを制作している。"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "創作中心の人生を選ばなかったことが、現在の職業選択に影響を与えている。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    }
+  },
+  "confirmation": {
+    "status": "ready_for_draft",
+    "confirmed_by_user": true,
+    "timestamp": "2026-08-07T01:59:31.021990+00:00"
+  },
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0",
+    "character_count": 1263,
+    "title_candidates": [
+      "人生の選択とその影響",
+      "選ばなかった道の先に",
+      "創作と企業の狭間で",
+      "私の職業選択の軌跡",
+      "選択が形作る人生"
+    ],
+    "subtitle_candidates": [],
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "no_publishable_rebranch_candidates",
+    "observatory_omitted": true,
+    "analysis": {
+      "char_count": 1264,
+      "heading_count": 7,
+      "chapter_by_chapter_feel": true,
+      "unsupported_scenes": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "人生の選択とその影響",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact2"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": false,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed"
+      ]
+    }
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0",
+    "status": "validation_failed",
+    "final_title": "人生の選択とその影響",
+    "final_subtitle": "",
+    "character_count": 1264,
+    "validation_from_runtime": {
+      "unsupported_scenes": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "人生の選択とその影響",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact2"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": false,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed"
+      ]
+    },
+    "independent_gate": {
+      "unsupported_scenes": [],
+      "generic_advice_findings": [],
+      "rebranch_validations": [],
+      "title_validation": {
+        "selected_title": "人生の選択とその影響",
+        "selected_subtitle": "",
+        "title_supported_by_fact_ids": [
+          "fact2"
+        ],
+        "title_supported_by_central_thesis": true,
+        "title_introduces_new_unverified_theme": false,
+        "title_factual_consistency": true,
+        "title_overdramatizes_unchosen_life": false,
+        "title_matches_final_closing": true,
+        "passed": true,
+        "notes": []
+      },
+      "contradictions": [],
+      "questions_converted_to_facts": [],
+      "hypotheses_converted_to_facts": [],
+      "protections_stated_as_facts": [],
+      "unknowns_filled_by_model": [],
+      "sentence_fragments": [],
+      "copied_long_input_segments": [],
+      "central_thesis_maintained": true,
+      "residue_centrality": false,
+      "observatory_takeover": false,
+      "closing_returns_to_present": true,
+      "publishable": false,
+      "blocking_reasons": [
+        "residue_centrality_failed"
+      ]
+    },
+    "analysis": {
+      "char_count": 1264,
+      "heading_count": 7,
+      "chapter_by_chapter_feel": true,
+      "unsupported_scenes": [],
+      "generic_advice": [],
+      "sentence_fragments": [],
+      "copied_long_segments": [],
+      "publishable_rebranch_count": 0
+    },
+    "named_entity_retention": {
+      "会社員": true,
+      "創作": true
+    },
+    "session_status": "validation_failed",
+    "publishable": false,
+    "final_manuscript_present": false
+  },
+  "machine_pass_hints": {
+    "complete_and_publishable": false,
+    "blocking_reasons": [
+      "residue_centrality_failed"
+    ],
+    "independent_blocking": [
+      "residue_centrality_failed"
+    ]
+  },
+  "finished_at": "2026-08-07T01:59:46.386228+00:00"
+}

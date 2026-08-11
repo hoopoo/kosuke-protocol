@@ -1,0 +1,159 @@
+{
+  "case_id": "case04_romance",
+  "category": "romance / relationship",
+  "title": "Romance — breakup branch",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 47.54,
+  "session_id": "f69d3c91-1e5f-4855-8af1-280fa5e4017d",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.9-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.11-exp",
+  "branch_semantics": {
+    "domain": "romance",
+    "changed_dimension": "関係の継続／別れ",
+    "chosen_structure": "別れること",
+    "unchosen_structure": "一緒にいること",
+    "central_tension": "「別れること」側の単独の連続と、「一緒にいること」側の関係の連続のあいだ",
+    "lost_verifiability": "「一緒にいること」として続いていた関係の生活を、いま知る手がかりが残らないこと",
+    "protected_possibility": "「別れること」を取った側に残った、一人の生活を閉じきらずに続ける余地",
+    "present_residue": "「別れた後の人生はどうなっていたのか？」がいまも残るのは、関係の続き方についての未解決の想像が残るからかもしれない",
+    "possible_rebranch_modes": [
+      "observe",
+      "revisit",
+      "leave_unresolved",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_invented_affect",
+      "no_reunion_advice"
+    ],
+    "evidence_ids": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "pack_major_life_events_001",
+      "q_confirm_001"
+    ],
+    "confidence": 0.8666666666666667,
+    "diagnostics": {
+      "domain_reasons": [
+        "romance:relationship"
+      ],
+      "branch_employment_evidence": false,
+      "background_employment_context": false,
+      "explicit_employment_evidence": false,
+      "allows_career_product_logic": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.9-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "YES",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 3,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": false,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [],
+    "selected": [],
+    "evidence_ids": [],
+    "structures": [],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": true,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "PASS",
+  "final_title": "「あのまま」を残して暮らす",
+  "body_excerpt": "## 分岐点\n\n20代後半に、長く付き合っていた人と別れた。その出来事は、ただ関係が終わった一点というより、「別れること」と「一緒にいること」の二つの続き方が分かれた境界だった。\n\n## 選んだ道\n\n実際に選ばれたのは、別れることだった。関係を継続する生活から離れたことで、暮らしは単独で続くかたちへ移っていったのだと思う。その移り方は、いまも「あのままだったらどうなっていたか」という問いと、現在の一人暮らしを並べている。\n\n## 選ばなかった人生\n\n選ばなかったのは、一緒にいることだった。その先にどのような日々があったのかは、わからない。わからないまま、一緒にいることは別の可能性として残る。\n\n## 失ったもの\n\n別れによって、一緒にいることの先を自分の経験として知ることはできなくなった。そこにどんな暮らしがあったはずかを、ここで書き足すことはできない。残るのは、続かなかった関係の先が確かめられないということだけである。\n\n## 守られたもの\n\nいま一人で普通に暮らしているという事実は、現在の生活としてある。それを別れの正しさや、一人でいることの優位の証明にする必要はない。ただ、別れた",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 2,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "semantic_domain_leak": {
+    "leaked": false,
+    "hits": [],
+    "domain": "romance",
+    "changed_dimension": "関係の継続／別れ",
+    "authority": "non_career_guard"
+  },
+  "realization_taxonomy": {
+    "applicable": false
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": "zero_selected_observatory_lenses",
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [
+      "分岐点",
+      "選んだ道",
+      "選ばなかった人生",
+      "失ったもの",
+      "守られたもの",
+      "今に残った構造",
+      "これからの再分岐"
+    ],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": "sufficient_for_deep_reading"
+  },
+  "editorial_target": {
+    "target": "branch_point",
+    "ok": true,
+    "excerpt": "20代後半に、長く付き合っていた人と別れた。その出来事は、ただ関係が終わった一点というより、「別れること」と「一緒にいること」の二つの続き方が分かれた境界だった。"
+  },
+  "track_a_regressions": []
+}

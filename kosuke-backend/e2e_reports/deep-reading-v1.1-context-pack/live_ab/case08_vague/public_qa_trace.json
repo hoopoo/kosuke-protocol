@@ -1,0 +1,24 @@
+{
+  "deep_reading_mode": "strict",
+  "call1_prompt_version": "parallel-life-call-1-v1.0.3",
+  "runtime_schema_version": "parallel-life-runtime-v1.0.6",
+  "pack_fact_ids": [],
+  "pack_facts": [],
+  "context_pack_usage": {},
+  "residue": [
+    {
+      "statement": "「二十代のどこかのとき、何か選んだ気がするという分岐があった。」を振り返る問いは、「現在は、今も普通に暮らしている。」という現在の生活と並べて読むことができる",
+      "past_anchor_ids": [
+        "fact1"
+      ],
+      "present_anchor_ids": [
+        "fact4"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "過去の選択が現在の思考に影響を与えている。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

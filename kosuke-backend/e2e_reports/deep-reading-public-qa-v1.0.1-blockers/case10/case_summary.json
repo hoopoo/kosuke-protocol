@@ -1,0 +1,276 @@
+{
+  "id": "case10",
+  "title": "No real branch / vague life reflection",
+  "purpose": "do not invent branch from form fields",
+  "expect": [
+    "structural ambiguity or insufficient branch",
+    "no manufactured branch point",
+    "clarification preferable to manuscript"
+  ],
+  "fields": {
+    "branch_period": "特にない",
+    "triggering_event": "なんとなく今まで働いてきた",
+    "chosen_path": "今の人生",
+    "unchosen_path": "もっと自由な人生",
+    "present_question": "別の人生もあったのかな",
+    "current_context": "今も仕事をしている"
+  },
+  "source_text": "時期: 特にない\n出来事: なんとなく今まで働いてきた\n選んだ道: 今の人生\n選ばなかった道: もっと自由な人生\nいまの問い: 別の人生もあったのかな\nいまの状況: 今も仕事をしている",
+  "started_at": "2026-08-07T04:50:11.377250+00:00",
+  "errors": [],
+  "session_id": "1787613a-b710-431d-be5d-46efae8c5427",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": false,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": false
+    },
+    "gaps": [
+      "confirmation_timestamp",
+      "latency",
+      "token_usage",
+      "estimated_cost",
+      "publication_reached"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_3_model",
+      "candidate",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version"
+    ]
+  },
+  "call1": {
+    "status": "structural_ambiguity",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "特にない時期に、なんとなく今まで働いてきた。",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact2",
+        "content": "今の人生を選んだ。",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact3",
+        "content": "もっと自由な人生を選ばなかった。",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact5",
+        "content": "今も仕事をしている。",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact4",
+        "content": "別の人生もあったのかなという問いを持っている。",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "特にない",
+      "triggering_event": "なんとなく今まで働いてきた",
+      "available_paths": [
+        "今の人生"
+      ],
+      "realized_path": "今の人生",
+      "unrealized_paths": [
+        "もっと自由な人生"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_fact4",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "別の人生もあったのかなという問いを持っている。",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "residue": [],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [
+      "『別の人生もあったのかな』と思うきっかけになった、具体的な出来事や時期はありますか？",
+      "そのとき、実際に選べた別の道はありましたか？"
+    ],
+    "additional_required": true,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": [
+        "『別の人生もあったのかな』と思うきっかけになった、具体的な出来事や時期はありますか？",
+        "そのとき、実際に選べた別の道はありましたか？"
+      ]
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "特にない",
+      "triggering_event": "なんとなく今まで働いてきた",
+      "chosen_path": "今の人生",
+      "unchosen_path": "もっと自由な人生",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "別の人生もあったのかなという問いを持っている。"
+      ],
+      "present_questions": [
+        "別の人生もあったのかなという問いを持っている。"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "別の人生もあったのかなという問いを持っていることが、今の選択に影響を与えている。",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "central_thesis": "別の人生もあったのかなという問いを持っていることが、今の選択に影響を与えている。",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "residue:model_empty_assisted_from_anchors",
+        "residue:cleared_due_to_vague_branch",
+        "vague_branch:vague_period",
+        "vague_branch:vague_trigger",
+        "vague_branch:vague_chosen",
+        "vague_branch:vague_unchosen"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": false,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": false,
+    "outcome_bucket": "B_request_clarification",
+    "reasons_stop": [
+      "status=structural_ambiguity",
+      "additional_questions_required",
+      "no_validated_residue"
+    ],
+    "reasons_ok": [],
+    "contradiction_analysis": {
+      "input_level_contradiction": false,
+      "facts_contain_reject": false,
+      "facts_contain_join": false,
+      "silently_resolved_suspected": false,
+      "confirmation_items": []
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [
+      "『別の人生もあったのかな』と思うきっかけになった、具体的な出来事や時期はありますか？",
+      "そのとき、実際に選べた別の道はありましたか？"
+    ],
+    "clarification_count": 2,
+    "residue_count": 0,
+    "status": "structural_ambiguity"
+  },
+  "call2_reached": false,
+  "call3_reached": false,
+  "published": false,
+  "confirmation_approved": false,
+  "safe_stop": true,
+  "generation_should_proceed": false,
+  "abort_recorded": true,
+  "latency_ms_total": 18087,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 18075,
+      "prompt_tokens": 3813,
+      "completion_tokens": 1089,
+      "estimated_cost_usd": 0.001225,
+      "stage_hint": "call1"
+    }
+  ],
+  "estimated_cost_usd": 0.001225,
+  "finished_at": "2026-08-07T04:50:29.464866+00:00"
+}

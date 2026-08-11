@@ -1,0 +1,53 @@
+{
+  "case_id": "case01_career",
+  "category": "career",
+  "title": "Career — NTT vs foreign firm",
+  "pipeline_ok": false,
+  "elapsed_s": 41.12,
+  "session_id": null,
+  "call1_status": null,
+  "call1_prompt": null,
+  "call3_prompt": null,
+  "factual_fidelity": 10,
+  "naturalness": null,
+  "depth": null,
+  "life_read": "n/a",
+  "resume_density": 0,
+  "observatory_lenses": [],
+  "lens_count": 0,
+  "lenses_added_meaning": false,
+  "lost_realization": false,
+  "protected_realization": false,
+  "residue_realization": false,
+  "rebranch_realization": false,
+  "rebranch_omitted_valid": false,
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "unapproved_pack_use": false,
+  "pack_fact_count": 0,
+  "confirmation_issues": [
+    "confirm_failed"
+  ],
+  "hard_failures": [],
+  "classification": "INCOMPLETE",
+  "final_title": "",
+  "body_excerpt": "",
+  "abstract_vocab": {},
+  "pipeline_error": true,
+  "stages": {
+    "ground": {
+      "status": 500
+    }
+  }
+}

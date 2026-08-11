@@ -1,0 +1,61 @@
+{
+  "body_markdown": "### 30代後半にあった迷い\n\n30代後半、仕事を辞めようかと思っていた。辞めることも視野にありながら、結局はそのまま働いた。辞めることは実行されなかった。この時期について、いま「辞めていたらどうなっていたかな」という問いが置かれている。\n\nいまは別の仕事をしており、現在の生活がある。仕事を辞めなかった過去と、別の仕事をしている現在は並んでいるが、そのあいだを一つの因果関係として結びつける材料はない。それでも、辞めることを選ばなかった時点と現在の生活のあいだには、まだ接続しきれていないものが残っている。「辞めていたらどうなっていたかな」という問いは、その残りを急いで答えに変えず、現在の生活のそばに置かれている。\n",
+  "title_candidates": [
+    "辞めなかった仕事、その後に残る問い",
+    "30代後半の迷いと、いまの別の仕事",
+    "「辞めていたらどうなっていたかな」のそばで"
+  ],
+  "subtitle_candidates": [
+    "辞めなかった時点と現在の生活のあいだに残る、まだ接続しきれていないもの"
+  ],
+  "sections": [
+    {
+      "internal_id": "section_01",
+      "public_heading": "30代後半にあった迷い",
+      "included": true,
+      "char_count": 0
+    }
+  ],
+  "rebranch_candidates": [],
+  "rebranch_omitted_reason": "具体的な再検討対象となる名詞が、確認済みの記録には十分に示されていないため。",
+  "observatory_omitted": true,
+  "paragraph_support": [
+    {
+      "paragraph_id": "p01",
+      "support_ids": [
+        "fact1",
+        "fact2",
+        "fact3",
+        "fact5"
+      ],
+      "contains_inference": false,
+      "text_preview": "30代後半、仕事を辞めようかと思っていた。辞めることも視野にありながら、結局はそのまま働いた。辞めることは実行されなかった。この時期について、いま「辞めていたらどうなっていたかな」という問いが置かれている。"
+    },
+    {
+      "paragraph_id": "p02",
+      "support_ids": [
+        "fact3",
+        "fact4",
+        "fact5",
+        "ctx_001"
+      ],
+      "contains_inference": true,
+      "text_preview": "いまは別の仕事をしており、現在の生活がある。仕事を辞めなかった過去と、別の仕事をしている現在は並んでいるが、そのあいだを一つの因果関係として結びつける材料はない。それでも、辞めることを選ばなかった時点と現在の生活のあいだには、まだ接続しきれ"
+    }
+  ],
+  "diagnostics": {
+    "rebranch_validated": [],
+    "selected_lens_count": 0,
+    "unsupported_personal_details": [],
+    "unsupported_scenes": [],
+    "unsupported_causality": [],
+    "unsupported_causal_frame": [],
+    "schema_leakage_prose": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "unsupported_bio_paragraphs": [],
+    "paragraph_support_coverage": 1.0
+  },
+  "prompt_version": "parallel-life-call-2-v1.0.3",
+  "character_count": 310
+}

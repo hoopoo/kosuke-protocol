@@ -1,0 +1,84 @@
+{
+  "deep_reading_mode": "contextual",
+  "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+  "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+  "pack_fact_ids": [
+    "pack_current_creative_activity_002",
+    "pack_current_projects_003",
+    "pack_current_projects_004",
+    "pack_current_work_001"
+  ],
+  "pack_facts": [
+    {
+      "id": "pack_current_work_001",
+      "content": "現在は自分の会社を経営している",
+      "tags": [
+        "context_pack",
+        "category:current_work",
+        "pack_id:pack_live_20260808T025241Z_5281",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_creative_activity_002",
+      "content": "文章制作を行っている",
+      "tags": [
+        "context_pack",
+        "category:current_creative_activity",
+        "pack_id:pack_live_20260808T025241Z_5281",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_projects_003",
+      "content": "観測プロジェクトを進めている",
+      "tags": [
+        "context_pack",
+        "category:current_projects",
+        "pack_id:pack_live_20260808T025241Z_5281",
+        "live_ab_approved"
+      ]
+    },
+    {
+      "id": "pack_current_projects_004",
+      "content": "Protocol 関連の仕事をしている",
+      "tags": [
+        "context_pack",
+        "category:current_projects",
+        "pack_id:pack_live_20260808T025241Z_5281",
+        "live_ab_approved"
+      ]
+    }
+  ],
+  "context_pack_usage": {
+    "mode": "contextual",
+    "pack_id": "pack_live_20260808T025241Z_5281",
+    "pack_fact_ids": [
+      "pack_current_creative_activity_002",
+      "pack_current_projects_003",
+      "pack_current_projects_004",
+      "pack_current_work_001"
+    ],
+    "residue_present_anchor_ids": [],
+    "residue_past_anchor_ids": [],
+    "lens_explicit_evidence_ids": [],
+    "rebranch_support_ids": []
+  },
+  "residue": [
+    {
+      "statement": "創作中心の人生を選んでいた場合、現在のビジネス中心の人生とは異なる選択があったかもしれない。",
+      "past_anchor_ids": [
+        "fact_002"
+      ],
+      "present_anchor_ids": [
+        "fact_003",
+        "fact_004"
+      ],
+      "pack_ids_used": []
+    }
+  ],
+  "central_thesis": "創作中心の人生を選んでいた場合、現在の状況は大きく異なっていた可能性がある。",
+  "thesis_mentions_pack_content": false,
+  "observatory_selected": [],
+  "rebranch": []
+}

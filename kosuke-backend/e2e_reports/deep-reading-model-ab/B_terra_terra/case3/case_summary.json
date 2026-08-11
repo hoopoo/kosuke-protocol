@@ -1,0 +1,80 @@
+{
+  "config_id": "B_terra_terra",
+  "case_id": "case3",
+  "call2_model": "gpt-5.6-terra",
+  "call3_model": "gpt-5.6-terra",
+  "errors": [],
+  "final_title": "接続しきれていないものを残して",
+  "final_subtitle": "早稲田大学第一文学部と、選ばなかった別の大学のあいだで",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": []
+  },
+  "character_count": 260,
+  "latency_ms": {
+    "call2_wall": 8638,
+    "call3_wall": 5765,
+    "total_wall": 14403,
+    "sum_api_calls": 14381
+  },
+  "tokens": {
+    "prompt": 6864,
+    "completion": 1594,
+    "reasoning": 333,
+    "total": 8458
+  },
+  "estimated_cost_usd": 0.041069,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 8629,
+      "prompt_tokens": 3279,
+      "completion_tokens": 988,
+      "reasoning_tokens": 253,
+      "estimated_cost_usd": 0.023017,
+      "response_model": "gpt-5.6-terra"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 5752,
+      "prompt_tokens": 3585,
+      "completion_tokens": 606,
+      "reasoning_tokens": 80,
+      "estimated_cost_usd": 0.018052,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 8629,
+      "prompt_tokens": 3279,
+      "completion_tokens": 988,
+      "reasoning_tokens": 253,
+      "estimated_cost_usd": 0.023017,
+      "response_model": "gpt-5.6-terra"
+    }
+  ],
+  "body_preview": "19歳のとき、第一志望の早稲田大学第一文学部に合格した。別の大学へ進学することがあった。\n\n現在は、複数の業界を経験したあと、文章やプロトコルをまとめている。19歳の合格とこの現在を並べると、そのあいだには複数の業界を経た時間がある。\n\n別の大学へ進んでいたなら、仕事や人間関係はどう変わっていただろうかと考えることがある。別の大学での仕事や人間関係を具体的に語る材料はない。ただ、早稲田大学第一文学部に合格した19歳の時点と、文章やプロトコルをまとめている現在とのあいだには、まだ接続しきれていないものが残っている。\n"
+}

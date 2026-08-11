@@ -1,0 +1,369 @@
+{
+  "id": "case08",
+  "title": "Re-branch should probably be omitted",
+  "purpose": "rebranch restraint",
+  "expect": [
+    "no generic travel/write memories advice",
+    "omit Re-branch if no grounded receiver",
+    "no invented campus experience",
+    "no inferred family finance reason"
+  ],
+  "fields": {
+    "branch_period": "18歳",
+    "triggering_event": "進学先を決めた",
+    "chosen_path": "家から通える大学にした",
+    "unchosen_path": "地方の大学へ行く",
+    "present_question": "地方に行っていたら違ったかな",
+    "current_context": "今はその大学とは関係のない仕事をしている"
+  },
+  "source_text": "時期: 18歳\n出来事: 進学先を決めた\n選んだ道: 家から通える大学にした\n選ばなかった道: 地方の大学へ行く\nいまの問い: 地方に行っていたら違ったかな\nいまの状況: 今はその大学とは関係のない仕事をしている",
+  "started_at": "2026-08-07T04:53:57.014018+00:00",
+  "errors": [],
+  "session_id": "2949c836-40a0-4793-a1f1-9e555a7b2e78",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": true,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": true
+    },
+    "gaps": [
+      "latency",
+      "token_usage",
+      "estimated_cost"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_2_prompt_version",
+      "call_3_model",
+      "call_3_prompt_version",
+      "candidate",
+      "clarification_count",
+      "failure_category",
+      "final_status",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version",
+      "runtime_version"
+    ]
+  },
+  "call1": {
+    "status": "ready_for_user_confirmation",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact_1",
+        "content": "18歳の時に進学先を決めた",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact_2",
+        "content": "家から通える大学に進学した",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact_3",
+        "content": "地方の大学へ行くことを選ばなかった",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact_4",
+        "content": "今はその大学とは関係のない仕事をしている",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "question_1",
+        "content": "地方に行っていたら違ったかな",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "18歳",
+      "triggering_event": "進学先を決めた",
+      "available_paths": [
+        "家から通える大学にした",
+        "地方の大学へ行く"
+      ],
+      "realized_path": "家から通える大学にした",
+      "unrealized_paths": [
+        "地方の大学へ行く"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact_1",
+        "fact_2",
+        "fact_3",
+        "fact_4"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [
+      {
+        "id": "sec_auto_001",
+        "classification": "actual_secondary_branch",
+        "parent_branch_id": "primary",
+        "description": "時期:18歳出来事:進学先を決めた選んだ道:家から通える大学にした選ばなかった道:地方の大学へ行くいまの問い:地方に行",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [
+          "fact_1"
+        ],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": false
+      }
+    ],
+    "retrospective_counterfactuals": [],
+    "residue": [
+      {
+        "residue_statement": "「18歳の時に進学先を決めた」という過去の分岐のあとで、「現在の生活」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "content": "「18歳の時に進学先を決めた」という過去の分岐のあとで、「現在の生活」という現在の生活構造が続いており、そのあいだにまだ接続しきれていないものが残っている",
+        "past_anchor_ids": [
+          "fact_1"
+        ],
+        "present_anchor_ids": [
+          "ctx_001"
+        ],
+        "support_ids": [
+          "fact_1",
+          "ctx_001"
+        ],
+        "inference_distance": "near",
+        "present_life_domain": "present_life",
+        "overreach_risk": "low_structural_only",
+        "advances_manuscript": true
+      }
+    ],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [],
+    "additional_required": false,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": []
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "18歳",
+      "triggering_event": "進学先を決めた",
+      "chosen_path": "家から通える大学にした",
+      "unchosen_path": "地方の大学へ行く",
+      "actual_secondary_branches": [
+        "時期:18歳出来事:進学先を決めた選んだ道:家から通える大学にした選ばなかった道:地方の大学へ行くいまの問い:地方に行"
+      ],
+      "retrospective_counterfactuals": [],
+      "present_questions": [
+        "地方に行っていたら違ったかな"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "進学先を決める際の選択がその後の人生に影響を与えることを示す",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": []
+    },
+    "central_thesis": "進学先を決める際の選択がその後の人生に影響を与えることを示す",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [],
+      "source_coverage_missing": [],
+      "material_contradictions": [],
+      "material_contradiction_count": 0,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": false,
+      "sensitive_thesis_rejected": false
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": true,
+    "outcome_bucket": "A_proceed_to_confirmation",
+    "reasons_stop": [],
+    "reasons_ok": [
+      "ready_for_user_confirmation_with_residue"
+    ],
+    "contradiction_analysis": {
+      "input_level_contradiction": false,
+      "facts_contain_reject": false,
+      "facts_contain_join": false,
+      "silently_resolved_suspected": false,
+      "confirmation_items": []
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [],
+    "clarification_count": 0,
+    "residue_count": 1,
+    "status": "ready_for_user_confirmation"
+  },
+  "call2_reached": true,
+  "call3_reached": true,
+  "published": true,
+  "confirmation_approved": true,
+  "generation_should_proceed": true,
+  "safe_stop": false,
+  "call2": {
+    "prompt_version": "parallel-life-call-2-v1.0.3",
+    "character_count": 480,
+    "title_candidates": [
+      "18歳の進学先と、現在の生活",
+      "家から通う大学、地方という問い",
+      "行かなかった地方の大学を前にして"
+    ],
+    "observatory_omitted": true,
+    "rebranch_candidates": [],
+    "rebranch_omitted_reason": "将来の再検討先として扱える具体的な行動や選択肢の記録がないため。",
+    "soft_watch": [],
+    "body_preview": "18歳のとき、進学先を決めた。家から通える大学へ進学し、地方の大学へ行くことはなかった。その二つは同じ時期に並んでいた進路であり、ここで確認できるのは、その一方が日々通う大学になったということまでである。地方でどの大学に通い、どんな生活を送ったかについての記録はない。\n\n現在は、その大学とは関係のない仕事をしている。18歳で進学先を決めた時点から現在の生活までが続いている一方で、その間を一つの説明で結び切ることはできない。大学と現在の仕事のあいだに何があったのか、進学先が現在の仕事にどの程度関わるのかを示す材料もない。ただ、過去の進学先と、大学とは関係のない仕事をしている現在とが、同じ時間の並びに置かれている。\n\n「地方に行っていたら違ったかな」という問いは、その並びのなかに残る。違っていたものが仕事だったのか、暮らしだったのか、あるいは別の何かだったのかは定められていない。答えを補うことはできないが、18歳で家から通える大学へ進んだ記憶のそばに、地方の大学という行かなかった場所が残り、現在の生活とのあいだにはまだ接続しきれていないものがある。\n"
+  },
+  "call3": {
+    "prompt_version": "parallel-life-call-3-v1.0.3",
+    "status": "complete",
+    "final_title": "18歳の進学先と、現在の生活",
+    "final_subtitle": "大学とは関係のない仕事をしている現在から、18歳の進学先を見直す",
+    "character_count": 480,
+    "publishable": true,
+    "blocking_reasons": [],
+    "title_validation": {
+      "selected_title": "18歳の進学先と、現在の生活",
+      "selected_subtitle": "大学とは関係のない仕事をしている現在から、18歳の進学先を見直す",
+      "title_supported_by_fact_ids": [
+        "fact_1",
+        "fact_2"
+      ],
+      "title_supported_by_central_thesis": true,
+      "title_introduces_new_unverified_theme": false,
+      "title_factual_consistency": true,
+      "title_overdramatizes_unchosen_life": false,
+      "title_matches_final_closing": true,
+      "title_causal_frame_violation": false,
+      "passed": true,
+      "notes": []
+    },
+    "title_causal_frame_violation": false,
+    "runtime_counts": {
+      "unsupported_personal_detail_count": 0,
+      "unsupported_scene_count": 0,
+      "unsupported_causality_count": 0,
+      "unsupported_causal_frame_count": 0,
+      "unsupported_affect_count": 0,
+      "unsupported_role_behavior_count": 0,
+      "schema_leakage_prose_count": 0,
+      "generic_advice_count": 0,
+      "sentence_fragments_count": 0,
+      "contradiction_count": 0
+    },
+    "independent": {
+      "personal": 0,
+      "scenes": 0,
+      "causality": 0,
+      "causal_frame": 0,
+      "affect": 0,
+      "role": 0,
+      "schema_leakage": 0,
+      "advice": 0
+    },
+    "soft_watch": [],
+    "residue_represented": true,
+    "body_preview": "18歳のとき、進学先を決めた。家から通える大学へ進学し、地方の大学へ行くことはなかった。その二つは同じ時期に並んでいた進路であり、ここで確認できるのは、その一方が日々通う大学になったということまでである。地方でどの大学に通い、どんな生活を送ったかについての記録はない。\n\n現在は、その大学とは関係のない仕事をしている。18歳で進学先を決めた時点から現在の生活までが続いている一方で、その間を一つの説明で結び切ることはできない。大学と現在の仕事のあいだに何があったのか、進学先が現在の仕事にどの程度関わるのかを示す材料もない。ただ、過去の進学先と、大学とは関係のない仕事をしている現在とが、同じ時間の並びに置かれている。\n\n「地方に行っていたら違ったかな」という問いは、その並びのなかに残る。違っていたものが仕事だったのか、暮らしだったのか、あるいは別の何かだったのかは定められていない。答えを補うことはできないが、18歳で家から通える大学へ進んだ記憶のそばに、地方の大学という行かなかった場所が残り、現在の生活とのあいだにはまだ接続しきれていないものがある。\n"
+  },
+  "latency_ms_total": 21937,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 13850,
+      "prompt_tokens": 3825,
+      "completion_tokens": 1141,
+      "estimated_cost_usd": 0.001258,
+      "stage_hint": "call1"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "latency_ms": 8063,
+      "prompt_tokens": 3340,
+      "completion_tokens": 791,
+      "estimated_cost_usd": 0.020215,
+      "stage_hint": "terra"
+    }
+  ],
+  "estimated_cost_usd": 0.021473,
+  "token_split": {
+    "call1_in": 3825,
+    "call1_out": 1141,
+    "terra_events": 1,
+    "terra_in": 3340,
+    "terra_out": 791,
+    "call2_in": 3340,
+    "call2_out": 791,
+    "call3_in": 0,
+    "call3_out": 0
+  },
+  "finished_at": "2026-08-07T04:54:18.952035+00:00"
+}

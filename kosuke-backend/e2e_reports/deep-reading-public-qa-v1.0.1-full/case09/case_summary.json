@@ -1,0 +1,301 @@
+{
+  "id": "case09",
+  "title": "Contradictory input",
+  "purpose": "explicit contradiction handling",
+  "expect": [
+    "do not resolve by guessing",
+    "flag contradiction/clarification",
+    "Call 2 must not run before correction"
+  ],
+  "fields": {
+    "branch_period": "22歳",
+    "triggering_event": "第一志望の会社に落ちた",
+    "chosen_path": "第一志望の会社に入社した",
+    "unchosen_path": "別の会社に入ること",
+    "present_question": "別の会社だったらどうだったか",
+    "current_context": "今は転職して別の会社にいる"
+  },
+  "source_text": "時期: 22歳\n出来事: 第一志望の会社に落ちた\n選んだ道: 第一志望の会社に入社した\n選ばなかった道: 別の会社に入ること\nいまの問い: 別の会社だったらどうだったか\nいまの状況: 今は転職して別の会社にいる",
+  "started_at": "2026-08-07T04:54:18.953966+00:00",
+  "errors": [],
+  "session_id": "dfdf866e-0cfe-4a30-82a3-abb44fb9ae86",
+  "model_metadata": {
+    "production_models_version": "parallel-life-production-models-v1.0",
+    "call_1_model": "gpt-4o-mini",
+    "call_2_model": "gpt-5.6-terra",
+    "call_3_model": "gpt-5.6-terra",
+    "models": {
+      "version": "parallel-life-production-models-v1.0",
+      "call_1": "gpt-4o-mini",
+      "call_2": "gpt-5.6-terra",
+      "call_3": "gpt-5.6-terra"
+    },
+    "runtime_validation_version": "parallel-life-runtime-v1.0.5",
+    "prompt_versions": {
+      "call_1": "parallel-life-call-1-v1.0.2",
+      "call_2": "parallel-life-call-2-v1.0.3",
+      "call_3": "parallel-life-call-3-v1.0.3"
+    },
+    "candidate": "Production Candidate v1.0",
+    "model": "gpt-4o-mini",
+    "call_1_prompt_version": "parallel-life-call-1-v1.0.2",
+    "call_1_schema_version": "parallel-life-call-1-schema-v1.0.2"
+  },
+  "telemetry": {
+    "fields_present": {
+      "session_id": true,
+      "production_manifest_version": true,
+      "call_1_model": true,
+      "call_2_model": true,
+      "call_3_model": true,
+      "prompt_versions": true,
+      "call_1_status": true,
+      "confirmation_timestamp": false,
+      "retry_counts": true,
+      "observatory_lens_count": true,
+      "rebranch_count": true,
+      "latency": false,
+      "token_usage": false,
+      "estimated_cost": false,
+      "failure_category": true,
+      "clarification_requested": true,
+      "publication_reached": false
+    },
+    "gaps": [
+      "confirmation_timestamp",
+      "latency",
+      "token_usage",
+      "estimated_cost",
+      "publication_reached"
+    ],
+    "model_metadata_keys": [
+      "call_1_model",
+      "call_1_prompt_version",
+      "call_1_schema_version",
+      "call_2_model",
+      "call_3_model",
+      "candidate",
+      "model",
+      "models",
+      "production_models_version",
+      "prompt_versions",
+      "runtime_validation_version"
+    ]
+  },
+  "call1": {
+    "status": "needs_additional_input",
+    "prompt_version": "parallel-life-call-1-v1.0.2",
+    "schema_version": "parallel-life-call-1-schema-v1.0.2",
+    "facts": [
+      {
+        "id": "fact1",
+        "content": "22歳の時、第一志望の会社に落ちた",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact2",
+        "content": "第一志望の会社に入社した",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact3",
+        "content": "別の会社に入ること",
+        "boundary": "explicit_fact"
+      },
+      {
+        "id": "fact4",
+        "content": "今は転職して別の会社にいる",
+        "boundary": "explicit_fact"
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "question1",
+        "content": "別の会社だったらどうだったか",
+        "boundary": "user_question"
+      },
+      {
+        "id": "question_source_005",
+        "content": "いまの問い: 別の会社だったらどうだったか",
+        "boundary": "user_question"
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "current_context": [
+      "現在の生活"
+    ],
+    "sensitive_domains": [],
+    "primary_branch": {
+      "period": "22歳",
+      "triggering_event": "第一志望の会社に落ちた",
+      "available_paths": [
+        "第一志望の会社に入社した",
+        "別の会社に入ること"
+      ],
+      "realized_path": "第一志望の会社に入社した",
+      "unrealized_paths": [
+        "別の会社に入ること"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact1",
+        "fact2",
+        "fact3"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "actual_secondary_branches": [],
+    "retrospective_counterfactuals": [
+      {
+        "id": "cf_question1",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "別の会社だったらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      },
+      {
+        "id": "cf_question_source_005",
+        "classification": "retrospective_counterfactual",
+        "parent_branch_id": "primary",
+        "description": "いまの問い: 別の会社だったらどうだったか",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": true
+      }
+    ],
+    "residue": [],
+    "observatory_selected": [],
+    "observatory_evaluated": [],
+    "rebranch_design": [],
+    "additional_questions": [
+      "会社について、『落ちた』と『入社した』の両方が入力されています。実際にはどちらでしたか？"
+    ],
+    "additional_required": true,
+    "input_sufficiency": {
+      "required_fields_complete": true,
+      "current_context_requirement_met": true,
+      "missing_fields": [],
+      "additional_questions": [
+        "会社について、『落ちた』と『入社した』の両方が入力されています。実際にはどちらでしたか？"
+      ]
+    },
+    "source_coverage": {
+      "branch_period": true,
+      "triggering_event": true,
+      "chosen_path": true,
+      "unchosen_path": true,
+      "present_question": true,
+      "current_context": true
+    },
+    "user_confirmation_view": {
+      "branch_period": "22歳",
+      "triggering_event": "第一志望の会社に落ちた",
+      "chosen_path": "第一志望の会社に入社した",
+      "unchosen_path": "別の会社に入ること",
+      "actual_secondary_branches": [],
+      "retrospective_counterfactuals": [
+        "別の会社だったらどうだったか",
+        "いまの問い: 別の会社だったらどうだったか"
+      ],
+      "present_questions": [
+        "別の会社だったらどうだったか",
+        "いまの問い: 別の会社だったらどうだったか"
+      ],
+      "current_context": [
+        "現在の生活"
+      ],
+      "feelings": [],
+      "hypotheses": [],
+      "unknowns": [],
+      "central_thesis_preview": "",
+      "observatory_lens_candidates": [],
+      "items_to_confirm": [
+        "矛盾: 「落ちた」と「入社した」が「会社・入社・第一志望」について同時に入力されています",
+        "矛盾: 「落ちた」と「入社した」が「会社・入社・第一志望」について同時に入力されています"
+      ]
+    },
+    "central_thesis": "",
+    "call1_validation_notes": {
+      "actual_secondary_rejected": [],
+      "lenses_rejected": [],
+      "questions_not_converted_to_facts": true,
+      "hypotheses_not_converted_to_facts": true,
+      "notes": [
+        "residue:model_empty_assisted_from_anchors",
+        "residue:cleared_due_to_material_contradiction",
+        "material_contradiction:矛盾: 「落ちた」と「入社した」が「会社・入社・第一志望」について同時に入力されています"
+      ],
+      "source_coverage_missing": [],
+      "material_contradictions": [
+        "矛盾: 「落ちた」と「入社した」が「会社・入社・第一志望」について同時に入力されています"
+      ],
+      "material_contradiction_count": 1,
+      "branch_concreteness_ok": true,
+      "thesis_deferred_due_to_contradiction": true,
+      "sensitive_thesis_rejected": false
+    }
+  },
+  "confirmation_decision": {
+    "should_confirm": false,
+    "outcome_bucket": "B_request_clarification",
+    "reasons_stop": [
+      "status=needs_additional_input",
+      "additional_questions_required",
+      "no_validated_residue",
+      "contradiction_requires_correction"
+    ],
+    "reasons_ok": [],
+    "contradiction_analysis": {
+      "input_level_contradiction": true,
+      "facts_contain_reject": true,
+      "facts_contain_join": true,
+      "silently_resolved_suspected": false,
+      "confirmation_items": [
+        "矛盾: 「落ちた」と「入社した」が「会社・入社・第一志望」について同時に入力されています",
+        "矛盾: 「落ちた」と「入社した」が「会社・入社・第一志望」について同時に入力されています"
+      ]
+    },
+    "question_anchor_flags": [],
+    "clarification_questions": [
+      "会社について、『落ちた』と『入社した』の両方が入力されています。実際にはどちらでしたか？"
+    ],
+    "clarification_count": 1,
+    "residue_count": 0,
+    "status": "needs_additional_input"
+  },
+  "call2_reached": false,
+  "call3_reached": false,
+  "published": false,
+  "confirmation_approved": false,
+  "safe_stop": true,
+  "generation_should_proceed": false,
+  "abort_recorded": true,
+  "latency_ms_total": 13581,
+  "usage_events": [
+    {
+      "model": "gpt-4o-mini",
+      "latency_ms": 13566,
+      "prompt_tokens": 3825,
+      "completion_tokens": 1225,
+      "estimated_cost_usd": 0.001309,
+      "stage_hint": "call1"
+    }
+  ],
+  "estimated_cost_usd": 0.001309,
+  "finished_at": "2026-08-07T04:54:32.535520+00:00"
+}

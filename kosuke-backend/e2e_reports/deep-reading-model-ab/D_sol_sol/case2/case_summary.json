@@ -1,0 +1,73 @@
+{
+  "config_id": "D_sol_sol",
+  "case_id": "case2",
+  "call2_model": "gpt-5.6-sol",
+  "call3_model": "gpt-5.6-sol",
+  "errors": [],
+  "final_title": "三人の暮らしと、二人目への問い",
+  "final_subtitle": "不妊治療を経た日々と、今もときどき考えること",
+  "status": "complete",
+  "publishable": true,
+  "blocking_reasons": [],
+  "runtime_counts": {
+    "unsupported_personal_detail_count": 0,
+    "unsupported_scene_count": 0,
+    "unsupported_causality_count": 0,
+    "unsupported_causal_frame_count": 0,
+    "unsupported_affect_count": 0,
+    "unsupported_role_behavior_count": 0,
+    "schema_leakage_prose_count": 0,
+    "generic_advice_count": 0
+  },
+  "independent_analysis": {
+    "unsupported_personal_details": [],
+    "unsupported_causal_frame": [],
+    "unsupported_causality": [],
+    "unsupported_affect": [],
+    "unsupported_role_behavior": [],
+    "generic_advice": [],
+    "unsupported_scenes": [],
+    "schema_leakage_prose": [],
+    "title_causal_frame_violation": false,
+    "soft_watch_hits": [
+      "結びつ"
+    ]
+  },
+  "character_count": 414,
+  "latency_ms": {
+    "call2_wall": 22002,
+    "call3_wall": 3,
+    "total_wall": 22005,
+    "sum_api_calls": 21990
+  },
+  "tokens": {
+    "prompt": 4124,
+    "completion": 1586,
+    "reasoning": 787,
+    "total": 5710
+  },
+  "estimated_cost_usd": 0.06027,
+  "usage_events": [
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 21990,
+      "prompt_tokens": 4124,
+      "completion_tokens": 1586,
+      "reasoning_tokens": 787,
+      "estimated_cost_usd": 0.06027,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "call2_usage_events": [
+    {
+      "model": "gpt-5.6-sol",
+      "latency_ms": 21990,
+      "prompt_tokens": 4124,
+      "completion_tokens": 1586,
+      "reasoning_tokens": 787,
+      "estimated_cost_usd": 0.06027,
+      "response_model": "gpt-5.6-sol"
+    }
+  ],
+  "body_preview": "## 45歳と三人の暮らし\n\n45歳のとき、不妊治療を経て子どもを授かった。当時には、不妊治療を諦める道もあった。その先にあるのが、妻と息子と三人で暮らす人生である。\n\n現在、息子を可愛いと感じている。息子の友人が家に遊びに来ることも楽しい。45歳で子どもを授かったことと、こうした現在の暮らしは、同じ時間の中に並んでいる。ただし、そのあいだのすべてを結びつける材料はない。過去と現在のあいだには、まだ接続しきれていないものが残っている。\n\n## 二人目をめぐる余白\n\n息子を授かった後、二人目を目指す治療を続けるかどうかを妻と話し合い、治療をやめた。\n\n今も、二人目を持っていたらどうだったかと考えることがある。妻と息子との三人の暮らしがあり、息子を可愛いと感じ、友人たちが遊びに来る時間を楽しいと感じている。その現在と、二人目のいた暮らしへの問いは、どちらかがどちらかを打ち消すのではなく、答えの定まらないまま並んでいる。\n"
+}

@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-08-08T04:04:10.310517+00:00",
+  "staging_enabled": {
+    "enabled": true,
+    "context_pack_enabled": true
+  },
+  "A": {
+    "arm": "A_contextual_v1.1.0",
+    "source": "prior_live_ab_artifact",
+    "prompt_pin": "parallel-life-call-1-v1.1.0",
+    "runtime_pin": "parallel-life-runtime-v1.1.0-exp",
+    "title": "NTTを離れた後の経歴と、残る問い",
+    "subtitle": "外資系半導体企業への転職、複数業界・企業での経験、現在の会社経営",
+    "trace": {
+      "deep_reading_mode": "contextual",
+      "call1_prompt_version": "parallel-life-call-1-v1.1.0",
+      "runtime_schema_version": "parallel-life-runtime-v1.1.0-exp",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "pack_facts": [
+        {
+          "id": "pack_career_history_001",
+          "content": "NTT東日本で勤務した",
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_career_history_002",
+          "content": "外資系半導体企業へ転職した",
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_career_history_003",
+          "content": "その後、複数業界・企業を経験した",
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_work_004",
+          "content": "現在は自分の会社を経営している",
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_projects_005",
+          "content": "現在、複数の観測・Protocol・文章制作を行っている",
+          "tags": [
+            "context_pack",
+            "category:current_projects",
+            "pack_id:pack_live_20260808T025454Z_8207",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "context_pack_usage": {
+        "mode": "contextual",
+        "pack_id": "pack_live_20260808T025454Z_8207",
+        "pack_fact_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_career_history_003",
+          "pack_current_projects_005",
+          "pack_current_work_004"
+        ],
+        "residue_present_anchor_ids": [
+          "pack_current_work_004",
+          "pack_current_projects_005"
+        ],
+        "residue_past_anchor_ids": [],
+        "lens_explicit_evidence_ids": [],
+        "rebranch_support_ids": []
+      },
+      "residue": [
+        {
+          "statement": "もしあのときNTTに残っていたら、現在の自分はどうなっていたか。",
+          "past_anchor_ids": [
+            "fact_001",
+            "fact_002",
+            "fact_003"
+          ],
+          "present_anchor_ids": [
+            "pack_current_work_004",
+            "pack_current_projects_005"
+          ],
+          "pack_ids_used": [
+            "pack_current_work_004",
+            "pack_current_projects_005"
+          ]
+        }
+      ],
+      "central_thesis": "キャリアの選択が現在の自分にどのように影響を与えたか。",
+      "thesis_mentions_pack_content": false,
+      "observatory_selected": [],
+      "rebranch": []
+    },
+    "ok": true
+  },
+  "B": {
+    "arm": "B_selection_compression_v1.1.1",
+    "source": "live_staging",
+    "ok": true,
+    "elapsed_s": 89.28,
+    "error": null,
+    "prompt_pin": "parallel-life-call-1-v1.1.1",
+    "runtime_pin": "parallel-life-runtime-v1.1.1-exp",
+    "title": "残った問い、いまの会社",
+    "subtitle": "NTTを離れた転職から、自己経営の現在まで",
+    "trace": {
+      "deep_reading_mode": "contextual",
+      "call1_prompt_version": "parallel-life-call-1-v1.1.1",
+      "runtime_schema_version": "parallel-life-runtime-v1.1.1-exp",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "pack_facts": [
+        {
+          "id": "pack_career_history_001",
+          "content": "NTT東日本で勤務した",
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T040241Z_6593",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_career_history_002",
+          "content": "外資系半導体企業へ転職した",
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T040241Z_6593",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_career_history_003",
+          "content": "その後、複数業界・企業を経験した",
+          "tags": [
+            "context_pack",
+            "category:career_history",
+            "pack_id:pack_live_20260808T040241Z_6593",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_work_004",
+          "content": "現在は自分の会社を経営している",
+          "tags": [
+            "context_pack",
+            "category:current_work",
+            "pack_id:pack_live_20260808T040241Z_6593",
+            "live_ab_approved"
+          ]
+        },
+        {
+          "id": "pack_current_projects_005",
+          "content": "現在、複数の観測・Protocol・文章制作を行っている",
+          "tags": [
+            "context_pack",
+            "category:current_projects",
+            "pack_id:pack_live_20260808T040241Z_6593",
+            "live_ab_approved"
+          ]
+        }
+      ],
+      "context_pack_usage": {
+        "mode": "contextual",
+        "pack_id": "pack_live_20260808T040241Z_6593",
+        "pack_fact_ids": [
+          "pack_career_history_001",
+          "pack_career_history_002",
+          "pack_career_history_003",
+          "pack_current_projects_005",
+          "pack_current_work_004"
+        ],
+        "residue_present_anchor_ids": [],
+        "residue_past_anchor_ids": [],
+        "lens_explicit_evidence_ids": [],
+        "rebranch_support_ids": [
+          "pack_current_work_004"
+        ]
+      },
+      "residue": [
+        {
+          "statement": "選択の結果が現在の自己経営に繋がっている。",
+          "past_anchor_ids": [
+            "fact_1",
+            "fact_2"
+          ],
+          "present_anchor_ids": [
+            "fact_4"
+          ],
+          "pack_ids_used": []
+        }
+      ],
+      "central_thesis": "組織内役職から自己経営へと移行した選択が、今もなお影響を与えている。",
+      "thesis_mentions_pack_content": false,
+      "observatory_selected": [],
+      "rebranch": [
+        {
+          "id": "rebranch_1",
+          "branch_specific_form": "自己経営の選択が今後のキャリアにどのように影響するか。",
+          "current_receiver": "現在のキャリアの選択における影響を考察する。",
+          "support_ids": [
+            "pack_current_work_004"
+          ],
+          "pack_support_ids": [
+            "pack_current_work_004"
+          ]
+        }
+      ]
+    },
+    "meta_selection": {
+      "mode": "contextual",
+      "pack_id": "pack_live_20260808T040241Z_6593",
+      "pack_fact_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ],
+      "residue_present_anchor_ids": [],
+      "residue_past_anchor_ids": [],
+      "lens_explicit_evidence_ids": [],
+      "rebranch_support_ids": [
+        "pack_current_work_004"
+      ]
+    }
+  },
+  "scores": {
+    "A": {
+      "factual_fidelity": 10,
+      "resume_density": 6.0,
+      "resume_flags": [
+        "org_enumeration",
+        "industry_enumeration"
+      ],
+      "thesis_strength": 4,
+      "temporal_depth": 7,
+      "structural_depth": 5,
+      "residue": 8,
+      "observatory": 3,
+      "rebranch": 3,
+      "title": 4,
+      "context_value_add": 8,
+      "life_being_read": "mixed",
+      "char_count": 342,
+      "logic_or_pack_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ]
+    },
+    "B": {
+      "factual_fidelity": 10,
+      "resume_density": 7.0,
+      "resume_flags": [
+        "org_enumeration",
+        "industry_enumeration",
+        "project_enumeration"
+      ],
+      "thesis_strength": 8,
+      "temporal_depth": 7,
+      "structural_depth": 5,
+      "residue": 7,
+      "observatory": 3,
+      "rebranch": 4,
+      "title": 8,
+      "context_value_add": 7,
+      "life_being_read": "summarized",
+      "char_count": 604,
+      "logic_or_pack_ids": [
+        "pack_career_history_001",
+        "pack_career_history_002",
+        "pack_career_history_003",
+        "pack_current_projects_005",
+        "pack_current_work_004"
+      ]
+    }
+  },
+  "book": {
+    "arm": "C_book_chatgpt_qualitative",
+    "note": "Not scored for factual safety (may use unavailable info).",
+    "temporal_depth": "long institutional arc",
+    "structural_depth": "制度内蓄積 vs 持ち運び可能な自己定義",
+    "residue": "pattern of re-defining value across affiliations",
+    "observatory": "selective structural lenses",
+    "rebranch": "scale of accumulation not project promo",
+    "title": "metaphor of tension (e.g. 役職のない履歴書) — do not copy",
+    "life_being_read": "reading"
+  },
+  "B_ok": true,
+  "B_prompt": "parallel-life-call-1-v1.1.1"
+}

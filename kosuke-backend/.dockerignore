@@ -1,0 +1,13 @@
+chroma_data
+__pycache__
+*.pyc
+.env
+.venv
+e2e_reports
+tests
+scripts
+.git
+reflections.json
+edges.json
+*.md
+.pytest_cache

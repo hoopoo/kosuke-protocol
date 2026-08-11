@@ -1,0 +1,248 @@
+{
+  "status": "ready_for_user_confirmation",
+  "grounded_input": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "content": "45歳のとき、不妊治療を経て子どもを授かった。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "45歳のとき、不妊治療を経て子どもを授かった。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_2",
+        "content": "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "実際に選んだのは、妻と息子と三人で暮らす人生だった。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_3",
+        "content": "選ばなかった道は、不妊治療を諦めることだった。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "選ばなかった道は、不妊治療を諦めることだった。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_4",
+        "content": "現在も妻と息子との三人家族で暮らし、自分の会社を経営している。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "現在も妻と息子との三人家族で暮らし、自分の会社を経営している。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_5",
+        "content": "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "息子を可愛いと感じ、息子の友人が家に遊びに来ることを楽しいと感じている。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      },
+      {
+        "id": "fact_7",
+        "content": "息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。",
+        "boundary_type": "explicit_fact",
+        "source_field": "source_text",
+        "source_text": "息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。",
+        "confidence": 1.0,
+        "allowed_as_fact": true,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "feelings": [],
+    "questions": [
+      {
+        "id": "fact_6",
+        "content": "今も、二人目を持っていたらどうだったかと考えることがある。",
+        "boundary_type": "user_question",
+        "source_field": "source_text",
+        "source_text": "今も、二人目を持っていたらどうだったかと考えることがある。",
+        "confidence": 1.0,
+        "allowed_as_fact": false,
+        "inference_distance": "none",
+        "supported_by": [],
+        "tags": []
+      }
+    ],
+    "hypotheses": [],
+    "unknowns": [],
+    "model_inferences": [],
+    "current_context": [
+      "息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。"
+    ],
+    "sensitive_domains": [],
+    "confirmed_by_user": false,
+    "requested_corrections": []
+  },
+  "input_sufficiency": {
+    "required_fields_complete": true,
+    "current_context_requirement_met": true,
+    "missing_fields": [],
+    "additional_questions": []
+  },
+  "sensitive_domain_analysis": {
+    "domains": [],
+    "notes": [],
+    "clarification_required": false
+  },
+  "branch_structure": {
+    "primary_branch": {
+      "period": "45歳",
+      "triggering_event": "不妊治療を経て子どもを授かった",
+      "available_paths": [
+        "妻と息子と三人で暮らす人生"
+      ],
+      "realized_path": "妻と息子と三人で暮らす人生",
+      "unrealized_paths": [
+        "不妊治療を諦めること"
+      ],
+      "constraints": [],
+      "supporting_fact_ids": [
+        "fact_1",
+        "fact_2",
+        "fact_3",
+        "fact_4",
+        "fact_5"
+      ],
+      "ambiguities": []
+    },
+    "realized_outcomes": [],
+    "secondary_branches": [
+      {
+        "id": "sec_auto_001",
+        "classification": "actual_secondary_branch",
+        "parent_branch_id": "primary",
+        "description": "がある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。45歳のとき、不妊治療を経て子どもを授かった。実際に選んだのは、妻と息",
+        "available_paths": [],
+        "realized_path": "",
+        "unrealized_paths": [],
+        "explicit_evidence_ids": [
+          "fact_7"
+        ],
+        "evidence_type": null,
+        "ambiguity_status": "",
+        "present_relevance": "",
+        "must_not_be_treated_as_historical_choice": false
+      }
+    ],
+    "retrospective_counterfactuals": [],
+    "present_question_ids": [
+      "fact_6"
+    ]
+  },
+  "central_thesis": {
+    "thesis_type": "personal_experience",
+    "statement": "不妊治療を経て子どもを授かったことが、現在の家族の形を作った。",
+    "pole_a": "不妊治療を諦める",
+    "pole_b": "妻と息子と三人で暮らす",
+    "supported_by": [
+      "fact_1",
+      "fact_2",
+      "fact_3",
+      "fact_4",
+      "fact_5"
+    ],
+    "risks": [],
+    "validation_status": "unvalidated"
+  },
+  "lost_structure": {
+    "items": []
+  },
+  "protected_structure": {
+    "items": []
+  },
+  "residue_candidates": {
+    "items": []
+  },
+  "selected_observatory_lenses": {
+    "evaluated": [],
+    "selected": []
+  },
+  "editorial_outline": {
+    "sections": []
+  },
+  "repetition_prevention_map": {
+    "entries": []
+  },
+  "rebranch_design": {
+    "directions": []
+  },
+  "additional_questions": {
+    "required": false,
+    "questions": []
+  },
+  "user_confirmation_view": {
+    "branch_period": "45歳",
+    "triggering_event": "不妊治療を経て子どもを授かった",
+    "chosen_path": "妻と息子と三人で暮らす人生",
+    "unchosen_path": "不妊治療を諦めること",
+    "actual_secondary_branches": [
+      "がある。息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。45歳のとき、不妊治療を経て子どもを授かった。実際に選んだのは、妻と息"
+    ],
+    "retrospective_counterfactuals": [],
+    "present_questions": [
+      "今も、二人目を持っていたらどうだったかと考えることがある。"
+    ],
+    "current_context": [
+      "息子を授かった後、二人目を目指す治療を続けるか妻と話し合い、やめた。"
+    ],
+    "feelings": [],
+    "hypotheses": [],
+    "unknowns": [],
+    "central_thesis_preview": "不妊治療を経て子どもを授かったことが、現在の家族の形を作った。",
+    "observatory_lens_candidates": [],
+    "items_to_confirm": []
+  },
+  "validation": {
+    "actual_secondary_rejected": [],
+    "lenses_rejected": [],
+    "questions_not_converted_to_facts": true,
+    "hypotheses_not_converted_to_facts": true,
+    "notes": [],
+    "source_coverage_missing": []
+  },
+  "source_coverage": {
+    "branch_period": true,
+    "triggering_event": true,
+    "chosen_path": true,
+    "unchosen_path": true,
+    "present_question": true,
+    "current_context": true
+  },
+  "prompt_version": "parallel-life-call-1-v1.0.1",
+  "schema_version": "parallel-life-call-1-schema-v1.0.1",
+  "parse_diagnostics": {
+    "validation_errors": [],
+    "offending_paths": [],
+    "repair_attempted": false,
+    "repair_succeeded": false,
+    "normalization_applied": [],
+    "raw_response_saved_in_dev_only": false
+  }
+}

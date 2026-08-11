@@ -1,0 +1,28 @@
+{
+  "product": "Parallel Life Deep Reading",
+  "freeze_label": "Parallel Life Deep Reading v1.1.5-exp (Section Realization)",
+  "status": "EXPERIMENTAL / FLAG-GATED — Production v1.0.2 unchanged when DEEP_READING_CONTEXT_PACK_ENABLED=false or mode=strict",
+  "created_at": "2026-08-08T05:50:00+00:00",
+  "parent_manifest": "PRODUCTION_MANIFEST_v1.1.4-exp.json",
+  "scope": [
+    "ClaimAtoms-based interpretive claim builder (no mechanical sentence joins)",
+    "malformed claim validation (。の / duplicated punctuation / bad clause joins)",
+    "SectionContract realization fields: realization_goal, required_public_label, min/max paragraphs, evidence_budget, realization_status",
+    "Locked public UI labels for Call2; Call3 blocks if any required section absent or unrealized",
+    "Depth via interpretive development, not new biography",
+    "Observatory-Core / title validation / publication gate policy unchanged"
+  ],
+  "versions": {
+    "call_1_prompt_strict": "parallel-life-call-1-v1.0.3",
+    "call_1_prompt_contextual": "parallel-life-call-1-v1.1.5-exp",
+    "call_1_prompt_contextual_v114": "parallel-life-call-1-v1.1.4-exp",
+    "runtime_validation_strict": "parallel-life-runtime-v1.0.6",
+    "runtime_validation_contextual": "parallel-life-runtime-v1.1.5-exp",
+    "call_2_prompt_contextual": "parallel-life-call-2-v1.1.5-exp",
+    "call_2_prompt_strict": "parallel-life-call-2-v1.0.3",
+    "call_3_prompt": "parallel-life-call-3-v1.0.3"
+  },
+  "title_validation_changed": false,
+  "publication_blockers_loosened": false,
+  "kill_switch": "DEEP_READING_CONTEXT_PACK_ENABLED=false forces Strict"
+}

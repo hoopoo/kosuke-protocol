@@ -1,0 +1,86 @@
+{
+  "staging_strict": {
+    "http": 200,
+    "schema": "parallel-life-runtime-v1.0.6",
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack_enabled": false,
+    "mode": "strict"
+  },
+  "staging_contextual": {
+    "http": 200,
+    "schema": "parallel-life-runtime-v1.1.2-exp",
+    "call1": "parallel-life-call-1-v1.1.2-exp",
+    "pack_enabled": true,
+    "mode": "contextual",
+    "session_id": "c83fd1a2-4c9f-4981-958b-4a48b802adb8",
+    "candidate_lenses": [
+      {
+        "lens_id": "education-employment",
+        "structural_reason": "一社内蓄積キャリアと企業間移動キャリアの境界として読める",
+        "structures_matched": [
+          "employment_regime_boundary"
+        ],
+        "confidence": 0.92,
+        "rejected_promo": false
+      },
+      {
+        "lens_id": "after-success",
+        "structural_reason": "達成後にも閉じない問いが残る構造",
+        "structures_matched": [
+          "post_achievement_question"
+        ],
+        "confidence": 0.82,
+        "rejected_promo": false
+      },
+      {
+        "lens_id": "clean-society",
+        "structural_reason": "標準化された進路規範との緊張として読める",
+        "structures_matched": [
+          "normative_standard_path",
+          "employment_regime_boundary"
+        ],
+        "confidence": 0.8,
+        "rejected_promo": false
+      }
+    ],
+    "obs_diag": {
+      "structures_detected": [
+        "employment_regime_boundary",
+        "normative_standard_path",
+        "post_achievement_question"
+      ],
+      "candidate_lens_ids": [
+        "education-employment",
+        "after-success",
+        "clean-society"
+      ],
+      "evidence_ids": [
+        "obs_ee_001",
+        "obs_cs_001",
+        "obs_as_001",
+        "obs_ee_002"
+      ],
+      "relation_ids": [
+        "clr_ee_regime_001",
+        "clr_cs_norm_001",
+        "clr_as_001"
+      ],
+      "stale_excluded_ids": [],
+      "promo_blocked_from_selection": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.2-exp",
+      "prompt_pin": "parallel-life-call-1-v1.1.2-exp"
+    },
+    "cross_lens_n": 3
+  },
+  "production": {
+    "http": 200,
+    "schema": "parallel-life-call-1-schema-v1.0.2",
+    "call1": "parallel-life-call-1-v1.0.3",
+    "pack_enabled": null,
+    "mode": null
+  },
+  "expected": {
+    "call1": "parallel-life-call-1-v1.1.2-exp",
+    "runtime": "parallel-life-runtime-v1.1.2-exp"
+  }
+}

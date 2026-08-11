@@ -1,0 +1,174 @@
+{
+  "case_id": "case05_health",
+  "category": "health / body",
+  "title": "Health / body — treatment vs work pace",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 87.71,
+  "session_id": "f15eccbb-7419-41ee-b855-b4e425132648",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+  "call3_prompt": "parallel-life-call-3-v1.1.8-exp",
+  "branch_semantics": {
+    "domain": "health",
+    "changed_dimension": "家族のかたち／身体と治療の選択",
+    "chosen_structure": "仕事量を減らして治療と休養を優先する",
+    "unchosen_structure": "以前と同じペースで働き続ける",
+    "central_tension": "「仕事量を減らして治療と休養を優先する」側の適応した生活と、「以前と同じペースで働き続ける」側の別の身体条件の想像のあいだ",
+    "lost_verifiability": "「以前と同じペースで働き続ける」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+    "protected_possibility": "「仕事量を減らして治療と休養を優先する」を取った側に残った、身体の制約のなかで生活を続ける余地",
+    "present_residue": "「無理をして働き続けていたらどうなっていたか」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+    "possible_rebranch_modes": [
+      "preserve",
+      "observe",
+      "not_act"
+    ],
+    "sensitive_boundaries": [
+      "no_unsupported_causality",
+      "no_medical_invention",
+      "no_invented_affect"
+    ],
+    "confidence": 0.7666666666666666,
+    "diagnostics": {
+      "domain_reasons": [
+        "health:body_health"
+      ],
+      "explicit_employment_evidence": false,
+      "vague": false,
+      "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+    }
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 1,
+    "questions_seen": [],
+    "duplicate_questions": [],
+    "continued": false,
+    "final_status": "ready_for_draft",
+    "schema_leakage": false
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 8,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 8.3,
+  "personal_focus": 8,
+  "social_depth": 5,
+  "thesis_closure": 8,
+  "title_quality": 8,
+  "section_realization": {
+    "branch_point": true,
+    "chosen_path": true,
+    "unchosen_life": true,
+    "lost": true,
+    "protected": false,
+    "residue": true,
+    "observatory": true,
+    "re_branch": true,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [
+      "body"
+    ],
+    "selected": [],
+    "evidence_ids": [
+      "obs_body_001"
+    ],
+    "structures": [
+      "embodied_or_fertility"
+    ],
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": true,
+  "publishable": false,
+  "blocking_reasons": [
+    "required_section_unrealized:branch_point",
+    "required_section_unrealized:observatory"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "休養を優先した分岐のあとで",
+  "body_excerpt": "## 分岐点\n\n38歳のとき、体調を崩した。そこで置かれたのは、仕事量を減らして治療と休養を優先する道と、以前と同じペースで働き続ける道だった。働き方を考えることは、仕事の量と、治療や休養にあてる時間をどう並べるかを考えることでもあった。\n\n## 選んだ道\n\n仕事量を減らし、治療と休養を優先する道を取った。現在は、治療を続けながら在宅中心で働き、仕事量を抑えている。この生活は、当時に置かれた二つの道のうち、一方をたどった先にある現在として読める。\n\n## 選ばなかった人生\n\n以前と同じペースで働き続ける道は選ばれなかった。その先にどのような日々や身体の状態があったのかは、ここからは決められない。具体的な別の人生で埋めるのではなく、選ばれなかった可能性として残しておく。\n\n## 失ったもの\n\n以前と同じペースで働き続ける側の生活は、いまの生活として確かめることができない。何が失われたのかを具体的に数える材料もない。ただ、その道をたどった場合の身体の条件や働き方を、同じようには確かめられないことが残る。\n\n## 守られたもの\n\n治療と休養を優先する側には、治療を続けながら在宅中心で働き、仕",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 1,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 4,
+    "選択": 0
+  },
+  "rebranch_missing": [],
+  "pipeline_error": false,
+  "stages": {
+    "ground": {
+      "status": 200,
+      "status_field": "ready_for_user_confirmation",
+      "schema_version": "parallel-life-runtime-v1.1.8-exp",
+      "prompt_versions": {
+        "call_1": "parallel-life-call-1-v1.1.8-exp",
+        "call_2": "parallel-life-call-2-v1.0.3",
+        "call_3": "parallel-life-call-3-v1.0.3"
+      },
+      "call1_prompt": "parallel-life-call-1-v1.1.8-exp",
+      "branch_semantics": {
+        "domain": "health",
+        "changed_dimension": "家族のかたち／身体と治療の選択",
+        "chosen_structure": "仕事量を減らして治療と休養を優先する",
+        "unchosen_structure": "以前と同じペースで働き続ける",
+        "central_tension": "「仕事量を減らして治療と休養を優先する」側の適応した生活と、「以前と同じペースで働き続ける」側の別の身体条件の想像のあいだ",
+        "lost_verifiability": "「以前と同じペースで働き続ける」側で続いていた身体条件や働き方を、いま同じようには辿れないこと",
+        "protected_possibility": "「仕事量を減らして治療と休養を優先する」を取った側に残った、身体の制約のなかで生活を続ける余地",
+        "present_residue": "「無理をして働き続けていたらどうなっていたか」がいまも残るのは、身体と生活の不確かさが問いとして残るからかもしれない",
+        "possible_rebranch_modes": [
+          "preserve",
+          "observe",
+          "not_act"
+        ],
+        "sensitive_boundaries": [
+          "no_unsupported_causality",
+          "no_medical_invention",
+          "no_invented_affect"
+        ],
+        "evidence_ids": [
+          "pack_major_life_events_001",
+          "pack_current_work_002",
+          "user_question_001",
+          "question_source_005"
+        ],
+        "confidence": 0.7666666666666666,
+        "diagnostics": {
+          "domain_reasons": [
+            "health:body_health"
+          ],
+          "explicit_employment_evidence": false,
+          "vague": false,
+          "runtime_pin": "parallel-life-runtime-v1.1.8-exp"
+        }
+      }
+    },
+    "confirm": {
+      "status": 200,
+      "resp_status": "ready_for_draft"
+    },
+    "draft": {
+      "status": 200
+    },
+    "edit": {
+      "status": 200
+    }
+  }
+}

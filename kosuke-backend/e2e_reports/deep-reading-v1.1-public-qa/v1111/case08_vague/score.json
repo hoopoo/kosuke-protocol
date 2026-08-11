@@ -1,0 +1,147 @@
+{
+  "case_id": "case08_vague",
+  "category": "vague or weak branch",
+  "title": "Vague / weak branch — thin options",
+  "pipeline_ok": true,
+  "safe_stop": false,
+  "elapsed_s": 31.6,
+  "session_id": "12412ec4-5e3c-48dd-a82f-fefb9bbc63b0",
+  "call1_status": "ready_for_draft",
+  "call1_prompt": "parallel-life-call-1-v1.0.3",
+  "call3_prompt": "parallel-life-call-3-v1.0.3",
+  "branch_semantics": {
+    "domain": null,
+    "changed_dimension": null,
+    "chosen_structure": null,
+    "unchosen_structure": null,
+    "central_tension": null,
+    "lost_verifiability": null,
+    "protected_possibility": null,
+    "present_residue": null,
+    "possible_rebranch_modes": null,
+    "sensitive_boundaries": null,
+    "confidence": null,
+    "diagnostics": {}
+  },
+  "career_leak": {
+    "leaks": [],
+    "ok": true
+  },
+  "clarification": {
+    "http_400": false,
+    "rounds": 2,
+    "questions_seen": [
+      "今も考えていることについて、具体的にどのようなことを思い浮かべていますか？"
+    ],
+    "duplicate_questions": [],
+    "continued": true,
+    "final_status": "ready_for_draft",
+    "schema_leakage": true,
+    "infinite_loop_suspected": false,
+    "exit_reason": null
+  },
+  "factual_fidelity": 10,
+  "naturalness": 9,
+  "depth": 7,
+  "life_read": "mixed",
+  "resume_density": 0.0,
+  "cva": 7.0,
+  "personal_focus": 5,
+  "social_depth": 3,
+  "thesis_closure": 5,
+  "title_quality": 5,
+  "section_realization": {
+    "branch_point": false,
+    "chosen_path": false,
+    "unchosen_life": false,
+    "lost": false,
+    "protected": false,
+    "residue": false,
+    "observatory": false,
+    "re_branch": false,
+    "re_branch_omitted_valid": false
+  },
+  "observatory": {
+    "candidates": [],
+    "selected": [],
+    "evidence_ids": [],
+    "structures": null,
+    "lenses_added_meaning": false,
+    "zero_lens_ok": true
+  },
+  "title_validation_passed": false,
+  "publishable": false,
+  "blocking_reasons": [
+    "central_thesis_not_maintained",
+    "title_validation_failed"
+  ],
+  "unsupported_causality_count": 0,
+  "unsupported_biography_count": 0,
+  "affect_inference_count": 0,
+  "self_help_coaching_drift": false,
+  "lens_overreach": false,
+  "schema_leakage": false,
+  "malformed_claims": [],
+  "hard_failures": [],
+  "classification": "GATE_BLOCKED",
+  "final_title": "覚えていない分岐",
+  "body_excerpt": "## 覚えていない分岐\n\n二十代のどこかに、何かを選んだ気がするという分岐があった。けれど、選んだ道はよく覚えていない。選ばなかった道についても、当時は特に考えていなかった。\n\n今も普通に暮らしている。その暮らしのなかで、二十代のどこかにあった分岐に触れることがある。\n\nときに、「別の道があったのかな」と考えることがある。答えを定めないまま、何かを選んだ気がする過去と、今の普通の暮らしが並んでいる。\n",
+  "abstract_vocab": {
+    "蓄積": 0,
+    "構造": 0,
+    "尺度": 0,
+    "制度": 0,
+    "分岐": 4,
+    "選択": 0
+  },
+  "rebranch_missing": [
+    "no_section"
+  ],
+  "semantic_domain_leak": {},
+  "realization_taxonomy": {
+    "applicable": true,
+    "primary": "claim_weak",
+    "all": [
+      "claim_weak",
+      "validator_too_strict"
+    ],
+    "blocking_reasons": [
+      "central_thesis_not_maintained",
+      "title_validation_failed"
+    ],
+    "section_realization": {
+      "branch_point": false,
+      "chosen_path": false,
+      "unchosen_life": false,
+      "lost": false,
+      "protected": false,
+      "residue": false,
+      "observatory": false,
+      "re_branch": false,
+      "re_branch_omitted_valid": false
+    },
+    "malformed_claims": [],
+    "career_leaks": []
+  },
+  "pipeline_error": false,
+  "deterministic": {
+    "observatory_required": false,
+    "observatory_omission_reason": null,
+    "observatory_unrealized_block": false,
+    "observatory_false_negative": false,
+    "locked_label_mutation": false,
+    "alias_headings_raw": [],
+    "parsed_locked_labels": [],
+    "heading_parser_inline_miss": false,
+    "heading_parser_period_form": false,
+    "clarification_dead_end": false,
+    "draft_reached": true,
+    "final_status": "ready_for_draft",
+    "clarification_exit": null
+  },
+  "editorial_target": {
+    "target": "n/a",
+    "ok": true
+  },
+  "track_a_regressions": []
+}
